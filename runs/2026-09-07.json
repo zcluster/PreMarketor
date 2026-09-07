@@ -100,7 +100,7 @@
     "validation": {
       "ah_company_event_count": 6,
       "bilingual_dom_isomorphic": true,
-      "candidate_pending": 0,
+      "candidate_pending": 7,
       "domestic_policy_count": 2,
       "domestic_tech_industry_count": 4,
       "history_render_simulation": true,
@@ -132,6 +132,7 @@
     },
     "candidate_fix": {
       "status": "collecting",
+      "checked_at": "2026-09-07T10:14:37.092+08:00",
       "verification_status": {
         "AMEC": "pending",
         "Huaneng": "pending",
@@ -140,18 +141,113 @@
         "Bilibili": "pending",
         "CNOOC": "pending",
         "YourBest": "pending"
-      }
+      },
+      "candidates": {
+        "AMEC": {
+          "market_cap_cny_b": 321.28,
+          "pe_ttm": 78.09,
+          "price_cny": 342.6,
+          "intraday_pct": 2.14,
+          "perf_5d_pct": -4.93,
+          "perf_20d_pct": null,
+          "sources": [
+            "https://www.google.com/finance/quote/688012:SHA",
+            "https://www.wsj.com/market-data/quotes/CN/688012"
+          ],
+          "remaining": "20-trading-day return and original-filing pros/cons"
+        },
+        "ICBC": {
+          "market_cap_cny_t": 2.76,
+          "pe_ttm": 8.05,
+          "net_income_ttm_cny_b": 361.63,
+          "price_cny": 8.12,
+          "prior_5d_close_cny": 7.86,
+          "prior_20d_close_cny": 7.53,
+          "perf_5d_pct": 3.31,
+          "perf_20d_pct": 7.84,
+          "sources": [
+            "https://www.google.com/finance/quote/601398:SHA",
+            "https://stockanalysis.com/quote/sha/601398/",
+            "https://finance.yahoo.com/quote/601398.SS/history/"
+          ],
+          "remaining": "original interim filing and offering pros/cons"
+        },
+        "ABC": {
+          "market_cap_cny_t": 2.39,
+          "pe_ttm": 8.61,
+          "price_cny": 6.97,
+          "prior_5d_close_cny": 6.79,
+          "prior_20d_close_cny": 6.47,
+          "perf_5d_pct": 2.65,
+          "perf_20d_pct": 7.73,
+          "sources": [
+            "https://www.google.com/finance/quote/601288:SHA",
+            "https://finance.yahoo.com/quote/601288.SS/history/"
+          ],
+          "remaining": "TTM attributable profit and original interim/offering filing pros/cons"
+        },
+        "CNOOC": {
+          "market_cap_hkd_t": 1.22,
+          "pe_ttm": 8.28,
+          "net_income_ttm_cny_b": 159.74,
+          "price_hkd": 25.16,
+          "prior_5d_close_hkd": 25.44,
+          "prior_20d_close_hkd": 23.26,
+          "perf_5d_pct": -1.1,
+          "perf_20d_pct": 8.17,
+          "sources": [
+            "https://www.google.com/finance/quote/0883:HKG",
+            "https://stockanalysis.com/quote/hkg/0883/",
+            "https://finance.yahoo.com/quote/0883.HK/history/",
+            "https://www.reuters.com/markets/companies/0883.HK/"
+          ],
+          "remaining": "original interim filing pros/cons"
+        },
+        "Huaneng": {
+          "remaining": "market cap/PE/TTM profit/5d/20d/current reaction"
+        },
+        "Bilibili": {
+          "latest_interim_net_profit_cny_m": 541.1,
+          "event": "US$700m convertible; Tencent US$200m; concurrent repurchase US$300m",
+          "sources": [
+            "https://www.hkexnews.hk/",
+            "https://www.sl886.com/stock/09626"
+          ],
+          "remaining": "market cap/PE_TTM/TTM attributable profit/5d/20d/current reaction"
+        },
+        "YourBest": {
+          "event": "control transfer; agreement price below pre-suspension close; resumption",
+          "remaining": "market cap hard-screen confirmation"
+        }
+      },
+      "source_attempts": [
+        {
+          "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+          "at": "2026-09-07T10:14:37.092+08:00",
+          "result": "browser net::ERR_BLOCKED_BY_CLIENT"
+        },
+        {
+          "url": "https://quotes.sina.cn/cn/api/openapi.php/StockV2Service.getKLine",
+          "at": "2026-09-07T10:14:37.092+08:00",
+          "result": "browser net::ERR_BLOCKED_BY_CLIENT"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/688012.SS/history/",
+          "at": "2026-09-07T10:14:37.092+08:00",
+          "result": "HTTP 429 on open; indexed rows/summary available"
+        }
+      ]
     }
   },
-  "heartbeat_at": "2026-09-07T10:07:52.616+08:00",
-  "lease_until": "2026-09-07T10:25:52.616+08:00",
+  "heartbeat_at": "2026-09-07T10:14:37.092+08:00",
+  "lease_until": "2026-09-07T10:39:37.092+08:00",
   "main_base_sha": "57dcc7d61c59622894455cb20527ada28859e519",
   "owner": "2026-09-07 A/H候选核验修复",
   "pending_increment": [],
   "published_commit": null,
   "rules_blob_sha": "521c79ee9cf9a378cd8c56fd299d2f0cb43baf45",
   "run_id": "ah-fix-20260907-20260907020752",
-  "source_cutoff": "2026-09-07T10:07:52.616+08:00",
+  "source_cutoff": "2026-09-07T10:14:37.092+08:00",
   "stage_timings": {
     "candidate_reconciliation_completed_at": "2026-09-07T08:55:00+08:00",
     "external_collection_completed_at": "2026-09-07T08:50:00+08:00",
