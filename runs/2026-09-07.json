@@ -95,7 +95,7 @@
     },
     "candidate_fix": {
       "status": "finalized",
-      "checked_at": "2026-09-07T10:31:00+08:00",
+      "checked_at": "2026-09-07T10:40:00+08:00",
       "candidate_pending": 0,
       "verification_status": {
         "AMEC": "verified",
@@ -116,11 +116,11 @@
         "AMEC": {
           "decision": "include",
           "security": "688012.SH",
-          "quote_at": "2026-09-07T10:10:29+08:00",
-          "price_cny": 345,
-          "intraday_pct": 2.86,
+          "quote_at": "2026-09-07T10:37:35+08:00",
+          "price_cny": 346.26,
+          "intraday_pct": 3.23,
           "market_cap_cny_b": 321.28,
-          "pe_ttm_direct": 78.66,
+          "pe_ttm_direct": 78.95,
           "net_income_ttm_cny_b": 4.231,
           "latest_interim_attributable_profit_cny_b": 2.83,
           "prior_5_session_close": {
@@ -135,7 +135,7 @@
           "perf_20_session_pct": -8.77,
           "benchmark": {
             "name": "Shanghai Composite",
-            "at": "2026-09-07T10:07:25+08:00",
+            "at": "2026-09-07T10:28:30+08:00",
             "pct": -0.04
           },
           "event_balance": "H1 growth strong; about CNY953m investment gains reduce earnings-quality purity.",
@@ -148,7 +148,9 @@
           "terminal_close": {
             "date": "2026-09-04",
             "price_cny": 335.42
-          }
+          },
+          "trigger_status": "met_as_of_10:37_quote; post-submission current status requires confirmation",
+          "synchrony_note": "Candidate and index observations are 9 minutes apart; no exact contemporaneous relative-strength spread calculated."
         },
         "Huaneng": {
           "decision": "exclude",
@@ -258,11 +260,11 @@
         "Bilibili": {
           "decision": "include",
           "security": "09626.HK",
-          "quote_at": "2026-09-07T09:52:27+08:00",
-          "price_hkd": 123.1,
-          "intraday_pct": 1.4,
-          "market_cap_hkd_b": 51.57,
-          "pe_ttm_direct": 31.31,
+          "quote_at": "2026-09-07T10:19:13+08:00",
+          "price_hkd": 123.5,
+          "intraday_pct": 1.73,
+          "market_cap_hkd_b": 51.73,
+          "pe_ttm_direct": 31.41,
           "net_income_ttm_cny_b": 1.537,
           "latest_interim_net_profit_cny_m": 541.1,
           "prior_5_session_close": {
@@ -277,8 +279,8 @@
           "perf_20_session_pct": -15.99,
           "benchmark": {
             "name": "Hang Seng Index",
-            "at": "2026-09-07T10:14:54+08:00",
-            "pct": -0.8
+            "at": "2026-09-07T10:28:44+08:00",
+            "pct": -0.9
           },
           "event_balance": "US$700m convertible and Tencent participation improve funding; concurrent placement creates dilution while planned repurchases offset part of supply.",
           "sources": [
@@ -292,7 +294,9 @@
           "terminal_close": {
             "date": "2026-09-04",
             "price_hkd": 121.4
-          }
+          },
+          "trigger_status": "met_as_of_10:19_quote; post-submission current status requires confirmation",
+          "synchrony_note": "Candidate and index observations are about 10 minutes apart; no exact contemporaneous relative-strength spread calculated."
         },
         "CNOOC": {
           "decision": "exclude",
@@ -363,19 +367,24 @@
           "at": "2026-09-07T10:31:00+08:00",
           "issue": "Prior draft mislabeled returns from 2026-09-07 intraday price to 2026-08-28/2026-08-07 as 5/20 sessions.",
           "resolution": "Recomputed all intervals through 2026-09-04 close; retained 2026-09-07 intraday move as separate counter-evidence."
+        },
+        {
+          "at": "2026-09-07T10:40:00+08:00",
+          "issue": "Prior draft used non-synchronized candidate/index observations and retained a 10:15 update time after later evidence correction.",
+          "resolution": "Final candidate prices rechecked; quote-time trigger language used; exact relative-strength spreads removed; publication time advanced to 10:40 CST."
         }
       ]
     }
   },
-  "heartbeat_at": "2026-09-07T10:31:00+08:00",
-  "lease_until": "2026-09-07T10:56:00+08:00",
-  "main_base_sha": "57dcc7d61c59622894455cb20527ada28859e519",
+  "heartbeat_at": "2026-09-07T10:40:00+08:00",
+  "lease_until": "2026-09-07T11:05:00+08:00",
+  "main_base_sha": "3c464c3e2feee978e6f72f8ae249e9f6741e3792",
   "owner": "2026-09-07 A/H候选核验修复",
   "pending_increment": [],
   "published_commit": null,
   "rules_blob_sha": "521c79ee9cf9a378cd8c56fd299d2f0cb43baf45",
   "run_id": "ah-fix-20260907-20260907020752",
-  "source_cutoff": "2026-09-07T10:31:00+08:00",
+  "source_cutoff": "2026-09-07T10:40:00+08:00",
   "status": "running",
   "prior_publication": {
     "status": "superseded_for_candidate_fix",
@@ -428,7 +437,7 @@
     ]
   },
   "repair_stage_timings": {
-    "candidate_evidence_finalized_at": "2026-09-07T10:31:00+08:00",
+    "candidate_evidence_finalized_at": "2026-09-07T10:40:00+08:00",
     "prepublish_validation_completed_at": null,
     "main_published_at": null,
     "deployment_verified_at": null
