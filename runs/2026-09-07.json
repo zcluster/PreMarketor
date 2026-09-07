@@ -95,7 +95,7 @@
     },
     "candidate_fix": {
       "status": "finalized",
-      "checked_at": "2026-09-07T10:25:00+08:00",
+      "checked_at": "2026-09-07T10:31:00+08:00",
       "candidate_pending": 0,
       "verification_status": {
         "AMEC": "verified",
@@ -108,7 +108,8 @@
       },
       "methodology_notes": [
         "Market cap, direct PE_TTM, attributable-profit figures and prices retain their source timestamps; no cross-currency or mixed-time recomputed PE was used.",
-        "5/20-session returns use exact trading-session closes from 2026-08-28 and 2026-08-07 versus the 2026-09-07 intraday verification price.",
+        "5/20-session returns use the 2026-09-04 close as endpoint versus 2026-08-28 and 2026-08-07 closes. September 7 intraday moves are reported separately and are not folded into interval returns.",
+        "A-share and Hong Kong daily series were checked separately; both show the relevant session endpoints, with no assumed cross-market holiday substitution.",
         "The prior theme_reconciliation exclusion list is preserved only under prior_publication and is not current acceptance evidence."
       ],
       "candidates": {
@@ -130,8 +131,8 @@
             "date": "2026-08-07",
             "price_cny": 367.65
           },
-          "perf_5_session_pct": -5.99,
-          "perf_20_session_pct": -6.16,
+          "perf_5_session_pct": -8.6,
+          "perf_20_session_pct": -8.77,
           "benchmark": {
             "name": "Shanghai Composite",
             "at": "2026-09-07T10:07:25+08:00",
@@ -143,7 +144,11 @@
             "https://stockanalysis.com/quote/sha/688012/",
             "https://stockanalysis.com/quote/sha/688012/financials/",
             "https://stockanalysis.com/quote/sha/688012/history/"
-          ]
+          ],
+          "terminal_close": {
+            "date": "2026-09-04",
+            "price_cny": 335.42
+          }
         },
         "Huaneng": {
           "decision": "exclude",
@@ -163,15 +168,20 @@
             "date": "2026-08-07",
             "price_cny": 6.99
           },
-          "perf_5_session_pct": 0.59,
-          "perf_20_session_pct": -2.43,
+          "perf_5_session_pct": 1.62,
+          "perf_20_session_pct": -1.43,
           "reason": "Current negative reaction and weaker interim profit were not reversed.",
           "sources": [
             "https://www.google.com/finance/quote/600011:SHA",
             "https://stockanalysis.com/quote/sha/600011/",
             "https://stockanalysis.com/quote/sha/600011/history/",
             "https://www.hpi.com.cn/sites/english/announcementh/publish.aspx"
-          ]
+          ],
+          "terminal_close": {
+            "date": "2026-09-04",
+            "price_cny": 6.89,
+            "source_note": "StockAnalysis delayed closing snapshot"
+          }
         },
         "ICBC": {
           "decision": "exclude",
@@ -197,8 +207,8 @@
             "date": "2026-08-07",
             "price_cny": 7.53
           },
-          "perf_5_session_pct": 2.16,
-          "perf_20_session_pct": 6.64,
+          "perf_5_session_pct": 3.44,
+          "perf_20_session_pct": 7.97,
           "reason": "Recapitalization supports CET1 but creates dilution/supply; current decline lacked reversal.",
           "consistency_note": "Direct PE retained; market cap and CNY profit were not divided because share-class coverage and timestamps differ.",
           "sources": [
@@ -207,7 +217,11 @@
             "https://stockanalysis.com/quote/sha/601398/history/",
             "https://www.icbc-ltd.com/en/column/1438058343653851171.html",
             "https://www.reuters.com/world/asia-pacific/two-major-chinese-state-banks-announce-39-bln-capital-raising-plans-2026-09-06/"
-          ]
+          ],
+          "terminal_close": {
+            "date": "2026-09-04",
+            "price_cny": 8.13
+          }
         },
         "ABC": {
           "decision": "exclude",
@@ -227,15 +241,19 @@
             "date": "2026-08-07",
             "price_cny": 6.47
           },
-          "perf_5_session_pct": 0.88,
-          "perf_20_session_pct": 5.87,
+          "perf_5_session_pct": 2.5,
+          "perf_20_session_pct": 7.57,
           "reason": "Capital support positive but current selloff lacked reversal.",
           "sources": [
             "https://www.google.com/finance/quote/601288:SHA",
             "https://stockanalysis.com/quote/sha/601288/",
             "https://stockanalysis.com/quote/sha/601288/history/",
             "https://www.reuters.com/world/asia-pacific/two-major-chinese-state-banks-announce-39-bln-capital-raising-plans-2026-09-06/"
-          ]
+          ],
+          "terminal_close": {
+            "date": "2026-09-04",
+            "price_cny": 6.96
+          }
         },
         "Bilibili": {
           "decision": "include",
@@ -255,8 +273,8 @@
             "date": "2026-08-07",
             "price_hkd": 144.5
           },
-          "perf_5_session_pct": -6.6,
-          "perf_20_session_pct": -14.81,
+          "perf_5_session_pct": -7.89,
+          "perf_20_session_pct": -15.99,
           "benchmark": {
             "name": "Hang Seng Index",
             "at": "2026-09-07T10:14:54+08:00",
@@ -270,7 +288,11 @@
             "https://stockanalysis.com/quote/hkg/9626/history/",
             "https://ir.bilibili.com/media/ywxkb3pf/bilibili-inc-announces-second-quarter-2026-financial-results.pdf",
             "https://www.sec.gov/Archives/edgar/data/1723690/000119312526371261/d434015dex991.htm"
-          ]
+          ],
+          "terminal_close": {
+            "date": "2026-09-04",
+            "price_hkd": 121.4
+          }
         },
         "CNOOC": {
           "decision": "exclude",
@@ -293,8 +315,8 @@
             "date": "2026-08-07",
             "price_hkd": 23.26
           },
-          "perf_5_session_pct": -2.75,
-          "perf_20_session_pct": 6.36,
+          "perf_5_session_pct": -1.49,
+          "perf_20_session_pct": 7.74,
           "reason": "Current price weakness did not confirm the oil-risk catalyst.",
           "consistency_note": "HKD market cap and CNY profit were not divided; direct reported PE used.",
           "sources": [
@@ -302,7 +324,11 @@
             "https://stockanalysis.com/quote/hkg/0883/",
             "https://stockanalysis.com/quote/hkg/0883/history/",
             "https://www.cnoocltd.com/english/presscenter/pressreleases/2026/202608/t20260826_122439.html"
-          ]
+          ],
+          "terminal_close": {
+            "date": "2026-09-04",
+            "price_hkd": 25.06
+          }
         },
         "YourBest": {
           "decision": "exclude_hard_gate",
@@ -331,18 +357,25 @@
           "at": "2026-09-07T10:14:37.092+08:00",
           "result": "HTTP 429 on open; indexed rows/summary available"
         }
+      ],
+      "correction_log": [
+        {
+          "at": "2026-09-07T10:31:00+08:00",
+          "issue": "Prior draft mislabeled returns from 2026-09-07 intraday price to 2026-08-28/2026-08-07 as 5/20 sessions.",
+          "resolution": "Recomputed all intervals through 2026-09-04 close; retained 2026-09-07 intraday move as separate counter-evidence."
+        }
       ]
     }
   },
-  "heartbeat_at": "2026-09-07T10:25:00+08:00",
-  "lease_until": "2026-09-07T10:50:00+08:00",
+  "heartbeat_at": "2026-09-07T10:31:00+08:00",
+  "lease_until": "2026-09-07T10:56:00+08:00",
   "main_base_sha": "57dcc7d61c59622894455cb20527ada28859e519",
   "owner": "2026-09-07 A/H候选核验修复",
   "pending_increment": [],
   "published_commit": null,
   "rules_blob_sha": "521c79ee9cf9a378cd8c56fd299d2f0cb43baf45",
   "run_id": "ah-fix-20260907-20260907020752",
-  "source_cutoff": "2026-09-07T10:25:00+08:00",
+  "source_cutoff": "2026-09-07T10:31:00+08:00",
   "status": "running",
   "prior_publication": {
     "status": "superseded_for_candidate_fix",
@@ -395,7 +428,7 @@
     ]
   },
   "repair_stage_timings": {
-    "candidate_evidence_finalized_at": "2026-09-07T10:25:00+08:00",
+    "candidate_evidence_finalized_at": "2026-09-07T10:31:00+08:00",
     "prepublish_validation_completed_at": null,
     "main_published_at": null,
     "deployment_verified_at": null
