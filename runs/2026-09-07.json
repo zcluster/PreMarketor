@@ -376,16 +376,16 @@
       ]
     }
   },
-  "heartbeat_at": "2026-09-07T10:40:00+08:00",
-  "lease_until": "2026-09-07T11:05:00+08:00",
+  "heartbeat_at": "2026-09-07T10:47:00+08:00",
+  "lease_until": null,
   "main_base_sha": "3c464c3e2feee978e6f72f8ae249e9f6741e3792",
   "owner": "2026-09-07 A/H候选核验修复",
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "a72f221f9e8935d7bd4d02377d1fcec33d8d44d5",
   "rules_blob_sha": "521c79ee9cf9a378cd8c56fd299d2f0cb43baf45",
   "run_id": "ah-fix-20260907-20260907020752",
   "source_cutoff": "2026-09-07T10:40:00+08:00",
-  "status": "running",
+  "status": "published",
   "prior_publication": {
     "status": "superseded_for_candidate_fix",
     "stage_timings": {
@@ -438,8 +438,34 @@
   },
   "repair_stage_timings": {
     "candidate_evidence_finalized_at": "2026-09-07T10:40:00+08:00",
-    "prepublish_validation_completed_at": null,
-    "main_published_at": null,
-    "deployment_verified_at": null
+    "prepublish_validation_completed_at": "2026-09-07T10:40:00+08:00",
+    "main_published_at": "2026-09-07T10:44:00+08:00",
+    "deployment_verified_at": "2026-09-07T10:47:00+08:00",
+    "completed_at": "2026-09-07T10:47:00+08:00"
+  },
+  "production_validation": {
+    "verified_at": "2026-09-07T10:47:00+08:00",
+    "homepage": {
+      "url": "https://premarketor.com/",
+      "time_cst": "2026-09-07 10:40 CST",
+      "zh_cards": 2,
+      "en_cards": 2,
+      "empty": false,
+      "quote_time_language": true
+    },
+    "archive": {
+      "url": "https://premarketor.com/history/?date=2026-09-07",
+      "time_cst": "2026-09-07 10:40 CST",
+      "zh_cards": 2,
+      "empty": false,
+      "en_data_present": true,
+      "en_rendered": false,
+      "limitation": "Existing history/index.html renderEntry uses entry.html only and exposes no language switch; scripts/layout were outside authorized change scope."
+    },
+    "remote_readback": {
+      "index_blob": "f6f7817e2b2635b1c0db8356880b762009f51473",
+      "history_blob": "a521389895ebb9a8a8287760010e5d229e2153ab",
+      "manifest_blob": "df89191eef3d235dbacb04b97d0a168b396d9f16"
+    }
   }
 }
