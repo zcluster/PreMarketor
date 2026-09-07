@@ -48,43 +48,6 @@
       "pending": 0,
       "validation": "ok"
     },
-    "theme_reconciliation": [
-      {
-        "candidate": "AMEC 688012",
-        "decision": "exclude",
-        "reason": "no synchronized PE_TTM and 5/20-day price verification",
-        "source": "Moomoo industry rank 1 +4.89%, AEHR +13.10%",
-        "theme": "Semiconductor Equipment & Materials"
-      },
-      {
-        "candidate": "Huaneng Power 600011/00902",
-        "decision": "exclude",
-        "reason": "no synchronized market-cap, attributable-profit TTM, PE and 5/20-day price set",
-        "source": "Moomoo industry rank 2 +4.50%, NRG +6.42%",
-        "theme": "Independent Power Producers"
-      },
-      {
-        "candidate": "ICBC 601398/01398; ABC 601288/01288",
-        "decision": "exclude",
-        "reason": "final pre-submit price and 5/20-day counter-evidence unavailable",
-        "source": "MOF-led capital support and ICBC/ABC filings",
-        "theme": "State financial recapitalization"
-      },
-      {
-        "candidate": "Bilibili 09626",
-        "decision": "exclude",
-        "reason": "convertible dilution and profitability screen incomplete",
-        "source": "HKEX event 12320978",
-        "theme": "Bilibili funding and buy-back"
-      },
-      {
-        "candidate": "CNOOC 00883",
-        "decision": "exclude",
-        "reason": "current price and 5/20-day reaction not verified",
-        "source": "Reuters/AP 2026-09-07",
-        "theme": "Hormuz/oil risk"
-      }
-    ],
     "us_sector": {
       "concept": {
         "futunn_status": "partial_missing_ticker_and_breadth",
@@ -131,93 +94,225 @@
       }
     },
     "candidate_fix": {
-      "status": "collecting",
-      "checked_at": "2026-09-07T10:14:37.092+08:00",
+      "status": "finalized",
+      "checked_at": "2026-09-07T10:25:00+08:00",
+      "candidate_pending": 0,
       "verification_status": {
-        "AMEC": "pending",
-        "Huaneng": "pending",
-        "ICBC": "pending",
-        "ABC": "pending",
-        "Bilibili": "pending",
-        "CNOOC": "pending",
-        "YourBest": "pending"
+        "AMEC": "verified",
+        "Huaneng": "verified",
+        "ICBC": "verified",
+        "ABC": "verified",
+        "Bilibili": "verified",
+        "CNOOC": "verified",
+        "YourBest": "verified"
       },
+      "methodology_notes": [
+        "Market cap, direct PE_TTM, attributable-profit figures and prices retain their source timestamps; no cross-currency or mixed-time recomputed PE was used.",
+        "5/20-session returns use exact trading-session closes from 2026-08-28 and 2026-08-07 versus the 2026-09-07 intraday verification price.",
+        "The prior theme_reconciliation exclusion list is preserved only under prior_publication and is not current acceptance evidence."
+      ],
       "candidates": {
         "AMEC": {
+          "decision": "include",
+          "security": "688012.SH",
+          "quote_at": "2026-09-07T10:10:29+08:00",
+          "price_cny": 345,
+          "intraday_pct": 2.86,
           "market_cap_cny_b": 321.28,
-          "pe_ttm": 78.09,
-          "price_cny": 342.6,
-          "intraday_pct": 2.14,
-          "perf_5d_pct": -4.93,
-          "perf_20d_pct": null,
+          "pe_ttm_direct": 78.66,
+          "net_income_ttm_cny_b": 4.231,
+          "latest_interim_attributable_profit_cny_b": 2.83,
+          "prior_5_session_close": {
+            "date": "2026-08-28",
+            "price_cny": 367
+          },
+          "prior_20_session_close": {
+            "date": "2026-08-07",
+            "price_cny": 367.65
+          },
+          "perf_5_session_pct": -5.99,
+          "perf_20_session_pct": -6.16,
+          "benchmark": {
+            "name": "Shanghai Composite",
+            "at": "2026-09-07T10:07:25+08:00",
+            "pct": -0.04
+          },
+          "event_balance": "H1 growth strong; about CNY953m investment gains reduce earnings-quality purity.",
           "sources": [
             "https://www.google.com/finance/quote/688012:SHA",
-            "https://www.wsj.com/market-data/quotes/CN/688012"
-          ],
-          "remaining": "20-trading-day return and original-filing pros/cons"
+            "https://stockanalysis.com/quote/sha/688012/",
+            "https://stockanalysis.com/quote/sha/688012/financials/",
+            "https://stockanalysis.com/quote/sha/688012/history/"
+          ]
+        },
+        "Huaneng": {
+          "decision": "exclude",
+          "security": "600011.SH/00902.HK",
+          "quote_at": "2026-09-07T10:11:34+08:00",
+          "price_cny": 6.82,
+          "intraday_pct": -0.58,
+          "market_cap_cny_b": 98.08,
+          "pe_ttm_direct": 11.56,
+          "net_income_ttm_cny_b": 9.26,
+          "latest_interim_attributable_profit_cny_b": 6.59,
+          "prior_5_session_close": {
+            "date": "2026-08-28",
+            "price_cny": 6.78
+          },
+          "prior_20_session_close": {
+            "date": "2026-08-07",
+            "price_cny": 6.99
+          },
+          "perf_5_session_pct": 0.59,
+          "perf_20_session_pct": -2.43,
+          "reason": "Current negative reaction and weaker interim profit were not reversed.",
+          "sources": [
+            "https://www.google.com/finance/quote/600011:SHA",
+            "https://stockanalysis.com/quote/sha/600011/",
+            "https://stockanalysis.com/quote/sha/600011/history/",
+            "https://www.hpi.com.cn/sites/english/announcementh/publish.aspx"
+          ]
         },
         "ICBC": {
+          "decision": "exclude",
+          "security": "601398.SH/01398.HK",
+          "quote_at": "2026-09-07T10:11:35+08:00",
+          "price_cny": 8.03,
+          "intraday_pct": -1.23,
           "market_cap_cny_t": 2.76,
-          "pe_ttm": 8.05,
-          "net_income_ttm_cny_b": 361.63,
-          "price_cny": 8.12,
-          "prior_5d_close_cny": 7.86,
-          "prior_20d_close_cny": 7.53,
-          "perf_5d_pct": 3.31,
-          "perf_20d_pct": 7.84,
+          "pe_ttm_direct": {
+            "value": 7.94,
+            "source": "Google Finance live snapshot"
+          },
+          "net_income_ttm_cny_b": {
+            "value": 361.63,
+            "source": "StockAnalysis separate snapshot"
+          },
+          "latest_interim_attributable_profit_cny_b": 173.682,
+          "prior_5_session_close": {
+            "date": "2026-08-28",
+            "price_cny": 7.86
+          },
+          "prior_20_session_close": {
+            "date": "2026-08-07",
+            "price_cny": 7.53
+          },
+          "perf_5_session_pct": 2.16,
+          "perf_20_session_pct": 6.64,
+          "reason": "Recapitalization supports CET1 but creates dilution/supply; current decline lacked reversal.",
+          "consistency_note": "Direct PE retained; market cap and CNY profit were not divided because share-class coverage and timestamps differ.",
           "sources": [
             "https://www.google.com/finance/quote/601398:SHA",
             "https://stockanalysis.com/quote/sha/601398/",
-            "https://finance.yahoo.com/quote/601398.SS/history/"
-          ],
-          "remaining": "original interim filing and offering pros/cons"
+            "https://stockanalysis.com/quote/sha/601398/history/",
+            "https://www.icbc-ltd.com/en/column/1438058343653851171.html",
+            "https://www.reuters.com/world/asia-pacific/two-major-chinese-state-banks-announce-39-bln-capital-raising-plans-2026-09-06/"
+          ]
         },
         "ABC": {
+          "decision": "exclude",
+          "security": "601288.SH/01288.HK",
+          "quote_at": "2026-09-07T10:11:26+08:00",
+          "price_cny": 6.85,
+          "intraday_pct": -1.58,
           "market_cap_cny_t": 2.39,
-          "pe_ttm": 8.61,
-          "price_cny": 6.97,
-          "prior_5d_close_cny": 6.79,
-          "prior_20d_close_cny": 6.47,
-          "perf_5d_pct": 2.65,
-          "perf_20d_pct": 7.73,
+          "pe_ttm_direct": 8.51,
+          "net_income_ttm_cny_b": 283.21,
+          "latest_interim_profit_status": "positive; attributable figure not used in page because source presentation differed",
+          "prior_5_session_close": {
+            "date": "2026-08-28",
+            "price_cny": 6.79
+          },
+          "prior_20_session_close": {
+            "date": "2026-08-07",
+            "price_cny": 6.47
+          },
+          "perf_5_session_pct": 0.88,
+          "perf_20_session_pct": 5.87,
+          "reason": "Capital support positive but current selloff lacked reversal.",
           "sources": [
             "https://www.google.com/finance/quote/601288:SHA",
-            "https://finance.yahoo.com/quote/601288.SS/history/"
-          ],
-          "remaining": "TTM attributable profit and original interim/offering filing pros/cons"
+            "https://stockanalysis.com/quote/sha/601288/",
+            "https://stockanalysis.com/quote/sha/601288/history/",
+            "https://www.reuters.com/world/asia-pacific/two-major-chinese-state-banks-announce-39-bln-capital-raising-plans-2026-09-06/"
+          ]
+        },
+        "Bilibili": {
+          "decision": "include",
+          "security": "09626.HK",
+          "quote_at": "2026-09-07T09:52:27+08:00",
+          "price_hkd": 123.1,
+          "intraday_pct": 1.4,
+          "market_cap_hkd_b": 51.57,
+          "pe_ttm_direct": 31.31,
+          "net_income_ttm_cny_b": 1.537,
+          "latest_interim_net_profit_cny_m": 541.1,
+          "prior_5_session_close": {
+            "date": "2026-08-28",
+            "price_hkd": 131.8
+          },
+          "prior_20_session_close": {
+            "date": "2026-08-07",
+            "price_hkd": 144.5
+          },
+          "perf_5_session_pct": -6.6,
+          "perf_20_session_pct": -14.81,
+          "benchmark": {
+            "name": "Hang Seng Index",
+            "at": "2026-09-07T10:14:54+08:00",
+            "pct": -0.8
+          },
+          "event_balance": "US$700m convertible and Tencent participation improve funding; concurrent placement creates dilution while planned repurchases offset part of supply.",
+          "sources": [
+            "https://www.google.com/finance/quote/9626:HKG",
+            "https://stockanalysis.com/quote/hkg/9626/",
+            "https://stockanalysis.com/quote/hkg/9626/financials/",
+            "https://stockanalysis.com/quote/hkg/9626/history/",
+            "https://ir.bilibili.com/media/ywxkb3pf/bilibili-inc-announces-second-quarter-2026-financial-results.pdf",
+            "https://www.sec.gov/Archives/edgar/data/1723690/000119312526371261/d434015dex991.htm"
+          ]
         },
         "CNOOC": {
+          "decision": "exclude",
+          "security": "00883.HK",
+          "quote_at": "2026-09-07T10:02:53+08:00",
+          "price_hkd": 24.74,
+          "intraday_pct": -1.28,
           "market_cap_hkd_t": 1.22,
-          "pe_ttm": 8.28,
-          "net_income_ttm_cny_b": 159.74,
-          "price_hkd": 25.16,
-          "prior_5d_close_hkd": 25.44,
-          "prior_20d_close_hkd": 23.26,
-          "perf_5d_pct": -1.1,
-          "perf_20d_pct": 8.17,
+          "pe_ttm_direct": 8.25,
+          "net_income_ttm_cny_b": {
+            "value": 159.74,
+            "source": "StockAnalysis separate financial snapshot"
+          },
+          "latest_interim_attributable_profit_cny_b": 85.8,
+          "prior_5_session_close": {
+            "date": "2026-08-28",
+            "price_hkd": 25.44
+          },
+          "prior_20_session_close": {
+            "date": "2026-08-07",
+            "price_hkd": 23.26
+          },
+          "perf_5_session_pct": -2.75,
+          "perf_20_session_pct": 6.36,
+          "reason": "Current price weakness did not confirm the oil-risk catalyst.",
+          "consistency_note": "HKD market cap and CNY profit were not divided; direct reported PE used.",
           "sources": [
             "https://www.google.com/finance/quote/0883:HKG",
             "https://stockanalysis.com/quote/hkg/0883/",
-            "https://finance.yahoo.com/quote/0883.HK/history/",
-            "https://www.reuters.com/markets/companies/0883.HK/"
-          ],
-          "remaining": "original interim filing pros/cons"
-        },
-        "Huaneng": {
-          "remaining": "market cap/PE/TTM profit/5d/20d/current reaction"
-        },
-        "Bilibili": {
-          "latest_interim_net_profit_cny_m": 541.1,
-          "event": "US$700m convertible; Tencent US$200m; concurrent repurchase US$300m",
-          "sources": [
-            "https://www.hkexnews.hk/",
-            "https://www.sl886.com/stock/09626"
-          ],
-          "remaining": "market cap/PE_TTM/TTM attributable profit/5d/20d/current reaction"
+            "https://stockanalysis.com/quote/hkg/0883/history/",
+            "https://www.cnoocltd.com/english/presscenter/pressreleases/2026/202608/t20260826_122439.html"
+          ]
         },
         "YourBest": {
-          "event": "control transfer; agreement price below pre-suspension close; resumption",
-          "remaining": "market cap hard-screen confirmation"
+          "decision": "exclude_hard_gate",
+          "security": "301266.SZ",
+          "market_cap_cny_b": 3.57,
+          "reason": "Market capitalization below CNY10bn minimum; no downstream recommendation checks required.",
+          "sources": [
+            "https://www.google.com/finance/quote/301266:SHE",
+            "https://stockanalysis.com/quote/she/301266/"
+          ]
         }
       },
       "source_attempts": [
@@ -239,24 +334,70 @@
       ]
     }
   },
-  "heartbeat_at": "2026-09-07T10:14:37.092+08:00",
-  "lease_until": "2026-09-07T10:39:37.092+08:00",
+  "heartbeat_at": "2026-09-07T10:25:00+08:00",
+  "lease_until": "2026-09-07T10:50:00+08:00",
   "main_base_sha": "57dcc7d61c59622894455cb20527ada28859e519",
   "owner": "2026-09-07 A/H候选核验修复",
   "pending_increment": [],
   "published_commit": null,
   "rules_blob_sha": "521c79ee9cf9a378cd8c56fd299d2f0cb43baf45",
   "run_id": "ah-fix-20260907-20260907020752",
-  "source_cutoff": "2026-09-07T10:14:37.092+08:00",
-  "stage_timings": {
-    "candidate_reconciliation_completed_at": "2026-09-07T08:55:00+08:00",
-    "external_collection_completed_at": "2026-09-07T08:50:00+08:00",
-    "generation_translation_validation_completed_at": "2026-09-07T08:58:00+08:00",
-    "rules_and_baseline_completed_at": "2026-09-07T08:40:30+08:00",
-    "rules_and_baseline_started_at": "2026-09-07T08:38:01+08:00",
-    "main_published_at": "2026-09-07T09:00:00+08:00",
-    "deployment_verified_at": "2026-09-07T09:03:00+08:00",
-    "completed_at": "2026-09-07T09:03:00+08:00"
+  "source_cutoff": "2026-09-07T10:25:00+08:00",
+  "status": "running",
+  "prior_publication": {
+    "status": "superseded_for_candidate_fix",
+    "stage_timings": {
+      "candidate_reconciliation_completed_at": "2026-09-07T08:55:00+08:00",
+      "external_collection_completed_at": "2026-09-07T08:50:00+08:00",
+      "generation_translation_validation_completed_at": "2026-09-07T08:58:00+08:00",
+      "rules_and_baseline_completed_at": "2026-09-07T08:40:30+08:00",
+      "rules_and_baseline_started_at": "2026-09-07T08:38:01+08:00",
+      "main_published_at": "2026-09-07T09:00:00+08:00",
+      "deployment_verified_at": "2026-09-07T09:03:00+08:00",
+      "completed_at": "2026-09-07T09:03:00+08:00"
+    },
+    "theme_reconciliation": [
+      {
+        "candidate": "AMEC 688012",
+        "decision": "exclude",
+        "reason": "no synchronized PE_TTM and 5/20-day price verification",
+        "source": "Moomoo industry rank 1 +4.89%, AEHR +13.10%",
+        "theme": "Semiconductor Equipment & Materials"
+      },
+      {
+        "candidate": "Huaneng Power 600011/00902",
+        "decision": "exclude",
+        "reason": "no synchronized market-cap, attributable-profit TTM, PE and 5/20-day price set",
+        "source": "Moomoo industry rank 2 +4.50%, NRG +6.42%",
+        "theme": "Independent Power Producers"
+      },
+      {
+        "candidate": "ICBC 601398/01398; ABC 601288/01288",
+        "decision": "exclude",
+        "reason": "final pre-submit price and 5/20-day counter-evidence unavailable",
+        "source": "MOF-led capital support and ICBC/ABC filings",
+        "theme": "State financial recapitalization"
+      },
+      {
+        "candidate": "Bilibili 09626",
+        "decision": "exclude",
+        "reason": "convertible dilution and profitability screen incomplete",
+        "source": "HKEX event 12320978",
+        "theme": "Bilibili funding and buy-back"
+      },
+      {
+        "candidate": "CNOOC 00883",
+        "decision": "exclude",
+        "reason": "current price and 5/20-day reaction not verified",
+        "source": "Reuters/AP 2026-09-07",
+        "theme": "Hormuz/oil risk"
+      }
+    ]
   },
-  "status": "running"
+  "repair_stage_timings": {
+    "candidate_evidence_finalized_at": "2026-09-07T10:25:00+08:00",
+    "prepublish_validation_completed_at": null,
+    "main_published_at": null,
+    "deployment_verified_at": null
+  }
 }
