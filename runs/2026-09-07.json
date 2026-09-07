@@ -129,17 +129,29 @@
         "empty_state": false,
         "html_en_present_in_json": true
       }
+    },
+    "candidate_fix": {
+      "status": "collecting",
+      "verification_status": {
+        "AMEC": "pending",
+        "Huaneng": "pending",
+        "ICBC": "pending",
+        "ABC": "pending",
+        "Bilibili": "pending",
+        "CNOOC": "pending",
+        "YourBest": "pending"
+      }
     }
   },
-  "heartbeat_at": "2026-09-07T09:03:00+08:00",
-  "lease_until": null,
-  "main_base_sha": "2b1012aca20ad2ff20a4e1396962c4c7ed695d3b",
-  "owner": "发布 MarketAhead A/H 早报",
+  "heartbeat_at": "2026-09-07T10:07:52.616+08:00",
+  "lease_until": "2026-09-07T10:25:52.616+08:00",
+  "main_base_sha": "57dcc7d61c59622894455cb20527ada28859e519",
+  "owner": "2026-09-07 A/H候选核验修复",
   "pending_increment": [],
-  "published_commit": "2a8019e9652a1c01c7a8c8fbb181b9a1064299e7",
-  "rules_blob_sha": "ebef6a86643323d21c330ef2f5de723529f1b0e9",
-  "run_id": "ah-0835-20260907003801",
-  "source_cutoff": "2026-09-07T08:59:00+08:00",
+  "published_commit": null,
+  "rules_blob_sha": "521c79ee9cf9a378cd8c56fd299d2f0cb43baf45",
+  "run_id": "ah-fix-20260907-20260907020752",
+  "source_cutoff": "2026-09-07T10:07:52.616+08:00",
   "stage_timings": {
     "candidate_reconciliation_completed_at": "2026-09-07T08:55:00+08:00",
     "external_collection_completed_at": "2026-09-07T08:50:00+08:00",
@@ -150,5 +162,5 @@
     "deployment_verified_at": "2026-09-07T09:03:00+08:00",
     "completed_at": "2026-09-07T09:03:00+08:00"
   },
-  "status": "published"
+  "status": "running"
 }
