@@ -1,40 +1,42 @@
 {
   "date": "2026-09-07",
   "evidence": {
-    "us_sector": {
-      "industry": {
-        "top5_status": "ok",
-        "page_count": 5,
-        "first_page_rows": 30,
-        "last_page_status": "failed_static_rows_after_current_page_assertion"
-      },
-      "concept": {
-        "futunn_status": "partial_missing_ticker_and_breadth",
-        "moomoo_fallback_status": "http_403_operations_too_frequent"
-      }
-    },
     "akshare": {
-      "status": "stale_degraded",
-      "fetched_at": "2026-09-04T13:42:50+08:00"
+      "fetched_at": "2026-09-04T13:42:50+08:00",
+      "status": "stale_degraded"
     },
     "hk_ledger": {
       "all_announcements": 300,
       "must_review": 41,
-      "status": "reviewing"
+      "included": 7,
+      "validation": "ok"
+    },
+    "us_sector": {
+      "concept": {
+        "futunn_status": "partial_missing_ticker_and_breadth",
+        "moomoo_fallback_status": "http_403_operations_too_frequent"
+      },
+      "industry": {
+        "first_page_rows": 30,
+        "last_page_status": "failed_static_rows_after_current_page_assertion",
+        "page_count": 5,
+        "top5_status": "ok"
+      }
     }
   },
-  "heartbeat_at": "2026-09-07T08:47:00+08:00",
-  "lease_until": "2026-09-07T08:57:00+08:00",
+  "heartbeat_at": "2026-09-07T08:50:00+08:00",
+  "lease_until": "2026-09-07T09:00:00+08:00",
   "main_base_sha": "2b1012aca20ad2ff20a4e1396962c4c7ed695d3b",
   "owner": "发布 MarketAhead A/H 早报",
   "pending_increment": [],
   "published_commit": null,
   "rules_blob_sha": "ebef6a86643323d21c330ef2f5de723529f1b0e9",
   "run_id": "ah-0835-20260907003801",
-  "source_cutoff": "2026-09-07T08:47:00+08:00",
+  "source_cutoff": "2026-09-07T08:50:00+08:00",
   "stage_timings": {
     "rules_and_baseline_completed_at": "2026-09-07T08:40:30+08:00",
-    "rules_and_baseline_started_at": "2026-09-07T08:38:01+08:00"
+    "rules_and_baseline_started_at": "2026-09-07T08:38:01+08:00",
+    "external_collection_completed_at": "2026-09-07T08:50:00+08:00"
   },
   "status": "running"
 }
