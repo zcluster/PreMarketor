@@ -98,35 +98,57 @@
       }
     },
     "validation": {
-      "marker_only": true,
-      "us_markers_preserved": true,
+      "ah_company_event_count": 6,
       "bilingual_dom_isomorphic": true,
-      "major_news_count": 11,
+      "candidate_pending": 0,
       "domestic_policy_count": 2,
       "domestic_tech_industry_count": 4,
-      "ah_company_event_count": 6,
-      "panel_mode": "industry_partial_5_rows; concept_failed_0_rows",
+      "history_render_simulation": true,
+      "major_news_count": 11,
+      "marker_only": true,
       "panel_failure_disclosed": true,
+      "panel_mode": "industry_partial_5_rows; concept_failed_0_rows",
       "stock_cards": 0,
-      "candidate_pending": 0,
-      "history_render_simulation": true
+      "us_markers_preserved": true
+    },
+    "verification": {
+      "remote_readback": true,
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "date": "2026-09-07",
+        "time": "2026-09-07 08:59 CST",
+        "chinese": true,
+        "english": true,
+        "empty_state": false,
+        "sector_degradation_disclosed": true
+      },
+      "history": {
+        "url": "https://premarketor.com/history/?date=2026-09-07",
+        "date": true,
+        "chinese": true,
+        "empty_state": false,
+        "html_en_present_in_json": true
+      }
     }
   },
-  "heartbeat_at": "2026-09-07T08:58:00+08:00",
-  "lease_until": "2026-09-07T09:08:00+08:00",
+  "heartbeat_at": "2026-09-07T09:03:00+08:00",
+  "lease_until": null,
   "main_base_sha": "2b1012aca20ad2ff20a4e1396962c4c7ed695d3b",
   "owner": "发布 MarketAhead A/H 早报",
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "2a8019e9652a1c01c7a8c8fbb181b9a1064299e7",
   "rules_blob_sha": "ebef6a86643323d21c330ef2f5de723529f1b0e9",
   "run_id": "ah-0835-20260907003801",
-  "source_cutoff": "2026-09-07T08:58:00+08:00",
+  "source_cutoff": "2026-09-07T08:59:00+08:00",
   "stage_timings": {
     "candidate_reconciliation_completed_at": "2026-09-07T08:55:00+08:00",
     "external_collection_completed_at": "2026-09-07T08:50:00+08:00",
+    "generation_translation_validation_completed_at": "2026-09-07T08:58:00+08:00",
     "rules_and_baseline_completed_at": "2026-09-07T08:40:30+08:00",
     "rules_and_baseline_started_at": "2026-09-07T08:38:01+08:00",
-    "generation_translation_validation_completed_at": "2026-09-07T08:58:00+08:00"
+    "main_published_at": "2026-09-07T09:00:00+08:00",
+    "deployment_verified_at": "2026-09-07T09:03:00+08:00",
+    "completed_at": "2026-09-07T09:03:00+08:00"
   },
-  "status": "running"
+  "status": "published"
 }
