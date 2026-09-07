@@ -5,22 +5,86 @@
       "fetched_at": "2026-09-04T13:42:50+08:00",
       "status": "stale_degraded"
     },
+    "domestic_reconciliation": [
+      {
+        "event": "RMB500bn 3-month outright reverse repo on 2026-09-07",
+        "source": "PBOC original notice",
+        "status": "included"
+      },
+      {
+        "event": "MOF-led capital support to eight institutions",
+        "source": "Securities Times/Reuters plus issuer filings",
+        "status": "included"
+      },
+      {
+        "event": "YourBest New Energy control transfer and resumption",
+        "source": "SSE/SZSE discovery and Securities Times",
+        "status": "included"
+      },
+      {
+        "event": "weekend A-share material filings",
+        "source": "CLS discovery",
+        "status": "covered; no additional higher-impact verified event"
+      },
+      {
+        "event": "300 announcements / 41 must-review",
+        "source": "HKEX full ledger",
+        "status": "validated"
+      }
+    ],
     "hk_ledger": {
-      "path": "runs/2026-09-07-hk-coverage-ledger.json.gz",
-      "format": "gzip-json",
       "all_announcements": 300,
-      "must_review": 41,
+      "format": "gzip-json",
       "included": 5,
-      "pending": 0,
-      "validation": "ok",
       "included_codes": [
         "00933",
         "00123",
         "09626",
         "01398",
         "01288"
-      ]
+      ],
+      "must_review": 41,
+      "path": "runs/2026-09-07-hk-coverage-ledger.json.gz",
+      "pending": 0,
+      "validation": "ok"
     },
+    "theme_reconciliation": [
+      {
+        "candidate": "AMEC 688012",
+        "decision": "exclude",
+        "reason": "no synchronized PE_TTM and 5/20-day price verification",
+        "source": "Moomoo industry rank 1 +4.89%, AEHR +13.10%",
+        "theme": "Semiconductor Equipment & Materials"
+      },
+      {
+        "candidate": "Huaneng Power 600011/00902",
+        "decision": "exclude",
+        "reason": "no synchronized market-cap, attributable-profit TTM, PE and 5/20-day price set",
+        "source": "Moomoo industry rank 2 +4.50%, NRG +6.42%",
+        "theme": "Independent Power Producers"
+      },
+      {
+        "candidate": "ICBC 601398/01398; ABC 601288/01288",
+        "decision": "exclude",
+        "reason": "final pre-submit price and 5/20-day counter-evidence unavailable",
+        "source": "MOF-led capital support and ICBC/ABC filings",
+        "theme": "State financial recapitalization"
+      },
+      {
+        "candidate": "Bilibili 09626",
+        "decision": "exclude",
+        "reason": "convertible dilution and profitability screen incomplete",
+        "source": "HKEX event 12320978",
+        "theme": "Bilibili funding and buy-back"
+      },
+      {
+        "candidate": "CNOOC 00883",
+        "decision": "exclude",
+        "reason": "current price and 5/20-day reaction not verified",
+        "source": "Reuters/AP 2026-09-07",
+        "theme": "Hormuz/oil risk"
+      }
+    ],
     "us_sector": {
       "concept": {
         "futunn_status": "partial_missing_ticker_and_breadth",
@@ -33,85 +97,36 @@
         "top5_status": "ok"
       }
     },
-    "theme_reconciliation": [
-      {
-        "theme": "Semiconductor Equipment & Materials",
-        "source": "Moomoo industry rank 1 +4.89%, AEHR +13.10%",
-        "candidate": "AMEC 688012",
-        "decision": "exclude",
-        "reason": "no synchronized PE_TTM and 5/20-day price verification"
-      },
-      {
-        "theme": "Independent Power Producers",
-        "source": "Moomoo industry rank 2 +4.50%, NRG +6.42%",
-        "candidate": "Huaneng Power 600011/00902",
-        "decision": "exclude",
-        "reason": "no synchronized market-cap, attributable-profit TTM, PE and 5/20-day price set"
-      },
-      {
-        "theme": "State financial recapitalization",
-        "source": "MOF-led capital support and ICBC/ABC filings",
-        "candidate": "ICBC 601398/01398; ABC 601288/01288",
-        "decision": "exclude",
-        "reason": "final pre-submit price and 5/20-day counter-evidence unavailable"
-      },
-      {
-        "theme": "Bilibili funding and buy-back",
-        "source": "HKEX event 12320978",
-        "candidate": "Bilibili 09626",
-        "decision": "exclude",
-        "reason": "convertible dilution and profitability screen incomplete"
-      },
-      {
-        "theme": "Hormuz/oil risk",
-        "source": "Reuters/AP 2026-09-07",
-        "candidate": "CNOOC 00883",
-        "decision": "exclude",
-        "reason": "current price and 5/20-day reaction not verified"
-      }
-    ],
-    "domestic_reconciliation": [
-      {
-        "source": "PBOC original notice",
-        "event": "RMB500bn 3-month outright reverse repo on 2026-09-07",
-        "status": "included"
-      },
-      {
-        "source": "Securities Times/Reuters plus issuer filings",
-        "event": "MOF-led capital support to eight institutions",
-        "status": "included"
-      },
-      {
-        "source": "SSE/SZSE discovery and Securities Times",
-        "event": "YourBest New Energy control transfer and resumption",
-        "status": "included"
-      },
-      {
-        "source": "CLS discovery",
-        "event": "weekend A-share material filings",
-        "status": "covered; no additional higher-impact verified event"
-      },
-      {
-        "source": "HKEX full ledger",
-        "event": "300 announcements / 41 must-review",
-        "status": "validated"
-      }
-    ]
+    "validation": {
+      "marker_only": true,
+      "us_markers_preserved": true,
+      "bilingual_dom_isomorphic": true,
+      "major_news_count": 11,
+      "domestic_policy_count": 2,
+      "domestic_tech_industry_count": 4,
+      "ah_company_event_count": 6,
+      "panel_mode": "industry_partial_5_rows; concept_failed_0_rows",
+      "panel_failure_disclosed": true,
+      "stock_cards": 0,
+      "candidate_pending": 0,
+      "history_render_simulation": true
+    }
   },
-  "heartbeat_at": "2026-09-07T08:55:00+08:00",
-  "lease_until": "2026-09-07T09:05:00+08:00",
+  "heartbeat_at": "2026-09-07T08:58:00+08:00",
+  "lease_until": "2026-09-07T09:08:00+08:00",
   "main_base_sha": "2b1012aca20ad2ff20a4e1396962c4c7ed695d3b",
   "owner": "发布 MarketAhead A/H 早报",
   "pending_increment": [],
   "published_commit": null,
   "rules_blob_sha": "ebef6a86643323d21c330ef2f5de723529f1b0e9",
   "run_id": "ah-0835-20260907003801",
-  "source_cutoff": "2026-09-07T08:55:00+08:00",
+  "source_cutoff": "2026-09-07T08:58:00+08:00",
   "stage_timings": {
+    "candidate_reconciliation_completed_at": "2026-09-07T08:55:00+08:00",
     "external_collection_completed_at": "2026-09-07T08:50:00+08:00",
     "rules_and_baseline_completed_at": "2026-09-07T08:40:30+08:00",
     "rules_and_baseline_started_at": "2026-09-07T08:38:01+08:00",
-    "candidate_reconciliation_completed_at": "2026-09-07T08:55:00+08:00"
+    "generation_translation_validation_completed_at": "2026-09-07T08:58:00+08:00"
   },
   "status": "running"
 }
