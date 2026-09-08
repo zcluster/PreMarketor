@@ -34,27 +34,14 @@
         "MIIT 15th Five-Year information/communications plan"
       ]
     },
-    "us_sector": {
-      "concepts": {
-        "error": "Futunn and one Moomoo fallback exposed names/returns only; representative ticker and breadth absent",
-        "status": "degraded",
-        "top5": 0
-      },
-      "industry": {
-        "bottom5": 0,
-        "error": "Moomoo pagination click did not change current-page assertion; stopped without scanning intermediate pages",
-        "status": "degraded",
-        "top5": 5
-      }
-    },
     "screening": {
-      "expected_candidates": 8,
-      "verified": 6,
-      "source_unavailable": 2,
-      "pending": 0,
-      "includes": 0,
+      "evidence_path": "runs/2026-09-08.json#evidence.screening_detail",
       "excludes": 8,
-      "evidence_path": "runs/2026-09-08.json#evidence.screening_detail"
+      "expected_candidates": 8,
+      "includes": 0,
+      "pending": 0,
+      "source_unavailable": 2,
+      "verified": 6
     },
     "screening_detail": {
       "candidates": [
@@ -231,10 +218,23 @@
       "inventory_source": "Moomoo industry Top 5, Futunn concept first screen, overnight policy/company-news recall, and HKEX full ledger for 2026-09-07 through 2026-09-08",
       "publication_at": "2026-09-08T09:03:00+08:00",
       "zero_reason": "source_unavailable"
+    },
+    "us_sector": {
+      "concepts": {
+        "error": "Futunn and one Moomoo fallback exposed names/returns only; representative ticker and breadth absent",
+        "status": "degraded",
+        "top5": 0
+      },
+      "industry": {
+        "bottom5": 0,
+        "error": "Moomoo pagination click did not change current-page assertion; stopped without scanning intermediate pages",
+        "status": "degraded",
+        "top5": 5
+      }
     }
   },
-  "heartbeat_at": "2026-09-08T08:57:50+08:00",
-  "lease_until": "2026-09-08T09:07:50+08:00",
+  "heartbeat_at": "2026-09-08T09:02:40+08:00",
+  "lease_until": "2026-09-08T09:12:40+08:00",
   "main_base_sha": "25595e0047e48469c1ea09fc077ed1a69144ff26",
   "owner": "发布 MarketAhead A/H 早报",
   "pending_increment": [],
@@ -243,11 +243,12 @@
   "run_id": "ah-20260908-20260908003630",
   "source_cutoff": null,
   "stage_timings": {
+    "candidate_screening_completed_at": "2026-09-08T08:57:50+08:00",
     "hk_ledger_started_at": "2026-09-08T08:38:59.253+08:00",
     "research_completed_at": "2026-09-08T08:50:35+08:00",
     "rules_and_baseline_completed_at": "2026-09-08T08:36:30.634+08:00",
     "rules_and_baseline_started_at": "2026-09-08T08:32:56+08:00",
-    "candidate_screening_completed_at": "2026-09-08T08:57:50+08:00"
+    "generation_started_at": "2026-09-08T09:02:40+08:00"
   },
   "status": "running"
 }
