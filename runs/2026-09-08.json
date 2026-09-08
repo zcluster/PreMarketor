@@ -13,8 +13,26 @@
       "futu_calendar": "degraded: local calendar path unavailable",
       "hard_triggered": 4,
       "must_review": 30,
-      "pending_decisions": 30,
-      "source": "HKEX official endpoint"
+      "pending_decisions": 0,
+      "source": "HKEX official endpoint",
+      "validation": "ok"
+    },
+    "research": {
+      "a_share": [
+        "CICC merger approval; DONGXING/CINDA suspension from Sep 15",
+        "Xinhua Media control acquisition planning and suspension",
+        "Yakang 1.188bn yuan computing-cloud services contract",
+        "Taijin cautioned CATL framework has no concrete order"
+      ],
+      "market": [
+        "US cash market closed for Labor Day; equity futures mixed/soft",
+        "Middle East escalation kept Brent near $97.56 and WTI near $92.72"
+      ],
+      "policies": [
+        "MOFCOM anti-dumping preliminary determination on Japanese dichlorosilane, effective Sep 8",
+        "MIIT/market regulator supplier-payment rules for automakers",
+        "MIIT 15th Five-Year information/communications plan"
+      ]
     },
     "us_sector": {
       "concepts": {
@@ -29,26 +47,194 @@
         "top5": 5
       }
     },
-    "research": {
-      "policies": [
-        "MOFCOM anti-dumping preliminary determination on Japanese dichlorosilane, effective Sep 8",
-        "MIIT/market regulator supplier-payment rules for automakers",
-        "MIIT 15th Five-Year information/communications plan"
+    "screening": {
+      "expected_candidates": 8,
+      "verified": 6,
+      "source_unavailable": 2,
+      "pending": 0,
+      "includes": 0,
+      "excludes": 8,
+      "evidence_path": "runs/2026-09-08.json#evidence.screening_detail"
+    },
+    "screening_detail": {
+      "candidates": [
+        {
+          "attempts": [
+            {
+              "at": "2026-09-08T08:54:00+08:00",
+              "error": "Market cap shown near CNY321.28B but no attributable-profit TTM field on the quote result.",
+              "url": "https://www.tradingview.com/symbols/SSE-688012/"
+            },
+            {
+              "at": "2026-09-08T08:54:30+08:00",
+              "error": "Market cap and PE shown near CNY46.58B/77.7, materially conflicting with the primary quote; synchronized inputs could not be established.",
+              "url": "https://quarterchart.com/info/688012.SS"
+            }
+          ],
+          "currency": "CNY",
+          "decision": "exclude",
+          "id": "688012",
+          "market": "A",
+          "reason": "Semiconductor-equipment mapping is direct, but contemporaneous valuation sources conflict materially and an attributable-profit TTM basis could not be reconciled.",
+          "ticker_text": "688012",
+          "verification_status": "source_unavailable"
+        },
+        {
+          "currency": "HKD",
+          "decision": "exclude",
+          "exclusion_evidence": "StockAnalysis showed HKD114.53B market cap and HKD10.69B TTM net income; issuer-result cross-check showed 2026H1 attributable profit CNY6.59B, down 28.89%, while Moomoo showed PE_TTM 6.49. The direct overnight catalyst was absent.",
+          "exclusion_kind": "risk_priority",
+          "financial_period": "2026H1",
+          "financial_source": "https://www.perplexity.ai/finance/0902.HK/earnings",
+          "id": "00902",
+          "latest_profit": 6590000000,
+          "latest_profit_currency": "CNY",
+          "market": "HK",
+          "market_cap": 114530000000,
+          "market_source": "https://stockanalysis.com/quote/hkg/0902/statistics/",
+          "pe_ttm": 6.49,
+          "profit_currency": "HKD",
+          "profit_ttm": 10690000000,
+          "reason": "US independent-power strength was led by NRG and does not cleanly transfer to Huaneng's China generation mix; rising fuel costs are a counter-signal.",
+          "ticker_text": "00902",
+          "total_market_cap": 114530000000,
+          "verification_status": "verified"
+        },
+        {
+          "currency": "CNY",
+          "decision": "exclude",
+          "exclusion_evidence": "StockAnalysis showed CNY109.75B market cap, CNY4.57B TTM net income and PE 24.07; Quartr showed 2026H1 attributable profit CNY2.95B. The theme link is indirect rather than the ranking leader's storage exposure.",
+          "exclusion_kind": "risk_priority",
+          "financial_period": "2026H1",
+          "financial_source": "https://quartr.com/companies/inspur-electronic-information-industry-co-ltd_19506",
+          "id": "000977",
+          "latest_profit": 2950000000,
+          "market": "A",
+          "market_cap": 109750000000,
+          "market_source": "https://stockanalysis.com/quote/she/000977/",
+          "pe_ttm": 24.07,
+          "profit_ttm": 4570000000,
+          "reason": "The US hardware row was led by storage vendor SNDK, while Inspur is primarily servers; no issuer-specific overnight catalyst or same-session A-share confirmation was available.",
+          "ticker_text": "000977",
+          "total_market_cap": 109750000000,
+          "verification_status": "verified"
+        },
+        {
+          "currency": "CNY",
+          "decision": "exclude",
+          "exclusion_evidence": "StockAnalysis showed CNY209.31B market cap, CNY7.84B TTM net income and PE 27.53; a financial cross-check showed 2026H1 attributable profit CNY5.248B. The concept evidence failed the required completeness fields.",
+          "exclusion_kind": "risk_priority",
+          "financial_period": "2026H1",
+          "financial_source": "https://www.perplexity.ai/finance/000725.SZ",
+          "id": "000725",
+          "latest_profit": 5248000000,
+          "market": "A",
+          "market_cap": 209310000000,
+          "market_source": "https://stockanalysis.com/quote/she/000725/",
+          "pe_ttm": 27.53,
+          "profit_ttm": 7840000000,
+          "reason": "OLED was visible only in a degraded concepts screen without representative ticker or breadth, and BOE had no new issuer catalyst to upgrade it to a recommendation.",
+          "ticker_text": "000725",
+          "total_market_cap": 209310000000,
+          "verification_status": "verified"
+        },
+        {
+          "currency": "CNY",
+          "decision": "exclude",
+          "exclusion_evidence": "Trading Economics showed September 2026 market cap CNY89.19B and negative EPS; the issuer/market report showed 2026H1 attributable net loss CNY3.684B.",
+          "exclusion_kind": "hard_gate",
+          "financial_period": "2026H1",
+          "financial_source": "https://static.longi.com/LON_Gi_First_Quarter_Report_2026_feb3400489.pdf",
+          "id": "601012",
+          "latest_profit": -3684100000,
+          "market": "A",
+          "market_cap": 89190000000,
+          "market_source": "https://tradingeconomics.com/601012:ch:market-capitalization",
+          "pe_ttm": -1,
+          "profit_ttm": -6420000000,
+          "reason": "Solar mapping failed both the CNY10B market-cap floor and latest-period profitability gate.",
+          "ticker_text": "601012",
+          "total_market_cap": 89190000000,
+          "verification_status": "verified"
+        },
+        {
+          "currency": "HKD",
+          "decision": "exclude",
+          "exclusion_evidence": "Investing.com showed market cap HKD2.260B and EPS_TTM -1.740; Stockopedia independently showed market cap near HKD2.37B.",
+          "exclusion_kind": "hard_gate",
+          "financial_period": "TTM through 2026 interim disclosures",
+          "financial_source": "https://markets.ft.com/data/equities/tearsheet/profile?s=434:HKG",
+          "id": "00434",
+          "latest_profit": -238630000,
+          "market": "HK",
+          "market_cap": 2260000000,
+          "market_source": "https://www.investing.com/equities/boyaa-interactive-international-ltd",
+          "pe_ttm": -1,
+          "profit_ttm": -1234000000,
+          "reason": "The crypto-theme proxy fails the HKD10B market-cap floor and has negative trailing earnings on the current quote source.",
+          "ticker_text": "00434",
+          "total_market_cap": 2260000000,
+          "verification_status": "verified"
+        },
+        {
+          "currency": "CNY",
+          "decision": "exclude",
+          "exclusion_evidence": "StockAnalysis showed CNY271.66B market cap and PE 33.38; Yahoo showed CNY7.93B TTM common net income, and the latest profit source remained positive. Recommendation was withheld for catalyst and price-confirmation quality, not a hard-gate failure.",
+          "exclusion_kind": "risk_priority",
+          "financial_period": "2026H1/latest reported quarter",
+          "financial_source": "https://finance.yahoo.com/quote/603986.SS/",
+          "id": "603986",
+          "latest_profit": 5400000000,
+          "market": "A",
+          "market_cap": 271660000000,
+          "market_source": "https://stockanalysis.com/quote/sha/603986/statistics/",
+          "pe_ttm": 33.38,
+          "profit_ttm": 7930000000,
+          "reason": "Storage exposure is direct, but the concepts feed failed ticker/breadth verification and there was no fresh issuer disclosure; the strong previous-session move raises chase risk without an opening confirmation.",
+          "ticker_text": "603986",
+          "total_market_cap": 271660000000,
+          "verification_status": "verified"
+        },
+        {
+          "attempts": [
+            {
+              "at": "2026-09-08T08:53:00+08:00",
+              "error": "Primary placing announcement provides deal terms but not current market cap, PE_TTM or attributable-profit TTM.",
+              "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0908/2026090800031.pdf"
+            },
+            {
+              "at": "2026-09-08T08:53:30+08:00",
+              "error": "Issuer site describes business but did not expose the three required current screening fields.",
+              "url": "https://www.pateo.com.cn/en/"
+            }
+          ],
+          "currency": "HKD",
+          "decision": "exclude",
+          "id": "02889",
+          "market": "HK",
+          "reason": "The placing is material and dilutive, but current market cap, attributable TTM profit and PE could not be established from two independent public sources before publication.",
+          "ticker_text": "02889",
+          "verification_status": "source_unavailable"
+        }
       ],
-      "market": [
-        "US cash market closed for Labor Day; equity futures mixed/soft",
-        "Middle East escalation kept Brent near $97.56 and WTI near $92.72"
+      "checked_at": "2026-09-08T08:56:00+08:00",
+      "expected_candidates": [
+        "688012",
+        "00902",
+        "000977",
+        "000725",
+        "601012",
+        "00434",
+        "603986",
+        "02889"
       ],
-      "a_share": [
-        "CICC merger approval; DONGXING/CINDA suspension from Sep 15",
-        "Xinhua Media control acquisition planning and suspension",
-        "Yakang 1.188bn yuan computing-cloud services contract",
-        "Taijin cautioned CATL framework has no concrete order"
-      ]
+      "inventory_source": "Moomoo industry Top 5, Futunn concept first screen, overnight policy/company-news recall, and HKEX full ledger for 2026-09-07 through 2026-09-08",
+      "publication_at": "2026-09-08T09:03:00+08:00",
+      "zero_reason": "source_unavailable"
     }
   },
-  "heartbeat_at": "2026-09-08T08:50:35+08:00",
-  "lease_until": "2026-09-08T09:00:35+08:00",
+  "heartbeat_at": "2026-09-08T08:57:50+08:00",
+  "lease_until": "2026-09-08T09:07:50+08:00",
   "main_base_sha": "25595e0047e48469c1ea09fc077ed1a69144ff26",
   "owner": "发布 MarketAhead A/H 早报",
   "pending_increment": [],
@@ -58,9 +244,10 @@
   "source_cutoff": null,
   "stage_timings": {
     "hk_ledger_started_at": "2026-09-08T08:38:59.253+08:00",
+    "research_completed_at": "2026-09-08T08:50:35+08:00",
     "rules_and_baseline_completed_at": "2026-09-08T08:36:30.634+08:00",
     "rules_and_baseline_started_at": "2026-09-08T08:32:56+08:00",
-    "research_completed_at": "2026-09-08T08:50:35+08:00"
+    "candidate_screening_completed_at": "2026-09-08T08:57:50+08:00"
   },
   "status": "running"
 }
