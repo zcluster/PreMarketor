@@ -10,28 +10,45 @@
     },
     "hk_coverage": {
       "all_announcements": 213,
-      "must_review": 30,
+      "futu_calendar": "degraded: local calendar path unavailable",
       "hard_triggered": 4,
+      "must_review": 30,
       "pending_decisions": 30,
-      "source": "HKEX official endpoint",
-      "futu_calendar": "degraded: local calendar path unavailable"
+      "source": "HKEX official endpoint"
     },
     "us_sector": {
-      "industry": {
-        "top5": 5,
-        "bottom5": 0,
-        "status": "degraded",
-        "error": "Moomoo pagination click did not change current-page assertion; stopped without scanning intermediate pages"
-      },
       "concepts": {
-        "top5": 0,
+        "error": "Futunn and one Moomoo fallback exposed names/returns only; representative ticker and breadth absent",
         "status": "degraded",
-        "error": "Futunn and one Moomoo fallback exposed names/returns only; representative ticker and breadth absent"
+        "top5": 0
+      },
+      "industry": {
+        "bottom5": 0,
+        "error": "Moomoo pagination click did not change current-page assertion; stopped without scanning intermediate pages",
+        "status": "degraded",
+        "top5": 5
       }
+    },
+    "research": {
+      "policies": [
+        "MOFCOM anti-dumping preliminary determination on Japanese dichlorosilane, effective Sep 8",
+        "MIIT/market regulator supplier-payment rules for automakers",
+        "MIIT 15th Five-Year information/communications plan"
+      ],
+      "market": [
+        "US cash market closed for Labor Day; equity futures mixed/soft",
+        "Middle East escalation kept Brent near $97.56 and WTI near $92.72"
+      ],
+      "a_share": [
+        "CICC merger approval; DONGXING/CINDA suspension from Sep 15",
+        "Xinhua Media control acquisition planning and suspension",
+        "Yakang 1.188bn yuan computing-cloud services contract",
+        "Taijin cautioned CATL framework has no concrete order"
+      ]
     }
   },
-  "heartbeat_at": "2026-09-08T08:47:05+08:00",
-  "lease_until": "2026-09-08T08:57:05+08:00",
+  "heartbeat_at": "2026-09-08T08:50:35+08:00",
+  "lease_until": "2026-09-08T09:00:35+08:00",
   "main_base_sha": "25595e0047e48469c1ea09fc077ed1a69144ff26",
   "owner": "发布 MarketAhead A/H 早报",
   "pending_increment": [],
@@ -42,7 +59,8 @@
   "stage_timings": {
     "hk_ledger_started_at": "2026-09-08T08:38:59.253+08:00",
     "rules_and_baseline_completed_at": "2026-09-08T08:36:30.634+08:00",
-    "rules_and_baseline_started_at": "2026-09-08T08:32:56+08:00"
+    "rules_and_baseline_started_at": "2026-09-08T08:32:56+08:00",
+    "research_completed_at": "2026-09-08T08:50:35+08:00"
   },
   "status": "running"
 }
