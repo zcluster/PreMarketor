@@ -1,9 +1,9 @@
 {
   "run_id": "ah-20260910-20260910123502-recovery",
   "owner": "发布 MarketAhead A/H 早报 recovery",
-  "status": "running",
-  "lease_until": "2026-09-10T13:21:00+08:00",
-  "heartbeat_at": "2026-09-10T13:06:00+08:00",
+  "status": "published",
+  "lease_until": "2026-09-10T13:14:00+08:00",
+  "heartbeat_at": "2026-09-10T13:14:00+08:00",
   "source_cutoff": "2026-09-10T12:53:00+08:00",
   "main_base_sha": "7952c3259aa13cbc644d5c253cfd7e4ad9952599",
   "rules_blob_sha": "8f8619daca2c9f4c38c0f65e25e5cf3461a1b2e3",
@@ -246,7 +246,7 @@
     },
     "screening": {
       "path": "runs/2026-09-10-screening-evidence.json",
-      "sha256": "35fa235bdc28ff25ff33289ce90a3921df89467fe1142324a7a0a1d3249f1f3e",
+      "sha256": "59d8c9f57a2d378dad06e92d3be9a5c2801f0fe78d668da4a7c8840ea567f88c",
       "status": "validated",
       "validator_ok": true,
       "candidates": 4,
@@ -256,10 +256,10 @@
     },
     "prepublish_validation": {
       "status": "passed",
-      "at": "2026-09-10T12:58:55+08:00",
-      "history_sha256": "b00c97247ed5a6ca69fe9b6669c7c35aa6d37dcfc85a2612970c7590fc4d2dc8",
-      "index_sha256": "ca313af5a39d511fed7353577fd9fe344657ecd2875cb1514f8f5977df8e66db",
-      "manifest_sha256": "99ad1458b84f99aa9fcd24628b4b2990570fc77ccf90f91122b10eb6744dae84",
+      "at": "2026-09-10T13:10:00+08:00",
+      "history_sha256": "52f703d2247726e9f4b88204e224b3aa97afd6cb7c994f4909e926dc4598b5ef",
+      "index_sha256": "4c7cf49298eb0e2b808a8e136fa70f98044493612693302b130130b422a5f653",
+      "manifest_sha256": "fc5a31b40af2971d904cac267f3394286efda201ffc49e4255adbc4322d84c30",
       "checks": [
         "marker-only",
         "US markers byte-identical",
@@ -272,7 +272,7 @@
     }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "6c9c8e1ea3aaff801abff9e6333e3697ba714bff",
   "stage_timings": {
     "rules_and_baseline_started_at": "2026-09-10T08:40:01+08:00",
     "rules_and_baseline_completed_at": "2026-09-10T08:42:43+08:00",
@@ -284,7 +284,9 @@
     "recovery_takeover_started_at": "2026-09-10T12:35:02+08:00",
     "evidence_completion_at": "2026-09-10T12:49:12+08:00",
     "akshare_refresh_absorbed_at": "2026-09-10T12:53:15+08:00",
-    "prepublish_revalidation_started_at": "2026-09-10T13:06:00+08:00"
+    "prepublish_revalidation_started_at": "2026-09-10T13:06:00+08:00",
+    "main_commit_at": "2026-09-10T13:10:00+08:00",
+    "production_verified_at": "2026-09-10T13:13:00+08:00"
   },
   "previous_run": {
     "run_id": "ah-20260910-20260910012016-takeover",
@@ -293,5 +295,26 @@
     "last_heartbeat_at": "2026-09-10T09:49:38+08:00",
     "lease_expired_at": "2026-09-10T10:09:38+08:00",
     "stalled_stage": "generation_started"
+  },
+  "production_verification": {
+    "status": "passed",
+    "at": "2026-09-10T13:13:00+08:00",
+    "homepage": {
+      "url": "https://premarketor.com/",
+      "ah_time": "2026-09-10 13:10 CST",
+      "cn": true,
+      "en": true,
+      "empty_count": 0
+    },
+    "archive": {
+      "url": "https://premarketor.com/history/?date=2026-09-10",
+      "cn": true,
+      "empty_count": 0
+    },
+    "remote_readback": {
+      "index_blob": "79b32b7b22b05f6d9b5f8dd7765cead7079a9ee4",
+      "history_blob": "d6fca57b7a7129ead592f66b72b1a02d7b932a99",
+      "manifest_blob": "495dbe29692969b7b88431a1453f2b84732f330f"
+    }
   }
 }

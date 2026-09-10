@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-09-10T12:41:30+08:00",
-  "publication_at": "2026-09-10T13:05:00+08:00",
+  "publication_at": "2026-09-10T13:10:00+08:00",
   "inventory_source": "Major-theme recall from verified Moomoo industry Top2 and degraded concept Top2 plus Beijing compute-policy mapping; the four candidates are the exact inventory stated in the bilingual draft.",
   "expected_candidates": ["HK.00857", "HK.00700", "SH.603986", "SZ.000063"],
   "zero_reason": "source_unavailable",
