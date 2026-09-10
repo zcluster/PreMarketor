@@ -1,10 +1,10 @@
 {
-  "run_id": "ah-20260910-20260910004243",
-  "owner": "发布 MarketAhead A/H 早报",
+  "run_id": "ah-20260910-20260910012016-takeover",
+  "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "lease_until": "2026-09-10T09:17:00+08:00",
-  "heartbeat_at": "2026-09-10T09:07:00+08:00",
-  "source_cutoff": null,
+  "lease_until": "2026-09-10T09:30:16+08:00",
+  "heartbeat_at": "2026-09-10T09:20:16+08:00",
+  "source_cutoff": "2026-09-10T09:20:16+08:00",
   "main_base_sha": "46f98dc78873ed1fe2cae8dab589fcacf61908cd",
   "rules_blob_sha": "8f8619daca2c9f4c38c0f65e25e5cf3461a1b2e3",
   "evidence": {
@@ -37,6 +37,11 @@
       "include": 15,
       "exclude": 12,
       "validation": "passed"
+    },
+    "takeover": {
+      "at": "2026-09-10T09:20:16+08:00",
+      "reason": "prior lease expired; main had no 2026-09-10 A/H entry",
+      "previous_run_id": "ah-20260910-20260910004243"
     }
   },
   "pending_increment": [],
@@ -44,6 +49,7 @@
   "stage_timings": {
     "rules_and_baseline_started_at": "2026-09-10T08:40:01+08:00",
     "rules_and_baseline_completed_at": "2026-09-10T08:42:43+08:00",
-    "hk_ledger_started_at": "2026-09-10T08:46:00+08:00"
+    "hk_ledger_started_at": "2026-09-10T08:46:00+08:00",
+    "takeover_started_at": "2026-09-10T09:20:16+08:00"
   }
 }
