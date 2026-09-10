@@ -2,16 +2,40 @@
   "run_id": "ah-20260910-20260910004243",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "lease_until": "2026-09-10T08:52:43+08:00",
-  "heartbeat_at": "2026-09-10T08:42:43+08:00",
+  "lease_until": "2026-09-10T09:00:51+08:00",
+  "heartbeat_at": "2026-09-10T08:50:51+08:00",
   "source_cutoff": null,
   "main_base_sha": "46f98dc78873ed1fe2cae8dab589fcacf61908cd",
   "rules_blob_sha": "8f8619daca2c9f4c38c0f65e25e5cf3461a1b2e3",
-  "evidence": {},
+  "evidence": {
+    "akshare": {
+      "status": "stale",
+      "fetchedAt": "2026-09-09T12:45:06+08:00",
+      "schemaVersion": 2,
+      "analysisReady": true
+    },
+    "us_rankings": {
+      "industry": {
+        "status": "partial",
+        "pageCount": 5,
+        "firstPage": true,
+        "lastPage": false,
+        "error": "Page 5 click completed but .base-pagination .item.current remained 1; last-page assertion failed",
+        "top5": 5
+      },
+      "concept": {
+        "status": "degraded",
+        "futunn_error": "first screen omitted representative ticker and rise/fall/flat counts",
+        "moomoo_error": "fallback first screen omitted representative ticker and rise/fall/flat counts",
+        "top5": 0
+      }
+    }
+  },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "rules_and_baseline_started_at": "2026-09-10T08:40:01+08:00",
-    "rules_and_baseline_completed_at": "2026-09-10T08:42:43+08:00"
+    "rules_and_baseline_completed_at": "2026-09-10T08:42:43+08:00",
+    "hk_ledger_started_at": "2026-09-10T08:46:00+08:00"
   }
 }
