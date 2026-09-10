@@ -2,17 +2,33 @@
   "run_id": "ah-20260910-20260910123502-recovery",
   "owner": "发布 MarketAhead A/H 早报 recovery",
   "status": "running",
-  "lease_until": "2026-09-10T12:59:12+08:00",
-  "heartbeat_at": "2026-09-10T12:49:12+08:00",
+  "lease_until": "2026-09-10T13:03:15+08:00",
+  "heartbeat_at": "2026-09-10T12:53:15+08:00",
   "source_cutoff": "2026-09-10T12:41:30+08:00",
-  "main_base_sha": "46f98dc78873ed1fe2cae8dab589fcacf61908cd",
+  "main_base_sha": "7952c3259aa13cbc644d5c253cfd7e4ad9952599",
   "rules_blob_sha": "8f8619daca2c9f4c38c0f65e25e5cf3461a1b2e3",
   "evidence": {
     "akshare": {
-      "status": "degraded_stale",
-      "fetchedAt": "2026-09-09T12:45:06+08:00",
-      "checked_at": "2026-09-10T12:40:00+08:00",
-      "reason": "Today's scheduled GitHub Actions refresh had not produced a new blob; no local pip/install attempted."
+      "status": "ok",
+      "fetchedAt": "2026-09-10T12:44:34+08:00",
+      "checked_at": "2026-09-10T12:53:15+08:00",
+      "marketPhase": {
+        "A": "intraday_snapshot",
+        "HK": "intraday_snapshot"
+      },
+      "A_breadth": {
+        "advancers": 1117,
+        "decliners": 4283,
+        "unchanged": 154,
+        "medianChangePct": -1.078
+      },
+      "HK_breadth": {
+        "advancers": 562,
+        "decliners": 1142,
+        "unchanged": 1094,
+        "medianChangePct": 0
+      },
+      "note": "GitHub Actions refresh commit 7952c325; no local dependency used."
     },
     "us_rankings": {
       "captured_at": "2026-09-10T09:38:00+08:00",
@@ -265,7 +281,8 @@
     "research_completed_at": "2026-09-10T09:44:07+08:00",
     "generation_started_at": "2026-09-10T09:49:38+08:00",
     "recovery_takeover_started_at": "2026-09-10T12:35:02+08:00",
-    "evidence_completion_at": "2026-09-10T12:49:12+08:00"
+    "evidence_completion_at": "2026-09-10T12:49:12+08:00",
+    "akshare_refresh_absorbed_at": "2026-09-10T12:53:15+08:00"
   },
   "previous_run": {
     "run_id": "ah-20260910-20260910012016-takeover",
