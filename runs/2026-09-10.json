@@ -316,5 +316,24 @@
       "history_blob": "d6fca57b7a7129ead592f66b72b1a02d7b932a99",
       "manifest_blob": "495dbe29692969b7b88431a1453f2b84732f330f"
     }
+  },
+  "postmortem": {
+    "recorded_at": "2026-09-10T13:20:00+08:00",
+    "observations": [
+      "Initial run last checkpointed before completion; no terminal error was recorded, so the exact executor exception is not recoverable from shared state.",
+      "Takeover reached generation and its atomic main update was rejected while AKShare was stale and exchange-source hard checks were unavailable.",
+      "The rejected path left status=running without an error and disabled the review automation."
+    ],
+    "root_cause": "The workflow lacked an enforced finally-style terminal-state write around generation, approval and deployment stages; the approval rejection was therefore not persisted as blocked.",
+    "remediation": {
+      "commit": "2e1f6acc5e9a81e9af0011d8f8e7a78e437a67be",
+      "files": [
+        "brief_rules.md",
+        "scripts/validate_ah_run_state.py",
+        "tests/test_ah_run_state.py"
+      ],
+      "tests": "5/5 passed",
+      "review_automation_restored": true
+    }
   }
 }
