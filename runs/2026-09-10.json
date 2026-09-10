@@ -2,17 +2,17 @@
   "run_id": "ah-20260910-20260910123502-recovery",
   "owner": "发布 MarketAhead A/H 早报 recovery",
   "status": "running",
-  "lease_until": "2026-09-10T12:45:02+08:00",
-  "heartbeat_at": "2026-09-10T12:35:02+08:00",
-  "source_cutoff": "2026-09-10T09:44:07+08:00",
+  "lease_until": "2026-09-10T12:59:12+08:00",
+  "heartbeat_at": "2026-09-10T12:49:12+08:00",
+  "source_cutoff": "2026-09-10T12:41:30+08:00",
   "main_base_sha": "46f98dc78873ed1fe2cae8dab589fcacf61908cd",
   "rules_blob_sha": "8f8619daca2c9f4c38c0f65e25e5cf3461a1b2e3",
   "evidence": {
     "akshare": {
-      "status": "stale",
+      "status": "degraded_stale",
       "fetchedAt": "2026-09-09T12:45:06+08:00",
-      "schemaVersion": 2,
-      "analysisReady": true
+      "checked_at": "2026-09-10T12:40:00+08:00",
+      "reason": "Today's scheduled GitHub Actions refresh had not produced a new blob; no local pip/install attempted."
     },
     "us_rankings": {
       "captured_at": "2026-09-10T09:38:00+08:00",
@@ -201,6 +201,57 @@
       "at": "2026-09-10T12:35:02+08:00",
       "reason": "prior takeover lease expired without heartbeat or published_commit; main history/data/2026-09-10.json still absent",
       "mode": "delayed_intraday_recovery"
+    },
+    "policy_primary_sources": [
+      {
+        "title": "北京市“十五五”时期数字经济发展规划",
+        "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202609/t20260909_4856719.html",
+        "published": "2026-09-09",
+        "document": "京政发〔2026〕15号",
+        "verified_at": "2026-09-10T12:40:00+08:00"
+      },
+      {
+        "title": "北京市“十五五”时期高精尖产业发展规划",
+        "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202609/t20260909_4856726.html",
+        "published": "2026-09-09",
+        "document": "京政发〔2026〕16号",
+        "verified_at": "2026-09-10T12:40:00+08:00"
+      }
+    ],
+    "approval_diagnostic": {
+      "prior_candidate_commit": "6e3f15a3cb632682eb07fefdf56cc00c6552038e",
+      "on_main": false,
+      "prior_denial_reported_by_user": [
+        "stale AKShare snapshot",
+        "some exchange sources unavailable"
+      ],
+      "cross_thread_detail_access": "unavailable: personal context connector disabled",
+      "candidate_compare": "one commit ahead of current main, exactly three allowed files"
+    },
+    "screening": {
+      "path": "runs/2026-09-10-screening-evidence.json",
+      "sha256": "8b0a40887470acce8f8b9289fb237bce4ca08477abce843175d144d7bb0164af",
+      "status": "validated",
+      "validator_ok": true,
+      "candidates": 4,
+      "verified_includes": 0,
+      "source_unavailable": 4,
+      "pending": 0
+    },
+    "prepublish_validation": {
+      "status": "passed",
+      "at": "2026-09-10T12:49:12+08:00",
+      "history_sha256": "5be7e3d37f9741c22bad9d4651ae7e0b0312c8a970254e251005e38e989e219a",
+      "index_sha256": "d5d36e26e0f27771816f9d60b54085130fbcd2e7554cab93b1df35e3aad4cd70",
+      "manifest_sha256": "b7e69affa6906ed4723b76b6df2d812056ba058f85ba3c16ac08d60c20b6166e",
+      "checks": [
+        "marker-only",
+        "US markers byte-identical",
+        "bilingual structure",
+        "industry 10 rows/5 down; concept degraded",
+        "history/manifest",
+        "stock screening validator ok"
+      ]
     }
   },
   "pending_increment": [],
@@ -213,7 +264,8 @@
     "hk_ledger_completed_at": "2026-09-10T09:42:00+08:00",
     "research_completed_at": "2026-09-10T09:44:07+08:00",
     "generation_started_at": "2026-09-10T09:49:38+08:00",
-    "recovery_takeover_started_at": "2026-09-10T12:35:02+08:00"
+    "recovery_takeover_started_at": "2026-09-10T12:35:02+08:00",
+    "evidence_completion_at": "2026-09-10T12:49:12+08:00"
   },
   "previous_run": {
     "run_id": "ah-20260910-20260910012016-takeover",
