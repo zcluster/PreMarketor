@@ -1,9 +1,9 @@
 {
-  "run_id": "ah-20260910-20260910012016-takeover",
-  "owner": "MarketAhead A/H 早报复核",
+  "run_id": "ah-20260910-20260910123502-recovery",
+  "owner": "发布 MarketAhead A/H 早报 recovery",
   "status": "running",
-  "lease_until": "2026-09-10T10:09:38+08:00",
-  "heartbeat_at": "2026-09-10T09:49:38+08:00",
+  "lease_until": "2026-09-10T12:45:02+08:00",
+  "heartbeat_at": "2026-09-10T12:35:02+08:00",
   "source_cutoff": "2026-09-10T09:44:07+08:00",
   "main_base_sha": "46f98dc78873ed1fe2cae8dab589fcacf61908cd",
   "rules_blob_sha": "8f8619daca2c9f4c38c0f65e25e5cf3461a1b2e3",
@@ -196,6 +196,11 @@
         "SSE and SZSE public pages timed out",
         "Moomoo representative after-hours quotes rate-limited; no cash close was relabeled as live night trading"
       ]
+    },
+    "recovery": {
+      "at": "2026-09-10T12:35:02+08:00",
+      "reason": "prior takeover lease expired without heartbeat or published_commit; main history/data/2026-09-10.json still absent",
+      "mode": "delayed_intraday_recovery"
     }
   },
   "pending_increment": [],
@@ -207,6 +212,15 @@
     "takeover_started_at": "2026-09-10T09:20:16+08:00",
     "hk_ledger_completed_at": "2026-09-10T09:42:00+08:00",
     "research_completed_at": "2026-09-10T09:44:07+08:00",
-    "generation_started_at": "2026-09-10T09:49:38+08:00"
+    "generation_started_at": "2026-09-10T09:49:38+08:00",
+    "recovery_takeover_started_at": "2026-09-10T12:35:02+08:00"
+  },
+  "previous_run": {
+    "run_id": "ah-20260910-20260910012016-takeover",
+    "owner": "MarketAhead A/H 早报复核",
+    "status": "running",
+    "last_heartbeat_at": "2026-09-10T09:49:38+08:00",
+    "lease_expired_at": "2026-09-10T10:09:38+08:00",
+    "stalled_stage": "generation_started"
   }
 }
