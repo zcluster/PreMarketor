@@ -2,9 +2,9 @@
   "run_id": "ah-20260910-20260910012016-takeover",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "lease_until": "2026-09-10T09:43:21+08:00",
-  "heartbeat_at": "2026-09-10T09:33:21+08:00",
-  "source_cutoff": "2026-09-10T09:20:16+08:00",
+  "lease_until": "2026-09-10T09:54:07+08:00",
+  "heartbeat_at": "2026-09-10T09:44:07+08:00",
+  "source_cutoff": "2026-09-10T09:44:07+08:00",
   "main_base_sha": "46f98dc78873ed1fe2cae8dab589fcacf61908cd",
   "rules_blob_sha": "8f8619daca2c9f4c38c0f65e25e5cf3461a1b2e3",
   "evidence": {
@@ -15,19 +15,124 @@
       "analysisReady": true
     },
     "us_rankings": {
+      "captured_at": "2026-09-10T09:38:00+08:00",
       "industry": {
-        "status": "partial",
-        "pageCount": 5,
-        "firstPage": true,
-        "lastPage": false,
-        "error": "Page 5 click completed but .base-pagination .item.current remained 1; last-page assertion failed",
-        "top5": 5
+        "status": "ok",
+        "page_count": 5,
+        "first_page": 1,
+        "last_page": 5,
+        "last_page_assertion": true,
+        "top5": [
+          {
+            "name": "医疗保健设施",
+            "bk": "BK2486",
+            "change_pct": 2.77,
+            "leader": "CMPS",
+            "leader_change_pct": 8.05,
+            "breadth": "27/5/20"
+          },
+          {
+            "name": "白银",
+            "bk": "BK2093",
+            "change_pct": 1.79,
+            "leader": "AYA",
+            "leader_change_pct": 2.54,
+            "breadth": "6/0/0"
+          },
+          {
+            "name": "其他贵金属和采矿",
+            "bk": "BK2507",
+            "change_pct": 1.69,
+            "leader": "BVN",
+            "leader_change_pct": 3.6,
+            "breadth": "12/1/4"
+          },
+          {
+            "name": "综合油气",
+            "bk": "BK2224",
+            "change_pct": 1.63,
+            "leader": "EQNR",
+            "leader_change_pct": 4.24,
+            "breadth": "16/0/4"
+          },
+          {
+            "name": "商业设备和用品",
+            "bk": "BK2509",
+            "change_pct": 1.12,
+            "leader": "CXT",
+            "leader_change_pct": 2.16,
+            "breadth": "1/1/3"
+          }
+        ],
+        "bottom5": [
+          {
+            "name": "可再生能源公用事业",
+            "bk": "BK2461",
+            "change_pct": -3.7,
+            "leader": "BRNX",
+            "leader_change_pct": 14.35,
+            "breadth": "3/4/18"
+          },
+          {
+            "name": "医药零售",
+            "bk": "BK2092",
+            "change_pct": -3.91,
+            "leader": "SCNX",
+            "leader_change_pct": 0.93,
+            "breadth": "1/0/4"
+          },
+          {
+            "name": "太阳能",
+            "bk": "BK2047",
+            "change_pct": -4.34,
+            "leader": "SUNE",
+            "leader_change_pct": 90.3,
+            "breadth": "2/0/20"
+          },
+          {
+            "name": "专业零售",
+            "bk": "BK2502",
+            "change_pct": -4.57,
+            "leader": "ASO",
+            "leader_change_pct": 14.4,
+            "breadth": "10/5/34"
+          },
+          {
+            "name": "电气设备及零件",
+            "bk": "BK2493",
+            "change_pct": -4.99,
+            "leader": "ZOOZ",
+            "leader_change_pct": 9.72,
+            "breadth": "9/1/45"
+          }
+        ]
       },
       "concept": {
         "status": "degraded",
-        "futunn_error": "first screen omitted representative ticker and rise/fall/flat counts",
-        "moomoo_error": "fallback first screen omitted representative ticker and rise/fall/flat counts",
-        "top5": 0
+        "source": "Moomoo Sparks fallback",
+        "top5_names": [
+          [
+            "Social Media",
+            6.34
+          ],
+          [
+            "Data storage stock",
+            4.09
+          ],
+          [
+            "Shale Oil",
+            1.76
+          ],
+          [
+            "Silver Concept",
+            1.67
+          ],
+          [
+            "Safe-Haven Assets",
+            1.51
+          ]
+        ],
+        "error": "first-screen cards omitted representative ticker/change and up/down/flat counts; no detail or load-more requests made"
       }
     },
     "hk_coverage": {
@@ -35,8 +140,11 @@
       "must_review": 22,
       "screened_out": 170,
       "hard_triggered": 3,
-      "pending_decisions": 22,
-      "validation": "pending decisions"
+      "include": 9,
+      "exclude": 13,
+      "pending_decisions": 0,
+      "validation": "ok",
+      "ledger_path": "runs/2026-09-10-hk-coverage-ledger.json"
     },
     "takeover": {
       "at": "2026-09-10T09:20:16+08:00",
@@ -60,6 +168,34 @@
         "SSE and SZSE public pages timed out",
         "Moomoo industry list partial; concept fields incomplete"
       ]
+    },
+    "research": {
+      "checked_at": "2026-09-10T09:44:07+08:00",
+      "policies": [
+        "Beijing 15th Five-Year high-tech industry plan",
+        "Beijing 15th Five-Year digital economy plan",
+        "NBS August CPI +0.8% y/y and PPI +3.8% y/y"
+      ],
+      "domestic_technology": [
+        "DeepSeek selected CITIC Securities for a potential STAR Market IPO, according to Reuters sources",
+        "Enflame priced a RMB6.12bn STAR IPO ahead of Sep 11 debut; Jan-Sep loss projected RMB0.7-0.86bn"
+      ],
+      "overseas": [
+        "Brent settled at $101.21 and WTI at $96.05",
+        "S&P 500 -0.48%, Nasdaq -0.64%, Dow -0.77%; energy +1.1%, semiconductors +0.37%, Meta +6.5%"
+      ],
+      "night_proxy": {
+        "queried_at": "2026-09-10T09:39:00+08:00",
+        "quote_time": "2026-09-10T08:15:00+08:00",
+        "delayed": true,
+        "SPY": -0.45825,
+        "QQQ": -0.28259,
+        "DIA": -0.75185
+      },
+      "limitations": [
+        "SSE and SZSE public pages timed out",
+        "Moomoo representative after-hours quotes rate-limited; no cash close was relabeled as live night trading"
+      ]
     }
   },
   "pending_increment": [],
@@ -69,6 +205,7 @@
     "rules_and_baseline_completed_at": "2026-09-10T08:42:43+08:00",
     "hk_ledger_started_at": "2026-09-10T08:46:00+08:00",
     "takeover_started_at": "2026-09-10T09:20:16+08:00",
-    "hk_ledger_completed_at": "2026-09-10T09:23:36+08:00"
+    "hk_ledger_completed_at": "2026-09-10T09:42:00+08:00",
+    "research_completed_at": "2026-09-10T09:44:07+08:00"
   }
 }
