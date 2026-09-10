@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-09-10T12:41:30+08:00",
-  "publication_at": "2026-09-10T12:50:00+08:00",
+  "publication_at": "2026-09-10T13:05:00+08:00",
   "inventory_source": "Major-theme recall from verified Moomoo industry Top2 and degraded concept Top2 plus Beijing compute-policy mapping; the four candidates are the exact inventory stated in the bilingual draft.",
   "expected_candidates": ["HK.00857", "HK.00700", "SH.603986", "SZ.000063"],
   "zero_reason": "source_unavailable",
@@ -11,4 +11,3 @@
     {"id":"SZ.000063","decision":"exclude","verification_status":"source_unavailable","reason":"The alternate quote page was reachable, but two-source completion of attributable TTM profit, latest-period profit, PE and 21-session closes was unavailable; excluded without treating missing evidence as a failed gate.","attempts":[{"url":"https://query1.finance.yahoo.com/v8/finance/chart/000063.SZ?range=1mo&interval=1d","at":"2026-09-10T12:39:00+08:00","error":"Web fetch rejected the chart endpoint as unsafe (non-retryable); no 21-session series obtained."},{"url":"https://www.google.com/finance/quote/000063:SHE","at":"2026-09-10T12:40:00+08:00","error":"Page was reachable, but the retrieved evidence did not provide a verified 21-session close series together with attributable TTM/latest-period profit and PE fields."}]}
   ]
 }
-

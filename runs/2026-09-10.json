@@ -2,9 +2,9 @@
   "run_id": "ah-20260910-20260910123502-recovery",
   "owner": "发布 MarketAhead A/H 早报 recovery",
   "status": "running",
-  "lease_until": "2026-09-10T13:03:15+08:00",
-  "heartbeat_at": "2026-09-10T12:53:15+08:00",
-  "source_cutoff": "2026-09-10T12:41:30+08:00",
+  "lease_until": "2026-09-10T13:08:55+08:00",
+  "heartbeat_at": "2026-09-10T12:58:55+08:00",
+  "source_cutoff": "2026-09-10T12:53:00+08:00",
   "main_base_sha": "7952c3259aa13cbc644d5c253cfd7e4ad9952599",
   "rules_blob_sha": "8f8619daca2c9f4c38c0f65e25e5cf3461a1b2e3",
   "evidence": {
@@ -246,7 +246,7 @@
     },
     "screening": {
       "path": "runs/2026-09-10-screening-evidence.json",
-      "sha256": "8b0a40887470acce8f8b9289fb237bce4ca08477abce843175d144d7bb0164af",
+      "sha256": "35fa235bdc28ff25ff33289ce90a3921df89467fe1142324a7a0a1d3249f1f3e",
       "status": "validated",
       "validator_ok": true,
       "candidates": 4,
@@ -256,17 +256,18 @@
     },
     "prepublish_validation": {
       "status": "passed",
-      "at": "2026-09-10T12:49:12+08:00",
-      "history_sha256": "5be7e3d37f9741c22bad9d4651ae7e0b0312c8a970254e251005e38e989e219a",
-      "index_sha256": "d5d36e26e0f27771816f9d60b54085130fbcd2e7554cab93b1df35e3aad4cd70",
-      "manifest_sha256": "b7e69affa6906ed4723b76b6df2d812056ba058f85ba3c16ac08d60c20b6166e",
+      "at": "2026-09-10T12:58:55+08:00",
+      "history_sha256": "b00c97247ed5a6ca69fe9b6669c7c35aa6d37dcfc85a2612970c7590fc4d2dc8",
+      "index_sha256": "ca313af5a39d511fed7353577fd9fe344657ecd2875cb1514f8f5977df8e66db",
+      "manifest_sha256": "99ad1458b84f99aa9fcd24628b4b2990570fc77ccf90f91122b10eb6744dae84",
       "checks": [
         "marker-only",
         "US markers byte-identical",
         "bilingual structure",
         "industry 10 rows/5 down; concept degraded",
         "history/manifest",
-        "stock screening validator ok"
+        "stock screening validator ok",
+        "current AKShare absorbed"
       ]
     }
   },
