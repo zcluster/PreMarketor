@@ -1,9 +1,9 @@
 {
   "run_id": "ah-20260911-20260911092000",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "lease_until": "2026-09-11T10:15:00+08:00",
-  "heartbeat_at": "2026-09-11T10:00:00+08:00",
+  "status": "published",
+  "lease_until": "2026-09-11T09:58:04+08:00",
+  "heartbeat_at": "2026-09-11T09:58:04+08:00",
   "source_cutoff": "2026-09-11T09:20:00+08:00",
   "main_base_sha": "f785f5f80c24e79507a849dfb43d5bbf40ff5701",
   "rules_blob_sha": "3ef53e3e8c9568095bff3e74180b8ee58dd2b716",
@@ -76,6 +76,27 @@
       "bilingual_dom": true,
       "history_manifest": true,
       "rankings_degraded_with_exact_errors": true
+    },
+    "production": {
+      "status": "ok",
+      "homepage": {
+        "date_link": true,
+        "time": "2026-09-11 09:55 CST",
+        "cn_rendered": true,
+        "en_rendered": true,
+        "empty_state": false
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-09-11",
+        "cn_rendered": true,
+        "empty_state": false
+      },
+      "production_json": {
+        "verified_via_rendered_archive": true,
+        "github_remote_exact": true,
+        "html_en_present": true
+      },
+      "verified_at": "2026-09-11T09:57:41+08:00"
     }
   },
   "pending_increment": [],
@@ -89,8 +110,12 @@
     "generation_started_at": "2026-09-11T09:42:00+08:00",
     "generation_completed_at": "2026-09-11T09:48:00+08:00",
     "hard_validation_completed_at": "2026-09-11T09:55:00+08:00",
-    "main_update_ref_completed_at": "2026-09-11T10:00:00+08:00"
+    "main_update_ref_completed_at": "2026-09-11T09:55:10+08:00",
+    "candidate_commit_created_at": "2026-09-11T09:54:26+08:00",
+    "remote_readback_completed_at": "2026-09-11T09:56:05+08:00",
+    "production_verification_completed_at": "2026-09-11T09:57:41+08:00",
+    "total_wall_seconds": 2378
   },
-  "stage": "deployment_verification",
+  "stage": "published",
   "candidate_commit": "01d9d9f5b9550a2c522ddc8ea7000d3035055230"
 }
