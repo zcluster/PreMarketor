@@ -2,8 +2,8 @@
   "run_id": "ah-20260911-20260911092000",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "lease_until": "2026-09-11T09:50:30+08:00",
-  "heartbeat_at": "2026-09-11T09:35:30+08:00",
+  "lease_until": "2026-09-11T10:02:00+08:00",
+  "heartbeat_at": "2026-09-11T09:42:00+08:00",
   "source_cutoff": "2026-09-11T09:20:00+08:00",
   "main_base_sha": "d3dd2bdf8444d9a89bf160fbd710be580b3016c1",
   "rules_blob_sha": "ad2dfd40e37e231ffcdefbdd070f698940b13df6",
@@ -19,8 +19,11 @@
       "must_review_after_pdf": 38,
       "screened_out": 212,
       "hard_triggered": 4,
-      "pending_decisions": 38,
-      "window": "2026-09-10 to 2026-09-11"
+      "pending_decisions": 0,
+      "publication_included": 9,
+      "publication_excluded": 29,
+      "validation": "ok",
+      "ledger_path": "runs/2026-09-11-hk-coverage-ledger.json"
     },
     "us_rankings": {
       "captured_at": "2026-09-11T09:28:00+08:00",
@@ -40,6 +43,13 @@
           "error": "redirected to /403; Operations too frequent"
         }
       }
+    },
+    "candidates": {
+      "status": "complete",
+      "path": "runs/2026-09-11-candidate-decisions.json",
+      "count": 5,
+      "recommendations": 0,
+      "reason": "all mapped candidates failed price-response/risk priority; missing optional valuation metrics were not used as a gate"
     }
   },
   "pending_increment": [],
@@ -48,7 +58,9 @@
     "rules_and_baseline_started_at": "2026-09-11T09:18:26+08:00",
     "rules_and_baseline_completed_at": "2026-09-11T09:20:00+08:00",
     "hk_ledger_started_at": "2026-09-11T09:23:00+08:00",
-    "hk_ledger_pdf_completed_at": "2026-09-11T09:32:00+08:00"
+    "hk_ledger_pdf_completed_at": "2026-09-11T09:32:00+08:00",
+    "external_research_completed_at": "2026-09-11T09:40:00+08:00",
+    "generation_started_at": "2026-09-11T09:42:00+08:00"
   },
-  "stage": "coverage_review_and_candidate_screening"
+  "stage": "generation"
 }
