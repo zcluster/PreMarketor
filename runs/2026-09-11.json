@@ -1,13 +1,13 @@
 {
-  "run_id": "ah-fix-20260911-20260911101913",
-  "owner": "MarketAhead A/H candidate-card fix",
-  "status": "published",
-  "heartbeat_at": "2026-09-11T10:41:41.633+08:00",
-  "lease_until": null,
-  "source_cutoff": "2026-09-11T10:19:13+08:00",
-  "main_base_sha": "f968fd7226738790d22be45bd62501154e29861d",
+  "run_id": "ah-rank-retry-20260911-20260911124253",
+  "owner": "MarketAhead A/H US ranking retry",
+  "status": "running",
+  "heartbeat_at": "2026-09-11T20:42:53.056+08:00",
+  "lease_until": "2026-09-11T20:52:53.056+08:00",
+  "source_cutoff": "2026-09-11T20:42:53.056+08:00",
+  "main_base_sha": "8219cf3757028482a7d79d084df0b361323756d5",
   "rules_blob_sha": "de5aa80e26f8563da38621b3067b535f08144789",
-  "stage": "published",
+  "stage": "ranking_retry_acquired",
   "evidence": {
     "previous_run": {
       "run_id": "ah-20260911-20260911092000",
@@ -154,10 +154,15 @@
       "us_markers_unchanged": true,
       "other_ah_body_unchanged": true,
       "verified_at": "2026-09-11T10:41:41.633+08:00"
+    },
+    "ranking_retry": {
+      "started_at": "2026-09-11T20:42:53.056+08:00",
+      "scope": "brief_rules.md 8a only",
+      "requests": []
     }
   },
   "pending_increment": [],
-  "published_commit": "afd02088c92eedb1fc9a958e5fd61d505f16dded",
+  "published_commit": null,
   "stage_timings": {
     "started_at": "2026-09-11T10:19:13+08:00",
     "rules_read_completed_at": "2026-09-11T10:18:00+08:00",
@@ -167,6 +172,7 @@
     "rules_contract_completed_at": "2026-09-11T10:29:00+08:00",
     "content_hard_validation_completed_at": "2026-09-11T10:34:00+08:00",
     "main_update_completed_at": "2026-09-11T10:39:00+08:00",
-    "production_verified_at": "2026-09-11T10:41:41.633+08:00"
+    "production_verified_at": "2026-09-11T10:41:41.633+08:00",
+    "ranking_retry_started_at": "2026-09-11T20:42:53.056+08:00"
   }
 }
