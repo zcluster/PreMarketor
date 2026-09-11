@@ -1,13 +1,13 @@
 {
-  "run_id": "ah-rank-retry-20260911-20260911124253",
-  "owner": "MarketAhead A/H US ranking retry",
-  "status": "completed_no_publish",
-  "heartbeat_at": "2026-09-11T20:44:01.929+08:00",
-  "lease_until": null,
-  "source_cutoff": "2026-09-11T20:42:53.056+08:00",
+  "run_id": "ah-progressive-ranking-20260911-20260911131526",
+  "owner": "MarketAhead A/H progressive ranking fix",
+  "status": "running",
+  "heartbeat_at": "2026-09-11T21:15:26.733+08:00",
+  "lease_until": "2026-09-11T21:27:26.733+08:00",
+  "source_cutoff": "2026-09-11T20:43:35+08:00",
   "main_base_sha": "8219cf3757028482a7d79d084df0b361323756d5",
   "rules_blob_sha": "de5aa80e26f8563da38621b3067b535f08144789",
-  "stage": "ranking_retry_complete_no_publish",
+  "stage": "rules_update",
   "evidence": {
     "previous_run": {
       "run_id": "ah-20260911-20260911092000",
@@ -218,6 +218,11 @@
       "published": false,
       "published_commit": null,
       "reason": "Neither ranking group returned all required row fields; stale rows and search summaries were not used."
+    },
+    "progressive_ranking_fix": {
+      "started_at": "2026-09-11T21:15:26.733+08:00",
+      "concept_source": "Moomoo Sparks 2026-09-11 20:43:35 CST response",
+      "scope": "rules plus 2026-09-11 sector panels only"
     }
   },
   "pending_increment": [],
@@ -233,6 +238,7 @@
     "main_update_completed_at": "2026-09-11T10:39:00+08:00",
     "production_verified_at": "2026-09-11T10:41:41.633+08:00",
     "ranking_retry_started_at": "2026-09-11T20:42:53.056+08:00",
-    "ranking_retry_completed_at": "2026-09-11T20:44:01.929+08:00"
+    "ranking_retry_completed_at": "2026-09-11T20:44:01.929+08:00",
+    "progressive_fix_started_at": "2026-09-11T21:15:26.733+08:00"
   }
 }
