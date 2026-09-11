@@ -45,6 +45,8 @@ class AHPolicyV2ContractTest(unittest.TestCase):
             "require_traceable_sources",
             "require_material_us_to_ah_mapping",
             "forbid_negative_signal_as_long_pick",
+            "allow_conditional_watch_and_avoid_cards",
+            "forbid_quote_gap_as_sole_card_exclusion",
             "require_marker_whitelist",
             "require_atomic_publish",
             "require_bilingual_archive_consistency",
@@ -60,10 +62,10 @@ class AHPolicyV2ContractTest(unittest.TestCase):
             "任一榜单前两名",
             "板块涨跌幅绝对值不低于 5%",
             "同一主题占概念 Top5 至少 2 席",
-            "业务映射核验 → 候选或无候选结论 → 纳入或排除理由",
+            "业务映射核验 → 条件关注/看多候选/回避/无候选 → 状态理由",
             "不得只检查正文已经选择的主题",
             "加密货币等显著大涨主题",
-            "全部重大主题必须有 decision 且无 pending",
+            "全部重大主题的 decision 必须属于 conditional_watch|bullish_candidate|avoid|no_candidate 且无 pending",
             "不扩大榜单抓取",
         )
         for text in required_text:
@@ -82,6 +84,27 @@ class AHPolicyV2ContractTest(unittest.TestCase):
             with self.subTest(text=text):
                 self.assertNotIn(text, self.rules)
         self.assertIn("真实浏览器不是发布前置", self.rules)
+
+    def test_candidate_card_states_and_quote_gaps(self):
+        required_text = (
+            "条件关注/Conditional Watch",
+            "看多候选/Bullish Candidate",
+            "回避/Avoid",
+            "decision=conditional_watch|bullish_candidate|avoid|no_candidate",
+            "不得单独据此排除候选或清空卡片",
+            "不得设置统一实时报价新门槛",
+            "0 卡仅允许用于本轮没有任何可核验业务或事件依据",
+            "普通融资、审批或交付风险就自动排除",
+        )
+        for text in required_text:
+            with self.subTest(text=text):
+                self.assertIn(text, self.rules)
+        self.assertNotIn("decision=include|exclude", self.rules)
+        self.assertNotIn("拟推荐股仍须取得最新可得价格反馈", self.rules)
+        self.assertIn("对拟展示的候选必须尝试取得最新可得价格反馈", self.rules)
+        self.assertIn("不得仅因报价缺口删除卡片", self.rules)
+        self.assertIn("contract tests", self.__class__.__doc__)
+        self.assertIn("not an end-to-end", self.__class__.__doc__)
 
     def test_failure_section_is_unique(self):
         self.assertEqual(self.rules.count("## 失败处理与阻塞条件"), 1)
