@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "provider": "Moomoo",
+  "attemptedAt": "2026-09-11T21:28:33+08:00",
+  "status": "error",
+  "groups": {
+    "industry": {
+      "status": "error",
+      "source": "Moomoo industry ranking",
+      "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
+      "fetchedAt": null,
+      "top": [],
+      "bottom": [],
+      "missing": [
+        "all_current_rows"
+      ],
+      "error": "RuntimeError: no positive industry rows on first page",
+      "lastSuccess": null
+    },
+    "concept": {
+      "status": "error",
+      "source": "Moomoo Sparks",
+      "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
+      "fetchedAt": null,
+      "top": [],
+      "bottom": [],
+      "missing": [
+        "all_current_rows"
+      ],
+      "error": "RuntimeError: no positive concept rows on first page",
+      "lastSuccess": null
+    }
+  }
+}
