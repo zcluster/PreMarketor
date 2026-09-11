@@ -2,11 +2,11 @@
   "run_id": "ah-20260911-20260911092000",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "lease_until": "2026-09-11T10:02:00+08:00",
-  "heartbeat_at": "2026-09-11T09:42:00+08:00",
+  "lease_until": "2026-09-11T10:00:00+08:00",
+  "heartbeat_at": "2026-09-11T09:45:00+08:00",
   "source_cutoff": "2026-09-11T09:20:00+08:00",
-  "main_base_sha": "d3dd2bdf8444d9a89bf160fbd710be580b3016c1",
-  "rules_blob_sha": "ad2dfd40e37e231ffcdefbdd070f698940b13df6",
+  "main_base_sha": "f785f5f80c24e79507a849dfb43d5bbf40ff5701",
+  "rules_blob_sha": "3ef53e3e8c9568095bff3e74180b8ee58dd2b716",
   "evidence": {
     "akshare": {
       "status": "degraded",
@@ -50,6 +50,12 @@
       "count": 5,
       "recommendations": 0,
       "reason": "all mapped candidates failed price-response/risk priority; missing optional valuation metrics were not used as a gate"
+    },
+    "rules": {
+      "status": "ok",
+      "baseline": "f785f5f80c24e79507a849dfb43d5bbf40ff5701",
+      "blob_sha": "3ef53e3e8c9568095bff3e74180b8ee58dd2b716",
+      "legacy_gates_disabled": true
     }
   },
   "pending_increment": [],
