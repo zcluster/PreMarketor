@@ -1,121 +1,117 @@
 {
-  "run_id": "ah-20260911-20260911092000",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "lease_until": "2026-09-11T09:58:04+08:00",
-  "heartbeat_at": "2026-09-11T09:58:04+08:00",
-  "source_cutoff": "2026-09-11T09:20:00+08:00",
-  "main_base_sha": "f785f5f80c24e79507a849dfb43d5bbf40ff5701",
+  "run_id": "ah-fix-20260911-20260911101913",
+  "owner": "MarketAhead A/H candidate-card fix",
+  "status": "running",
+  "heartbeat_at": "2026-09-11T10:19:13+08:00",
+  "lease_until": "2026-09-11T10:34:13+08:00",
+  "source_cutoff": "2026-09-11T10:19:13+08:00",
+  "main_base_sha": "01d9d9f5b9550a2c522ddc8ea7000d3035055230",
   "rules_blob_sha": "3ef53e3e8c9568095bff3e74180b8ee58dd2b716",
+  "stage": "rules_update",
   "evidence": {
-    "akshare": {
-      "status": "degraded",
-      "fetchedAt": "2026-09-10T12:44:34+08:00",
-      "reason": "latest main snapshot is from prior date; no stale values will be presented as Sep 11 evidence"
+    "previous_run": {
+      "run_id": "ah-20260911-20260911092000",
+      "published_commit": "01d9d9f5b9550a2c522ddc8ea7000d3035055230",
+      "status": "published"
     },
-    "hk_coverage": {
-      "enumeration_status": "ok",
-      "all_announcements": 250,
-      "must_review_after_pdf": 38,
-      "screened_out": 212,
-      "hard_triggered": 4,
-      "pending_decisions": 0,
-      "publication_included": 9,
-      "publication_excluded": 29,
-      "validation": "ok",
-      "ledger_path": "runs/2026-09-11-hk-coverage-ledger.json"
-    },
-    "us_rankings": {
-      "captured_at": "2026-09-11T09:28:00+08:00",
-      "industry": {
+    "scope": "rules contract plus 2026-09-11 A/H stock-picks module only",
+    "prior_evidence": {
+      "akshare": {
         "status": "degraded",
-        "url": "https://www.moomoo.com/hans/quote/us/sector-industry",
-        "error": "redirected to /403; Operations too frequent; no first or last page rows obtained"
+        "fetchedAt": "2026-09-10T12:44:34+08:00",
+        "reason": "latest main snapshot is from prior date; no stale values will be presented as Sep 11 evidence"
       },
-      "concept": {
-        "status": "degraded",
-        "primary": {
-          "url": "https://www.futunn.com/quote/sparks-us",
-          "error": "redirected to /403; 访问频繁"
+      "hk_coverage": {
+        "enumeration_status": "ok",
+        "all_announcements": 250,
+        "must_review_after_pdf": 38,
+        "screened_out": 212,
+        "hard_triggered": 4,
+        "pending_decisions": 0,
+        "publication_included": 9,
+        "publication_excluded": 29,
+        "validation": "ok",
+        "ledger_path": "runs/2026-09-11-hk-coverage-ledger.json"
+      },
+      "us_rankings": {
+        "captured_at": "2026-09-11T09:28:00+08:00",
+        "industry": {
+          "status": "degraded",
+          "url": "https://www.moomoo.com/hans/quote/us/sector-industry",
+          "error": "redirected to /403; Operations too frequent; no first or last page rows obtained"
         },
-        "fallback": {
-          "url": "https://www.moomoo.com/hans/quote/sparks-us",
-          "error": "redirected to /403; Operations too frequent"
+        "concept": {
+          "status": "degraded",
+          "primary": {
+            "url": "https://www.futunn.com/quote/sparks-us",
+            "error": "redirected to /403; 访问频繁"
+          },
+          "fallback": {
+            "url": "https://www.moomoo.com/hans/quote/sparks-us",
+            "error": "redirected to /403; Operations too frequent"
+          }
         }
+      },
+      "candidates": {
+        "status": "complete",
+        "path": "runs/2026-09-11-candidate-decisions.json",
+        "count": 5,
+        "recommendations": 0,
+        "reason": "all mapped candidates failed price-response/risk priority; missing optional valuation metrics were not used as a gate"
+      },
+      "rules": {
+        "status": "ok",
+        "baseline": "f785f5f80c24e79507a849dfb43d5bbf40ff5701",
+        "blob_sha": "3ef53e3e8c9568095bff3e74180b8ee58dd2b716",
+        "legacy_gates_disabled": true
+      },
+      "rank_major_movement_reconciliation": {
+        "status": "complete",
+        "obtained_ranking_rows": 0,
+        "reason": "both permitted ranking groups returned HTTP 403; no ranking-derived major theme exists",
+        "news_major_theme": {
+          "theme": "US semiconductor weakness",
+          "mapping": "Cambricon/China AI-chip chain",
+          "decision": "exclude",
+          "reason": "negative overnight signal plus no fresh Sep 11 quote for Cambricon; local broad indexes opened weak"
+        },
+        "pending": 0
+      },
+      "prepublish": {
+        "status": "ok",
+        "marker_only": true,
+        "us_markers_unchanged": true,
+        "bilingual_dom": true,
+        "history_manifest": true,
+        "rankings_degraded_with_exact_errors": true
+      },
+      "production": {
+        "status": "ok",
+        "homepage": {
+          "date_link": true,
+          "time": "2026-09-11 09:55 CST",
+          "cn_rendered": true,
+          "en_rendered": true,
+          "empty_state": false
+        },
+        "archive": {
+          "url": "https://premarketor.com/history/?date=2026-09-11",
+          "cn_rendered": true,
+          "empty_state": false
+        },
+        "production_json": {
+          "verified_via_rendered_archive": true,
+          "github_remote_exact": true,
+          "html_en_present": true
+        },
+        "verified_at": "2026-09-11T09:57:41+08:00"
       }
-    },
-    "candidates": {
-      "status": "complete",
-      "path": "runs/2026-09-11-candidate-decisions.json",
-      "count": 5,
-      "recommendations": 0,
-      "reason": "all mapped candidates failed price-response/risk priority; missing optional valuation metrics were not used as a gate"
-    },
-    "rules": {
-      "status": "ok",
-      "baseline": "f785f5f80c24e79507a849dfb43d5bbf40ff5701",
-      "blob_sha": "3ef53e3e8c9568095bff3e74180b8ee58dd2b716",
-      "legacy_gates_disabled": true
-    },
-    "rank_major_movement_reconciliation": {
-      "status": "complete",
-      "obtained_ranking_rows": 0,
-      "reason": "both permitted ranking groups returned HTTP 403; no ranking-derived major theme exists",
-      "news_major_theme": {
-        "theme": "US semiconductor weakness",
-        "mapping": "Cambricon/China AI-chip chain",
-        "decision": "exclude",
-        "reason": "negative overnight signal plus no fresh Sep 11 quote for Cambricon; local broad indexes opened weak"
-      },
-      "pending": 0
-    },
-    "prepublish": {
-      "status": "ok",
-      "marker_only": true,
-      "us_markers_unchanged": true,
-      "bilingual_dom": true,
-      "history_manifest": true,
-      "rankings_degraded_with_exact_errors": true
-    },
-    "production": {
-      "status": "ok",
-      "homepage": {
-        "date_link": true,
-        "time": "2026-09-11 09:55 CST",
-        "cn_rendered": true,
-        "en_rendered": true,
-        "empty_state": false
-      },
-      "archive": {
-        "url": "https://premarketor.com/history/?date=2026-09-11",
-        "cn_rendered": true,
-        "empty_state": false
-      },
-      "production_json": {
-        "verified_via_rendered_archive": true,
-        "github_remote_exact": true,
-        "html_en_present": true
-      },
-      "verified_at": "2026-09-11T09:57:41+08:00"
     }
   },
   "pending_increment": [],
-  "published_commit": "01d9d9f5b9550a2c522ddc8ea7000d3035055230",
+  "published_commit": null,
   "stage_timings": {
-    "rules_and_baseline_started_at": "2026-09-11T09:18:26+08:00",
-    "rules_and_baseline_completed_at": "2026-09-11T09:20:00+08:00",
-    "hk_ledger_started_at": "2026-09-11T09:23:00+08:00",
-    "hk_ledger_pdf_completed_at": "2026-09-11T09:32:00+08:00",
-    "external_research_completed_at": "2026-09-11T09:40:00+08:00",
-    "generation_started_at": "2026-09-11T09:42:00+08:00",
-    "generation_completed_at": "2026-09-11T09:48:00+08:00",
-    "hard_validation_completed_at": "2026-09-11T09:55:00+08:00",
-    "main_update_ref_completed_at": "2026-09-11T09:55:10+08:00",
-    "candidate_commit_created_at": "2026-09-11T09:54:26+08:00",
-    "remote_readback_completed_at": "2026-09-11T09:56:05+08:00",
-    "production_verification_completed_at": "2026-09-11T09:57:41+08:00",
-    "total_wall_seconds": 2378
-  },
-  "stage": "published",
-  "candidate_commit": "01d9d9f5b9550a2c522ddc8ea7000d3035055230"
+    "started_at": "2026-09-11T10:19:13+08:00",
+    "rules_read_completed_at": "2026-09-11T10:18:00+08:00"
+  }
 }
