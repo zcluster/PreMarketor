@@ -42,6 +42,9 @@ class AHPolicyV2ContractTest(unittest.TestCase):
     def test_retained_safety_contracts_are_explicitly_enabled(self):
         retained = (
             "require_ranked_major_movement_reconciliation",
+            "require_github_us_rankings_snapshot",
+            "forbid_runtime_moomoo_rankings_fetch",
+            "allow_partial_ranking_fields",
             "require_traceable_sources",
             "require_material_us_to_ah_mapping",
             "forbid_negative_signal_as_long_pick",
@@ -108,6 +111,20 @@ class AHPolicyV2ContractTest(unittest.TestCase):
 
     def test_failure_section_is_unique(self):
         self.assertEqual(self.rules.count("## 失败处理与阻塞条件"), 1)
+
+    def test_us_rankings_are_precomputed_and_partial_fields_are_allowed(self):
+        required_text = (
+            "data/us-rankings-latest.json",
+            ".github/workflows/us-rankings-snapshot.yml",
+            "Work Cloud 不再直接访问 Moomoo/Futunn 抓排行榜",
+            "板块名与板块涨跌幅足以发布该行",
+            "不得清空该行或整个分组",
+            "0 条可信板块名+涨跌幅",
+            "不得把它当作当前排行",
+        )
+        for text in required_text:
+            with self.subTest(text=text):
+                self.assertIn(text, self.rules)
 
 
 if __name__ == "__main__":
