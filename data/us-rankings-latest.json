@@ -1,34 +1,185 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-09-11T21:28:33+08:00",
-  "status": "error",
+  "attemptedAt": "2026-09-11T21:44:43+08:00",
+  "status": "partial",
   "groups": {
     "industry": {
-      "status": "error",
+      "status": "partial",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
-      "fetchedAt": null,
-      "top": [],
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-11T21:44:43+08:00",
+      "pagination": {
+        "firstPage": 0,
+        "pageCount": 5,
+        "total": 145
+      },
+      "top": [
+        {
+          "name": "电气设备及零件",
+          "nameEn": "Electrical Equipment & Parts",
+          "code": "BK2493",
+          "changePct": "+4.02%",
+          "leaderName": "Bloom Energy",
+          "leaderTicker": "BE",
+          "leaderChangePct": "+6.27%",
+          "breadth": {
+            "advancers": 37,
+            "decliners": 11,
+            "unchanged": 7
+          }
+        },
+        {
+          "name": "电子元件",
+          "nameEn": "Electronic Components",
+          "code": "BK2072",
+          "changePct": "+3.36%",
+          "leaderName": "Neonode",
+          "leaderTicker": "NEON",
+          "leaderChangePct": "+5.07%",
+          "breadth": {
+            "advancers": 39,
+            "decliners": 4,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "白银",
+          "nameEn": "Silver",
+          "code": "BK2093",
+          "changePct": "+2.94%",
+          "leaderName": "Aya Gold & Silver",
+          "leaderTicker": "AYA",
+          "leaderChangePct": "+4.31%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "电子与计算机分销",
+          "nameEn": "Electronics & Computer Distribution",
+          "code": "BK2506",
+          "changePct": "+2.90%",
+          "leaderName": "艾睿",
+          "leaderTicker": "ARW",
+          "leaderChangePct": "+3.87%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "通讯设备",
+          "nameEn": "Communication Equipment",
+          "code": "BK2098",
+          "changePct": "+2.82%",
+          "leaderName": "高频电子",
+          "leaderTicker": "FEIM",
+          "leaderChangePct": "+43.33%",
+          "breadth": {
+            "advancers": 35,
+            "decliners": 7,
+            "unchanged": 3
+          }
+        }
+      ],
       "bottom": [],
       "missing": [
-        "all_current_rows"
+        "bottom5"
       ],
-      "error": "RuntimeError: no positive industry rows on first page",
-      "lastSuccess": null
+      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
     },
     "concept": {
-      "status": "error",
+      "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
-      "fetchedAt": null,
-      "top": [],
-      "bottom": [],
-      "missing": [
-        "all_current_rows"
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-11T21:44:43+08:00",
+      "pagination": {
+        "page": 0,
+        "pageSize": 24,
+        "pageCount": 5,
+        "total": 105
+      },
+      "top": [
+        {
+          "name": "功率半导体",
+          "nameEn": "Power semiconductor",
+          "code": "BK24212",
+          "changePct": "+3.20%",
+          "leaderName": "Wolfspeed",
+          "leaderTicker": "WOLF",
+          "leaderChangePct": "+6.12%",
+          "breadth": {
+            "advancers": 25,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "英伟达持仓概念",
+          "nameEn": "NVIDIA Portfolio",
+          "code": "BK20882",
+          "changePct": "+2.92%",
+          "leaderName": "Coherent",
+          "leaderTicker": "COHR",
+          "leaderChangePct": "+5.70%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "储能概念股",
+          "nameEn": "Energy Storage Concept",
+          "code": "BK23939",
+          "changePct": "+2.74%",
+          "leaderName": "GE Vernova",
+          "leaderTicker": "GEV",
+          "leaderChangePct": "+3.84%",
+          "breadth": {
+            "advancers": 8,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "固态电池",
+          "nameEn": "Solid State Battery",
+          "code": "BK2544",
+          "changePct": "+2.62%",
+          "leaderName": "燃料电池能源",
+          "leaderTicker": "FCEL",
+          "leaderChangePct": "+2.73%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 2,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "白银概念",
+          "nameEn": "Silver Concept",
+          "code": "BK24035",
+          "changePct": "+2.56%",
+          "leaderName": "科尔黛伦矿业",
+          "leaderTicker": "CDE",
+          "leaderChangePct": "+2.93%",
+          "breadth": {
+            "advancers": 8,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        }
       ],
-      "error": "RuntimeError: no positive concept rows on first page",
-      "lastSuccess": null
+      "bottom": [],
+      "missing": [],
+      "error": null
     }
   }
 }
