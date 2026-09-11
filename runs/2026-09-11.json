@@ -2,8 +2,8 @@
   "run_id": "ah-20260911-20260911092000",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "lease_until": "2026-09-11T10:04:00+08:00",
-  "heartbeat_at": "2026-09-11T09:49:00+08:00",
+  "lease_until": "2026-09-11T10:10:00+08:00",
+  "heartbeat_at": "2026-09-11T09:55:00+08:00",
   "source_cutoff": "2026-09-11T09:20:00+08:00",
   "main_base_sha": "f785f5f80c24e79507a849dfb43d5bbf40ff5701",
   "rules_blob_sha": "3ef53e3e8c9568095bff3e74180b8ee58dd2b716",
@@ -68,6 +68,14 @@
         "reason": "negative overnight signal plus no fresh Sep 11 quote for Cambricon; local broad indexes opened weak"
       },
       "pending": 0
+    },
+    "prepublish": {
+      "status": "ok",
+      "marker_only": true,
+      "us_markers_unchanged": true,
+      "bilingual_dom": true,
+      "history_manifest": true,
+      "rankings_degraded_with_exact_errors": true
     }
   },
   "pending_increment": [],
@@ -79,7 +87,8 @@
     "hk_ledger_pdf_completed_at": "2026-09-11T09:32:00+08:00",
     "external_research_completed_at": "2026-09-11T09:40:00+08:00",
     "generation_started_at": "2026-09-11T09:42:00+08:00",
-    "generation_completed_at": "2026-09-11T09:48:00+08:00"
+    "generation_completed_at": "2026-09-11T09:48:00+08:00",
+    "hard_validation_completed_at": "2026-09-11T09:55:00+08:00"
   },
-  "stage": "hard_validation"
+  "stage": "create_candidate_commit"
 }
