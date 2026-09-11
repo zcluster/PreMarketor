@@ -2,12 +2,12 @@
   "run_id": "ah-fix-20260911-20260911101913",
   "owner": "MarketAhead A/H candidate-card fix",
   "status": "running",
-  "heartbeat_at": "2026-09-11T10:25:41.895+08:00",
-  "lease_until": "2026-09-11T10:40:41.895+08:00",
+  "heartbeat_at": "2026-09-11T10:32:36.875+08:00",
+  "lease_until": "2026-09-11T10:47:36.875+08:00",
   "source_cutoff": "2026-09-11T10:19:13+08:00",
-  "main_base_sha": "01d9d9f5b9550a2c522ddc8ea7000d3035055230",
-  "rules_blob_sha": "3ef53e3e8c9568095bff3e74180b8ee58dd2b716",
-  "stage": "rules_hard_validation",
+  "main_base_sha": "98b235df25cc5d93a77c8d81fe6206ed4ca97fc6",
+  "rules_blob_sha": "f9a8cff9a342225539d2d2f192e1cb37c202d0f5",
+  "stage": "rules_contract_correction",
   "evidence": {
     "previous_run": {
       "run_id": "ah-20260911-20260911092000",
@@ -113,6 +113,7 @@
   "stage_timings": {
     "started_at": "2026-09-11T10:19:13+08:00",
     "rules_read_completed_at": "2026-09-11T10:18:00+08:00",
-    "rules_contract_tests_completed_at": "2026-09-11T10:25:41.895+08:00"
+    "rules_contract_tests_completed_at": "2026-09-11T10:25:41.895+08:00",
+    "rules_first_commit_at": "2026-09-11T10:27:00+08:00"
   }
 }
