@@ -1,13 +1,13 @@
 {
   "run_id": "ah-rank-retry-20260911-20260911124253",
   "owner": "MarketAhead A/H US ranking retry",
-  "status": "running",
-  "heartbeat_at": "2026-09-11T20:42:53.056+08:00",
-  "lease_until": "2026-09-11T20:52:53.056+08:00",
+  "status": "completed_no_publish",
+  "heartbeat_at": "2026-09-11T20:44:01.929+08:00",
+  "lease_until": null,
   "source_cutoff": "2026-09-11T20:42:53.056+08:00",
   "main_base_sha": "8219cf3757028482a7d79d084df0b361323756d5",
   "rules_blob_sha": "de5aa80e26f8563da38621b3067b535f08144789",
-  "stage": "ranking_retry_acquired",
+  "stage": "ranking_retry_complete_no_publish",
   "evidence": {
     "previous_run": {
       "run_id": "ah-20260911-20260911092000",
@@ -156,9 +156,68 @@
       "verified_at": "2026-09-11T10:41:41.633+08:00"
     },
     "ranking_retry": {
-      "started_at": "2026-09-11T20:42:53.056+08:00",
-      "scope": "brief_rules.md 8a only",
-      "requests": []
+      "completed_at": "2026-09-11T20:44:01.929+08:00",
+      "scope": "brief_rules.md 8a only; no intermediate pages, load-more, detail pages, cookies, or WAF bypass",
+      "industry": {
+        "status": "failed",
+        "requests": [
+          {
+            "url": "https://www.moomoo.com/hans/quote/us/sector-industry",
+            "requested_at": "2026-09-11T20:43:05+08:00",
+            "http_status": 403,
+            "final_url": "https://www.moomoo.com/403",
+            "complete_fields": false,
+            "error_stage": "first_page_http",
+            "error": "Operations too frequent"
+          }
+        ],
+        "first_page_rows": 0,
+        "page_count": null,
+        "last_page_requested": false,
+        "missing_fields": [
+          "industry name",
+          "industry change",
+          "representative ticker",
+          "representative ticker change",
+          "advance/decline/flat breadth"
+        ]
+      },
+      "concept": {
+        "status": "failed",
+        "requests": [
+          {
+            "url": "https://www.futunn.com/quote/sparks-us?chain_id=2keKWYi3XB0JW1.1l4cq9k&global_content=%7B%22promote_id%22%3A13766,%22sub_promote_id%22%3A41,%22f%22%3A%22nn%2Fquote%2Fcalendar%22,%22b%22%3A%22Tab_%E4%B8%89%E7%BA%A7_Markets-Trading%20Tools-Investment%20Themes%22%7D",
+            "requested_at": "2026-09-11T20:43:20+08:00",
+            "http_status": null,
+            "final_url": null,
+            "complete_fields": false,
+            "error_stage": "request_policy_before_http",
+            "error": "URL rejected as unsafe/non-retryable; no HTTP response exposed"
+          },
+          {
+            "url": "https://www.moomoo.com/hans/quote/sparks-us",
+            "requested_at": "2026-09-11T20:43:35+08:00",
+            "http_status": 200,
+            "final_url": "https://www.moomoo.com/hans/quote/sparks-us",
+            "complete_fields": false,
+            "error_stage": "first_screen_parse",
+            "error": "24 concept names and sector returns visible, but representative ticker, ticker return and advance/decline/flat breadth absent"
+          }
+        ],
+        "visible_cards": 24,
+        "complete_rows": 0,
+        "load_more_clicked": false,
+        "detail_pages_requested": 0,
+        "missing_fields": [
+          "representative ticker",
+          "representative ticker change",
+          "advance/decline/flat breadth"
+        ]
+      },
+      "publish_eligibility": false,
+      "published": false,
+      "published_commit": null,
+      "reason": "Neither ranking group returned all required row fields; stale rows and search summaries were not used."
     }
   },
   "pending_increment": [],
@@ -173,6 +232,7 @@
     "content_hard_validation_completed_at": "2026-09-11T10:34:00+08:00",
     "main_update_completed_at": "2026-09-11T10:39:00+08:00",
     "production_verified_at": "2026-09-11T10:41:41.633+08:00",
-    "ranking_retry_started_at": "2026-09-11T20:42:53.056+08:00"
+    "ranking_retry_started_at": "2026-09-11T20:42:53.056+08:00",
+    "ranking_retry_completed_at": "2026-09-11T20:44:01.929+08:00"
   }
 }
