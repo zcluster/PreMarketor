@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-11T09:40:00+08:00",
+  "inventory_source": "PBOC/CSRC policy briefing, Reuters overnight technology review and reviewed HKEX announcement ledger",
+  "candidates": [
+    {
+      "ticker": "HK.00016",
+      "name": "新鸿基地产",
+      "theme": "港股业绩与股息",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0910/2026091001076.pdf",
+      "catalyst": "2025/26 underlying profit HK$22.850bn, reported profit HK$21.426bn and full-year dividend HK$3.91, up 4%",
+      "latest_price_feedback": "HK$113.20, -3.00%, Google Finance quote timestamp 2026-09-11 09:20:13 CST; checked 09:40 CST",
+      "risk": "negative opening price response outweighs the otherwise constructive profit/dividend headline",
+      "trigger": "stabilizes above the opening range with property-sector relative strength",
+      "invalidation": "continues to underperform after the results",
+      "decision": "exclude",
+      "verification_status": "verified"
+    },
+    {
+      "ticker": "HK.01548",
+      "name": "金斯瑞生物科技",
+      "theme": "生物科技融资",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0911/2026091100030.pdf",
+      "catalyst": "77.126m-share placement at HK$30.50, net proceeds about HK$2.327bn for AIDD capacity, R&D and corporate uses",
+      "latest_price_feedback": "HK$30.88, -3.50%, Google Finance quote timestamp 2026-09-11 09:20:13 CST; checked 09:40 CST",
+      "risk": "3.38% enlarged-share dilution and a negative opening response",
+      "trigger": "reclaims placement-related selling with sustained volume",
+      "invalidation": "trades below the placement price or remains weak versus biotech",
+      "decision": "exclude",
+      "verification_status": "verified"
+    },
+    {
+      "ticker": "HK.01783",
+      "name": "晋景新能",
+      "theme": "AI算力基础设施",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0910/2026091001807.pdf",
+      "catalyst": "proposed purchase of more than 100 Nvidia GPU servers for RMB380m",
+      "latest_price_feedback": "same-day reliable quote unavailable at 09:40 CST",
+      "risk": "shareholder approval, delivery, funding and execution risks; prior server commitments are already large",
+      "trigger": "approval plus a verified post-announcement price/volume confirmation",
+      "invalidation": "further delay, financing stress or negative price confirmation",
+      "decision": "exclude",
+      "verification_status": "source_unavailable"
+    },
+    {
+      "ticker": "SH.688256",
+      "name": "寒武纪",
+      "theme": "国产AI芯片涨价/HBM短缺",
+      "source": "https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-as-high-bandwidth-memory-shortage-bites-2026-09-10/",
+      "catalyst": "Reuters-reported price increases for domestic AI accelerators amid HBM shortages",
+      "latest_price_feedback": "same-day reliable quote unavailable; latest Reuters market quote located was delayed to 2026-09-09",
+      "risk": "anonymous-source pricing report, input shortages and a missing same-day price check",
+      "trigger": "verified current price outperformance with supply-chain confirmation",
+      "invalidation": "negative same-day feedback or price increases fail to translate into orders/margins",
+      "decision": "exclude",
+      "verification_status": "source_unavailable"
+    },
+    {
+      "ticker": "HK.00551",
+      "name": "裕元集团",
+      "theme": "运动用品供应链",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0910/2026091000893.pdf",
+      "catalyst": "August revenue US$636.647m",
+      "latest_price_feedback": "not required for a long card because operating evidence was negative",
+      "risk": "August revenue -2.1% y/y and manufacturing revenue -1.6% y/y; Jan-Aug manufacturing -5.0%",
+      "trigger": "monthly revenue returns to growth",
+      "invalidation": "further year-on-year contraction",
+      "decision": "exclude",
+      "verification_status": "verified"
+    }
+  ],
+  "recommendations": []
+}
