@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-09-11T21:44:43+08:00",
-  "status": "partial",
+  "attemptedAt": "2026-09-12T08:37:24+08:00",
+  "status": "ok",
   "groups": {
     "industry": {
-      "status": "partial",
+      "status": "ok",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-11T21:44:43+08:00",
+      "fetchedAt": "2026-09-12T08:37:24+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,55 +17,13 @@
       },
       "top": [
         {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "+4.02%",
-          "leaderName": "Bloom Energy",
-          "leaderTicker": "BE",
-          "leaderChangePct": "+6.27%",
-          "breadth": {
-            "advancers": 37,
-            "decliners": 11,
-            "unchanged": 7
-          }
-        },
-        {
-          "name": "电子元件",
-          "nameEn": "Electronic Components",
-          "code": "BK2072",
-          "changePct": "+3.36%",
-          "leaderName": "Neonode",
-          "leaderTicker": "NEON",
-          "leaderChangePct": "+5.07%",
-          "breadth": {
-            "advancers": 39,
-            "decliners": 4,
-            "unchanged": 2
-          }
-        },
-        {
-          "name": "白银",
-          "nameEn": "Silver",
-          "code": "BK2093",
-          "changePct": "+2.94%",
-          "leaderName": "Aya Gold & Silver",
-          "leaderTicker": "AYA",
-          "leaderChangePct": "+4.31%",
-          "breadth": {
-            "advancers": 6,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
           "name": "电子与计算机分销",
           "nameEn": "Electronics & Computer Distribution",
           "code": "BK2506",
-          "changePct": "+2.90%",
-          "leaderName": "艾睿",
-          "leaderTicker": "ARW",
-          "leaderChangePct": "+3.87%",
+          "changePct": "+5.96%",
+          "leaderName": "安富利",
+          "leaderTicker": "AVT",
+          "leaderChangePct": "+7.16%",
           "breadth": {
             "advancers": 7,
             "decliners": 1,
@@ -73,32 +31,143 @@
           }
         },
         {
+          "name": "百货公司",
+          "nameEn": "Department Stores",
+          "code": "BK2080",
+          "changePct": "+4.53%",
+          "leaderName": "梅西百货",
+          "leaderTicker": "M",
+          "leaderChangePct": "+7.71%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "电子元件",
+          "nameEn": "Electronic Components",
+          "code": "BK2072",
+          "changePct": "+4.15%",
+          "leaderName": "Gauzy",
+          "leaderTicker": "GAUZ",
+          "leaderChangePct": "+13.21%",
+          "breadth": {
+            "advancers": 38,
+            "decliners": 6,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "电气设备及零件",
+          "nameEn": "Electrical Equipment & Parts",
+          "code": "BK2493",
+          "changePct": "+4.09%",
+          "leaderName": "Forgent Power Solutions",
+          "leaderTicker": "FPS",
+          "leaderChangePct": "+8.97%",
+          "breadth": {
+            "advancers": 32,
+            "decliners": 20,
+            "unchanged": 3
+          }
+        },
+        {
           "name": "通讯设备",
           "nameEn": "Communication Equipment",
           "code": "BK2098",
-          "changePct": "+2.82%",
+          "changePct": "+4.05%",
           "leaderName": "高频电子",
           "leaderTicker": "FEIM",
-          "leaderChangePct": "+43.33%",
+          "leaderChangePct": "+42.40%",
           "breadth": {
-            "advancers": 35,
-            "decliners": 7,
-            "unchanged": 3
+            "advancers": 39,
+            "decliners": 5,
+            "unchanged": 1
           }
         }
       ],
-      "bottom": [],
-      "missing": [
-        "bottom5"
+      "bottom": [
+        {
+          "name": "医药零售",
+          "nameEn": "Pharmaceutical Retailers",
+          "code": "BK2092",
+          "changePct": "-1.49%",
+          "leaderName": "High Tide",
+          "leaderTicker": "HITI",
+          "leaderChangePct": "-1.17%",
+          "breadth": {
+            "advancers": 0,
+            "decliners": 5,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "基础设施运营",
+          "nameEn": "Infrastructure Operations",
+          "code": "BK2477",
+          "changePct": "-1.75%",
+          "leaderName": "Mobile Infrastructure",
+          "leaderTicker": "BEEP",
+          "leaderChangePct": "-1.75%",
+          "breadth": {
+            "advancers": 0,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "铀",
+          "nameEn": "Uranium",
+          "code": "BK2430",
+          "changePct": "-2.39%",
+          "leaderName": "Jaguar Uranium",
+          "leaderTicker": "JAGU",
+          "leaderChangePct": "-0.64%",
+          "breadth": {
+            "advancers": 0,
+            "decliners": 13,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "白银",
+          "nameEn": "Silver",
+          "code": "BK2093",
+          "changePct": "-2.44%",
+          "leaderName": "New Pacific Metals",
+          "leaderTicker": "NEWP",
+          "leaderChangePct": "+0.51%",
+          "breadth": {
+            "advancers": 1,
+            "decliners": 5,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "焦炭",
+          "nameEn": "Coking Coal",
+          "code": "BK2505",
+          "changePct": "-3.49%",
+          "leaderName": "SunCoke Energy",
+          "leaderTicker": "SXC",
+          "leaderChangePct": "-1.09%",
+          "breadth": {
+            "advancers": 0,
+            "decliners": 5,
+            "unchanged": 0
+          }
+        }
       ],
-      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
+      "missing": [],
+      "error": null
     },
     "concept": {
       "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-11T21:44:43+08:00",
+      "fetchedAt": "2026-09-12T08:37:24+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -110,10 +179,10 @@
           "name": "功率半导体",
           "nameEn": "Power semiconductor",
           "code": "BK24212",
-          "changePct": "+3.20%",
-          "leaderName": "Wolfspeed",
-          "leaderTicker": "WOLF",
-          "leaderChangePct": "+6.12%",
+          "changePct": "+4.11%",
+          "leaderName": "Vicor电子",
+          "leaderTicker": "VICR",
+          "leaderChangePct": "+11.15%",
           "breadth": {
             "advancers": 25,
             "decliners": 0,
@@ -121,30 +190,16 @@
           }
         },
         {
-          "name": "英伟达持仓概念",
-          "nameEn": "NVIDIA Portfolio",
-          "code": "BK20882",
-          "changePct": "+2.92%",
-          "leaderName": "Coherent",
-          "leaderTicker": "COHR",
-          "leaderChangePct": "+5.70%",
+          "name": "加密矿企",
+          "nameEn": "Crypto Mining",
+          "code": "BK23921",
+          "changePct": "+3.61%",
+          "leaderName": "Hut 8",
+          "leaderTicker": "HUT",
+          "leaderChangePct": "+8.83%",
           "breadth": {
-            "advancers": 6,
+            "advancers": 13,
             "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "储能概念股",
-          "nameEn": "Energy Storage Concept",
-          "code": "BK23939",
-          "changePct": "+2.74%",
-          "leaderName": "GE Vernova",
-          "leaderTicker": "GEV",
-          "leaderChangePct": "+3.84%",
-          "breadth": {
-            "advancers": 8,
-            "decliners": 0,
             "unchanged": 0
           }
         },
@@ -152,27 +207,41 @@
           "name": "固态电池",
           "nameEn": "Solid State Battery",
           "code": "BK2544",
-          "changePct": "+2.62%",
-          "leaderName": "燃料电池能源",
-          "leaderTicker": "FCEL",
-          "leaderChangePct": "+2.73%",
+          "changePct": "+2.87%",
+          "leaderName": "丰田汽车",
+          "leaderTicker": "TM",
+          "leaderChangePct": "+2.97%",
           "breadth": {
-            "advancers": 6,
-            "decliners": 2,
+            "advancers": 4,
+            "decliners": 4,
             "unchanged": 0
           }
         },
         {
-          "name": "白银概念",
-          "nameEn": "Silver Concept",
-          "code": "BK24035",
-          "changePct": "+2.56%",
-          "leaderName": "科尔黛伦矿业",
-          "leaderTicker": "CDE",
-          "leaderChangePct": "+2.93%",
+          "name": "加密储备概念",
+          "nameEn": "Crypto Treasury",
+          "code": "BK23920",
+          "changePct": "+2.78%",
+          "leaderName": "BTC Digital",
+          "leaderTicker": "BTCT",
+          "leaderChangePct": "+11.54%",
           "breadth": {
-            "advancers": 8,
-            "decliners": 0,
+            "advancers": 24,
+            "decliners": 6,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "储能概念股",
+          "nameEn": "Energy Storage Concept",
+          "code": "BK23939",
+          "changePct": "+2.78%",
+          "leaderName": "CleanSpark",
+          "leaderTicker": "CLSK",
+          "leaderChangePct": "+6.80%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 1,
             "unchanged": 0
           }
         }
