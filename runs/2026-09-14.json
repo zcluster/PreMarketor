@@ -2,12 +2,12 @@
   "run_id": "ah-20260914-20260914003208",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-14T08:35:31+08:00",
-  "lease_until": "2026-09-14T08:45:31+08:00",
+  "heartbeat_at": "2026-09-14T08:37:59+08:00",
+  "lease_until": "2026-09-14T08:47:59+08:00",
   "source_cutoff": "2026-09-14T08:32:08.529+08:00",
   "main_base_sha": "03c0cde3c05ae4fba1fc3b12f9d98c8675622aa4",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -26,12 +26,99 @@
         "周末油价与美股期指风险信号",
         "智谱、博雷顿、汉斯生物制药、新华通讯频媒、俊知集团等港交所公告"
       ]
-    }
+    },
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/energy/china-limits-fuel-price-increases-third-time-since-iran-war-began-2026-09-11/",
+        "published": "2026-09-11",
+        "fact": "China retail gasoline/diesel +260/+250 yuan per tonne from Sep 12 versus formula +435/+420"
+      },
+      {
+        "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-13/",
+        "published": "2026-09-13T23:11:00Z",
+        "fact": "S&P futures -0.5%, Nasdaq futures -1.0%, Brent 107.84, WTI 102.85"
+      },
+      {
+        "url": "https://www.reuters.com/business/aerospace-defense/xi-pushes-greater-brics-economic-ties-give-bloc-larger-global-role-2026-09-13/",
+        "published": "2026-09-13",
+        "fact": "BRICS AI Open Source Zone and service trade initiatives"
+      },
+      {
+        "url": "https://www.mee.gov.cn/zcwj/gwywj/",
+        "published": "2026-09-10",
+        "fact": "State Council notice on overdue SME payments"
+      },
+      {
+        "url": "https://www.shanghai.gov.cn/",
+        "published": "2026-09-13",
+        "fact": "Pujiang Innovation Forum and Yangtze River Delta basic research major project"
+      },
+      {
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0913/2026091300026_c.pdf",
+        "published": "2026-09-13",
+        "fact": "Z.AI placement and RMB20.14bn zero-coupon CB"
+      },
+      {
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0913/2026091300012_c.pdf",
+        "published": "2026-09-13",
+        "fact": "Breton up to 16.6m H shares at HKD10.28"
+      },
+      {
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0913/2026091300010_c.pdf",
+        "published": "2026-09-13",
+        "fact": "Hanx warrants up to 13.4m at HKD0.36; exercise HKD36"
+      },
+      {
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0913/2026091300008_c.pdf",
+        "published": "2026-09-13",
+        "fact": "Xinhua winding-up petition over HKD4.05m"
+      },
+      {
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0913/2026091300032_c.pdf",
+        "published": "2026-09-13",
+        "fact": "Trigiant acquisition of Qinghai Zhongli Optical Fiber for RMB455m"
+      }
+    ],
+    "major_theme_reconciliation": [
+      {
+        "theme": "Electronics & Computer Distribution",
+        "decision": "no_candidate",
+        "reason": "No company-specific A/H catalyst verified; futures risk-off"
+      },
+      {
+        "theme": "Department Stores",
+        "decision": "no_candidate",
+        "reason": "No material local event verified"
+      },
+      {
+        "theme": "Power semiconductor",
+        "decision": "no_candidate",
+        "reason": "US close strong but Nasdaq futures -1.0%; no company-level A/H catalyst verified"
+      },
+      {
+        "theme": "Crypto Mining",
+        "decision": "no_candidate",
+        "reason": "No direct A/H pure-play with verified weekend catalyst"
+      },
+      {
+        "theme": "Communication Equipment",
+        "decision": "avoid",
+        "candidate": "HK.01300",
+        "reason": "Optical-fiber acquisition maps, but Sep11 close -11.18% is clear negative feedback"
+      },
+      {
+        "theme": "Z.AI financing",
+        "decision": "avoid",
+        "candidate": "HK.02513",
+        "reason": "HKD714 placement is 10% discount and Sep11 close -3.17%"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "started_at": "2026-09-14T08:32:08.529+08:00",
-    "rules_read_completed_at": "2026-09-14T08:32:08.529+08:00"
+    "rules_read_completed_at": "2026-09-14T08:32:08.529+08:00",
+    "research_completed_at": "2026-09-14T08:37:59+08:00"
   }
 }
