@@ -2,12 +2,12 @@
   "run_id": "ah-20260914-20260914003208",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-14T08:37:59+08:00",
-  "lease_until": "2026-09-14T08:47:59+08:00",
+  "heartbeat_at": "2026-09-14T08:41:44+08:00",
+  "lease_until": "2026-09-14T08:51:44+08:00",
   "source_cutoff": "2026-09-14T08:32:08.529+08:00",
   "main_base_sha": "03c0cde3c05ae4fba1fc3b12f9d98c8675622aa4",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "generation",
+  "stage": "hard_validation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -112,13 +112,31 @@
         "candidate": "HK.02513",
         "reason": "HKD714 placement is 10% discount and Sep11 close -3.17%"
       }
-    ]
+    ],
+    "validation": {
+      "status": "passed",
+      "checks": [
+        "marker-only",
+        "US marker byte protection",
+        "12 major-news items",
+        "2 domestic policy",
+        "4 technology/industry",
+        "5 A/H company events",
+        "bilingual DOM skeleton",
+        "3-item overnight section",
+        "15-row bilingual rankings",
+        "4 candidate cards",
+        "history render simulation",
+        "manifest preservation"
+      ]
+    }
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "started_at": "2026-09-14T08:32:08.529+08:00",
     "rules_read_completed_at": "2026-09-14T08:32:08.529+08:00",
-    "research_completed_at": "2026-09-14T08:37:59+08:00"
+    "research_completed_at": "2026-09-14T08:37:59+08:00",
+    "generation_completed_at": "2026-09-14T08:41:44+08:00"
   }
 }
