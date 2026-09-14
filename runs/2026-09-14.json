@@ -1,13 +1,13 @@
 {
   "run_id": "ah-review-20260914-092852",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "heartbeat_at": "2026-09-14T09:44:05+08:00",
-  "lease_until": "2026-09-14T09:54:05+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-14T09:47:57+08:00",
+  "lease_until": "2026-09-14T09:47:57+08:00",
   "source_cutoff": "2026-09-14T08:32:08.529+08:00",
   "main_base_sha": "6eb4e4de7e375640d5b402d37105eae0f7f8a900",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "deployment_verification",
+  "stage": "published",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -165,7 +165,7 @@
       ]
     },
     "incremental_review": {
-      "status": "published_pending_verification",
+      "status": "published",
       "window_start": "2026-09-14T08:32:08.529+08:00",
       "checked_at": "2026-09-14T09:28:52+08:00",
       "findings": [
@@ -213,29 +213,43 @@
       ]
     },
     "incremental_remote_readback": {
-      "status": "pending"
+      "status": "passed",
+      "checked_at": "2026-09-14T09:47:57+08:00",
+      "main_head": "6957f4bd2af710802fc15d189957f2fdc90067da",
+      "files": [
+        "index.html",
+        "history/data/2026-09-14.json",
+        "history/manifest.json"
+      ],
+      "checks": [
+        "three files exact-equal candidate",
+        "commit contains only three allowlisted paths",
+        "A/H time 2026-09-14 09:35 CST",
+        "12 bilingual major-news items",
+        "5 bilingual stock cards",
+        "one AH history entry",
+        "manifest first record 2026-09-14",
+        "US and sector markers preserved by pre-publish validation"
+      ]
     },
     "incremental_production_verification": {
-      "status": "pending"
+      "status": "passed",
+      "checked_at": "2026-09-14T09:47:57+08:00",
+      "urls": [
+        "https://premarketor.com/",
+        "https://premarketor.com/history/?date=2026-09-14"
+      ],
+      "checks": [
+        "homepage A/H time 2026-09-14 09:35 CST",
+        "Chinese and English homepage content",
+        "new compute-network, GRINM Silicon and Yuanlin events visible",
+        "history title, time and Chinese body visible",
+        "no empty state",
+        "calendar links 2026-09-14 archive"
+      ]
     }
   },
-  "pending_increment": [
-    {
-      "event": "国务院常务会议部署算力网建设",
-      "decision": "include",
-      "reason": "materially strengthens compute/optical/green-power sector mapping"
-    },
-    {
-      "event": "有研硅复牌重组",
-      "decision": "include",
-      "reason": "material A-share semiconductor asset-injection event with explicit risks"
-    },
-    {
-      "event": "园林股份停牌收购",
-      "decision": "include",
-      "reason": "material A-share M&A and suspension event"
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "6957f4bd2af710802fc15d189957f2fdc90067da",
   "stage_timings": {
     "started_at": "2026-09-14T08:32:08.529+08:00",
@@ -252,7 +266,10 @@
     "incremental_generation_completed_at": "2026-09-14T09:36:49+08:00",
     "incremental_validation_completed_at": "2026-09-14T09:38:09+08:00",
     "incremental_candidate_commit_created_at": "2026-09-14T09:40:27+08:00",
-    "incremental_main_updated_at": "2026-09-14T09:44:05+08:00"
+    "incremental_main_updated_at": "2026-09-14T09:44:05+08:00",
+    "incremental_remote_readback_completed_at": "2026-09-14T09:45:36+08:00",
+    "incremental_deployment_verified_at": "2026-09-14T09:47:57+08:00",
+    "incremental_completed_at": "2026-09-14T09:47:57+08:00"
   },
   "candidate_commit": "6957f4bd2af710802fc15d189957f2fdc90067da"
 }
