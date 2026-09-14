@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260914-092852",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-14T09:28:52+08:00",
-  "lease_until": "2026-09-14T09:38:52+08:00",
+  "heartbeat_at": "2026-09-14T09:31:07+08:00",
+  "lease_until": "2026-09-14T09:41:07+08:00",
   "source_cutoff": "2026-09-14T08:32:08.529+08:00",
   "main_base_sha": "03c0cde3c05ae4fba1fc3b12f9d98c8675622aa4",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_research",
+  "stage": "incremental_generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -165,7 +165,7 @@
       ]
     },
     "incremental_review": {
-      "status": "in_progress",
+      "status": "material_change_confirmed",
       "window_start": "2026-09-14T08:32:08.529+08:00",
       "checked_at": "2026-09-14T09:28:52+08:00",
       "findings": [
@@ -215,7 +215,8 @@
     "main_updated_at": "2026-09-14T08:44:14+08:00",
     "deployment_verified_at": "2026-09-14T08:45:53+08:00",
     "completed_at": "2026-09-14T08:45:53+08:00",
-    "incremental_started_at": "2026-09-14T09:28:52+08:00"
+    "incremental_started_at": "2026-09-14T09:28:52+08:00",
+    "incremental_research_completed_at": "2026-09-14T09:31:07+08:00"
   },
   "candidate_commit": null
 }
