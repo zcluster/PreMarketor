@@ -1,13 +1,13 @@
 {
-  "run_id": "ah-20260914-20260914003208",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "heartbeat_at": "2026-09-14T08:45:53+08:00",
-  "lease_until": "2026-09-14T08:45:53+08:00",
+  "run_id": "ah-review-20260914-092852",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "heartbeat_at": "2026-09-14T09:28:52+08:00",
+  "lease_until": "2026-09-14T09:38:52+08:00",
   "source_cutoff": "2026-09-14T08:32:08.529+08:00",
   "main_base_sha": "03c0cde3c05ae4fba1fc3b12f9d98c8675622aa4",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "published",
+  "stage": "incremental_research",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -163,9 +163,47 @@
         "US markers byte-identical",
         "manifest first record 2026-09-14"
       ]
+    },
+    "incremental_review": {
+      "status": "in_progress",
+      "window_start": "2026-09-14T08:32:08.529+08:00",
+      "checked_at": "2026-09-14T09:28:52+08:00",
+      "findings": [
+        {
+          "event": "国务院常务会议部署算力网建设",
+          "materiality": "reinforces compute, optical backbone and green-power rotation; omitted from first brief",
+          "source": "https://www.moe.gov.cn/jyb_xwfb/s6052/moe_838/202609/t20260911_1450485.html"
+        },
+        {
+          "event": "有研硅9月14日复牌并披露重大资产重组预案",
+          "materiality": "direct A-share semiconductor-material catalyst with approval/valuation risks",
+          "source": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-12/688432_20260912_QK17.pdf"
+        },
+        {
+          "event": "园林股份9月14日起停牌筹划收购华澜微电子控股权",
+          "materiality": "direct cross-sector restructuring catalyst and trading-halt risk",
+          "source": "http://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-12/605303_20260912_RKUM.pdf"
+        }
+      ]
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "event": "国务院常务会议部署算力网建设",
+      "decision": "include",
+      "reason": "materially strengthens compute/optical/green-power sector mapping"
+    },
+    {
+      "event": "有研硅复牌重组",
+      "decision": "include",
+      "reason": "material A-share semiconductor asset-injection event with explicit risks"
+    },
+    {
+      "event": "园林股份停牌收购",
+      "decision": "include",
+      "reason": "material A-share M&A and suspension event"
+    }
+  ],
   "published_commit": "6eb4e4de7e375640d5b402d37105eae0f7f8a900",
   "stage_timings": {
     "started_at": "2026-09-14T08:32:08.529+08:00",
@@ -176,7 +214,8 @@
     "candidate_commit_created_at": "2026-09-14T08:43:37+08:00",
     "main_updated_at": "2026-09-14T08:44:14+08:00",
     "deployment_verified_at": "2026-09-14T08:45:53+08:00",
-    "completed_at": "2026-09-14T08:45:53+08:00"
+    "completed_at": "2026-09-14T08:45:53+08:00",
+    "incremental_started_at": "2026-09-14T09:28:52+08:00"
   },
-  "candidate_commit": "6eb4e4de7e375640d5b402d37105eae0f7f8a900"
+  "candidate_commit": null
 }
