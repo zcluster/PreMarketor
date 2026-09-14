@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260914-092852",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-14T09:31:07+08:00",
-  "lease_until": "2026-09-14T09:41:07+08:00",
+  "heartbeat_at": "2026-09-14T09:36:49+08:00",
+  "lease_until": "2026-09-14T09:46:49+08:00",
   "source_cutoff": "2026-09-14T08:32:08.529+08:00",
   "main_base_sha": "03c0cde3c05ae4fba1fc3b12f9d98c8675622aa4",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_generation",
+  "stage": "incremental_validation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -165,7 +165,7 @@
       ]
     },
     "incremental_review": {
-      "status": "material_change_confirmed",
+      "status": "generated",
       "window_start": "2026-09-14T08:32:08.529+08:00",
       "checked_at": "2026-09-14T09:28:52+08:00",
       "findings": [
@@ -184,6 +184,31 @@
           "materiality": "direct cross-sector restructuring catalyst and trading-halt risk",
           "source": "http://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-12/605303_20260912_RKUM.pdf"
         }
+      ],
+      "output": {
+        "updated": "2026-09-14 09:35 CST",
+        "news_items": 12,
+        "stock_cards": 5,
+        "files": [
+          "index.html",
+          "history/data/2026-09-14.json",
+          "history/manifest.json"
+        ]
+      }
+    },
+    "incremental_validation": {
+      "status": "passed",
+      "checks": [
+        "marker-only",
+        "US markers byte-identical",
+        "US sector panels byte-identical",
+        "one AH history entry",
+        "12 bilingual major-news items",
+        "3-item bilingual overnight section",
+        "5 bilingual stock cards",
+        "bilingual DOM skeleton",
+        "manifest preservation",
+        "no empty state"
       ]
     }
   },
@@ -216,7 +241,8 @@
     "deployment_verified_at": "2026-09-14T08:45:53+08:00",
     "completed_at": "2026-09-14T08:45:53+08:00",
     "incremental_started_at": "2026-09-14T09:28:52+08:00",
-    "incremental_research_completed_at": "2026-09-14T09:31:07+08:00"
+    "incremental_research_completed_at": "2026-09-14T09:31:07+08:00",
+    "incremental_generation_completed_at": "2026-09-14T09:36:49+08:00"
   },
   "candidate_commit": null
 }
