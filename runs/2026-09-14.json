@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260914-092852",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-14T09:40:27+08:00",
-  "lease_until": "2026-09-14T09:50:27+08:00",
+  "heartbeat_at": "2026-09-14T09:44:05+08:00",
+  "lease_until": "2026-09-14T09:54:05+08:00",
   "source_cutoff": "2026-09-14T08:32:08.529+08:00",
   "main_base_sha": "6eb4e4de7e375640d5b402d37105eae0f7f8a900",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "main_update",
+  "stage": "deployment_verification",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -165,7 +165,7 @@
       ]
     },
     "incremental_review": {
-      "status": "generated",
+      "status": "published_pending_verification",
       "window_start": "2026-09-14T08:32:08.529+08:00",
       "checked_at": "2026-09-14T09:28:52+08:00",
       "findings": [
@@ -194,7 +194,8 @@
           "history/data/2026-09-14.json",
           "history/manifest.json"
         ]
-      }
+      },
+      "main_commit": "6957f4bd2af710802fc15d189957f2fdc90067da"
     },
     "incremental_validation": {
       "status": "passed",
@@ -210,6 +211,12 @@
         "manifest preservation",
         "no empty state"
       ]
+    },
+    "incremental_remote_readback": {
+      "status": "pending"
+    },
+    "incremental_production_verification": {
+      "status": "pending"
     }
   },
   "pending_increment": [
@@ -229,7 +236,7 @@
       "reason": "material A-share M&A and suspension event"
     }
   ],
-  "published_commit": "6eb4e4de7e375640d5b402d37105eae0f7f8a900",
+  "published_commit": "6957f4bd2af710802fc15d189957f2fdc90067da",
   "stage_timings": {
     "started_at": "2026-09-14T08:32:08.529+08:00",
     "rules_read_completed_at": "2026-09-14T08:32:08.529+08:00",
@@ -244,7 +251,8 @@
     "incremental_research_completed_at": "2026-09-14T09:31:07+08:00",
     "incremental_generation_completed_at": "2026-09-14T09:36:49+08:00",
     "incremental_validation_completed_at": "2026-09-14T09:38:09+08:00",
-    "incremental_candidate_commit_created_at": "2026-09-14T09:40:27+08:00"
+    "incremental_candidate_commit_created_at": "2026-09-14T09:40:27+08:00",
+    "incremental_main_updated_at": "2026-09-14T09:44:05+08:00"
   },
   "candidate_commit": "6957f4bd2af710802fc15d189957f2fdc90067da"
 }
