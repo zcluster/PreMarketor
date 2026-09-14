@@ -2,12 +2,12 @@
   "run_id": "ah-20260914-20260914003208",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-14T08:32:08.529+08:00",
-  "lease_until": "2026-09-14T08:42:08.529+08:00",
+  "heartbeat_at": "2026-09-14T08:35:31+08:00",
+  "lease_until": "2026-09-14T08:45:31+08:00",
   "source_cutoff": "2026-09-14T08:32:08.529+08:00",
   "main_base_sha": "03c0cde3c05ae4fba1fc3b12f9d98c8675622aa4",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "initialization",
+  "stage": "research",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -16,6 +16,16 @@
     "snapshots": {
       "akshare_sha": "2ed09f85d6287aa15ef07952a396e0e016bd21c5",
       "us_rankings_sha": "06417ea55a7825c791c8dc4fabc1b1f4a291e725"
+    },
+    "research": {
+      "status": "in_progress",
+      "items": [
+        "中国零售油价上调被政策压低于公式幅度（2026-09-12生效）",
+        "浦江创新论坛与长三角基础研究专项启动",
+        "金砖国家领导人线上峰会涉及AI开源和服务贸易",
+        "周末油价与美股期指风险信号",
+        "智谱、博雷顿、汉斯生物制药、新华通讯频媒、俊知集团等港交所公告"
+      ]
     }
   },
   "pending_increment": [],
