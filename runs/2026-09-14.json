@@ -1,0 +1,27 @@
+{
+  "run_id": "ah-20260914-20260914003208",
+  "owner": "发布 MarketAhead A/H 早报",
+  "status": "running",
+  "heartbeat_at": "2026-09-14T08:32:08.529+08:00",
+  "lease_until": "2026-09-14T08:42:08.529+08:00",
+  "source_cutoff": "2026-09-14T08:32:08.529+08:00",
+  "main_base_sha": "03c0cde3c05ae4fba1fc3b12f9d98c8675622aa4",
+  "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
+  "stage": "initialization",
+  "evidence": {
+    "rules": {
+      "status": "ok",
+      "blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160"
+    },
+    "snapshots": {
+      "akshare_sha": "2ed09f85d6287aa15ef07952a396e0e016bd21c5",
+      "us_rankings_sha": "06417ea55a7825c791c8dc4fabc1b1f4a291e725"
+    }
+  },
+  "pending_increment": [],
+  "published_commit": null,
+  "stage_timings": {
+    "started_at": "2026-09-14T08:32:08.529+08:00",
+    "rules_read_completed_at": "2026-09-14T08:32:08.529+08:00"
+  }
+}
