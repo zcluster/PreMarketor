@@ -1,13 +1,13 @@
 {
   "run_id": "ah-review-20260915-093835",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "heartbeat_at": "2026-09-15T09:53:05+08:00",
-  "lease_until": "2026-09-15T10:03:05+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-15T09:56:11+08:00",
+  "lease_until": null,
   "source_cutoff": "2026-09-15T08:36:45+08:00",
   "main_base_sha": "a539ab7d27ae4015b8ae1dfe8f139f5275c9d132",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "deployment_verification",
+  "stage": "published",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -211,7 +211,7 @@
       }
     },
     "incremental_review": {
-      "status": "published_pending_verification",
+      "status": "published",
       "window_start": "2026-09-15T08:36:45+08:00",
       "checked_at": "2026-09-15T09:41:42+08:00",
       "findings": [
@@ -428,34 +428,44 @@
       ]
     },
     "incremental_remote_readback": {
-      "status": "pending"
+      "status": "passed",
+      "checked_at": "2026-09-15T09:54:10+08:00",
+      "main_head": "f6d4766fa4fda01cdc76945096cbb14a1eaa0733",
+      "files": [
+        "index.html",
+        "history/data/2026-09-15.json",
+        "history/manifest.json"
+      ],
+      "checks": [
+        "remote files exact-equal candidate",
+        "commit contains only three allowlisted paths",
+        "12 bilingual major-news items",
+        "3-item bilingual overnight section",
+        "4 bilingual stock cards",
+        "15-row current bilingual rankings",
+        "one AH history entry",
+        "manifest first record 2026-09-15"
+      ]
     },
     "incremental_production_verification": {
-      "status": "pending"
+      "status": "passed",
+      "checked_at": "2026-09-15T09:56:11+08:00",
+      "urls": [
+        "https://premarketor.com/",
+        "https://premarketor.com/history/?date=2026-09-15"
+      ],
+      "checks": [
+        "homepage A/H time 2026-09-15 09:43 CST",
+        "Chinese and English homepage content",
+        "current 08:53 ranking panels",
+        "China Gas, cybersecurity and GAC price feedback visible",
+        "Chinese history title, time and full body visible",
+        "no empty state"
+      ],
+      "note": "Direct JSON web reader unavailable; production DOM plus GitHub exact remote readback used, browser only as allowed auxiliary check"
     }
   },
-  "pending_increment": [
-    {
-      "event": "美股排行快照更新",
-      "decision": "include",
-      "reason": "行业与概念结构从旧9月11快照切换为9月14收盘：网络安全和应用软件走强，半导体设备、电子元件与电气设备显著走弱，改变A/H科技轮动与风险映射"
-    },
-    {
-      "event": "中国燃气签署20年美国LNG采购协议",
-      "decision": "include_omission",
-      "reason": "与中东供给风险和能源安全直接相关，新增港股公司级事件；2030起0.5MTPA，长期合计2.5MTPA"
-    },
-    {
-      "event": "广汽集团H股开盘反馈",
-      "decision": "include",
-      "reason": "H股约升9.68%，确认事件驱动但跳空追价和审批风险上升；A股仍停牌"
-    },
-    {
-      "event": "中国燃气开盘反馈",
-      "decision": "include",
-      "reason": "HK$5.40、约-0.28%，协议未获即时价格确认，维持条件关注而非看多"
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "f6d4766fa4fda01cdc76945096cbb14a1eaa0733",
   "stage_timings": {
     "started_at": "2026-09-15T08:32:57+08:00",
@@ -473,7 +483,10 @@
     "incremental_generation_completed_at": "2026-09-15T09:49:48+08:00",
     "incremental_validation_completed_at": "2026-09-15T09:50:19+08:00",
     "incremental_candidate_commit_created_at": "2026-09-15T09:52:07+08:00",
-    "incremental_main_updated_at": "2026-09-15T09:53:05+08:00"
+    "incremental_main_updated_at": "2026-09-15T09:53:05+08:00",
+    "incremental_remote_readback_completed_at": "2026-09-15T09:54:10+08:00",
+    "incremental_deployment_verified_at": "2026-09-15T09:56:11+08:00",
+    "incremental_completed_at": "2026-09-15T09:56:11+08:00"
   },
   "error": null,
   "candidate_commit": "f6d4766fa4fda01cdc76945096cbb14a1eaa0733"
