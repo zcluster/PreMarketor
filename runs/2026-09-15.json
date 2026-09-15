@@ -2,12 +2,12 @@
   "run_id": "ah-20260915-20260915003230",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-15T08:39:30+08:00",
-  "lease_until": "2026-09-15T08:49:30+08:00",
+  "heartbeat_at": "2026-09-15T08:43:40+08:00",
+  "lease_until": "2026-09-15T08:53:40+08:00",
   "source_cutoff": "2026-09-15T08:36:45+08:00",
   "main_base_sha": "08c7bee7d08616cf1d4cebd1a838cd7929f94c1f",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -20,7 +20,7 @@
       "us_rankings_sha": "06417ea55a7825c791c8dc4fabc1b1f4a291e725",
       "us_rankings_attempted_at": "2026-09-12T08:37:24+08:00"
     },
-    "research_status": "in_progress",
+    "research_status": "completed",
     "coverage": {
       "jin10": {
         "status": "stale",
@@ -55,6 +55,47 @@
       "https://www.mofcom.gov.cn/",
       "https://www.csrc.gov.cn/csrc/c101895/c7658491/content.shtml",
       "http://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-14/688520_20260914_EKD1.pdf"
+    ],
+    "runtime_market": {
+      "checked_at": "2026-09-15T08:34:00+08:00",
+      "source": "WSJ market data",
+      "dow_futures": "-0.12%",
+      "sp500_futures": "-0.51%",
+      "nasdaq_futures": "-1.26%",
+      "wti": "102.29",
+      "us10y": "4.993%"
+    },
+    "candidates": [
+      {
+        "ticker": "HK.02238 / SH.601238",
+        "name": "广汽集团",
+        "status": "conditional_watch",
+        "price_evidence": "HK pre-suspension Sep 14 +8.64%; A shares suspended",
+        "sources": [
+          "GAC filing",
+          "Reuters 2026-09-14"
+        ]
+      },
+      {
+        "ticker": "SZ.002870",
+        "name": "香山股份",
+        "status": "avoid",
+        "price_evidence": "pre-suspension close RMB53.00; prior 20 sessions +35.69%",
+        "sources": [
+          "Shanghai Securities News 2026-09-15",
+          "company filing"
+        ]
+      },
+      {
+        "ticker": "SH.688520",
+        "name": "神州细胞",
+        "status": "avoid",
+        "price_evidence": "Sep 11 close RMB32.41 -2.76%; Sep 14 reliable close unavailable",
+        "sources": [
+          "SSE filing 2026-09-14",
+          "Stockstar close data"
+        ]
+      }
     ]
   },
   "pending_increment": [],
@@ -62,6 +103,8 @@
   "stage_timings": {
     "started_at": "2026-09-15T08:32:57+08:00",
     "rules_read_completed_at": "2026-09-15T08:32:57+08:00",
-    "research_started_at": "2026-09-15T08:36:45+08:00"
+    "research_started_at": "2026-09-15T08:36:45+08:00",
+    "research_completed_at": "2026-09-15T08:42:00+08:00",
+    "generation_started_at": "2026-09-15T08:42:00+08:00"
   }
 }
