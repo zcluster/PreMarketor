@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260915-093835",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-15T09:38:35+08:00",
-  "lease_until": "2026-09-15T09:48:35+08:00",
+  "heartbeat_at": "2026-09-15T09:41:42+08:00",
+  "lease_until": "2026-09-15T09:51:42+08:00",
   "source_cutoff": "2026-09-15T08:36:45+08:00",
   "main_base_sha": "a539ab7d27ae4015b8ae1dfe8f139f5275c9d132",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_research",
+  "stage": "incremental_generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -17,8 +17,8 @@
       "akshare_sha": "f3f373212cd8b4bbfdb4e15e34709a8142448b0d",
       "akshare_status": "partial",
       "akshare_fetched_at": "2026-09-14T12:58:15+08:00",
-      "us_rankings_sha": "06417ea55a7825c791c8dc4fabc1b1f4a291e725",
-      "us_rankings_attempted_at": "2026-09-12T08:37:24+08:00"
+      "us_rankings_sha": "822038d4fbaedcb025648a0731b3af577b6e74e3",
+      "us_rankings_attempted_at": "2026-09-15T08:53:12+08:00"
     },
     "research_status": "completed",
     "coverage": {
@@ -211,13 +211,217 @@
       }
     },
     "incremental_review": {
-      "status": "in_progress",
+      "status": "research_completed",
       "window_start": "2026-09-15T08:36:45+08:00",
-      "checked_at": "2026-09-15T09:38:35+08:00",
-      "findings": []
+      "checked_at": "2026-09-15T09:41:42+08:00",
+      "findings": [
+        {
+          "event": "美股排行快照更新",
+          "first_available": "2026-09-15T08:53:12+08:00",
+          "decision": "include",
+          "materiality": "行业与概念结构从旧9月11快照切换为9月14收盘：网络安全和应用软件走强，半导体设备、电子元件与电气设备显著走弱，改变A/H科技轮动与风险映射",
+          "source": "data/us-rankings-latest.json",
+          "sha": "822038d4fbaedcb025648a0731b3af577b6e74e3"
+        },
+        {
+          "event": "中国燃气签署20年美国LNG采购协议",
+          "first_available": "2026-09-14T16:35:53+08:00",
+          "decision": "include_omission",
+          "materiality": "与中东供给风险和能源安全直接相关，新增港股公司级事件；2030起0.5MTPA，长期合计2.5MTPA",
+          "source": "https://www.reuters.com/business/energy/china-gas-signs-20-year-lng-import-deal-with-us-based-venture-global-2026-09-14/"
+        },
+        {
+          "event": "广汽集团H股开盘反馈",
+          "first_available": "2026-09-15T09:35:00+08:00",
+          "decision": "include",
+          "materiality": "H股约升9.68%，确认事件驱动但跳空追价和审批风险上升；A股仍停牌",
+          "source": "https://www.gacgroup.com/cn/invest/stock?type=2"
+        },
+        {
+          "event": "中国燃气开盘反馈",
+          "first_available": "2026-09-15T09:20:22+08:00",
+          "decision": "include",
+          "materiality": "HK$5.40、约-0.28%，协议未获即时价格确认，维持条件关注而非看多",
+          "source": "https://www.google.com/finance/quote/0384:HKG"
+        }
+      ],
+      "coverage": {
+        "domestic_discovery": [
+          "第一财经盘前必读（美股存储/光通信重挫、广汽重组，已被首轮覆盖）",
+          "东方财富盘前汇总（未见改变结论的新政策/公告）"
+        ],
+        "targeted_exchange": [
+          "HKEX 9月15日停复牌/澄清/盈利警告定向检索未发现改变结论的新增重要公告",
+          "SSE/SZSE 9月15日定向检索未发现首轮后新增的更重大事项"
+        ]
+      },
+      "runtime_recheck": {
+        "checked_at": "2026-09-15T09:41:42+08:00",
+        "result": "精确期指更新未取得一致可核验报价；保留08:34快照并明确时间，不冒充09:15实时值；WTI/Brent继续位于约102/107美元附近"
+      },
+      "new_items": 4,
+      "items_entering_content": 4,
+      "major_theme_reconciliation": [
+        {
+          "group": "industry_top",
+          "theme": "电子游戏与多媒体",
+          "changePct": "+4.73%",
+          "leader": "RBLX",
+          "leaderChangePct": "+12.73%",
+          "decision": "no_candidate",
+          "reason": "无经核验的A/H公司级新增催化，不凑候选"
+        },
+        {
+          "group": "industry_top",
+          "theme": "咨询服务",
+          "changePct": "+3.88%",
+          "leader": "RGP",
+          "leaderChangePct": "+6.55%",
+          "decision": "no_candidate",
+          "reason": "无经核验的A/H公司级新增催化，不凑候选"
+        },
+        {
+          "group": "industry_top",
+          "theme": "应用软件",
+          "changePct": "+3.86%",
+          "leader": "FTFT",
+          "leaderChangePct": "+179.17%",
+          "decision": "no_candidate",
+          "reason": "映射金蝶国际、微盟及A/H网络安全软件；无公司级新增催化，列板块观察而不新增推荐"
+        },
+        {
+          "group": "industry_top",
+          "theme": "杂货店",
+          "changePct": "+3.75%",
+          "leader": "HCWC",
+          "leaderChangePct": "+6.78%",
+          "decision": "no_candidate",
+          "reason": "无经核验的A/H公司级新增催化，不凑候选"
+        },
+        {
+          "group": "industry_top",
+          "theme": "出版",
+          "changePct": "+3.42%",
+          "leader": "NYT",
+          "leaderChangePct": "+5.17%",
+          "decision": "no_candidate",
+          "reason": "无经核验的A/H公司级新增催化，不凑候选"
+        },
+        {
+          "group": "industry_bottom",
+          "theme": "科技仪器",
+          "changePct": "-5.27%",
+          "leader": "SVRE",
+          "leaderChangePct": "+7.44%",
+          "decision": "no_candidate",
+          "reason": "无经核验的A/H公司级新增催化，不凑候选"
+        },
+        {
+          "group": "industry_bottom",
+          "theme": "独立电力生产商",
+          "changePct": "-5.98%",
+          "leader": "OKLO",
+          "leaderChangePct": "-0.03%",
+          "decision": "no_candidate",
+          "reason": "无经核验的A/H公司级新增催化，不凑候选"
+        },
+        {
+          "group": "industry_bottom",
+          "theme": "电气设备及零件",
+          "changePct": "-6.84%",
+          "leader": "SKYX",
+          "leaderChangePct": "+9.63%",
+          "decision": "no_candidate",
+          "reason": "映射中芯国际、华虹半导体、电子元件及电气设备链；显著负反馈纳入风险与板块压力，不包装为多头"
+        },
+        {
+          "group": "industry_bottom",
+          "theme": "半导体设备与材料",
+          "changePct": "-7.64%",
+          "leader": "SMTK",
+          "leaderChangePct": "+3.13%",
+          "decision": "no_candidate",
+          "reason": "映射中芯国际、华虹半导体、电子元件及电气设备链；显著负反馈纳入风险与板块压力，不包装为多头"
+        },
+        {
+          "group": "industry_bottom",
+          "theme": "电子元件",
+          "changePct": "-8.09%",
+          "leader": "ELTK",
+          "leaderChangePct": "+10.43%",
+          "decision": "no_candidate",
+          "reason": "映射中芯国际、华虹半导体、电子元件及电气设备链；显著负反馈纳入风险与板块压力，不包装为多头"
+        },
+        {
+          "group": "concept_top",
+          "theme": "以太坊储备概念",
+          "changePct": "+7.41%",
+          "leader": "COIN",
+          "leaderChangePct": "+9.24%",
+          "decision": "no_candidate",
+          "reason": "映射OSL、博雅互动等加密相关港股；缺公司级新增催化且波动高，不追涨不新增推荐"
+        },
+        {
+          "group": "concept_top",
+          "theme": "网络安全概念",
+          "changePct": "+6.52%",
+          "leader": "RPD",
+          "leaderChangePct": "+24.05%",
+          "decision": "no_candidate",
+          "reason": "映射金蝶国际、微盟及A/H网络安全软件；无公司级新增催化，列板块观察而不新增推荐"
+        },
+        {
+          "group": "concept_top",
+          "theme": "加密储备概念",
+          "changePct": "+3.80%",
+          "leader": "BNC",
+          "leaderChangePct": "+9.79%",
+          "decision": "no_candidate",
+          "reason": "映射OSL、博雅互动等加密相关港股；缺公司级新增催化且波动高，不追涨不新增推荐"
+        },
+        {
+          "group": "concept_top",
+          "theme": "SOL储备概念",
+          "changePct": "+3.06%",
+          "leader": "UPXI",
+          "leaderChangePct": "+5.77%",
+          "decision": "no_candidate",
+          "reason": "映射OSL、博雅互动等加密相关港股；缺公司级新增催化且波动高，不追涨不新增推荐"
+        },
+        {
+          "group": "concept_top",
+          "theme": "搜索引擎",
+          "changePct": "+2.77%",
+          "leader": "GOOGL",
+          "leaderChangePct": "+3.22%",
+          "decision": "no_candidate",
+          "reason": "无经核验的A/H公司级新增催化，不凑候选"
+        }
+      ]
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "event": "美股排行快照更新",
+      "decision": "include",
+      "reason": "行业与概念结构从旧9月11快照切换为9月14收盘：网络安全和应用软件走强，半导体设备、电子元件与电气设备显著走弱，改变A/H科技轮动与风险映射"
+    },
+    {
+      "event": "中国燃气签署20年美国LNG采购协议",
+      "decision": "include_omission",
+      "reason": "与中东供给风险和能源安全直接相关，新增港股公司级事件；2030起0.5MTPA，长期合计2.5MTPA"
+    },
+    {
+      "event": "广汽集团H股开盘反馈",
+      "decision": "include",
+      "reason": "H股约升9.68%，确认事件驱动但跳空追价和审批风险上升；A股仍停牌"
+    },
+    {
+      "event": "中国燃气开盘反馈",
+      "decision": "include",
+      "reason": "HK$5.40、约-0.28%，协议未获即时价格确认，维持条件关注而非看多"
+    }
+  ],
   "published_commit": "3e8c9fe09d7f758e28f747be913d7f7567ffe594",
   "stage_timings": {
     "started_at": "2026-09-15T08:32:57+08:00",
@@ -230,7 +434,8 @@
     "deployment_verified_at": "2026-09-15T08:46:34+08:00",
     "completed_at": "2026-09-15T08:47:00+08:00",
     "elapsed_seconds": 842,
-    "incremental_started_at": "2026-09-15T09:38:35+08:00"
+    "incremental_started_at": "2026-09-15T09:38:35+08:00",
+    "incremental_research_completed_at": "2026-09-15T09:41:42+08:00"
   },
   "error": null,
   "candidate_commit": null
