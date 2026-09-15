@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260915-093835",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-15T09:52:07+08:00",
-  "lease_until": "2026-09-15T10:02:07+08:00",
+  "heartbeat_at": "2026-09-15T09:53:05+08:00",
+  "lease_until": "2026-09-15T10:03:05+08:00",
   "source_cutoff": "2026-09-15T08:36:45+08:00",
   "main_base_sha": "a539ab7d27ae4015b8ae1dfe8f139f5275c9d132",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "main_update",
+  "stage": "deployment_verification",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -211,7 +211,7 @@
       }
     },
     "incremental_review": {
-      "status": "candidate_created",
+      "status": "published_pending_verification",
       "window_start": "2026-09-15T08:36:45+08:00",
       "checked_at": "2026-09-15T09:41:42+08:00",
       "findings": [
@@ -426,6 +426,12 @@
         "manifest and history preservation",
         "no empty state"
       ]
+    },
+    "incremental_remote_readback": {
+      "status": "pending"
+    },
+    "incremental_production_verification": {
+      "status": "pending"
     }
   },
   "pending_increment": [
@@ -450,7 +456,7 @@
       "reason": "HK$5.40、约-0.28%，协议未获即时价格确认，维持条件关注而非看多"
     }
   ],
-  "published_commit": "3e8c9fe09d7f758e28f747be913d7f7567ffe594",
+  "published_commit": "f6d4766fa4fda01cdc76945096cbb14a1eaa0733",
   "stage_timings": {
     "started_at": "2026-09-15T08:32:57+08:00",
     "rules_read_completed_at": "2026-09-15T08:32:57+08:00",
@@ -466,7 +472,8 @@
     "incremental_research_completed_at": "2026-09-15T09:41:42+08:00",
     "incremental_generation_completed_at": "2026-09-15T09:49:48+08:00",
     "incremental_validation_completed_at": "2026-09-15T09:50:19+08:00",
-    "incremental_candidate_commit_created_at": "2026-09-15T09:52:07+08:00"
+    "incremental_candidate_commit_created_at": "2026-09-15T09:52:07+08:00",
+    "incremental_main_updated_at": "2026-09-15T09:53:05+08:00"
   },
   "error": null,
   "candidate_commit": "f6d4766fa4fda01cdc76945096cbb14a1eaa0733"
