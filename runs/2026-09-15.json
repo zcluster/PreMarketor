@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260915-093835",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-15T09:41:42+08:00",
-  "lease_until": "2026-09-15T09:51:42+08:00",
+  "heartbeat_at": "2026-09-15T09:50:19+08:00",
+  "lease_until": "2026-09-15T10:00:19+08:00",
   "source_cutoff": "2026-09-15T08:36:45+08:00",
   "main_base_sha": "a539ab7d27ae4015b8ae1dfe8f139f5275c9d132",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_generation",
+  "stage": "incremental_candidate_commit",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -211,7 +211,7 @@
       }
     },
     "incremental_review": {
-      "status": "research_completed",
+      "status": "generated",
       "window_start": "2026-09-15T08:36:45+08:00",
       "checked_at": "2026-09-15T09:41:42+08:00",
       "findings": [
@@ -397,6 +397,33 @@
           "decision": "no_candidate",
           "reason": "无经核验的A/H公司级新增催化，不凑候选"
         }
+      ],
+      "output": {
+        "updated": "2026-09-15 09:43 CST",
+        "news_items": 12,
+        "stock_cards": 4,
+        "panel_rows": 15,
+        "files": [
+          "index.html",
+          "history/data/2026-09-15.json",
+          "history/manifest.json"
+        ]
+      }
+    },
+    "incremental_validation": {
+      "status": "passed",
+      "checks": [
+        "marker-only",
+        "US marker byte protection",
+        "one AH history entry",
+        "12 bilingual major-news items",
+        "3-item bilingual overnight section",
+        "4 bilingual stock cards",
+        "bilingual tag/class skeleton",
+        "15-row current bilingual rankings",
+        "major-theme reconciliation for 15 ranking rows",
+        "manifest and history preservation",
+        "no empty state"
       ]
     }
   },
@@ -435,7 +462,9 @@
     "completed_at": "2026-09-15T08:47:00+08:00",
     "elapsed_seconds": 842,
     "incremental_started_at": "2026-09-15T09:38:35+08:00",
-    "incremental_research_completed_at": "2026-09-15T09:41:42+08:00"
+    "incremental_research_completed_at": "2026-09-15T09:41:42+08:00",
+    "incremental_generation_completed_at": "2026-09-15T09:49:48+08:00",
+    "incremental_validation_completed_at": "2026-09-15T09:50:19+08:00"
   },
   "error": null,
   "candidate_commit": null
