@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-09-12T08:37:24+08:00",
+  "attemptedAt": "2026-09-15T08:53:12+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-12T08:37:24+08:00",
+      "fetchedAt": "2026-09-15T08:53:12+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,30 +17,130 @@
       },
       "top": [
         {
-          "name": "电子与计算机分销",
-          "nameEn": "Electronics & Computer Distribution",
-          "code": "BK2506",
-          "changePct": "+5.96%",
-          "leaderName": "安富利",
-          "leaderTicker": "AVT",
-          "leaderChangePct": "+7.16%",
+          "name": "电子游戏与多媒体",
+          "nameEn": "Electronic Gaming & Multimedia",
+          "code": "BK2253",
+          "changePct": "+4.73%",
+          "leaderName": "Roblox",
+          "leaderTicker": "RBLX",
+          "leaderChangePct": "+12.73%",
           "breadth": {
-            "advancers": 7,
-            "decliners": 1,
+            "advancers": 12,
+            "decliners": 8,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "咨询服务",
+          "nameEn": "Consulting Services",
+          "code": "BK2476",
+          "changePct": "+3.88%",
+          "leaderName": "Resources Connection",
+          "leaderTicker": "RGP",
+          "leaderChangePct": "+6.55%",
+          "breadth": {
+            "advancers": 16,
+            "decliners": 6,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "应用软件",
+          "nameEn": "Software - Application",
+          "code": "BK2470",
+          "changePct": "+3.86%",
+          "leaderName": "富册金融科技",
+          "leaderTicker": "FTFT",
+          "leaderChangePct": "+179.17%",
+          "breadth": {
+            "advancers": 150,
+            "decliners": 79,
+            "unchanged": 12
+          }
+        },
+        {
+          "name": "杂货店",
+          "nameEn": "Grocery Stores",
+          "code": "BK2095",
+          "changePct": "+3.75%",
+          "leaderName": "Healthy Choice Wellness",
+          "leaderTicker": "HCWC",
+          "leaderChangePct": "+6.78%",
+          "breadth": {
+            "advancers": 10,
+            "decliners": 4,
             "unchanged": 0
           }
         },
         {
-          "name": "百货公司",
-          "nameEn": "Department Stores",
-          "code": "BK2080",
-          "changePct": "+4.53%",
-          "leaderName": "梅西百货",
-          "leaderTicker": "M",
-          "leaderChangePct": "+7.71%",
+          "name": "出版",
+          "nameEn": "Publishing",
+          "code": "BK2008",
+          "changePct": "+3.42%",
+          "leaderName": "纽约时报",
+          "leaderTicker": "NYT",
+          "leaderChangePct": "+5.17%",
           "breadth": {
-            "advancers": 4,
-            "decliners": 1,
+            "advancers": 5,
+            "decliners": 2,
+            "unchanged": 2
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "科技仪器",
+          "nameEn": "Scientific & Technical Instruments",
+          "code": "BK2275",
+          "changePct": "-5.27%",
+          "leaderName": "SaverOne 2014",
+          "leaderTicker": "SVRE",
+          "leaderChangePct": "+7.44%",
+          "breadth": {
+            "advancers": 8,
+            "decliners": 25,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "独立电力生产商",
+          "nameEn": "Utilities - Independent Power Producers",
+          "code": "BK2462",
+          "changePct": "-5.98%",
+          "leaderName": "Oklo Inc",
+          "leaderTicker": "OKLO",
+          "leaderChangePct": "-0.03%",
+          "breadth": {
+            "advancers": 0,
+            "decliners": 10,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "电气设备及零件",
+          "nameEn": "Electrical Equipment & Parts",
+          "code": "BK2493",
+          "changePct": "-6.84%",
+          "leaderName": "SKYX Platforms",
+          "leaderTicker": "SKYX",
+          "leaderChangePct": "+9.63%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 47,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "半导体设备与材料",
+          "nameEn": "Semiconductor Equipment & Materials",
+          "code": "BK2016",
+          "changePct": "-7.64%",
+          "leaderName": "SmartKem",
+          "leaderTicker": "SMTK",
+          "leaderChangePct": "+3.13%",
+          "breadth": {
+            "advancers": 1,
+            "decliners": 29,
             "unchanged": 0
           }
         },
@@ -48,114 +148,14 @@
           "name": "电子元件",
           "nameEn": "Electronic Components",
           "code": "BK2072",
-          "changePct": "+4.15%",
-          "leaderName": "Gauzy",
-          "leaderTicker": "GAUZ",
-          "leaderChangePct": "+13.21%",
+          "changePct": "-8.09%",
+          "leaderName": "Eltek",
+          "leaderTicker": "ELTK",
+          "leaderChangePct": "+10.43%",
           "breadth": {
-            "advancers": 38,
-            "decliners": 6,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "+4.09%",
-          "leaderName": "Forgent Power Solutions",
-          "leaderTicker": "FPS",
-          "leaderChangePct": "+8.97%",
-          "breadth": {
-            "advancers": 32,
-            "decliners": 20,
-            "unchanged": 3
-          }
-        },
-        {
-          "name": "通讯设备",
-          "nameEn": "Communication Equipment",
-          "code": "BK2098",
-          "changePct": "+4.05%",
-          "leaderName": "高频电子",
-          "leaderTicker": "FEIM",
-          "leaderChangePct": "+42.40%",
-          "breadth": {
-            "advancers": 39,
-            "decliners": 5,
-            "unchanged": 1
-          }
-        }
-      ],
-      "bottom": [
-        {
-          "name": "医药零售",
-          "nameEn": "Pharmaceutical Retailers",
-          "code": "BK2092",
-          "changePct": "-1.49%",
-          "leaderName": "High Tide",
-          "leaderTicker": "HITI",
-          "leaderChangePct": "-1.17%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 5,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "基础设施运营",
-          "nameEn": "Infrastructure Operations",
-          "code": "BK2477",
-          "changePct": "-1.75%",
-          "leaderName": "Mobile Infrastructure",
-          "leaderTicker": "BEEP",
-          "leaderChangePct": "-1.75%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "铀",
-          "nameEn": "Uranium",
-          "code": "BK2430",
-          "changePct": "-2.39%",
-          "leaderName": "Jaguar Uranium",
-          "leaderTicker": "JAGU",
-          "leaderChangePct": "-0.64%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 13,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "白银",
-          "nameEn": "Silver",
-          "code": "BK2093",
-          "changePct": "-2.44%",
-          "leaderName": "New Pacific Metals",
-          "leaderTicker": "NEWP",
-          "leaderChangePct": "+0.51%",
-          "breadth": {
-            "advancers": 1,
-            "decliners": 5,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "焦炭",
-          "nameEn": "Coking Coal",
-          "code": "BK2505",
-          "changePct": "-3.49%",
-          "leaderName": "SunCoke Energy",
-          "leaderTicker": "SXC",
-          "leaderChangePct": "-1.09%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 5,
-            "unchanged": 0
+            "advancers": 5,
+            "decliners": 36,
+            "unchanged": 4
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-12T08:37:24+08:00",
+      "fetchedAt": "2026-09-15T08:53:12+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,44 +176,30 @@
       },
       "top": [
         {
-          "name": "功率半导体",
-          "nameEn": "Power semiconductor",
-          "code": "BK24212",
-          "changePct": "+4.11%",
-          "leaderName": "Vicor电子",
-          "leaderTicker": "VICR",
-          "leaderChangePct": "+11.15%",
+          "name": "以太坊储备概念",
+          "nameEn": "ETH-Holding Companies",
+          "code": "BK23775",
+          "changePct": "+7.41%",
+          "leaderName": "Coinbase",
+          "leaderTicker": "COIN",
+          "leaderChangePct": "+9.24%",
           "breadth": {
-            "advancers": 25,
-            "decliners": 0,
+            "advancers": 8,
+            "decliners": 3,
             "unchanged": 0
           }
         },
         {
-          "name": "加密矿企",
-          "nameEn": "Crypto Mining",
-          "code": "BK23921",
-          "changePct": "+3.61%",
-          "leaderName": "Hut 8",
-          "leaderTicker": "HUT",
-          "leaderChangePct": "+8.83%",
+          "name": "网络安全概念",
+          "nameEn": "Cybersecurity",
+          "code": "BK2570",
+          "changePct": "+6.52%",
+          "leaderName": "Rapid7",
+          "leaderTicker": "RPD",
+          "leaderChangePct": "+24.05%",
           "breadth": {
-            "advancers": 13,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "固态电池",
-          "nameEn": "Solid State Battery",
-          "code": "BK2544",
-          "changePct": "+2.87%",
-          "leaderName": "丰田汽车",
-          "leaderTicker": "TM",
-          "leaderChangePct": "+2.97%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 4,
+            "advancers": 20,
+            "decliners": 3,
             "unchanged": 0
           }
         },
@@ -221,27 +207,41 @@
           "name": "加密储备概念",
           "nameEn": "Crypto Treasury",
           "code": "BK23920",
-          "changePct": "+2.78%",
-          "leaderName": "BTC Digital",
-          "leaderTicker": "BTCT",
-          "leaderChangePct": "+11.54%",
+          "changePct": "+3.80%",
+          "leaderName": "CEA Industries",
+          "leaderTicker": "BNC",
+          "leaderChangePct": "+9.79%",
           "breadth": {
-            "advancers": 24,
-            "decliners": 6,
+            "advancers": 16,
+            "decliners": 14,
             "unchanged": 1
           }
         },
         {
-          "name": "储能概念股",
-          "nameEn": "Energy Storage Concept",
-          "code": "BK23939",
-          "changePct": "+2.78%",
-          "leaderName": "CleanSpark",
-          "leaderTicker": "CLSK",
-          "leaderChangePct": "+6.80%",
+          "name": "SOL储备概念",
+          "nameEn": "SOL reserve concept",
+          "code": "BK23797",
+          "changePct": "+3.06%",
+          "leaderName": "Upexi",
+          "leaderTicker": "UPXI",
+          "leaderChangePct": "+5.77%",
           "breadth": {
-            "advancers": 7,
-            "decliners": 1,
+            "advancers": 5,
+            "decliners": 3,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "搜索引擎",
+          "nameEn": "Search Engine",
+          "code": "BK2439",
+          "changePct": "+2.77%",
+          "leaderName": "谷歌-A",
+          "leaderTicker": "GOOGL",
+          "leaderChangePct": "+3.22%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 0,
             "unchanged": 0
           }
         }
