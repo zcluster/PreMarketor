@@ -2,12 +2,12 @@
   "run_id": "ah-20260915-20260915003230",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-15T08:43:40+08:00",
-  "lease_until": "2026-09-15T08:53:40+08:00",
+  "heartbeat_at": "2026-09-15T08:45:30+08:00",
+  "lease_until": "2026-09-15T08:55:30+08:00",
   "source_cutoff": "2026-09-15T08:36:45+08:00",
   "main_base_sha": "08c7bee7d08616cf1d4cebd1a838cd7929f94c1f",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "generation",
+  "stage": "deployment_verification",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -96,15 +96,63 @@
           "Stockstar close data"
         ]
       }
-    ]
+    ],
+    "prevalidation": {
+      "cardsEn": 3,
+      "cardsZh": 3,
+      "exactMarkerCounts": {
+        "A_H_BRIEF": 1,
+        "A_H_TIME": 1,
+        "A_H_UPDATED": 1,
+        "US_BRIEF": 1,
+        "US_SECTOR_PANEL": 1,
+        "US_SECTOR_PANEL_EN": 1,
+        "US_TIME": 1,
+        "US_UPDATED": 1
+      },
+      "forbiddenTerms": [],
+      "historyDate": "2026-09-15",
+      "historyEntryTypes": [
+        "AH"
+      ],
+      "indexOutsideAllowedUnchanged": true,
+      "keywordEn": 12,
+      "keywordZh": 12,
+      "mainHistoryNoExtra": true,
+      "majorNewsEn": 11,
+      "majorNewsZh": 11,
+      "manifestCount": 20,
+      "manifestFirst": {
+        "date": "2026-09-15",
+        "file": "history/data/2026-09-15.json",
+        "summary": "隔夜美股三大指数收低、费城半导体指数跌5.9%，今早纳指期货继续承压；中东供应风险推高油价。国内智能家居、新材料政策及广汽、香山股份等公司事件提供结构性线索，但重组审批、停牌与前期涨幅要求以条件关注或回避为主。AKShare仅有9月14日盘中指数快照，市场宽度不可得；美股排行快照仍对应9月11日交易时段，已显式降级。",
+        "title": "油价与科技抛售压制风险偏好，智能家居、新材料与并购事件提供结构性线索",
+        "types": [
+          "AH"
+        ],
+        "updated": "2026-09-15 08:42 CST"
+      },
+      "manifestOtherRecordsUnchanged": true,
+      "overnightItemsEn": 3,
+      "overnightItemsZh": 3,
+      "panelDownEn": 5,
+      "panelDownZh": 5,
+      "panelRowsEn": 15,
+      "panelRowsZh": 15,
+      "panelStaleDisclosure": true,
+      "requiredSections": true,
+      "usProtected": true
+    }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "3e8c9fe09d7f758e28f747be913d7f7567ffe594",
   "stage_timings": {
     "started_at": "2026-09-15T08:32:57+08:00",
     "rules_read_completed_at": "2026-09-15T08:32:57+08:00",
     "research_started_at": "2026-09-15T08:36:45+08:00",
     "research_completed_at": "2026-09-15T08:42:00+08:00",
-    "generation_started_at": "2026-09-15T08:42:00+08:00"
+    "generation_started_at": "2026-09-15T08:42:00+08:00",
+    "generation_completed_at": "2026-09-15T08:44:30+08:00",
+    "commit_completed_at": "2026-09-15T08:45:20+08:00"
   }
 }
