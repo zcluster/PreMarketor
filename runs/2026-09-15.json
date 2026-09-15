@@ -1,13 +1,13 @@
 {
   "run_id": "ah-20260915-20260915003230",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "heartbeat_at": "2026-09-15T08:45:30+08:00",
-  "lease_until": "2026-09-15T08:55:30+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-15T08:47:00+08:00",
+  "lease_until": null,
   "source_cutoff": "2026-09-15T08:36:45+08:00",
   "main_base_sha": "08c7bee7d08616cf1d4cebd1a838cd7929f94c1f",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "deployment_verification",
+  "stage": "completed",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -142,6 +142,73 @@
       "panelStaleDisclosure": true,
       "requiredSections": true,
       "usProtected": true
+    },
+    "remote_readback": {
+      "history": {
+        "exact": true,
+        "sha": "b3dcfed2e03a2de5c5924b813d07933310acd967"
+      },
+      "index": {
+        "exact": true,
+        "sha": "6349602d01a07893d907b0156773fee5c073af6a"
+      },
+      "manifest": {
+        "exact": true,
+        "sha": "27d6e2fd897968950d57d060f0c75d88e20a2062"
+      },
+      "rules": {
+        "sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
+        "unchanged": true
+      }
+    },
+    "production": {
+      "homepage": {
+        "etag": "W/\"a430faa90cfaa562dca3068ccd6451c0\"",
+        "exact": true,
+        "headerDate": "Tue, 15 Sep 2026 00:46:18 GMT",
+        "http": 200,
+        "len": 85351,
+        "panelRowsEn": 15,
+        "panelRowsZh": 15,
+        "stale": true,
+        "success": true,
+        "time": true,
+        "zhCard": true
+      },
+      "archive_json": {
+        "date": "2026-09-15",
+        "enCards": 3,
+        "enGac": true,
+        "entries": 1,
+        "etag": "W/\"89409ff1ff07351d48f6164a217f201a\"",
+        "exact": true,
+        "headerDate": "Tue, 15 Sep 2026 00:46:27 GMT",
+        "http": 200,
+        "sourceEn": true,
+        "sourceZh": true,
+        "success": true,
+        "time": "2026-09-15 08:42 CST",
+        "zhCards": 3,
+        "zhGac": true
+      },
+      "manifest": {
+        "count": 20,
+        "etag": "W/\"d06b184c3c96b33a7e0801a15b5b1588\"",
+        "exact": true,
+        "file": "history/data/2026-09-15.json",
+        "first": "2026-09-15",
+        "headerDate": "Tue, 15 Sep 2026 00:46:34 GMT",
+        "http": 200,
+        "success": true,
+        "time": "2026-09-15 08:42 CST",
+        "types": [
+          "AH"
+        ]
+      },
+      "archive_shell": {
+        "http": 200,
+        "fetch_no_store": true
+      }
     }
   },
   "pending_increment": [],
@@ -153,6 +220,10 @@
     "research_completed_at": "2026-09-15T08:42:00+08:00",
     "generation_started_at": "2026-09-15T08:42:00+08:00",
     "generation_completed_at": "2026-09-15T08:44:30+08:00",
-    "commit_completed_at": "2026-09-15T08:45:20+08:00"
-  }
+    "commit_completed_at": "2026-09-15T08:45:20+08:00",
+    "deployment_verified_at": "2026-09-15T08:46:34+08:00",
+    "completed_at": "2026-09-15T08:47:00+08:00",
+    "elapsed_seconds": 842
+  },
+  "error": null
 }
