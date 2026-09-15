@@ -2,28 +2,66 @@
   "run_id": "ah-20260915-20260915003230",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-15T08:36:45+08:00",
-  "lease_until": "2026-09-15T08:46:45+08:00",
+  "heartbeat_at": "2026-09-15T08:39:30+08:00",
+  "lease_until": "2026-09-15T08:49:30+08:00",
   "source_cutoff": "2026-09-15T08:36:45+08:00",
   "main_base_sha": "08c7bee7d08616cf1d4cebd1a838cd7929f94c1f",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
   "stage": "research",
   "evidence": {
-    "rules": {"status":"ok","blob_sha":"c300df2b4fecf706c07675d7cdc281e7daa65160"},
-    "snapshots": {
-      "akshare_sha":"f3f373212cd8b4bbfdb4e15e34709a8142448b0d",
-      "akshare_status":"partial",
-      "akshare_fetched_at":"2026-09-14T12:58:15+08:00",
-      "us_rankings_sha":"06417ea55a7825c791c8dc4fabc1b1f4a291e725",
-      "us_rankings_attempted_at":"2026-09-12T08:37:24+08:00"
+    "rules": {
+      "status": "ok",
+      "blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160"
     },
-    "research_status":"in_progress"
+    "snapshots": {
+      "akshare_sha": "f3f373212cd8b4bbfdb4e15e34709a8142448b0d",
+      "akshare_status": "partial",
+      "akshare_fetched_at": "2026-09-14T12:58:15+08:00",
+      "us_rankings_sha": "06417ea55a7825c791c8dc4fabc1b1f4a291e725",
+      "us_rankings_attempted_at": "2026-09-12T08:37:24+08:00"
+    },
+    "research_status": "in_progress",
+    "coverage": {
+      "jin10": {
+        "status": "stale",
+        "result": "latest accessible item dated 2026-09-10"
+      },
+      "cls_star_market": {
+        "status": "stale",
+        "result": "latest accessible item dated 2026-04-15"
+      },
+      "eastmoney": {
+        "status": "ok",
+        "checked_at": "2026-09-15T08:35:00+08:00"
+      },
+      "shanghai_securities_news": {
+        "status": "ok",
+        "url": "https://paper.cnstock.com/",
+        "edition": "2026-09-15"
+      },
+      "hkex": {
+        "status": "partial",
+        "url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?lang=zh",
+        "result": "generic latest-announcement index accessible; material items cross-checked with filings/news"
+      },
+      "sse": {
+        "status": "ok",
+        "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/",
+        "result": "2026-09-14 announcements checked"
+      }
+    },
+    "primary_sources": [
+      "https://www.beijing.gov.cn/zhengce/zhengcefagui/202609/t20260914_4863469.html",
+      "https://www.mofcom.gov.cn/",
+      "https://www.csrc.gov.cn/csrc/c101895/c7658491/content.shtml",
+      "http://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-14/688520_20260914_EKD1.pdf"
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
-    "started_at":"2026-09-15T08:32:57+08:00",
-    "rules_read_completed_at":"2026-09-15T08:32:57+08:00",
-    "research_started_at":"2026-09-15T08:36:45+08:00"
+    "started_at": "2026-09-15T08:32:57+08:00",
+    "rules_read_completed_at": "2026-09-15T08:32:57+08:00",
+    "research_started_at": "2026-09-15T08:36:45+08:00"
   }
 }
