@@ -2,12 +2,12 @@
   "run_id": "ah-20260916-20260916082730",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-16T08:32:51+08:00",
-  "lease_until": "2026-09-16T08:42:51+08:00",
-  "source_cutoff": "2026-09-16T08:32:51+08:00",
+  "heartbeat_at": "2026-09-16T08:39:03+08:00",
+  "lease_until": "2026-09-16T08:51:03+08:00",
+  "source_cutoff": "2026-09-16T08:39:03+08:00",
   "main_base_sha": "1ec7ca39e18c71127e228e572e355a442a697949",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -55,13 +55,89 @@
           "SCIO"
         ]
       }
-    }
+    },
+    "runtime": {
+      "futures": {
+        "as_of": "2026-09-16T07:47:00+08:00",
+        "dow_pct": 0.12,
+        "sp500_pct": 0.13,
+        "nasdaq100_pct": 0.13,
+        "source": "WSJ/MarketWatch delayed"
+      },
+      "us10y": {
+        "as_of": "2026-09-16T08:02:00+08:00",
+        "yield_pct": 4.992,
+        "source": "WSJ"
+      },
+      "wti": {
+        "read_at": "2026-09-16T08:30:00+08:00",
+        "price_usd_approx": 105.35,
+        "source": "OilPrice delayed"
+      }
+    },
+    "rankings_reconciliation": {
+      "stale_for_current_overnight": true,
+      "decisions": [
+        {
+          "theme": "Electronic Gaming & Multimedia",
+          "decision": "no_candidate"
+        },
+        {
+          "theme": "Consulting Services",
+          "decision": "no_candidate"
+        },
+        {
+          "theme": "Software/Cybersecurity",
+          "decision": "no_candidate",
+          "reason": "snapshot one session stale"
+        },
+        {
+          "theme": "Semiconductor/electronic hardware",
+          "decision": "avoid",
+          "candidate": "SH.688608",
+          "reason": "planned shareholder sale materially exceeds implied buyback shares"
+        },
+        {
+          "theme": "Crypto treasury",
+          "decision": "avoid",
+          "reason": "Sep 15 cash-market reversal after US legislation stalled"
+        },
+        {
+          "theme": "Search Engine",
+          "decision": "no_candidate"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "ticker": "SZ.300209",
+        "name": "行云科技",
+        "status": "conditional_watch",
+        "price": 33.68,
+        "price_as_of": "2026-09-15 close"
+      },
+      {
+        "ticker": "SH.688733",
+        "name": "壹石通",
+        "status": "conditional_watch",
+        "price": 28.43,
+        "price_as_of": "2026-09-15 close"
+      },
+      {
+        "ticker": "SH.688608",
+        "name": "恒玄科技",
+        "status": "avoid",
+        "price": 89.32,
+        "price_as_of": "2026-09-15 close"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "started_at": "2026-09-16T08:29:06.297+08:00",
     "rules_read_completed_at": "2026-09-16T08:29:06.297+08:00",
-    "research_started_at": "2026-09-16T08:32:51+08:00"
+    "research_started_at": "2026-09-16T08:32:51+08:00",
+    "generation_started_at": "2026-09-16T08:39:03+08:00"
   }
 }
