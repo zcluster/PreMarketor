@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260916-095732",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-16T10:01:38+08:00",
-  "lease_until": "2026-09-16T10:11:38+08:00",
+  "heartbeat_at": "2026-09-16T10:04:54+08:00",
+  "lease_until": "2026-09-16T10:14:54+08:00",
   "source_cutoff": "2026-09-16T08:39:03+08:00",
   "main_base_sha": "1af7599f89766beb2b011a8f41146d7eb731a3be",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_research_complete",
+  "stage": "validation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -155,7 +155,17 @@
           "checked_at": "2026-09-16T09:59:00+08:00",
           "result": "Official text still scheduled for later publication; no beneficiary assumptions added."
         }
-      ]
+      ],
+      "generated_candidate": {
+        "title": "油气与防御轮动获鲜明确认，电子信息规划继续提供结构性对冲",
+        "updated": "2026-09-16 10:04 CST",
+        "changes": [
+          "fresh US ranking panels",
+          "major-movement A/H reconciliation",
+          "CNOOC opening feedback",
+          "bilingual brief and archive"
+        ]
+      }
     }
   },
   "pending_increment": [],
@@ -164,11 +174,13 @@
     "started_at": "2026-09-16T08:29:06.297+08:00",
     "rules_read_completed_at": "2026-09-16T08:29:06.297+08:00",
     "research_started_at": "2026-09-16T08:32:51+08:00",
-    "generation_started_at": "2026-09-16T08:39:03+08:00",
+    "generation_started_at": "2026-09-16T10:01:39+08:00",
     "published_at": "2026-09-16T08:43:06+08:00",
     "completed_at": "2026-09-16T08:43:06+08:00",
     "incremental_research_started_at": "2026-09-16T09:57:32+08:00",
-    "incremental_research_completed_at": "2026-09-16T10:01:38+08:00"
+    "incremental_research_completed_at": "2026-09-16T10:01:38+08:00",
+    "translation_started_at": "2026-09-16T10:02:30+08:00",
+    "generation_translation_completed_at": "2026-09-16T10:04:54+08:00"
   },
   "error": null,
   "error_stage": null,
