@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260916-095732",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-16T10:04:54+08:00",
-  "lease_until": "2026-09-16T10:14:54+08:00",
+  "heartbeat_at": "2026-09-16T10:06:46+08:00",
+  "lease_until": "2026-09-16T10:16:46+08:00",
   "source_cutoff": "2026-09-16T08:39:03+08:00",
   "main_base_sha": "1af7599f89766beb2b011a8f41146d7eb731a3be",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "validation",
+  "stage": "candidate_creation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -165,6 +165,20 @@
           "CNOOC opening feedback",
           "bilingual brief and archive"
         ]
+      },
+      "validation": {
+        "status": "passed",
+        "checks": [
+          "only five allowed index markers changed",
+          "US_BRIEF/US_TIME/US_UPDATED byte-identical",
+          "index outside allowed markers byte-identical",
+          "archive CN equals homepage CN",
+          "CN/EN structure and section ordering",
+          "fresh panels 10 industry rows plus 5 concept rows in both languages",
+          "all ranked major movements reconciled",
+          "no stale-ranking claims",
+          "manifest head updated and prior records preserved"
+        ]
       }
     }
   },
@@ -180,7 +194,8 @@
     "incremental_research_started_at": "2026-09-16T09:57:32+08:00",
     "incremental_research_completed_at": "2026-09-16T10:01:38+08:00",
     "translation_started_at": "2026-09-16T10:02:30+08:00",
-    "generation_translation_completed_at": "2026-09-16T10:04:54+08:00"
+    "generation_translation_completed_at": "2026-09-16T10:04:54+08:00",
+    "validation_completed_at": "2026-09-16T10:06:46+08:00"
   },
   "error": null,
   "error_stage": null,
