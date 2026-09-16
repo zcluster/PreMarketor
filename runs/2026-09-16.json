@@ -2,12 +2,12 @@
   "run_id": "ah-20260916-20260916082730",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-16T08:29:06.297+08:00",
-  "lease_until": "2026-09-16T08:39:06.297+08:00",
-  "source_cutoff": "2026-09-16T08:29:06.297+08:00",
+  "heartbeat_at": "2026-09-16T08:32:51+08:00",
+  "lease_until": "2026-09-16T08:42:51+08:00",
+  "source_cutoff": "2026-09-16T08:32:51+08:00",
   "main_base_sha": "1ec7ca39e18c71127e228e572e355a442a697949",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "initialization",
+  "stage": "research",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -16,12 +16,52 @@
     "snapshots": {
       "akshare_sha": "937ca178da9aab4923738603ff604e67512d551f",
       "us_rankings_sha": "822038d4fbaedcb025648a0731b3af577b6e74e3"
+    },
+    "discovery": {
+      "financial": [
+        {
+          "source": "Jin10",
+          "status": "stale_no_current"
+        },
+        {
+          "source": "CLS",
+          "status": "partial_current_calendar"
+        },
+        {
+          "source": "Shanghai Securities News",
+          "status": "ok_current"
+        },
+        {
+          "source": "Eastmoney",
+          "status": "ok_current"
+        },
+        {
+          "source": "Securities Times",
+          "status": "partial_stale"
+        }
+      ],
+      "overnight_us": {
+        "status": "ok",
+        "date": "2026-09-15",
+        "sources": [
+          "Reuters",
+          "AP"
+        ]
+      },
+      "domestic_policy": {
+        "status": "ok",
+        "sources": [
+          "MIIT",
+          "SCIO"
+        ]
+      }
     }
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "started_at": "2026-09-16T08:29:06.297+08:00",
-    "rules_read_completed_at": "2026-09-16T08:29:06.297+08:00"
+    "rules_read_completed_at": "2026-09-16T08:29:06.297+08:00",
+    "research_started_at": "2026-09-16T08:32:51+08:00"
   }
 }
