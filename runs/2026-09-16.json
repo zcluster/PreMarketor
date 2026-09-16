@@ -1,13 +1,13 @@
 {
   "run_id": "ah-20260916-20260916082730",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "heartbeat_at": "2026-09-16T08:39:03+08:00",
-  "lease_until": "2026-09-16T08:51:03+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-16T08:43:06+08:00",
+  "lease_until": null,
   "source_cutoff": "2026-09-16T08:39:03+08:00",
   "main_base_sha": "1ec7ca39e18c71127e228e572e355a442a697949",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "generation",
+  "stage": "complete",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -133,11 +133,28 @@
     ]
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "c1a0737024f2d7d73790381f37e77d8b7a16578e",
   "stage_timings": {
     "started_at": "2026-09-16T08:29:06.297+08:00",
     "rules_read_completed_at": "2026-09-16T08:29:06.297+08:00",
     "research_started_at": "2026-09-16T08:32:51+08:00",
-    "generation_started_at": "2026-09-16T08:39:03+08:00"
+    "generation_started_at": "2026-09-16T08:39:03+08:00",
+    "published_at": "2026-09-16T08:43:06+08:00",
+    "completed_at": "2026-09-16T08:43:06+08:00"
+  },
+  "error": null,
+  "error_stage": null,
+  "production_validation": {
+    "completed_at": "2026-09-16T08:43:06+08:00",
+    "homepage_http": 200,
+    "history_page_http": 200,
+    "history_json_http": 200,
+    "manifest_http": 200,
+    "homepage_exact_commit": true,
+    "history_json_exact_commit": true,
+    "manifest_exact_commit": true,
+    "bilingual": true,
+    "archive_nonempty": true,
+    "us_markers_protected": true
   }
 }
