@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260916-095732",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-16T09:57:32+08:00",
-  "lease_until": "2026-09-16T10:07:32+08:00",
+  "heartbeat_at": "2026-09-16T10:01:38+08:00",
+  "lease_until": "2026-09-16T10:11:38+08:00",
   "source_cutoff": "2026-09-16T08:39:03+08:00",
   "main_base_sha": "1af7599f89766beb2b011a8f41146d7eb731a3be",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_research",
+  "stage": "incremental_research_complete",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -132,11 +132,30 @@
       }
     ],
     "incremental_review": {
-      "status": "in_progress",
+      "status": "material_change_found",
       "review_started_at": "2026-09-16T09:57:32+08:00",
       "window_start": "2026-09-16T08:39:03+08:00",
       "current_main_sha": "1af7599f89766beb2b011a8f41146d7eb731a3be",
-      "findings": []
+      "findings": [
+        {
+          "type": "us_rankings_snapshot",
+          "blob_sha": "e6175adb5aee4ba104b9db914f23315be598c643",
+          "attempted_at": "2026-09-16T08:46:54+08:00",
+          "materiality": "Industry leaders rotated to oil & gas drilling/refining/E&P plus diagnostics/chemicals; laggards rotated to auto dealers/retail/restaurants/coking coal/food distribution; concept leaders are room-temperature superconductors, shale oil, CRO, natural gas and safe havens. This materially changes the two published ranking panels and sector-rotation judgment."
+        },
+        {
+          "type": "opening_feedback",
+          "source_url": "https://stock360.hkej.com/quotePlus/stockEvents/883",
+          "checked_at": "2026-09-16T09:59:00+08:00",
+          "result": "CNOOC 00883 quoted HKD24.90, +1.7%; positive local confirmation for upstream oil mapping."
+        },
+        {
+          "type": "hk_policy_address",
+          "source_url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600405.htm",
+          "checked_at": "2026-09-16T09:59:00+08:00",
+          "result": "Official text still scheduled for later publication; no beneficiary assumptions added."
+        }
+      ]
     }
   },
   "pending_increment": [],
@@ -148,7 +167,8 @@
     "generation_started_at": "2026-09-16T08:39:03+08:00",
     "published_at": "2026-09-16T08:43:06+08:00",
     "completed_at": "2026-09-16T08:43:06+08:00",
-    "incremental_research_started_at": "2026-09-16T09:57:32+08:00"
+    "incremental_research_started_at": "2026-09-16T09:57:32+08:00",
+    "incremental_research_completed_at": "2026-09-16T10:01:38+08:00"
   },
   "error": null,
   "error_stage": null,
