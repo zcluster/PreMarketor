@@ -1,13 +1,13 @@
 {
   "run_id": "ah-20260917-20260917083104",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "heartbeat_at": "2026-09-17T08:42:21.567+08:00",
-  "lease_until": "2026-09-17T08:57:21.567+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-17T08:47:43.324+08:00",
+  "lease_until": null,
   "source_cutoff": "2026-09-17T08:31:04+08:00",
   "main_base_sha": "a2f859efc96f0127eb25829958321078c3796f67",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "deployment_verification",
+  "stage": "published",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -55,10 +55,54 @@
         "history/data/2026-09-17.json",
         "history/manifest.json"
       ]
+    },
+    "remote_readback": {
+      "status": "passed",
+      "expected": "a5c79a7632c585c2b0d2730900228847ce718a0e",
+      "head": "a5c79a7632c585c2b0d2730900228847ce718a0e",
+      "history_exact": true,
+      "history_sha": "745f8e3a68971b8f98e05647cc94554d133f4c54",
+      "index_exact": true,
+      "index_sha": "148aaa77eb94263618328d4570e39c1164703ac1",
+      "manifest_exact": true,
+      "manifest_sha": "a2503a570f551bc33486d1b7f04a1a5c7016a135"
+    },
+    "production_verification": {
+      "status": "passed",
+      "verified_at": "2026-09-17T08:47:43.324+08:00",
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "http": "loaded",
+        "date": "2026-09-17",
+        "time": "2026-09-17 08:44 CST",
+        "cards_cn": 5,
+        "cards_en": 5,
+        "news_cn": 11,
+        "news_en": 11,
+        "overnight_cn": 1,
+        "overnight_en": 1,
+        "panel_rows": 15,
+        "panel_down": 5,
+        "empty": false
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-09-17",
+        "http": "loaded",
+        "date": "2026-09-17",
+        "cards": 5,
+        "news": 11,
+        "overnight": 1,
+        "empty": false
+      },
+      "notes": [
+        "production browser rendering verified in Chinese archive and English homepage",
+        "history JSON bilingual fields confirmed by main remote readback and production homepage language rendering",
+        "client prefix sanitizer corrected without changing scripts"
+      ]
     }
   },
   "pending_increment": [],
-  "published_commit": "2575838614387619737877b3a70901174fb426e8",
+  "published_commit": "a5c79a7632c585c2b0d2730900228847ce718a0e",
   "stage_timings": {
     "started_at": "2026-09-17T08:31:04+08:00",
     "rules_read_completed_at": "2026-09-17T08:31:04+08:00",
@@ -66,6 +110,10 @@
     "research_completed_at": "2026-09-17T08:38:55.558+08:00",
     "generation_started_at": "2026-09-17T08:38:55.558+08:00",
     "commit_completed_at": "2026-09-17T08:42:21.567+08:00",
-    "deployment_verification_started_at": "2026-09-17T08:42:21.567+08:00"
-  }
+    "deployment_verification_started_at": "2026-09-17T08:42:21.567+08:00",
+    "final_commit_completed_at": "2026-09-17T08:47:43.324+08:00",
+    "production_verified_at": "2026-09-17T08:47:43.324+08:00",
+    "completed_at": "2026-09-17T08:47:43.324+08:00"
+  },
+  "error": null
 }
