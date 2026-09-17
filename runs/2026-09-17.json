@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260917-101025",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-17T10:19:41+08:00",
-  "lease_until": "2026-09-17T10:29:41+08:00",
-  "source_cutoff": "2026-09-17T08:31:04+08:00",
+  "heartbeat_at": "2026-09-17T10:29:21+08:00",
+  "lease_until": "2026-09-17T10:39:21+08:00",
+  "source_cutoff": "2026-09-17T10:24:00+08:00",
   "main_base_sha": "44e23ee00a50df8de74fe863714b9784bce155e3",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "generation",
+  "stage": "validation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -128,8 +128,30 @@
         }
       ],
       "generation_progress": {
-        "status": "bilingual_draft_in_progress",
-        "note": "Exact-string merge required two safe retries; no main or candidate writes occurred."
+        "status": "complete",
+        "completed_at": "2026-09-17T10:24:00+08:00",
+        "title": "光通信与AI硬件接棒隔夜强势，军工、储能映射升温但高利率仍压制估值",
+        "time": "2026-09-17 10:24 CST",
+        "stock_cards_cn": 5,
+        "stock_cards_en": 5
+      },
+      "validation": {
+        "status": "passed",
+        "validated_at": "2026-09-17T10:28:00+08:00",
+        "checks": {
+          "marker_whitelist": true,
+          "us_fragments_byte_identical": true,
+          "history_cn_matches_homepage": true,
+          "bilingual_structure": true,
+          "overnight_items_each": 3,
+          "stock_cards_each": 5,
+          "panel_rows_cn": 10,
+          "panel_rows_en": 10,
+          "partial_industry_gap_disclosed": true,
+          "major_movement_mapping_reconciled": true,
+          "no_added_chase_card_due_quote_gap": true,
+          "prior_manifest_records_unchanged": true
+        }
       }
     }
   },
@@ -147,7 +169,9 @@
     "production_verified_at": "2026-09-17T08:47:43.324+08:00",
     "completed_at": "2026-09-17T08:47:43.324+08:00",
     "incremental_research_started_at": "2026-09-17T10:10:25+08:00",
-    "incremental_research_completed_at": "2026-09-17T10:14:14+08:00"
+    "incremental_research_completed_at": "2026-09-17T10:14:14+08:00",
+    "incremental_generation_completed_at": "2026-09-17T10:24:00+08:00",
+    "incremental_validation_completed_at": "2026-09-17T10:28:00+08:00"
   },
   "error": null,
   "candidate_commit_sha": null
