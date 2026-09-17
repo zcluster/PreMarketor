@@ -2,8 +2,8 @@
   "run_id": "ah-review-20260917-101025",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-17T10:14:14+08:00",
-  "lease_until": "2026-09-17T10:24:14+08:00",
+  "heartbeat_at": "2026-09-17T10:19:41+08:00",
+  "lease_until": "2026-09-17T10:29:41+08:00",
   "source_cutoff": "2026-09-17T08:31:04+08:00",
   "main_base_sha": "44e23ee00a50df8de74fe863714b9784bce155e3",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
@@ -126,7 +126,11 @@
           "checked_at": "2026-09-17T10:13:00+08:00",
           "result": "Public dynamic quote endpoint was blocked by the cloud browser client and search returned no reliable Sep 17 A/H opening quote. Mappings are therefore kept as sector watch/no-candidate conclusions rather than upgraded to buy candidates."
         }
-      ]
+      ],
+      "generation_progress": {
+        "status": "bilingual_draft_in_progress",
+        "note": "Exact-string merge required two safe retries; no main or candidate writes occurred."
+      }
     }
   },
   "pending_increment": [],
