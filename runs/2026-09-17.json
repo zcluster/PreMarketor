@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260917-101025",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-17T10:10:25+08:00",
-  "lease_until": "2026-09-17T10:20:25+08:00",
+  "heartbeat_at": "2026-09-17T10:14:14+08:00",
+  "lease_until": "2026-09-17T10:24:14+08:00",
   "source_cutoff": "2026-09-17T08:31:04+08:00",
   "main_base_sha": "44e23ee00a50df8de74fe863714b9784bce155e3",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -101,11 +101,32 @@
       ]
     },
     "incremental_review": {
-      "status": "in_progress",
+      "status": "material_change_found",
       "review_started_at": "2026-09-17T10:10:25+08:00",
       "window_start": "2026-09-17T08:31:04+08:00",
       "current_main_sha": "44e23ee00a50df8de74fe863714b9784bce155e3",
-      "findings": []
+      "findings": [
+        {
+          "type": "us_rankings_snapshot",
+          "blob_sha": "38d8e7ad9bc5f410e66967be12584964de721ecc",
+          "attempted_at": "2026-09-17T08:52:29+08:00",
+          "materiality": "Industry top five rotated to pharmaceutical retail, aerospace and defense, electrical equipment and parts, luxury goods, and computer hardware; concept top five rotated to NVIDIA portfolio, crypto mining, space, room-temperature superconductors, and energy storage. Industry bottom five timed out and must remain an explicit gap."
+        },
+        {
+          "type": "optical_hardware_corroboration",
+          "source_urls": [
+            "https://www.barrons.com/articles/lumentum-corning-stock-networking-112f9a13",
+            "https://www.marketwatch.com/story/why-optical-stocks-lumentum-and-coherent-were-the-days-biggest-gainers-051af440"
+          ],
+          "checked_at": "2026-09-17T10:12:00+08:00",
+          "result": "Lumentum rose about 9.6%-11% and Coherent about 6.9%-7.9% on Sep 16, confirming the AI optical/hardware rebound behind the fresh ranking."
+        },
+        {
+          "type": "local_opening_feedback",
+          "checked_at": "2026-09-17T10:13:00+08:00",
+          "result": "Public dynamic quote endpoint was blocked by the cloud browser client and search returned no reliable Sep 17 A/H opening quote. Mappings are therefore kept as sector watch/no-candidate conclusions rather than upgraded to buy candidates."
+        }
+      ]
     }
   },
   "pending_increment": [],
@@ -115,13 +136,14 @@
     "rules_read_completed_at": "2026-09-17T08:31:04+08:00",
     "research_started_at": "2026-09-17T08:33:56.314+08:00",
     "research_completed_at": "2026-09-17T08:38:55.558+08:00",
-    "generation_started_at": "2026-09-17T08:38:55.558+08:00",
+    "generation_started_at": "2026-09-17T10:14:14+08:00",
     "commit_completed_at": "2026-09-17T08:42:21.567+08:00",
     "deployment_verification_started_at": "2026-09-17T08:42:21.567+08:00",
     "final_commit_completed_at": "2026-09-17T08:47:43.324+08:00",
     "production_verified_at": "2026-09-17T08:47:43.324+08:00",
     "completed_at": "2026-09-17T08:47:43.324+08:00",
-    "incremental_research_started_at": "2026-09-17T10:10:25+08:00"
+    "incremental_research_started_at": "2026-09-17T10:10:25+08:00",
+    "incremental_research_completed_at": "2026-09-17T10:14:14+08:00"
   },
   "error": null,
   "candidate_commit_sha": null
