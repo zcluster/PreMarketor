@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260917-101025",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-17T10:30:19+08:00",
-  "lease_until": "2026-09-17T10:40:19+08:00",
+  "heartbeat_at": "2026-09-17T10:32:11+08:00",
+  "lease_until": "2026-09-17T10:42:11+08:00",
   "source_cutoff": "2026-09-17T10:24:00+08:00",
   "main_base_sha": "44e23ee00a50df8de74fe863714b9784bce155e3",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "candidate_creation",
+  "stage": "main_update",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -152,6 +152,16 @@
           "no_added_chase_card_due_quote_gap": true,
           "prior_manifest_records_unchanged": true
         }
+      },
+      "candidate": {
+        "status": "created",
+        "sha": "d9c8254b864e2feffad5ddde1b4a7df9264a2fc3",
+        "parent": "44e23ee00a50df8de74fe863714b9784bce155e3",
+        "files": [
+          "index.html",
+          "history/data/2026-09-17.json",
+          "history/manifest.json"
+        ]
       }
     }
   },
@@ -172,8 +182,9 @@
     "incremental_research_completed_at": "2026-09-17T10:14:14+08:00",
     "incremental_generation_completed_at": "2026-09-17T10:24:00+08:00",
     "incremental_validation_completed_at": "2026-09-17T10:28:00+08:00",
-    "incremental_candidate_creation_started_at": "2026-09-17T10:30:19+08:00"
+    "incremental_candidate_creation_started_at": "2026-09-17T10:30:19+08:00",
+    "incremental_candidate_created_at": "2026-09-17T10:32:11+08:00"
   },
   "error": null,
-  "candidate_commit_sha": null
+  "candidate_commit_sha": "d9c8254b864e2feffad5ddde1b4a7df9264a2fc3"
 }
