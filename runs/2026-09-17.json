@@ -1,13 +1,13 @@
 {
-  "run_id": "ah-20260917-20260917083104",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "heartbeat_at": "2026-09-17T08:47:43.324+08:00",
-  "lease_until": null,
+  "run_id": "ah-review-20260917-101025",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "heartbeat_at": "2026-09-17T10:10:25+08:00",
+  "lease_until": "2026-09-17T10:20:25+08:00",
   "source_cutoff": "2026-09-17T08:31:04+08:00",
-  "main_base_sha": "a2f859efc96f0127eb25829958321078c3796f67",
+  "main_base_sha": "44e23ee00a50df8de74fe863714b9784bce155e3",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "published",
+  "stage": "incremental_research",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -99,6 +99,13 @@
         "history JSON bilingual fields confirmed by main remote readback and production homepage language rendering",
         "client prefix sanitizer corrected without changing scripts"
       ]
+    },
+    "incremental_review": {
+      "status": "in_progress",
+      "review_started_at": "2026-09-17T10:10:25+08:00",
+      "window_start": "2026-09-17T08:31:04+08:00",
+      "current_main_sha": "44e23ee00a50df8de74fe863714b9784bce155e3",
+      "findings": []
     }
   },
   "pending_increment": [],
@@ -113,7 +120,9 @@
     "deployment_verification_started_at": "2026-09-17T08:42:21.567+08:00",
     "final_commit_completed_at": "2026-09-17T08:47:43.324+08:00",
     "production_verified_at": "2026-09-17T08:47:43.324+08:00",
-    "completed_at": "2026-09-17T08:47:43.324+08:00"
+    "completed_at": "2026-09-17T08:47:43.324+08:00",
+    "incremental_research_started_at": "2026-09-17T10:10:25+08:00"
   },
-  "error": null
+  "error": null,
+  "candidate_commit_sha": null
 }
