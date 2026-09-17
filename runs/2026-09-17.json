@@ -2,12 +2,12 @@
   "run_id": "ah-20260917-20260917083104",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-17T08:33:56.314+08:00",
-  "lease_until": "2026-09-17T08:51:56.314+08:00",
+  "heartbeat_at": "2026-09-17T08:38:55.558+08:00",
+  "lease_until": "2026-09-17T08:58:55.558+08:00",
   "source_cutoff": "2026-09-17T08:31:04+08:00",
   "main_base_sha": "a2f859efc96f0127eb25829958321078c3796f67",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -16,6 +16,17 @@
     "snapshots": {
       "akshare_sha": "e23caca52e56423a3c8af99a0d88910c02d1b9d9",
       "us_rankings_sha": "e6175adb5aee4ba104b9db914f23315be598c643"
+    },
+    "research": {
+      "status": "complete",
+      "source_cutoff": "2026-09-17T08:38:55.558+08:00",
+      "notes": [
+        "Fed/Reuters/WSJ close",
+        "Beijing government policies",
+        "HKSAR Policy Address",
+        "A/H company disclosures",
+        "current delayed futures/WTI"
+      ]
     }
   },
   "pending_increment": [],
@@ -23,6 +34,8 @@
   "stage_timings": {
     "started_at": "2026-09-17T08:31:04+08:00",
     "rules_read_completed_at": "2026-09-17T08:31:04+08:00",
-    "research_started_at": "2026-09-17T08:33:56.314+08:00"
+    "research_started_at": "2026-09-17T08:33:56.314+08:00",
+    "research_completed_at": "2026-09-17T08:38:55.558+08:00",
+    "generation_started_at": "2026-09-17T08:38:55.558+08:00"
   }
 }
