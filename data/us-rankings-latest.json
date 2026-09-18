@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-09-17T08:52:29+08:00",
-  "status": "partial",
+  "attemptedAt": "2026-09-18T08:46:04+08:00",
+  "status": "ok",
   "groups": {
     "industry": {
-      "status": "partial",
+      "status": "ok",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-17T08:52:29+08:00",
+      "fetchedAt": "2026-09-18T08:46:04+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,58 +17,44 @@
       },
       "top": [
         {
-          "name": "医药零售",
-          "nameEn": "Pharmaceutical Retailers",
-          "code": "BK2092",
-          "changePct": "+4.92%",
-          "leaderName": "Ridgetech",
-          "leaderTicker": "RDGT",
-          "leaderChangePct": "+23.77%",
+          "name": "白银",
+          "nameEn": "Silver",
+          "code": "BK2093",
+          "changePct": "+6.89%",
+          "leaderName": "Silvercorp Metals",
+          "leaderTicker": "SVM",
+          "leaderChangePct": "+8.68%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 2,
+            "advancers": 6,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "航空航天与国防",
-          "nameEn": "Aerospace & Defense",
-          "code": "BK2089",
-          "changePct": "+2.94%",
-          "leaderName": "FTAI Aviation",
-          "leaderTicker": "FTAI",
-          "leaderChangePct": "+7.59%",
+          "name": "太阳能",
+          "nameEn": "Solar",
+          "code": "BK2047",
+          "changePct": "+5.27%",
+          "leaderName": "Turbo Energy",
+          "leaderTicker": "TURB",
+          "leaderChangePct": "+49.97%",
           "breadth": {
-            "advancers": 45,
-            "decliners": 44,
-            "unchanged": 6
+            "advancers": 17,
+            "decliners": 2,
+            "unchanged": 3
           }
         },
         {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "+2.24%",
-          "leaderName": "Stardust Power",
-          "leaderTicker": "SDST",
-          "leaderChangePct": "+17.35%",
+          "name": "其他贵金属和采矿",
+          "nameEn": "Other Precious Metals & Mining",
+          "code": "BK2507",
+          "changePct": "+4.47%",
+          "leaderName": "Versamet Royalties",
+          "leaderTicker": "VMET",
+          "leaderChangePct": "+6.54%",
           "breadth": {
-            "advancers": 25,
-            "decliners": 26,
-            "unchanged": 4
-          }
-        },
-        {
-          "name": "奢侈品",
-          "nameEn": "Luxury Goods",
-          "code": "BK2276",
-          "changePct": "+1.83%",
-          "leaderName": "LuxExperience BV",
-          "leaderTicker": "LUXE",
-          "leaderChangePct": "+23.22%",
-          "breadth": {
-            "advancers": 7,
-            "decliners": 3,
+            "advancers": 16,
+            "decliners": 1,
             "unchanged": 0
           }
         },
@@ -76,29 +62,112 @@
           "name": "计算机硬件",
           "nameEn": "Computer Hardware",
           "code": "BK2492",
-          "changePct": "+1.63%",
-          "leaderName": "Q/C Technologies",
-          "leaderTicker": "QCLS",
-          "leaderChangePct": "+118.45%",
+          "changePct": "+3.75%",
+          "leaderName": "AGM Group",
+          "leaderTicker": "AGMH",
+          "leaderChangePct": "+31.64%",
           "breadth": {
-            "advancers": 21,
-            "decliners": 21,
-            "unchanged": 2
+            "advancers": 39,
+            "decliners": 4,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "半导体",
+          "nameEn": "Semiconductors",
+          "code": "BK2015",
+          "changePct": "+3.54%",
+          "leaderName": "GCT SEMICONDUCTOR HOLDING INC C/WTS 01/03/2029(TO PUR COM)",
+          "leaderTicker": "GCTS.WS",
+          "leaderChangePct": "+15.33%",
+          "breadth": {
+            "advancers": 63,
+            "decliners": 8,
+            "unchanged": 0
           }
         }
       ],
-      "bottom": [],
-      "missing": [
-        "bottom5"
+      "bottom": [
+        {
+          "name": "多元化保险",
+          "nameEn": "Insurance - Diversified",
+          "code": "BK2429",
+          "changePct": "-1.92%",
+          "leaderName": "ARCH CAPITAL GROUP 5.45% NON CUM DEP REP 1/1000 PFD SER F",
+          "leaderTicker": "ACGLO",
+          "leaderChangePct": "+1.82%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 7,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "电信服务",
+          "nameEn": "Telecom Services",
+          "code": "BK2088",
+          "changePct": "-2.13%",
+          "leaderName": "SurgePays",
+          "leaderTicker": "SURG",
+          "leaderChangePct": "+8.90%",
+          "breadth": {
+            "advancers": 29,
+            "decliners": 26,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "商业设备和用品",
+          "nameEn": "Business Equipment & Supplies",
+          "code": "BK2509",
+          "changePct": "-2.25%",
+          "leaderName": "施乐",
+          "leaderTicker": "XRX",
+          "leaderChangePct": "+4.02%",
+          "breadth": {
+            "advancers": 3,
+            "decliners": 2,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "抵押贷款金融",
+          "nameEn": "Mortgage Finance",
+          "code": "BK2479",
+          "changePct": "-2.51%",
+          "leaderName": "Pineapple Financial Inc",
+          "leaderTicker": "PAPL",
+          "leaderChangePct": "+3.70%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 6,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "博彩",
+          "nameEn": "Gambling",
+          "code": "BK2094",
+          "changePct": "-4.56%",
+          "leaderName": "Bragg Gaming Group",
+          "leaderTicker": "BRAG",
+          "leaderChangePct": "+2.07%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 12,
+            "unchanged": 0
+          }
+        }
       ],
-      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
+      "missing": [],
+      "error": null
     },
     "concept": {
       "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-17T08:52:29+08:00",
+      "fetchedAt": "2026-09-18T08:46:04+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -110,10 +179,10 @@
           "name": "英伟达持仓概念",
           "nameEn": "NVIDIA Portfolio",
           "code": "BK20882",
-          "changePct": "+3.76%",
-          "leaderName": "Coherent",
-          "leaderTicker": "COHR",
-          "leaderChangePct": "+6.92%",
+          "changePct": "+5.55%",
+          "leaderName": "Generate Biomedicines",
+          "leaderTicker": "GENB",
+          "leaderChangePct": "+9.18%",
           "breadth": {
             "advancers": 6,
             "decliners": 1,
@@ -121,58 +190,58 @@
           }
         },
         {
-          "name": "加密矿企",
-          "nameEn": "Crypto Mining",
-          "code": "BK23921",
-          "changePct": "+3.50%",
-          "leaderName": "灿谷",
-          "leaderTicker": "CANG",
-          "leaderChangePct": "+14.52%",
+          "name": "以太坊储备概念",
+          "nameEn": "ETH-Holding Companies",
+          "code": "BK23775",
+          "changePct": "+5.46%",
+          "leaderName": "FG Nexus",
+          "leaderTicker": "FGNX",
+          "leaderChangePct": "+12.87%",
           "breadth": {
-            "advancers": 11,
-            "decliners": 3,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "太空概念",
-          "nameEn": "Space",
-          "code": "BK2556",
-          "changePct": "+3.38%",
-          "leaderName": "York Space Systems",
-          "leaderTicker": "YSS",
-          "leaderChangePct": "+5.92%",
-          "breadth": {
-            "advancers": 21,
-            "decliners": 8,
-            "unchanged": 2
-          }
-        },
-        {
-          "name": "室温超导概念",
-          "nameEn": "Room-Temp Superconductors",
-          "code": "BK2147",
-          "changePct": "+3.02%",
-          "leaderName": "布鲁克",
-          "leaderTicker": "BRKR",
-          "leaderChangePct": "+8.83%",
-          "breadth": {
-            "advancers": 2,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "储能概念股",
-          "nameEn": "Energy Storage Concept",
-          "code": "BK23939",
-          "changePct": "+3.00%",
-          "leaderName": "GE Vernova",
-          "leaderTicker": "GEV",
-          "leaderChangePct": "+4.79%",
-          "breadth": {
-            "advancers": 6,
+            "advancers": 9,
             "decliners": 2,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "加密储备概念",
+          "nameEn": "Crypto Treasury",
+          "code": "BK23920",
+          "changePct": "+4.89%",
+          "leaderName": "CEA Industries",
+          "leaderTicker": "BNC",
+          "leaderChangePct": "+13.87%",
+          "breadth": {
+            "advancers": 24,
+            "decliners": 7,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "存储概念",
+          "nameEn": "Data storage stock",
+          "code": "BK23925",
+          "changePct": "+4.79%",
+          "leaderName": "闪迪",
+          "leaderTicker": "SNDK",
+          "leaderChangePct": "+6.21%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "3D打印",
+          "nameEn": "3D Printing",
+          "code": "BK2553",
+          "changePct": "+4.64%",
+          "leaderName": "3D系统",
+          "leaderTicker": "DDD",
+          "leaderChangePct": "+12.74%",
+          "breadth": {
+            "advancers": 5,
+            "decliners": 0,
             "unchanged": 0
           }
         }
