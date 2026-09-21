@@ -2,8 +2,8 @@
   "run_id": "ah-20260921-20260921083326",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-21T08:34:29.232+08:00",
-  "lease_until": "2026-09-21T08:49:29.232+08:00",
+  "heartbeat_at": "2026-09-21T08:40:00+08:00",
+  "lease_until": "2026-09-21T09:00:00+08:00",
   "source_cutoff": "2026-09-21T08:33:26.946+08:00",
   "main_base_sha": "4c7f300615a9705617f4e5e9f3a7c2d33cfabff3",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
@@ -33,6 +33,15 @@
         "fetchedAt": "2026-09-19T08:37:02+08:00",
         "status": "ok"
       }
+    },
+    "research": {
+      "status": "in_progress",
+      "sources_checked": [
+        "Reuters",
+        "中国政府网/部委检索",
+        "SSE/SZSE/HKEX检索",
+        "国内财经信息流"
+      ]
     }
   },
   "pending_increment": [],
