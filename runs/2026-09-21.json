@@ -2,12 +2,12 @@
   "run_id": "ah-20260921-20260921083326",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-21T08:40:00+08:00",
-  "lease_until": "2026-09-21T09:00:00+08:00",
+  "heartbeat_at": "2026-09-21T08:46:00+08:00",
+  "lease_until": "2026-09-21T09:06:00+08:00",
   "source_cutoff": "2026-09-21T08:33:26.946+08:00",
   "main_base_sha": "4c7f300615a9705617f4e5e9f3a7c2d33cfabff3",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -35,13 +35,25 @@
       }
     },
     "research": {
-      "status": "in_progress",
-      "sources_checked": [
-        "Reuters",
-        "中国政府网/部委检索",
-        "SSE/SZSE/HKEX检索",
-        "国内财经信息流"
-      ]
+      "status": "complete",
+      "source_cutoff": "2026-09-21T08:43:00+08:00",
+      "main_news": 11,
+      "domestic_policies": 3,
+      "company_events": 4,
+      "international_geopolitics": 1,
+      "rankings_rows": 15,
+      "akshare_degraded": true,
+      "representative_quote_lookup": "timed_out_2026-09-21T08:40:00+08:00"
+    },
+    "validation": {
+      "status": "precommit_passed",
+      "allowed_only": true,
+      "panel_rows_each": 15,
+      "panel_down_each": 5,
+      "overnight_items_each": 3,
+      "stock_cards_each": 3,
+      "main_news_each": 11,
+      "protected_us_markers": true
     }
   },
   "pending_increment": [],
@@ -49,6 +61,8 @@
   "stage_timings": {
     "started_at": "2026-09-21T08:33:26.946+08:00",
     "rules_read_completed_at": "2026-09-21T08:33:26.946+08:00",
-    "research_started_at": "2026-09-21T08:34:29.232+08:00"
+    "research_started_at": "2026-09-21T08:34:29.232+08:00",
+    "research_completed_at": "2026-09-21T08:45:00+08:00",
+    "generation_started_at": "2026-09-21T08:46:00+08:00"
   }
 }
