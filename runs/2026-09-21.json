@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260921-091806",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-21T09:22:50+08:00",
-  "lease_until": "2026-09-21T09:37:50+08:00",
+  "heartbeat_at": "2026-09-21T09:32:52+08:00",
+  "lease_until": "2026-09-21T09:47:52+08:00",
   "source_cutoff": "2026-09-21T08:43:00+08:00",
   "main_base_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "generation",
+  "stage": "validation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -46,40 +46,22 @@
       "representative_quote_lookup": "timed_out_2026-09-21T08:40:00+08:00"
     },
     "validation": {
-      "status": "production_passed",
+      "status": "candidate_passed",
       "allowed_only": true,
-      "panel_rows_each": 15,
-      "panel_down_each": 5,
-      "overnight_items_each": 3,
-      "stock_cards_each": 3,
-      "main_news_each": 11,
+      "index_outside_allowed_markers_unchanged": true,
       "protected_us_markers": true,
-      "github_remote_readback": true,
-      "homepage_http_rendered": true,
-      "archive_http_rendered": true,
-      "homepage_cn": {
-        "time": "2026-09-21 08:45 CST",
-        "stock_cards": 3,
-        "panel_rows": 15,
-        "nonempty": true
-      },
-      "homepage_en": {
-        "time": "2026-09-20 20:45 EDT",
-        "stock_cards": 3,
-        "panel_rows": 15,
-        "nonempty": true
-      },
-      "archive_cn": {
-        "date": "2026-09-21",
-        "stock_cards": 3,
-        "nonempty": true
-      },
-      "history_json_github_readback": true,
-      "manifest_github_readback": true,
-      "production_json_direct_fetch": "browser_client_blocked_raw_json_url"
+      "manifest_other_records_unchanged": true,
+      "bilingual_structure": true,
+      "main_news_each": 12,
+      "overnight_items_each": 3,
+      "stock_cards_each": 5,
+      "logic_steps_each": 4,
+      "sector_tiles_each": 4,
+      "html_tag_balance": true,
+      "stale_oil_claims_removed": true
     },
     "incremental_review": {
-      "status": "material_update_required",
+      "status": "candidate_validated",
       "review_started_at": "2026-09-21T09:18:06+08:00",
       "research_completed_at": "2026-09-21T09:22:50+08:00",
       "window_start": "2026-09-21T08:43:00+08:00",
@@ -160,7 +142,9 @@
     "completed_at": "2026-09-21T08:53:14+08:00",
     "incremental_research_started_at": "2026-09-21T09:18:06+08:00",
     "incremental_research_completed_at": "2026-09-21T09:22:50+08:00",
-    "incremental_generation_started_at": "2026-09-21T09:22:50+08:00"
+    "incremental_generation_started_at": "2026-09-21T09:22:50+08:00",
+    "incremental_generation_completed_at": "2026-09-21T09:32:52+08:00",
+    "incremental_validation_completed_at": "2026-09-21T09:32:52+08:00"
   },
   "final_main_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
   "terminal_error": null,
