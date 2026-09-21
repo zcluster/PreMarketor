@@ -2,12 +2,12 @@
   "run_id": "ah-20260921-20260921083326",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-21T08:33:26.946+08:00",
-  "lease_until": "2026-09-21T08:43:26.946+08:00",
+  "heartbeat_at": "2026-09-21T08:34:29.232+08:00",
+  "lease_until": "2026-09-21T08:49:29.232+08:00",
   "source_cutoff": "2026-09-21T08:33:26.946+08:00",
   "main_base_sha": "4c7f300615a9705617f4e5e9f3a7c2d33cfabff3",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "initialization",
+  "stage": "research",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -16,12 +16,30 @@
     "snapshots": {
       "akshare_sha": "fe704db056f64373d94b6f2fd50c93d41f2450d0",
       "us_rankings_sha": "0e5c2d951a9c1c53639c80b9cc9f83a2de6c5ca4"
+    },
+    "snapshots_summary": {
+      "akshare": {
+        "fetchedAt": "2026-09-18T12:45:06+08:00",
+        "status": "partial",
+        "a_breadth": {
+          "advancers": 4559,
+          "decliners": 811,
+          "unchanged": 191,
+          "medianChangePct": 1.131
+        },
+        "hk_stocks_status": "error"
+      },
+      "us_rankings": {
+        "fetchedAt": "2026-09-19T08:37:02+08:00",
+        "status": "ok"
+      }
     }
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "started_at": "2026-09-21T08:33:26.946+08:00",
-    "rules_read_completed_at": "2026-09-21T08:33:26.946+08:00"
+    "rules_read_completed_at": "2026-09-21T08:33:26.946+08:00",
+    "research_started_at": "2026-09-21T08:34:29.232+08:00"
   }
 }
