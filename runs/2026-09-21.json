@@ -1,13 +1,13 @@
 {
   "run_id": "ah-review-20260921-091806",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "heartbeat_at": "2026-09-21T09:35:42+08:00",
-  "lease_until": "2026-09-21T09:50:42+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-21T09:39:01+08:00",
+  "lease_until": "2026-09-21T09:39:01+08:00",
   "source_cutoff": "2026-09-21T08:43:00+08:00",
   "main_base_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "main_update",
+  "stage": "published",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -46,7 +46,7 @@
       "representative_quote_lookup": "timed_out_2026-09-21T08:40:00+08:00"
     },
     "validation": {
-      "status": "candidate_passed",
+      "status": "production_passed",
       "allowed_only": true,
       "index_outside_allowed_markers_unchanged": true,
       "protected_us_markers": true,
@@ -58,10 +58,37 @@
       "logic_steps_each": 4,
       "sector_tiles_each": 4,
       "html_tag_balance": true,
-      "stale_oil_claims_removed": true
+      "github_remote_readback_exact": true,
+      "rules_blob_unchanged": true,
+      "vercel_status": "success",
+      "homepage_cn": {
+        "time": "2026-09-21 09:25 CST",
+        "cards": 5,
+        "news": 12,
+        "overnight": 3,
+        "nonempty": true
+      },
+      "homepage_en": {
+        "time": "2026-09-20 21:25 EDT",
+        "cards": 5,
+        "news": 12,
+        "overnight": 3,
+        "nonempty": true
+      },
+      "archive_cn": {
+        "date": "2026-09-21",
+        "time": "2026-09-21 09:25 CST",
+        "cards": 5,
+        "news": 12,
+        "overnight": 3,
+        "nonempty": true
+      },
+      "history_json_github_readback": true,
+      "history_json_contains_html_en": true,
+      "production_json_direct_fetch": "browser_client_blocked_raw_json_url"
     },
     "incremental_review": {
-      "status": "candidate_validated",
+      "status": "published",
       "review_started_at": "2026-09-21T09:18:06+08:00",
       "research_completed_at": "2026-09-21T09:22:50+08:00",
       "window_start": "2026-09-21T08:43:00+08:00",
@@ -138,16 +165,12 @@
           "history/data/2026-09-21.json",
           "history/manifest.json"
         ]
-      }
+      },
+      "published_commit": "f4894d7f620acd0d050cc628d0b4733a07ffd5ca"
     }
   },
-  "pending_increment": [
-    "更新油价方向与报价口径",
-    "新增彩讯股份算力合同",
-    "新增新华传媒复牌并购",
-    "新增奥克股份停牌重组风险"
-  ],
-  "published_commit": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
+  "pending_increment": [],
+  "published_commit": "f4894d7f620acd0d050cc628d0b4733a07ffd5ca",
   "stage_timings": {
     "started_at": "2026-09-21T08:33:26.946+08:00",
     "rules_read_completed_at": "2026-09-21T08:33:26.946+08:00",
@@ -156,16 +179,18 @@
     "generation_started_at": "2026-09-21T08:46:00+08:00",
     "generation_completed_at": "2026-09-21T08:48:00+08:00",
     "publish_committed_at": "2026-09-21T08:48:00+08:00",
-    "production_validated_at": "2026-09-21T08:53:14+08:00",
-    "completed_at": "2026-09-21T08:53:14+08:00",
+    "production_validated_at": "2026-09-21T09:39:01+08:00",
+    "completed_at": "2026-09-21T09:39:01+08:00",
     "incremental_research_started_at": "2026-09-21T09:18:06+08:00",
     "incremental_research_completed_at": "2026-09-21T09:22:50+08:00",
     "incremental_generation_started_at": "2026-09-21T09:22:50+08:00",
     "incremental_generation_completed_at": "2026-09-21T09:32:52+08:00",
     "incremental_validation_completed_at": "2026-09-21T09:32:52+08:00",
-    "main_update_started_at": "2026-09-21T09:33:57+08:00"
+    "main_update_started_at": "2026-09-21T09:33:57+08:00",
+    "main_update_committed_at": "2026-09-21T09:36:00+08:00",
+    "incremental_completed_at": "2026-09-21T09:39:01+08:00"
   },
-  "final_main_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
+  "final_main_sha": "f4894d7f620acd0d050cc628d0b4733a07ffd5ca",
   "terminal_error": null,
   "error": null,
   "candidate_commit_sha": "f4894d7f620acd0d050cc628d0b4733a07ffd5ca"
