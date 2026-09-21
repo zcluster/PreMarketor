@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260921-091806",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-21T09:32:52+08:00",
-  "lease_until": "2026-09-21T09:47:52+08:00",
+  "heartbeat_at": "2026-09-21T09:33:57+08:00",
+  "lease_until": "2026-09-21T09:48:57+08:00",
   "source_cutoff": "2026-09-21T08:43:00+08:00",
   "main_base_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "validation",
+  "stage": "main_update",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -120,6 +120,15 @@
         "priority_stocks": [
           "新增彩讯股份与新华传媒条件关注；奥克股份仅列停牌风险事件"
         ]
+      },
+      "prepublish_recheck": {
+        "status": "passed",
+        "checked_at": "2026-09-21T09:33:57+08:00",
+        "main_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
+        "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
+        "index_blob_sha": "92ece67ac8e7ce0eb4d3fd8646f5982db28c8a5d",
+        "history_blob_sha": "2e1d7484dbcf54afff658b21cafa0409c8588397",
+        "manifest_blob_sha": "78c29b0e4ba837fdd469da535946569370720a93"
       }
     }
   },
@@ -144,7 +153,8 @@
     "incremental_research_completed_at": "2026-09-21T09:22:50+08:00",
     "incremental_generation_started_at": "2026-09-21T09:22:50+08:00",
     "incremental_generation_completed_at": "2026-09-21T09:32:52+08:00",
-    "incremental_validation_completed_at": "2026-09-21T09:32:52+08:00"
+    "incremental_validation_completed_at": "2026-09-21T09:32:52+08:00",
+    "main_update_started_at": "2026-09-21T09:33:57+08:00"
   },
   "final_main_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
   "terminal_error": null,
