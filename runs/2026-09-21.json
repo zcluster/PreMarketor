@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260921-091806",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-21T09:18:06+08:00",
-  "lease_until": "2026-09-21T09:28:06+08:00",
+  "heartbeat_at": "2026-09-21T09:22:50+08:00",
+  "lease_until": "2026-09-21T09:37:50+08:00",
   "source_cutoff": "2026-09-21T08:43:00+08:00",
   "main_base_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -79,14 +79,74 @@
       "production_json_direct_fetch": "browser_client_blocked_raw_json_url"
     },
     "incremental_review": {
-      "status": "running",
+      "status": "material_update_required",
       "review_started_at": "2026-09-21T09:18:06+08:00",
+      "research_completed_at": "2026-09-21T09:22:50+08:00",
       "window_start": "2026-09-21T08:43:00+08:00",
       "current_main_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
-      "findings": []
+      "findings": [
+        {
+          "item": "彩讯股份算力技术服务合同",
+          "decision": "纳入",
+          "reason": "9月21日披露的不低于18.12亿元、60个月算力服务合同，实质强化算力主线；按履约和现金流条件关注",
+          "source": "https://www.cninfo.com.cn/new/disclosure/detail?announcementId=1225573666&announcementTime=2026-09-21&orgId=GD126425&stockCode=300634"
+        },
+        {
+          "item": "新华传媒发行股份购买界面财联社100%股权并复牌",
+          "decision": "纳入",
+          "reason": "首轮遗漏的重要复牌并购事件；仅列条件关注，提示摊薄、估值、审批与整合风险",
+          "source": "https://www.stcn.com/article/detail/3367111.html"
+        },
+        {
+          "item": "奥克股份筹划收购苏州祺添控制权并停牌",
+          "decision": "纳入风险提示",
+          "reason": "锂电材料重组事件但停牌不可交易；不包装为多头推荐",
+          "source": "https://www.stcn.com/article/detail/3369095.html"
+        },
+        {
+          "item": "原油开盘前后快速回落",
+          "decision": "纳入",
+          "reason": "SC原油开盘跌4.37%并一度跌约6%，显著修正08:45版油价上行判断；外盘不同合约与时点报价分化，保留口径说明",
+          "source": "https://finance.sina.com.cn/7x24/"
+        },
+        {
+          "item": "HKEX定向核验",
+          "decision": "无新增实质项",
+          "reason": "未发现足以改变大盘、轮动、风险或重点个股的新增业绩、停复牌或澄清；不声称全量覆盖"
+        },
+        {
+          "item": "景旺电子/罗博特科H股事项与长鑫量产",
+          "decision": "不重复新增",
+          "reason": "已有正文或不改变现有判断"
+        },
+        {
+          "item": "港股回购汇总",
+          "decision": "排除",
+          "reason": "缺少逐项发行人公告交叉核验且不改变四类判断"
+        }
+      ],
+      "delta_list": {
+        "market_view": [
+          "能源成本压力较08:45版缓和，但地缘供给风险仍在"
+        ],
+        "sector_rotation": [
+          "算力合同强化算力服务主线；传媒并购与锂电材料重组增加事件驱动分化"
+        ],
+        "risk_alerts": [
+          "不同原油合约/时点报价分化；奥克停牌不可交易；并购与长合同均有履约、融资和审批风险"
+        ],
+        "priority_stocks": [
+          "新增彩讯股份与新华传媒条件关注；奥克股份仅列停牌风险事件"
+        ]
+      }
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    "更新油价方向与报价口径",
+    "新增彩讯股份算力合同",
+    "新增新华传媒复牌并购",
+    "新增奥克股份停牌重组风险"
+  ],
   "published_commit": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
   "stage_timings": {
     "started_at": "2026-09-21T08:33:26.946+08:00",
@@ -98,7 +158,9 @@
     "publish_committed_at": "2026-09-21T08:48:00+08:00",
     "production_validated_at": "2026-09-21T08:53:14+08:00",
     "completed_at": "2026-09-21T08:53:14+08:00",
-    "incremental_research_started_at": "2026-09-21T09:18:06+08:00"
+    "incremental_research_started_at": "2026-09-21T09:18:06+08:00",
+    "incremental_research_completed_at": "2026-09-21T09:22:50+08:00",
+    "incremental_generation_started_at": "2026-09-21T09:22:50+08:00"
   },
   "final_main_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
   "terminal_error": null,
