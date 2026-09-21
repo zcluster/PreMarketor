@@ -1,13 +1,13 @@
 {
   "run_id": "ah-20260921-20260921083326",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "heartbeat_at": "2026-09-21T08:46:00+08:00",
-  "lease_until": "2026-09-21T09:06:00+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-21T08:53:14+08:00",
+  "lease_until": "2026-09-21T08:53:14+08:00",
   "source_cutoff": "2026-09-21T08:33:26.946+08:00",
   "main_base_sha": "4c7f300615a9705617f4e5e9f3a7c2d33cfabff3",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "generation",
+  "stage": "published",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -46,23 +46,52 @@
       "representative_quote_lookup": "timed_out_2026-09-21T08:40:00+08:00"
     },
     "validation": {
-      "status": "precommit_passed",
+      "status": "production_passed",
       "allowed_only": true,
       "panel_rows_each": 15,
       "panel_down_each": 5,
       "overnight_items_each": 3,
       "stock_cards_each": 3,
       "main_news_each": 11,
-      "protected_us_markers": true
+      "protected_us_markers": true,
+      "github_remote_readback": true,
+      "homepage_http_rendered": true,
+      "archive_http_rendered": true,
+      "homepage_cn": {
+        "time": "2026-09-21 08:45 CST",
+        "stock_cards": 3,
+        "panel_rows": 15,
+        "nonempty": true
+      },
+      "homepage_en": {
+        "time": "2026-09-20 20:45 EDT",
+        "stock_cards": 3,
+        "panel_rows": 15,
+        "nonempty": true
+      },
+      "archive_cn": {
+        "date": "2026-09-21",
+        "stock_cards": 3,
+        "nonempty": true
+      },
+      "history_json_github_readback": true,
+      "manifest_github_readback": true,
+      "production_json_direct_fetch": "browser_client_blocked_raw_json_url"
     }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
   "stage_timings": {
     "started_at": "2026-09-21T08:33:26.946+08:00",
     "rules_read_completed_at": "2026-09-21T08:33:26.946+08:00",
     "research_started_at": "2026-09-21T08:34:29.232+08:00",
     "research_completed_at": "2026-09-21T08:45:00+08:00",
-    "generation_started_at": "2026-09-21T08:46:00+08:00"
-  }
+    "generation_started_at": "2026-09-21T08:46:00+08:00",
+    "generation_completed_at": "2026-09-21T08:48:00+08:00",
+    "publish_committed_at": "2026-09-21T08:48:00+08:00",
+    "production_validated_at": "2026-09-21T08:53:14+08:00",
+    "completed_at": "2026-09-21T08:53:14+08:00"
+  },
+  "final_main_sha": "ce9034c19397ce307461a6cbd7c837df49b54fa6",
+  "terminal_error": null
 }
