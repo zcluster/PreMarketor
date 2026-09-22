@@ -1,13 +1,13 @@
 {
   "run_id": "ah-review-20260922-100924",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "heartbeat_at": "2026-09-22T10:39:40+08:00",
-  "lease_until": "2026-09-22T10:49:40+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-22T10:43:32+08:00",
+  "lease_until": "2026-09-22T10:43:32+08:00",
   "source_cutoff": "2026-09-22T08:35:13+08:00",
   "main_base_sha": "edffa01bcbb10cf9db179d7efecb36b102f2c4ea",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "deployment_verification",
+  "stage": "published",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -119,7 +119,7 @@
       }
     },
     "incremental_review": {
-      "status": "published_pending_production_verification",
+      "status": "published",
       "started_at": "2026-09-22T10:09:24+08:00",
       "window_start": "2026-09-22T08:35:13+08:00",
       "current_main_sha": "edffa01bcbb10cf9db179d7efecb36b102f2c4ea",
@@ -182,15 +182,40 @@
         "stock_cards_each": 5,
         "panel_rows_each": 15,
         "remote_candidate_readback_exact": true
+      },
+      "production": {
+        "status": "passed",
+        "checked_at": "2026-09-22T10:43:32+08:00",
+        "homepage": {
+          "url": "https://premarketor.com/",
+          "time_cn": "2026-09-22 10:34 CST",
+          "time_en": "2026-09-21 22:34 EDT",
+          "panel_rows": 15,
+          "ah_stock_cards": 5,
+          "ligent_present_cn": true,
+          "ligent_present_en": true,
+          "empty": false
+        },
+        "archive": {
+          "url": "https://premarketor.com/history/?date=2026-09-22",
+          "title": "MarketAhead | 2026-09-22",
+          "time": "2026-09-22 10:34 CST",
+          "stock_cards": 5,
+          "ligent_present": true,
+          "empty": false
+        },
+        "remote_main_readback": {
+          "commit": "acbcf1531e94fe8ece2671a31078666ab48198fa",
+          "index_exact": true,
+          "day_json_exact": true,
+          "manifest_exact": true
+        },
+        "raw_production_json": "browser client blocked direct JSON URL; exact main JSON readback plus rendered archive DOM used"
       }
     }
   },
-  "pending_increment": [
-    "Refresh A/H interpretation for current US industry/concept rankings",
-    "Add Ligent Technologies Hong Kong debut feedback",
-    "Add Kitumba trial-production company event with explicit risks"
-  ],
-  "published_commit": "786411d2b60c64e1b65dde18cca55e04e9fb8ad3",
+  "pending_increment": [],
+  "published_commit": "acbcf1531e94fe8ece2671a31078666ab48198fa",
   "stage_timings": {
     "started_at": "2026-09-22T08:35:13+08:00",
     "rules_read_completed_at": "2026-09-22T08:35:13+08:00",
@@ -216,7 +241,9 @@
     "incremental_validation_completed_at": "2026-09-22T10:38:50+08:00",
     "incremental_candidate_created_at": "2026-09-22T10:38:50+08:00",
     "incremental_main_update_ref_completed_at": "2026-09-22T10:39:30+08:00",
-    "incremental_deployment_verification_started_at": "2026-09-22T10:39:40+08:00"
+    "incremental_deployment_verification_started_at": "2026-09-22T10:39:40+08:00",
+    "incremental_deployment_verification_completed_at": "2026-09-22T10:43:32+08:00",
+    "incremental_completed_at": "2026-09-22T10:43:32+08:00"
   },
   "error": null,
   "candidate_commit": "acbcf1531e94fe8ece2671a31078666ab48198fa",
