@@ -2,12 +2,12 @@
   "run_id": "ah-20260922-20260922083513",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-22T08:39:57+08:00",
-  "lease_until": "2026-09-22T08:59:57+08:00",
+  "heartbeat_at": "2026-09-22T08:41:55+08:00",
+  "lease_until": "2026-09-22T09:01:55+08:00",
   "source_cutoff": "2026-09-22T08:35:13+08:00",
   "main_base_sha": "5ab5106654c0f9fda4480e73f8dcb14a34e7e374",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -27,7 +27,7 @@
       }
     },
     "research": {
-      "status": "in_progress",
+      "status": "complete",
       "sources": [
         "Reuters",
         "HKEX",
@@ -50,7 +50,33 @@
         "captured_at": "2026-09-22T08:35+08:00"
       },
       "ranking_snapshot_stale": true,
-      "akshare_degraded": true
+      "akshare_degraded": true,
+      "main_news_target": 11,
+      "domestic_policy_items": 2,
+      "domestic_tech_items": 2,
+      "ah_company_events": 3,
+      "candidate_decisions": {
+        "semiconductor_equipment": "conditional_watch",
+        "hkex": "conditional_watch",
+        "new_world": "conditional_watch",
+        "humanoid_robot_hype": "avoid"
+      },
+      "coverage_reconciliation": {
+        "sources_checked": [
+          "金十盘前检索",
+          "财联社/科创板日报检索",
+          "东方财富公告检索",
+          "Reuters",
+          "HKEX"
+        ],
+        "headline_events_entered": 11,
+        "excluded": [
+          {
+            "event": "零散低影响公告",
+            "reason": "未改变指数、轮动或风险判断"
+          }
+        ]
+      }
     }
   },
   "pending_increment": [],
@@ -58,7 +84,9 @@
   "stage_timings": {
     "started_at": "2026-09-22T08:35:13+08:00",
     "rules_read_completed_at": "2026-09-22T08:35:13+08:00",
-    "research_started_at": "2026-09-22T08:36:30+08:00"
+    "research_started_at": "2026-09-22T08:36:30+08:00",
+    "research_completed_at": "2026-09-22T08:41:55+08:00",
+    "generation_started_at": "2026-09-22T08:41:55+08:00"
   },
   "error": null
 }
