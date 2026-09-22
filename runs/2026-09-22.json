@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260922-100924",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-22T10:14:51+08:00",
-  "lease_until": "2026-09-22T10:24:51+08:00",
+  "heartbeat_at": "2026-09-22T10:33:46+08:00",
+  "lease_until": "2026-09-22T10:43:46+08:00",
   "source_cutoff": "2026-09-22T08:35:13+08:00",
   "main_base_sha": "edffa01bcbb10cf9db179d7efecb36b102f2c4ea",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_generation",
+  "stage": "incremental_validation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -119,7 +119,7 @@
       }
     },
     "incremental_review": {
-      "status": "material_increment_confirmed",
+      "status": "candidate_generated",
       "started_at": "2026-09-22T10:09:24+08:00",
       "window_start": "2026-09-22T08:35:13+08:00",
       "current_main_sha": "edffa01bcbb10cf9db179d7efecb36b102f2c4ea",
@@ -159,7 +159,13 @@
           "material": false,
           "reason": "affiliate bankruptcy filing reviewed as a negative risk item; insufficient evidence of index/rotation impact, not promoted to a long idea"
         }
-      ]
+      ],
+      "candidate": {
+        "news_each": 11,
+        "overnight_each": 3,
+        "stock_cards_each": 5,
+        "panel_rows_each": 15
+      }
     }
   },
   "pending_increment": [
@@ -186,7 +192,10 @@
     "completed_at": "2026-09-22T09:00:56+08:00",
     "incremental_research_started_at": "2026-09-22T10:09:24+08:00",
     "incremental_research_completed_at": "2026-09-22T10:14:51+08:00",
-    "incremental_generation_started_at": "2026-09-22T10:14:51+08:00"
+    "incremental_generation_started_at": "2026-09-22T10:14:51+08:00",
+    "incremental_generation_completed_at": "2026-09-22T10:33:46+08:00",
+    "incremental_translation_completed_at": "2026-09-22T10:33:46+08:00",
+    "incremental_validation_started_at": "2026-09-22T10:33:46+08:00"
   },
   "error": null,
   "candidate_commit": null,
