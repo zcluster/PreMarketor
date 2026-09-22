@@ -2,12 +2,12 @@
   "run_id": "ah-20260922-20260922083513",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-22T08:53:20+08:00",
-  "lease_until": "2026-09-22T09:13:20+08:00",
+  "heartbeat_at": "2026-09-22T08:54:42+08:00",
+  "lease_until": "2026-09-22T09:14:42+08:00",
   "source_cutoff": "2026-09-22T08:35:13+08:00",
   "main_base_sha": "5ab5106654c0f9fda4480e73f8dcb14a34e7e374",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "main_ref_update",
+  "stage": "deployment_verification",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -90,11 +90,12 @@
       "panel_degradation": "snapshot_stale_for_2026-09-21_session",
       "history_render_simulation": true,
       "manifest_preserved": true,
-      "candidate_commit": "786411d2b60c64e1b65dde18cca55e04e9fb8ad3"
+      "candidate_commit": "786411d2b60c64e1b65dde18cca55e04e9fb8ad3",
+      "main_update_ref": true
     }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "786411d2b60c64e1b65dde18cca55e04e9fb8ad3",
   "stage_timings": {
     "started_at": "2026-09-22T08:35:13+08:00",
     "rules_read_completed_at": "2026-09-22T08:35:13+08:00",
@@ -106,7 +107,9 @@
     "validation_started_at": "2026-09-22T08:49:38+08:00",
     "validation_completed_at": "2026-09-22T08:51:26+08:00",
     "candidate_commit_started_at": "2026-09-22T08:51:26+08:00",
-    "candidate_commit_created_at": "2026-09-22T08:53:20+08:00"
+    "candidate_commit_created_at": "2026-09-22T08:53:20+08:00",
+    "main_update_ref_completed_at": "2026-09-22T08:54:42+08:00",
+    "deployment_verification_started_at": "2026-09-22T08:54:42+08:00"
   },
   "error": null,
   "candidate_commit": "786411d2b60c64e1b65dde18cca55e04e9fb8ad3"
