@@ -2,12 +2,12 @@
   "run_id": "ah-20260922-20260922083513",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-22T08:49:38+08:00",
-  "lease_until": "2026-09-22T09:09:38+08:00",
+  "heartbeat_at": "2026-09-22T08:51:26+08:00",
+  "lease_until": "2026-09-22T09:11:26+08:00",
   "source_cutoff": "2026-09-22T08:35:13+08:00",
   "main_base_sha": "5ab5106654c0f9fda4480e73f8dcb14a34e7e374",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "hard_validation",
+  "stage": "candidate_commit",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -79,14 +79,17 @@
       }
     },
     "validation": {
-      "status": "in_progress",
+      "status": "passed",
       "allowed_only": true,
       "protected_us_markers": true,
+      "class_isomorphic": true,
       "news_each": 11,
       "overnight_items_each": 3,
       "stock_cards_each": 3,
       "panel_current_rows_each": 0,
-      "panel_degradation": "snapshot_stale_for_2026-09-21_session"
+      "panel_degradation": "snapshot_stale_for_2026-09-21_session",
+      "history_render_simulation": true,
+      "manifest_preserved": true
     }
   },
   "pending_increment": [],
@@ -99,7 +102,9 @@
     "generation_started_at": "2026-09-22T08:41:55+08:00",
     "generation_completed_at": "2026-09-22T08:49:38+08:00",
     "translation_completed_at": "2026-09-22T08:49:38+08:00",
-    "validation_started_at": "2026-09-22T08:49:38+08:00"
+    "validation_started_at": "2026-09-22T08:49:38+08:00",
+    "validation_completed_at": "2026-09-22T08:51:26+08:00",
+    "candidate_commit_started_at": "2026-09-22T08:51:26+08:00"
   },
   "error": null
 }
