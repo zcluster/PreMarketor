@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-09-22T09:08:05+08:00",
+  "attemptedAt": "2026-09-23T08:55:04+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-22T09:08:05+08:00",
+      "fetchedAt": "2026-09-23T08:55:04+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,130 +17,102 @@
       },
       "top": [
         {
-          "name": "广告代理",
-          "nameEn": "Advertising Agencies",
-          "code": "BK2030",
-          "changePct": "+4.63%",
-          "leaderName": "Marchex",
-          "leaderTicker": "MCHX",
-          "leaderChangePct": "+10.32%",
+          "name": "白银",
+          "nameEn": "Silver",
+          "code": "BK2093",
+          "changePct": "+5.03%",
+          "leaderName": "New Pacific Metals",
+          "leaderTicker": "NEWP",
+          "leaderChangePct": "+7.80%",
           "breadth": {
-            "advancers": 18,
-            "decliners": 20,
-            "unchanged": 4
-          }
-        },
-        {
-          "name": "广播",
-          "nameEn": "Broadcasting",
-          "code": "BK2497",
-          "changePct": "+4.62%",
-          "leaderName": "TEN Holdings",
-          "leaderTicker": "XHLD",
-          "leaderChangePct": "+6.30%",
-          "breadth": {
-            "advancers": 13,
-            "decliners": 3,
+            "advancers": 6,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "房地产开发",
-          "nameEn": "Real Estate - Development",
-          "code": "BK2511",
-          "changePct": "+4.59%",
-          "leaderName": "Howard Hughes Holding",
-          "leaderTicker": "HHH",
-          "leaderChangePct": "+8.93%",
+          "name": "焦炭",
+          "nameEn": "Coking Coal",
+          "code": "BK2505",
+          "changePct": "+4.89%",
+          "leaderName": "Alpha Metallurgical",
+          "leaderTicker": "AMR",
+          "leaderChangePct": "+7.45%",
           "breadth": {
-            "advancers": 8,
-            "decliners": 4,
-            "unchanged": 1
+            "advancers": 5,
+            "decliners": 0,
+            "unchanged": 0
           }
         },
         {
-          "name": "电子元件",
-          "nameEn": "Electronic Components",
-          "code": "BK2072",
-          "changePct": "+3.76%",
-          "leaderName": "Research Frontiers",
-          "leaderTicker": "REFR",
-          "leaderChangePct": "+16.54%",
+          "name": "商业设备和用品",
+          "nameEn": "Business Equipment & Supplies",
+          "code": "BK2509",
+          "changePct": "+4.80%",
+          "leaderName": "Crane NXT",
+          "leaderTicker": "CXT",
+          "leaderChangePct": "+5.83%",
           "breadth": {
-            "advancers": 37,
-            "decliners": 7,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "航空服务",
-          "nameEn": "Airlines",
-          "code": "BK2090",
-          "changePct": "+3.53%",
-          "leaderName": "联合大陆航空",
-          "leaderTicker": "UAL",
-          "leaderChangePct": "+5.22%",
-          "breadth": {
-            "advancers": 16,
+            "advancers": 3,
             "decliners": 2,
             "unchanged": 0
+          }
+        },
+        {
+          "name": "铜",
+          "nameEn": "Copper",
+          "code": "BK2510",
+          "changePct": "+3.75%",
+          "leaderName": "Ivanhoe Electric",
+          "leaderTicker": "IE",
+          "leaderChangePct": "+9.04%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "住宅施工",
+          "nameEn": "Residential Construction",
+          "code": "BK2005",
+          "changePct": "+3.65%",
+          "leaderName": "Dream Finders Homes",
+          "leaderTicker": "DFH",
+          "leaderChangePct": "+7.54%",
+          "breadth": {
+            "advancers": 19,
+            "decliners": 0,
+            "unchanged": 2
           }
         }
       ],
       "bottom": [
         {
-          "name": "农业投入品",
-          "nameEn": "Agricultural Inputs",
-          "code": "BK2010",
-          "changePct": "-2.36%",
-          "leaderName": "Nexentis Technologies",
-          "leaderTicker": "NXTS",
-          "leaderChangePct": "+5.34%",
+          "name": "通讯设备",
+          "nameEn": "Communication Equipment",
+          "code": "BK2098",
+          "changePct": "-2.45%",
+          "leaderName": "UT斯达康",
+          "leaderTicker": "UTSI",
+          "leaderChangePct": "+11.52%",
           "breadth": {
-            "advancers": 2,
-            "decliners": 11,
-            "unchanged": 0
+            "advancers": 19,
+            "decliners": 24,
+            "unchanged": 2
           }
         },
         {
-          "name": "其他贵金属和采矿",
-          "nameEn": "Other Precious Metals & Mining",
-          "code": "BK2507",
-          "changePct": "-2.37%",
-          "leaderName": "Greenland Mines",
-          "leaderTicker": "GRML",
-          "leaderChangePct": "+230.53%",
+          "name": "旅游服务",
+          "nameEn": "Travel Services",
+          "code": "BK2498",
+          "changePct": "-2.69%",
+          "leaderName": "Ambitions Enterprise Management",
+          "leaderTicker": "AHMA",
+          "leaderChangePct": "+8.80%",
           "breadth": {
             "advancers": 4,
             "decliners": 13,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "综合油气",
-          "nameEn": "Oil & Gas Integrated",
-          "code": "BK2224",
-          "changePct": "-2.39%",
-          "leaderName": "Diversified Energy",
-          "leaderTicker": "DEC",
-          "leaderChangePct": "-0.15%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 20,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "综合货运与物流",
-          "nameEn": "Integrated Freight & Logistics",
-          "code": "BK2500",
-          "changePct": "-2.52%",
-          "leaderName": "Quanome Technologies",
-          "leaderTicker": "QNME",
-          "leaderChangePct": "+14.56%",
-          "breadth": {
-            "advancers": 12,
-            "decliners": 17,
             "unchanged": 3
           }
         },
@@ -148,13 +120,41 @@
           "name": "油气炼制与销售",
           "nameEn": "Oil & Gas Refining & Marketing",
           "code": "BK2060",
-          "changePct": "-4.55%",
-          "leaderName": "伊坎企业",
-          "leaderTicker": "IEP",
-          "leaderChangePct": "+2.58%",
+          "changePct": "-2.80%",
+          "leaderName": "Ultrapar Participacoes",
+          "leaderTicker": "UGP",
+          "leaderChangePct": "+1.18%",
           "breadth": {
-            "advancers": 5,
-            "decliners": 13,
+            "advancers": 3,
+            "decliners": 15,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "出版",
+          "nameEn": "Publishing",
+          "code": "BK2008",
+          "changePct": "-2.86%",
+          "leaderName": "USA TODAY",
+          "leaderTicker": "TDAY",
+          "leaderChangePct": "+2.66%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 4,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "海运",
+          "nameEn": "Marine Shipping",
+          "code": "BK2485",
+          "changePct": "-2.89%",
+          "leaderName": "SVRN Inc",
+          "leaderTicker": "SVRN",
+          "leaderChangePct": "+15.02%",
+          "breadth": {
+            "advancers": 10,
+            "decliners": 29,
             "unchanged": 0
           }
         }
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-22T09:08:05+08:00",
+      "fetchedAt": "2026-09-23T08:55:04+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,41 +176,13 @@
       },
       "top": [
         {
-          "name": "社交媒体",
-          "nameEn": "Social Media",
-          "code": "BK2433",
-          "changePct": "+11.26%",
-          "leaderName": "Meta Platforms",
-          "leaderTicker": "META",
-          "leaderChangePct": "+11.43%",
-          "breadth": {
-            "advancers": 6,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "SOL储备概念",
-          "nameEn": "SOL reserve concept",
-          "code": "BK23797",
-          "changePct": "+11.11%",
-          "leaderName": "Brera Holdings",
-          "leaderTicker": "SLMT",
-          "leaderChangePct": "+22.39%",
-          "breadth": {
-            "advancers": 7,
-            "decliners": 2,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "英伟达持仓概念",
-          "nameEn": "NVIDIA Portfolio",
-          "code": "BK20882",
-          "changePct": "+9.10%",
-          "leaderName": "英特尔",
-          "leaderTicker": "INTC",
-          "leaderChangePct": "+12.14%",
+          "name": "存储概念",
+          "nameEn": "Data storage stock",
+          "code": "BK23925",
+          "changePct": "+4.41%",
+          "leaderName": "Rambus",
+          "leaderTicker": "RMBS",
+          "leaderChangePct": "+8.54%",
           "breadth": {
             "advancers": 7,
             "decliners": 0,
@@ -218,30 +190,58 @@
           }
         },
         {
-          "name": "加密储备概念",
-          "nameEn": "Crypto Treasury",
-          "code": "BK23920",
-          "changePct": "+5.97%",
-          "leaderName": "Defi Technologies",
-          "leaderTicker": "DEFT",
-          "leaderChangePct": "+15.34%",
+          "name": "白银概念",
+          "nameEn": "Silver Concept",
+          "code": "BK24035",
+          "changePct": "+4.32%",
+          "leaderName": "First Majestic Silver",
+          "leaderTicker": "AG",
+          "leaderChangePct": "+5.23%",
           "breadth": {
-            "advancers": 26,
-            "decliners": 5,
+            "advancers": 8,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "激光雷达概念",
-          "nameEn": "Lidar Technology",
-          "code": "BK2539",
-          "changePct": "+5.93%",
-          "leaderName": "Ouster",
-          "leaderTicker": "OUST",
-          "leaderChangePct": "+8.76%",
+          "name": "铜概念",
+          "nameEn": "Copper",
+          "code": "BK22865",
+          "changePct": "+2.38%",
+          "leaderName": "Ivanhoe Electric",
+          "leaderTicker": "IE",
+          "leaderChangePct": "+9.04%",
+          "breadth": {
+            "advancers": 10,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "稀土概念",
+          "nameEn": "Rare Earth Stocks",
+          "code": "BK23700",
+          "changePct": "+2.22%",
+          "leaderName": "RARE ELEMENT RES",
+          "leaderTicker": "REEMF",
+          "leaderChangePct": "+7.14%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 3,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "3D打印",
+          "nameEn": "3D Printing",
+          "code": "BK2553",
+          "changePct": "+2.19%",
+          "leaderName": "3D系统",
+          "leaderTicker": "DDD",
+          "leaderChangePct": "+3.16%",
           "breadth": {
             "advancers": 5,
-            "decliners": 2,
+            "decliners": 0,
             "unchanged": 0
           }
         }
