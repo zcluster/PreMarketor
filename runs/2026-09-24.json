@@ -2,12 +2,12 @@
   "run_id": "ah-20260924-20260924083321",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-24T08:36:13+08:00",
-  "lease_until": "2026-09-24T08:46:13+08:00",
-  "source_cutoff": "2026-09-24T08:33:21+08:00",
+  "heartbeat_at": "2026-09-24T08:37:27+08:00",
+  "lease_until": "2026-09-24T08:47:27+08:00",
+  "source_cutoff": "2026-09-24T08:37:27+08:00",
   "main_base_sha": "4fec44f111b0d5d1b65eb67eccf72c8abcf813ad",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -25,6 +25,64 @@
         "attemptedAt": "2026-09-23T08:55:04+08:00",
         "current_session_stale": true
       }
+    },
+    "research": {
+      "status": "complete",
+      "sources": [
+        "Reuters",
+        "中国人民银行/证券时报交叉",
+        "财联社公告速递",
+        "MarketWatch",
+        "AKShare GitHub snapshot",
+        "美股排行 GitHub snapshot"
+      ],
+      "us_close": {
+        "sp500": "-0.74%",
+        "nasdaq": "-1.10%",
+        "dow": "-0.66%",
+        "sox": "down",
+        "meta": "up",
+        "alphabet_amazon": "down"
+      },
+      "runtime_futures": {
+        "nasdaq100": "-0.05%",
+        "sp500": "-0.05%",
+        "dow": "-0.04%",
+        "captured_at": "2026-09-24T08:33+08:00",
+        "source": "MarketWatch delayed"
+      },
+      "domestic_policy_items": 2,
+      "domestic_tech_items": 3,
+      "ah_company_events": 5,
+      "main_news_target": 11,
+      "candidate_decisions": {
+        "silver": "no_candidate",
+        "coking_coal": "no_candidate",
+        "storage": "no_candidate",
+        "fiberhome": "conditional_watch",
+        "shandong_road_bridge": "conditional_watch",
+        "fuxin_technology": "avoid"
+      },
+      "coverage_reconciliation": {
+        "sources_checked": [
+          "财联社A股公告速递",
+          "金十A股回顾/盘前检索",
+          "东方财富/证券时报交叉",
+          "央行公开市场公告",
+          "Reuters"
+        ],
+        "headline_events_entered": 11,
+        "excluded": [
+          {
+            "event": "地产贴息传闻",
+            "reason": "无权威原始政策确认，不进入正文"
+          },
+          {
+            "event": "小额减持与低影响公告",
+            "reason": "不改变指数、轮动或核心风险判断"
+          }
+        ]
+      }
     }
   },
   "pending_increment": [],
@@ -32,7 +90,9 @@
   "stage_timings": {
     "started_at": "2026-09-24T08:33:21+08:00",
     "rules_read_completed_at": "2026-09-24T08:33:21+08:00",
-    "research_started_at": "2026-09-24T08:36:13+08:00"
+    "research_started_at": "2026-09-24T08:36:13+08:00",
+    "research_completed_at": "2026-09-24T08:37:27+08:00",
+    "generation_started_at": "2026-09-24T08:37:27+08:00"
   },
   "error": null,
   "candidate_commit": null
