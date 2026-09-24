@@ -1,13 +1,13 @@
 {
-  "run_id": "ah-20260924-20260924083321",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "heartbeat_at": "2026-09-24T08:50:08+08:00",
-  "lease_until": "2026-09-24T08:50:08+08:00",
+  "run_id": "ah-review-20260924-092401",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "heartbeat_at": "2026-09-24T09:24:01+08:00",
+  "lease_until": "2026-09-24T09:34:01+08:00",
   "source_cutoff": "2026-09-24T08:37:27+08:00",
-  "main_base_sha": "4fec44f111b0d5d1b65eb67eccf72c8abcf813ad",
+  "main_base_sha": "e1b92bada13fd0a58814decad91f55d9da2968d7",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "published",
+  "stage": "incremental_research",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -128,6 +128,18 @@
           "archive": "https://premarketor.com/history/?date=2026-09-24"
         }
       }
+    },
+    "incremental_review": {
+      "status": "running",
+      "started_at": "2026-09-24T09:24:01+08:00",
+      "window_start": "2026-09-24T08:37:27+08:00",
+      "current_main_sha": "e1b92bada13fd0a58814decad91f55d9da2968d7",
+      "new_snapshot": {
+        "blob_sha": "a5fec1dc8107b53f560f6f09e11f9d134a647c70",
+        "attemptedAt": "2026-09-24T08:52:14+08:00",
+        "status": "ok"
+      },
+      "findings": []
     }
   },
   "pending_increment": [],
@@ -147,9 +159,10 @@
     "main_update_ref_completed_at": "2026-09-24T08:45:20+08:00",
     "deployment_verification_started_at": "2026-09-24T08:45:20+08:00",
     "deployment_verification_completed_at": "2026-09-24T08:50:08+08:00",
-    "completed_at": "2026-09-24T08:50:08+08:00"
+    "completed_at": "2026-09-24T08:50:08+08:00",
+    "incremental_research_started_at": "2026-09-24T09:24:01+08:00"
   },
   "error": null,
-  "candidate_commit": "0994dee7ecb6288d57e15fabe98ad8939dd06197",
+  "candidate_commit": null,
   "terminal_error": null
 }
