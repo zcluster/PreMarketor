@@ -2,12 +2,12 @@
   "run_id": "ah-20260924-20260924083321",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-24T08:43:08+08:00",
-  "lease_until": "2026-09-24T08:53:08+08:00",
+  "heartbeat_at": "2026-09-24T08:44:26+08:00",
+  "lease_until": "2026-09-24T08:54:26+08:00",
   "source_cutoff": "2026-09-24T08:37:27+08:00",
   "main_base_sha": "4fec44f111b0d5d1b65eb67eccf72c8abcf813ad",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "candidate_commit",
+  "stage": "main_update_ref",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -95,7 +95,8 @@
       "panel_current_rows_each": 0,
       "panel_degradation": "snapshot_stale_for_2026-09-23_session",
       "history_render_simulation": true,
-      "manifest_preserved": true
+      "manifest_preserved": true,
+      "candidate_commit": "0994dee7ecb6288d57e15fabe98ad8939dd06197"
     }
   },
   "pending_increment": [],
@@ -110,8 +111,9 @@
     "translation_completed_at": "2026-09-24T08:42:23+08:00",
     "validation_started_at": "2026-09-24T08:42:23+08:00",
     "validation_completed_at": "2026-09-24T08:43:08+08:00",
-    "candidate_commit_started_at": "2026-09-24T08:43:08+08:00"
+    "candidate_commit_started_at": "2026-09-24T08:43:08+08:00",
+    "candidate_commit_created_at": "2026-09-24T08:44:26+08:00"
   },
   "error": null,
-  "candidate_commit": null
+  "candidate_commit": "0994dee7ecb6288d57e15fabe98ad8939dd06197"
 }
