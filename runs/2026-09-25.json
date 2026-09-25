@@ -2,8 +2,8 @@
   "run_id": "ah-review-20260925-093859",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-25T09:38:59+08:00",
-  "lease_until": "2026-09-25T09:48:59+08:00",
+  "heartbeat_at": "2026-09-25T09:40:38+08:00",
+  "lease_until": "2026-09-25T09:50:38+08:00",
   "source_cutoff": "2026-09-25T08:40:00+08:00",
   "main_base_sha": "3f4d441b8eb043c7c841e86f588bef120ebea104",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
@@ -21,9 +21,9 @@
         "analysis_ready": true
       },
       "us_rankings": {
-        "status": "stale_for_2026-09-24_session",
-        "fetched_at": "2026-09-24T08:52:14+08:00",
-        "publish_rows": 0
+        "status": "ok",
+        "fetched_at": "2026-09-25T08:47:34+08:00",
+        "publish_rows": 15
       }
     },
     "market": {
@@ -77,14 +77,76 @@
       }
     },
     "incremental_review": {
-      "status": "running",
+      "status": "material_update_identified",
       "started_at": "2026-09-25T09:38:59+08:00",
       "window_start": "2026-09-25T08:40:00+08:00",
       "current_main_sha": "3f4d441b8eb043c7c841e86f588bef120ebea104",
-      "findings": []
+      "findings": [
+        {
+          "type": "material_us_rankings_refresh",
+          "observed_at": "2026-09-25T08:47:34+08:00",
+          "impact": "material_rotation_and_risk_update",
+          "details": {
+            "industry_top": [
+              "Diagnostics & Research +2.48%",
+              "Internet Content & Information +1.86%",
+              "Furnishings, Fixtures & Appliances +1.77%",
+              "Grocery Stores +1.60%",
+              "Health Information Services +1.36%"
+            ],
+            "industry_bottom": [
+              "Integrated Freight & Logistics -3.28%",
+              "Uranium -3.30%",
+              "Electronics & Computer Distribution -4.29%",
+              "Paper & Paper Products -4.36%",
+              "Solar -6.04%"
+            ],
+            "concept_top": [
+              "Social Media +4.45%",
+              "NVIDIA Portfolio +3.22%",
+              "CRO +2.96%",
+              "Lidar Technology +2.27%",
+              "Room-Temp Superconductors +2.25%"
+            ]
+          }
+        },
+        {
+          "type": "representative_quote_check",
+          "status": "complete",
+          "scope": "15 ranking representatives",
+          "result": "cash-session closes confirm diagnostics/CRO, social-media, NVIDIA-portfolio and lidar strength plus uranium/paper weakness; no newer after-hours quotes returned",
+          "divergence": [
+            "FLX +8.73% vs logistics -3.28%",
+            "CLMB +1.57% vs distribution -4.29%",
+            "TURB +3.85% vs solar -6.04%"
+          ]
+        },
+        {
+          "type": "post_cutoff_domestic_check",
+          "window_start": "2026-09-25T08:40:00+08:00",
+          "material_items": 0,
+          "excluded": [
+            {
+              "event": "Trump-Xi meeting described as positive without disclosed trade/technology terms",
+              "reason": "no concrete policy terms sufficient to change A/H framework"
+            },
+            {
+              "event": "A/H opening quotes for three focus names",
+              "reason": "reliable current quotes unavailable from approved public endpoints; absence is disclosed, not fabricated"
+            }
+          ]
+        }
+      ]
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "type": "us_rankings",
+      "status": "material",
+      "reason": "replaces stale 0-row panel and confirms/refines life-science and technology rotation while adding sector-level downside risks",
+      "source_blob_sha": "5d545191dc29038573c21930febfdef47092e0dc"
+    }
+  ],
   "published_commit": "2114f3519c7479f140aec5f5c80d44d26c2c2985",
   "stage_timings": {
     "started_at": "2026-09-25T08:31:28+08:00",
@@ -98,7 +160,8 @@
     "deployment_verification_started_at": "2026-09-25T08:44:58.772+08:00",
     "deployment_verified_at": "2026-09-25T08:47:49.808+08:00",
     "completed_at": "2026-09-25T08:47:49.808+08:00",
-    "incremental_research_started_at": "2026-09-25T09:38:59+08:00"
+    "incremental_research_started_at": "2026-09-25T09:38:59+08:00",
+    "incremental_rankings_verified_at": "2026-09-25T09:40:38+08:00"
   },
   "error": null,
   "candidate_commit": null,
