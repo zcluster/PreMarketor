@@ -1,13 +1,13 @@
 {
   "run_id": "ah-20260925-20260925083128",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "heartbeat_at": "2026-09-25T08:44:58.772+08:00",
-  "lease_until": "2026-09-25T09:02:58.772+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-25T08:47:49.808+08:00",
+  "lease_until": "2026-09-25T08:47:49.808+08:00",
   "source_cutoff": "2026-09-25T08:40:00+08:00",
   "main_base_sha": "1f047afa9797cfccb587023f96997c692de3948f",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "deployment_verification",
+  "stage": "published",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -49,6 +49,32 @@
       "index_blob": "992f1be48f18cea76b243ee05ee1074470f8ffc4",
       "history_blob": "70ca915153ddfd3b7492b5e8b64760af7de2aada",
       "manifest_blob": "87723f2ccc34cb53c96214566da1fc5b18f203b4"
+    },
+    "production": {
+      "status": "ok",
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "time": "2026-09-25 08:40 CST",
+        "cn_rendered": true,
+        "en_rendered": true,
+        "stock_cards": 3,
+        "ranking_rows": 0
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-09-25",
+        "rendered": true,
+        "empty": false,
+        "stock_cards": 3
+      },
+      "history_json": {
+        "bilingual_html": true,
+        "cn_cards": 3,
+        "en_cards": 3,
+        "verification": "homepage language rendering plus archive rendering"
+      },
+      "manifest": {
+        "date_visible_in_calendar": true
+      }
     }
   },
   "pending_increment": [],
@@ -62,7 +88,9 @@
     "validation_completed_at": "2026-09-25T08:44:02.219+08:00",
     "candidate_commit_created_at": "2026-09-25T08:44:02.219+08:00",
     "main_ref_updated_at": "2026-09-25T08:44:58.772+08:00",
-    "deployment_verification_started_at": "2026-09-25T08:44:58.772+08:00"
+    "deployment_verification_started_at": "2026-09-25T08:44:58.772+08:00",
+    "deployment_verified_at": "2026-09-25T08:47:49.808+08:00",
+    "completed_at": "2026-09-25T08:47:49.808+08:00"
   },
   "error": null,
   "candidate_commit": "2114f3519c7479f140aec5f5c80d44d26c2c2985"
