@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260925-093859",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-25T09:44:59+08:00",
-  "lease_until": "2026-09-25T09:54:59+08:00",
+  "heartbeat_at": "2026-09-25T09:46:53+08:00",
+  "lease_until": "2026-09-25T09:56:53+08:00",
   "source_cutoff": "2026-09-25T08:40:00+08:00",
   "main_base_sha": "3f4d441b8eb043c7c841e86f588bef120ebea104",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "candidate_commit",
+  "stage": "deployment_verification",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -152,7 +152,9 @@
         "time_consistent": true,
         "stale_degradation_removed": true,
         "negative_mapping_guard": true
-      }
+      },
+      "main_update_ref": true,
+      "candidate_commit": "438bbdd62c229e72c61e42046f572a379252015e"
     }
   },
   "pending_increment": [
@@ -163,7 +165,7 @@
       "source_blob_sha": "5d545191dc29038573c21930febfdef47092e0dc"
     }
   ],
-  "published_commit": "2114f3519c7479f140aec5f5c80d44d26c2c2985",
+  "published_commit": "438bbdd62c229e72c61e42046f572a379252015e",
   "stage_timings": {
     "started_at": "2026-09-25T08:31:28+08:00",
     "rules_read_completed_at": "2026-09-25T08:31:28+08:00",
@@ -181,9 +183,12 @@
     "incremental_generation_started_at": "2026-09-25T09:43:43+08:00",
     "incremental_generation_completed_at": "2026-09-25T09:44:19+08:00",
     "incremental_validation_completed_at": "2026-09-25T09:44:59+08:00",
-    "incremental_candidate_commit_started_at": "2026-09-25T09:44:59+08:00"
+    "incremental_candidate_commit_started_at": "2026-09-25T09:44:59+08:00",
+    "incremental_candidate_commit_created_at": "2026-09-25T09:46:53+08:00",
+    "incremental_main_update_ref_completed_at": "2026-09-25T09:46:53+08:00",
+    "incremental_deployment_verification_started_at": "2026-09-25T09:46:53+08:00"
   },
   "error": null,
-  "candidate_commit": null,
+  "candidate_commit": "438bbdd62c229e72c61e42046f572a379252015e",
   "terminal_error": null
 }
