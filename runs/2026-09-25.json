@@ -1,13 +1,13 @@
 {
-  "run_id": "ah-20260925-20260925083128",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "heartbeat_at": "2026-09-25T08:47:49.808+08:00",
-  "lease_until": "2026-09-25T08:47:49.808+08:00",
+  "run_id": "ah-review-20260925-093859",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "heartbeat_at": "2026-09-25T09:38:59+08:00",
+  "lease_until": "2026-09-25T09:48:59+08:00",
   "source_cutoff": "2026-09-25T08:40:00+08:00",
-  "main_base_sha": "1f047afa9797cfccb587023f96997c692de3948f",
+  "main_base_sha": "3f4d441b8eb043c7c841e86f588bef120ebea104",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "published",
+  "stage": "incremental_research",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -75,6 +75,13 @@
       "manifest": {
         "date_visible_in_calendar": true
       }
+    },
+    "incremental_review": {
+      "status": "running",
+      "started_at": "2026-09-25T09:38:59+08:00",
+      "window_start": "2026-09-25T08:40:00+08:00",
+      "current_main_sha": "3f4d441b8eb043c7c841e86f588bef120ebea104",
+      "findings": []
     }
   },
   "pending_increment": [],
@@ -90,8 +97,10 @@
     "main_ref_updated_at": "2026-09-25T08:44:58.772+08:00",
     "deployment_verification_started_at": "2026-09-25T08:44:58.772+08:00",
     "deployment_verified_at": "2026-09-25T08:47:49.808+08:00",
-    "completed_at": "2026-09-25T08:47:49.808+08:00"
+    "completed_at": "2026-09-25T08:47:49.808+08:00",
+    "incremental_research_started_at": "2026-09-25T09:38:59+08:00"
   },
   "error": null,
-  "candidate_commit": "2114f3519c7479f140aec5f5c80d44d26c2c2985"
+  "candidate_commit": null,
+  "terminal_error": null
 }
