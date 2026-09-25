@@ -1,13 +1,13 @@
 {
   "run_id": "ah-review-20260925-093859",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "heartbeat_at": "2026-09-25T09:46:53+08:00",
-  "lease_until": "2026-09-25T09:56:53+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-25T09:48:43+08:00",
+  "lease_until": "2026-09-25T09:48:43+08:00",
   "source_cutoff": "2026-09-25T08:40:00+08:00",
   "main_base_sha": "3f4d441b8eb043c7c841e86f588bef120ebea104",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "deployment_verification",
+  "stage": "published",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -77,7 +77,7 @@
       }
     },
     "incremental_review": {
-      "status": "validated_material_update",
+      "status": "published",
       "started_at": "2026-09-25T09:38:59+08:00",
       "window_start": "2026-09-25T08:40:00+08:00",
       "current_main_sha": "3f4d441b8eb043c7c841e86f588bef120ebea104",
@@ -154,17 +154,51 @@
         "negative_mapping_guard": true
       },
       "main_update_ref": true,
-      "candidate_commit": "438bbdd62c229e72c61e42046f572a379252015e"
+      "candidate_commit": "438bbdd62c229e72c61e42046f572a379252015e",
+      "production": {
+        "status": "passed",
+        "verified_at": "2026-09-25T09:48:43+08:00",
+        "github_remote_readback": {
+          "head": "438bbdd62c229e72c61e42046f572a379252015e",
+          "index_exact": true,
+          "day_json_exact": true,
+          "manifest_exact": true
+        },
+        "homepage_cn": {
+          "rendered": true,
+          "time": "2026-09-25 09:44 CST",
+          "major_news": 11,
+          "overnight_items": 3,
+          "stock_cards": 3,
+          "ranking_rows": 15,
+          "empty_state": false
+        },
+        "homepage_en": {
+          "rendered": true,
+          "time": "2026-09-24 21:44 EDT",
+          "major_news": 11,
+          "overnight_items": 3,
+          "stock_cards": 3,
+          "ranking_rows": 15,
+          "empty_state": false
+        },
+        "archive_cn": {
+          "rendered": true,
+          "date": "2026-09-25",
+          "time": "2026-09-25 09:44 CST",
+          "major_news": 11,
+          "overnight_items": 3,
+          "stock_cards": 3,
+          "empty_state": false
+        },
+        "resources": {
+          "homepage": "https://premarketor.com/",
+          "archive": "https://premarketor.com/history/?date=2026-09-25"
+        }
+      }
     }
   },
-  "pending_increment": [
-    {
-      "type": "us_rankings",
-      "status": "material",
-      "reason": "replaces stale 0-row panel and confirms/refines life-science and technology rotation while adding sector-level downside risks",
-      "source_blob_sha": "5d545191dc29038573c21930febfdef47092e0dc"
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "438bbdd62c229e72c61e42046f572a379252015e",
   "stage_timings": {
     "started_at": "2026-09-25T08:31:28+08:00",
@@ -186,7 +220,9 @@
     "incremental_candidate_commit_started_at": "2026-09-25T09:44:59+08:00",
     "incremental_candidate_commit_created_at": "2026-09-25T09:46:53+08:00",
     "incremental_main_update_ref_completed_at": "2026-09-25T09:46:53+08:00",
-    "incremental_deployment_verification_started_at": "2026-09-25T09:46:53+08:00"
+    "incremental_deployment_verification_started_at": "2026-09-25T09:46:53+08:00",
+    "incremental_deployment_verification_completed_at": "2026-09-25T09:48:43+08:00",
+    "incremental_completed_at": "2026-09-25T09:48:43+08:00"
   },
   "error": null,
   "candidate_commit": "438bbdd62c229e72c61e42046f572a379252015e",
