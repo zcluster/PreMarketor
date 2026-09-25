@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-09-24T08:52:14+08:00",
+  "attemptedAt": "2026-09-25T08:47:34+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-24T08:52:14+08:00",
+      "fetchedAt": "2026-09-25T08:47:34+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,144 +17,144 @@
       },
       "top": [
         {
-          "name": "电子与计算机分销",
-          "nameEn": "Electronics & Computer Distribution",
-          "code": "BK2506",
-          "changePct": "+1.94%",
-          "leaderName": "拍明芯城",
-          "leaderTicker": "IZM",
-          "leaderChangePct": "+4.10%",
+          "name": "诊断与研究",
+          "nameEn": "Diagnostics & Research",
+          "code": "BK2011",
+          "changePct": "+2.48%",
+          "leaderName": "燃石医学",
+          "leaderTicker": "BNR",
+          "leaderChangePct": "+19.40%",
           "breadth": {
-            "advancers": 7,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "综合油气",
-          "nameEn": "Oil & Gas Integrated",
-          "code": "BK2224",
-          "changePct": "+1.63%",
-          "leaderName": "英国石油",
-          "leaderTicker": "BP",
-          "leaderChangePct": "+3.23%",
-          "breadth": {
-            "advancers": 12,
+            "advancers": 36,
             "decliners": 8,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "互联网内容与信息",
+          "nameEn": "Internet Content & Information",
+          "code": "BK2004",
+          "changePct": "+1.86%",
+          "leaderName": "Paradium AI",
+          "leaderTicker": "PAAI",
+          "leaderChangePct": "+13.55%",
+          "breadth": {
+            "advancers": 37,
+            "decliners": 28,
+            "unchanged": 8
+          }
+        },
+        {
+          "name": "家具、灯具与家电",
+          "nameEn": "Furnishings, Fixtures & Appliances",
+          "code": "BK2426",
+          "changePct": "+1.77%",
+          "leaderName": "Hamilton Beach Brands",
+          "leaderTicker": "HBB",
+          "leaderChangePct": "+7.89%",
+          "breadth": {
+            "advancers": 16,
+            "decliners": 12,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "杂货店",
+          "nameEn": "Grocery Stores",
+          "code": "BK2095",
+          "changePct": "+1.60%",
+          "leaderName": "Village Super Market",
+          "leaderTicker": "VLGEA",
+          "leaderChangePct": "+2.51%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 7,
             "unchanged": 0
           }
         },
         {
-          "name": "纺织制造",
-          "nameEn": "Textile Manufacturing",
-          "code": "BK2499",
+          "name": "健康信息服务",
+          "nameEn": "Health Information Services",
+          "code": "BK2262",
           "changePct": "+1.36%",
-          "leaderName": "SMJ International Holdings",
-          "leaderTicker": "SMJF",
-          "leaderChangePct": "+29.03%",
+          "leaderName": "OneMedNet",
+          "leaderTicker": "ONMD",
+          "leaderChangePct": "+7.72%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 2,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "化学制品",
-          "nameEn": "Chemicals",
-          "code": "BK2020",
-          "changePct": "+1.07%",
-          "leaderName": "梅思恩",
-          "leaderTicker": "MEOH",
-          "leaderChangePct": "+2.32%",
-          "breadth": {
-            "advancers": 5,
-            "decliners": 10,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "教育培训",
-          "nameEn": "Education & Training Services",
-          "code": "BK2044",
-          "changePct": "+1.02%",
-          "leaderName": "童程童美",
-          "leaderTicker": "VSA",
-          "leaderChangePct": "+83.84%",
-          "breadth": {
-            "advancers": 28,
-            "decliners": 13,
-            "unchanged": 4
+            "advancers": 21,
+            "decliners": 19,
+            "unchanged": 6
           }
         }
       ],
       "bottom": [
         {
-          "name": "旅游服务",
-          "nameEn": "Travel Services",
-          "code": "BK2498",
-          "changePct": "-4.07%",
-          "leaderName": "Pursuit Attractions and Hospitality",
-          "leaderTicker": "PRSU",
-          "leaderChangePct": "+0.54%",
+          "name": "综合货运与物流",
+          "nameEn": "Integrated Freight & Logistics",
+          "code": "BK2500",
+          "changePct": "-3.28%",
+          "leaderName": "闪送",
+          "leaderTicker": "FLX",
+          "leaderChangePct": "+11.86%",
           "breadth": {
-            "advancers": 2,
-            "decliners": 14,
-            "unchanged": 4
+            "advancers": 10,
+            "decliners": 21,
+            "unchanged": 1
           }
         },
         {
-          "name": "黄金",
-          "nameEn": "Gold",
-          "code": "BK2110",
-          "changePct": "-4.09%",
-          "leaderName": "Goldgroup Mining",
-          "leaderTicker": "GORO",
-          "leaderChangePct": "+2.82%",
+          "name": "铀",
+          "nameEn": "Uranium",
+          "code": "BK2430",
+          "changePct": "-3.30%",
+          "leaderName": "Encore Energy",
+          "leaderTicker": "EU",
+          "leaderChangePct": "0.00%",
           "breadth": {
-            "advancers": 2,
-            "decliners": 53,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "抵押贷款金融",
-          "nameEn": "Mortgage Finance",
-          "code": "BK2479",
-          "changePct": "-4.33%",
-          "leaderName": "Income Opportunity Realty Investors",
-          "leaderTicker": "IOR",
-          "leaderChangePct": "+0.66%",
-          "breadth": {
-            "advancers": 1,
+            "advancers": 0,
             "decliners": 12,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "电子与计算机分销",
+          "nameEn": "Electronics & Computer Distribution",
+          "code": "BK2506",
+          "changePct": "-4.29%",
+          "leaderName": "Climb Global Solutions",
+          "leaderTicker": "CLMB",
+          "leaderChangePct": "+1.73%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 4,
             "unchanged": 0
           }
         },
         {
-          "name": "其他贵金属和采矿",
-          "nameEn": "Other Precious Metals & Mining",
-          "code": "BK2507",
-          "changePct": "-4.67%",
-          "leaderName": "Sinda",
-          "leaderTicker": "SIND",
-          "leaderChangePct": "-1.31%",
+          "name": "纸及纸制品",
+          "nameEn": "Paper & Paper Products",
+          "code": "BK2083",
+          "changePct": "-4.36%",
+          "leaderName": "美世国际",
+          "leaderTicker": "MERC",
+          "leaderChangePct": "-0.22%",
           "breadth": {
             "advancers": 0,
-            "decliners": 17,
+            "decliners": 5,
             "unchanged": 0
           }
         },
         {
-          "name": "白银",
-          "nameEn": "Silver",
-          "code": "BK2093",
-          "changePct": "-7.21%",
-          "leaderName": "New Pacific Metals",
-          "leaderTicker": "NEWP",
-          "leaderChangePct": "-5.50%",
+          "name": "太阳能",
+          "nameEn": "Solar",
+          "code": "BK2047",
+          "changePct": "-6.04%",
+          "leaderName": "Turbo Energy",
+          "leaderTicker": "TURB",
+          "leaderChangePct": "+7.69%",
           "breadth": {
-            "advancers": 0,
-            "decliners": 6,
+            "advancers": 6,
+            "decliners": 16,
             "unchanged": 0
           }
         }
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-09-24T08:52:14+08:00",
+      "fetchedAt": "2026-09-25T08:47:34+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,72 +176,72 @@
       },
       "top": [
         {
-          "name": "网络安全概念",
-          "nameEn": "Cybersecurity",
-          "code": "BK2570",
-          "changePct": "+2.20%",
-          "leaderName": "Palo Alto Networks",
-          "leaderTicker": "PANW",
-          "leaderChangePct": "+5.00%",
+          "name": "社交媒体",
+          "nameEn": "Social Media",
+          "code": "BK2433",
+          "changePct": "+4.45%",
+          "leaderName": "Meta Platforms",
+          "leaderTicker": "META",
+          "leaderChangePct": "+4.50%",
           "breadth": {
-            "advancers": 17,
-            "decliners": 7,
+            "advancers": 6,
+            "decliners": 1,
             "unchanged": 0
           }
         },
         {
-          "name": "WSB热门概念",
-          "nameEn": "WallStreetBets",
-          "code": "BK2555",
-          "changePct": "+1.93%",
-          "leaderName": "Palantir",
-          "leaderTicker": "PLTR",
-          "leaderChangePct": "+3.68%",
+          "name": "英伟达持仓概念",
+          "nameEn": "NVIDIA Portfolio",
+          "code": "BK20882",
+          "changePct": "+3.22%",
+          "leaderName": "NEBIUS",
+          "leaderTicker": "NBIS",
+          "leaderChangePct": "+7.44%",
           "breadth": {
             "advancers": 4,
-            "decliners": 17,
-            "unchanged": 1
+            "decliners": 3,
+            "unchanged": 0
           }
         },
         {
-          "name": "页岩油",
-          "nameEn": "Shale Oil",
-          "code": "BK2585",
-          "changePct": "+1.64%",
-          "leaderName": "阿帕奇石油",
-          "leaderTicker": "APA",
-          "leaderChangePct": "+3.31%",
+          "name": "医药外包概念",
+          "nameEn": "CRO",
+          "code": "BK2528",
+          "changePct": "+2.96%",
+          "leaderName": "查尔斯河实验室",
+          "leaderTicker": "CRL",
+          "leaderChangePct": "+6.17%",
           "breadth": {
-            "advancers": 13,
+            "advancers": 5,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "天然气",
-          "nameEn": "Natural Gas",
-          "code": "BK2582",
-          "changePct": "+1.34%",
-          "leaderName": "戴文能源",
-          "leaderTicker": "DVN",
-          "leaderChangePct": "+2.37%",
+          "name": "激光雷达概念",
+          "nameEn": "Lidar Technology",
+          "code": "BK2539",
+          "changePct": "+2.27%",
+          "leaderName": "Ouster",
+          "leaderTicker": "OUST",
+          "leaderChangePct": "+5.05%",
           "breadth": {
-            "advancers": 10,
+            "advancers": 4,
             "decliners": 2,
-            "unchanged": 0
+            "unchanged": 1
           }
         },
         {
-          "name": "社交媒体",
-          "nameEn": "Social Media",
-          "code": "BK2433",
-          "changePct": "+0.96%",
-          "leaderName": "Meta Platforms",
-          "leaderTicker": "META",
-          "leaderChangePct": "+1.02%",
+          "name": "室温超导概念",
+          "nameEn": "Room-Temp Superconductors",
+          "code": "BK2147",
+          "changePct": "+2.25%",
+          "leaderName": "布鲁克",
+          "leaderTicker": "BRKR",
+          "leaderChangePct": "+7.26%",
           "breadth": {
-            "advancers": 2,
-            "decliners": 5,
+            "advancers": 1,
+            "decliners": 2,
             "unchanged": 0
           }
         }
