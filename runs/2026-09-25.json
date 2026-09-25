@@ -2,24 +2,45 @@
   "run_id": "ah-20260925-20260925083128",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "heartbeat_at": "2026-09-25T08:31:28+08:00",
-  "lease_until": "2026-09-25T08:41:28+08:00",
+  "heartbeat_at": "2026-09-25T08:37:15.452+08:00",
+  "lease_until": "2026-09-25T08:55:15.452+08:00",
   "source_cutoff": null,
   "main_base_sha": "1f047afa9797cfccb587023f96997c692de3948f",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "rules_read",
+  "stage": "research",
   "evidence": {
     "rules": {
       "status": "ok",
       "bytes": 28539,
       "blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160"
+    },
+    "snapshots": {
+      "akshare": {
+        "status": "ok",
+        "fetched_at": "2026-09-24T12:52:52+08:00",
+        "analysis_ready": true
+      },
+      "us_rankings": {
+        "status": "stale_for_2026-09-24_session",
+        "fetched_at": "2026-09-24T08:52:14+08:00",
+        "publish_rows": 0
+      }
+    },
+    "market": {
+      "status": "in_progress",
+      "notes": [
+        "US 2026-09-24 close verified",
+        "current futures verified",
+        "domestic/HK primary-source reconciliation in progress"
+      ]
     }
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "started_at": "2026-09-25T08:31:28+08:00",
-    "rules_read_completed_at": "2026-09-25T08:31:28+08:00"
+    "rules_read_completed_at": "2026-09-25T08:31:28+08:00",
+    "research_started_at": "2026-09-25T08:37:15.452+08:00"
   },
   "error": null,
   "candidate_commit": null
