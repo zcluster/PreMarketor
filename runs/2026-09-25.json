@@ -2,12 +2,12 @@
   "run_id": "ah-review-20260925-093859",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "heartbeat_at": "2026-09-25T09:40:38+08:00",
-  "lease_until": "2026-09-25T09:50:38+08:00",
+  "heartbeat_at": "2026-09-25T09:43:43+08:00",
+  "lease_until": "2026-09-25T09:53:43+08:00",
   "source_cutoff": "2026-09-25T08:40:00+08:00",
   "main_base_sha": "3f4d441b8eb043c7c841e86f588bef120ebea104",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "incremental_research",
+  "stage": "generation",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -161,7 +161,8 @@
     "deployment_verified_at": "2026-09-25T08:47:49.808+08:00",
     "completed_at": "2026-09-25T08:47:49.808+08:00",
     "incremental_research_started_at": "2026-09-25T09:38:59+08:00",
-    "incremental_rankings_verified_at": "2026-09-25T09:40:38+08:00"
+    "incremental_rankings_verified_at": "2026-09-25T09:40:38+08:00",
+    "incremental_generation_started_at": "2026-09-25T09:43:43+08:00"
   },
   "error": null,
   "candidate_commit": null,
