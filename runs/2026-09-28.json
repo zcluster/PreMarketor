@@ -1,13 +1,13 @@
 {
   "run_id": "ah-20260928-20260928082937",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "heartbeat_at": "2026-09-28T08:41:05.229+08:00",
-  "lease_until": "2026-09-28T08:59:05.229+08:00",
+  "status": "published",
+  "heartbeat_at": "2026-09-28T08:43:55.514+08:00",
+  "lease_until": null,
   "source_cutoff": "2026-09-28 08:39 CST",
   "main_base_sha": "35e7d1c55cb94ea0ba7e182a554413927de0abf4",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "committing",
+  "stage": "published",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -58,10 +58,41 @@
       "todayDate": "2026-09-28",
       "time": "2026-09-28 08:39 CST",
       "main_base_sha": "35e7d1c55cb94ea0ba7e182a554413927de0abf4"
+    },
+    "production": {
+      "status": "ok",
+      "checked_at": "2026-09-28T08:43:55.514+08:00",
+      "homepage": {
+        "http": "ok",
+        "cn": true,
+        "en": true,
+        "time": "2026-09-28 08:39 CST",
+        "cards": 3,
+        "sector_rows": 15,
+        "empty": false
+      },
+      "archive": {
+        "http": "ok",
+        "date": "2026-09-28",
+        "cn": true,
+        "time": "2026-09-28 08:39 CST",
+        "empty": false
+      },
+      "history_json": {
+        "status": "verified_by_homepage_english_render_and_github_readback"
+      },
+      "manifest": {
+        "status": "verified_by_calendar_link_and_github_readback"
+      },
+      "github_readback": {
+        "index": true,
+        "history": true,
+        "manifest": true
+      }
     }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "8359e13043a92df2a8625f641c8536f1f70c3964",
   "stage_timings": {
     "started_at": "2026-09-28T08:29:37.947+08:00",
     "rules_read_completed_at": "2026-09-28T08:29:37.947+08:00",
@@ -69,7 +100,10 @@
     "research_completed_at": "2026-09-28T08:40:15.752+08:00",
     "generation_completed_at": "2026-09-28T08:40:15.752+08:00",
     "preflight_completed_at": "2026-09-28T08:40:15.752+08:00",
-    "commit_candidate_created_at": "2026-09-28T08:41:05.229+08:00"
+    "commit_candidate_created_at": "2026-09-28T08:41:05.229+08:00",
+    "commit_published_at": "2026-09-28T08:43:55.514+08:00",
+    "production_verified_at": "2026-09-28T08:43:55.514+08:00",
+    "completed_at": "2026-09-28T08:43:55.514+08:00"
   },
   "error": null,
   "candidate_commit": "8359e13043a92df2a8625f641c8536f1f70c3964"
