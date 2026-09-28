@@ -1,13 +1,13 @@
 {
-  "run_id": "ah-20260928-20260928082937",
-  "owner": "发布 MarketAhead A/H 早报",
+  "run_id": "ah-20260928-review-20260928094607",
+  "owner": "MarketAhead A/H 早报复核",
   "status": "published",
-  "heartbeat_at": "2026-09-28T08:43:55.514+08:00",
-  "lease_until": null,
-  "source_cutoff": "2026-09-28 08:39 CST",
-  "main_base_sha": "35e7d1c55cb94ea0ba7e182a554413927de0abf4",
+  "heartbeat_at": "2026-09-28T09:46:07+08:00",
+  "lease_until": "2026-09-28T09:46:07+08:00",
+  "source_cutoff": "2026-09-28 09:46 CST",
+  "main_base_sha": "8359e13043a92df2a8625f641c8536f1f70c3964",
   "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
-  "stage": "published",
+  "stage": "incremental_review_no_material_change",
   "evidence": {
     "rules": {
       "status": "ok",
@@ -89,6 +89,31 @@
         "history": true,
         "manifest": true
       }
+    },
+    "incremental_review": {
+      "status": "no_material_change",
+      "checked_at": "2026-09-28T09:46:07+08:00",
+      "base_cutoff": "2026-09-28 08:39 CST",
+      "main_head": "8359e13043a92df2a8625f641c8536f1f70c3964",
+      "rules_blob_sha": "c300df2b4fecf706c07675d7cdc281e7daa65160",
+      "sources_checked": [
+        "latest main A/H entry and manifest",
+        "codex/ah-run-state",
+        "data/akshare-latest.json",
+        "data/us-rankings-latest.json",
+        "PBOC and State Council targeted discovery",
+        "SSE/SZSE/HKEX targeted announcement discovery",
+        "Reuters and Chinese market-news discovery"
+      ],
+      "findings": [
+        "No verified post-cutoff item materially changed the index view, sector rotation, risk warnings, or the three focus-stock conclusions.",
+        "The current US ranking snapshot already has 15 rows and all major-movement mappings are present in the 08:39 bilingual brief.",
+        "The AKShare blob is unchanged at fetchedAt=2026-09-25T12:59:07+08:00; it was not presented as a fresh 09:15 snapshot.",
+        "No synchronized reliable opening-price set was obtained; absence of a quote alone did not trigger deletion or promotion of any stock card."
+      ],
+      "material_diff": [],
+      "main_commit_created": false,
+      "production_basis": "The first-run production evidence remains valid and main head is unchanged."
     }
   },
   "pending_increment": [],
@@ -103,7 +128,9 @@
     "commit_candidate_created_at": "2026-09-28T08:41:05.229+08:00",
     "commit_published_at": "2026-09-28T08:43:55.514+08:00",
     "production_verified_at": "2026-09-28T08:43:55.514+08:00",
-    "completed_at": "2026-09-28T08:43:55.514+08:00"
+    "completed_at": "2026-09-28T09:46:07+08:00",
+    "incremental_review_started_at": "2026-09-28T09:46:07+08:00",
+    "incremental_review_completed_at": "2026-09-28T09:46:07+08:00"
   },
   "error": null,
   "candidate_commit": "8359e13043a92df2a8625f641c8536f1f70c3964"
