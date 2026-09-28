@@ -50,6 +50,10 @@ jobs:
                   "previous_close_baseline", "intraday_snapshot", "latest_close"
               }
               assert item["representative"]
+          a = evidence["markets"]["A"]
+          if a["marketPhase"] in {"intraday_snapshot", "latest_close"}:
+              assert a["calendarVerified"]
+              assert a["marketDate"] == evidence["fetchedAt"][:10]
           PY
 
       - name: Publish changed evidence

@@ -46,6 +46,9 @@ class AHPolicyV2ContractTest(unittest.TestCase):
             "forbid_runtime_moomoo_rankings_fetch",
             "allow_partial_ranking_fields",
             "require_traceable_sources",
+            "require_exchange_session_check",
+            "require_catalyst_counterevidence",
+            "forbid_unconfirmed_event_as_bullish",
             "require_material_us_to_ah_mapping",
             "forbid_negative_signal_as_long_pick",
             "allow_conditional_watch_and_avoid_cards",
@@ -96,8 +99,10 @@ class AHPolicyV2ContractTest(unittest.TestCase):
             "decision=conditional_watch|bullish_candidate|avoid|no_candidate",
             "不得单独据此排除候选或清空卡片",
             "不得设置统一实时报价新门槛",
-            "0 卡仅允许用于本轮没有任何可核验业务或事件依据",
+            "实质反证占优且无合格关注对象时允许 0 卡",
             "普通融资、审批或交付风险就自动排除",
+            "缺少订单兑现证据且财务或资金反证占优时",
+            "休市日旧报价、高开瞬间或单笔放量均不算确认",
         )
         for text in required_text:
             with self.subTest(text=text):

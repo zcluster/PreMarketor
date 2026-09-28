@@ -113,13 +113,20 @@ def fetch_with_fallback(label, sources, summarize, attempts=3):
     return {"status": "error", "errors": errors, "market": label}
 
 
-def market_phase(now, close_hour):
+def market_phase(now, close_hour, is_trading_day=True):
+    if not is_trading_day:
+        return "previous_close_baseline"
     minutes = now.hour * 60 + now.minute
     if minutes < 9 * 60 + 30:
         return "previous_close_baseline"
     if minutes < close_hour * 60:
         return "intraday_snapshot"
     return "latest_close"
+
+
+def latest_session(sessions, day):
+    previous = [str(session) for session in sessions if str(session) <= day.isoformat()]
+    return max(previous) if previous else None
 
 
 def main() -> int:
@@ -133,6 +140,13 @@ def main() -> int:
     args = parser.parse_args()
 
     now = datetime.now(ZoneInfo("Asia/Shanghai"))
+    try:
+        sessions = ak.tool_trade_date_hist_sina()["trade_date"].astype(str).tolist()
+        a_market_date = latest_session(sessions, now.date())
+        a_calendar_verified = a_market_date is not None
+    except Exception:
+        a_market_date = None
+        a_calendar_verified = False
     a_index = fetch_with_fallback(
         "A",
         [
@@ -184,7 +198,14 @@ def main() -> int:
         stock_summary,
     )
     markets = {
-        "A": {**a_index, "marketPhase": market_phase(now, 15), "stocks": a_stocks},
+        "A": {
+            **a_index,
+            "marketPhase": market_phase(now, 15, a_calendar_verified and a_market_date == now.date().isoformat()),
+            "marketDate": a_market_date,
+            "calendarVerified": a_calendar_verified,
+            "calendarSource": "AKShare tool_trade_date_hist_sina" if a_calendar_verified else None,
+            "stocks": a_stocks,
+        },
         "HK": {**hk_index, "marketPhase": market_phase(now, 16), "stocks": hk_stocks},
     }
     index_ok = all(item["status"] == "ok" for item in (a_index, hk_index))
