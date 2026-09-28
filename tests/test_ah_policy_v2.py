@@ -103,6 +103,7 @@ class AHPolicyV2ContractTest(unittest.TestCase):
             "普通融资、审批或交付风险就自动排除",
             "缺少订单兑现证据且财务或资金反证占优时",
             "休市日旧报价、高开瞬间或单笔放量均不算确认",
+            "2026-09-28 汇绿生态仅凭拟投 3.09 亿元扩产进入“条件关注”",
         )
         for text in required_text:
             with self.subTest(text=text):
