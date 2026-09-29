@@ -3,9 +3,9 @@
   "run_id": "ah-20260929-review-20260929095158",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "source_verified",
-  "heartbeat_at": "2026-09-29T10:03:30.980+08:00",
-  "lease_until": "2026-09-29T10:13:30.980+08:00",
+  "stage": "candidate_ready",
+  "heartbeat_at": "2026-09-29T10:09:11.745+08:00",
+  "lease_until": "2026-09-29T10:19:11.745+08:00",
   "source_cutoff": "2026-09-29T08:41:00+08:00",
   "main_base_sha": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -103,7 +103,7 @@
       }
     ],
     "incremental_review": {
-      "status": "material_increment_verified",
+      "status": "candidate_validated",
       "checked_from": "2026-09-29T08:41:00+08:00",
       "started_at": "2026-09-29T09:51:58+08:00",
       "main_head": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
@@ -120,7 +120,30 @@
           "observed_at": "2026-09-29T10:03:30.980+08:00",
           "status": "primary_listing_verified_pdf_body_unavailable"
         }
-      ]
+      ],
+      "validation": {
+        "materiality": "changes sector rotation, risk radar and key stock list",
+        "bilingual_counts": {
+          "news": 11,
+          "overnight": 3,
+          "stock_cards": 3,
+          "sectors": 5,
+          "logic": 5,
+          "risks": 5
+        },
+        "allowed_files": [
+          "index.html",
+          "history/data/2026-09-29.json",
+          "history/manifest.json"
+        ],
+        "marker_whitelist": [
+          "A_H_BRIEF",
+          "A_H_TIME",
+          "A_H_UPDATED"
+        ],
+        "protected_us_unchanged": true,
+        "archive_consistent": true
+      }
     }
   },
   "pending_increment": [
