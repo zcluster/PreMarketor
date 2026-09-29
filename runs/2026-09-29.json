@@ -3,9 +3,9 @@
   "run_id": "ah-20260929-review-20260929095158",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
-  "heartbeat_at": "2026-09-29T09:51:58+08:00",
-  "lease_until": "2026-09-29T10:01:58+08:00",
+  "stage": "source_verified",
+  "heartbeat_at": "2026-09-29T10:03:30.980+08:00",
+  "lease_until": "2026-09-29T10:13:30.980+08:00",
   "source_cutoff": "2026-09-29T08:41:00+08:00",
   "main_base_sha": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -103,11 +103,24 @@
       }
     ],
     "incremental_review": {
-      "status": "researching",
+      "status": "material_increment_verified",
       "checked_from": "2026-09-29T08:41:00+08:00",
       "started_at": "2026-09-29T09:51:58+08:00",
       "main_head": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
-      "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b"
+      "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
+      "sources": [
+        {
+          "kind": "material_omission",
+          "ticker": "SH.601238 / HK.02238",
+          "source": "SSE latest announcements + Reuters corroboration",
+          "exchange_url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-29/601238_20260929_BZK6.pdf",
+          "risk_notice_url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-09-29/601238_20260929_HDPW.pdf",
+          "corroboration_url": "https://www.reuters.com/world/asia-pacific/guangzhou-automobile-plans-acquire-50-stake-faw-toyota-2026-09-28/",
+          "fact": "SSE announcement list confirms restructuring plan summary and resumption/risk notice; Reuters reports planned acquisition of 50% FAW Toyota via A-share issue. Transaction value pending audit/valuation.",
+          "observed_at": "2026-09-29T10:03:30.980+08:00",
+          "status": "primary_listing_verified_pdf_body_unavailable"
+        }
+      ]
     }
   },
   "pending_increment": [
