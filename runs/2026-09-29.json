@@ -1,13 +1,13 @@
 {
   "date": "2026-09-29",
-  "run_id": "ah-20260929-20260929083002",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "heartbeat_at": "2026-09-29T08:45:53+08:00",
-  "lease_until": null,
+  "run_id": "ah-20260929-review-20260929095158",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "heartbeat_at": "2026-09-29T09:51:58+08:00",
+  "lease_until": "2026-09-29T10:01:58+08:00",
   "source_cutoff": "2026-09-29T08:41:00+08:00",
-  "main_base_sha": "f326e1f11f39bed6f021023c800056cb5858bd6f",
+  "main_base_sha": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
     "akshare": {
@@ -101,9 +101,27 @@
         "counterevidence": "still loss-making; operating cash outflow THB109.6m",
         "reassessment": "cash flow recovery plus verifiable relative strength"
       }
-    ]
+    ],
+    "incremental_review": {
+      "status": "researching",
+      "checked_from": "2026-09-29T08:41:00+08:00",
+      "started_at": "2026-09-29T09:51:58+08:00",
+      "main_head": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
+      "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b"
+    }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "kind": "omitted_material_event",
+      "discovered_at": "2026-09-29T09:51:58+08:00",
+      "first_available_at": "2026-09-28T22:40:49+08:00",
+      "event": "GAC plans to acquire 50% of FAW Toyota by issuing A-shares",
+      "source": "Reuters report citing Shanghai Stock Exchange filing",
+      "url": "https://www.reuters.com/world/asia-pacific/guangzhou-automobile-plans-acquire-50-stake-faw-toyota-2026-09-28/",
+      "materiality": "Changes auto-sector rotation and GAC-specific risk/confirmation conditions",
+      "verification_status": "primary_filing_url_pending"
+    }
+  ],
   "published_commit": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
   "candidate_commit": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
   "error": null,
@@ -117,7 +135,8 @@
     "preflight_completed_at": "2026-09-29T08:42:15+08:00",
     "commit_created_at": "2026-09-29T08:43:40+08:00",
     "main_updated_at": "2026-09-29T08:44:04+08:00",
-    "production_verified_at": "2026-09-29T08:45:53+08:00"
+    "production_verified_at": "2026-09-29T08:45:53+08:00",
+    "incremental_review_started_at": "2026-09-29T09:51:58+08:00"
   },
   "preflight": {
     "status": "passed",
