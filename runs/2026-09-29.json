@@ -3,10 +3,10 @@
   "run_id": "ah-20260929-20260929083002",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "heartbeat_at": "2026-09-29T08:36:30+08:00",
-  "lease_until": "2026-09-29T08:46:30+08:00",
-  "source_cutoff": "2026-09-29T08:36:30+08:00",
+  "stage": "preflight",
+  "heartbeat_at": "2026-09-29T08:42:15+08:00",
+  "lease_until": "2026-09-29T08:52:15+08:00",
+  "source_cutoff": "2026-09-29T08:41:00+08:00",
   "main_base_sha": "f326e1f11f39bed6f021023c800056cb5858bd6f",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
@@ -21,10 +21,87 @@
       "attemptedAt": "2026-09-26T08:51:58+08:00",
       "note": "attemptedAt 2026-09-26 08:51 CST covering 2026-09-25; stale for 2026-09-28 US close; publish 0 current ranking rows with explicit failure"
     },
-    "domestic_coverage": [],
-    "hk_events": [],
-    "us_mapping": [],
-    "candidates": []
+    "domestic_coverage": [
+      {
+        "kind": "policy",
+        "source": "SCIO/Xinhua",
+        "url": "https://www.news.cn/fortune/20260928/fc3c72cf7a0648ee84a140627b6b3c77/c.html",
+        "fact": "106 central-SOE industrial development actions; full plan-project-evaluation chain",
+        "date": "2026-09-28"
+      },
+      {
+        "kind": "policy",
+        "source": "SSE",
+        "url": "https://www.sse.com.cn/market/sseindex/diclosure/c/c_20260925_10802875.shtml",
+        "fact": "Innovative-drug and STAR software-service indexes launch 2026-09-29"
+      },
+      {
+        "kind": "market",
+        "source": "AKShare snapshot",
+        "fetchedAt": "2026-09-28T13:25:35+08:00",
+        "fact": "Shanghai -1.86%; breadth 690/4792/80; median -2.124%; HSTECH -0.439%",
+        "status": "stale_for_today_refresh_but_prior_session_partial"
+      }
+    ],
+    "hk_events": [
+      {
+        "ticker": "SH.688506",
+        "source": "SSE",
+        "fact": "T-Bren breakthrough-therapy list; BL-M12D1 clinical-trial clearance",
+        "status": "verified"
+      },
+      {
+        "ticker": "HK.01256",
+        "source": "HKEX prospectus",
+        "fact": "Beijing ESWIN global offering; expected listing Oct 9",
+        "status": "verified"
+      },
+      {
+        "ticker": "HK.01696",
+        "source": "HKEX announcement",
+        "fact": "DAXXIFY mainland distribution/promotion connected arrangements renewed",
+        "status": "verified"
+      },
+      {
+        "ticker": "HK.01949",
+        "source": "HKEX interim report",
+        "fact": "Revenue THB146.0m, net loss THB5.0m, operating cash outflow THB109.6m",
+        "status": "verified"
+      }
+    ],
+    "us_mapping": [
+      {
+        "source": "delayed market data",
+        "asOf": "2026-09-29T08:15:00+08:00",
+        "fact": "SPY -0.75%, QQQ -1.07%, DIA -0.66%; NVDA +1.66%, AMD -3.63%, INTC -5.63%, META -4.81%, TSLA -3.97%, KOD +178.24%"
+      },
+      {
+        "source": "data/us-rankings-latest.json",
+        "attemptedAt": "2026-09-26T08:51:58+08:00",
+        "status": "stale",
+        "action": "industry and concept 0 current rows"
+      }
+    ],
+    "candidates": [
+      {
+        "ticker": "SH.688506",
+        "name": "百利天恒",
+        "verification_status": "verified",
+        "decision": "conditional_watch",
+        "quote": "Delayed page retrieved 08:38 displayed CNY340.00 +1.34%; no exchange timestamp",
+        "confirmation": "opening relative strength vs innovative-drug index with volume",
+        "invalidation": "volume-backed underperformance or adverse trial/regulatory disclosure"
+      },
+      {
+        "ticker": "HK.01949",
+        "name": "Platt Nera",
+        "verification_status": "verified",
+        "decision": "avoid",
+        "quote": "timestamped Sep 28 quote unavailable",
+        "counterevidence": "still loss-making; operating cash outflow THB109.6m",
+        "reassessment": "cash flow recovery plus verifiable relative strength"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -33,6 +110,22 @@
   "stage_timings": {
     "rules_and_files_started_at": "2026-09-29T08:27:52+08:00",
     "lease_acquired_at": "2026-09-29T08:30:02+08:00",
-    "research_started_at": "2026-09-29T08:30:10+08:00"
+    "research_started_at": "2026-09-29T08:30:10+08:00",
+    "research_completed_at": "2026-09-29T08:40:30+08:00",
+    "generation_completed_at": "2026-09-29T08:41:00+08:00",
+    "preflight_started_at": "2026-09-29T08:41:05+08:00"
+  },
+  "preflight": {
+    "status": "passed",
+    "checks": [
+      "allowed marker whitelist",
+      "US marker byte preservation",
+      "CN/EN structural isomorphism",
+      "10 major news",
+      "3 US overnight items",
+      "2 stock cards",
+      "stale-ranking 0-row disclosure",
+      "history JSON and manifest integrity"
+    ]
   }
 }
