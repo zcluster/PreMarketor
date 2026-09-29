@@ -2,11 +2,11 @@
   "date": "2026-09-29",
   "run_id": "ah-20260929-review-20260929095158",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-09-29T10:11:29.371+08:00",
-  "lease_until": "2026-09-29T10:21:29.371+08:00",
-  "source_cutoff": "2026-09-29T08:41:00+08:00",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-09-29T10:14:50.374+08:00",
+  "lease_until": "2026-09-29T10:14:50.374+08:00",
+  "source_cutoff": "2026-09-29T10:08:00+08:00",
   "main_base_sha": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
@@ -103,7 +103,7 @@
       }
     ],
     "incremental_review": {
-      "status": "main_updated",
+      "status": "published_and_verified",
       "checked_from": "2026-09-29T08:41:00+08:00",
       "started_at": "2026-09-29T09:51:58+08:00",
       "main_head": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
@@ -144,23 +144,13 @@
         "protected_us_unchanged": true,
         "archive_consistent": true
       },
-      "main_commit": "d5c02670b67cd780ef4b42ea5e38c0b7f181139a"
+      "main_commit": "d5c02670b67cd780ef4b42ea5e38c0b7f181139a",
+      "completed_at": "2026-09-29T10:14:50.374+08:00"
     }
   },
-  "pending_increment": [
-    {
-      "kind": "omitted_material_event",
-      "discovered_at": "2026-09-29T09:51:58+08:00",
-      "first_available_at": "2026-09-28T22:40:49+08:00",
-      "event": "GAC plans to acquire 50% of FAW Toyota by issuing A-shares",
-      "source": "Reuters report citing Shanghai Stock Exchange filing",
-      "url": "https://www.reuters.com/world/asia-pacific/guangzhou-automobile-plans-acquire-50-stake-faw-toyota-2026-09-28/",
-      "materiality": "Changes auto-sector rotation and GAC-specific risk/confirmation conditions",
-      "verification_status": "primary_filing_url_pending"
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "d5c02670b67cd780ef4b42ea5e38c0b7f181139a",
-  "candidate_commit": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
+  "candidate_commit": "d5c02670b67cd780ef4b42ea5e38c0b7f181139a",
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-09-29T08:27:52+08:00",
@@ -173,48 +163,62 @@
     "commit_created_at": "2026-09-29T08:43:40+08:00",
     "main_updated_at": "2026-09-29T08:44:04+08:00",
     "production_verified_at": "2026-09-29T08:45:53+08:00",
-    "incremental_review_started_at": "2026-09-29T09:51:58+08:00"
+    "incremental_review_started_at": "2026-09-29T09:51:58+08:00",
+    "incremental_source_verified_at": "2026-09-29T10:03:30+08:00",
+    "incremental_candidate_validated_at": "2026-09-29T10:09:11+08:00",
+    "incremental_main_updated_at": "2026-09-29T10:11:29+08:00",
+    "incremental_production_verified_at": "2026-09-29T10:14:50.374+08:00"
   },
   "preflight": {
     "status": "passed",
     "checks": [
-      "allowed marker whitelist",
-      "US marker byte preservation",
-      "CN/EN structural isomorphism",
-      "10 major news",
-      "3 US overnight items",
-      "2 stock cards",
-      "stale-ranking 0-row disclosure",
+      "three-file whitelist",
+      "A/H marker whitelist",
+      "US markers byte-preserved",
+      "CN/EN structural isomorphism: 11 major news + 3 US overnight + 3 cards + 5 sectors + 5 logic + 5 risks",
+      "traceable SSE/Reuters sources and restructuring counter-evidence",
+      "stale US ranking 0-row disclosure retained",
       "history JSON and manifest integrity"
     ]
   },
   "production_verification": {
     "status": "passed",
     "homepage": {
-      "url": "https://premarketor.com/",
-      "http_rendered": true,
-      "ah_time": "2026-09-29 08:41 CST",
-      "us_time": "2026-09-28 20:35 CST",
+      "url": "https://premarketor.com/?verify=d5c02670",
+      "rendered": true,
+      "ah_time_zh": "2026-09-29 10:08 CST",
+      "ah_time_en": "2026-09-28 22:08 EDT",
       "cn_rendered": true,
       "en_rendered": true,
-      "stock_cards": 2,
-      "ranking_rows": 0,
+      "news_items_total": 14,
+      "stock_cards": 3,
+      "sectors": 5,
+      "logic_steps": 5,
+      "risk_items": 5,
       "calendar_entry": true,
       "empty_state": false
     },
     "archive": {
-      "url": "https://premarketor.com/history/?date=2026-09-29",
+      "url": "https://premarketor.com/history/?date=2026-09-29&verify=d5c02670",
       "rendered": true,
       "date": "2026-09-29",
-      "time": "2026-09-29 08:41 CST",
-      "stock_cards": 2,
+      "time": "2026-09-29 10:08 CST",
+      "title": "弱势开盘确认防守基调，广汽重组预案为汽车整合增添公司级线索",
+      "stock_cards": 3,
       "empty_state": false
     },
     "github_readback": {
-      "main": "cac6b12d4f5b55a4e9978753b8476c9a7ba4b631",
-      "index_blob": "5ea99a06c847c50a11c791ed3771504f956649a2",
-      "history_blob": "7641d485ee2c064882e3929bc219b706487018f8",
-      "manifest_blob": "0b62c2e00de007b2e6a8a0e468f6d778702850e4"
-    }
+      "main": "d5c02670b67cd780ef4b42ea5e38c0b7f181139a",
+      "index_blob": "ca9af998dc8a26e7508ff8b5e6d9fd34300f8803",
+      "history_blob": "84a4f954e6bddcf0d62f5d15323040b2885c09bf",
+      "manifest_blob": "77ed40634d38713493e73d511cb6013d6adaf255",
+      "exact_match": true,
+      "changed_files": [
+        "index.html",
+        "history/data/2026-09-29.json",
+        "history/manifest.json"
+      ]
+    },
+    "raw_json_note": "Production raw JSON URL was blocked by the browser client; exact GitHub main readback plus rendered archive and bilingual homepage DOM provided equivalent machine verification."
   }
 }
