@@ -3,9 +3,9 @@
   "run_id": "ah-review-20260930-20260930092715",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "hard_validation",
-  "heartbeat_at": "2026-09-30T09:54:10+08:00",
-  "lease_until": "2026-09-30T10:04:10+08:00",
+  "stage": "candidate_commit",
+  "heartbeat_at": "2026-09-30T09:55:30+08:00",
+  "lease_until": "2026-09-30T10:05:30+08:00",
   "source_cutoff": "2026-09-30T08:35:00+08:00",
   "main_base_sha": "098092f8b0ba76106d16b00e8979adde91d21955",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -265,7 +265,8 @@
     "corrective_update_ref_started_at": "2026-09-30T09:57:30+08:00",
     "corrective_update_ref_completed_at": "2026-09-30T09:59:10+08:00",
     "corrective_deployment_started_at": "2026-09-30T09:59:20+08:00",
-    "renderer_text_issue_detected_at": "2026-09-30T09:53:50+08:00"
+    "renderer_text_issue_detected_at": "2026-09-30T09:53:50+08:00",
+    "renderer_fix_validated_at": "2026-09-30T09:55:25+08:00"
   },
   "preflight": {
     "status": "passed",
@@ -279,7 +280,8 @@
       "runtime quote confirm/diverge/potential-reversal labels",
       "history JSON and manifest integrity",
       "source traceability and negative-signal handling",
-      "removed stale 0-row ranking statement from CN/EN data-timing risk card"
+      "removed stale 0-row ranking statement from CN/EN data-timing risk card",
+      "Chinese renderer-safe runtime timestamp wording"
     ]
   },
   "production_verification": {
