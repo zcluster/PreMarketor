@@ -2,10 +2,10 @@
   "date": "2026-09-30",
   "run_id": "ah-20260930-20260930083120",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "preflight",
-  "heartbeat_at": "2026-09-30T08:36:30+08:00",
-  "lease_until": "2026-09-30T08:46:30+08:00",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-09-30T08:40:30+08:00",
+  "lease_until": null,
   "source_cutoff": "2026-09-30T08:35:00+08:00",
   "main_base_sha": "6e4dd81d276341bd60e95489b9c8c552c0ea0d56",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -107,8 +107,8 @@
     ]
   },
   "pending_increment": [],
-  "published_commit": null,
-  "candidate_commit": null,
+  "published_commit": "cd74584f56a8397dd9a74489c4611a8d3cca5413",
+  "candidate_commit": "cd74584f56a8397dd9a74489c4611a8d3cca5413",
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-09-30T08:30:13+08:00",
@@ -116,7 +116,12 @@
     "research_started_at": "2026-09-30T08:32:00+08:00",
     "research_completed_at": "2026-09-30T08:35:00+08:00",
     "generation_completed_at": "2026-09-30T08:35:50+08:00",
-    "preflight_started_at": "2026-09-30T08:35:55+08:00"
+    "preflight_started_at": "2026-09-30T08:35:55+08:00",
+    "preflight_completed_at": "2026-09-30T08:37:20+08:00",
+    "atomic_publish_completed_at": "2026-09-30T08:37:55+08:00",
+    "production_verified_at": "2026-09-30T08:40:12+08:00",
+    "terminal_state_written_at": "2026-09-30T08:40:30+08:00",
+    "total_seconds": 617
   },
   "preflight": {
     "status": "passed",
@@ -130,5 +135,20 @@
       "stale-ranking 0-row disclosure",
       "history JSON and manifest integrity"
     ]
+  },
+  "production_verification": {
+    "status": "passed",
+    "homepage": "https://premarketor.com/",
+    "archive": "https://premarketor.com/history/?date=2026-09-30",
+    "checks": [
+      "homepage current date and A/H 2026-09-30 08:35 CST",
+      "homepage Chinese rendered with 11 major news, 3 US overnight items and 3 stock cards",
+      "homepage English rendered with matching structure and values",
+      "US sector panel Chinese/English both degraded to 0 current rows with stale-snapshot disclosure",
+      "calendar manifest entry for 2026-09-30 visible",
+      "2026-09-30 archive rendered non-empty with matching title, time and 3 stock cards"
+    ],
+    "us_protected": "US 2026-09-29 20:34 CST",
+    "verified_at": "2026-09-30T08:40:12+08:00"
   }
 }
