@@ -3,9 +3,9 @@
   "run_id": "ah-review-20260930-20260930092715",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "research",
-  "heartbeat_at": "2026-09-30T09:27:15+08:00",
-  "lease_until": "2026-09-30T09:37:15+08:00",
+  "stage": "hard_validation",
+  "heartbeat_at": "2026-09-30T09:33:10+08:00",
+  "lease_until": "2026-09-30T09:43:10+08:00",
   "source_cutoff": "2026-09-30T08:35:00+08:00",
   "main_base_sha": "cd74584f56a8397dd9a74489c4611a8d3cca5413",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -157,26 +157,26 @@
     "lease_acquired_at": "2026-09-30T09:27:15+08:00",
     "research_started_at": "2026-09-30T08:32:00+08:00",
     "research_completed_at": "2026-09-30T08:35:00+08:00",
-    "generation_completed_at": "2026-09-30T08:35:50+08:00",
+    "generation_completed_at": "2026-09-30T09:32:50+08:00",
     "preflight_started_at": "2026-09-30T08:35:55+08:00",
     "preflight_completed_at": "2026-09-30T08:37:20+08:00",
     "atomic_publish_completed_at": "2026-09-30T08:37:55+08:00",
     "production_verified_at": "2026-09-30T08:40:12+08:00",
     "terminal_state_written_at": "2026-09-30T08:40:30+08:00",
     "total_seconds": 617,
-    "incremental_review_started_at": "2026-09-30T09:27:15+08:00"
+    "incremental_review_started_at": "2026-09-30T09:27:15+08:00",
+    "hard_validation_started_at": "2026-09-30T09:33:10+08:00"
   },
   "preflight": {
-    "status": "passed",
+    "status": "running",
     "checks": [
-      "allowed marker whitelist",
-      "US marker byte preservation",
+      "authorized marker diff",
+      "US byte preservation",
       "CN/EN structural isomorphism",
-      "11 major news",
-      "3 US overnight items",
-      "3 stock cards",
-      "stale-ranking 0-row disclosure",
-      "history JSON and manifest integrity"
+      "16 news items including 3 US overnight items",
+      "4 stock cards",
+      "history JSON and manifest integrity",
+      "source traceability and negative-signal handling"
     ]
   },
   "production_verification": {
