@@ -4,10 +4,10 @@
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
   "stage": "hard_validation",
-  "heartbeat_at": "2026-09-30T09:33:10+08:00",
-  "lease_until": "2026-09-30T09:43:10+08:00",
+  "heartbeat_at": "2026-09-30T09:37:45+08:00",
+  "lease_until": "2026-09-30T09:47:45+08:00",
   "source_cutoff": "2026-09-30T08:35:00+08:00",
-  "main_base_sha": "cd74584f56a8397dd9a74489c4611a8d3cca5413",
+  "main_base_sha": "098092f8b0ba76106d16b00e8979adde91d21955",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
     "akshare": {
@@ -17,10 +17,10 @@
       "note": "fetchedAt 2026-09-29 13:45 CST; current prior-session intraday snapshot, used with timestamp"
     },
     "us_rankings": {
-      "blob_sha": "09b6f73c07fc89b9514dde64182c757f653592cc",
-      "attemptedAt": "2026-09-29T10:17:17+08:00",
+      "blob_sha": "45b68e889ef6015764435b955f7e5316ec4d71ae",
+      "attemptedAt": "2026-09-30T09:32:42+08:00",
       "status": "ok",
-      "note": "attemptedAt 2026-09-29 10:17 CST; covers Sep 28 US session, stale for Sep 29; industry and concept 0 rows"
+      "note": "current Sep 29 US session; industry 10 rows and concept 5 rows"
     },
     "domestic_coverage": [
       {
@@ -126,6 +126,15 @@
           "importance": "medium",
           "status": "verified",
           "reason": "首轮遗漏；需按并购风险与复牌价格反馈处理"
+        },
+        {
+          "event": "美股行业/概念排行快照刷新",
+          "first_available": "2026-09-30 09:32 CST",
+          "source": "data/us-rankings-latest.json",
+          "affected": "A/H设备、半导体、光通信、存储、能源与资源链",
+          "importance": "high",
+          "status": "verified",
+          "reason": "current snapshot replaces stale 0-row degradation and changes sector mapping"
         }
       ],
       "discovery_sources": [
@@ -133,8 +142,8 @@
         "财联社/科创板日报早报",
         "深交所/上交所/HKEXnews"
       ],
-      "material_increment_count": 2,
-      "entered_body_count": 2
+      "material_increment_count": 3,
+      "entered_body_count": 3
     }
   },
   "pending_increment": [
@@ -147,6 +156,11 @@
       "event": "华之杰复牌并购半导体测试配套资产",
       "materiality": "sector_rotation_key_stock",
       "decision": "add event with merger counterevidence"
+    },
+    {
+      "event": "最新美股行业/概念排行",
+      "materiality": "sector_rotation",
+      "decision": "publish 10 industry and 5 concept rows; map major themes with counterevidence"
     }
   ],
   "published_commit": "cd74584f56a8397dd9a74489c4611a8d3cca5413",
@@ -165,7 +179,10 @@
     "terminal_state_written_at": "2026-09-30T08:40:30+08:00",
     "total_seconds": 617,
     "incremental_review_started_at": "2026-09-30T09:27:15+08:00",
-    "hard_validation_started_at": "2026-09-30T09:33:10+08:00"
+    "hard_validation_started_at": "2026-09-30T09:33:10+08:00",
+    "rankings_refresh_detected_at": "2026-09-30T09:35:30+08:00",
+    "regeneration_completed_at": "2026-09-30T09:37:35+08:00",
+    "hard_validation_restarted_at": "2026-09-30T09:37:45+08:00"
   },
   "preflight": {
     "status": "running",
