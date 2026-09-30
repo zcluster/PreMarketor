@@ -1,13 +1,13 @@
 {
   "date": "2026-09-30",
-  "run_id": "ah-20260930-20260930083120",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "heartbeat_at": "2026-09-30T08:40:30+08:00",
-  "lease_until": null,
+  "run_id": "ah-review-20260930-20260930092715",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "research",
+  "heartbeat_at": "2026-09-30T09:27:15+08:00",
+  "lease_until": "2026-09-30T09:37:15+08:00",
   "source_cutoff": "2026-09-30T08:35:00+08:00",
-  "main_base_sha": "6e4dd81d276341bd60e95489b9c8c552c0ea0d56",
+  "main_base_sha": "cd74584f56a8397dd9a74489c4611a8d3cca5413",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
     "akshare": {
@@ -104,15 +104,57 @@
         "quote": "suspended; no tradable current quote",
         "counterevidence": "delayed results and unresolved resumption conditions"
       }
-    ]
+    ],
+    "incremental_review": {
+      "first_run_cutoff": "2026-09-30T08:35:00+08:00",
+      "review_started_at": "2026-09-30T09:27:15+08:00",
+      "discovered": [
+        {
+          "event": "元道通信进入退市整理期",
+          "first_available": "2026-09-29 evening / 2026-09-30 08:05 press recap",
+          "source": "深交所终止上市公告、公司9月29日晚公告",
+          "affected": "SZ.301139 / 退市风险",
+          "importance": "high",
+          "status": "verified",
+          "reason": "首轮遗漏；首日无涨跌幅限制且将终止上市，改变风险提示"
+        },
+        {
+          "event": "华之杰复牌并购半导体测试配套资产",
+          "first_available": "2026-09-29 19:57",
+          "source": "上交所公司公告 / 公司重组预案",
+          "affected": "SH.603400 / 半导体测试",
+          "importance": "medium",
+          "status": "verified",
+          "reason": "首轮遗漏；需按并购风险与复牌价格反馈处理"
+        }
+      ],
+      "discovery_sources": [
+        "证券时报/东方财富盘前公告汇总",
+        "财联社/科创板日报早报",
+        "深交所/上交所/HKEXnews"
+      ],
+      "material_increment_count": 2,
+      "entered_body_count": 2
+    }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "event": "元道通信进入退市整理期",
+      "materiality": "risk_warning",
+      "decision": "add avoid card and delisting risk"
+    },
+    {
+      "event": "华之杰复牌并购半导体测试配套资产",
+      "materiality": "sector_rotation_key_stock",
+      "decision": "add event with merger counterevidence"
+    }
+  ],
   "published_commit": "cd74584f56a8397dd9a74489c4611a8d3cca5413",
-  "candidate_commit": "cd74584f56a8397dd9a74489c4611a8d3cca5413",
+  "candidate_commit": null,
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-09-30T08:30:13+08:00",
-    "lease_acquired_at": "2026-09-30T08:31:20+08:00",
+    "lease_acquired_at": "2026-09-30T09:27:15+08:00",
     "research_started_at": "2026-09-30T08:32:00+08:00",
     "research_completed_at": "2026-09-30T08:35:00+08:00",
     "generation_completed_at": "2026-09-30T08:35:50+08:00",
@@ -121,7 +163,8 @@
     "atomic_publish_completed_at": "2026-09-30T08:37:55+08:00",
     "production_verified_at": "2026-09-30T08:40:12+08:00",
     "terminal_state_written_at": "2026-09-30T08:40:30+08:00",
-    "total_seconds": 617
+    "total_seconds": 617,
+    "incremental_review_started_at": "2026-09-30T09:27:15+08:00"
   },
   "preflight": {
     "status": "passed",
