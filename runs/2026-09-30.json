@@ -3,9 +3,9 @@
   "run_id": "ah-review-20260930-20260930092715",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "candidate_commit",
-  "heartbeat_at": "2026-09-30T09:40:25+08:00",
-  "lease_until": "2026-09-30T09:50:25+08:00",
+  "stage": "main_update_ref",
+  "heartbeat_at": "2026-09-30T09:45:00+08:00",
+  "lease_until": "2026-09-30T09:55:00+08:00",
   "source_cutoff": "2026-09-30T08:35:00+08:00",
   "main_base_sha": "098092f8b0ba76106d16b00e8979adde91d21955",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -222,7 +222,7 @@
     }
   ],
   "published_commit": "cd74584f56a8397dd9a74489c4611a8d3cca5413",
-  "candidate_commit": null,
+  "candidate_commit": "17e33a24f78fb774d1667b39c753e04d77e51e98",
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-09-30T08:30:13+08:00",
@@ -242,7 +242,9 @@
     "regeneration_completed_at": "2026-09-30T09:37:35+08:00",
     "hard_validation_restarted_at": "2026-09-30T09:37:45+08:00",
     "hard_validation_completed_at": "2026-09-30T09:40:20+08:00",
-    "candidate_commit_started_at": "2026-09-30T09:40:25+08:00"
+    "candidate_commit_started_at": "2026-09-30T09:40:25+08:00",
+    "candidate_commit_created_at": "2026-09-30T09:44:45+08:00",
+    "main_update_ref_started_at": "2026-09-30T09:45:00+08:00"
   },
   "preflight": {
     "status": "passed",
