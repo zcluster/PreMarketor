@@ -3,9 +3,9 @@
   "run_id": "ah-review-20260930-20260930092715",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "hard_validation",
-  "heartbeat_at": "2026-09-30T09:37:45+08:00",
-  "lease_until": "2026-09-30T09:47:45+08:00",
+  "stage": "candidate_commit",
+  "heartbeat_at": "2026-09-30T09:40:25+08:00",
+  "lease_until": "2026-09-30T09:50:25+08:00",
   "source_cutoff": "2026-09-30T08:35:00+08:00",
   "main_base_sha": "098092f8b0ba76106d16b00e8979adde91d21955",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -17,7 +17,7 @@
       "note": "fetchedAt 2026-09-29 13:45 CST; current prior-session intraday snapshot, used with timestamp"
     },
     "us_rankings": {
-      "blob_sha": "45b68e889ef6015764435b955f7e5316ec4d71ae",
+      "blob_sha": "4a7c5d4b7545fb4caf45501ed152935cf2375dbe",
       "attemptedAt": "2026-09-30T09:32:42+08:00",
       "status": "ok",
       "note": "current Sep 29 US session; industry 10 rows and concept 5 rows"
@@ -144,6 +144,64 @@
       ],
       "material_increment_count": 3,
       "entered_body_count": 3
+    },
+    "us_mapping_reconciliation": [
+      {
+        "theme": "Electrical Equipment & Parts #1",
+        "panel": "+3.74%; FOIL +13.13%",
+        "mapping": "A/H power and battery equipment",
+        "decision": "no_candidate",
+        "reason": "no current A/H company-level price confirmation before publication"
+      },
+      {
+        "theme": "Semiconductor Equipment & Materials #2",
+        "panel": "+3.65%; CAMT +7.16%",
+        "mapping": "A/H semiconductor equipment and Huazhijie proposed test-interface acquisition",
+        "decision": "no_candidate",
+        "reason": "Huazhijie deal terms/approvals and post-resumption price confirmation unavailable"
+      },
+      {
+        "theme": "Social Media #1",
+        "panel": "+3.20%; META +3.24%",
+        "mapping": "HK internet platforms",
+        "decision": "no_candidate",
+        "reason": "Hang Seng Tech prior-session weakness and no matching company-specific catalyst"
+      },
+      {
+        "theme": "Hydrogen Energy #2",
+        "panel": "+2.55%; BE +10.80%",
+        "mapping": "A/H hydrogen and distributed power",
+        "decision": "no_candidate",
+        "reason": "no verified company-specific catalyst and current A/H price feedback"
+      },
+      {
+        "theme": "Optical Communication",
+        "panel": "+2.06%; AXTI +6.12%",
+        "mapping": "A/H optical equipment; RoboTechnik A/H",
+        "decision": "avoid",
+        "reason": "RoboTechnik H-share debut below offer price is direct negative price counterevidence"
+      },
+      {
+        "theme": "Data storage",
+        "panel": "+1.52%; SKHY +2.62%",
+        "mapping": "A/H memory chain",
+        "decision": "no_candidate",
+        "reason": "sector signal retained without verified A/H company catalyst"
+      },
+      {
+        "theme": "Coking Coal bottom",
+        "panel": "-4.45%; METCB -2.53%",
+        "mapping": "A/H coal/resource chain",
+        "decision": "no_candidate",
+        "reason": "negative sector risk only; no forced long recommendation"
+      }
+    ],
+    "runtime_us_quotes": {
+      "requested_at": "2026-09-30T09:33:00+08:00",
+      "status": "delayed",
+      "underlying_trade_times": "2026-09-30 05:35-07:59 CST",
+      "indexes": "SPY -0.17%, QQQ +0.18%, DIA -0.24%",
+      "reconciliation": "CAMT/AXTI/SKHY confirmed; LSE confirmed oil-services weakness; INHD diverged; FEBO potential reversal"
     }
   },
   "pending_increment": [
@@ -182,16 +240,20 @@
     "hard_validation_started_at": "2026-09-30T09:33:10+08:00",
     "rankings_refresh_detected_at": "2026-09-30T09:35:30+08:00",
     "regeneration_completed_at": "2026-09-30T09:37:35+08:00",
-    "hard_validation_restarted_at": "2026-09-30T09:37:45+08:00"
+    "hard_validation_restarted_at": "2026-09-30T09:37:45+08:00",
+    "hard_validation_completed_at": "2026-09-30T09:40:20+08:00",
+    "candidate_commit_started_at": "2026-09-30T09:40:25+08:00"
   },
   "preflight": {
-    "status": "running",
+    "status": "passed",
     "checks": [
-      "authorized marker diff",
-      "US byte preservation",
+      "three-file whitelist and authorized-marker-only diff",
+      "US_BRIEF/US_TIME/US_UPDATED byte preservation",
       "CN/EN structural isomorphism",
-      "16 news items including 3 US overnight items",
+      "16 news items including exactly 3 overnight items",
       "4 stock cards",
+      "current US panel 10 industry + 5 concept rows with exact values",
+      "runtime quote confirm/diverge/potential-reversal labels",
       "history JSON and manifest integrity",
       "source traceability and negative-signal handling"
     ]
