@@ -2,10 +2,10 @@
   "date": "2026-09-30",
   "run_id": "ah-review-20260930-20260930092715",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-09-30T09:58:30+08:00",
-  "lease_until": "2026-09-30T10:08:30+08:00",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-09-30T10:03:00+08:00",
+  "lease_until": "2026-09-30T10:03:00+08:00",
   "source_cutoff": "2026-09-30T08:35:00+08:00",
   "main_base_sha": "098092f8b0ba76106d16b00e8979adde91d21955",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -214,23 +214,7 @@
       "action": "replace visible leading time with Chinese words while retaining exact timestamp in source-line"
     }
   },
-  "pending_increment": [
-    {
-      "event": "元道通信进入退市整理期",
-      "materiality": "risk_warning",
-      "decision": "add avoid card and delisting risk"
-    },
-    {
-      "event": "华之杰复牌并购半导体测试配套资产",
-      "materiality": "sector_rotation_key_stock",
-      "decision": "add event with merger counterevidence"
-    },
-    {
-      "event": "最新美股行业/概念排行",
-      "materiality": "sector_rotation",
-      "decision": "publish 10 industry and 5 concept rows; map major themes with counterevidence"
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "a639638cb5ced78a48298af2e5823c34939b0333",
   "candidate_commit": "a639638cb5ced78a48298af2e5823c34939b0333",
   "error": null,
@@ -244,8 +228,8 @@
     "preflight_completed_at": "2026-09-30T08:37:20+08:00",
     "atomic_publish_completed_at": "2026-09-30T08:37:55+08:00",
     "production_verified_at": "2026-09-30T08:40:12+08:00",
-    "terminal_state_written_at": "2026-09-30T08:40:30+08:00",
-    "total_seconds": 617,
+    "terminal_state_written_at": "2026-09-30T10:03:00+08:00",
+    "total_seconds": 2145,
     "incremental_review_started_at": "2026-09-30T09:27:15+08:00",
     "hard_validation_started_at": "2026-09-30T09:33:10+08:00",
     "rankings_refresh_detected_at": "2026-09-30T09:35:30+08:00",
@@ -270,7 +254,8 @@
     "final_renderer_candidate_created_at": "2026-09-30T09:57:35+08:00",
     "final_update_ref_started_at": "2026-09-30T09:57:45+08:00",
     "final_update_ref_completed_at": "2026-09-30T09:58:25+08:00",
-    "final_deployment_verification_started_at": "2026-09-30T09:58:30+08:00"
+    "final_deployment_verification_started_at": "2026-09-30T09:58:30+08:00",
+    "final_production_verified_at": "2026-09-30T10:02:45+08:00"
   },
   "preflight": {
     "status": "passed",
@@ -293,14 +278,16 @@
     "homepage": "https://premarketor.com/",
     "archive": "https://premarketor.com/history/?date=2026-09-30",
     "checks": [
-      "homepage current date and A/H 2026-09-30 08:35 CST",
-      "homepage Chinese rendered with 11 major news, 3 US overnight items and 3 stock cards",
-      "homepage English rendered with matching structure and values",
-      "US sector panel Chinese/English both degraded to 0 current rows with stale-snapshot disclosure",
-      "calendar manifest entry for 2026-09-30 visible",
-      "2026-09-30 archive rendered non-empty with matching title, time and 3 stock cards"
+      "GitHub main points to a639638cb5ced78a48298af2e5823c34939b0333 and exact three-file readback matches the validated candidate",
+      "homepage A/H timestamp is 2026-09-30 09:54 CST and Chinese content renders non-empty",
+      "homepage English renders matching modules with US Overnight Trading Summary",
+      "2026-09-30 archive renders non-empty with matching title, time and renderer-safe Chinese quote timestamp",
+      "13 major news plus exactly 3 overnight items in each language",
+      "4 stock cards with delisting and broken-IPO negatives not packaged as bullish",
+      "US ranking panel has 10 industry plus 5 concept rows and no stale zero-row contradiction",
+      "US_BRIEF/US_TIME/US_UPDATED remain protected at US 2026-09-29 20:34 CST"
     ],
     "us_protected": "US 2026-09-29 20:34 CST",
-    "verified_at": "2026-09-30T08:40:12+08:00"
+    "verified_at": "2026-09-30T10:02:45+08:00"
   }
 }
