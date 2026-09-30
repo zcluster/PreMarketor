@@ -3,10 +3,10 @@
   "run_id": "ah-20260930-20260930083120",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "initialized",
-  "heartbeat_at": "2026-09-30T08:31:20+08:00",
-  "lease_until": "2026-09-30T08:41:20+08:00",
-  "source_cutoff": null,
+  "stage": "preflight",
+  "heartbeat_at": "2026-09-30T08:36:30+08:00",
+  "lease_until": "2026-09-30T08:46:30+08:00",
+  "source_cutoff": "2026-09-30T08:35:00+08:00",
   "main_base_sha": "6e4dd81d276341bd60e95489b9c8c552c0ea0d56",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
@@ -14,18 +14,97 @@
       "blob_sha": "0891547c63686bab009ff351f86ad88d97bba095",
       "fetchedAt": "2026-09-29T13:45:19+08:00",
       "status": "ok",
-      "note": "current prior-session snapshot; freshness to verify"
+      "note": "fetchedAt 2026-09-29 13:45 CST; current prior-session intraday snapshot, used with timestamp"
     },
     "us_rankings": {
       "blob_sha": "09b6f73c07fc89b9514dde64182c757f653592cc",
       "attemptedAt": "2026-09-29T10:17:17+08:00",
       "status": "ok",
-      "note": "snapshot coverage to verify"
+      "note": "attemptedAt 2026-09-29 10:17 CST; covers Sep 28 US session, stale for Sep 29; industry and concept 0 rows"
     },
-    "domestic_coverage": [],
-    "hk_events": [],
-    "us_mapping": [],
-    "candidates": []
+    "domestic_coverage": [
+      {
+        "source": "Gov.cn/Xinhua",
+        "fact": "incremental counter-cyclical measures, tech/equipment relending and property stabilization",
+        "date": "2026-09-28",
+        "status": "verified"
+      },
+      {
+        "source": "seven-agency new-battery plan",
+        "fact": "initial scale application of all-solid-state batteries by 2030",
+        "status": "verified"
+      },
+      {
+        "source": "financial marketing rules",
+        "fact": "effective 2026-09-30; duties and misleading-marketing restrictions",
+        "status": "verified"
+      }
+    ],
+    "hk_events": [
+      {
+        "ticker": "SZ.000002",
+        "source": "Reuters/market close",
+        "fact": "Vanke A CNY4.08 +9.97% on Sep 29",
+        "status": "verified"
+      },
+      {
+        "ticker": "SZ.300757/HK.03757",
+        "source": "CNINFO/Reuters",
+        "fact": "H-share offer HK$436, debut close HK$414.40; A-share CNY529 -0.25%",
+        "status": "verified"
+      },
+      {
+        "ticker": "HK.06696",
+        "source": "HKEXnews",
+        "fact": "continued suspension and delayed results",
+        "status": "verified"
+      },
+      {
+        "ticker": "SH.600428",
+        "source": "company announcement/CLS",
+        "fact": "planned long leases of six heavy-lift vessels; annual rent about CNY134m",
+        "status": "verified"
+      }
+    ],
+    "us_mapping": [
+      {
+        "source": "Reuters/delayed market data",
+        "asOf": "2026-09-30T07:59:00+08:00",
+        "fact": "SPY -0.17%, QQQ +0.18%, DIA -0.24%, META +3.26%, FICO -26.66%, KMX +4.74%, NVDA -0.76%; US10Y 5.293%"
+      },
+      {
+        "source": "data/us-rankings-latest.json",
+        "attemptedAt": "2026-09-29T10:17:17+08:00",
+        "status": "stale",
+        "action": "0 current rows"
+      }
+    ],
+    "candidates": [
+      {
+        "ticker": "SZ.000002",
+        "name": "万科A",
+        "verification_status": "verified",
+        "decision": "conditional_watch",
+        "quote": "2026-09-29 close CNY4.08 +9.97%",
+        "invalidation": "gap-up fade/relative weakness or new debt/sales adverse evidence"
+      },
+      {
+        "ticker": "SZ.300757/HK.03757",
+        "name": "罗博特科",
+        "verification_status": "verified",
+        "decision": "avoid",
+        "quote": "A CNY529 -0.25%; H HK$414.40, 4.95% below offer",
+        "counterevidence": "broken H-share IPO and no A/H synchronized strength"
+      },
+      {
+        "ticker": "HK.06696",
+        "name": "多想云",
+        "verification_status": "verified",
+        "decision": "avoid",
+        "quote": "suspended; no tradable current quote",
+        "counterevidence": "delayed results and unresolved resumption conditions"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -33,6 +112,23 @@
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-09-30T08:30:13+08:00",
-    "lease_acquired_at": "2026-09-30T08:31:20+08:00"
+    "lease_acquired_at": "2026-09-30T08:31:20+08:00",
+    "research_started_at": "2026-09-30T08:32:00+08:00",
+    "research_completed_at": "2026-09-30T08:35:00+08:00",
+    "generation_completed_at": "2026-09-30T08:35:50+08:00",
+    "preflight_started_at": "2026-09-30T08:35:55+08:00"
+  },
+  "preflight": {
+    "status": "passed",
+    "checks": [
+      "allowed marker whitelist",
+      "US marker byte preservation",
+      "CN/EN structural isomorphism",
+      "11 major news",
+      "3 US overnight items",
+      "3 stock cards",
+      "stale-ranking 0-row disclosure",
+      "history JSON and manifest integrity"
+    ]
   }
 }
