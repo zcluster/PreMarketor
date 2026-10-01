@@ -3,9 +3,9 @@
   "run_id": "ah-20261001-20261001082917",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "heartbeat_at": "2026-10-01T08:39:49+08:00",
-  "lease_until": "2026-10-01T08:49:49+08:00",
+  "stage": "preflight",
+  "heartbeat_at": "2026-10-01T08:44:21+08:00",
+  "lease_until": "2026-10-01T08:54:21+08:00",
   "source_cutoff": "2026-10-01T08:37:00+08:00",
   "main_base_sha": "1724c3bf3ff1dc6dd579a0b4cf63ec67eebc53b2",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -133,11 +133,27 @@
     "rules_and_files_started_at": "2026-10-01T08:27:31+08:00",
     "lease_acquired_at": "2026-10-01T08:29:17+08:00",
     "evidence_collection_at": "2026-10-01T08:34:02+08:00",
-    "generation_at": "2026-10-01T08:39:49+08:00"
+    "generation_at": "2026-10-01T08:39:49+08:00",
+    "preflight_at": "2026-10-01T08:44:21+08:00"
   },
   "metrics": {
     "requests": 48,
     "retries": 0,
     "cache_hits": 0
+  },
+  "preflight": {
+    "main_head": "1724c3bf3ff1dc6dd579a0b4cf63ec67eebc53b2",
+    "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
+    "outside_markers_byte_identical": true,
+    "protected_us_markers": true,
+    "bilingual_structure": true,
+    "major_news": 11,
+    "overnight_items": 3,
+    "stock_cards": 3,
+    "panel_rows": {
+      "zh": 0,
+      "en": 0
+    },
+    "manifest_history_preserved": true
   }
 }
