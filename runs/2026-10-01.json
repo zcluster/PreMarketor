@@ -2,10 +2,10 @@
   "date": "2026-10-01",
   "run_id": "ah-review-20261001-20261001093430",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-10-01T09:46:00+08:00",
-  "lease_until": "2026-10-01T09:56:00+08:00",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-10-01T09:50:12+08:00",
+  "lease_until": "2026-10-01T09:50:12+08:00",
   "source_cutoff": "2026-10-01T08:37:00+08:00",
   "main_base_sha": "04971751fda760d6c2f5126ac20069748adf3b3e",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -211,7 +211,7 @@
     "final_correction_preflight_at": "2026-10-01T08:49:45+08:00",
     "final_main_ref_updated_at": "2026-10-01T08:52:31+08:00",
     "deployment_reverification_at": "2026-10-01T08:52:31+08:00",
-    "production_verified_at": "2026-10-01T08:55:21+08:00",
+    "production_verified_at": "2026-10-01T09:50:12+08:00",
     "incremental_review_started_at": "2026-10-01T09:34:30+08:00",
     "incremental_discovery_completed_at": "2026-10-01T09:38:00+08:00",
     "generation_started_at": "2026-10-01T09:38:10+08:00",
@@ -222,13 +222,14 @@
     "candidate_commit_created_at": "2026-10-01T09:44:20+08:00",
     "main_update_ref_started_at": "2026-10-01T09:44:30+08:00",
     "main_update_ref_completed_at": "2026-10-01T09:45:50+08:00",
-    "deployment_verification_started_at": "2026-10-01T09:46:00+08:00"
+    "deployment_verification_started_at": "2026-10-01T09:46:00+08:00",
+    "terminalized_at": "2026-10-01T09:50:12+08:00"
   },
   "metrics": {
-    "requests": 76,
+    "requests": 81,
     "retries": 0,
     "cache_hits": 10,
-    "wall_clock_seconds": 1670
+    "wall_clock_seconds": 1850
   },
   "preflight": {
     "status": "passed",
@@ -259,11 +260,11 @@
     "outside_markers_byte_identical": true,
     "final_commit": "1beaff8419f4026f88235a7cf57c840b64ce3b83"
   },
-  "finished_at": "2026-10-01T08:55:21+08:00",
+  "finished_at": "2026-10-01T09:50:12+08:00",
   "production_verification": {
     "github_remote_readback": {
       "ok": true,
-      "main_head": "1beaff8419f4026f88235a7cf57c840b64ce3b83",
+      "main_head": "3b01706ff7fe7ae7edc797ffb6b28d51fd09324a",
       "files": [
         "index.html",
         "history/data/2026-10-01.json",
@@ -274,35 +275,42 @@
     },
     "homepage": {
       "ok": true,
-      "url": "https://premarketor.com/?v=1beaff8419f4026f88235a7cf57c840b64ce3b83",
-      "ah_time": "2026-10-01 08:50 CST",
+      "url": "https://premarketor.com/?v=3b01706f",
+      "ah_time": "2026-10-01 09:40 CST",
+      "title": "双市国庆休市，美股教育医疗与EDA、激光雷达走强；保险与电力链承压",
       "chinese_rendered": true,
       "english_rendered": true,
+      "major_news": 11,
+      "overnight_items": 3,
       "stock_cards": 3,
       "panel_rows": {
-        "zh": 0,
-        "en": 0
+        "zh": 15,
+        "en": 15
       },
       "empty_state": false
     },
     "archive": {
       "ok": true,
-      "url": "https://premarketor.com/history/?date=2026-10-01&v=1beaff8419f4026f88235a7cf57c840b64ce3b83",
-      "title": "双市国庆休市，PMI与芯片政策托底；美股科技分化、油债风险约束节后映射",
-      "time": "2026-10-01 08:50 CST",
+      "url": "https://premarketor.com/history/?date=2026-10-01",
+      "title": "双市国庆休市，美股教育医疗与EDA、激光雷达走强；保险与电力链承压",
+      "time": "2026-10-01 09:40 CST",
       "chinese_rendered": true,
+      "english_content_present_in_json": true,
+      "major_news": 11,
+      "overnight_items": 3,
+      "stock_cards": 3,
       "empty_state": false
     },
     "manifest_and_json": {
       "ok": true,
-      "evidence": "homepage calendar loaded 2026-10-01 from manifest and archive page rendered the 2026-10-01 JSON; direct raw-JSON navigation was blocked by browser client policy"
+      "evidence": "GitHub exact remote readback passed; homepage calendar linked 2026-10-01 and archive rendered its full non-empty JSON content."
     },
     "totals": {
       "major_news": 11,
       "overnight_items": 3,
       "stock_cards": 3,
-      "industry_rows": 0,
-      "concept_rows": 0
+      "industry_rows": 10,
+      "concept_rows": 5
     }
   }
 }
