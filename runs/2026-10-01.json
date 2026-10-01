@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-01",
+  "run_id": "ah-20261001-20261001082917",
+  "owner": "发布 MarketAhead A/H 早报",
+  "status": "running",
+  "stage": "initialized",
+  "heartbeat_at": "2026-10-01T08:29:17+08:00",
+  "lease_until": "2026-10-01T08:39:17+08:00",
+  "source_cutoff": null,
+  "main_base_sha": "1724c3bf3ff1dc6dd579a0b4cf63ec67eebc53b2",
+  "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
+  "evidence": {
+    "exchange_session": {
+      "date": "2026-10-01",
+      "status": "pending"
+    },
+    "akshare": {
+      "blob_sha": "878705daa83cb0f89c56944fdf67c63e9dc2715f",
+      "fetchedAt": "2026-09-30T13:33:57+08:00",
+      "status": "ok",
+      "marketDate": "2026-09-30",
+      "note": "snapshot parsed; holiday/session labeling pending"
+    },
+    "us_rankings": {
+      "blob_sha": "4a7c5d4b7545fb4caf45501ed152935cf2375dbe",
+      "attemptedAt": "2026-09-30T09:32:42+08:00",
+      "status": "ok",
+      "note": "industry 10 current rows and concept 5 current rows; session coverage pending"
+    },
+    "domestic_coverage": [],
+    "hk_events": [],
+    "us_mapping": [],
+    "major_theme_reconciliation": [],
+    "candidates": []
+  },
+  "pending_increment": [],
+  "published_commit": null,
+  "candidate_commit": null,
+  "error": null,
+  "stage_timings": {
+    "rules_and_files_started_at": "2026-10-01T08:27:31+08:00",
+    "lease_acquired_at": "2026-10-01T08:29:17+08:00"
+  },
+  "metrics": {
+    "requests": 9,
+    "retries": 0,
+    "cache_hits": 0
+  }
+}
