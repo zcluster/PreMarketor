@@ -3,9 +3,9 @@
   "run_id": "ah-20261001-20261001082917",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-10-01T08:47:25+08:00",
-  "lease_until": "2026-10-01T08:57:25+08:00",
+  "stage": "final_correction_preflight",
+  "heartbeat_at": "2026-10-01T08:49:45+08:00",
+  "lease_until": "2026-10-01T08:59:45+08:00",
   "source_cutoff": "2026-10-01T08:37:00+08:00",
   "main_base_sha": "1724c3bf3ff1dc6dd579a0b4cf63ec67eebc53b2",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -137,7 +137,8 @@
     "preflight_at": "2026-10-01T08:44:21+08:00",
     "candidate_commit_at": "2026-10-01T08:46:19+08:00",
     "main_ref_updated_at": "2026-10-01T08:47:25+08:00",
-    "deployment_verification_at": "2026-10-01T08:47:25+08:00"
+    "deployment_verification_at": "2026-10-01T08:47:25+08:00",
+    "final_correction_preflight_at": "2026-10-01T08:49:45+08:00"
   },
   "metrics": {
     "requests": 48,
@@ -167,5 +168,10 @@
     ],
     "commit_message": "Update A/H market brief for 2026-10-01",
     "force": false
+  },
+  "final_correction": {
+    "reason": "remove duplicated unit annotations and make USO runtime-proxy wording explicit",
+    "protected_us_markers": true,
+    "outside_markers_byte_identical": true
   }
 }
