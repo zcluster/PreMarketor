@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261001-20261001093430",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_discovery",
-  "heartbeat_at": "2026-10-01T09:34:30+08:00",
-  "lease_until": "2026-10-01T09:44:30+08:00",
+  "stage": "generation",
+  "heartbeat_at": "2026-10-01T09:38:10+08:00",
+  "lease_until": "2026-10-01T09:48:10+08:00",
   "source_cutoff": "2026-10-01T08:37:00+08:00",
   "main_base_sha": "04971751fda760d6c2f5126ac20069748adf3b3e",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -29,10 +29,10 @@
       "note": "holiday baseline only; not current Oct 1 evidence"
     },
     "us_rankings": {
-      "blob_sha": "4a7c5d4b7545fb4caf45501ed152935cf2375dbe",
-      "attemptedAt": "2026-09-30T09:32:42+08:00",
-      "status": "stale_previous_us_session",
-      "note": "covers Sep 29 US session; zero current rows for Oct 1 brief; old rows not reused"
+      "blob_sha": "derived-from-main-04971751fda760d6c2f5126ac20069748adf3b3e",
+      "attemptedAt": "2026-10-01T09:32:52+08:00",
+      "status": "ok",
+      "note": "industry 10 rows and concept 5 rows; replaces first-run 0-row degradation"
     },
     "domestic_coverage": [
       {
@@ -127,10 +127,73 @@
     "incremental_review": {
       "first_run_cutoff": "2026-10-01T08:37:00+08:00",
       "review_started_at": "2026-10-01T09:34:30+08:00",
-      "discovered": [],
-      "material_increment_count": 0,
-      "entered_body_count": 0
-    }
+      "discovered": [
+        {
+          "event": "2026-10-01 09:32 CST US rankings snapshot refresh",
+          "first_available": "2026-10-01T09:32:52+08:00",
+          "source": "data/us-rankings-latest.json",
+          "affected": "A/H holiday/next-session sector mapping and US_SECTOR_PANEL",
+          "importance": "high",
+          "status": "verified",
+          "reason": "first-run page degraded both groups to 0 rows; current snapshot provides 10 industry and 5 concept rows and changes sector rotation"
+        },
+        {
+          "event": "domestic policy and A/H announcement recheck after 08:37 CST",
+          "first_available": "2026-10-01T09:34:30+08:00",
+          "source": "official ministry/exchange pages and domestic discovery sources",
+          "affected": "no new material item",
+          "importance": "low",
+          "status": "checked",
+          "reason": "no verified post-cutoff item found that changes the first-run macro/company conclusions"
+        }
+      ],
+      "material_increment_count": 1,
+      "entered_body_count": 1
+    },
+    "runtime_us_quotes": {
+      "requested_at": "2026-10-01T09:36:00+08:00",
+      "status": "delayed",
+      "underlying_trade_times": "2026-10-01 07:15-08:15 CST",
+      "indexes": "SPY -0.20%, QQQ +0.26%, DIA -0.85%",
+      "reconciliation": "All 15 representative tickers had usable delayed quotes; broad directions confirm the refreshed panel, while positive representative stocks inside negative groups are explicit internal divergences."
+    },
+    "us_mapping_reconciliation": [
+      {
+        "theme": "Education & Training Services #1",
+        "panel": "+1.98%; GNS +9.20%",
+        "mapping": "HK education",
+        "decision": "no_candidate",
+        "reason": "GNS move is company-specific and A/H markets are closed; no local post-catalyst price confirmation"
+      },
+      {
+        "theme": "Health Information Services #2",
+        "panel": "+1.71%; ONMD +11.05%",
+        "mapping": "HK internet healthcare",
+        "decision": "no_candidate",
+        "reason": "ONMD move lacks a verified shared A/H catalyst and local markets are closed"
+      },
+      {
+        "theme": "NVIDIA Portfolio concept #1",
+        "panel": "+2.69%; SNPS +4.78%",
+        "mapping": "A/H EDA and AI design tools",
+        "decision": "no_candidate",
+        "reason": "EDA mapping retained as sector watch, but no new local company catalyst or price confirmation"
+      },
+      {
+        "theme": "Lidar Technology concept #2",
+        "panel": "+1.22%; HSAI +2.77%",
+        "mapping": "HK lidar/autonomous-driving chain",
+        "decision": "no_candidate",
+        "reason": "HSAI confirms the theme but A/H holiday prevents local price validation"
+      },
+      {
+        "theme": "Insurance - Specialty bottom",
+        "panel": "-5.58%; OSG +0.98%",
+        "mapping": "A/H insurers",
+        "decision": "no_candidate",
+        "reason": "negative US sector signal and positive leader are internally divergent; mapping is indirect and unsuitable for a long card"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": "1beaff8419f4026f88235a7cf57c840b64ce3b83",
@@ -149,7 +212,9 @@
     "final_main_ref_updated_at": "2026-10-01T08:52:31+08:00",
     "deployment_reverification_at": "2026-10-01T08:52:31+08:00",
     "production_verified_at": "2026-10-01T08:55:21+08:00",
-    "incremental_review_started_at": "2026-10-01T09:34:30+08:00"
+    "incremental_review_started_at": "2026-10-01T09:34:30+08:00",
+    "incremental_discovery_completed_at": "2026-10-01T09:38:00+08:00",
+    "generation_started_at": "2026-10-01T09:38:10+08:00"
   },
   "metrics": {
     "requests": 76,
