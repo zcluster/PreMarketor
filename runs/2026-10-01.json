@@ -3,35 +3,127 @@
   "run_id": "ah-20261001-20261001082917",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "initialized",
-  "heartbeat_at": "2026-10-01T08:29:17+08:00",
-  "lease_until": "2026-10-01T08:39:17+08:00",
+  "stage": "evidence_collection",
+  "heartbeat_at": "2026-10-01T08:34:02+08:00",
+  "lease_until": "2026-10-01T08:44:02+08:00",
   "source_cutoff": null,
   "main_base_sha": "1724c3bf3ff1dc6dd579a0b4cf63ec67eebc53b2",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
     "exchange_session": {
       "date": "2026-10-01",
-      "status": "pending"
+      "status": "verified_holiday",
+      "a_share": "closed Oct 1-7; reopen Oct 8",
+      "hk": "closed Oct 1",
+      "sources": [
+        "https://www.sse.com.cn/disclosure/announcement/general/c/c_20250925_10786439.shtml",
+        "https://www.szse.cn/aboutus/trends/news/t20250925_610446.html",
+        "https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Overview/Trading-Calendar-and-Trading-Hours/2026-Calendar-Calendar-Year.pdf"
+      ]
     },
     "akshare": {
       "blob_sha": "878705daa83cb0f89c56944fdf67c63e9dc2715f",
       "fetchedAt": "2026-09-30T13:33:57+08:00",
-      "status": "ok",
+      "status": "stale_previous_session_partial",
       "marketDate": "2026-09-30",
-      "note": "snapshot parsed; holiday/session labeling pending"
+      "note": "holiday baseline only; not current Oct 1 evidence"
     },
     "us_rankings": {
       "blob_sha": "4a7c5d4b7545fb4caf45501ed152935cf2375dbe",
       "attemptedAt": "2026-09-30T09:32:42+08:00",
-      "status": "ok",
-      "note": "industry 10 current rows and concept 5 current rows; session coverage pending"
+      "status": "stale_previous_us_session",
+      "note": "covers Sep 29 US session; zero current rows for Oct 1 brief; old rows not reused"
     },
-    "domestic_coverage": [],
-    "hk_events": [],
-    "us_mapping": [],
-    "major_theme_reconciliation": [],
-    "candidates": []
+    "domestic_coverage": [
+      {
+        "category": "macro_policy",
+        "item": "September PMI release",
+        "status": "verified_primary",
+        "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260930_1961714.html"
+      },
+      {
+        "category": "tech_policy",
+        "item": "2026 IC enterprise list / VAT additional credit application",
+        "status": "verified_primary",
+        "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_b81ce633501340c1a9ee5c074d3a16aa.html"
+      },
+      {
+        "category": "tech_policy",
+        "item": "29 standards including connected-vehicle supply-chain cybersecurity",
+        "status": "verified_primary",
+        "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2026/art_4f03a834342643009c5f31a7a3d29ff8.html"
+      }
+    ],
+    "hk_events": [
+      {
+        "ticker": "HK.00286",
+        "issuer": "Aidigong",
+        "status": "verified_primary_negative",
+        "event": "delisting decision; continued suspension; no review",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093001832.pdf"
+      }
+    ],
+    "company_events": [
+      {
+        "ticker": "SZ.300364",
+        "issuer": "中文在线",
+        "status": "verified_primary_mixed",
+        "event": "placement up to RMB2.833bn; dilution and 2025 loss risks",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225259871.PDF"
+      },
+      {
+        "ticker": "SZ.300773",
+        "issuer": "拉卡拉",
+        "status": "verified_secondary_with_exchange_discovery",
+        "event": "plans acquisition; Oct 8 suspension; terms unknown"
+      },
+      {
+        "ticker": "SZ.300323",
+        "issuer": "华灿光电",
+        "status": "verified_exchange_process_only",
+        "event": "placement application accepted; not approval"
+      }
+    ],
+    "us_mapping": [
+      {
+        "theme": "mega-cap technology",
+        "status": "fresh_proxy",
+        "as_of": "2026-10-01T08:15:00+08:00",
+        "evidence": "QQQ +0.26%; MSFT/AAPL/NVDA positive"
+      },
+      {
+        "theme": "stale Sep 29 ranking themes",
+        "status": "fresh_proxy_reversal_risk",
+        "as_of": "2026-10-01T08:15:00+08:00",
+        "evidence": "FOIL -15.16%, BE -4.88%, META -1.82%, AXTI -0.97%, SKHY -1.44%; CAMT +1.61%"
+      }
+    ],
+    "major_theme_reconciliation": [
+      {
+        "theme": "US rankings",
+        "result": "no formal confirm/divergence/reversal classification because current-session panel unavailable; fresh reps show broad reversal risk"
+      }
+    ],
+    "candidates": [
+      {
+        "ticker": "SZ.300364",
+        "status": "conditional_watch",
+        "price": "CNY23.37 Sep 30 close, pre-announcement",
+        "price_status": "verified_secondary; no post-event trading due holiday"
+      },
+      {
+        "ticker": "SZ.300773",
+        "status": "conditional_watch",
+        "price": "CNY14.38 Sep 30 close, pre-announcement",
+        "price_status": "verified_secondary; Oct 8 suspension announced"
+      },
+      {
+        "ticker": "HK.00286",
+        "status": "avoid",
+        "price": null,
+        "price_status": "continued suspension; no tradable current quote"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -39,10 +131,11 @@
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-10-01T08:27:31+08:00",
-    "lease_acquired_at": "2026-10-01T08:29:17+08:00"
+    "lease_acquired_at": "2026-10-01T08:29:17+08:00",
+    "evidence_collection_at": "2026-10-01T08:34:02+08:00"
   },
   "metrics": {
-    "requests": 9,
+    "requests": 41,
     "retries": 0,
     "cache_hits": 0
   }
