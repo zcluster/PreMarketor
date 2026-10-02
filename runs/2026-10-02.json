@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261002-20261002092424",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_discovery",
-  "heartbeat_at": "2026-10-02T09:24:24+08:00",
-  "lease_until": "2026-10-02T09:34:24+08:00",
+  "stage": "incremental_evidence_complete",
+  "heartbeat_at": "2026-10-02T09:32:02.510+08:00",
+  "lease_until": "2026-10-02T09:42:02.510+08:00",
   "source_cutoff": "2026-10-02T08:36:00+08:00",
   "main_base_sha": "a75188a908eda5a9e250d27f86482ef74021775b",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -196,7 +196,12 @@
       }
     ]
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "event": "Hong Kong cash open sharply lower",
+      "effect": "revise market judgment, sector rotation, risk and candidate confirmation language"
+    }
+  ],
   "published_commit": "a75188a908eda5a9e250d27f86482ef74021775b",
   "candidate_commit": null,
   "error": null,
@@ -217,7 +222,8 @@
     "final_deployment_verification_at": "2026-10-02T08:50:30+08:00",
     "production_verified_at": "2026-10-02T08:53:30+08:00",
     "finished_at": "2026-10-02T08:53:30+08:00",
-    "incremental_review_started_at": "2026-10-02T09:24:24+08:00"
+    "incremental_review_started_at": "2026-10-02T09:24:24+08:00",
+    "incremental_evidence_completed_at": "2026-10-02T09:32:02.510+08:00"
   },
   "metrics": {
     "requests": 43,
@@ -291,8 +297,41 @@
   "incremental_review": {
     "first_run_cutoff": "2026-10-02T08:36:00+08:00",
     "review_started_at": "2026-10-02T09:24:24+08:00",
-    "discovered": [],
-    "material_increment_count": 0,
-    "entered_body_count": 0
+    "discovered": [
+      {
+        "event": "Hong Kong cash open",
+        "first_available_at": "2026-10-02T09:20:00+08:00",
+        "facts": "Hang Seng -2.09%; Hang Seng Tech -1.81%; Alibaba about -2.4%, Tencent -2.09%, Xiaomi -2.46% around the open",
+        "source": "Sina Hong Kong market live page; delayed constituent quote pages",
+        "materiality": "high",
+        "decision": "enter_body",
+        "reason": "actual cash-session weakness invalidates the pre-open differentiated/mild-support baseline"
+      },
+      {
+        "event": "Runtime US futures refresh",
+        "checked_at": "2026-10-02T09:32:02.510+08:00",
+        "facts": "Dow futures -0.01%; S&P futures +0.09%; Nasdaq futures +0.26%; crude oil +0.06%",
+        "source": "Google Finance futures page via cloud browser",
+        "materiality": "low",
+        "decision": "checked_no_body_change",
+        "reason": "broadly consistent with the mild pre-open futures baseline"
+      },
+      {
+        "event": "Post-cutoff domestic policy and exchange announcement sweep",
+        "window_start": "2026-10-02T08:36:00+08:00",
+        "checked_at": "2026-10-02T09:32:02.510+08:00",
+        "materiality": "none_found",
+        "decision": "no_addition",
+        "reason": "no newly verified item that changes index, rotation, risk or candidate judgments; routine Baidu buyback item was not material"
+      },
+      {
+        "event": "US ranking snapshot recheck",
+        "blob_sha": "6624ac6f4878d33d1f4ac5599006117f41cc6e5d",
+        "status": "unchanged_stale_previous_session",
+        "decision": "keep_degraded_zero_rows"
+      }
+    ],
+    "material_increment_count": 1,
+    "entered_body_count": 1
   }
 }
