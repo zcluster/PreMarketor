@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261002-20261002092424",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_evidence_complete",
-  "heartbeat_at": "2026-10-02T09:32:02.510+08:00",
-  "lease_until": "2026-10-02T09:42:02.510+08:00",
+  "stage": "hard_validation_passed",
+  "heartbeat_at": "2026-10-02T09:37:37.546+08:00",
+  "lease_until": "2026-10-02T09:47:37.546+08:00",
   "source_cutoff": "2026-10-02T08:36:00+08:00",
   "main_base_sha": "a75188a908eda5a9e250d27f86482ef74021775b",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -223,7 +223,8 @@
     "production_verified_at": "2026-10-02T08:53:30+08:00",
     "finished_at": "2026-10-02T08:53:30+08:00",
     "incremental_review_started_at": "2026-10-02T09:24:24+08:00",
-    "incremental_evidence_completed_at": "2026-10-02T09:32:02.510+08:00"
+    "incremental_evidence_completed_at": "2026-10-02T09:32:02.510+08:00",
+    "incremental_hard_validation_passed_at": "2026-10-02T09:37:37.546+08:00"
   },
   "metrics": {
     "requests": 43,
@@ -234,14 +235,14 @@
   "preflight": {
     "status": "passed",
     "checks": [
-      "three-file whitelist and five authorized markers only",
-      "US_BRIEF/US_TIME/US_UPDATED byte preservation",
-      "CN/EN structural isomorphism and numeric alignment",
-      "10 major news and exactly 3 overnight items per language",
-      "4 stock cards with confirmation/invalidation",
-      "stale US ranking snapshot degraded to 0+0 without old rows",
-      "history and manifest integrity",
-      "run-state validator passed"
+      "three-file scope candidate",
+      "index only A/H_UPDATED/A_H_TIME/A_H_BRIEF changed",
+      "all US markers byte-identical",
+      "CN/EN structural counts: 10 major news + 3 overnight, 4 stocks, 6 assets, 4 rotation, 4 logic, 3 risks",
+      "salient numeric alignment",
+      "negative-event and conditional-candidate safeguards",
+      "stale ranking 0-row degradation",
+      "history/manifest integrity"
     ]
   },
   "publish_plan": {
