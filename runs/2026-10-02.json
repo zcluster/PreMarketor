@@ -2,10 +2,10 @@
   "date": "2026-10-02",
   "run_id": "ah-20261002-20261002083322",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-10-02T08:50:30+08:00",
-  "lease_until": "2026-10-02T09:00:30+08:00",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-10-02T08:53:30+08:00",
+  "lease_until": "2026-10-02T08:53:30+08:00",
   "source_cutoff": "2026-10-02T08:36:00+08:00",
   "main_base_sha": "2b565869eef42226bb7558e4e999d138226cddfc",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -214,12 +214,15 @@
     "deployment_verification_at": "2026-10-02T08:45:55+08:00",
     "final_correction_at": "2026-10-02T08:48:30+08:00",
     "final_main_update_ref_at": "2026-10-02T08:50:30+08:00",
-    "final_deployment_verification_at": "2026-10-02T08:50:30+08:00"
+    "final_deployment_verification_at": "2026-10-02T08:50:30+08:00",
+    "production_verified_at": "2026-10-02T08:53:30+08:00",
+    "finished_at": "2026-10-02T08:53:30+08:00"
   },
   "metrics": {
-    "requests": 35,
+    "requests": 43,
     "retries": 0,
-    "cache_hits": 8
+    "cache_hits": 8,
+    "wall_clock_seconds": 1341
   },
   "preflight": {
     "status": "passed",
@@ -248,6 +251,41 @@
     "protected_us_markers": true,
     "outside_markers_byte_identical": true,
     "final_commit": "a75188a908eda5a9e250d27f86482ef74021775b",
-    "status": "main_updated"
+    "status": "published_and_verified"
+  },
+  "finished_at": "2026-10-02T08:53:30+08:00",
+  "production_verification": {
+    "status": "passed",
+    "github_remote_readback": {
+      "commit": "a75188a908eda5a9e250d27f86482ef74021775b",
+      "exact_content_match": {
+        "index.html": true,
+        "history/data/2026-10-02.json": true,
+        "history/manifest.json": true
+      }
+    },
+    "production": {
+      "homepage_url": "https://premarketor.com/?v=a75188a9",
+      "archive_url": "https://premarketor.com/history/?date=2026-10-02",
+      "homepage_loaded": true,
+      "archive_loaded": true,
+      "archive_empty_state": false,
+      "manifest_calendar_has_today": true,
+      "displayed_time": "2026-10-02 08:48 CST",
+      "bilingual_homepage_rendered": true,
+      "bilingual_archive_payload_present": true,
+      "stock_tickers_verified": [
+        "HK.01211 / SZ.002594",
+        "HK.03668",
+        "HK.02051",
+        "HK.02629"
+      ],
+      "us_ranking_groups": {
+        "industry_rows": 0,
+        "concept_rows": 0,
+        "degradation_disclosed": true
+      },
+      "english_source_time_duplicate": false
+    }
   }
 }
