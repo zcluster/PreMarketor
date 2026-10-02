@@ -3,10 +3,10 @@
   "run_id": "ah-20261002-20261002083322",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rules_and_files_read",
-  "heartbeat_at": "2026-10-02T08:33:22+08:00",
-  "lease_until": "2026-10-02T08:43:22+08:00",
-  "source_cutoff": null,
+  "stage": "evidence_collection",
+  "heartbeat_at": "2026-10-02T08:36:21+08:00",
+  "lease_until": "2026-10-02T08:46:21+08:00",
+  "source_cutoff": "2026-10-02T08:36:00+08:00",
   "main_base_sha": "2b565869eef42226bb7558e4e999d138226cddfc",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
@@ -21,7 +21,51 @@
       "today_history": "absent",
       "akshare_blob": "d9baa691d6ee72b8eb0a78ac111cc15bd1be41c0",
       "us_rankings_blob": "6624ac6f4878d33d1f4ac5599006117f41cc6e5d"
-    }
+    },
+    "exchange_session": {
+      "date": "2026-10-02",
+      "a_share": "closed Oct 1-7; reopen Oct 8",
+      "hk": "reopens as usual Oct 2",
+      "stock_connect": "closed during Mainland holiday; no Southbound/Northbound",
+      "sources": [
+        "https://www.hkex.com.hk/-/media/HKEX-Market/Services/Circulars-and-Notices/Participant-and-Members-Circulars/SEHK/2025/ce_SEHK_CT_075_2025.pdf",
+        "https://www.hkex.com.hk/Mutual-Market/Stock-Connect/Reference-Materials/Trading-Hour%2C-Trading-and-Settlement-Calendar?sc_lang=en"
+      ]
+    },
+    "akshare": {
+      "blob_sha": "d9baa691d6ee72b8eb0a78ac111cc15bd1be41c0",
+      "fetchedAt": "2026-10-01T13:56:03+08:00",
+      "marketDate": "2026-09-30",
+      "status": "stale_previous_session",
+      "note": "A closed; HK Sep30 baseline only, not Oct2 intraday"
+    },
+    "us_rankings": {
+      "blob_sha": "6624ac6f4878d33d1f4ac5599006117f41cc6e5d",
+      "attemptedAt": "2026-10-01T09:32:52+08:00",
+      "status": "stale_previous_us_session",
+      "display_rows": 0,
+      "note": "does not cover Oct1 US cash session; old rows not reused"
+    },
+    "runtime_us": {
+      "fetchedAt": "2026-10-02T08:34:00+08:00",
+      "source": "MarketWatch futures page via web retrieval",
+      "delayed": true,
+      "quoteTime": "source did not disclose underlying timestamp",
+      "NQ": "+0.22%",
+      "ES": "+0.10%",
+      "YM": "+0.07%",
+      "WTI": "+0.09%"
+    },
+    "sources": [
+      "https://www.reuters.com/business/dow-futures-hit-three-month-low-yields-surge-micron-earnings-offer-support-2026-10-01/",
+      "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-01/",
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1001/2026100100048_c.pdf",
+      "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1001/2026100100032_c.pdf",
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1001/2026100100086_c.pdf",
+      "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1001/2026100100036_c.pdf",
+      "https://www.shanghai.gov.cn/zhengce/detail?businessId=00831394831&siteId=0083",
+      "https://www.fujian.gov.cn/xwdt/fjyw/202610/t20261001_7221056.htm"
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -29,10 +73,11 @@
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-10-02T08:31:09+08:00",
-    "lease_acquired_at": "2026-10-02T08:33:22+08:00"
+    "lease_acquired_at": "2026-10-02T08:33:22+08:00",
+    "evidence_collection_at": "2026-10-02T08:36:21+08:00"
   },
   "metrics": {
-    "requests": 11,
+    "requests": 25,
     "retries": 0,
     "cache_hits": 0
   }
