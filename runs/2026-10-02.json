@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-02",
+  "run_id": "ah-20261002-20261002083322",
+  "owner": "发布 MarketAhead A/H 早报",
+  "status": "running",
+  "stage": "rules_and_files_read",
+  "heartbeat_at": "2026-10-02T08:33:22+08:00",
+  "lease_until": "2026-10-02T08:43:22+08:00",
+  "source_cutoff": null,
+  "main_base_sha": "2b565869eef42226bb7558e4e999d138226cddfc",
+  "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
+  "evidence": {
+    "rules": {
+      "sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
+      "length": 29416,
+      "status": "fully_read"
+    },
+    "baseline": {
+      "index_blob": "8889bfb2b2faa85548c455dbcdcd009be56c57c8",
+      "manifest_blob": "970ffd8e8aec08666f32f8f857f187f130adb1ef",
+      "today_history": "absent",
+      "akshare_blob": "d9baa691d6ee72b8eb0a78ac111cc15bd1be41c0",
+      "us_rankings_blob": "6624ac6f4878d33d1f4ac5599006117f41cc6e5d"
+    }
+  },
+  "pending_increment": [],
+  "published_commit": null,
+  "candidate_commit": null,
+  "error": null,
+  "stage_timings": {
+    "rules_and_files_started_at": "2026-10-02T08:31:09+08:00",
+    "lease_acquired_at": "2026-10-02T08:33:22+08:00"
+  },
+  "metrics": {
+    "requests": 11,
+    "retries": 0,
+    "cache_hits": 0
+  }
+}
