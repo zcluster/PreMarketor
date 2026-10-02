@@ -3,9 +3,9 @@
   "run_id": "ah-20261002-20261002083322",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "evidence_collection",
-  "heartbeat_at": "2026-10-02T08:36:21+08:00",
-  "lease_until": "2026-10-02T08:46:21+08:00",
+  "stage": "hard_validation",
+  "heartbeat_at": "2026-10-02T08:41:40+08:00",
+  "lease_until": "2026-10-02T08:51:40+08:00",
   "source_cutoff": "2026-10-02T08:36:00+08:00",
   "main_base_sha": "2b565869eef42226bb7558e4e999d138226cddfc",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -65,6 +65,135 @@
       "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1001/2026100100036_c.pdf",
       "https://www.shanghai.gov.cn/zhengce/detail?businessId=00831394831&siteId=0083",
       "https://www.fujian.gov.cn/xwdt/fjyw/202610/t20261001_7221056.htm"
+    ],
+    "domestic_coverage_reconciliation": [
+      {
+        "source": "Eastmoney focus/premarket",
+        "status": "checked",
+        "items": [
+          "Huawei-Seres five-year cooperation",
+          "Micron results",
+          "oil spike"
+        ],
+        "entered": 3
+      },
+      {
+        "source": "Jin10 A-share premarket",
+        "status": "checked_no_current_verifiable_digest",
+        "items": [],
+        "entered": 0
+      },
+      {
+        "source": "CLS/STAR Market Daily",
+        "status": "checked_no_current_verifiable_digest",
+        "items": [],
+        "entered": 0
+      }
+    ],
+    "policies": [
+      {
+        "event": "Qingpu digital economy and digitization measures application window Oct 1-23",
+        "status": "verified_primary",
+        "url": "https://www.shanghai.gov.cn/zhengce/detail?businessId=00831394831&siteId=0083",
+        "entered": true
+      },
+      {
+        "event": "Fujian decision on integration of technological and industrial innovation",
+        "status": "verified_primary",
+        "published": "2026-10-01 08:34 CST",
+        "url": "https://www.fujian.gov.cn/xwdt/fjyw/202610/t20261001_7221056.htm",
+        "entered": true
+      }
+    ],
+    "company_events": [
+      {
+        "ticker": "HK.01211",
+        "issuer": "BYD",
+        "status": "verified_primary_and_reuters",
+        "event": "Sep NEV sales 463,561; exports +153.9% y/y",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1001/2026100100048_c.pdf"
+      },
+      {
+        "ticker": "HK.03668",
+        "issuer": "Yancoal Australia",
+        "status": "verified_primary",
+        "event": "completed 80% Kestrel acquisition; $1.85bn upfront; $1.2bn loan; up to $0.55bn contingent",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1001/2026100100032_c.pdf"
+      },
+      {
+        "ticker": "HK.02629",
+        "issuer": "Mirxes",
+        "status": "verified_primary_negative",
+        "event": "continued suspension; annual/interim results delayed",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1001/2026100100086_c.pdf"
+      },
+      {
+        "ticker": "HK.02051",
+        "issuer": "VALA",
+        "status": "verified_primary",
+        "event": "kcar first deliveries; Q3 420 vehicles incl 90 kcar",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1001/2026100100036_c.pdf"
+      }
+    ],
+    "candidates": [
+      {
+        "ticker": "HK.01211 / SZ.002594",
+        "decision": "conditional_watch",
+        "price": "HKD75.60 delayed Sep30 16:08 CST",
+        "price_status": "pre-announcement; no post-event session",
+        "reason": "exports support but domestic demand and price competition counterevidence"
+      },
+      {
+        "ticker": "HK.03668",
+        "decision": "conditional_watch",
+        "price": "HKD31.92 Sep30 close on Etnet delayed page",
+        "price_status": "pre-completion",
+        "reason": "output/revenue accretion vs acquisition leverage"
+      },
+      {
+        "ticker": "HK.02051",
+        "decision": "conditional_watch",
+        "price": "HKD0.340 Sep30 close, -4.23%",
+        "price_status": "pre-announcement; negative latest session",
+        "reason": "deliveries factual but scale/revenue and price confirmation absent"
+      },
+      {
+        "ticker": "HK.02629",
+        "decision": "avoid",
+        "price": null,
+        "price_status": "continued suspension; no tradable quote",
+        "reason": "delayed results and unresolved resumption guidance"
+      }
+    ],
+    "major_theme_reconciliation": [
+      {
+        "theme": "energy/oil",
+        "trigger": "Brent $102.31, WTI $92.87; energy led S&P sectors",
+        "mapping": "HK upstream energy and Yancoal",
+        "decision": "conditional_watch",
+        "reason": "positive commodity tape offset by leverage/cost and price-confirmation risks"
+      },
+      {
+        "theme": "AI memory/consulting",
+        "trigger": "ACN about +18%; MU strong results",
+        "mapping": "A/H software, cloud and memory chain",
+        "decision": "no_candidate",
+        "reason": "A shares closed, current US ranking unavailable, and local post-catalyst price confirmation absent"
+      },
+      {
+        "theme": "EV exports",
+        "trigger": "BYD exports +153.9% y/y",
+        "mapping": "BYD and HK auto chain",
+        "decision": "conditional_watch",
+        "reason": "direct company evidence with domestic-demand counterevidence"
+      },
+      {
+        "theme": "disclosure/suspension",
+        "trigger": "Mirxes continued suspension",
+        "mapping": "HK.02629",
+        "decision": "avoid",
+        "reason": "hard negative liquidity and reporting signal"
+      }
     ]
   },
   "pending_increment": [],
@@ -74,11 +203,13 @@
   "stage_timings": {
     "rules_and_files_started_at": "2026-10-02T08:31:09+08:00",
     "lease_acquired_at": "2026-10-02T08:33:22+08:00",
-    "evidence_collection_at": "2026-10-02T08:36:21+08:00"
+    "evidence_collection_at": "2026-10-02T08:36:21+08:00",
+    "generation_at": "2026-10-02T08:37:20+08:00",
+    "hard_validation_at": "2026-10-02T08:41:40+08:00"
   },
   "metrics": {
-    "requests": 25,
+    "requests": 35,
     "retries": 0,
-    "cache_hits": 0
+    "cache_hits": 8
   }
 }
