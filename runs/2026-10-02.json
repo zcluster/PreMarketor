@@ -1,13 +1,13 @@
 {
   "date": "2026-10-02",
-  "run_id": "ah-20261002-20261002083322",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "heartbeat_at": "2026-10-02T08:53:30+08:00",
-  "lease_until": "2026-10-02T08:53:30+08:00",
+  "run_id": "ah-review-20261002-20261002092424",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "incremental_discovery",
+  "heartbeat_at": "2026-10-02T09:24:24+08:00",
+  "lease_until": "2026-10-02T09:34:24+08:00",
   "source_cutoff": "2026-10-02T08:36:00+08:00",
-  "main_base_sha": "2b565869eef42226bb7558e4e999d138226cddfc",
+  "main_base_sha": "a75188a908eda5a9e250d27f86482ef74021775b",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
     "rules": {
@@ -198,7 +198,7 @@
   },
   "pending_increment": [],
   "published_commit": "a75188a908eda5a9e250d27f86482ef74021775b",
-  "candidate_commit": "a75188a908eda5a9e250d27f86482ef74021775b",
+  "candidate_commit": null,
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-10-02T08:31:09+08:00",
@@ -216,7 +216,8 @@
     "final_main_update_ref_at": "2026-10-02T08:50:30+08:00",
     "final_deployment_verification_at": "2026-10-02T08:50:30+08:00",
     "production_verified_at": "2026-10-02T08:53:30+08:00",
-    "finished_at": "2026-10-02T08:53:30+08:00"
+    "finished_at": "2026-10-02T08:53:30+08:00",
+    "incremental_review_started_at": "2026-10-02T09:24:24+08:00"
   },
   "metrics": {
     "requests": 43,
@@ -253,7 +254,6 @@
     "final_commit": "a75188a908eda5a9e250d27f86482ef74021775b",
     "status": "published_and_verified"
   },
-  "finished_at": "2026-10-02T08:53:30+08:00",
   "production_verification": {
     "status": "passed",
     "github_remote_readback": {
@@ -287,5 +287,12 @@
       },
       "english_source_time_duplicate": false
     }
+  },
+  "incremental_review": {
+    "first_run_cutoff": "2026-10-02T08:36:00+08:00",
+    "review_started_at": "2026-10-02T09:24:24+08:00",
+    "discovered": [],
+    "material_increment_count": 0,
+    "entered_body_count": 0
   }
 }
