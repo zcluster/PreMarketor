@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-02T09:48:36+08:00",
-  "status": "partial",
+  "attemptedAt": "2026-10-03T09:25:08+08:00",
+  "status": "ok",
   "groups": {
     "industry": {
-      "status": "partial",
+      "status": "ok",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-02T09:48:36+08:00",
+      "fetchedAt": "2026-10-03T09:25:08+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,88 +17,157 @@
       },
       "top": [
         {
-          "name": "信息技术服务",
-          "nameEn": "Information Technology Services",
-          "code": "BK2252",
-          "changePct": "+4.88%",
-          "leaderName": "Veea Inc",
-          "leaderTicker": "VEEA",
-          "leaderChangePct": "+59.91%",
+          "name": "航空航天与国防",
+          "nameEn": "Aerospace & Defense",
+          "code": "BK2089",
+          "changePct": "+3.90%",
+          "leaderName": "Elmet Group",
+          "leaderTicker": "ELMT",
+          "leaderChangePct": "+8.75%",
           "breadth": {
-            "advancers": 46,
-            "decliners": 27,
-            "unchanged": 5
-          }
-        },
-        {
-          "name": "油气炼制与销售",
-          "nameEn": "Oil & Gas Refining & Marketing",
-          "code": "BK2060",
-          "changePct": "+4.86%",
-          "leaderName": "PBF Energy",
-          "leaderTicker": "PBF",
-          "leaderChangePct": "+6.99%",
-          "breadth": {
-            "advancers": 16,
-            "decliners": 2,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "医疗分销",
-          "nameEn": "Medical Distribution",
-          "code": "BK2220",
-          "changePct": "+4.18%",
-          "leaderName": "DataMEDS AI",
-          "leaderTicker": "MEDS",
-          "leaderChangePct": "+28.08%",
-          "breadth": {
-            "advancers": 6,
-            "decliners": 5,
+            "advancers": 57,
+            "decliners": 39,
             "unchanged": 1
           }
         },
         {
-          "name": "电子与计算机分销",
-          "nameEn": "Electronics & Computer Distribution",
-          "code": "BK2506",
-          "changePct": "+3.89%",
-          "leaderName": "ScanSource",
-          "leaderTicker": "SCSC",
-          "leaderChangePct": "+5.94%",
+          "name": "铜",
+          "nameEn": "Copper",
+          "code": "BK2510",
+          "changePct": "+3.73%",
+          "leaderName": "Taseko Mines",
+          "leaderTicker": "TGB",
+          "leaderChangePct": "+7.70%",
           "breadth": {
-            "advancers": 7,
-            "decliners": 1,
+            "advancers": 8,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "抵押贷款金融",
-          "nameEn": "Mortgage Finance",
-          "code": "BK2479",
-          "changePct": "+3.29%",
-          "leaderName": "Rocket",
-          "leaderTicker": "RKT",
-          "leaderChangePct": "+4.00%",
+          "name": "通讯设备",
+          "nameEn": "Communication Equipment",
+          "code": "BK2098",
+          "changePct": "+3.33%",
+          "leaderName": "Silicom电信",
+          "leaderTicker": "SILC",
+          "leaderChangePct": "+11.93%",
           "breadth": {
-            "advancers": 7,
-            "decliners": 6,
-            "unchanged": 0
+            "advancers": 36,
+            "decliners": 7,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "电气设备及零件",
+          "nameEn": "Electrical Equipment & Parts",
+          "code": "BK2493",
+          "changePct": "+3.14%",
+          "leaderName": "Flux Power",
+          "leaderTicker": "FLUX",
+          "leaderChangePct": "+57.40%",
+          "breadth": {
+            "advancers": 39,
+            "decliners": 12,
+            "unchanged": 5
+          }
+        },
+        {
+          "name": "汽车制造",
+          "nameEn": "Auto Manufacturers",
+          "code": "BK2468",
+          "changePct": "+3.06%",
+          "leaderName": "SONO Group",
+          "leaderTicker": "SSM",
+          "leaderChangePct": "+19.23%",
+          "breadth": {
+            "advancers": 9,
+            "decliners": 19,
+            "unchanged": 1
           }
         }
       ],
-      "bottom": [],
-      "missing": [
-        "bottom5"
+      "bottom": [
+        {
+          "name": "计算机硬件",
+          "nameEn": "Computer Hardware",
+          "code": "BK2492",
+          "changePct": "-2.08%",
+          "leaderName": "Qtrex Quantum",
+          "leaderTicker": "QTEX",
+          "leaderChangePct": "+40.20%",
+          "breadth": {
+            "advancers": 26,
+            "decliners": 18,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "咨询服务",
+          "nameEn": "Consulting Services",
+          "code": "BK2476",
+          "changePct": "-2.17%",
+          "leaderName": "Greenpro Capital",
+          "leaderTicker": "GRNQ",
+          "leaderChangePct": "+13.52%",
+          "breadth": {
+            "advancers": 10,
+            "decliners": 12,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "信息技术服务",
+          "nameEn": "Information Technology Services",
+          "code": "BK2252",
+          "changePct": "-2.72%",
+          "leaderName": "Cycurion",
+          "leaderTicker": "CYCU",
+          "leaderChangePct": "+42.01%",
+          "breadth": {
+            "advancers": 18,
+            "decliners": 59,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "人力资源与就业服务",
+          "nameEn": "Staffing & Employment Services",
+          "code": "BK2496",
+          "changePct": "-2.78%",
+          "leaderName": "Circle8",
+          "leaderTicker": "CIRC",
+          "leaderChangePct": "+5.69%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 15,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "广告代理",
+          "nameEn": "Advertising Agencies",
+          "code": "BK2030",
+          "changePct": "-3.30%",
+          "leaderName": "Stran & Company",
+          "leaderTicker": "SWAG",
+          "leaderChangePct": "+10.53%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 24,
+            "unchanged": 8
+          }
+        }
       ],
-      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
+      "missing": [],
+      "error": null
     },
     "concept": {
       "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-02T09:48:36+08:00",
+      "fetchedAt": "2026-10-03T09:25:08+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -107,73 +176,73 @@
       },
       "top": [
         {
-          "name": "存储概念",
-          "nameEn": "Data storage stock",
-          "code": "BK23925",
-          "changePct": "+3.75%",
-          "leaderName": "SK海力士",
-          "leaderTicker": "SKHY",
-          "leaderChangePct": "+5.08%",
+          "name": "太空概念",
+          "nameEn": "Space",
+          "code": "BK2556",
+          "changePct": "+5.16%",
+          "leaderName": "Planet Labs PBC",
+          "leaderTicker": "PL",
+          "leaderChangePct": "+8.43%",
           "breadth": {
-            "advancers": 6,
-            "decliners": 1,
+            "advancers": 24,
+            "decliners": 7,
             "unchanged": 0
           }
         },
         {
-          "name": "OLED概念",
-          "nameEn": "OLED Technology",
-          "code": "BK2448",
-          "changePct": "+3.47%",
-          "leaderName": "应用材料",
-          "leaderTicker": "AMAT",
-          "leaderChangePct": "+3.50%",
-          "breadth": {
-            "advancers": 3,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "光伏太阳能",
-          "nameEn": "Solar Power",
-          "code": "BK2450",
-          "changePct": "+2.94%",
-          "leaderName": "应用材料",
-          "leaderTicker": "AMAT",
-          "leaderChangePct": "+3.50%",
+          "name": "充电桩",
+          "nameEn": "EV Charging",
+          "code": "BK2547",
+          "changePct": "+3.76%",
+          "leaderName": "EVgo Inc",
+          "leaderTicker": "EVGO",
+          "leaderChangePct": "+9.52%",
           "breadth": {
             "advancers": 5,
-            "decliners": 8,
-            "unchanged": 2
+            "decliners": 3,
+            "unchanged": 1
           }
         },
         {
-          "name": "储能概念股",
-          "nameEn": "Energy Storage Concept",
-          "code": "BK23939",
-          "changePct": "+2.83%",
-          "leaderName": "GE Vernova",
-          "leaderTicker": "GEV",
-          "leaderChangePct": "+3.89%",
+          "name": "3D打印",
+          "nameEn": "3D Printing",
+          "code": "BK2553",
+          "changePct": "+3.37%",
+          "leaderName": "3D系统",
+          "leaderTicker": "DDD",
+          "leaderChangePct": "+6.78%",
           "breadth": {
-            "advancers": 6,
-            "decliners": 2,
+            "advancers": 4,
+            "decliners": 0,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "新能源汽车",
+          "nameEn": "Electric Vehicles",
+          "code": "BK2568",
+          "changePct": "+3.19%",
+          "leaderName": "特斯拉",
+          "leaderTicker": "TSLA",
+          "leaderChangePct": "+4.65%",
+          "breadth": {
+            "advancers": 1,
+            "decliners": 11,
             "unchanged": 0
           }
         },
         {
-          "name": "红海危机概念",
-          "nameEn": "Red Sea Shipping Crisis",
-          "code": "BK22907",
-          "changePct": "+2.80%",
-          "leaderName": "Okeanis Eco Tankers",
-          "leaderTicker": "ECO",
-          "leaderChangePct": "+6.01%",
+          "name": "激光雷达概念",
+          "nameEn": "Lidar Technology",
+          "code": "BK2539",
+          "changePct": "+2.99%",
+          "leaderName": "Ouster",
+          "leaderTicker": "OUST",
+          "leaderChangePct": "+8.61%",
           "breadth": {
-            "advancers": 22,
-            "decliners": 5,
-            "unchanged": 1
+            "advancers": 4,
+            "decliners": 3,
+            "unchanged": 0
           }
         }
       ],
