@@ -4,8 +4,8 @@
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
   "stage": "incremental_discovery",
-  "heartbeat_at": "2026-10-05T09:45:41.468+08:00",
-  "lease_until": "2026-10-05T09:55:41.468+08:00",
+  "heartbeat_at": "2026-10-05T09:50:06.158+08:00",
+  "lease_until": "2026-10-05T10:08:06.158+08:00",
   "source_cutoff": "2026-10-05T08:44:00+08:00",
   "main_base_sha": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -245,6 +245,7 @@
     "review_started_at": "2026-10-05T09:45:41.468+08:00",
     "discovered": [],
     "material_increment_count": 0,
-    "entered_body_count": 0
+    "entered_body_count": 0,
+    "last_heartbeat_at": "2026-10-05T09:50:06.158+08:00"
   }
 }
