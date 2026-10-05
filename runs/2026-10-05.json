@@ -2,10 +2,10 @@
   "date": "2026-10-05",
   "run_id": "ah-review-20261005-20261005094541",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "candidate_validation",
-  "heartbeat_at": "2026-10-05T09:55:10.065+08:00",
-  "lease_until": "2026-10-05T10:13:10.065+08:00",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-10-05T09:59:12.640+08:00",
+  "lease_until": "2026-10-05T09:59:12.640+08:00",
   "source_cutoff": "2026-10-05T08:44:00+08:00",
   "main_base_sha": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -220,7 +220,8 @@
       "industry_down_rows_each": 5,
       "protected_us_markers": "unchanged",
       "outside_allowed_markers": "unchanged",
-      "main_cas": "ffad7304cb3b744b90f5153de308a932473bee67"
+      "main_cas": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
+      "candidate_checks": "passed"
     },
     "production": {
       "homepage": {
@@ -270,26 +271,58 @@
         "commit": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
         "verified": true
       }
+    },
+    "production_incremental": {
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "status": 200,
+        "time": "2026-10-05 09:54 CST",
+        "zh_rendered": true,
+        "en_rendered": true,
+        "major_news_each": 10,
+        "overnight_items_each": 3,
+        "stock_cards_each": 3,
+        "empty_state": false
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-10-05",
+        "status": 200,
+        "date": "2026-10-05",
+        "title_match": true,
+        "updated_match": true,
+        "empty_state": false
+      },
+      "empty_state": {
+        "url": "https://premarketor.com/history/?date=2026-10-04",
+        "status": 200,
+        "message": "归档文件缺失",
+        "passed": true
+      },
+      "remote_readback": {
+        "index_blob": "00d3184ffa3cf2729ae04938cb3a6a279933947f",
+        "history_blob": "d914f8cb8ff0ac6ed4f95bb0f8e3bc577e9f8fcd",
+        "manifest_blob": "95a06513d1ba064c47411537a988bc5301f8c151",
+        "exact_match": true
+      },
+      "protected": {
+        "us_sector_panel_unchanged": true,
+        "us_brief_time_updated_unchanged": true,
+        "css_scripts_other_history_unchanged": true
+      },
+      "deployment": {
+        "commit": "097ffd4555686a31bff9821a859b175e2001a3a1",
+        "content_visible": true
+      },
+      "validator": {
+        "contract": "scripts/validate_ah_run_state.py",
+        "method": "exact cloud contract check without local files",
+        "result": "ok",
+        "errors": []
+      }
     }
   },
-  "pending_increment": [
-    {
-      "item": "Hong Kong open",
-      "material": true,
-      "reason": "Hang Seng and Hang Seng Tech remained weak; technology recovery not confirmed"
-    },
-    {
-      "item": "WTI and U.S. futures refresh",
-      "material": true,
-      "reason": "WTI reversed from +0.50% to about -0.94%; Nasdaq futures strengthened to about +0.50%"
-    },
-    {
-      "item": "HK.01710 and HK.01876 opening feedback",
-      "material": true,
-      "reason": "Trio only +0.49% and Budweiser -0.44%, changing company-level confirmation"
-    }
-  ],
-  "published_commit": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
+  "pending_increment": [],
+  "published_commit": "097ffd4555686a31bff9821a859b175e2001a3a1",
   "candidate_commit": null,
   "error": null,
   "stage_timings": {
@@ -299,7 +332,8 @@
     "generation_started_at": "2026-10-05T08:43:30+08:00",
     "published_at": "2026-10-05T08:55:00+08:00",
     "total_seconds": 1581,
-    "incremental_review_started_at": "2026-10-05T09:45:41.468+08:00"
+    "incremental_review_started_at": "2026-10-05T09:45:41.468+08:00",
+    "incremental_published_at": "2026-10-05T09:59:12.640+08:00"
   },
   "metrics": {
     "requests": 9,
@@ -328,6 +362,8 @@
     ],
     "material_increment_count": 3,
     "entered_body_count": 3,
-    "last_heartbeat_at": "2026-10-05T09:50:06.158+08:00"
+    "last_heartbeat_at": "2026-10-05T09:50:06.158+08:00",
+    "completed_at": "2026-10-05T09:59:12.640+08:00",
+    "published_commit": "097ffd4555686a31bff9821a859b175e2001a3a1"
   }
 }
