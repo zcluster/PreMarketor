@@ -3,9 +3,9 @@
   "run_id": "ah-20261005-20261005083130",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "heartbeat_at": "2026-10-05T08:43:30+08:00",
-  "lease_until": "2026-10-05T08:58:30+08:00",
+  "stage": "pre_publish_validated",
+  "heartbeat_at": "2026-10-05T08:47:30+08:00",
+  "lease_until": "2026-10-05T08:59:30+08:00",
   "source_cutoff": "2026-10-05T08:44:00+08:00",
   "main_base_sha": "ffad7304cb3b744b90f5153de308a932473bee67",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -160,11 +160,22 @@
         "decision": "avoid",
         "price_feedback": "No tradable quote; suspended since 2025-10-02."
       }
-    ]
+    ],
+    "pre_publish": {
+      "major_news_zh": 10,
+      "major_news_en": 10,
+      "overnight_items_each": 3,
+      "stock_cards_each": 3,
+      "panel_rows_each": 15,
+      "industry_down_rows_each": 5,
+      "protected_us_markers": "unchanged",
+      "outside_allowed_markers": "unchanged",
+      "main_cas": "ffad7304cb3b744b90f5153de308a932473bee67"
+    }
   },
   "pending_increment": [],
   "published_commit": null,
-  "candidate_commit": null,
+  "candidate_commit": "b3159376b409b66b1bf8b08f259f0aa0ebb4e09f",
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-10-05T08:28:39+08:00",
