@@ -3,9 +3,9 @@
   "run_id": "ah-20261005-20261005083130",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rules_and_files",
-  "heartbeat_at": "2026-10-05T08:31:30+08:00",
-  "lease_until": "2026-10-05T08:41:30+08:00",
+  "stage": "evidence_collection",
+  "heartbeat_at": "2026-10-05T08:36:40+08:00",
+  "lease_until": "2026-10-05T08:46:40+08:00",
   "source_cutoff": null,
   "main_base_sha": "ffad7304cb3b744b90f5153de308a932473bee67",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -21,6 +21,19 @@
       "today_history": "absent",
       "akshare_blob": "8060652b44195a1ed3deae0f81397f32fa548055",
       "us_rankings_blob": "eef3b85eb777842e029f6b7f6115899d7747fb3d"
+    },
+    "snapshots": {
+      "akshare": {
+        "fetched_at": "2026-10-02T13:38:46+08:00",
+        "status": "ok",
+        "freshness": "stale_prior_session_only"
+      },
+      "us_rankings": {
+        "fetched_at": "2026-10-03T09:25:08+08:00",
+        "market_date": "2026-10-02",
+        "status": "ok",
+        "row_count": 15
+      }
     }
   },
   "pending_increment": [],
@@ -29,7 +42,8 @@
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-10-05T08:28:39+08:00",
-    "lease_acquired_at": "2026-10-05T08:31:30+08:00"
+    "lease_acquired_at": "2026-10-05T08:31:30+08:00",
+    "evidence_collection_started_at": "2026-10-05T08:36:40+08:00"
   },
   "metrics": {
     "requests": 9,
