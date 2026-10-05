@@ -4,8 +4,8 @@
   "owner": "发布 MarketAhead A/H 早报",
   "status": "published",
   "stage": "published",
-  "heartbeat_at": "2026-10-05T08:50:00+08:00",
-  "lease_until": "2026-10-05T08:50:00+08:00",
+  "heartbeat_at": "2026-10-05T08:55:00+08:00",
+  "lease_until": "2026-10-05T08:55:00+08:00",
   "source_cutoff": "2026-10-05T08:44:00+08:00",
   "main_base_sha": "ffad7304cb3b744b90f5153de308a932473bee67",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -176,14 +176,15 @@
       "homepage": {
         "url": "https://premarketor.com/",
         "status": 200,
-        "time": "2026-10-05 08:49 CST",
+        "time": "2026-10-05 08:53 CST",
         "major_news": 10,
         "overnight_items": 3,
         "panel_rows": 15,
         "panel_down_rows": 5,
         "zh_rendered": true,
         "en_rendered": true,
-        "empty_state": false
+        "empty_state": false,
+        "asset_display": "+0.50% WTI at 06:02, no truncation"
       },
       "archive": {
         "url": "https://premarketor.com/history/?date=2026-10-05",
@@ -195,12 +196,12 @@
       },
       "data": {
         "path": "history/data/2026-10-05.json",
-        "blob_sha": "7e79967d61f74e04ee7fcce22815541a0bd8fe6d",
+        "blob_sha": "b16af2fd2ef5e0505ab84463858cd06b298e35de",
         "remote_readback_match": true
       },
       "manifest": {
         "path": "history/manifest.json",
-        "blob_sha": "6d5591ba7ff19ae15f948b0740c372d386dfc4b3",
+        "blob_sha": "1d29d8006927a63bd76c82a2918fd445482426d9",
         "remote_readback_match": true,
         "first_date": "2026-10-05"
       },
@@ -212,20 +213,26 @@
         "script": "scripts/validate_ah_run_state.py",
         "result": "ok",
         "errors": []
+      },
+      "correction": {
+        "reason": "front-end numeric formatting truncated raw WTI price in asset row",
+        "action": "asset row changed to +0.50%; evidence detail retains $91.57",
+        "commit": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
+        "verified": true
       }
     }
   },
   "pending_increment": [],
-  "published_commit": "b3159376b409b66b1bf8b08f259f0aa0ebb4e09f",
-  "candidate_commit": "b3159376b409b66b1bf8b08f259f0aa0ebb4e09f",
+  "published_commit": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
+  "candidate_commit": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-10-05T08:28:39+08:00",
     "lease_acquired_at": "2026-10-05T08:31:30+08:00",
     "evidence_collection_started_at": "2026-10-05T08:36:40+08:00",
     "generation_started_at": "2026-10-05T08:43:30+08:00",
-    "published_at": "2026-10-05T08:50:00+08:00",
-    "total_seconds": 1281
+    "published_at": "2026-10-05T08:55:00+08:00",
+    "total_seconds": 1581
   },
   "metrics": {
     "requests": 9,
