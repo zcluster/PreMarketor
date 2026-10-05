@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261005-20261005094541",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_discovery",
-  "heartbeat_at": "2026-10-05T09:50:06.158+08:00",
-  "lease_until": "2026-10-05T10:08:06.158+08:00",
+  "stage": "candidate_validation",
+  "heartbeat_at": "2026-10-05T09:55:10.065+08:00",
+  "lease_until": "2026-10-05T10:13:10.065+08:00",
   "source_cutoff": "2026-10-05T08:44:00+08:00",
   "main_base_sha": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -99,6 +99,44 @@
           "OUST"
         ],
         "result": "unavailable_no_reliable_same_time_quotes"
+      },
+      "incremental_market": {
+        "checked_at": "2026-10-05T09:55:10.065+08:00",
+        "hang_seng": {
+          "source": "Yahoo Finance delayed",
+          "observed_at": "2026-10-05T09:35:08+08:00",
+          "value": "23862.02",
+          "change": "-0.46%"
+        },
+        "hang_seng_tech": {
+          "source": "HSTong",
+          "observed_at": "2026-10-05T09:47:16+08:00",
+          "value": "4139.88",
+          "change": "-0.43%"
+        },
+        "futures": {
+          "source": "Yahoo Finance delayed",
+          "observed_at": "2026-10-05T09:50:00+08:00",
+          "dow": "+0.08%",
+          "sp500": "+0.19%",
+          "nasdaq100": "+0.50%",
+          "us10y": "5.28%",
+          "wti": "-0.94%"
+        },
+        "trio": {
+          "source": "Yahoo Finance delayed",
+          "observed_at": "2026-10-05T09:20:03+08:00",
+          "price_hkd": "2.07",
+          "change": "+0.49%",
+          "volume": "unavailable"
+        },
+        "budweiser": {
+          "source": "Yahoo Finance delayed",
+          "observed_at": "2026-10-05T09:20:03+08:00",
+          "price_hkd": "5.65",
+          "change": "-0.44%",
+          "volume": 517600
+        }
       }
     },
     "domestic_coverage": [
@@ -119,6 +157,18 @@
         "checked_at": "2026-10-05T08:44:00+08:00",
         "top_items": 10,
         "result": "two_policy_and_three_hkex_items_verified"
+      },
+      {
+        "source": "CLS and Jin10 incremental search",
+        "checked_at": "2026-10-05T09:55:10.065+08:00",
+        "window": "after 2026-10-05T08:44:00+08:00",
+        "result": "no_new_material_policy_or_market_item"
+      },
+      {
+        "source": "State Council policy index and HKEX predefined documents",
+        "checked_at": "2026-10-05T09:55:10.065+08:00",
+        "window": "after 2026-10-05T08:44:00+08:00",
+        "result": "no_new_material_policy_or_major_exchange_filing"
       }
     ],
     "candidate_decisions": [
@@ -222,7 +272,23 @@
       }
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "item": "Hong Kong open",
+      "material": true,
+      "reason": "Hang Seng and Hang Seng Tech remained weak; technology recovery not confirmed"
+    },
+    {
+      "item": "WTI and U.S. futures refresh",
+      "material": true,
+      "reason": "WTI reversed from +0.50% to about -0.94%; Nasdaq futures strengthened to about +0.50%"
+    },
+    {
+      "item": "HK.01710 and HK.01876 opening feedback",
+      "material": true,
+      "reason": "Trio only +0.49% and Budweiser -0.44%, changing company-level confirmation"
+    }
+  ],
   "published_commit": "c01f5c91426c0297bdb3a91a6a55f02456c5a098",
   "candidate_commit": null,
   "error": null,
@@ -243,9 +309,25 @@
   "incremental_review": {
     "first_run_cutoff": "2026-10-05T08:44:00+08:00",
     "review_started_at": "2026-10-05T09:45:41.468+08:00",
-    "discovered": [],
-    "material_increment_count": 0,
-    "entered_body_count": 0,
+    "discovered": [
+      {
+        "item": "Hong Kong open",
+        "material": true,
+        "reason": "Hang Seng and Hang Seng Tech remained weak; technology recovery not confirmed"
+      },
+      {
+        "item": "WTI and U.S. futures refresh",
+        "material": true,
+        "reason": "WTI reversed from +0.50% to about -0.94%; Nasdaq futures strengthened to about +0.50%"
+      },
+      {
+        "item": "HK.01710 and HK.01876 opening feedback",
+        "material": true,
+        "reason": "Trio only +0.49% and Budweiser -0.44%, changing company-level confirmation"
+      }
+    ],
+    "material_increment_count": 3,
+    "entered_body_count": 3,
     "last_heartbeat_at": "2026-10-05T09:50:06.158+08:00"
   }
 }
