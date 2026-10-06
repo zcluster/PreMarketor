@@ -2,10 +2,10 @@
   "date": "2026-10-06",
   "run_id": "ah-20261006-20261006082810",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "generation",
-  "heartbeat_at": "2026-10-06T08:34:19+08:00",
-  "lease_until": "2026-10-06T08:49:19+08:00",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-10-06T08:43:31+08:00",
+  "lease_until": "2026-10-06T08:43:31+08:00",
   "source_cutoff": "2026-10-06T08:34:19+08:00",
   "main_base_sha": "5820b66a6af2b57ee8f58595fe8fd2afcd48c030",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -69,22 +69,54 @@
         "600673 holder/acting party increase plan CNY0.6-1.2bn",
         "688279 acquisition Sciosense USD118.0m"
       ]
+    },
+    "production": {
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "status": 200,
+        "cn_rendered": true,
+        "en_rendered": true,
+        "ah_time": "2026-10-06 08:39 CST",
+        "us_time_preserved": "2026-10-05 20:47 CST"
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-10-06",
+        "status": 200,
+        "rendered": true,
+        "empty_state": false
+      },
+      "github_readback": {
+        "main_head": "8fb9d14d078775681ee96bf9789884c9fd565a37",
+        "files_exact": true
+      },
+      "data_and_manifest": {
+        "github_blob_readback_exact": true,
+        "production_archive_rendered_from_today_json": true,
+        "manifest_calendar_entry_visible": true
+      }
     }
   },
   "pending_increment": [],
-  "published_commit": null,
-  "candidate_commit": null,
+  "published_commit": "8fb9d14d078775681ee96bf9789884c9fd565a37",
+  "candidate_commit": "8fb9d14d078775681ee96bf9789884c9fd565a37",
   "error": null,
   "stage_timings": {
     "rules_and_files_started_at": "2026-10-06T08:27:06+08:00",
     "lease_acquired_at": "2026-10-06T08:28:10+08:00",
     "evidence_collection_started_at": "2026-10-06T08:30:29+08:00",
     "evidence_collection_completed_at": "2026-10-06T08:34:19+08:00",
-    "generation_started_at": "2026-10-06T08:34:19+08:00"
+    "generation_started_at": "2026-10-06T08:34:19+08:00",
+    "generation_completed_at": "2026-10-06T08:39:00+08:00",
+    "prepublish_validation_completed_at": "2026-10-06T08:39:00+08:00",
+    "main_ref_updated_at": "2026-10-06T08:40:00+08:00",
+    "deployment_verification_started_at": "2026-10-06T08:40:00+08:00",
+    "production_verified_at": "2026-10-06T08:43:31+08:00",
+    "completed_at": "2026-10-06T08:43:31+08:00"
   },
   "metrics": {
-    "requests": 31,
+    "requests": 38,
     "retries": 0,
     "cache_hits": 0
-  }
+  },
+  "terminal_error": null
 }
