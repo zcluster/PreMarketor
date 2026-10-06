@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261006-20261006012928",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "prepublish_validation",
-  "heartbeat_at": "2026-10-06T09:39:21.575+08:00",
-  "lease_until": "2026-10-06T09:49:21.575+08:00",
+  "stage": "ready_to_publish",
+  "heartbeat_at": "2026-10-06T09:44:04.470+08:00",
+  "lease_until": "2026-10-06T09:54:04.470+08:00",
   "source_cutoff": "2026-10-06T08:34:19+08:00",
   "main_base_sha": "8fb9d14d078775681ee96bf9789884c9fd565a37",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -162,83 +162,55 @@
       ],
       "conclusion": "update_required",
       "candidate": {
-        "generated_at": "2026-10-06 09:38 CST",
+        "generated_at": "2026-10-06 09:42 CST",
         "files": [
           "index.html",
           "history/data/2026-10-06.json",
           "history/manifest.json"
         ],
         "blob_shas": {
-          "index": "3eea2f9edc22ac4552212a1d96b45e19d900aa5a",
-          "today": "feee50f298937daed59165a359bb1617ab35d088",
-          "manifest": "d74681d9ddcf91126ac904687065214ccce98f05"
+          "index": "98fee9eeb329c170fad14b4402578c8313ee3b97",
+          "today": "de41ff82d59f966449efb5e6becc61624038d08c",
+          "manifest": "ab1ccc8a76acf1bf2d5ad816340a844e85e57beb"
         },
-        "validation": {
-          "time": "2026-10-06 09:38 CST",
-          "title": "港股科技修复获开盘确认，恒指与恒科齐升逾1%；A股长假休市，高利率仍限制追价",
-          "counts": {
-            "cn": {
-              "news": 15,
-              "stocks": 4,
-              "sectors": 4,
-              "risks": 4,
-              "logic": 4
-            },
-            "en": {
-              "news": 15,
-              "stocks": 4,
-              "sectors": 4,
-              "risks": 4,
-              "logic": 4
-            }
-          },
-          "oldCounts": {
-            "cn": {
-              "news": 15,
-              "stocks": 4,
-              "sectors": 4,
-              "risks": 4,
-              "logic": 4
-            },
-            "en": {
-              "news": 15,
-              "stocks": 4,
-              "sectors": 4,
-              "risks": 4,
-              "logic": 4
-            }
-          },
-          "structureParity": true,
-          "countsPreserved": true,
-          "noPendingPhraseCN": true,
-          "noPendingPhraseEN": true,
-          "requiredCN": true,
-          "requiredEN": true,
-          "untouchedMarkers": [
-            [
-              "US_BRIEF",
-              true
-            ],
-            [
-              "US_TIME",
-              true
-            ],
-            [
-              "US_UPDATED",
-              true
-            ],
-            [
-              "US_SECTOR_PANEL",
-              true
-            ],
-            [
-              "US_SECTOR_PANEL_EN",
-              true
-            ]
-          ],
-          "usTextPreserved": true,
-          "onlyIndexMarkersChanged": true,
-          "jsonRoundTrip": true
+        "hard_validation": {
+          "markerOnly": true,
+          "usBriefPreserved": true,
+          "usTimePreserved": true,
+          "usUpdatedPreserved": true,
+          "sectorPanelPreserved": true,
+          "sectorPanelEnPreserved": true,
+          "indexCnExact": true,
+          "oneAhEntry": true,
+          "otherEntriesPreserved": true,
+          "historicalRecordsPreserved": true,
+          "classStructureParity": true,
+          "barParity": true,
+          "tickerParity": true,
+          "majorNewsCountCN": true,
+          "majorNewsCountEN": true,
+          "policyIndustryCN": true,
+          "companyCN": true,
+          "overnight3CN": true,
+          "overnight3EN": true,
+          "overnightOrderCN": true,
+          "overnightOrderEN": true,
+          "crossCheckWordsCN": true,
+          "crossCheckWordsEN": true,
+          "stockCardCount": true,
+          "eachCardContract": true,
+          "fortiorNegative": true,
+          "domesticReconciliation": true,
+          "originalPolicyCoverage": true,
+          "akContract": true,
+          "enNoLargeChineseFallback": true,
+          "numericParity": true,
+          "jsonRoot": true,
+          "noEmptyState": true,
+          "rankingsZeroPanels": true,
+          "rankingsDisclosed": true,
+          "titleUpdated": true,
+          "timeAligned": true
         }
       }
     }
@@ -254,7 +226,7 @@
     "evidence_collection_completed_at": "2026-10-06T08:34:19+08:00",
     "generation_started_at": "2026-10-06T08:34:19+08:00",
     "generation_completed_at": "2026-10-06T08:39:00+08:00",
-    "prepublish_validation_completed_at": "2026-10-06T08:39:00+08:00",
+    "prepublish_validation_completed_at": "2026-10-06T09:44:04.470+08:00",
     "main_ref_updated_at": "2026-10-06T08:40:00+08:00",
     "deployment_verification_started_at": "2026-10-06T08:40:00+08:00",
     "production_verified_at": "2026-10-06T08:43:31+08:00",
