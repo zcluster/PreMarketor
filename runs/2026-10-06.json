@@ -2,10 +2,10 @@
   "date": "2026-10-06",
   "run_id": "ah-review-20261006-20261006012928",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-10-06T09:45:31.345+08:00",
-  "lease_until": "2026-10-06T09:55:31.345+08:00",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-10-06T09:50:25.748+08:00",
+  "lease_until": "2026-10-06T09:50:25.748+08:00",
   "source_cutoff": "2026-10-06T08:34:19+08:00",
   "main_base_sha": "8fb9d14d078775681ee96bf9789884c9fd565a37",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -73,26 +73,62 @@
     "production": {
       "homepage": {
         "url": "https://premarketor.com/",
-        "status": 200,
+        "rendered": true,
         "cn_rendered": true,
         "en_rendered": true,
-        "ah_time": "2026-10-06 08:39 CST",
-        "us_time_preserved": "2026-10-05 20:47 CST"
+        "ah_time_cn": "2026-10-06 09:42 CST",
+        "ah_time_en": "2026-10-05 21:42 EDT",
+        "us_time_preserved": "2026-10-05 20:47 CST",
+        "cn_counts": {
+          "major_news": 12,
+          "overnight": 3,
+          "stock_cards": 4,
+          "logic_steps": 4,
+          "risk_items": 4
+        },
+        "en_counts": {
+          "major_news": 12,
+          "overnight": 3,
+          "stock_cards": 4,
+          "logic_steps": 4,
+          "risk_items": 4
+        },
+        "empty_state": false
       },
       "archive": {
         "url": "https://premarketor.com/history/?date=2026-10-06",
-        "status": 200,
         "rendered": true,
+        "entry_count": 1,
+        "updated": "2026-10-06 09:42 CST",
+        "counts": {
+          "major_news": 12,
+          "overnight": 3,
+          "stock_cards": 4,
+          "logic_steps": 4,
+          "risk_items": 4
+        },
         "empty_state": false
       },
       "github_readback": {
-        "main_head": "8fb9d14d078775681ee96bf9789884c9fd565a37",
-        "files_exact": true
+        "main_head": "62a48e7033e667f6666f1742c91c45213158f2d3",
+        "files_exact": true,
+        "blobs": {
+          "index.html": "98fee9eeb329c170fad14b4402578c8313ee3b97",
+          "history/data/2026-10-06.json": "de41ff82d59f966449efb5e6becc61624038d08c",
+          "history/manifest.json": "ab1ccc8a76acf1bf2d5ad816340a844e85e57beb"
+        }
       },
-      "data_and_manifest": {
-        "github_blob_readback_exact": true,
-        "production_archive_rendered_from_today_json": true,
-        "manifest_calendar_entry_visible": true
+      "deployment_status": {
+        "provider": "Vercel",
+        "state": "success",
+        "target_url": "https://vercel.com/zcluster-projects/market-ahead/HiwHzRm7d8N5nDQyYHpuWAPybtDV"
+      },
+      "machine_validation": {
+        "homepage_dom": true,
+        "archive_dom": true,
+        "bilingual_parity_prepublish": true,
+        "marker_and_whitelist": true,
+        "no_empty_state": true
       }
     },
     "incremental_review": {
@@ -229,8 +265,8 @@
     "prepublish_validation_completed_at": "2026-10-06T09:44:04.470+08:00",
     "main_ref_updated_at": "2026-10-06T09:45:31.345+08:00",
     "deployment_verification_started_at": "2026-10-06T09:45:31.345+08:00",
-    "production_verified_at": "2026-10-06T08:43:31+08:00",
-    "completed_at": "2026-10-06T08:43:31+08:00",
+    "production_verified_at": "2026-10-06T09:50:25.748+08:00",
+    "completed_at": "2026-10-06T09:50:25.748+08:00",
     "incremental_review_started_at": "2026-10-06T09:29:28.217+08:00",
     "evidence_reconciliation_checkpoint_at": "2026-10-06T09:32:36.841+08:00",
     "candidate_generated_at": "2026-10-06T09:39:21.575+08:00",
@@ -245,7 +281,7 @@
   "incremental_review": {
     "review_started_at": "2026-10-06T09:29:28.217+08:00",
     "first_run_source_cutoff": "2026-10-06T08:34:19+08:00",
-    "status": "material_increment_confirmed",
+    "status": "published",
     "discovered": [
       {
         "category": "hk_open",
@@ -307,6 +343,7 @@
         "url": "https://www.hstong.com/quotes/10000-01304-HK"
       }
     ],
-    "conclusion": "update_required"
+    "conclusion": "published_after_material_increment",
+    "completed_at": "2026-10-06T09:50:25.748+08:00"
   }
 }
