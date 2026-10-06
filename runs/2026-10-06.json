@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261006-20261006012928",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_discovery",
-  "heartbeat_at": "2026-10-06T09:29:28.217+08:00",
-  "lease_until": "2026-10-06T09:39:28.217+08:00",
+  "stage": "evidence_reconciliation",
+  "heartbeat_at": "2026-10-06T09:32:36.841+08:00",
+  "lease_until": "2026-10-06T09:42:36.841+08:00",
   "source_cutoff": "2026-10-06T08:34:19+08:00",
   "main_base_sha": "8fb9d14d078775681ee96bf9789884c9fd565a37",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -94,6 +94,73 @@
         "production_archive_rendered_from_today_json": true,
         "manifest_calendar_entry_visible": true
       }
+    },
+    "incremental_review": {
+      "review_started_at": "2026-10-06T09:29:28.217+08:00",
+      "first_run_source_cutoff": "2026-10-06T08:34:19+08:00",
+      "status": "material_increment_confirmed",
+      "discovered": [
+        {
+          "category": "hk_open",
+          "fact": "HSI opened 24279.63 (+1.00% vs 24040.34) and traded at 24332.89 (+1.22%) at 09:31:17 CST"
+        },
+        {
+          "category": "hk_open",
+          "fact": "HSTECH opened 4226.38 (+1.02%) and traded at 4240.28 (+1.35%) at 09:31:30 CST"
+        },
+        {
+          "category": "sector",
+          "fact": "Data-center-related Hong Kong shares were broadly higher; Alibaba-W opened +2.94%, Meituan-W +1.91%, SMIC +0.98%"
+        },
+        {
+          "category": "stock_feedback",
+          "fact": "FORTIOR H shares showed 0 shares traded at 09:31:41, last/previous close HKD121.20; no positive price confirmation yet"
+        }
+      ],
+      "material_changes": [
+        {
+          "area": "market_and_sector_view",
+          "reason": "The first brief's pending Hong Kong technology rebound became confirmed by a broad +1% open and HSTECH strengthening to +1.35%."
+        }
+      ],
+      "reviewed_sources": [
+        {
+          "source": "Jin10 discovery",
+          "window_start": "2026-10-06T08:34:19+08:00",
+          "result": "no new item found that changes the brief"
+        },
+        {
+          "source": "CLS/STAR Market Daily discovery",
+          "window_start": "2026-10-06T08:34:19+08:00",
+          "result": "no new policy or company item found that changes the brief"
+        },
+        {
+          "source": "State Council/NDRC/MIIT targeted checks",
+          "window_start": "2026-10-06T08:34:19+08:00",
+          "result": "no new market-moving policy release found"
+        },
+        {
+          "source": "HKEX targeted results/suspension/resumption/clarification checks",
+          "window_start": "2026-10-06T08:34:19+08:00",
+          "result": "no verified major new announcement requiring a thesis change"
+        },
+        {
+          "source": "HSTong HSI live quote",
+          "asof": "2026-10-06T09:31:17+08:00",
+          "url": "https://www.hstong.com/quotes/10001-HSI-HK"
+        },
+        {
+          "source": "HSTong HSTECH live quote",
+          "asof": "2026-10-06T09:31:30+08:00",
+          "url": "https://www.hstong.com/quotes/10001-HSTECH-HK"
+        },
+        {
+          "source": "HSTong FORTIOR live quote",
+          "asof": "2026-10-06T09:31:41+08:00",
+          "url": "https://www.hstong.com/quotes/10000-01304-HK"
+        }
+      ],
+      "conclusion": "update_required"
     }
   },
   "pending_increment": [],
@@ -112,7 +179,8 @@
     "deployment_verification_started_at": "2026-10-06T08:40:00+08:00",
     "production_verified_at": "2026-10-06T08:43:31+08:00",
     "completed_at": "2026-10-06T08:43:31+08:00",
-    "incremental_review_started_at": "2026-10-06T09:29:28.217+08:00"
+    "incremental_review_started_at": "2026-10-06T09:29:28.217+08:00",
+    "evidence_reconciliation_checkpoint_at": "2026-10-06T09:32:36.841+08:00"
   },
   "metrics": {
     "requests": 38,
@@ -123,10 +191,68 @@
   "incremental_review": {
     "review_started_at": "2026-10-06T09:29:28.217+08:00",
     "first_run_source_cutoff": "2026-10-06T08:34:19+08:00",
-    "status": "in_progress",
-    "discovered": [],
-    "material_changes": [],
-    "reviewed_sources": [],
-    "conclusion": null
+    "status": "material_increment_confirmed",
+    "discovered": [
+      {
+        "category": "hk_open",
+        "fact": "HSI opened 24279.63 (+1.00% vs 24040.34) and traded at 24332.89 (+1.22%) at 09:31:17 CST"
+      },
+      {
+        "category": "hk_open",
+        "fact": "HSTECH opened 4226.38 (+1.02%) and traded at 4240.28 (+1.35%) at 09:31:30 CST"
+      },
+      {
+        "category": "sector",
+        "fact": "Data-center-related Hong Kong shares were broadly higher; Alibaba-W opened +2.94%, Meituan-W +1.91%, SMIC +0.98%"
+      },
+      {
+        "category": "stock_feedback",
+        "fact": "FORTIOR H shares showed 0 shares traded at 09:31:41, last/previous close HKD121.20; no positive price confirmation yet"
+      }
+    ],
+    "material_changes": [
+      {
+        "area": "market_and_sector_view",
+        "reason": "The first brief's pending Hong Kong technology rebound became confirmed by a broad +1% open and HSTECH strengthening to +1.35%."
+      }
+    ],
+    "reviewed_sources": [
+      {
+        "source": "Jin10 discovery",
+        "window_start": "2026-10-06T08:34:19+08:00",
+        "result": "no new item found that changes the brief"
+      },
+      {
+        "source": "CLS/STAR Market Daily discovery",
+        "window_start": "2026-10-06T08:34:19+08:00",
+        "result": "no new policy or company item found that changes the brief"
+      },
+      {
+        "source": "State Council/NDRC/MIIT targeted checks",
+        "window_start": "2026-10-06T08:34:19+08:00",
+        "result": "no new market-moving policy release found"
+      },
+      {
+        "source": "HKEX targeted results/suspension/resumption/clarification checks",
+        "window_start": "2026-10-06T08:34:19+08:00",
+        "result": "no verified major new announcement requiring a thesis change"
+      },
+      {
+        "source": "HSTong HSI live quote",
+        "asof": "2026-10-06T09:31:17+08:00",
+        "url": "https://www.hstong.com/quotes/10001-HSI-HK"
+      },
+      {
+        "source": "HSTong HSTECH live quote",
+        "asof": "2026-10-06T09:31:30+08:00",
+        "url": "https://www.hstong.com/quotes/10001-HSTECH-HK"
+      },
+      {
+        "source": "HSTong FORTIOR live quote",
+        "asof": "2026-10-06T09:31:41+08:00",
+        "url": "https://www.hstong.com/quotes/10000-01304-HK"
+      }
+    ],
+    "conclusion": "update_required"
   }
 }
