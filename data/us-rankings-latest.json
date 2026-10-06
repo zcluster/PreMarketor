@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-03T09:25:08+08:00",
+  "attemptedAt": "2026-10-06T10:29:47+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-03T09:25:08+08:00",
+      "fetchedAt": "2026-10-06T10:29:47+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,145 +17,145 @@
       },
       "top": [
         {
-          "name": "航空航天与国防",
-          "nameEn": "Aerospace & Defense",
-          "code": "BK2089",
-          "changePct": "+3.90%",
-          "leaderName": "Elmet Group",
-          "leaderTicker": "ELMT",
-          "leaderChangePct": "+8.75%",
+          "name": "基础设施运营",
+          "nameEn": "Infrastructure Operations",
+          "code": "BK2477",
+          "changePct": "+11.67%",
+          "leaderName": "Mobile Infrastructure",
+          "leaderTicker": "BEEP",
+          "leaderChangePct": "+11.67%",
           "breadth": {
-            "advancers": 57,
-            "decliners": 39,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "铜",
-          "nameEn": "Copper",
-          "code": "BK2510",
-          "changePct": "+3.73%",
-          "leaderName": "Taseko Mines",
-          "leaderTicker": "TGB",
-          "leaderChangePct": "+7.70%",
-          "breadth": {
-            "advancers": 8,
+            "advancers": 1,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "通讯设备",
-          "nameEn": "Communication Equipment",
-          "code": "BK2098",
-          "changePct": "+3.33%",
-          "leaderName": "Silicom电信",
-          "leaderTicker": "SILC",
-          "leaderChangePct": "+11.93%",
+          "name": "油气钻探",
+          "nameEn": "Oil & Gas Drilling",
+          "code": "BK2274",
+          "changePct": "+4.89%",
+          "leaderName": "Transocean",
+          "leaderTicker": "RIG",
+          "leaderChangePct": "+6.58%",
           "breadth": {
-            "advancers": 36,
-            "decliners": 7,
-            "unchanged": 2
+            "advancers": 9,
+            "decliners": 1,
+            "unchanged": 0
           }
         },
         {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "+3.14%",
-          "leaderName": "Flux Power",
-          "leaderTicker": "FLUX",
-          "leaderChangePct": "+57.40%",
+          "name": "健康信息服务",
+          "nameEn": "Health Information Services",
+          "code": "BK2262",
+          "changePct": "+4.01%",
+          "leaderName": "HeartBeam",
+          "leaderTicker": "BEAT",
+          "leaderChangePct": "+50.53%",
           "breadth": {
-            "advancers": 39,
-            "decliners": 12,
+            "advancers": 31,
+            "decliners": 10,
             "unchanged": 5
           }
         },
         {
-          "name": "汽车制造",
-          "nameEn": "Auto Manufacturers",
-          "code": "BK2468",
-          "changePct": "+3.06%",
-          "leaderName": "SONO Group",
-          "leaderTicker": "SSM",
-          "leaderChangePct": "+19.23%",
+          "name": "航空航天与国防",
+          "nameEn": "Aerospace & Defense",
+          "code": "BK2089",
+          "changePct": "+4.01%",
+          "leaderName": "WISESAT.SPACE HOLDINGS CORPORATION",
+          "leaderTicker": "SAIQ",
+          "leaderChangePct": "+260.54%",
           "breadth": {
-            "advancers": 9,
-            "decliners": 19,
+            "advancers": 28,
+            "decliners": 69,
             "unchanged": 1
+          }
+        },
+        {
+          "name": "铝",
+          "nameEn": "Aluminum",
+          "code": "BK2211",
+          "changePct": "+3.53%",
+          "leaderName": "世纪铝业",
+          "leaderTicker": "CENX",
+          "leaderChangePct": "+3.71%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 0,
+            "unchanged": 0
           }
         }
       ],
       "bottom": [
         {
-          "name": "计算机硬件",
-          "nameEn": "Computer Hardware",
-          "code": "BK2492",
-          "changePct": "-2.08%",
-          "leaderName": "Qtrex Quantum",
-          "leaderTicker": "QTEX",
-          "leaderChangePct": "+40.20%",
+          "name": "办公室REITs",
+          "nameEn": "REIT - Office",
+          "code": "BK2457",
+          "changePct": "-1.20%",
+          "leaderName": "Creative Media & Community Trust",
+          "leaderTicker": "CMCT",
+          "leaderChangePct": "+22.63%",
           "breadth": {
-            "advancers": 26,
+            "advancers": 3,
             "decliners": 18,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "咨询服务",
-          "nameEn": "Consulting Services",
-          "code": "BK2476",
-          "changePct": "-2.17%",
-          "leaderName": "Greenpro Capital",
-          "leaderTicker": "GRNQ",
-          "leaderChangePct": "+13.52%",
-          "breadth": {
-            "advancers": 10,
-            "decliners": 12,
             "unchanged": 2
           }
         },
         {
-          "name": "信息技术服务",
-          "nameEn": "Information Technology Services",
-          "code": "BK2252",
-          "changePct": "-2.72%",
-          "leaderName": "Cycurion",
-          "leaderTicker": "CYCU",
-          "leaderChangePct": "+42.01%",
+          "name": "医疗设施REITs",
+          "nameEn": "REIT - Healthcare Facilities",
+          "code": "BK2503",
+          "changePct": "-1.74%",
+          "leaderName": "Medical Properties Trust",
+          "leaderTicker": "MPT",
+          "leaderChangePct": "+1.22%",
           "breadth": {
-            "advancers": 18,
-            "decliners": 59,
-            "unchanged": 2
+            "advancers": 3,
+            "decliners": 16,
+            "unchanged": 0
           }
         },
         {
-          "name": "人力资源与就业服务",
-          "nameEn": "Staffing & Employment Services",
-          "code": "BK2496",
-          "changePct": "-2.78%",
-          "leaderName": "Circle8",
-          "leaderTicker": "CIRC",
-          "leaderChangePct": "+5.69%",
+          "name": "食品分销",
+          "nameEn": "Food Distribution",
+          "code": "BK2478",
+          "changePct": "-1.83%",
+          "leaderName": "寰泰生技",
+          "leaderTicker": "MTEX",
+          "leaderChangePct": "+11.90%",
           "breadth": {
             "advancers": 2,
-            "decliners": 15,
-            "unchanged": 3
+            "decliners": 9,
+            "unchanged": 0
           }
         },
         {
-          "name": "广告代理",
-          "nameEn": "Advertising Agencies",
-          "code": "BK2030",
-          "changePct": "-3.30%",
-          "leaderName": "Stran & Company",
-          "leaderTicker": "SWAG",
-          "leaderChangePct": "+10.53%",
+          "name": "纺织制造",
+          "nameEn": "Textile Manufacturing",
+          "code": "BK2499",
+          "changePct": "-2.34%",
+          "leaderName": "平安生物医药",
+          "leaderTicker": "PASW",
+          "leaderChangePct": "+1.36%",
           "breadth": {
-            "advancers": 11,
-            "decliners": 24,
-            "unchanged": 8
+            "advancers": 1,
+            "decliners": 4,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "住宅施工",
+          "nameEn": "Residential Construction",
+          "code": "BK2005",
+          "changePct": "-2.66%",
+          "leaderName": "Springview Holdings",
+          "leaderTicker": "SPHL",
+          "leaderChangePct": "+4.26%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 19,
+            "unchanged": 0
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-03T09:25:08+08:00",
+      "fetchedAt": "2026-10-06T10:29:47+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -179,69 +179,69 @@
           "name": "太空概念",
           "nameEn": "Space",
           "code": "BK2556",
-          "changePct": "+5.16%",
-          "leaderName": "Planet Labs PBC",
-          "leaderTicker": "PL",
-          "leaderChangePct": "+8.43%",
+          "changePct": "+5.19%",
+          "leaderName": "SpaceX",
+          "leaderTicker": "SPCX",
+          "leaderChangePct": "+7.63%",
           "breadth": {
-            "advancers": 24,
-            "decliners": 7,
+            "advancers": 7,
+            "decliners": 24,
             "unchanged": 0
           }
         },
         {
-          "name": "充电桩",
-          "nameEn": "EV Charging",
-          "code": "BK2547",
-          "changePct": "+3.76%",
-          "leaderName": "EVgo Inc",
-          "leaderTicker": "EVGO",
-          "leaderChangePct": "+9.52%",
+          "name": "AI医疗概念股",
+          "nameEn": "AI medical concept stocks",
+          "code": "BK23592",
+          "changePct": "+4.06%",
+          "leaderName": "Ginkgo Bioworks",
+          "leaderTicker": "DNA",
+          "leaderChangePct": "+21.30%",
           "breadth": {
-            "advancers": 5,
+            "advancers": 26,
             "decliners": 3,
             "unchanged": 1
           }
         },
         {
-          "name": "3D打印",
-          "nameEn": "3D Printing",
-          "code": "BK2553",
-          "changePct": "+3.37%",
-          "leaderName": "3D系统",
-          "leaderTicker": "DDD",
-          "leaderChangePct": "+6.78%",
+          "name": "NFT概念",
+          "nameEn": "Non-Fungible Tokens",
+          "code": "BK2561",
+          "changePct": "+4.04%",
+          "leaderName": "Dolphin Entertainment",
+          "leaderTicker": "DLPN",
+          "leaderChangePct": "+7.08%",
           "breadth": {
-            "advancers": 4,
+            "advancers": 8,
+            "decliners": 3,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "China's Terrific",
+          "nameEn": "China's Terrific",
+          "code": "BK23596",
+          "changePct": "+3.07%",
+          "leaderName": "阿里巴巴",
+          "leaderTicker": "BABA",
+          "leaderChangePct": "+4.68%",
+          "breadth": {
+            "advancers": 6,
             "decliners": 0,
             "unchanged": 1
           }
         },
         {
-          "name": "新能源汽车",
-          "nameEn": "Electric Vehicles",
-          "code": "BK2568",
-          "changePct": "+3.19%",
-          "leaderName": "特斯拉",
-          "leaderTicker": "TSLA",
-          "leaderChangePct": "+4.65%",
+          "name": "ARK ETF合集",
+          "nameEn": "ARK ETFs",
+          "code": "BK2551",
+          "changePct": "+2.91%",
+          "leaderName": "基因进化ETF-ARK",
+          "leaderTicker": "ARKG",
+          "leaderChangePct": "+5.13%",
           "breadth": {
-            "advancers": 1,
-            "decliners": 11,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "激光雷达概念",
-          "nameEn": "Lidar Technology",
-          "code": "BK2539",
-          "changePct": "+2.99%",
-          "leaderName": "Ouster",
-          "leaderTicker": "OUST",
-          "leaderChangePct": "+8.61%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 3,
+            "advancers": 8,
+            "decliners": 0,
             "unchanged": 0
           }
         }
