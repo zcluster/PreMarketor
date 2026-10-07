@@ -2,10 +2,10 @@
   "date": "2026-10-07",
   "run_id": "ah-20261007-20261007082716",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-10-07T08:39:10+08:00",
-  "lease_until": "2026-10-07T08:49:10+08:00",
+  "status": "published",
+  "stage": "completed",
+  "heartbeat_at": "2026-10-07T08:44:08+08:00",
+  "lease_until": null,
   "source_cutoff": "2026-10-07T08:34:30+08:00",
   "main_base_sha": "9b7668a6a7621c865e53238fabc8a25eb278f2fa",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -53,8 +53,8 @@
     ]
   },
   "pending_increment": [],
-  "published_commit": null,
-  "candidate_commit": "8b68b5afbf1a7af5cdeaa3f2c33d51352b94d837",
+  "published_commit": "4da25886c517e856d57754bd2f8241d4dea41dc9",
+  "candidate_commit": "4da25886c517e856d57754bd2f8241d4dea41dc9",
   "error": null,
   "terminal_error": null,
   "stage_timings": {
@@ -63,10 +63,13 @@
     "lease_acquired_at": "2026-10-07T08:27:16+08:00",
     "evidence_checkpoint_at": "2026-10-07T08:34:30+08:00",
     "generation_completed_at": "2026-10-07T08:38:00+08:00",
-    "commit_completed_at": "2026-10-07T08:39:03+08:00"
+    "commit_completed_at": "2026-10-07T08:39:03+08:00",
+    "production_verified_at": "2026-10-07T08:44:08+08:00",
+    "finished_at": "2026-10-07T08:44:08+08:00",
+    "total_seconds": 1032
   },
   "metrics": {
-    "requests": 33,
+    "requests": 53,
     "retries": 0,
     "cache_hits": 0
   },
@@ -89,7 +92,37 @@
       ]
     },
     "deployment": {
-      "status": "pending"
+      "status": "passed",
+      "homepage": {
+        "http_rendered": true,
+        "zh_cards": 4,
+        "en_cards": 4,
+        "zh_news": 12,
+        "en_news": 12,
+        "us_summary_items": 3,
+        "industry_rows": 0,
+        "concept_rows": 0,
+        "empty_state": false
+      },
+      "archive": {
+        "rendered": true,
+        "cards": 4,
+        "news": 12,
+        "empty_state": false,
+        "time": "2026-10-07 08:43 CST"
+      },
+      "github_readback": {
+        "index": true,
+        "history": true,
+        "manifest": true
+      },
+      "display_correction": {
+        "issue": "leading numeric asset yield was stripped by frontend formatter",
+        "fixed_value_zh": "约5.294%",
+        "fixed_value_en": "~5.294%",
+        "verified": true
+      }
     }
-  }
+  },
+  "finished_at": "2026-10-07T08:44:08+08:00"
 }
