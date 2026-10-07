@@ -3,10 +3,10 @@
   "run_id": "ah-20261007-20261007082716",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rules_and_files",
-  "heartbeat_at": "2026-10-07T08:27:16+08:00",
-  "lease_until": "2026-10-07T08:37:16+08:00",
-  "source_cutoff": "2026-10-07T08:27:16+08:00",
+  "stage": "evidence_collection",
+  "heartbeat_at": "2026-10-07T08:34:30+08:00",
+  "lease_until": "2026-10-07T08:44:30+08:00",
+  "source_cutoff": "2026-10-07T08:34:30+08:00",
   "main_base_sha": "9b7668a6a7621c865e53238fabc8a25eb278f2fa",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
@@ -14,7 +14,43 @@
       "sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
       "length": 29416,
       "status": "fully_read"
-    }
+    },
+    "snapshots": {
+      "akshare": {
+        "fetchedAt": "2026-10-06 14:22:23 CST",
+        "status": "stale_for_2026-10-07",
+        "a_market_date": "2026-09-30",
+        "hk_market_date": "2026-10-06"
+      },
+      "us_rankings": {
+        "fetchedAt": "2026-10-06 10:29:47 CST",
+        "status": "stale_for_latest_US_cash_session",
+        "current_rows": 0
+      }
+    },
+    "coverage": {
+      "domestic_policy": [
+        "MIIT IC VAT super-deduction list (2026-09-30)",
+        "NDRC 52 manufacturing projects (2026-09-29)",
+        "SCIO technology briefing (2026-09-29)"
+      ],
+      "hkex": [
+        "00370 rights issue results (2026-10-06 22:00)",
+        "02147 rights issue acceptances (2026-10-06 20:18)"
+      ],
+      "us_close": [
+        "S&P +0.58%, Nasdaq +0.45%, Dow +0.49% on 2026-10-06",
+        "utilities led; CEG +12.3%, MRVL +5.8%, WDC -6.93%"
+      ],
+      "runtime": [
+        "S&P/Nasdaq futures -0.1% proxy; oil +1%; Dow futures unavailable"
+      ]
+    },
+    "discovery_attempts": [
+      "Jin10 targeted search",
+      "CLS/Kechuang targeted search",
+      "STCN/Eastmoney cross-check"
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -24,10 +60,11 @@
   "stage_timings": {
     "started_at": "2026-10-07T08:26:56+08:00",
     "rules_read_completed_at": "2026-10-07T08:27:16+08:00",
-    "lease_acquired_at": "2026-10-07T08:27:16+08:00"
+    "lease_acquired_at": "2026-10-07T08:27:16+08:00",
+    "evidence_checkpoint_at": "2026-10-07T08:34:30+08:00"
   },
   "metrics": {
-    "requests": 6,
+    "requests": 33,
     "retries": 0,
     "cache_hits": 0
   }
