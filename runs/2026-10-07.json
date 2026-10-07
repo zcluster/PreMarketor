@@ -1,11 +1,11 @@
 {
   "date": "2026-10-07",
-  "run_id": "ah-20261007-20261007082716",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "completed",
-  "heartbeat_at": "2026-10-07T08:44:08+08:00",
-  "lease_until": null,
+  "run_id": "ah-review-20261007-20261007092157",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "heartbeat_at": "2026-10-07T09:21:57.027+08:00",
+  "lease_until": "2026-10-07T09:31:57.027+08:00",
   "source_cutoff": "2026-10-07T08:34:30+08:00",
   "main_base_sha": "9b7668a6a7621c865e53238fabc8a25eb278f2fa",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -66,7 +66,8 @@
     "commit_completed_at": "2026-10-07T08:39:03+08:00",
     "production_verified_at": "2026-10-07T08:44:08+08:00",
     "finished_at": "2026-10-07T08:44:08+08:00",
-    "total_seconds": 1032
+    "total_seconds": 1032,
+    "incremental_review_started_at": "2026-10-07T09:21:57.027+08:00"
   },
   "metrics": {
     "requests": 53,
@@ -124,5 +125,14 @@
       }
     }
   },
-  "finished_at": "2026-10-07T08:44:08+08:00"
+  "finished_at": "2026-10-07T08:44:08+08:00",
+  "incremental_review": {
+    "review_started_at": "2026-10-07T09:21:57.027+08:00",
+    "first_run_source_cutoff": "2026-10-07T08:34:30+08:00",
+    "status": "researching",
+    "discovered": [],
+    "material_changes": [],
+    "reviewed_sources": [],
+    "conclusion": null
+  }
 }
