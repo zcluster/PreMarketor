@@ -5,10 +5,10 @@
   "owner": "MarketAhead A/H 早报复核",
   "run_type": "incremental",
   "status": "running",
-  "stage": "incremental_generation",
+  "stage": "hard_validation",
   "started_at": "2026-10-08T01:37:04Z",
-  "heartbeat_at": "2026-10-08T01:40:05Z",
-  "lease_until": "2026-10-08T01:50:05Z",
+  "heartbeat_at": "2026-10-08T01:43:16Z",
+  "lease_until": "2026-10-08T01:53:16Z",
   "source_cutoff": "2026-10-08T00:36:24.058Z",
   "main_base_sha": "d00a5284df08f57c236ed3adc219c00a7e45c74d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -341,6 +341,49 @@
         "cross_source": "Eastmoney/STCN current announcement and calendar pages checked"
       },
       "hk_directed_check": "No verified post-cutoff HKEX result/suspension/resumption/clarification found that changed the brief"
+    },
+    "incremental_hard_validation": {
+      "whitelist": [
+        "index.html",
+        "history/data/2026-10-08.json",
+        "history/manifest.json"
+      ],
+      "outside_authorized_markers_identical": true,
+      "us_brief_time_updated_identical": true,
+      "bilingual_class_skeleton": true,
+      "major_news": [
+        12,
+        12
+      ],
+      "overnight_items": [
+        3,
+        3
+      ],
+      "keyword_contract": [
+        10,
+        10
+      ],
+      "stock_cards": [
+        4,
+        4
+      ],
+      "asset_rows": [
+        8,
+        8
+      ],
+      "logic_steps": [
+        4,
+        4
+      ],
+      "risk_items": [
+        4,
+        4
+      ],
+      "cloud_legend_dots": true,
+      "history_render_simulation": true,
+      "manifest_records_preserved": 36,
+      "live_opening_evidence_included": true,
+      "stale_rankings_panel_preserved": true
     }
   },
   "pending_increment": [
@@ -382,6 +425,8 @@
     "completed_at": "2026-10-08T00:40:54.134Z",
     "incremental_review_started_at": "2026-10-08T01:37:04Z",
     "incremental_research_completed_at": "2026-10-08T01:40:05Z",
-    "incremental_generation_started_at": "2026-10-08T01:40:05Z"
+    "incremental_generation_started_at": "2026-10-08T01:40:05Z",
+    "incremental_generation_completed_at": "2026-10-08T01:43:16Z",
+    "incremental_validation_started_at": "2026-10-08T01:43:16Z"
   }
 }
