@@ -5,10 +5,10 @@
   "owner": "MarketAhead A/H 早报复核",
   "run_type": "incremental",
   "status": "running",
-  "stage": "incremental_research",
+  "stage": "incremental_generation",
   "started_at": "2026-10-08T01:37:04Z",
-  "heartbeat_at": "2026-10-08T01:37:04Z",
-  "lease_until": "2026-10-08T01:47:04Z",
+  "heartbeat_at": "2026-10-08T01:40:05Z",
+  "lease_until": "2026-10-08T01:50:05Z",
   "source_cutoff": "2026-10-08T00:36:24.058Z",
   "main_base_sha": "d00a5284df08f57c236ed3adc219c00a7e45c74d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -279,9 +279,87 @@
         "production_archive_render_proves_today_json_loaded": true,
         "direct_json_browser_check": "blocked_by_client"
       }
+    },
+    "incremental_review": {
+      "cutoff": "2026-10-08T00:36:24.058Z",
+      "checked_at": "2026-10-08T01:40:05Z",
+      "sources": [
+        {
+          "url": "https://www.google.com/finance/quote/000001:SHA",
+          "role": "SSE Composite live opening feedback",
+          "status": "verified",
+          "observed": "3853.58, +0.30% at 09:34:15 CST"
+        },
+        {
+          "url": "https://www.google.com/finance/quote/HSI:INDEXHANGSENG",
+          "role": "Hang Seng live opening feedback",
+          "status": "verified",
+          "observed": "24096.21, -0.14% at 09:28:50 CST"
+        },
+        {
+          "url": "https://www.cls.cn/",
+          "role": "A-share sector breadth and opening leaders",
+          "status": "cross_checked",
+          "observed": "biological products +4.18%, pharma +2.09%, banks +1.46%"
+        },
+        {
+          "url": "https://www.google.com/finance/quote/QQQ:NASDAQ",
+          "role": "US after-hours proxy",
+          "status": "verified",
+          "observed": "QQQ +0.11% after hours; cash -0.25%"
+        },
+        {
+          "url": "https://www.google.com/finance/quote/DIA:NYSEARCA",
+          "role": "US after-hours proxy",
+          "status": "verified",
+          "observed": "DIA -0.02% after hours; cash -0.69%"
+        }
+      ],
+      "diff": [
+        {
+          "event": "A-share opening sector rotation",
+          "first_available_after_cutoff": true,
+          "material": true,
+          "impact": "broad index held positive while pharma and banks led; semiconductor/foundry peers weakened; changes sector rotation and SMEE confirmation threshold"
+        },
+        {
+          "event": "Hong Kong opening",
+          "first_available_after_cutoff": true,
+          "material": false,
+          "impact": "HSI modestly lower, confirming existing cautious Hong Kong view"
+        },
+        {
+          "event": "US after-hours proxies",
+          "first_available_after_cutoff": true,
+          "material": false,
+          "impact": "QQQ slight rebound and DIA flat-to-lower do not overturn high-yield risk overlay"
+        }
+      ],
+      "domestic_discovery": {
+        "jin10": "no verifiable post-cutoff material item found",
+        "cls": "opening sector leaders found",
+        "cross_source": "Eastmoney/STCN current announcement and calendar pages checked"
+      },
+      "hk_directed_check": "No verified post-cutoff HKEX result/suspension/resumption/clarification found that changed the brief"
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "event": "A-share opening sector rotation",
+      "material": true,
+      "status": "absorbed_into_generation"
+    },
+    {
+      "event": "Hong Kong opening",
+      "material": false,
+      "status": "checked_no_change"
+    },
+    {
+      "event": "US after-hours proxies",
+      "material": false,
+      "status": "checked_no_change"
+    }
+  ],
   "candidate_commit": "d00a5284df08f57c236ed3adc219c00a7e45c74d",
   "published_commit": "d00a5284df08f57c236ed3adc219c00a7e45c74d",
   "error": null,
@@ -302,6 +380,8 @@
     "remote_readback_completed_at": "2026-10-08T00:40:54.134Z",
     "deployment_verification_completed_at": "2026-10-08T00:40:54.134Z",
     "completed_at": "2026-10-08T00:40:54.134Z",
-    "incremental_review_started_at": "2026-10-08T01:37:04Z"
+    "incremental_review_started_at": "2026-10-08T01:37:04Z",
+    "incremental_research_completed_at": "2026-10-08T01:40:05Z",
+    "incremental_generation_started_at": "2026-10-08T01:40:05Z"
   }
 }
