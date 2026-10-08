@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
   "business_date": "2026-10-08",
-  "run_id": "ah-20261008-20261008002945",
-  "owner": "发布 MarketAhead A/H 早报",
-  "run_type": "initial",
-  "status": "published",
-  "stage": "completed",
-  "started_at": "2026-10-08T00:29:45.537Z",
-  "heartbeat_at": "2026-10-08T00:40:54.134Z",
-  "lease_until": "2026-10-08T00:40:54.134Z",
+  "run_id": "ah-20261008-incremental-20261008013704",
+  "owner": "MarketAhead A/H 早报复核",
+  "run_type": "incremental",
+  "status": "running",
+  "stage": "incremental_research",
+  "started_at": "2026-10-08T01:37:04Z",
+  "heartbeat_at": "2026-10-08T01:37:04Z",
+  "lease_until": "2026-10-08T01:47:04Z",
   "source_cutoff": "2026-10-08T00:36:24.058Z",
-  "main_base_sha": "709eea4dc3282f67b577ca0321814a445650ff04",
+  "main_base_sha": "d00a5284df08f57c236ed3adc219c00a7e45c74d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
     "rules": {
@@ -301,6 +301,7 @@
     "remote_readback_started_at": "2026-10-08T00:38:45.375Z",
     "remote_readback_completed_at": "2026-10-08T00:40:54.134Z",
     "deployment_verification_completed_at": "2026-10-08T00:40:54.134Z",
-    "completed_at": "2026-10-08T00:40:54.134Z"
+    "completed_at": "2026-10-08T00:40:54.134Z",
+    "incremental_review_started_at": "2026-10-08T01:37:04Z"
   }
 }
