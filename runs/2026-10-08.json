@@ -4,11 +4,11 @@
   "run_id": "ah-20261008-20261008002945",
   "owner": "发布 MarketAhead A/H 早报",
   "run_type": "initial",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "completed",
   "started_at": "2026-10-08T00:29:45.537Z",
-  "heartbeat_at": "2026-10-08T00:38:45.375Z",
-  "lease_until": "2026-10-08T00:48:45.375Z",
+  "heartbeat_at": "2026-10-08T00:40:54.134Z",
+  "lease_until": "2026-10-08T00:40:54.134Z",
   "source_cutoff": "2026-10-08T00:36:24.058Z",
   "main_base_sha": "709eea4dc3282f67b577ca0321814a445650ff04",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -245,6 +245,40 @@
       "render_sim": true,
       "manifest_top": true,
       "manifest_history_preserved": true
+    },
+    "remote_readback": {
+      "commit": "d00a5284df08f57c236ed3adc219c00a7e45c74d",
+      "files": [
+        "index.html",
+        "history/data/2026-10-08.json",
+        "history/manifest.json"
+      ],
+      "all_match": true
+    },
+    "production_verification": {
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "time": "2026-10-08 08:34 CST",
+        "zh_rendered": true,
+        "en_rendered": true,
+        "ah_cards": 4,
+        "overnight_items": 3,
+        "industry_rows": 0,
+        "concept_rows": 0,
+        "empty_state": false
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-10-08",
+        "zh_rendered": true,
+        "ah_cards": 4,
+        "overnight_items": 3,
+        "empty_state": false
+      },
+      "json_manifest": {
+        "github_remote_match": true,
+        "production_archive_render_proves_today_json_loaded": true,
+        "direct_json_browser_check": "blocked_by_client"
+      }
     }
   },
   "pending_increment": [],
@@ -264,6 +298,9 @@
     "candidate_commit_completed_at": "2026-10-08T00:37:58.887Z",
     "main_ref_update_started_at": "2026-10-08T00:37:58.887Z",
     "main_ref_update_completed_at": "2026-10-08T00:38:45.375Z",
-    "remote_readback_started_at": "2026-10-08T00:38:45.375Z"
+    "remote_readback_started_at": "2026-10-08T00:38:45.375Z",
+    "remote_readback_completed_at": "2026-10-08T00:40:54.134Z",
+    "deployment_verification_completed_at": "2026-10-08T00:40:54.134Z",
+    "completed_at": "2026-10-08T00:40:54.134Z"
   }
 }
