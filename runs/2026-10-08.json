@@ -5,10 +5,10 @@
   "owner": "发布 MarketAhead A/H 早报",
   "run_type": "initial",
   "status": "running",
-  "stage": "research",
+  "stage": "generation",
   "started_at": "2026-10-08T00:29:45.537Z",
-  "heartbeat_at": "2026-10-08T00:30:26.377Z",
-  "lease_until": "2026-10-08T00:40:26.377Z",
+  "heartbeat_at": "2026-10-08T00:34:18.179Z",
+  "lease_until": "2026-10-08T00:44:18.179Z",
   "source_cutoff": "2026-10-08T00:29:45.537Z",
   "main_base_sha": "709eea4dc3282f67b577ca0321814a445650ff04",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -17,7 +17,48 @@
       "fully_read": true,
       "blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b"
     },
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://www3.xinhuanet.com/20260930/536e30bf8d4140b2886505a2abca2017/c.html",
+        "role": "PBOC RMB1.2tn reverse repo",
+        "status": "verified"
+      },
+      {
+        "url": "https://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260929_3998312.htm",
+        "role": "mortgage subsidy policy",
+        "status": "verified"
+      },
+      {
+        "url": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20260915_10832273.shtml",
+        "role": "A-share reopening calendar",
+        "status": "verified"
+      },
+      {
+        "url": "https://finance.eastmoney.com/a/202610083889031433.html",
+        "role": "domestic discovery and company announcement digest",
+        "status": "cross_checked"
+      },
+      {
+        "url": "https://acmresearch.gcs-web.com/news-releases/news-release-details/acm-researchs-operating-subsidiary-acm-research-shanghai-9",
+        "role": "ACM Shanghai backlog",
+        "status": "verified"
+      },
+      {
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0710/2026071000068_c.htm",
+        "role": "Z Fin suspension",
+        "status": "verified"
+      },
+      {
+        "url": "https://www.reuters.com/business/wall-st-futures-slip-yields-oil-rebound-fed-minutes-focus-2026-10-07/",
+        "role": "US close and cross-assets",
+        "status": "verified"
+      },
+      {
+        "url": "https://www.reuters.com/business/retail-consumer/huawei-unveils-mate-90-phones-leans-homegrown-chip-design-offset-us-curbs-2026-10-01/",
+        "role": "Huawei Mate 90",
+        "status": "verified"
+      }
+    ],
     "snapshots": [
       {
         "path": "data/akshare-latest.json",
@@ -41,6 +82,7 @@
   "timings": {
     "rules_started_at": "2026-10-08T00:29:45.537Z",
     "lease_acquired_at": "2026-10-08T00:30:12.632Z",
-    "research_started_at": "2026-10-08T00:30:26.377Z"
+    "research_started_at": "2026-10-08T00:30:26.377Z",
+    "generation_started_at": "2026-10-08T00:34:18.179Z"
   }
 }
