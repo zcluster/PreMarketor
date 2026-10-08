@@ -4,11 +4,11 @@
   "run_id": "ah-20261008-incremental-20261008013704",
   "owner": "MarketAhead A/H 早报复核",
   "run_type": "incremental",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "completed",
   "started_at": "2026-10-08T01:37:04Z",
-  "heartbeat_at": "2026-10-08T01:45:51Z",
-  "lease_until": "2026-10-08T01:55:51Z",
+  "heartbeat_at": "2026-10-08T01:48:12Z",
+  "lease_until": "2026-10-08T01:48:12Z",
   "source_cutoff": "2026-10-08T00:36:24.058Z",
   "main_base_sha": "d00a5284df08f57c236ed3adc219c00a7e45c74d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -384,25 +384,47 @@
       "manifest_records_preserved": 36,
       "live_opening_evidence_included": true,
       "stale_rankings_panel_preserved": true
+    },
+    "incremental_remote_readback": {
+      "commit": "6dded89c5cb14b2dbf9bd801e0a6a1d21da57793",
+      "files": [
+        "index.html",
+        "history/data/2026-10-08.json",
+        "history/manifest.json"
+      ],
+      "all_match": true,
+      "only_whitelist": true
+    },
+    "incremental_production_verification": {
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "time": "2026-10-08 09:42 CST",
+        "zh_rendered": true,
+        "en_rendered": true,
+        "ah_cards": 4,
+        "overnight_items": 3,
+        "industry_rows": 0,
+        "concept_rows": 0,
+        "empty_state": false,
+        "us_time_preserved": "2026-10-07 20:29 CST"
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-10-08",
+        "title": "沪指节后小涨但医药银行领跑，半导体开盘承压；港股谨慎格局未改",
+        "time": "2026-10-08 09:42 CST",
+        "zh_rendered": true,
+        "ah_cards": 4,
+        "overnight_items": 3,
+        "empty_state": false
+      },
+      "json_manifest": {
+        "github_remote_match": true,
+        "production_archive_render_proves_today_json_loaded": true,
+        "direct_json_browser_check": "not_required_after_exact_remote_readback_and_render_verification"
+      }
     }
   },
-  "pending_increment": [
-    {
-      "event": "A-share opening sector rotation",
-      "material": true,
-      "status": "absorbed_into_generation"
-    },
-    {
-      "event": "Hong Kong opening",
-      "material": false,
-      "status": "checked_no_change"
-    },
-    {
-      "event": "US after-hours proxies",
-      "material": false,
-      "status": "checked_no_change"
-    }
-  ],
+  "pending_increment": [],
   "candidate_commit": "6dded89c5cb14b2dbf9bd801e0a6a1d21da57793",
   "published_commit": "6dded89c5cb14b2dbf9bd801e0a6a1d21da57793",
   "error": null,
@@ -433,6 +455,10 @@
     "incremental_candidate_commit_completed_at": "2026-10-08T01:45:04Z",
     "incremental_main_ref_update_started_at": "2026-10-08T01:45:04Z",
     "incremental_main_ref_update_completed_at": "2026-10-08T01:45:51Z",
-    "incremental_remote_readback_started_at": "2026-10-08T01:45:51Z"
+    "incremental_remote_readback_started_at": "2026-10-08T01:45:51Z",
+    "incremental_remote_readback_completed_at": "2026-10-08T01:48:12Z",
+    "incremental_deployment_verification_completed_at": "2026-10-08T01:48:12Z",
+    "incremental_completed_at": "2026-10-08T01:48:12Z"
   }
 }
+
