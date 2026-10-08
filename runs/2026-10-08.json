@@ -5,10 +5,10 @@
   "owner": "发布 MarketAhead A/H 早报",
   "run_type": "initial",
   "status": "running",
-  "stage": "candidate_commit_creation",
+  "stage": "main_ref_update",
   "started_at": "2026-10-08T00:29:45.537Z",
-  "heartbeat_at": "2026-10-08T00:36:53.970Z",
-  "lease_until": "2026-10-08T00:46:53.970Z",
+  "heartbeat_at": "2026-10-08T00:37:58.887Z",
+  "lease_until": "2026-10-08T00:47:58.887Z",
   "source_cutoff": "2026-10-08T00:36:24.058Z",
   "main_base_sha": "709eea4dc3282f67b577ca0321814a445650ff04",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -248,7 +248,7 @@
     }
   },
   "pending_increment": [],
-  "candidate_commit": null,
+  "candidate_commit": "d00a5284df08f57c236ed3adc219c00a7e45c74d",
   "published_commit": null,
   "error": null,
   "terminal_error": null,
@@ -260,6 +260,8 @@
     "generation_completed_at": "2026-10-08T00:36:24.058Z",
     "validation_started_at": "2026-10-08T00:36:24.058Z",
     "validation_completed_at": "2026-10-08T00:36:53.970Z",
-    "candidate_commit_started_at": "2026-10-08T00:36:53.970Z"
+    "candidate_commit_started_at": "2026-10-08T00:36:53.970Z",
+    "candidate_commit_completed_at": "2026-10-08T00:37:58.887Z",
+    "main_ref_update_started_at": "2026-10-08T00:37:58.887Z"
   }
 }
