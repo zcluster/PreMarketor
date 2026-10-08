@@ -5,10 +5,10 @@
   "owner": "MarketAhead A/H 早报复核",
   "run_type": "incremental",
   "status": "running",
-  "stage": "hard_validation",
+  "stage": "candidate_commit",
   "started_at": "2026-10-08T01:37:04Z",
-  "heartbeat_at": "2026-10-08T01:43:16Z",
-  "lease_until": "2026-10-08T01:53:16Z",
+  "heartbeat_at": "2026-10-08T01:44:01Z",
+  "lease_until": "2026-10-08T01:54:01Z",
   "source_cutoff": "2026-10-08T00:36:24.058Z",
   "main_base_sha": "d00a5284df08f57c236ed3adc219c00a7e45c74d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -427,6 +427,8 @@
     "incremental_research_completed_at": "2026-10-08T01:40:05Z",
     "incremental_generation_started_at": "2026-10-08T01:40:05Z",
     "incremental_generation_completed_at": "2026-10-08T01:43:16Z",
-    "incremental_validation_started_at": "2026-10-08T01:43:16Z"
+    "incremental_validation_started_at": "2026-10-08T01:43:16Z",
+    "incremental_validation_completed_at": "2026-10-08T01:44:01Z",
+    "incremental_candidate_commit_started_at": "2026-10-08T01:44:01Z"
   }
 }
