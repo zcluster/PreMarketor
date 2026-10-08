@@ -5,10 +5,10 @@
   "owner": "发布 MarketAhead A/H 早报",
   "run_type": "initial",
   "status": "running",
-  "stage": "rules_and_files",
+  "stage": "research",
   "started_at": "2026-10-08T00:29:45.537Z",
-  "heartbeat_at": "2026-10-08T00:29:45.537Z",
-  "lease_until": "2026-10-08T00:39:45.537Z",
+  "heartbeat_at": "2026-10-08T00:30:26.377Z",
+  "lease_until": "2026-10-08T00:40:26.377Z",
   "source_cutoff": "2026-10-08T00:29:45.537Z",
   "main_base_sha": "709eea4dc3282f67b577ca0321814a445650ff04",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -18,7 +18,20 @@
       "blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b"
     },
     "sources": [],
-    "snapshots": []
+    "snapshots": [
+      {
+        "path": "data/akshare-latest.json",
+        "blob_sha": "8f595a513e48fb2a74101f01cd2c0e1698adeba6",
+        "fetched_at": "2026-10-07T14:02:00+08:00",
+        "status": "ok"
+      },
+      {
+        "path": "data/us-sector-rankings-latest.json",
+        "blob_sha": "ccc1f0b5632251ae0f4d3f492e34180372e0f49c",
+        "fetched_at": "2026-10-07T09:47:59+08:00",
+        "status": "stale_for_latest_us_session"
+      }
+    ]
   },
   "pending_increment": [],
   "candidate_commit": null,
@@ -27,6 +40,7 @@
   "terminal_error": null,
   "timings": {
     "rules_started_at": "2026-10-08T00:29:45.537Z",
-    "lease_acquired_at": null
+    "lease_acquired_at": "2026-10-08T00:30:12.632Z",
+    "research_started_at": "2026-10-08T00:30:26.377Z"
   }
 }
