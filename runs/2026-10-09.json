@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "run_id": "ah-20261009-20261009003435",
+  "owner": "发布 MarketAhead A/H 早报",
+  "task_kind": "ah_first_run",
+  "date": "2026-10-09",
+  "status": "running",
+  "stage": "rules_read",
+  "started_at": "2026-10-09T00:34:35.982Z",
+  "heartbeat_at": "2026-10-09T00:34:35.982Z",
+  "lease_until": "2026-10-09T00:44:35.982Z",
+  "main_base_sha": "da9f11a080235987ef1000c0d1d2115286863099",
+  "published_commit": null,
+  "error": null,
+  "notes": [
+    "latest main brief_rules.md fully read; preparing sources"
+  ]
+}
