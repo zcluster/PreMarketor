@@ -4,11 +4,11 @@
   "run_id": "ah-20261009-incremental-20261009021330-r2",
   "owner": "MarketAhead A/H 早报复核",
   "run_type": "incremental",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "completed",
   "started_at": "2026-10-09T02:13:30Z",
-  "heartbeat_at": "2026-10-09T02:22:00Z",
-  "lease_until": "2026-10-09T02:32:00Z",
+  "heartbeat_at": "2026-10-09T02:21:42Z",
+  "lease_until": "2026-10-09T02:21:42Z",
   "source_cutoff": "2026-10-09T02:02:00Z",
   "main_base_sha": "b0a26932cf7578ef76c14ab1f3ea1f3ca1318126",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -191,23 +191,29 @@
         "oldOtherEntriesPreserved": true,
         "noEmptyState": true,
         "bannedOldThresholds": true
+      },
+      "remote_readback": {
+        "commit": "c1c5aa143c407898a6b34710431d7fa508717f87",
+        "files": {
+          "index": "68f9a5aca8d4283b12e9fe11f9b0fe15b4e64387",
+          "history": "2bf5ed11145dccf3b92d4b0906aedd1150437f54",
+          "manifest": "837c107bdb07d5f17ba6e3c0ef29bc008fe971cd"
+        },
+        "all_match": true
+      },
+      "production_verification": {
+        "verified_at": "2026-10-09T02:21:42Z",
+        "homepage": "https://premarketor.com/?v=c1c5aa1",
+        "archive": "https://premarketor.com/history/?date=2026-10-09&v=c1c5aa1",
+        "time": "2026-10-09 10:15 CST",
+        "title": "A股成长跌幅扩大，港股科技维持修复；奕斯伟首挂跌破发行区间转为回避",
+        "homepage_bilingual": true,
+        "archive_rendered": true,
+        "empty_state": false
       }
     }
   },
-  "pending_increment": [
-    {
-      "event": "ESWIN 01256 formal debut",
-      "observed_at": "2026-10-09T02:04:00Z",
-      "decision": "avoid",
-      "reason": "HKD1.45 below HKD1.55 issue price and HKD1.48 offer-range floor with 121m shares"
-    },
-    {
-      "event": "A-share 10:04 update",
-      "observed_at": "2026-10-09T02:04:49Z",
-      "decision": "update_risk",
-      "reason": "SSE -0.71%, SZSE -1.62%, ChiNext -2.09%"
-    }
-  ],
+  "pending_increment": [],
   "candidate_commit": "c1c5aa143c407898a6b34710431d7fa508717f87",
   "published_commit": "c1c5aa143c407898a6b34710431d7fa508717f87",
   "error": null,
@@ -224,6 +230,9 @@
     "candidate_commit_completed_at": "2026-10-09T02:20:45Z",
     "main_ref_update_started_at": "2026-10-09T02:20:45Z",
     "main_ref_update_completed_at": "2026-10-09T02:22:00Z",
-    "remote_readback_started_at": "2026-10-09T02:22:00Z"
+    "remote_readback_started_at": "2026-10-09T02:22:00Z",
+    "remote_readback_completed_at": "2026-10-09T02:20:55Z",
+    "deployment_verification_completed_at": "2026-10-09T02:21:42Z",
+    "completed_at": "2026-10-09T02:21:42Z"
   }
 }
