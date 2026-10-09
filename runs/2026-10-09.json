@@ -1,48 +1,97 @@
 {
-  "schema_version": 1,
-  "run_id": "ah-20261009-20261009003435",
-  "owner": "发布 MarketAhead A/H 早报",
-  "task_kind": "ah_first_run",
-  "date": "2026-10-09",
-  "status": "published",
-  "stage": "published",
-  "started_at": "2026-10-09T00:34:35.982Z",
-  "heartbeat_at": "2026-10-09T00:42:22.427Z",
-  "lease_until": null,
-  "main_base_sha": "da9f11a080235987ef1000c0d1d2115286863099",
-  "published_commit": "ae3f23bb7436ac3dec1bbbc939ab3c4062493086",
-  "error": null,
-  "notes": [
-    "latest main brief_rules.md fully read; preparing sources",
-    "shared lease acquired; source verification and snapshot validation in progress",
-    "research complete; candidate generation and hard validation in progress",
-    "main CAS publish succeeded; verifying GitHub readback and production",
-    "production homepage rendered in Chinese and English; archive rendered without empty state; terminal published"
+  "schema_version": 2,
+  "business_date": "2026-10-09",
+  "run_id": "ah-20261009-incremental-20261009015836",
+  "owner": "MarketAhead A/H 早报复核",
+  "run_type": "incremental",
+  "status": "running",
+  "stage": "research",
+  "started_at": "2026-10-09T01:58:36Z",
+  "heartbeat_at": "2026-10-09T01:58:36Z",
+  "lease_until": "2026-10-09T02:08:36Z",
+  "source_cutoff": "2026-10-09T00:39:00Z",
+  "main_base_sha": "ae3f23bb7436ac3dec1bbbc939ab3c4062493086",
+  "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
+  "evidence": {
+    "rules": {
+      "fully_read": true,
+      "blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b"
+    },
+    "first_run": {
+      "run_id": "ah-20261009-20261009003435",
+      "owner": "发布 MarketAhead A/H 早报",
+      "status": "published",
+      "published_commit": "ae3f23bb7436ac3dec1bbbc939ab3c4062493086",
+      "completed_at": "2026-10-09T00:42:22.427Z",
+      "source_cutoff": "2026-10-09T00:39:00Z",
+      "production_verified": true
+    },
+    "incremental_review": {
+      "checked_at": "2026-10-09T01:58:36Z",
+      "sources": [
+        {
+          "url": "https://www.google.com/finance/quote/000001:SHA",
+          "role": "SSE Composite opening feedback",
+          "observed": "3798.60, -0.35% at 09:44:55 CST",
+          "status": "verified"
+        },
+        {
+          "url": "https://www.google.com/finance/quote/399006:SHE",
+          "role": "ChiNext opening feedback",
+          "observed": "2998.76, -1.25% at 09:34:01 CST",
+          "status": "verified"
+        },
+        {
+          "url": "https://www.hsi.com.hk/zh-hk/home/",
+          "role": "Hang Seng and HSTECH opening feedback",
+          "observed": "HSI 24122.78, +0.65%; HSTECH 4178.83, +1.05%",
+          "status": "verified"
+        },
+        {
+          "url": "https://www.google.com/finance/quote/603183:SHA",
+          "role": "Suzhou Institute resumption feedback",
+          "observed": "CNY5.19, high 5.22, low 4.76, 21.65m volume at 09:36 CST",
+          "status": "verified"
+        },
+        {
+          "url": "https://www.investing.com/equities/after-hours",
+          "role": "US after-hours proxy",
+          "observed": "QQQ +0.29%, SPY +0.22%, DIA +0.22%",
+          "status": "cross_checked"
+        }
+      ],
+      "material_diff": [
+        {
+          "event": "Hong Kong technology rebound",
+          "material": true,
+          "impact": "HSTECH +1.05% reverses the first-run weak-opening assumption and upgrades Hong Kong technology from pressure to rebound-watch"
+        },
+        {
+          "event": "A-share weak opening",
+          "material": true,
+          "impact": "SSE -0.35% and ChiNext -1.25% confirm defensive bias but show a smaller decline than the prior-session baseline"
+        },
+        {
+          "event": "Suzhou Institute resumption",
+          "material": true,
+          "impact": "CNY5.19 trades above the CNY5.03 tender anchor but swings through CNY4.76-5.22; confirms event interest without supporting a bullish upgrade"
+        }
+      ]
+    }
+  },
+  "pending_increment": [
+    {
+      "event": "opening-market and resumption feedback",
+      "material": true,
+      "status": "research_complete"
+    }
   ],
-  "completed_at": "2026-10-09T00:42:22.427Z",
-  "production_verification": {
-    "homepage": "https://premarketor.com/",
-    "archive": "https://premarketor.com/history/?date=2026-10-09",
-    "homepage_time": "2026-10-09 08:39 CST",
-    "homepage_zh": {
-      "cards": 4,
-      "major_news": 11,
-      "overnight_items": 3,
-      "ranking_rows": 0
-    },
-    "homepage_en": {
-      "cards": 4,
-      "major_news": 11,
-      "overnight_items": 3,
-      "ranking_rows": 0
-    },
-    "archive_zh": {
-      "cards": 4,
-      "major_news": 11,
-      "overnight_items": 3,
-      "empty_state": false
-    },
-    "calendar_link": true,
-    "github_readback_exact": true
+  "candidate_commit": null,
+  "published_commit": null,
+  "error": null,
+  "terminal_error": null,
+  "timings": {
+    "rules_started_at": "2026-10-09T01:56:50Z",
+    "research_started_at": "2026-10-09T01:58:36Z"
   }
 }
