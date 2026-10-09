@@ -1,121 +1,194 @@
 {
   "schema_version": 2,
   "business_date": "2026-10-09",
-  "run_id": "ah-20261009-incremental-20261009015836",
+  "run_id": "ah-20261009-incremental-20261009021330-r2",
   "owner": "MarketAhead A/H 早报复核",
   "run_type": "incremental",
-  "status": "published",
-  "stage": "completed",
-  "started_at": "2026-10-09T01:58:36Z",
-  "heartbeat_at": "2026-10-09T02:07:25Z",
-  "lease_until": "2026-10-09T02:07:25Z",
-  "source_cutoff": "2026-10-09T00:39:00Z",
-  "main_base_sha": "ae3f23bb7436ac3dec1bbbc939ab3c4062493086",
+  "status": "running",
+  "stage": "research",
+  "started_at": "2026-10-09T02:13:30Z",
+  "heartbeat_at": "2026-10-09T02:13:30Z",
+  "lease_until": "2026-10-09T02:23:30Z",
+  "source_cutoff": "2026-10-09T02:02:00Z",
+  "main_base_sha": "b0a26932cf7578ef76c14ab1f3ea1f3ca1318126",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": {
+    "previous_completed_run": {
+      "run_id": "ah-20261009-incremental-20261009015836",
+      "status": "published",
+      "stage": "completed",
+      "published_commit": "b0a26932cf7578ef76c14ab1f3ea1f3ca1318126",
+      "completed_at": "2026-10-09T02:07:25Z",
+      "evidence": {
+        "rules": {
+          "fully_read": true,
+          "blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b"
+        },
+        "first_run": {
+          "run_id": "ah-20261009-20261009003435",
+          "owner": "发布 MarketAhead A/H 早报",
+          "status": "published",
+          "published_commit": "ae3f23bb7436ac3dec1bbbc939ab3c4062493086",
+          "completed_at": "2026-10-09T00:42:22.427Z",
+          "source_cutoff": "2026-10-09T00:39:00Z",
+          "production_verified": true
+        },
+        "incremental_review": {
+          "checked_at": "2026-10-09T01:58:36Z",
+          "sources": [
+            {
+              "url": "https://www.google.com/finance/quote/000001:SHA",
+              "role": "SSE Composite opening feedback",
+              "observed": "3798.60, -0.35% at 09:44:55 CST",
+              "status": "verified"
+            },
+            {
+              "url": "https://www.google.com/finance/quote/399006:SHE",
+              "role": "ChiNext opening feedback",
+              "observed": "2998.76, -1.25% at 09:34:01 CST",
+              "status": "verified"
+            },
+            {
+              "url": "https://www.hsi.com.hk/zh-hk/home/",
+              "role": "Hang Seng and HSTECH opening feedback",
+              "observed": "HSI 24122.78, +0.65%; HSTECH 4178.83, +1.05%",
+              "status": "verified"
+            },
+            {
+              "url": "https://www.google.com/finance/quote/603183:SHA",
+              "role": "Suzhou Institute resumption feedback",
+              "observed": "CNY5.19, high 5.22, low 4.76, 21.65m volume at 09:36 CST",
+              "status": "verified"
+            },
+            {
+              "url": "https://www.investing.com/equities/after-hours",
+              "role": "US after-hours proxy",
+              "observed": "QQQ +0.29%, SPY +0.22%, DIA +0.22%",
+              "status": "cross_checked"
+            }
+          ],
+          "material_diff": [
+            {
+              "event": "Hong Kong technology rebound",
+              "material": true,
+              "impact": "HSTECH +1.05% reverses the first-run weak-opening assumption and upgrades Hong Kong technology from pressure to rebound-watch"
+            },
+            {
+              "event": "A-share weak opening",
+              "material": true,
+              "impact": "SSE -0.35% and ChiNext -1.25% confirm defensive bias but show a smaller decline than the prior-session baseline"
+            },
+            {
+              "event": "Suzhou Institute resumption",
+              "material": true,
+              "impact": "CNY5.19 trades above the CNY5.03 tender anchor but swings through CNY4.76-5.22; confirms event interest without supporting a bullish upgrade"
+            }
+          ],
+          "hard_validation": {
+            "whitelist": [
+              "index.html",
+              "history/data/2026-10-09.json",
+              "history/manifest.json"
+            ],
+            "outside_authorized_markers_identical": true,
+            "us_brief_time_updated_identical": true,
+            "bilingual_class_skeleton": true,
+            "major_news": [
+              12,
+              12
+            ],
+            "overnight_items": [
+              3,
+              3
+            ],
+            "keyword_contract": [
+              10,
+              10
+            ],
+            "stock_cards": [
+              4,
+              4
+            ],
+            "asset_rows": [
+              8,
+              8
+            ],
+            "logic_steps": [
+              4,
+              4
+            ],
+            "risk_items": [
+              4,
+              4
+            ],
+            "history_render_simulation": true,
+            "manifest_records_preserved": 37,
+            "live_opening_evidence_included": true,
+            "stale_rankings_panel_preserved": true
+          }
+        }
+      }
+    },
     "rules": {
       "fully_read": true,
       "blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b"
     },
-    "first_run": {
-      "run_id": "ah-20261009-20261009003435",
-      "owner": "发布 MarketAhead A/H 早报",
-      "status": "published",
-      "published_commit": "ae3f23bb7436ac3dec1bbbc939ab3c4062493086",
-      "completed_at": "2026-10-09T00:42:22.427Z",
-      "source_cutoff": "2026-10-09T00:39:00Z",
-      "production_verified": true
-    },
-    "incremental_review": {
-      "checked_at": "2026-10-09T01:58:36Z",
+    "new_increment_check": {
+      "checked_at": "2026-10-09T02:13:30Z",
       "sources": [
         {
-          "url": "https://www.google.com/finance/quote/000001:SHA",
-          "role": "SSE Composite opening feedback",
-          "observed": "3798.60, -0.35% at 09:44:55 CST",
+          "url": "https://stock360.hkej.com/",
+          "role": "HK live market and ESWIN debut",
+          "observed": "10:04 CST: HSI 24026.86 +1.0%, HSTECH 4134.36 +1.5%; ESWIN 01256 HKD1.45 with 121m shares",
           "status": "verified"
         },
         {
           "url": "https://www.google.com/finance/quote/399006:SHE",
-          "role": "ChiNext opening feedback",
-          "observed": "2998.76, -1.25% at 09:34:01 CST",
+          "role": "ChiNext live feedback",
+          "observed": "10:04:49 CST: 2973.27, -2.09%",
           "status": "verified"
         },
         {
-          "url": "https://www.hsi.com.hk/zh-hk/home/",
-          "role": "Hang Seng and HSTECH opening feedback",
-          "observed": "HSI 24122.78, +0.65%; HSTECH 4178.83, +1.05%",
+          "url": "https://www.google.com/finance/quote/000001:SHA",
+          "role": "A-share related live feedback",
+          "observed": "10:04 CST related assets: SSE 3784.86 -0.71%, SZSE 12416.48 -1.62%",
           "status": "verified"
-        },
-        {
-          "url": "https://www.google.com/finance/quote/603183:SHA",
-          "role": "Suzhou Institute resumption feedback",
-          "observed": "CNY5.19, high 5.22, low 4.76, 21.65m volume at 09:36 CST",
-          "status": "verified"
-        },
-        {
-          "url": "https://www.investing.com/equities/after-hours",
-          "role": "US after-hours proxy",
-          "observed": "QQQ +0.29%, SPY +0.22%, DIA +0.22%",
-          "status": "cross_checked"
         }
       ],
       "material_diff": [
         {
-          "event": "Hong Kong technology rebound",
+          "event": "ESWIN formal debut below issue price and prior invalidation floor",
           "material": true,
-          "impact": "HSTECH +1.05% reverses the first-run weak-opening assumption and upgrades Hong Kong technology from pressure to rebound-watch"
+          "impact": "HKD1.45 is below HKD1.55 issue price and HKD1.48 offer-range floor; conditional watch must be downgraded to avoid"
         },
         {
-          "event": "A-share weak opening",
+          "event": "A-share growth weakness deepened",
           "material": true,
-          "impact": "SSE -0.35% and ChiNext -1.25% confirm defensive bias but show a smaller decline than the prior-session baseline"
-        },
-        {
-          "event": "Suzhou Institute resumption",
-          "material": true,
-          "impact": "CNY5.19 trades above the CNY5.03 tender anchor but swings through CNY4.76-5.22; confirms event interest without supporting a bullish upgrade"
+          "impact": "ChiNext decline widened from -1.25% to -2.09%; reinforces defensive bias and risk warning without reversing the broader thesis"
         }
-      ],
-      "hard_validation": {
-        "whitelist": ["index.html", "history/data/2026-10-09.json", "history/manifest.json"],
-        "outside_authorized_markers_identical": true,
-        "us_brief_time_updated_identical": true,
-        "bilingual_class_skeleton": true,
-        "major_news": [12, 12],
-        "overnight_items": [3, 3],
-        "keyword_contract": [10, 10],
-        "stock_cards": [4, 4],
-        "asset_rows": [8, 8],
-        "logic_steps": [4, 4],
-        "risk_items": [4, 4],
-        "history_render_simulation": true,
-        "manifest_records_preserved": 37,
-        "live_opening_evidence_included": true,
-        "stale_rankings_panel_preserved": true
-      }
+      ]
     }
   },
-  "pending_increment": [],
-  "candidate_commit": "b0a26932cf7578ef76c14ab1f3ea1f3ca1318126",
+  "pending_increment": [
+    {
+      "event": "ESWIN 01256 formal debut",
+      "observed_at": "2026-10-09T02:04:00Z",
+      "decision": "avoid",
+      "reason": "HKD1.45 below HKD1.55 issue price and HKD1.48 offer-range floor with 121m shares"
+    },
+    {
+      "event": "A-share 10:04 update",
+      "observed_at": "2026-10-09T02:04:49Z",
+      "decision": "update_risk",
+      "reason": "SSE -0.71%, SZSE -1.62%, ChiNext -2.09%"
+    }
+  ],
+  "candidate_commit": null,
   "published_commit": "b0a26932cf7578ef76c14ab1f3ea1f3ca1318126",
   "error": null,
   "terminal_error": null,
   "timings": {
-    "rules_started_at": "2026-10-09T01:56:50Z",
-    "research_started_at": "2026-10-09T01:58:36Z",
-    "research_completed_at": "2026-10-09T02:00:15Z",
-    "generation_started_at": "2026-10-09T02:00:15Z",
-    "generation_completed_at": "2026-10-09T02:01:38Z",
-    "validation_started_at": "2026-10-09T02:01:38Z",
-    "validation_completed_at": "2026-10-09T02:03:30Z",
-    "candidate_commit_started_at": "2026-10-09T02:03:30Z",
-    "candidate_commit_completed_at": "2026-10-09T02:04:20Z",
-    "main_ref_update_started_at": "2026-10-09T02:04:20Z",
-    "main_ref_update_completed_at": "2026-10-09T02:04:39Z",
-    "remote_readback_started_at": "2026-10-09T02:04:39Z",
-    "remote_readback_completed_at": "2026-10-09T02:06:05Z",
-    "deployment_verification_completed_at": "2026-10-09T02:07:25Z",
-    "completed_at": "2026-10-09T02:07:25Z"
+    "rules_started_at": "2026-10-09T02:11:07Z",
+    "research_started_at": "2026-10-09T02:13:30Z"
   }
 }
