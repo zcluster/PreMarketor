@@ -5,10 +5,10 @@
   "owner": "MarketAhead A/H 早报复核",
   "run_type": "incremental",
   "status": "running",
-  "stage": "validation",
+  "stage": "candidate_commit",
   "started_at": "2026-10-09T02:13:30Z",
-  "heartbeat_at": "2026-10-09T02:16:30Z",
-  "lease_until": "2026-10-09T02:26:30Z",
+  "heartbeat_at": "2026-10-09T02:18:00Z",
+  "lease_until": "2026-10-09T02:28:00Z",
   "source_cutoff": "2026-10-09T02:02:00Z",
   "main_base_sha": "b0a26932cf7578ef76c14ab1f3ea1f3ca1318126",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -166,7 +166,32 @@
           "material": true,
           "impact": "ChiNext decline widened from -1.25% to -2.09%; reinforces defensive bias and risk warning without reversing the broader thesis"
         }
-      ]
+      ],
+      "hard_validation": {
+        "jsonParse": true,
+        "exactlyOneAH": true,
+        "historyRoots": true,
+        "homeHistoryExact": true,
+        "zhEnTagSequence": true,
+        "zhEnClassSequence": true,
+        "zhEnCounts": true,
+        "majorNews12": true,
+        "overnight3": true,
+        "eswinAvoidZh": true,
+        "eswinAvoidEn": true,
+        "noPreopenClaim": true,
+        "sourceTraceable": true,
+        "markerOutsideIdentical": true,
+        "usSegmentsIdentical": true,
+        "noHistoryRecord": true,
+        "modulesPresent": true,
+        "manifestPreserved": true,
+        "manifestTodayAH": true,
+        "timeConsistent": true,
+        "oldOtherEntriesPreserved": true,
+        "noEmptyState": true,
+        "bannedOldThresholds": true
+      }
     }
   },
   "pending_increment": [
@@ -193,6 +218,8 @@
     "research_completed_at": "2026-10-09T02:14:44Z",
     "generation_started_at": "2026-10-09T02:14:44Z",
     "generation_completed_at": "2026-10-09T02:16:30Z",
-    "validation_started_at": "2026-10-09T02:16:30Z"
+    "validation_started_at": "2026-10-09T02:16:30Z",
+    "validation_completed_at": "2026-10-09T02:18:00Z",
+    "candidate_commit_started_at": "2026-10-09T02:18:00Z"
   }
 }
