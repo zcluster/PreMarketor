@@ -5,10 +5,10 @@
   "owner": "MarketAhead A/H 早报复核",
   "run_type": "incremental",
   "status": "running",
-  "stage": "validation",
+  "stage": "candidate_commit",
   "started_at": "2026-10-09T01:58:36Z",
-  "heartbeat_at": "2026-10-09T02:01:38Z",
-  "lease_until": "2026-10-09T02:11:38Z",
+  "heartbeat_at": "2026-10-09T02:03:30Z",
+  "lease_until": "2026-10-09T02:13:30Z",
   "source_cutoff": "2026-10-09T00:39:00Z",
   "main_base_sha": "ae3f23bb7436ac3dec1bbbc939ab3c4062493086",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -76,7 +76,24 @@
           "material": true,
           "impact": "CNY5.19 trades above the CNY5.03 tender anchor but swings through CNY4.76-5.22; confirms event interest without supporting a bullish upgrade"
         }
-      ]
+      ],
+      "hard_validation": {
+        "whitelist": ["index.html", "history/data/2026-10-09.json", "history/manifest.json"],
+        "outside_authorized_markers_identical": true,
+        "us_brief_time_updated_identical": true,
+        "bilingual_class_skeleton": true,
+        "major_news": [12, 12],
+        "overnight_items": [3, 3],
+        "keyword_contract": [10, 10],
+        "stock_cards": [4, 4],
+        "asset_rows": [8, 8],
+        "logic_steps": [4, 4],
+        "risk_items": [4, 4],
+        "history_render_simulation": true,
+        "manifest_records_preserved": 37,
+        "live_opening_evidence_included": true,
+        "stale_rankings_panel_preserved": true
+      }
     }
   },
   "pending_increment": [
@@ -96,6 +113,8 @@
     "research_completed_at": "2026-10-09T02:00:15Z",
     "generation_started_at": "2026-10-09T02:00:15Z",
     "generation_completed_at": "2026-10-09T02:01:38Z",
-    "validation_started_at": "2026-10-09T02:01:38Z"
+    "validation_started_at": "2026-10-09T02:01:38Z",
+    "validation_completed_at": "2026-10-09T02:03:30Z",
+    "candidate_commit_started_at": "2026-10-09T02:03:30Z"
   }
 }
