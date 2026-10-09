@@ -4,11 +4,11 @@
   "owner": "发布 MarketAhead A/H 早报",
   "task_kind": "ah_first_run",
   "date": "2026-10-09",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-10-09T00:34:35.982Z",
-  "heartbeat_at": "2026-10-09T00:40:52.358Z",
-  "lease_until": "2026-10-09T00:50:52.358Z",
+  "heartbeat_at": "2026-10-09T00:42:22.427Z",
+  "lease_until": null,
   "main_base_sha": "da9f11a080235987ef1000c0d1d2115286863099",
   "published_commit": "ae3f23bb7436ac3dec1bbbc939ab3c4062493086",
   "error": null,
@@ -16,6 +16,33 @@
     "latest main brief_rules.md fully read; preparing sources",
     "shared lease acquired; source verification and snapshot validation in progress",
     "research complete; candidate generation and hard validation in progress",
-    "main CAS publish succeeded; verifying GitHub readback and production"
-  ]
+    "main CAS publish succeeded; verifying GitHub readback and production",
+    "production homepage rendered in Chinese and English; archive rendered without empty state; terminal published"
+  ],
+  "completed_at": "2026-10-09T00:42:22.427Z",
+  "production_verification": {
+    "homepage": "https://premarketor.com/",
+    "archive": "https://premarketor.com/history/?date=2026-10-09",
+    "homepage_time": "2026-10-09 08:39 CST",
+    "homepage_zh": {
+      "cards": 4,
+      "major_news": 11,
+      "overnight_items": 3,
+      "ranking_rows": 0
+    },
+    "homepage_en": {
+      "cards": 4,
+      "major_news": 11,
+      "overnight_items": 3,
+      "ranking_rows": 0
+    },
+    "archive_zh": {
+      "cards": 4,
+      "major_news": 11,
+      "overnight_items": 3,
+      "empty_state": false
+    },
+    "calendar_link": true,
+    "github_readback_exact": true
+  }
 }
