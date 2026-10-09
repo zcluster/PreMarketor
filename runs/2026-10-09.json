@@ -5,16 +5,17 @@
   "task_kind": "ah_first_run",
   "date": "2026-10-09",
   "status": "running",
-  "stage": "generation",
+  "stage": "deployment_verification",
   "started_at": "2026-10-09T00:34:35.982Z",
-  "heartbeat_at": "2026-10-09T00:39:13.730Z",
-  "lease_until": "2026-10-09T00:49:13.730Z",
+  "heartbeat_at": "2026-10-09T00:40:52.358Z",
+  "lease_until": "2026-10-09T00:50:52.358Z",
   "main_base_sha": "da9f11a080235987ef1000c0d1d2115286863099",
-  "published_commit": null,
+  "published_commit": "ae3f23bb7436ac3dec1bbbc939ab3c4062493086",
   "error": null,
   "notes": [
     "latest main brief_rules.md fully read; preparing sources",
     "shared lease acquired; source verification and snapshot validation in progress",
-    "research complete; candidate generation and hard validation in progress"
+    "research complete; candidate generation and hard validation in progress",
+    "main CAS publish succeeded; verifying GitHub readback and production"
   ]
 }
