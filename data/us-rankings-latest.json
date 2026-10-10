@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-09T10:33:03+08:00",
+  "attemptedAt": "2026-10-10T09:54:25+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-09T10:33:03+08:00",
+      "fetchedAt": "2026-10-10T09:54:25+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,145 +17,145 @@
       },
       "top": [
         {
-          "name": "油气炼制与销售",
-          "nameEn": "Oil & Gas Refining & Marketing",
-          "code": "BK2060",
-          "changePct": "+4.15%",
-          "leaderName": "PBF Energy",
-          "leaderTicker": "PBF",
-          "leaderChangePct": "+6.76%",
+          "name": "铜",
+          "nameEn": "Copper",
+          "code": "BK2510",
+          "changePct": "+4.64%",
+          "leaderName": "Taseko Mines",
+          "leaderTicker": "TGB",
+          "leaderChangePct": "+6.50%",
           "breadth": {
-            "advancers": 15,
-            "decliners": 3,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "博彩",
-          "nameEn": "Gambling",
-          "code": "BK2094",
-          "changePct": "+4.08%",
-          "leaderName": "Flutter Entertainment",
-          "leaderTicker": "FLUT",
-          "leaderChangePct": "+7.55%",
-          "breadth": {
-            "advancers": 8,
-            "decliners": 6,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "家居装修零售",
-          "nameEn": "Home Improvement Retail",
-          "code": "BK2460",
-          "changePct": "+3.52%",
-          "leaderName": "劳氏",
-          "leaderTicker": "LOW",
-          "leaderChangePct": "+4.03%",
-          "breadth": {
-            "advancers": 5,
+            "advancers": 7,
             "decliners": 1,
             "unchanged": 0
           }
         },
         {
-          "name": "烟草",
-          "nameEn": "Tobacco",
-          "code": "BK2264",
-          "changePct": "+3.49%",
-          "leaderName": "菲利普莫里斯",
-          "leaderTicker": "PM",
-          "leaderChangePct": "+4.05%",
-          "breadth": {
-            "advancers": 6,
-            "decliners": 5,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "咨询服务",
-          "nameEn": "Consulting Services",
-          "code": "BK2476",
-          "changePct": "+3.49%",
-          "leaderName": "博思艾伦咨询公司",
-          "leaderTicker": "BAH",
-          "leaderChangePct": "+6.09%",
+          "name": "专业REITs",
+          "nameEn": "REIT - Specialty",
+          "code": "BK2482",
+          "changePct": "+4.13%",
+          "leaderName": "冠城国际",
+          "leaderTicker": "CCI",
+          "leaderChangePct": "+15.60%",
           "breadth": {
             "advancers": 12,
-            "decliners": 8,
-            "unchanged": 4
-          }
-        }
-      ],
-      "bottom": [
-        {
-          "name": "科技仪器",
-          "nameEn": "Scientific & Technical Instruments",
-          "code": "BK2275",
-          "changePct": "-3.40%",
-          "leaderName": "SaverOne 2014",
-          "leaderTicker": "SVRE",
-          "leaderChangePct": "+8.26%",
-          "breadth": {
-            "advancers": 6,
-            "decliners": 25,
-            "unchanged": 2
+            "decliners": 9,
+            "unchanged": 1
           }
         },
         {
-          "name": "电子元件",
-          "nameEn": "Electronic Components",
-          "code": "BK2072",
-          "changePct": "-3.49%",
-          "leaderName": "Integrated Media Technology",
-          "leaderTicker": "IMTE",
-          "leaderChangePct": "+2.54%",
+          "name": "纺织制造",
+          "nameEn": "Textile Manufacturing",
+          "code": "BK2499",
+          "changePct": "+3.95%",
+          "leaderName": "SMJ International Holdings",
+          "leaderTicker": "SMJF",
+          "leaderChangePct": "+23.39%",
           "breadth": {
             "advancers": 4,
-            "decliners": 39,
-            "unchanged": 2
-          }
-        },
-        {
-          "name": "半导体",
-          "nameEn": "Semiconductors",
-          "code": "BK2015",
-          "changePct": "-3.54%",
-          "leaderName": "GlobalFoundries",
-          "leaderTicker": "GFS",
-          "leaderChangePct": "+2.68%",
-          "breadth": {
-            "advancers": 3,
-            "decliners": 66,
-            "unchanged": 1
+            "decliners": 1,
+            "unchanged": 0
           }
         },
         {
           "name": "独立电力生产商",
           "nameEn": "Utilities - Independent Power Producers",
           "code": "BK2462",
-          "changePct": "-4.86%",
-          "leaderName": "Hallador Energy",
-          "leaderTicker": "HNRG",
-          "leaderChangePct": "+6.23%",
+          "changePct": "+3.73%",
+          "leaderName": "Talen Energy",
+          "leaderTicker": "TLN",
+          "leaderChangePct": "+5.39%",
           "breadth": {
-            "advancers": 2,
-            "decliners": 8,
+            "advancers": 8,
+            "decliners": 2,
             "unchanged": 1
           }
         },
         {
-          "name": "医药零售",
-          "nameEn": "Pharmaceutical Retailers",
-          "code": "BK2092",
-          "changePct": "-5.08%",
-          "leaderName": "PetMed Express",
-          "leaderTicker": "PETS",
-          "leaderChangePct": "0.00%",
+          "name": "电子游戏与多媒体",
+          "nameEn": "Electronic Gaming & Multimedia",
+          "code": "BK2253",
+          "changePct": "+3.68%",
+          "leaderName": "Roblox",
+          "leaderTicker": "RBLX",
+          "leaderChangePct": "+5.65%",
           "breadth": {
-            "advancers": 0,
-            "decliners": 4,
-            "unchanged": 1
+            "advancers": 11,
+            "decliners": 7,
+            "unchanged": 3
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "休闲车",
+          "nameEn": "Recreational Vehicles",
+          "code": "BK2214",
+          "changePct": "-1.92%",
+          "leaderName": "LiveWire Group",
+          "leaderTicker": "LVWR",
+          "leaderChangePct": "+9.52%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 15,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "农产品",
+          "nameEn": "Farm Products",
+          "code": "BK2007",
+          "changePct": "-2.00%",
+          "leaderName": "Agroz",
+          "leaderTicker": "AGRZ",
+          "leaderChangePct": "+22.10%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 14,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "抵押贷款金融",
+          "nameEn": "Mortgage Finance",
+          "code": "BK2479",
+          "changePct": "-2.41%",
+          "leaderName": "Pineapple Financial Inc",
+          "leaderTicker": "PAPL",
+          "leaderChangePct": "+2.76%",
+          "breadth": {
+            "advancers": 1,
+            "decliners": 12,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "农业投入品",
+          "nameEn": "Agricultural Inputs",
+          "code": "BK2010",
+          "changePct": "-2.83%",
+          "leaderName": "以色列化学",
+          "leaderTicker": "ICL",
+          "leaderChangePct": "+0.40%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 11,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "电信服务",
+          "nameEn": "Telecom Services",
+          "code": "BK2088",
+          "changePct": "-7.06%",
+          "leaderName": "Anterix",
+          "leaderTicker": "ATEX",
+          "leaderChangePct": "+10.58%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 46,
+            "unchanged": 0
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-09T10:33:03+08:00",
+      "fetchedAt": "2026-10-10T09:54:25+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,71 +176,71 @@
       },
       "top": [
         {
-          "name": "体育博彩",
-          "nameEn": "Sports Betting",
-          "code": "BK23588",
-          "changePct": "+3.76%",
-          "leaderName": "Flutter Entertainment",
-          "leaderTicker": "FLUT",
-          "leaderChangePct": "+7.55%",
+          "name": "NFT概念",
+          "nameEn": "Non-Fungible Tokens",
+          "code": "BK2561",
+          "changePct": "+5.06%",
+          "leaderName": "东方文化",
+          "leaderTicker": "OCG",
+          "leaderChangePct": "+10.18%",
           "breadth": {
             "advancers": 7,
+            "decliners": 4,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "网络安全概念",
+          "nameEn": "Cybersecurity",
+          "code": "BK2570",
+          "changePct": "+4.21%",
+          "leaderName": "Zscaler",
+          "leaderTicker": "ZS",
+          "leaderChangePct": "+7.80%",
+          "breadth": {
+            "advancers": 24,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "页岩油",
-          "nameEn": "Shale Oil",
-          "code": "BK2585",
-          "changePct": "+2.93%",
-          "leaderName": "Diamondback Energy",
-          "leaderTicker": "FANG",
-          "leaderChangePct": "+3.96%",
+          "name": "China's Terrific",
+          "nameEn": "China's Terrific",
+          "code": "BK23596",
+          "changePct": "+4.02%",
+          "leaderName": "小米集团(ADR)",
+          "leaderTicker": "XIACY",
+          "leaderChangePct": "+9.93%",
           "breadth": {
-            "advancers": 12,
+            "advancers": 6,
             "decliners": 1,
             "unchanged": 0
           }
         },
         {
-          "name": "红海危机概念",
-          "nameEn": "Red Sea Shipping Crisis",
-          "code": "BK22907",
-          "changePct": "+2.88%",
-          "leaderName": "Okeanis Eco Tankers",
-          "leaderTicker": "ECO",
-          "leaderChangePct": "+7.27%",
+          "name": "WSB热门概念",
+          "nameEn": "WallStreetBets",
+          "code": "BK2555",
+          "changePct": "+3.93%",
+          "leaderName": "Palantir",
+          "leaderTicker": "PLTR",
+          "leaderChangePct": "+5.17%",
           "breadth": {
-            "advancers": 27,
-            "decliners": 1,
+            "advancers": 14,
+            "decliners": 8,
             "unchanged": 0
           }
         },
         {
-          "name": "天然气",
-          "nameEn": "Natural Gas",
-          "code": "BK2582",
-          "changePct": "+2.73%",
-          "leaderName": "Phillips 66",
-          "leaderTicker": "PSX",
-          "leaderChangePct": "+3.67%",
+          "name": "直播概念",
+          "nameEn": "Live Streaming",
+          "code": "BK2438",
+          "changePct": "+3.27%",
+          "leaderName": "哔哩哔哩",
+          "leaderTicker": "BILI",
+          "leaderChangePct": "+4.31%",
           "breadth": {
-            "advancers": 12,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "避险资产",
-          "nameEn": "Safe-Haven Assets",
-          "code": "BK23679",
-          "changePct": "+2.57%",
-          "leaderName": "英国石油",
-          "leaderTicker": "BP",
-          "leaderChangePct": "+4.16%",
-          "breadth": {
-            "advancers": 13,
+            "advancers": 4,
             "decliners": 1,
             "unchanged": 0
           }
