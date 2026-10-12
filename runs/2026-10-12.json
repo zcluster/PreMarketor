@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261012-20261012003527",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-12T00:52:31.207Z",
-  "heartbeat_at": "2026-10-12T00:42:31.207Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": "2026-10-12T00:44:02.654Z",
+  "heartbeat_at": "2026-10-12T00:44:02.654Z",
   "source_cutoff": "2026-10-12T00:38:13.791Z",
   "main_base_sha": "73a7e1f06761f587b7260021d194fbeacadf7190",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -113,6 +113,38 @@
         "history schema",
         "manifest preservation"
       ]
+    },
+    {
+      "category": "remote_readback",
+      "status": "passed",
+      "commit": "25da871a87e3d13ea5cd90b5fa85cde74b9fc60d",
+      "files": [
+        "index.html",
+        "history/data/2026-10-12.json",
+        "history/manifest.json"
+      ],
+      "exact_match": true
+    },
+    {
+      "category": "production_acceptance",
+      "status": "passed",
+      "checked_at": "2026-10-12T00:44:02.654Z",
+      "urls": [
+        "https://premarketor.com/",
+        "https://premarketor.com/history/?date=2026-10-12"
+      ],
+      "checks": [
+        "homepage Chinese rendered",
+        "homepage English rendered",
+        "12 major news",
+        "3 overnight items",
+        "4 cards",
+        "15 bilingual ranking rows",
+        "archive rendered",
+        "calendar has Oct 12",
+        "no empty state",
+        "US time preserved 2026-10-09 20:28 CST"
+      ]
     }
   ],
   "pending_increment": [],
@@ -132,7 +164,10 @@
     "candidate_commit_completed_at": "2026-10-12T00:42:01.318Z",
     "main_update_ref_started_at": "2026-10-12T00:42:01.318Z",
     "main_update_ref_completed_at": "2026-10-12T00:42:31.207Z",
-    "deployment_verification_started_at": "2026-10-12T00:42:31.207Z"
+    "deployment_verification_started_at": "2026-10-12T00:42:31.207Z",
+    "deployment_verification_completed_at": "2026-10-12T00:44:02.654Z",
+    "completed_at": "2026-10-12T00:44:02.654Z",
+    "wall_seconds": 515
   },
   "error": null
 }
