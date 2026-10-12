@@ -1,10 +1,10 @@
 {
   "run_id": "ah-incremental-20261012-021300",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-12T02:28:30.000Z",
-  "heartbeat_at": "2026-10-12T02:18:30.000Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": "2026-10-12T02:20:05.000Z",
+  "heartbeat_at": "2026-10-12T02:20:05.000Z",
   "source_cutoff": "2026-10-12T02:10:00.000Z",
   "main_base_sha": "25da871a87e3d13ea5cd90b5fa85cde74b9fc60d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -179,20 +179,43 @@
         "bilingual DOM counts equal",
         "US panels unchanged"
       ]
-    }
-  ],
-  "pending_increment": [
-    {
-      "id": "20261012-oil-futures",
-      "material": true,
-      "reason": "Brent reversal from 105.48 to 103.50 and Nasdaq futures +0.5% alter energy/tech balance and replace unavailable precise runtime futures."
     },
     {
-      "id": "20261012-tencent-notes",
-      "material": true,
-      "reason": "Major HSTECH constituent financing announcement omitted from first run; changes Tencent funding and valuation risk watch."
+      "category": "remote_readback",
+      "status": "passed",
+      "commit": "79f43988022a63f632da1f249f2f8032aa88ec01",
+      "files": [
+        "index.html",
+        "history/data/2026-10-12.json",
+        "history/manifest.json"
+      ],
+      "exact_match": true
+    },
+    {
+      "category": "production_acceptance",
+      "status": "passed",
+      "checked_at": "2026-10-12T02:20:00Z",
+      "urls": [
+        "https://premarketor.com/",
+        "https://premarketor.com/history/?date=2026-10-12"
+      ],
+      "checks": [
+        "homepage updated 10:12 CST",
+        "English homepage rendered",
+        "Chinese history rendered",
+        "12 major news",
+        "3 overnight items",
+        "4 stock cards",
+        "Tencent present",
+        "no empty state",
+        "calendar/manifest surfaced Oct 12"
+      ],
+      "limitations": [
+        "raw production JSON URL blocked by browser client; covered by exact GitHub commit readback plus rendered homepage/history"
+      ]
     }
   ],
+  "pending_increment": [],
   "published_commit": "79f43988022a63f632da1f249f2f8032aa88ec01",
   "candidate_commit": "79f43988022a63f632da1f249f2f8032aa88ec01",
   "stage_timings": {
@@ -210,9 +233,9 @@
     "main_update_ref_started_at": "2026-10-12T02:17:30.000Z",
     "main_update_ref_completed_at": "2026-10-12T02:18:20.000Z",
     "deployment_verification_started_at": "2026-10-12T02:18:30.000Z",
-    "deployment_verification_completed_at": "2026-10-12T00:44:02.654Z",
-    "completed_at": "2026-10-12T00:44:02.654Z",
-    "wall_seconds": 515,
+    "deployment_verification_completed_at": "2026-10-12T02:20:05.000Z",
+    "completed_at": "2026-10-12T02:20:05.000Z",
+    "wall_seconds": 425,
     "incremental_started_at": "2026-10-12T02:13:00.000Z",
     "incremental_research_completed_at": "2026-10-12T02:14:30.000Z"
   },
