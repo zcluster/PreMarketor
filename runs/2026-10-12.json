@@ -2,9 +2,9 @@
   "run_id": "ah-20261012-20261012003527",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-12T00:48:13.791Z",
-  "heartbeat_at": "2026-10-12T00:38:13.791Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-10-12T00:50:54.262Z",
+  "heartbeat_at": "2026-10-12T00:40:54.262Z",
   "source_cutoff": "2026-10-12T00:38:13.791Z",
   "main_base_sha": "73a7e1f06761f587b7260021d194fbeacadf7190",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -69,6 +69,50 @@
           "quote": "unavailable; terms undisclosed"
         }
       ]
+    },
+    {
+      "category": "domestic_coverage_reconciliation",
+      "status": "complete",
+      "sources": [
+        {
+          "name": "Jin10 A-share premarket",
+          "url": "https://xnews.jin10.com/details/231982",
+          "result": "top company events reconciled"
+        },
+        {
+          "name": "CLS/STAR Market Daily",
+          "url": "https://www.cls.cn/",
+          "result": "Oct 12 query checked; no additional indexed item changed conclusions"
+        },
+        {
+          "name": "Securities Times cross-check",
+          "url": "https://www.stcn.com/",
+          "result": "policy and tech headlines cross-checked"
+        }
+      ],
+      "included": [
+        "new productive forces",
+        "IC layout protection",
+        "Dongyue Silicon",
+        "Amlogic",
+        "Guangdong Xiongsu"
+      ],
+      "omitted_reason": "duplicates or no material impact"
+    },
+    {
+      "category": "hard_validation",
+      "status": "passed",
+      "checks": [
+        "marker-only",
+        "US markers byte-identical",
+        "12 news",
+        "bilingual DOM counts/order",
+        "4 stock cards",
+        "15 ranking rows",
+        "5 down rows",
+        "history schema",
+        "manifest preservation"
+      ]
     }
   ],
   "pending_increment": [],
@@ -79,7 +123,11 @@
     "rule_read_completed_at": "2026-10-12T00:35:27.833Z",
     "file_read_completed_at": null,
     "external_research_completed_at": "2026-10-12T00:38:13.791Z",
-    "generation_started_at": "2026-10-12T00:38:13.791Z"
+    "generation_started_at": "2026-10-12T00:38:13.791Z",
+    "generation_completed_at": "2026-10-12T00:40:54.262Z",
+    "translation_completed_at": "2026-10-12T00:40:54.262Z",
+    "validation_started_at": "2026-10-12T00:40:54.262Z",
+    "validation_completed_at": "2026-10-12T00:40:54.262Z"
   },
   "error": null
 }
