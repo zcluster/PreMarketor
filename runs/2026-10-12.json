@@ -2,9 +2,9 @@
   "run_id": "ah-incremental-20261012-021300",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "main_update_ref",
-  "lease_until": "2026-10-12T02:27:30.000Z",
-  "heartbeat_at": "2026-10-12T02:17:30.000Z",
+  "stage": "deployment_verification",
+  "lease_until": "2026-10-12T02:28:30.000Z",
+  "heartbeat_at": "2026-10-12T02:18:30.000Z",
   "source_cutoff": "2026-10-12T02:10:00.000Z",
   "main_base_sha": "25da871a87e3d13ea5cd90b5fa85cde74b9fc60d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -193,7 +193,7 @@
       "reason": "Major HSTECH constituent financing announcement omitted from first run; changes Tencent funding and valuation risk watch."
     }
   ],
-  "published_commit": "25da871a87e3d13ea5cd90b5fa85cde74b9fc60d",
+  "published_commit": "79f43988022a63f632da1f249f2f8032aa88ec01",
   "candidate_commit": "79f43988022a63f632da1f249f2f8032aa88ec01",
   "stage_timings": {
     "started_at": "2026-10-12T00:35:27.833Z",
@@ -208,8 +208,8 @@
     "candidate_commit_started_at": "2026-10-12T02:16:00.000Z",
     "candidate_commit_completed_at": "2026-10-12T02:17:25.000Z",
     "main_update_ref_started_at": "2026-10-12T02:17:30.000Z",
-    "main_update_ref_completed_at": "2026-10-12T00:42:31.207Z",
-    "deployment_verification_started_at": "2026-10-12T00:42:31.207Z",
+    "main_update_ref_completed_at": "2026-10-12T02:18:20.000Z",
+    "deployment_verification_started_at": "2026-10-12T02:18:30.000Z",
     "deployment_verification_completed_at": "2026-10-12T00:44:02.654Z",
     "completed_at": "2026-10-12T00:44:02.654Z",
     "wall_seconds": 515,
