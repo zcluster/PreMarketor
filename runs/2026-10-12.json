@@ -2,10 +2,10 @@
   "run_id": "ah-incremental-20261012-021300",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-12T02:23:00.000Z",
-  "heartbeat_at": "2026-10-12T02:13:00.000Z",
-  "source_cutoff": "2026-10-12T00:38:13.791Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-10-12T02:25:10.000Z",
+  "heartbeat_at": "2026-10-12T02:15:10.000Z",
+  "source_cutoff": "2026-10-12T02:10:00.000Z",
   "main_base_sha": "25da871a87e3d13ea5cd90b5fa85cde74b9fc60d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": [
@@ -161,6 +161,19 @@
       "fetched_at": "2026-10-12T02:10:00Z",
       "status": "verified_omission",
       "summary": "Tencent 08:00 HKEX announcement proposes USD and CNH senior unsecured notes; 10/20y USD and 10/30y CNH, size unset and no binding agreement; omitted from first brief."
+    },
+    {
+      "category": "incremental_validation",
+      "status": "in_progress",
+      "checks": [
+        "12 bilingual major news",
+        "3 bilingual overnight items",
+        "4 bilingual stock cards",
+        "marker-only",
+        "US markers unchanged",
+        "history/manifest preservation",
+        "ranked major movements reused from unchanged snapshot"
+      ]
     }
   ],
   "pending_increment": [
@@ -182,10 +195,10 @@
     "rule_read_completed_at": "2026-10-12T00:35:27.833Z",
     "file_read_completed_at": null,
     "external_research_completed_at": "2026-10-12T00:38:13.791Z",
-    "generation_started_at": "2026-10-12T00:38:13.791Z",
-    "generation_completed_at": "2026-10-12T00:40:54.262Z",
-    "translation_completed_at": "2026-10-12T00:40:54.262Z",
-    "validation_started_at": "2026-10-12T00:40:54.262Z",
+    "generation_started_at": "2026-10-12T02:14:30.000Z",
+    "generation_completed_at": "2026-10-12T02:15:00.000Z",
+    "translation_completed_at": "2026-10-12T02:15:00.000Z",
+    "validation_started_at": "2026-10-12T02:15:10.000Z",
     "validation_completed_at": "2026-10-12T00:40:54.262Z",
     "candidate_commit_started_at": "2026-10-12T00:41:16.814Z",
     "candidate_commit_completed_at": "2026-10-12T00:42:01.318Z",
@@ -196,7 +209,7 @@
     "completed_at": "2026-10-12T00:44:02.654Z",
     "wall_seconds": 515,
     "incremental_started_at": "2026-10-12T02:13:00.000Z",
-    "incremental_research_completed_at": null
+    "incremental_research_completed_at": "2026-10-12T02:14:30.000Z"
   },
   "error": null
 }
