@@ -2,20 +2,84 @@
   "run_id": "ah-20261012-20261012003527",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "lease_acquired",
-  "lease_until": "2026-10-12T00:45:27.833Z",
-  "heartbeat_at": "2026-10-12T00:35:27.833Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "lease_until": "2026-10-12T00:48:13.791Z",
+  "heartbeat_at": "2026-10-12T00:38:13.791Z",
+  "source_cutoff": "2026-10-12T00:38:13.791Z",
   "main_base_sha": "73a7e1f06761f587b7260021d194fbeacadf7190",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
-  "evidence": [],
+  "evidence": [
+    {
+      "category": "akshare",
+      "source": "data/akshare-latest.json",
+      "fetched_at": "2026-10-09T14:10:24+08:00",
+      "status": "previous_session_partial",
+      "summary": "A 3116/2299 median +0.3635%; H 930/854 median 0%; explicit prior-session intraday snapshot"
+    },
+    {
+      "category": "us_rankings",
+      "source": "data/us-rankings-latest.json",
+      "fetched_at": "2026-10-10T09:54:25+08:00",
+      "status": "ok",
+      "summary": "Oct 9 cash session; industry 10 rows and concept 5 rows"
+    },
+    {
+      "category": "policy",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html",
+      "published_at": "2026-10-09",
+      "status": "verified",
+      "summary": "NDRC explains CPC/State Council new productive forces guidance"
+    },
+    {
+      "category": "international",
+      "url": "https://www.reuters.com/business/energy/oil-climbs-mideast-conflict-tanker-attacks-persist-2026-10-11/",
+      "published_at": "2026-10-11",
+      "status": "verified",
+      "summary": "Brent 105.48; tanker and Saudi attack supply risk"
+    },
+    {
+      "category": "us_movement",
+      "url": "https://www.reuters.com/business/media-telecom/us-european-telecom-stocks-slide-spacex-spectrum-deal-rattles-sector-2026-10-09/",
+      "published_at": "2026-10-09",
+      "status": "verified",
+      "summary": "TMUS -13.2%; VZ/T about -10%; tower REITs +6.5% to +13.3%"
+    },
+    {
+      "category": "candidates",
+      "status": "complete",
+      "decisions": [
+        {
+          "ticker": "A.300821",
+          "decision": "conditional_watch",
+          "quote": "17.15 CNY, Oct 9 close, +20.01%"
+        },
+        {
+          "ticker": "A.688099",
+          "decision": "conditional_watch",
+          "quote": "99.71 CNY, Oct 9 close"
+        },
+        {
+          "ticker": "A.300599",
+          "decision": "avoid",
+          "quote": "13.50 CNY, Oct 9 14:12, -13.35%"
+        },
+        {
+          "ticker": "H.06666",
+          "decision": "conditional_watch",
+          "quote": "unavailable; terms undisclosed"
+        }
+      ]
+    }
+  ],
   "pending_increment": [],
   "published_commit": null,
   "candidate_commit": null,
   "stage_timings": {
     "started_at": "2026-10-12T00:35:27.833Z",
     "rule_read_completed_at": "2026-10-12T00:35:27.833Z",
-    "file_read_completed_at": null
+    "file_read_completed_at": null,
+    "external_research_completed_at": "2026-10-12T00:38:13.791Z",
+    "generation_started_at": "2026-10-12T00:38:13.791Z"
   },
   "error": null
 }
