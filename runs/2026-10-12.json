@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261012-20261012003527",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": "2026-10-12T00:44:02.654Z",
-  "heartbeat_at": "2026-10-12T00:44:02.654Z",
+  "run_id": "ah-incremental-20261012-021300",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-10-12T02:23:00.000Z",
+  "heartbeat_at": "2026-10-12T02:13:00.000Z",
   "source_cutoff": "2026-10-12T00:38:13.791Z",
-  "main_base_sha": "73a7e1f06761f587b7260021d194fbeacadf7190",
+  "main_base_sha": "25da871a87e3d13ea5cd90b5fa85cde74b9fc60d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": [
     {
@@ -145,9 +145,36 @@
         "no empty state",
         "US time preserved 2026-10-09 20:28 CST"
       ]
+    },
+    {
+      "category": "incremental_global_markets",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-10-12/",
+      "published_at": "2026-10-12T00:42:56Z",
+      "fetched_at": "2026-10-12T02:10:00Z",
+      "status": "verified",
+      "summary": "Post-cutoff: Brent eased to $103.50; S&P futures +0.2%, Nasdaq futures +0.5%; oil/yield pressure remains but near-term tech risk tone improved."
+    },
+    {
+      "category": "incremental_hk_announcement",
+      "url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=222079",
+      "published_at": "2026-10-12T00:00:00Z",
+      "fetched_at": "2026-10-12T02:10:00Z",
+      "status": "verified_omission",
+      "summary": "Tencent 08:00 HKEX announcement proposes USD and CNH senior unsecured notes; 10/20y USD and 10/30y CNH, size unset and no binding agreement; omitted from first brief."
     }
   ],
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "id": "20261012-oil-futures",
+      "material": true,
+      "reason": "Brent reversal from 105.48 to 103.50 and Nasdaq futures +0.5% alter energy/tech balance and replace unavailable precise runtime futures."
+    },
+    {
+      "id": "20261012-tencent-notes",
+      "material": true,
+      "reason": "Major HSTECH constituent financing announcement omitted from first run; changes Tencent funding and valuation risk watch."
+    }
+  ],
   "published_commit": "25da871a87e3d13ea5cd90b5fa85cde74b9fc60d",
   "candidate_commit": "25da871a87e3d13ea5cd90b5fa85cde74b9fc60d",
   "stage_timings": {
@@ -167,7 +194,9 @@
     "deployment_verification_started_at": "2026-10-12T00:42:31.207Z",
     "deployment_verification_completed_at": "2026-10-12T00:44:02.654Z",
     "completed_at": "2026-10-12T00:44:02.654Z",
-    "wall_seconds": 515
+    "wall_seconds": 515,
+    "incremental_started_at": "2026-10-12T02:13:00.000Z",
+    "incremental_research_completed_at": null
   },
   "error": null
 }
