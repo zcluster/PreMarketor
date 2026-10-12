@@ -2,9 +2,9 @@
   "run_id": "ah-incremental-20261012-021300",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-10-12T02:25:10.000Z",
-  "heartbeat_at": "2026-10-12T02:15:10.000Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-10-12T02:26:00.000Z",
+  "heartbeat_at": "2026-10-12T02:16:00.000Z",
   "source_cutoff": "2026-10-12T02:10:00.000Z",
   "main_base_sha": "25da871a87e3d13ea5cd90b5fa85cde74b9fc60d",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -164,7 +164,7 @@
     },
     {
       "category": "incremental_validation",
-      "status": "in_progress",
+      "status": "passed",
       "checks": [
         "12 bilingual major news",
         "3 bilingual overnight items",
@@ -172,7 +172,12 @@
         "marker-only",
         "US markers unchanged",
         "history/manifest preservation",
-        "ranked major movements reused from unchanged snapshot"
+        "ranked major movements reused from unchanged snapshot",
+        "12 news retained",
+        "2 material increments included",
+        "4 cards incl. Tencent H.00700",
+        "bilingual DOM counts equal",
+        "US panels unchanged"
       ]
     }
   ],
@@ -199,8 +204,8 @@
     "generation_completed_at": "2026-10-12T02:15:00.000Z",
     "translation_completed_at": "2026-10-12T02:15:00.000Z",
     "validation_started_at": "2026-10-12T02:15:10.000Z",
-    "validation_completed_at": "2026-10-12T00:40:54.262Z",
-    "candidate_commit_started_at": "2026-10-12T00:41:16.814Z",
+    "validation_completed_at": "2026-10-12T02:15:45.000Z",
+    "candidate_commit_started_at": "2026-10-12T02:16:00.000Z",
     "candidate_commit_completed_at": "2026-10-12T00:42:01.318Z",
     "main_update_ref_started_at": "2026-10-12T00:42:01.318Z",
     "main_update_ref_completed_at": "2026-10-12T00:42:31.207Z",
