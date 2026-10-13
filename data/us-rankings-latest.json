@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-13T11:10:12+08:00",
+  "attemptedAt": "2026-10-13T14:14:58+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-13T11:10:12+08:00",
+      "fetchedAt": "2026-10-13T14:14:58+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-13T11:10:12+08:00",
+      "fetchedAt": "2026-10-13T14:14:58+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
