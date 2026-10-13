@@ -15,6 +15,8 @@
   "require_browser_acceptance": false,
   "require_ranked_major_movement_reconciliation": true,
   "require_github_us_rankings_snapshot": true,
+  "require_fresh_rankings_before_publication": true,
+  "allow_on_demand_rankings_refresh": true,
   "forbid_runtime_moomoo_rankings_fetch": true,
   "allow_partial_ranking_fields": true,
   "require_traceable_sources": true,
@@ -86,9 +88,13 @@
 7. 个股推荐必须写推荐理由、触发因素和风险点；不确定时明确说明限制，不得把推演写成确定事实。
 8. 生成正文前必须做一个“隔夜美股板块异动检查”：至少检查美股主要指数、AI/半导体/软件/光通信或当日新闻中最强最弱的科技分支，以及 5-10 只隔夜异常涨跌或高成交科技股。若发现对 A/H 有直接映射的板块异动，必须进入重大新闻汇总、关键词云、板块轮动看板，并优先影响个股推荐。
 8a. 【美股板块行情来源与首页双排行（强制）】Work Cloud 不再直接访问 Moomoo/Futunn 抓排行榜；生成正文前只从本次最新 `main` 读取 GitHub Actions 预生成的 `data/us-rankings-latest.json`。快照由 `.github/workflows/us-rankings-snapshot.yml` 在美股收盘后、北京时间周二至周六 05:17 首次抓取，06:17 与 07:17 备份运行，也允许 `workflow_dispatch` 人工补跑；GitHub schedule 可能延迟，计划时间不等于实际抓取时间。任务必须核验 `schemaVersion`、`attemptedAt`、各分组 `status/fetchedAt/sourceUrl`，以及行情对应的最近美股交易时段，不得把旧 `lastSuccess` 冒充本轮数据。首页左侧 `US_SECTOR_PANEL` 与 `US_SECTOR_PANEL_EN` 仍生成行业在上、概念在下的两个独立分组；两套排行不得混排或互相替代。
+   - 【08:30 启动即检查，按需触发】取得首轮租约后，先按 NYSE/Nasdaq 交易日与休市安排确认最近已完成美股现金时段的日期，再检查快照的 `publicationGate`：必须 `ready=true`、`expected_session_date` 等于该日期，且两组实际 `status` 为 ok/partial、当前行非空、`fetchedAt` 不早于该交易日纽约16:00；`lastSuccess` 不参与就绪判断。不满足时立即发起一次按需抓取请求，与新闻研究并行，不等 GitHub cron。此通道使用已有 GitHub app，云端不需要本机 CLI、token 或直接访问 Moomoo。
+   - 【GitHub app 按需请求协议】专用分支 `codex/us-rankings-refresh` 仅用于触发，绝不合并 main。先读取 main head B/tree T 与请求分支 head R；分支不存在时从 B 创建，竞争失败则重读。从最新 T 创建一个仅额外包含 `requests/us-rankings.json` 的 tree，JSON 记录 request_id（本轮 run_id）、requested_at（ISO时区时间）、expected_session_date（已核验美股交易日）、requester=AH。create_commit 的 parent 必须是 R，随后 update_ref(force=false, expected_sha=R) 原子更新请求分支。该路径的 push 会立即触发抓取 workflow；工作流固定 checkout main，成功后将快照与双语排行写回 main。保留 B/T/R、请求commit与开始时间作为证据，禁止为重试同一请求不停创建commit。
+   - 【有界等待与发布门槛】请求后继续独立新闻研究，每30-60秒重读 main 快照、续租并保存阶段；总等待上限8分钟，从 requested_at 计时。请求对应的 `publicationGate.request_id`、正确 expected_session_date、ready=true 和当前行同时出现才视为该请求完成；若其他运行先产出合格新快照，可直接复用并记录来源。最终提交前再次重读最新快照，按同一条件检查，并以其行生成中英文排行。任何一组仍无当前行、覆盖时段不符或gate未通过时，禁止发布当日完整早报和“0行降级成功”；写共享状态 blocked、error.code=rankings_not_ready、释放租约并报告具体错误，保留待发布稿与已有研究供09:15复核恢复。不得关闭既有任务，也不得以盘中补榜代替这个盘前门槛。
+   - `publicationGate` 由 Action 实际运行 `python -m scripts.validate_us_rankings_ready <snapshot> --request <request.json> --annotate` 生成，包含 checked_at、expected_session_date、request_id、groups_sha256 与 errors；人工/本地也可用 `--expected-session-date YYYY-MM-DD` 独立核验。默认日期只按纽约工作日推定，早报必须用交易所日历复核节假日；若默认日期与真实最后交易日不符，按需请求应携带真实日期重新校验。gate 表示抓取在所需收盘后完成，不证明数据源本身永不出错。
    - 抓取 Action 使用 `scripts/update_us_rankings_panel.py`，从提交前最新 main 派生，仅原子更新快照与首页两个排行 marker；成功快照即使晚于早报，也必须自动补齐首页双语排行，不等待下一次早报。其他正文、历史归档、布局与脚本字节保持不变。旧快照尚未更新时标为“等待最新快照”，仅有来源错误证据时才称抓取失败；不把任务延迟与来源失败混为一谈。A/H 发布前仍须重读最新快照，避免覆盖已补齐的排行。
    - GitHub Action 的行业来源固定为 `https://www.moomoo.com/hans/quote/us/sector-industry`，只读取首屏正数 Top5 和分页元数据，再通过页面自身分页请求直达最后一页取得倒数 Top5；禁止遍历中间页。概念来源固定为 `https://www.moomoo.com/hans/quote/sparks-us`，只读取首屏正数 Top5，不点“加载更多”、不打开详情页。云端早报不得因快照失败而改回运行时浏览器抓取或依赖用户本机网络。
-   - 快照和页面采用字段渐进展示：可信的板块名与板块涨跌幅足以发布该行；代表 ticker、代表股涨跌幅或涨/跌/平家数缺失时，在 `spark-leader` 与来源说明中逐项标明“不可得”，不得清空该行或整个分组，也不得臆造。某侧少于 5 行时发布实际取得数量；行业只有 Top5 或 Bottom5 时发布已有侧并说明另一侧缺失；只有某分组 0 条可信板块名+涨跌幅时才显示该分组失败。Action 抓取失败时快照可在 `lastSuccess` 保留上次有效样本供诊断，但早报不得把它当作当前排行。
+   - 快照和页面采用字段渐进展示：可信的板块名与板块涨跌幅足以发布该行；代表 ticker、代表股涨跌幅或涨/跌/平家数缺失时，在 `spark-leader` 与来源说明中逐项标明“不可得”，不得清空该行或整个分组，也不得臆造。某侧少于 5 行时发布实际取得数量；行业只有 Top5 或 Bottom5 时发布已有侧并说明另一侧缺失。任何分组0条当前可信行时，抓取Action可保存失败状态，但早报发布必须按上述rankings_not_ready处理。Action 抓取失败时快照可在 `lastSuccess` 保留上次有效样本供诊断，但早报不得把它当作当前排行。
    - 生成的双排行片段必须只替换首页 `<!-- US_SECTOR_PANEL_START -->` 到 `<!-- US_SECTOR_PANEL_END -->` 之间的内容并保留 marker。结构仍为 industry-ranking 后接 concept-ranking，每个可得样本使用既有 `spark-row/spark-name/spark-leader/spark-change`；行业负收益行给 `spark-change` 加 `down` class。`spark-source` 必须披露快照来源、`fetchedAt`、分组状态、实际行数与缺失字段。不得新增 CSS、脚本、页面布局或 marker。
    - 发布前必须机器校验：行业分组在前、概念分组在后；实际行数与快照当前分组逐项一致；有 5+5 行行业时倒数 5 行按轻跌到重跌排列，有 5 行概念时均为正收益。固定 10/5/15 行断言只在相应快照分组 `status=ok` 时启用；`partial/error` 按实际可得行数和明确缺口校验，不能机械清空或阻塞另一分组。英文标题固定为 `Overnight US Industry Ranking` 和 `Overnight US Concept Ranking`，顺序、板块名、数值、缺失状态和时间点与中文逐项一致；英文标题时间必须转换为 `America/New_York` 短时区，中文仍显示 CST。
    - 两张表必须共同反向服务正文判断：行业榜负责市场广度、行业名称、排序及重大行业异动；Sparks 负责跨行业概念主题及领涨股补充。半导体、AI PC、IDC、光通信、无人机、激光雷达、热门中概、能源/储能等强弱分支若与 A/H 有映射，必须进入重大新闻汇总、关键词云、板块轮动看板或逻辑链。任一来源失败时只降级对应分组并明确披露，不得用另一分组冒充失败分组。
@@ -174,7 +180,7 @@
 
 1. 文件白名单和 marker-only：只涉及三个允许文件；将原文和新文的五组授权 marker 内容剔除后，剩余字节完全一致；单独逐字节比较 `US_BRIEF/US_TIME/US_UPDATED` 三组片段，确保未变。
 2. A/H 正文及当天 JSON：执行内容第 4a/4b、5a/5b、6、8a/8b、8c/8d、9/9a/9b 条和中英文同步契约的核心检查，包含 DOM 标签、class、模块顺序、direct-child 关系及数量；机器校验 AKShare JSON 可解析、A股 `marketDate/calendarVerified/marketPhase` 与交易日一致、A/H 宽度数字与中英文正文一致、休市日或上一交易时段数据未冒充当天盘中行情，且首页未新增 AKShare 原始行情 panel。08:30 首轮机器断言重大新闻总数 9-12、至少 2 条已核验国内政策、至少 2 条国内科技/产业事件和至少 3 条重要 A/H 公司事件，并完成国内盘前覆盖对账；港股仅验证进入正文的重要公告具有真实来源、时间、关键数字和正反面，不要求穷举市场、运行旧脚本、清零 pending 或满足固定覆盖数量。09:15 有实质更新时重新满足仍适用的结构与内容计数，并保留首轮仍有效事件。
-3. 行业/概念双排行：先校验 `data/us-rankings-latest.json` 可解析且来源状态、抓取时间、当前行与 `lastSuccess` 分离，再按第 8a 条校验中文和英文的分组顺序、实际可得行数、正负顺序、字段缺口、时间及失败披露。两组成功时每种语言各 15 行，其中行业 10 行、概念 5 行；`partial/error` 时按快照当前行逐项校验，有什么展示什么，单组失败不得省略另一成功或部分成功分组。
+3. 行业/概念双排行：首先执行第8a条publicationGate盘前门槛，两组当前行未就绪时禁止提交完整早报；随后校验 `data/us-rankings-latest.json` 可解析且来源状态、抓取时间、当前行与 `lastSuccess` 分离，再按第 8a 条校验中文和英文的分组顺序、实际可得行数、正负顺序、字段缺口、时间及失败披露。两组成功时每种语言各 15 行，其中行业 10 行、概念 5 行；`partial/error` 时按快照当前行逐项校验，有什么展示什么，单组失败不得省略另一成功或部分成功分组。
 3a. 重大异动映射与候选安全：执行第 8c/8d 条，从第 8a 条本轮已取得的行业 Top5/Bottom5、概念 Top5 重新计算重大主题集合，并逐项核对“榜单行 → 业务映射证据 → 条件关注/看多候选/回避/无候选 → 状态理由”；不得只检查正文已经选择的主题。重大主题至少覆盖任一榜单前两名、绝对涨跌幅不低于 5%、同一主题占概念 Top5 至少 2 席及新闻发现的其他重大异动，尤其不能漏掉加密货币等显著大涨主题。全部重大主题的 decision 必须属于 conditional_watch|bullish_candidate|avoid|no_candidate 且无 pending，中英文、首页与归档结论一致；报价缺失不得成为清空已有事实依据候选的唯一原因，重大负面公告或明显负面价格反馈若被包装成看多候选必须判定失败。本检查不扩大榜单抓取，也不要求全量公告账本、固定候选数、市值/盈利/PE 阈值、固定长度交易日行情或固定区间收益。
 4. history/manifest：JSON 可解析，日期及更新时间一致；当天 entries 中必须恰好一个条目满足 `typeKey(entry.type) === "AH"`，且该条目同时具有非空 `type="AH"`、`time`、`html`、`html_en`，不得只存在 `market` 或 entry 级 `updated`。必须用首页 `renderEntry()` 的同一筛选表达式对当天 JSON 做一次机器模拟，断言能选中 A/H entry、中文与英文均以 `<div class="brief-dashboard">` 为根且不会进入 `No brief/这个日期没有对应简报` 空态。A/H `html/html_en` 完整同构且与首页数据对应；除本次 A/H entry 外所有既有 entries（尤其 US）保持不变，既有历史日期和 types 无丢失，当天 types 含 AH。
 5. 首页不含 `data-history-record`；正文与 JSON 都包含 `stock-picks`、`asset-strip`、`word-cloud`、`sector-board`、`logic-chain`；首页保留 `us-sector-panel`，中英文 panel 各自结构与完整性满足第 8a 条。
@@ -222,7 +228,7 @@
 
 ## 失败处理与阻塞条件
 
-1. AKShare、Futu、Sparks、Moomoo 或某一个国内发现源的单点失败按 degrade-and-continue 执行，记录受限项并用可验证替代来源继续；AKShare 失败时不得编造市场宽度或领涨/领跌证据，其他来源专属披露、双排行降级和国内覆盖对账仍按第 8a/8b、9/9a 条执行。国内政策原始源与交易所公告不得仅因一个聚合站不可用而跳过；不得把单源失败或单个浏览器不可用当作整个发布阻塞。
+1. 排行榜必须优先执行第8a条rankings_not_ready门槛；其他AKShare、Futu或国内发现源的单点失败按 degrade-and-continue 执行，记录受限项并用可验证替代来源继续；AKShare 失败时不得编造市场宽度或领涨/领跌证据，其他来源专属披露、双排行降级和国内覆盖对账仍按第 8a/8b、9/9a 条执行。国内政策原始源与交易所公告不得仅因一个聚合站不可用而跳过；不得把单源失败或单个浏览器不可用当作整个发布阻塞。
 2. Work Cloud 不尝试 SSH；GitHub app 连接、原子提交或 `main` 写权限不可用时直接阻塞并通知。只有本地人工运行才按 A→B 顺序尝试 SSH 后回退 GitHub app。
 3. 保留的预发布核心校验失败、GitHub 原子提交/ref 更新失败（含按规定重做后仍冲突）、远端回读失败或 HTML/JSON/DOM 无法确认 Vercel 上线时必须阻塞。marker 保护、中英文同构、history 完整、原子发布和最终上线校验不得降级；可修复的校验失败必须修复并重验后再发布。
 

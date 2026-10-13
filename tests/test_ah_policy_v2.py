@@ -43,6 +43,8 @@ class AHPolicyV2ContractTest(unittest.TestCase):
         retained = (
             "require_ranked_major_movement_reconciliation",
             "require_github_us_rankings_snapshot",
+            "require_fresh_rankings_before_publication",
+            "allow_on_demand_rankings_refresh",
             "forbid_runtime_moomoo_rankings_fetch",
             "allow_partial_ranking_fields",
             "require_traceable_sources",
@@ -125,7 +127,7 @@ class AHPolicyV2ContractTest(unittest.TestCase):
             "Work Cloud 不再直接访问 Moomoo/Futunn 抓排行榜",
             "板块名与板块涨跌幅足以发布该行",
             "不得清空该行或整个分组",
-            "0 条可信板块名+涨跌幅",
+            "任何分组0条当前可信行",
             "不得把它当作当前排行",
         )
         for text in required_text:

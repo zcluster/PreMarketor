@@ -2,6 +2,9 @@ name: Refresh US rankings snapshot
 
 on:
   workflow_dispatch:
+  push:
+    branches: [codex/us-rankings-refresh]
+    paths: [requests/us-rankings.json]
   schedule:
     # 05:17, 06:17 and 07:17 Asia/Shanghai Tuesday-Saturday.
     # All are after the US close in both DST and standard time; later runs are backups.
@@ -29,7 +32,7 @@ jobs:
           python-version: "3.12"
 
       - name: Test snapshot contract
-        run: python -m unittest tests/test_us_rankings_snapshot.py tests/test_us_rankings_panel.py -v
+        run: python -m unittest tests/test_us_rankings_snapshot.py tests/test_us_rankings_panel.py tests/test_us_rankings_ready.py -v
 
       - name: Install browser driver
         run: python -m pip install playwright==1.55.0
@@ -38,6 +41,15 @@ jobs:
         run: |
           cp data/us-rankings-latest.json "$RUNNER_TEMP/us-rankings-captured.json"
           python scripts/fetch_us_rankings_snapshot.py --output "$RUNNER_TEMP/us-rankings-captured.json"
+
+      - name: Check readiness before the morning brief
+        run: |
+          if [ "$GITHUB_REF" = "refs/heads/codex/us-rankings-refresh" ]; then
+            git show "$GITHUB_SHA:requests/us-rankings.json" > "$RUNNER_TEMP/us-rankings-request.json"
+            python -m scripts.validate_us_rankings_ready "$RUNNER_TEMP/us-rankings-captured.json" --request "$RUNNER_TEMP/us-rankings-request.json" --annotate || true
+          else
+            python -m scripts.validate_us_rankings_ready "$RUNNER_TEMP/us-rankings-captured.json" --annotate || true
+          fi
 
       - name: Publish snapshot and attempt status
         run: |
@@ -69,4 +81,6 @@ jobs:
           snapshot = json.loads(Path("data/us-rankings-latest.json").read_text())
           if snapshot["status"] == "error":
               raise SystemExit("Both ranking groups failed; last successes were retained separately")
+          if not snapshot["publicationGate"]["ready"]:
+              raise SystemExit("Rankings are not ready for morning publication: " + str(snapshot["publicationGate"]["errors"]))
           PY
