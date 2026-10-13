@@ -4,19 +4,28 @@
   "run_id": "ah-20261013-20261013083502",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "lease_acquired",
+  "stage": "research_complete",
   "started_at": "2026-10-13T00:35:02.226Z",
-  "heartbeat_at": "2026-10-13T00:35:02.226Z",
-  "lease_until": "2026-10-13T00:45:02.226Z",
-  "source_cutoff": null,
+  "heartbeat_at": "2026-10-13T00:36:16.433Z",
+  "lease_until": "2026-10-13T00:46:16.433Z",
+  "source_cutoff": "2026-10-13T00:36:16.433Z",
   "main_base_sha": "cbb54fcc2571606f32b2b270821edd8add73ddaa",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
-  "evidence": [],
+  "evidence": [
+    "https://www.reuters.com/business/us-stock-futures-muted-oil-stays-above-100-ahead-earnings-2026-10-12/",
+    "https://www.reuters.com/business/energy/oil-ticks-lower-russia-diesel-supply-prospects-counter-gulf-supply-risks-2026-10-13/",
+    "https://www.ndrc.gov.cn/fggz/202610/t20261012_1408076.html",
+    "https://data.eastmoney.com/notices/detail/600825/AN202610121830370963.html",
+    "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12638736&stockid=300082",
+    "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12637197&stockid=688147",
+    "https://www1.hkexnews.hk/search/predefineddoc.xhtml?predefineddocuments=7"
+  ],
   "pending_increment": [],
   "candidate_commit": null,
   "published_commit": null,
   "error": null,
   "stage_timings": {
-    "lease_acquired_at": "2026-10-13T00:35:02.226Z"
+    "lease_acquired_at": "2026-10-13T00:35:02.226Z",
+    "research_complete_at": "2026-10-13T00:36:16.433Z"
   }
 }
