@@ -4,10 +4,10 @@
   "run_id": "ah-20261013-review-20261013095300",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "prepublish_validated",
+  "stage": "creating_candidate_commit",
   "started_at": "2026-10-13T01:53:00.000Z",
-  "heartbeat_at": "2026-10-13T02:13:00.000Z",
-  "lease_until": "2026-10-13T02:23:00.000Z",
+  "heartbeat_at": "2026-10-13T02:14:00.000Z",
+  "lease_until": "2026-10-13T02:24:00.000Z",
   "source_cutoff": "2026-10-13T00:36:16.433Z",
   "main_base_sha": "2111507733e6108a9e0c8324a6da368340c670a3",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -46,7 +46,8 @@
     "prepublish_validated_at": "2026-10-13T02:13:00.000Z",
     "published_at": "2026-10-13T00:42:07.719Z",
     "review_lease_acquired_at": "2026-10-13T01:53:00.000Z",
-    "incremental_research_complete_at": "2026-10-13T02:13:00.000Z"
+    "incremental_research_complete_at": "2026-10-13T02:13:00.000Z",
+    "candidate_creation_started_at": "2026-10-13T02:14:00.000Z"
   },
   "validation": {
     "outsideAllowedIdentical": true,
