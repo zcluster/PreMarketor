@@ -3,11 +3,11 @@
   "date": "2026-10-13",
   "run_id": "ah-20261013-20261013083502",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "prepublish_validated",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-10-13T00:35:02.226Z",
-  "heartbeat_at": "2026-10-13T00:40:42.624Z",
-  "lease_until": "2026-10-13T00:50:42.624Z",
+  "heartbeat_at": "2026-10-13T00:42:07.719Z",
+  "lease_until": null,
   "source_cutoff": "2026-10-13T00:36:16.433Z",
   "main_base_sha": "cbb54fcc2571606f32b2b270821edd8add73ddaa",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
@@ -22,12 +22,13 @@
   ],
   "pending_increment": [],
   "candidate_commit": "2111507733e6108a9e0c8324a6da368340c670a3",
-  "published_commit": null,
+  "published_commit": "2111507733e6108a9e0c8324a6da368340c670a3",
   "error": null,
   "stage_timings": {
     "lease_acquired_at": "2026-10-13T00:35:02.226Z",
     "research_complete_at": "2026-10-13T00:36:16.433Z",
-    "prepublish_validated_at": "2026-10-13T00:40:42.624Z"
+    "prepublish_validated_at": "2026-10-13T00:40:42.624Z",
+    "published_at": "2026-10-13T00:42:07.719Z"
   },
   "validation": {
     "outsideAllowedIdentical": true,
@@ -52,5 +53,21 @@
     "main_head": "cbb54fcc2571606f32b2b270821edd8add73ddaa",
     "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
     "source_cutoff": "2026-10-13T00:36:16.433Z"
+  },
+  "production_validation": {
+    "homepage": "https://premarketor.com/",
+    "archive": "https://premarketor.com/history/?date=2026-10-13",
+    "homepage_rendered": true,
+    "archive_rendered": true,
+    "bilingual_homepage_verified": true,
+    "archive_json_implied_by_render": true,
+    "manifest_calendar_date_present": true,
+    "cards_zh": 3,
+    "cards_en": 3,
+    "news_zh": 11,
+    "news_en": 11,
+    "sector_rows_zh": 0,
+    "sector_rows_en": 0,
+    "github_readback_exact": true
   }
 }
