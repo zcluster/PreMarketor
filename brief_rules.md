@@ -85,7 +85,8 @@
    - 数据来源与时间点：用 source-line 简短列出主要来源和抓取时间。
 7. 个股推荐必须写推荐理由、触发因素和风险点；不确定时明确说明限制，不得把推演写成确定事实。
 8. 生成正文前必须做一个“隔夜美股板块异动检查”：至少检查美股主要指数、AI/半导体/软件/光通信或当日新闻中最强最弱的科技分支，以及 5-10 只隔夜异常涨跌或高成交科技股。若发现对 A/H 有直接映射的板块异动，必须进入重大新闻汇总、关键词云、板块轮动看板，并优先影响个股推荐。
-8a. 【美股板块行情来源与首页双排行（强制）】Work Cloud 不再直接访问 Moomoo/Futunn 抓排行榜；生成正文前只从本次最新 `main` 读取 GitHub Actions 预生成的 `data/us-rankings-latest.json`。快照由 `.github/workflows/us-rankings-snapshot.yml` 在美股收盘后、北京时间周二至周六 06:45 定时生成，也允许 `workflow_dispatch` 人工补跑；任务必须核验 `schemaVersion`、`attemptedAt`、各分组 `status/fetchedAt/sourceUrl`，以及行情对应的最近美股交易时段，不得把旧 `lastSuccess` 冒充本轮数据。首页左侧 `US_SECTOR_PANEL` 与 `US_SECTOR_PANEL_EN` 仍生成行业在上、概念在下的两个独立分组；两套排行不得混排或互相替代。
+8a. 【美股板块行情来源与首页双排行（强制）】Work Cloud 不再直接访问 Moomoo/Futunn 抓排行榜；生成正文前只从本次最新 `main` 读取 GitHub Actions 预生成的 `data/us-rankings-latest.json`。快照由 `.github/workflows/us-rankings-snapshot.yml` 在美股收盘后、北京时间周二至周六 05:17 首次抓取，06:17 与 07:17 备份运行，也允许 `workflow_dispatch` 人工补跑；GitHub schedule 可能延迟，计划时间不等于实际抓取时间。任务必须核验 `schemaVersion`、`attemptedAt`、各分组 `status/fetchedAt/sourceUrl`，以及行情对应的最近美股交易时段，不得把旧 `lastSuccess` 冒充本轮数据。首页左侧 `US_SECTOR_PANEL` 与 `US_SECTOR_PANEL_EN` 仍生成行业在上、概念在下的两个独立分组；两套排行不得混排或互相替代。
+   - 抓取 Action 使用 `scripts/update_us_rankings_panel.py`，从提交前最新 main 派生，仅原子更新快照与首页两个排行 marker；成功快照即使晚于早报，也必须自动补齐首页双语排行，不等待下一次早报。其他正文、历史归档、布局与脚本字节保持不变。旧快照尚未更新时标为“等待最新快照”，仅有来源错误证据时才称抓取失败；不把任务延迟与来源失败混为一谈。A/H 发布前仍须重读最新快照，避免覆盖已补齐的排行。
    - GitHub Action 的行业来源固定为 `https://www.moomoo.com/hans/quote/us/sector-industry`，只读取首屏正数 Top5 和分页元数据，再通过页面自身分页请求直达最后一页取得倒数 Top5；禁止遍历中间页。概念来源固定为 `https://www.moomoo.com/hans/quote/sparks-us`，只读取首屏正数 Top5，不点“加载更多”、不打开详情页。云端早报不得因快照失败而改回运行时浏览器抓取或依赖用户本机网络。
    - 快照和页面采用字段渐进展示：可信的板块名与板块涨跌幅足以发布该行；代表 ticker、代表股涨跌幅或涨/跌/平家数缺失时，在 `spark-leader` 与来源说明中逐项标明“不可得”，不得清空该行或整个分组，也不得臆造。某侧少于 5 行时发布实际取得数量；行业只有 Top5 或 Bottom5 时发布已有侧并说明另一侧缺失；只有某分组 0 条可信板块名+涨跌幅时才显示该分组失败。Action 抓取失败时快照可在 `lastSuccess` 保留上次有效样本供诊断，但早报不得把它当作当前排行。
    - 生成的双排行片段必须只替换首页 `<!-- US_SECTOR_PANEL_START -->` 到 `<!-- US_SECTOR_PANEL_END -->` 之间的内容并保留 marker。结构仍为 industry-ranking 后接 concept-ranking，每个可得样本使用既有 `spark-row/spark-name/spark-leader/spark-change`；行业负收益行给 `spark-change` 加 `down` class。`spark-source` 必须披露快照来源、`fetchedAt`、分组状态、实际行数与缺失字段。不得新增 CSS、脚本、页面布局或 marker。
@@ -159,7 +160,7 @@
    - `<!-- A_H_UPDATED_START -->` 到 `<!-- A_H_UPDATED_END -->`
    - `<!-- US_SECTOR_PANEL_START -->` 到 `<!-- US_SECTOR_PANEL_END -->`
    - `<!-- US_SECTOR_PANEL_EN_START -->` 到 `<!-- US_SECTOR_PANEL_EN_END -->`
-   `US_BRIEF/US_TIME/US_UPDATED` 三组 marker、`record-title`、CSS、脚本、布局、其他 marker 和全部授权 marker 外字节必须完全不变。仅 A/H automation 更新上述中英文双排行 panel，内部结构执行第 8a 条。
+   `US_BRIEF/US_TIME/US_UPDATED` 三组 marker、`record-title`、CSS、脚本、布局、其他 marker 和全部授权 marker 外字节必须完全不变。A/H automation 与第 8a 条排行榜 Action 按各自授权范围更新中英文双排行 panel，内部结构执行第 8a 条。
 3. 所有修改必须从本次发布通道取得的最新 main 基线派生：Work Cloud 固定使用 GitHub app 通道及下述 commit B；本地人工运行才可使用 SSH 通道。完整读取基线文件后做字符串 marker 替换，不得手写或重建整个页面；通道切换或基线变化时必须重新读取、合并和校验。
 4. 首页只保留最新简报，不得新增或恢复历史正文、`data-history-record`、历史记录列表或日期内嵌内容。日历日期必须继续链接到 `history/?date=YYYY-MM-DD`。
 5. 当天 JSON 存在则在基线上合并，不存在则创建完整新 JSON；必须包含 `date`、`title`、`updated`、`summary`、`entries`。仅更新本次 A/H entry，保留其余所有既有 entries，尤其当天 US entry。A/H entry 的归档协议字段固定为 `"type": "AH"` 和 `"time": "YYYY-MM-DD HH:MM CST"`，禁止以 `market` 代替 `type`、以 entry 级 `updated` 代替 `time`；前端对旧字段的兼容兜底不构成生成许可。A/H entry 必须同时包含完整且同构的 `html` 与 `html_en`，不得只写摘要；中文正文必须与首页 A/H 完全一致，英文由当天 entry.html_en 提供。
