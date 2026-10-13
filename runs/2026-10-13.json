@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "date": "2026-10-13",
-  "run_id": "ah-20261013-20261013083502",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "started_at": "2026-10-13T00:35:02.226Z",
-  "heartbeat_at": "2026-10-13T00:42:07.719Z",
-  "lease_until": null,
+  "run_id": "ah-20261013-review-20261013095300",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "started_at": "2026-10-13T01:53:00.000Z",
+  "heartbeat_at": "2026-10-13T01:53:00.000Z",
+  "lease_until": "2026-10-13T02:03:00.000Z",
   "source_cutoff": "2026-10-13T00:36:16.433Z",
-  "main_base_sha": "cbb54fcc2571606f32b2b270821edd8add73ddaa",
+  "main_base_sha": "2111507733e6108a9e0c8324a6da368340c670a3",
   "rules_blob_sha": "8b5999a5f3d5949f6ea74b484090e3895b40120b",
   "evidence": [
     "https://www.reuters.com/business/us-stock-futures-muted-oil-stays-above-100-ahead-earnings-2026-10-12/",
@@ -18,17 +18,28 @@
     "https://data.eastmoney.com/notices/detail/600825/AN202610121830370963.html",
     "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12638736&stockid=300082",
     "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12637197&stockid=688147",
-    "https://www1.hkexnews.hk/search/predefineddoc.xhtml?predefineddocuments=7"
+    "https://www1.hkexnews.hk/search/predefineddoc.xhtml?predefineddocuments=7",
+    "https://www.reuters.com/world/asia-pacific/global-markets-wrapup-1-2026-10-13/"
   ],
-  "pending_increment": [],
-  "candidate_commit": "2111507733e6108a9e0c8324a6da368340c670a3",
+  "pending_increment": [
+    {
+      "first_available_at": "2026-10-13T01:41:43Z",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/global-markets-wrapup-1-2026-10-13/",
+      "fact": "MSCI亚太（日本除外）早盘跌2%，KOSPI跌6%，日经跌2.6%；芯片抛售与高油价强化亚洲风险规避",
+      "materiality": "potentially_material",
+      "status": "under_review"
+    }
+  ],
+  "candidate_commit": null,
   "published_commit": "2111507733e6108a9e0c8324a6da368340c670a3",
   "error": null,
   "stage_timings": {
     "lease_acquired_at": "2026-10-13T00:35:02.226Z",
     "research_complete_at": "2026-10-13T00:36:16.433Z",
     "prepublish_validated_at": "2026-10-13T00:40:42.624Z",
-    "published_at": "2026-10-13T00:42:07.719Z"
+    "published_at": "2026-10-13T00:42:07.719Z",
+    "review_lease_acquired_at": "2026-10-13T01:53:00.000Z"
   },
   "validation": {
     "outsideAllowedIdentical": true,
