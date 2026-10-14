@@ -3,11 +3,11 @@
   "date": "2026-10-14",
   "run_id": "ah-20261014-20261014083440",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-10-14T00:34:40.556Z",
-  "heartbeat_at": "2026-10-14T00:48:00.000Z",
-  "lease_until": "2026-10-14T00:58:00.000Z",
+  "heartbeat_at": "2026-10-14T00:49:28.000Z",
+  "lease_until": "2026-10-14T00:49:28.000Z",
   "source_cutoff": "2026-10-14T08:45:00+08:00",
   "main_base_sha": "e7b3478cd9d6fcffccc7c96bffaf363428680c7b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -144,6 +144,24 @@
       "type": "prepublish_validation",
       "fetched_at": "2026-10-14T00:45:44Z",
       "result": "passed: 3-file whitelist; marker-only; US byte protection; bilingual DOM; 10 news; 3 overnight items; 3 cards; rankings 15 rows/5 down; history/manifest"
+    },
+    {
+      "type": "remote_readback",
+      "url": "https://github.com/zcluster/PreMarketor/commit/c047fcfca53700f493278913679c44fce5f2091b",
+      "fetched_at": "2026-10-14T00:48:15Z",
+      "result": "exact content match for index.html, history/data/2026-10-14.json, history/manifest.json; commit message and parent verified"
+    },
+    {
+      "type": "production_validation",
+      "url": "https://premarketor.com/",
+      "fetched_at": "2026-10-14T00:49:00Z",
+      "result": "homepage rendered 2026-10-14 08:45 CST; Chinese and English each 10 major news, 3 overnight items, 3 cards; 15 ranking rows; no empty state"
+    },
+    {
+      "type": "production_validation",
+      "url": "https://premarketor.com/history/?date=2026-10-14",
+      "fetched_at": "2026-10-14T00:49:20Z",
+      "result": "archive rendered title/date/time, 10 major news, 3 overnight items, 3 cards; no empty state; calendar showed Oct 14 link, evidencing manifest load"
     }
   ],
   "pending_increment": [],
@@ -161,11 +179,14 @@
     "candidate_commit_created_at": "2026-10-14T00:46:48.000Z",
     "main_update_started_at": "2026-10-14T00:46:48.000Z",
     "main_updated_at": "2026-10-14T00:48:00.000Z",
-    "deployment_verification_started_at": "2026-10-14T00:48:00.000Z"
+    "deployment_verification_started_at": "2026-10-14T00:48:00.000Z",
+    "deployment_verified_at": "2026-10-14T00:49:28.000Z",
+    "completed_at": "2026-10-14T00:49:28.000Z",
+    "total_seconds": 887.444
   },
   "request_metrics": {
-    "requests": 34,
-    "retries": 0,
-    "cache_hits": 0
+    "requests": 42,
+    "retries": 1,
+    "cache_hits": 6
   }
 }
