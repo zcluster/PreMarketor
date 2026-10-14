@@ -4,23 +4,54 @@
   "run_id": "ah-20261014-20261014083440",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "lease_acquired",
+  "stage": "researching",
   "started_at": "2026-10-14T00:34:40.556Z",
-  "heartbeat_at": "2026-10-14T00:34:40.556Z",
-  "lease_until": "2026-10-14T00:44:40.556Z",
+  "heartbeat_at": "2026-10-14T00:36:27.000Z",
+  "lease_until": "2026-10-14T00:46:27.000Z",
   "source_cutoff": null,
   "main_base_sha": "e7b3478cd9d6fcffccc7c96bffaf363428680c7b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-  "evidence": [],
+  "evidence": [
+    {
+      "type": "rules",
+      "url": "https://raw.githubusercontent.com/zcluster/PreMarketor/main/brief_rules.md",
+      "blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "fetched_at": "2026-10-14T00:33:24Z",
+      "result": "complete"
+    },
+    {
+      "type": "us_rankings",
+      "url": "https://raw.githubusercontent.com/zcluster/PreMarketor/main/data/us-rankings-latest.json",
+      "blob_sha": "f90d09beb3e6d03b748693efbb8a33535b594a57",
+      "fetched_at": "2026-10-14T00:35:00Z",
+      "source_cutoff": "2026-10-13",
+      "result": "publicationGate.ready=true; industry=10; concept=5"
+    },
+    {
+      "type": "akshare",
+      "url": "https://raw.githubusercontent.com/zcluster/PreMarketor/main/data/akshare-latest.json",
+      "blob_sha": "14b15ed148a713d1788e5f9ecf8e02f5c9075ae8",
+      "fetched_at": "2026-10-14T00:35:00Z",
+      "source_cutoff": "2026-10-13T14:47:54+08:00",
+      "result": "analysisReady=true; intraday snapshot"
+    },
+    {
+      "type": "overnight_us",
+      "url": "https://www.reuters.com/business/wall-st-futures-slip-rising-oil-treasury-yields-compound-ai-anxiety-2026-10-13/",
+      "fetched_at": "2026-10-14T00:36:00Z",
+      "result": "US closes and sector/stock mapping captured; primary/independent corroboration pending"
+    }
+  ],
   "pending_increment": [],
   "candidate_commit": null,
   "published_commit": null,
   "error": null,
   "stage_timings": {
-    "lease_acquired_at": "2026-10-14T00:34:40.556Z"
+    "lease_acquired_at": "2026-10-14T00:34:40.556Z",
+    "researching_at": "2026-10-14T00:36:27.000Z"
   },
   "request_metrics": {
-    "requests": 0,
+    "requests": 15,
     "retries": 0,
     "cache_hits": 0
   }
