@@ -4,11 +4,11 @@
   "run_id": "ah-20261014-20261014083440",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "researching",
+  "stage": "generation",
   "started_at": "2026-10-14T00:34:40.556Z",
-  "heartbeat_at": "2026-10-14T00:36:27.000Z",
-  "lease_until": "2026-10-14T00:46:27.000Z",
-  "source_cutoff": null,
+  "heartbeat_at": "2026-10-14T00:40:22.000Z",
+  "lease_until": "2026-10-14T00:50:22.000Z",
+  "source_cutoff": "2026-10-14T08:40:22+08:00",
   "main_base_sha": "e7b3478cd9d6fcffccc7c96bffaf363428680c7b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": [
@@ -40,6 +40,44 @@
       "url": "https://www.reuters.com/business/wall-st-futures-slip-rising-oil-treasury-yields-compound-ai-anxiety-2026-10-13/",
       "fetched_at": "2026-10-14T00:36:00Z",
       "result": "US closes and sector/stock mapping captured; primary/independent corroboration pending"
+    },
+    {
+      "type": "policy",
+      "url": "https://www.miit.gov.cn/xwfb/szyw/art/2026/art_b34447a35832433aa6d7591e9807621c.html",
+      "published_at": "2026-10-13T15:24:00+08:00",
+      "fetched_at": "2026-10-14T00:38:00Z",
+      "result": "Health China conference; pharma/medical-service mapping verified"
+    },
+    {
+      "type": "policy",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261013_1408128.html",
+      "published_at": "2026-10-13",
+      "fetched_at": "2026-10-14T00:38:00Z",
+      "result": "Western development coordination meeting; infrastructure/regional SOE mapping"
+    },
+    {
+      "type": "company_event",
+      "ticker": "A.002812",
+      "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12640672&stockid=002812",
+      "published_at": "2026-10-14",
+      "fetched_at": "2026-10-14T00:40:00Z",
+      "result": "9M net profit RMB1.54-2.05bn; price 44.42, -5.17% on 2026-10-13 before announcement"
+    },
+    {
+      "type": "company_event",
+      "ticker": "A.301536",
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12640340&stockid=301536",
+      "published_at": "2026-10-13",
+      "fetched_at": "2026-10-14T00:40:00Z",
+      "result": "9M net profit RMB1.543-1.613bn, +663.13%-697.75%; price 109.98, -3.97% on 2026-10-13 before announcement"
+    },
+    {
+      "type": "company_event",
+      "ticker": "A.000657",
+      "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12640626&stockid=000657",
+      "published_at": "2026-10-14",
+      "fetched_at": "2026-10-14T00:40:00Z",
+      "result": "9M net profit RMB2.9-3.1bn, +219%-241% restated; price 48.17, -0.35% on 2026-10-13 before announcement"
     }
   ],
   "pending_increment": [],
@@ -48,10 +86,11 @@
   "error": null,
   "stage_timings": {
     "lease_acquired_at": "2026-10-14T00:34:40.556Z",
-    "researching_at": "2026-10-14T00:36:27.000Z"
+    "researching_at": "2026-10-14T00:36:27.000Z",
+    "generation_at": "2026-10-14T00:40:22.000Z"
   },
   "request_metrics": {
-    "requests": 15,
+    "requests": 31,
     "retries": 0,
     "cache_hits": 0
   }
