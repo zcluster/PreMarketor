@@ -3,11 +3,11 @@
   "date": "2026-10-14",
   "run_id": "ah-review-20261014-20261014094600",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "publishing",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-10-14T01:46:00.000Z",
-  "heartbeat_at": "2026-10-14T01:51:00.000Z",
-  "lease_until": "2026-10-14T02:01:00.000Z",
+  "heartbeat_at": "2026-10-14T01:55:00.000Z",
+  "lease_until": "2026-10-14T01:55:00.000Z",
   "source_cutoff": "2026-10-14T08:45:00+08:00",
   "main_base_sha": "c047fcfca53700f493278913679c44fce5f2091b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -209,15 +209,29 @@
       "type": "prepublish_validation",
       "fetched_at": "2026-10-14T01:50:40Z",
       "result": "passed: exact 3-file whitelist; index changes confined to A_H_UPDATED/A_H_TIME/A_H_BRIEF; US_BRIEF/US_TIME/US_UPDATED and both US ranking panels byte-identical; bilingual 11 major news, 3 overnight items, 3 cards; two Confirmed Watch plus one Conditional Watch; JSON roundtrip and manifest head passed"
+    },
+    {
+      "type": "remote_readback",
+      "url": "https://github.com/zcluster/PreMarketor/commit/2216f2ec44c45ad04459d599bdd27b89736418d3",
+      "fetched_at": "2026-10-14T01:54:30Z",
+      "result": "exact content match for index.html, history/data/2026-10-14.json and history/manifest.json; final DOM-safe RMB/¥ price-prefix correction included"
+    },
+    {
+      "type": "production_validation",
+      "url": "https://premarketor.com/",
+      "fetched_at": "2026-10-14T01:54:00Z",
+      "result": "homepage rendered 2026-10-14 09:46 CST; Chinese and English both show 11 major news, 3 overnight items, 3 cards, 15 ranking rows, CPI/PPI release, two confirmed watches and one conditional watch; DOM price values preserved; no empty state"
+    },
+    {
+      "type": "production_validation",
+      "url": "https://premarketor.com/history/?date=2026-10-14",
+      "fetched_at": "2026-10-14T01:54:20Z",
+      "result": "archive rendered matching title/date/time/summary, macro release, opening quotes, 11 major news, 3 overnight items, 3 cards and no empty state; production raw JSON URL was blocked by browser client, covered by exact GitHub readback plus rendered archive"
     }
   ],
-  "pending_increment": [
-    "Upgrade Enjie and SigmaStar to confirmed watch after strong opening reaction",
-    "Add Sep CPI/PPI official release and inflation/valuation risk implication",
-    "Refresh A/H opening index snapshot and keep China Tungsten conditional"
-  ],
-  "candidate_commit": "02519c29469db0e5cca3b2c7b3fcc93d9533f470",
-  "published_commit": "c047fcfca53700f493278913679c44fce5f2091b",
+  "pending_increment": [],
+  "candidate_commit": "2216f2ec44c45ad04459d599bdd27b89736418d3",
+  "published_commit": "2216f2ec44c45ad04459d599bdd27b89736418d3",
   "error": null,
   "stage_timings": {
     "lease_acquired_at": "2026-10-14T01:46:00.000Z",
@@ -228,11 +242,16 @@
     "hard_validation_complete_at": "2026-10-14T01:50:40.000Z",
     "creating_candidate_commit_at": "2026-10-14T01:50:45.000Z",
     "candidate_commit_created_at": "2026-10-14T01:51:00.000Z",
-    "main_update_started_at": "2026-10-14T01:51:00.000Z"
+    "main_update_started_at": "2026-10-14T01:51:00.000Z",
+    "main_updated_at": "2026-10-14T01:52:30.000Z",
+    "deployment_verification_started_at": "2026-10-14T01:52:45.000Z",
+    "deployment_verified_at": "2026-10-14T01:55:00.000Z",
+    "completed_at": "2026-10-14T01:55:00.000Z",
+    "total_seconds": 540
   },
   "request_metrics": {
-    "requests": 18,
-    "retries": 0,
-    "cache_hits": 9
+    "requests": 29,
+    "retries": 1,
+    "cache_hits": 12
   }
 }
