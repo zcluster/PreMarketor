@@ -4,10 +4,10 @@
   "run_id": "ah-20261014-20261014083440",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
+  "stage": "hard_validation",
   "started_at": "2026-10-14T00:34:40.556Z",
-  "heartbeat_at": "2026-10-14T00:40:22.000Z",
-  "lease_until": "2026-10-14T00:50:22.000Z",
+  "heartbeat_at": "2026-10-14T00:44:02.000Z",
+  "lease_until": "2026-10-14T00:54:02.000Z",
   "source_cutoff": "2026-10-14T08:40:22+08:00",
   "main_base_sha": "e7b3478cd9d6fcffccc7c96bffaf363428680c7b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -78,6 +78,67 @@
       "published_at": "2026-10-14",
       "fetched_at": "2026-10-14T00:40:00Z",
       "result": "9M net profit RMB2.9-3.1bn, +219%-241% restated; price 48.17, -0.35% on 2026-10-13 before announcement"
+    },
+    {
+      "type": "domestic_discovery_reconciliation",
+      "fetched_at": "2026-10-14T00:41:00Z",
+      "sources": [
+        "https://m.sohu.com/a/1087345597_120988576",
+        "https://www.cls.cn/detail/2503856"
+      ],
+      "head_items": 10,
+      "entered": 7,
+      "excluded_reason": "duplicates or lower materiality"
+    },
+    {
+      "type": "theme_decision",
+      "theme": "Oil & Gas Refining / E&P",
+      "rank": "industry_top_1",
+      "decision": "no_candidate",
+      "reason": "sector mapping retained; no same-window issuer catalyst with post-event price confirmation"
+    },
+    {
+      "type": "theme_decision",
+      "theme": "Solar",
+      "rank": "industry_top_2",
+      "decision": "no_candidate",
+      "reason": "sector mapping retained; no same-window issuer catalyst"
+    },
+    {
+      "type": "theme_decision",
+      "theme": "Social Media",
+      "rank": "concept_top_1",
+      "decision": "no_candidate",
+      "reason": "sentiment maps to HK platforms but local price confirmation unavailable pre-open"
+    },
+    {
+      "type": "theme_decision",
+      "theme": "Solid State Battery",
+      "rank": "concept_top_2",
+      "decision": "conditional_watch",
+      "ticker": "A.002812",
+      "reason": "earnings turnaround verified; announcement followed prior close; post-announcement price pending"
+    },
+    {
+      "type": "theme_decision",
+      "theme": "Semiconductor Equipment & Materials",
+      "rank": "industry_bottom",
+      "decision": "no_candidate",
+      "reason": "negative global feedback; addressed in news/sector/risk rather than bullish card"
+    },
+    {
+      "type": "candidate",
+      "ticker": "A.301536",
+      "verification_status": "verified",
+      "decision": "conditional_watch",
+      "reason": "forecast and prior close verified; post-announcement reaction pending"
+    },
+    {
+      "type": "candidate",
+      "ticker": "A.000657",
+      "verification_status": "verified",
+      "decision": "conditional_watch",
+      "reason": "forecast and prior close verified; post-announcement reaction pending"
     }
   ],
   "pending_increment": [],
@@ -87,10 +148,12 @@
   "stage_timings": {
     "lease_acquired_at": "2026-10-14T00:34:40.556Z",
     "researching_at": "2026-10-14T00:36:27.000Z",
-    "generation_at": "2026-10-14T00:40:22.000Z"
+    "generation_at": "2026-10-14T00:40:22.000Z",
+    "translation_complete_at": "2026-10-14T00:44:02.000Z",
+    "hard_validation_at": "2026-10-14T00:44:02.000Z"
   },
   "request_metrics": {
-    "requests": 31,
+    "requests": 34,
     "retries": 0,
     "cache_hits": 0
   }
