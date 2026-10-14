@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-14T08:19:57+08:00",
+  "attemptedAt": "2026-10-15T07:56:57+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-14T08:19:57+08:00",
+      "fetchedAt": "2026-10-15T07:56:57+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,145 +17,145 @@
       },
       "top": [
         {
-          "name": "油气炼制与销售",
-          "nameEn": "Oil & Gas Refining & Marketing",
-          "code": "BK2060",
-          "changePct": "+4.11%",
-          "leaderName": "Par Pacific",
-          "leaderTicker": "PARR",
-          "leaderChangePct": "+8.13%",
+          "name": "医疗计划",
+          "nameEn": "Healthcare Plans",
+          "code": "BK2246",
+          "changePct": "+3.26%",
+          "leaderName": "联合健康",
+          "leaderTicker": "UNH",
+          "leaderChangePct": "+4.73%",
           "breadth": {
-            "advancers": 14,
+            "advancers": 8,
+            "decliners": 3,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "折扣店",
+          "nameEn": "Discount Stores",
+          "code": "BK2240",
+          "changePct": "+3.23%",
+          "leaderName": "Ollie's Bargain Outlet",
+          "leaderTicker": "OLLI",
+          "leaderChangePct": "+5.42%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 2,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "杂货店",
+          "nameEn": "Grocery Stores",
+          "code": "BK2095",
+          "changePct": "+3.17%",
+          "leaderName": "克罗格",
+          "leaderTicker": "KR",
+          "leaderChangePct": "+3.87%",
+          "breadth": {
+            "advancers": 8,
             "decliners": 5,
             "unchanged": 0
           }
         },
         {
-          "name": "太阳能",
-          "nameEn": "Solar",
-          "code": "BK2047",
-          "changePct": "+3.48%",
-          "leaderName": "SolarMax Technology",
-          "leaderTicker": "SMXT",
-          "leaderChangePct": "+7.44%",
+          "name": "一般药品制造商",
+          "nameEn": "Drug Manufacturers - General",
+          "code": "BK2428",
+          "changePct": "+3.14%",
+          "leaderName": "施贵宝",
+          "leaderTicker": "BMY",
+          "leaderChangePct": "+4.61%",
           "breadth": {
-            "advancers": 15,
-            "decliners": 7,
+            "advancers": 18,
+            "decliners": 3,
             "unchanged": 0
           }
         },
         {
-          "name": "商业设备和用品",
-          "nameEn": "Business Equipment & Supplies",
-          "code": "BK2509",
-          "changePct": "+2.23%",
-          "leaderName": "施乐",
-          "leaderTicker": "XRX",
-          "leaderChangePct": "+4.80%",
+          "name": "烟草",
+          "nameEn": "Tobacco",
+          "code": "BK2264",
+          "changePct": "+2.64%",
+          "leaderName": "Turning Point Brands",
+          "leaderTicker": "TPB",
+          "leaderChangePct": "+4.43%",
           "breadth": {
             "advancers": 5,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "油气勘探与开发",
-          "nameEn": "Oil & Gas E&P",
-          "code": "BK2058",
-          "changePct": "+2.22%",
-          "leaderName": "San Juan Basin Royalty Trust",
-          "leaderTicker": "SJT",
-          "leaderChangePct": "+10.75%",
-          "breadth": {
-            "advancers": 67,
-            "decliners": 9,
-            "unchanged": 5
-          }
-        },
-        {
-          "name": "电子与计算机分销",
-          "nameEn": "Electronics & Computer Distribution",
-          "code": "BK2506",
-          "changePct": "+2.16%",
-          "leaderName": "拍明芯城",
-          "leaderTicker": "IZM",
-          "leaderChangePct": "+44.40%",
-          "breadth": {
-            "advancers": 8,
-            "decliners": 0,
-            "unchanged": 0
+            "decliners": 5,
+            "unchanged": 2
           }
         }
       ],
       "bottom": [
         {
-          "name": "白银",
-          "nameEn": "Silver",
-          "code": "BK2093",
-          "changePct": "-2.76%",
-          "leaderName": "Highlander Silver",
-          "leaderTicker": "HSLV",
-          "leaderChangePct": "+0.40%",
+          "name": "太阳能",
+          "nameEn": "Solar",
+          "code": "BK2047",
+          "changePct": "-5.76%",
+          "leaderName": "SunScout Holding",
+          "leaderTicker": "SNSC",
+          "leaderChangePct": "+9.57%",
           "breadth": {
-            "advancers": 1,
-            "decliners": 5,
+            "advancers": 2,
+            "decliners": 20,
             "unchanged": 0
           }
         },
         {
-          "name": "航空航天与国防",
-          "nameEn": "Aerospace & Defense",
-          "code": "BK2089",
-          "changePct": "-2.79%",
-          "leaderName": "WISESAT.SPACE HOLDINGS CORPORATION",
-          "leaderTicker": "SAIQ",
-          "leaderChangePct": "+12.94%",
-          "breadth": {
-            "advancers": 17,
-            "decliners": 75,
-            "unchanged": 6
-          }
-        },
-        {
-          "name": "生物技术",
-          "nameEn": "Biotechnology",
-          "code": "BK2069",
-          "changePct": "-2.96%",
-          "leaderName": "Alaunos Therapeutics",
-          "leaderTicker": "TCRT",
-          "leaderChangePct": "+188.57%",
-          "breadth": {
-            "advancers": 55,
-            "decliners": 529,
-            "unchanged": 19
-          }
-        },
-        {
-          "name": "半导体设备与材料",
-          "nameEn": "Semiconductor Equipment & Materials",
-          "code": "BK2016",
-          "changePct": "-3.12%",
-          "leaderName": "AXT Inc",
-          "leaderTicker": "AXTI",
-          "leaderChangePct": "+4.28%",
-          "breadth": {
-            "advancers": 7,
-            "decliners": 23,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "基础设施运营",
-          "nameEn": "Infrastructure Operations",
-          "code": "BK2477",
-          "changePct": "-3.47%",
-          "leaderName": "Mobile Infrastructure",
-          "leaderTicker": "BEEP",
-          "leaderChangePct": "-3.47%",
+          "name": "独立电力生产商",
+          "nameEn": "Utilities - Independent Power Producers",
+          "code": "BK2462",
+          "changePct": "-5.89%",
+          "leaderName": "Dynamix",
+          "leaderTicker": "DYNC",
+          "leaderChangePct": "-0.18%",
           "breadth": {
             "advancers": 0,
-            "decliners": 1,
+            "decliners": 11,
             "unchanged": 0
+          }
+        },
+        {
+          "name": "铀",
+          "nameEn": "Uranium",
+          "code": "BK2430",
+          "changePct": "-5.91%",
+          "leaderName": "Jaguar Uranium",
+          "leaderTicker": "JAGU",
+          "leaderChangePct": "-2.83%",
+          "breadth": {
+            "advancers": 0,
+            "decliners": 13,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "电气设备及零件",
+          "nameEn": "Electrical Equipment & Parts",
+          "code": "BK2493",
+          "changePct": "-6.18%",
+          "leaderName": "智能充电",
+          "leaderTicker": "XCH",
+          "leaderChangePct": "+13.33%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 47,
+            "unchanged": 4
+          }
+        },
+        {
+          "name": "计算机硬件",
+          "nameEn": "Computer Hardware",
+          "code": "BK2492",
+          "changePct": "-6.76%",
+          "leaderName": "聪链集团",
+          "leaderTicker": "ICG",
+          "leaderChangePct": "+8.13%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 39,
+            "unchanged": 1
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-14T08:19:57+08:00",
+      "fetchedAt": "2026-10-15T07:56:57+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,73 +176,73 @@
       },
       "top": [
         {
-          "name": "社交媒体",
-          "nameEn": "Social Media",
-          "code": "BK2433",
-          "changePct": "+2.62%",
-          "leaderName": "Pinterest",
-          "leaderTicker": "PINS",
-          "leaderChangePct": "+4.44%",
+          "name": "抗癌医药",
+          "nameEn": "Cancer Research",
+          "code": "BK2573",
+          "changePct": "+3.54%",
+          "leaderName": "施贵宝",
+          "leaderTicker": "BMY",
+          "leaderChangePct": "+4.61%",
           "breadth": {
-            "advancers": 5,
+            "advancers": 6,
             "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "减肥药概念",
+          "nameEn": "Weight Loss Drugs",
+          "code": "BK2152",
+          "changePct": "+3.18%",
+          "leaderName": "礼来",
+          "leaderTicker": "LLY",
+          "leaderChangePct": "+3.62%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 5,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "CAR-T疗法",
+          "nameEn": "CAR-T Therapy",
+          "code": "BK2113",
+          "changePct": "+2.81%",
+          "leaderName": "吉利德科学",
+          "leaderTicker": "GILD",
+          "leaderChangePct": "+3.80%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "猴痘概念",
+          "nameEn": "Mpox (monkeypox)",
+          "code": "BK2652",
+          "changePct": "+2.77%",
+          "leaderName": "Tonix Pharmaceuticals",
+          "leaderTicker": "TNXP",
+          "leaderChangePct": "+4.40%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 5,
             "unchanged": 1
           }
         },
         {
-          "name": "固态电池",
-          "nameEn": "Solid State Battery",
-          "code": "BK2544",
-          "changePct": "+1.96%",
-          "leaderName": "丰田汽车",
-          "leaderTicker": "TM",
-          "leaderChangePct": "+2.16%",
+          "name": "流行病诊疗",
+          "nameEn": "Infectious Disease",
+          "code": "BK22995",
+          "changePct": "+2.70%",
+          "leaderName": "Moderna",
+          "leaderTicker": "MRNA",
+          "leaderChangePct": "+4.65%",
           "breadth": {
-            "advancers": 2,
-            "decliners": 6,
+            "advancers": 15,
+            "decliners": 3,
             "unchanged": 0
-          }
-        },
-        {
-          "name": "天然气",
-          "nameEn": "Natural Gas",
-          "code": "BK2582",
-          "changePct": "+1.47%",
-          "leaderName": "Phillips 66",
-          "leaderTicker": "PSX",
-          "leaderChangePct": "+4.00%",
-          "breadth": {
-            "advancers": 11,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "页岩油",
-          "nameEn": "Shale Oil",
-          "code": "BK2585",
-          "changePct": "+1.43%",
-          "leaderName": "康索尔能源",
-          "leaderTicker": "CNX",
-          "leaderChangePct": "+2.64%",
-          "breadth": {
-            "advancers": 12,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "区块链概念",
-          "nameEn": "Blockchain",
-          "code": "BK2655",
-          "changePct": "+1.42%",
-          "leaderName": "聪链集团",
-          "leaderTicker": "ICG",
-          "leaderChangePct": "+6.95%",
-          "breadth": {
-            "advancers": 10,
-            "decliners": 12,
-            "unchanged": 1
           }
         }
       ],
@@ -253,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-10-13",
-    "checked_at": "2026-10-14T08:20:34+08:00",
+    "expected_session_date": "2026-10-14",
+    "checked_at": "2026-10-15T07:57:09+08:00",
     "request_id": null,
-    "groups_sha256": "a6bc221af821ffa43936180ebc84cd24589f19967517ca29da675328a7f9f9c5",
+    "groups_sha256": "223a7b7bcdbb7df0fa4a0f6ff07ec4aed34e25bf8833a1cb719fd025d9bcbf9d",
     "errors": []
   }
 }
