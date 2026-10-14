@@ -4,10 +4,10 @@
   "run_id": "ah-review-20261014-20261014094600",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
+  "stage": "publishing",
   "started_at": "2026-10-14T01:46:00.000Z",
-  "heartbeat_at": "2026-10-14T01:46:00.000Z",
-  "lease_until": "2026-10-14T01:56:00.000Z",
+  "heartbeat_at": "2026-10-14T01:51:00.000Z",
+  "lease_until": "2026-10-14T02:01:00.000Z",
   "source_cutoff": "2026-10-14T08:45:00+08:00",
   "main_base_sha": "c047fcfca53700f493278913679c44fce5f2091b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -204,6 +204,11 @@
       "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965476.html",
       "fetched_at": "2026-10-14T01:45:30Z",
       "result": "Released 09:30 CST: Sep PPI +5.0% y/y, +1.2% m/m"
+    },
+    {
+      "type": "prepublish_validation",
+      "fetched_at": "2026-10-14T01:50:40Z",
+      "result": "passed: exact 3-file whitelist; index changes confined to A_H_UPDATED/A_H_TIME/A_H_BRIEF; US_BRIEF/US_TIME/US_UPDATED and both US ranking panels byte-identical; bilingual 11 major news, 3 overnight items, 3 cards; two Confirmed Watch plus one Conditional Watch; JSON roundtrip and manifest head passed"
     }
   ],
   "pending_increment": [
@@ -211,16 +216,23 @@
     "Add Sep CPI/PPI official release and inflation/valuation risk implication",
     "Refresh A/H opening index snapshot and keep China Tungsten conditional"
   ],
-  "candidate_commit": "c047fcfca53700f493278913679c44fce5f2091b",
+  "candidate_commit": "02519c29469db0e5cca3b2c7b3fcc93d9533f470",
   "published_commit": "c047fcfca53700f493278913679c44fce5f2091b",
   "error": null,
   "stage_timings": {
     "lease_acquired_at": "2026-10-14T01:46:00.000Z",
-    "researching_at": "2026-10-14T01:46:00.000Z"
+    "researching_at": "2026-10-14T01:46:00.000Z",
+    "generation_at": "2026-10-14T01:47:30.000Z",
+    "translation_complete_at": "2026-10-14T01:50:00.000Z",
+    "hard_validation_at": "2026-10-14T01:50:10.000Z",
+    "hard_validation_complete_at": "2026-10-14T01:50:40.000Z",
+    "creating_candidate_commit_at": "2026-10-14T01:50:45.000Z",
+    "candidate_commit_created_at": "2026-10-14T01:51:00.000Z",
+    "main_update_started_at": "2026-10-14T01:51:00.000Z"
   },
   "request_metrics": {
-    "requests": 11,
+    "requests": 18,
     "retries": 0,
-    "cache_hits": 6
+    "cache_hits": 9
   }
 }
