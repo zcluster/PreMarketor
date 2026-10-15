@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-15T07:56:57+08:00",
-  "status": "ok",
+  "attemptedAt": "2026-10-16T07:42:04+08:00",
+  "status": "partial",
   "groups": {
     "industry": {
-      "status": "ok",
+      "status": "partial",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-15T07:56:57+08:00",
+      "fetchedAt": "2026-10-16T07:42:04+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,230 +17,161 @@
       },
       "top": [
         {
-          "name": "医疗计划",
-          "nameEn": "Healthcare Plans",
-          "code": "BK2246",
-          "changePct": "+3.26%",
-          "leaderName": "联合健康",
-          "leaderTicker": "UNH",
-          "leaderChangePct": "+4.73%",
+          "name": "休闲车",
+          "nameEn": "Recreational Vehicles",
+          "code": "BK2214",
+          "changePct": "+5.93%",
+          "leaderName": "Twin Vee PowerCats",
+          "leaderTicker": "VEEE",
+          "leaderChangePct": "+19.48%",
           "breadth": {
-            "advancers": 8,
-            "decliners": 3,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "折扣店",
-          "nameEn": "Discount Stores",
-          "code": "BK2240",
-          "changePct": "+3.23%",
-          "leaderName": "Ollie's Bargain Outlet",
-          "leaderTicker": "OLLI",
-          "leaderChangePct": "+5.42%",
-          "breadth": {
-            "advancers": 7,
+            "advancers": 15,
             "decliners": 2,
             "unchanged": 0
           }
         },
         {
-          "name": "杂货店",
-          "nameEn": "Grocery Stores",
-          "code": "BK2095",
-          "changePct": "+3.17%",
-          "leaderName": "克罗格",
-          "leaderTicker": "KR",
-          "leaderChangePct": "+3.87%",
+          "name": "广告代理",
+          "nameEn": "Advertising Agencies",
+          "code": "BK2030",
+          "changePct": "+5.52%",
+          "leaderName": "MindForge",
+          "leaderTicker": "MF",
+          "leaderChangePct": "+22.94%",
+          "breadth": {
+            "advancers": 27,
+            "decliners": 10,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "抵押贷款金融",
+          "nameEn": "Mortgage Finance",
+          "code": "BK2479",
+          "changePct": "+5.31%",
+          "leaderName": "Better Home & Finance",
+          "leaderTicker": "BETR",
+          "leaderChangePct": "+32.51%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 2,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "奢侈品",
+          "nameEn": "Luxury Goods",
+          "code": "BK2276",
+          "changePct": "+5.14%",
+          "leaderName": "TheRealReal",
+          "leaderTicker": "REAL",
+          "leaderChangePct": "+15.82%",
           "breadth": {
             "advancers": 8,
-            "decliners": 5,
+            "decliners": 2,
             "unchanged": 0
           }
         },
         {
-          "name": "一般药品制造商",
-          "nameEn": "Drug Manufacturers - General",
-          "code": "BK2428",
-          "changePct": "+3.14%",
-          "leaderName": "施贵宝",
-          "leaderTicker": "BMY",
-          "leaderChangePct": "+4.61%",
-          "breadth": {
-            "advancers": 18,
-            "decliners": 3,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "烟草",
-          "nameEn": "Tobacco",
-          "code": "BK2264",
-          "changePct": "+2.64%",
-          "leaderName": "Turning Point Brands",
-          "leaderTicker": "TPB",
-          "leaderChangePct": "+4.43%",
-          "breadth": {
-            "advancers": 5,
-            "decliners": 5,
-            "unchanged": 2
-          }
-        }
-      ],
-      "bottom": [
-        {
-          "name": "太阳能",
-          "nameEn": "Solar",
-          "code": "BK2047",
-          "changePct": "-5.76%",
-          "leaderName": "SunScout Holding",
-          "leaderTicker": "SNSC",
-          "leaderChangePct": "+9.57%",
-          "breadth": {
-            "advancers": 2,
-            "decliners": 20,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "独立电力生产商",
-          "nameEn": "Utilities - Independent Power Producers",
-          "code": "BK2462",
-          "changePct": "-5.89%",
-          "leaderName": "Dynamix",
-          "leaderTicker": "DYNC",
-          "leaderChangePct": "-0.18%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 11,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "铀",
-          "nameEn": "Uranium",
-          "code": "BK2430",
-          "changePct": "-5.91%",
-          "leaderName": "Jaguar Uranium",
-          "leaderTicker": "JAGU",
-          "leaderChangePct": "-2.83%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 13,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "-6.18%",
-          "leaderName": "智能充电",
-          "leaderTicker": "XCH",
-          "leaderChangePct": "+13.33%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 47,
-            "unchanged": 4
-          }
-        },
-        {
-          "name": "计算机硬件",
-          "nameEn": "Computer Hardware",
-          "code": "BK2492",
-          "changePct": "-6.76%",
-          "leaderName": "聪链集团",
-          "leaderTicker": "ICG",
-          "leaderChangePct": "+8.13%",
+          "name": "白银",
+          "nameEn": "Silver",
+          "code": "BK2093",
+          "changePct": "+4.83%",
+          "leaderName": "Highlander Silver",
+          "leaderTicker": "HSLV",
+          "leaderChangePct": "+7.23%",
           "breadth": {
             "advancers": 6,
-            "decliners": 39,
-            "unchanged": 1
+            "decliners": 0,
+            "unchanged": 0
           }
         }
       ],
-      "missing": [],
-      "error": null
+      "bottom": [],
+      "missing": [
+        "bottom5"
+      ],
+      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
     },
     "concept": {
       "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-15T07:56:57+08:00",
+      "fetchedAt": "2026-10-16T07:42:04+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
         "pageCount": 5,
-        "total": 105
+        "total": 117
       },
       "top": [
         {
-          "name": "抗癌医药",
-          "nameEn": "Cancer Research",
-          "code": "BK2573",
-          "changePct": "+3.54%",
-          "leaderName": "施贵宝",
-          "leaderTicker": "BMY",
-          "leaderChangePct": "+4.61%",
+          "name": "以太坊储备概念",
+          "nameEn": "ETH-Holding Companies",
+          "code": "BK23775",
+          "changePct": "+5.87%",
+          "leaderName": "BTC Digital",
+          "leaderTicker": "BTCT",
+          "leaderChangePct": "+7.28%",
           "breadth": {
             "advancers": 6,
-            "decliners": 1,
+            "decliners": 3,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "加密储备概念",
+          "nameEn": "Crypto Treasury",
+          "code": "BK23920",
+          "changePct": "+4.95%",
+          "leaderName": "BTC Digital",
+          "leaderTicker": "BTCT",
+          "leaderChangePct": "+7.28%",
+          "breadth": {
+            "advancers": 19,
+            "decliners": 10,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "体育",
+          "nameEn": "Sports",
+          "code": "BK2574",
+          "changePct": "+4.67%",
+          "leaderName": "沃尔弗林集团",
+          "leaderTicker": "WWW",
+          "leaderChangePct": "+6.32%",
+          "breadth": {
+            "advancers": 9,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "减肥药概念",
-          "nameEn": "Weight Loss Drugs",
-          "code": "BK2152",
-          "changePct": "+3.18%",
-          "leaderName": "礼来",
-          "leaderTicker": "LLY",
-          "leaderChangePct": "+3.62%",
+          "name": "加密货币概念股",
+          "nameEn": "Crypto",
+          "code": "BK20010",
+          "changePct": "+4.42%",
+          "leaderName": "Cypherpunk Technologies",
+          "leaderTicker": "CYPH",
+          "leaderChangePct": "+15.27%",
+          "breadth": {
+            "advancers": 45,
+            "decliners": 21,
+            "unchanged": 7
+          }
+        },
+        {
+          "name": "SOL储备概念",
+          "nameEn": "SOL reserve concept",
+          "code": "BK23797",
+          "changePct": "+3.79%",
+          "leaderName": "DeFi Development",
+          "leaderTicker": "DFDV",
+          "leaderChangePct": "+6.94%",
           "breadth": {
             "advancers": 6,
-            "decliners": 5,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "CAR-T疗法",
-          "nameEn": "CAR-T Therapy",
-          "code": "BK2113",
-          "changePct": "+2.81%",
-          "leaderName": "吉利德科学",
-          "leaderTicker": "GILD",
-          "leaderChangePct": "+3.80%",
-          "breadth": {
-            "advancers": 7,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "猴痘概念",
-          "nameEn": "Mpox (monkeypox)",
-          "code": "BK2652",
-          "changePct": "+2.77%",
-          "leaderName": "Tonix Pharmaceuticals",
-          "leaderTicker": "TNXP",
-          "leaderChangePct": "+4.40%",
-          "breadth": {
-            "advancers": 6,
-            "decliners": 5,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "流行病诊疗",
-          "nameEn": "Infectious Disease",
-          "code": "BK22995",
-          "changePct": "+2.70%",
-          "leaderName": "Moderna",
-          "leaderTicker": "MRNA",
-          "leaderChangePct": "+4.65%",
-          "breadth": {
-            "advancers": 15,
             "decliners": 3,
             "unchanged": 0
           }
@@ -253,10 +184,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-10-14",
-    "checked_at": "2026-10-15T07:57:09+08:00",
+    "expected_session_date": "2026-10-15",
+    "checked_at": "2026-10-16T07:42:28+08:00",
     "request_id": null,
-    "groups_sha256": "223a7b7bcdbb7df0fa4a0f6ff07ec4aed34e25bf8833a1cb719fd025d9bcbf9d",
+    "groups_sha256": "780bdb69b80d57d2d96a0492db4f0b444da09004d61999cdcc5033e378866c5a",
     "errors": []
   }
 }
