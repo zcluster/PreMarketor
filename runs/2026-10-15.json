@@ -2,9 +2,9 @@
   "run_id": "ah-20261015-20261015003557",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "external_research",
-  "lease_until": "2026-10-15T00:52:13.259Z",
-  "heartbeat_at": "2026-10-15T00:42:13.259Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-10-15T00:55:01.196Z",
+  "heartbeat_at": "2026-10-15T00:45:01.196Z",
   "source_cutoff": "2026-10-15T00:42:13.259Z",
   "main_base_sha": "618b4ff63445bd65ad3925350121d9e0200db9c2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -131,12 +131,51 @@
         "candidate": "688036.SH/02636.HK 传音控股",
         "reason": "new H-share listing event but overnight hardware sector -6.76% and Nasdaq futures weak"
       }
-    ]
+    ],
+    "validation": {
+      "markerProtection": true,
+      "whitelistOutsideMarkers": true,
+      "titleNonempty": true,
+      "bilingual": true,
+      "newsCounts": true,
+      "cardCounts": true,
+      "panelCounts": true,
+      "divBalance": true,
+      "manifestUnique": true,
+      "noFutureUS": true
+    },
+    "output": {
+      "time": "2026-10-15 08:44 CST",
+      "title": "科技估值收缩、医疗防御走强，芯片知识产权与公司公告驱动A/H结构分化",
+      "news_items_zh": 11,
+      "news_items_en": 11,
+      "stock_cards": [
+        {
+          "name": "艾力斯",
+          "status": "conditional_watch"
+        },
+        {
+          "name": "传音控股",
+          "status": "conditional_watch"
+        },
+        {
+          "name": "玲珑轮胎",
+          "status": "avoid"
+        },
+        {
+          "name": "多牛科技",
+          "status": "avoid"
+        }
+      ],
+      "rank_rows_zh": 15,
+      "rank_rows_en": 15
+    }
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "started_at": "2026-10-15T00:35:57.701Z",
-    "rules_and_state_read_seconds": null
+    "rules_and_state_read_seconds": null,
+    "generation_completed_at": "2026-10-15T00:45:01.196Z"
   }
 }
