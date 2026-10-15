@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261015-20261015021142",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-15T02:21:42.546Z",
-  "heartbeat_at": "2026-10-15T02:11:42.546Z",
+  "stage": "validating",
+  "lease_until": "2026-10-15T02:27:12.811Z",
+  "heartbeat_at": "2026-10-15T02:17:12.811Z",
   "source_cutoff": "2026-10-15T00:42:13.259Z",
   "main_base_sha": "33f7e42db51d1da3df49829779c89603e70a746b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -251,5 +251,19 @@
     "total_seconds": 750
   },
   "error": null,
-  "started_at": "2026-10-15T02:11:42.546Z"
+  "started_at": "2026-10-15T02:11:42.546Z",
+  "validation": {
+    "candidate_ready": true,
+    "bilingual_news": 11,
+    "bilingual_cards": 4,
+    "tag_balance": true,
+    "us_markers_preserved": true,
+    "index_outside_ah_markers_preserved": true,
+    "manifest_history_preserved": true,
+    "allowed_files": [
+      "index.html",
+      "history/data/2026-10-15.json",
+      "history/manifest.json"
+    ]
+  }
 }
