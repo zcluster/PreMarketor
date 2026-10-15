@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261015-20261015003557",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-15T00:56:20.935Z",
-  "heartbeat_at": "2026-10-15T00:46:20.935Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-15T00:48:28.042Z",
   "source_cutoff": "2026-10-15T00:42:13.259Z",
   "main_base_sha": "618b4ff63445bd65ad3925350121d9e0200db9c2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -183,6 +183,35 @@
         "manifestSha": "f56701dcb6476a807ac754a1bbc2a6291f132d4a",
         "manifestExact": true
       }
+    },
+    "production": {
+      "checked_at": "2026-10-15T00:48:28.042Z",
+      "http": {
+        "home": 200,
+        "archive_json": 200,
+        "manifest": 200,
+        "archive_page": 200
+      },
+      "github_commit": "33f7e42db51d1da3df49829779c89603e70a746b",
+      "home_markers_exact": true,
+      "archive_json_exact": true,
+      "manifest_first_date": "2026-10-15",
+      "rendered": {
+        "archive_title": "科技估值收缩、医疗防御走强，芯片知识产权与公司公告驱动A/H结构分化",
+        "archive_no_empty": true,
+        "homepage_cn": {
+          "time": "2026-10-15 08:44 CST",
+          "cards": 4,
+          "news": 11
+        },
+        "homepage_en": {
+          "time": "2026-10-14 20:44 EDT",
+          "cards": 4,
+          "news": 11
+        },
+        "ranking_rows": 15,
+        "ranking_down_rows": 5
+      }
     }
   },
   "pending_increment": [],
@@ -191,6 +220,9 @@
     "started_at": "2026-10-15T00:35:57.701Z",
     "rules_and_state_read_seconds": null,
     "generation_completed_at": "2026-10-15T00:45:01.196Z",
-    "commit_at": "2026-10-15T00:46:20.935Z"
-  }
+    "commit_at": "2026-10-15T00:46:20.935Z",
+    "completed_at": "2026-10-15T00:48:28.042Z",
+    "total_seconds": 750
+  },
+  "error": null
 }
