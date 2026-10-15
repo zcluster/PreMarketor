@@ -3,9 +3,9 @@
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
   "stage": "external_research",
-  "lease_until": "2026-10-15T00:49:56.770Z",
-  "heartbeat_at": "2026-10-15T00:39:56.770Z",
-  "source_cutoff": null,
+  "lease_until": "2026-10-15T00:52:13.259Z",
+  "heartbeat_at": "2026-10-15T00:42:13.259Z",
+  "source_cutoff": "2026-10-15T00:42:13.259Z",
   "main_base_sha": "618b4ff63445bd65ad3925350121d9e0200db9c2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -15,8 +15,8 @@
       "complete": true
     },
     "request_counts": {
-      "github": 6,
-      "web": 0
+      "github": 8,
+      "web": 12
     },
     "cache_hits": 0,
     "snapshots": {
@@ -39,7 +39,99 @@
         "manifest": "5c7db1254f2bef1b896e50b4daf3c5e41a19087c",
         "today": null
       }
-    }
+    },
+    "market": {
+      "us_close": {
+        "session": "2026-10-14",
+        "source": "Reuters/AP/finance",
+        "spy": -1.07197,
+        "qqq": -1.96888,
+        "dia": -0.10461,
+        "sox": -4.3,
+        "nasdaq": -1.88,
+        "sp500": -1.11,
+        "dow": -0.09
+      },
+      "futures": {
+        "checked_at": "2026-10-15T00:42:13.259Z",
+        "source": "IBD",
+        "dow": "little changed",
+        "sp500": "lower",
+        "nasdaq": "lower",
+        "exact_values_unavailable": true
+      },
+      "representative_quotes": {
+        "UNH": 4.77022,
+        "BMY": 4.60561,
+        "MRNA": 4.68902,
+        "LLY": 3.8628,
+        "GILD": 3.83991,
+        "OLLI": 5.45681,
+        "KR": 3.86895,
+        "TPB": 4.181,
+        "SNSC": 6.38298,
+        "DYNC": -0.09166,
+        "JAGU": -1.88679,
+        "XCH": 15.38462,
+        "ICG": 8.13008,
+        "TNXP": 4.40457
+      }
+    },
+    "sources": {
+      "international": [
+        "https://www.reuters.com/business/sp-500-dow-futures-rise-ahead-big-bank-results-cpi-data-2026-10-14/",
+        "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-dell-amd-coreweave-ai-fears-anthropic-taiwan-semiconductor-due/"
+      ],
+      "china_policy": [
+        "https://www.mofcom.gov.cn/zcfb/",
+        "https://www.gov.cn/zhengce/202603/content_7064326.htm"
+      ],
+      "domestic_tech": [
+        "https://www.apple.com.cn/newsroom/2026/10/sleep-apnea-notifications-available-today-on-apple-watch/",
+        "https://www.sse.com.cn/assortment/stock/list/info/company/index.shtml?COMPANY_CODE=688036&FULLNAME=DR%E4%BC%A0%E9%9F%B3%E6%8E%A7"
+      ],
+      "company": [
+        "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12641455&stockid=601966",
+        "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101401127.pdf",
+        "https://www.yicai.com/news/103393604.html",
+        "https://data.eastmoney.com/notices/"
+      ]
+    },
+    "candidate_quotes": {
+      "attempted_at": "2026-10-15T00:42:13.259Z",
+      "symbols": [
+        "002813.SZ",
+        "601966.SH",
+        "688578.SH",
+        "688036.SH",
+        "02636.HK"
+      ],
+      "result": "cloud finance source returned no A/H quote objects; no current price claimed"
+    },
+    "theme_decisions": [
+      {
+        "theme": "Healthcare Plans / oncology-health concepts",
+        "status": "conditional_watch",
+        "candidate": "688578 艾力斯",
+        "reason": "defensive US healthcare strength plus disclosed buyback plan; fresh A-share quote unavailable"
+      },
+      {
+        "theme": "Discount/Grocery/Tobacco",
+        "status": "no_candidate",
+        "reason": "no direct A/H company event verified in current window"
+      },
+      {
+        "theme": "Solar/independent power/uranium/electrical",
+        "status": "no_candidate",
+        "reason": "broad negative US theme without verified company-specific A/H catalyst; not forced"
+      },
+      {
+        "theme": "Computer Hardware",
+        "status": "conditional_watch",
+        "candidate": "688036.SH/02636.HK 传音控股",
+        "reason": "new H-share listing event but overnight hardware sector -6.76% and Nasdaq futures weak"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
