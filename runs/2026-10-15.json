@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261015-20261015021142",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "production_validation",
-  "lease_until": "2026-10-15T02:30:09.033Z",
-  "heartbeat_at": "2026-10-15T02:20:09.033Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-15T02:21:20.287Z",
   "source_cutoff": "2026-10-15T00:42:13.259Z",
   "main_base_sha": "33f7e42db51d1da3df49829779c89603e70a746b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -222,26 +222,48 @@
         "Shanghai -1.70%, ChiNext -2.84%, HSI -1.19%, HSTECH -2.52%",
         "Transsion A -1.99%; Transsion H -4.65% versus HK$35.30 offer",
         "Ailisi +2.46%; Linglong -3.60%"
-      ]
+      ],
+      "final": {
+        "validated_at": "2026-10-15T02:21:20.287Z",
+        "initial_commit": "19d72615e516634627d39b8b2791703ea2703fee",
+        "corrective_commit": "834b29621ef25e89581512eb0ae81957f92d9758",
+        "github_readback": {
+          "index": {
+            "sha": "20c8ed150986fd534b7b58db5488753d7bf0cc44",
+            "exact": true
+          },
+          "today": {
+            "sha": "77df105b472741cb287e9e5b87feb7bbafa5dde8",
+            "exact": true
+          },
+          "manifest": {
+            "sha": "6b7ed06449df0c8b30fa82efd99e7aa7518e0587",
+            "exact": true
+          }
+        },
+        "production": {
+          "homepage_zh": true,
+          "homepage_en": true,
+          "archive_zh": true,
+          "timestamp": "2026-10-15 10:23 CST",
+          "news_count": 11,
+          "stock_cards": 4,
+          "stale_quote_language": false,
+          "transsion_status": "avoid",
+          "allist_status": "conditional-watch",
+          "linglong_status": "avoid",
+          "empty_state": false
+        },
+        "files": [
+          "index.html",
+          "history/data/2026-10-15.json",
+          "history/manifest.json"
+        ]
+      }
     }
   },
-  "pending_increment": {
-    "detected_at": "2026-10-15T02:11:42.546Z",
-    "after_cutoff": "2026-10-15T00:42:13.259Z",
-    "material": true,
-    "reason": "A/H open materially confirms a deeper technology-led risk-off move; Transsion H debut fell versus HK$35.30 offer while A shares weakened.",
-    "observations": {
-      "shanghai": "3703.27 (-1.70%) at 10:11 CST",
-      "chinext": "2785.23 (-2.84%) at 10:11 CST",
-      "hsi": "24024.33 (-1.19%) at 10:11 CST",
-      "hstech": "4069.32 (-2.52%) at 10:11 CST",
-      "transsion_a": "RMB47.33 (-1.99%) at 10:11 CST",
-      "transsion_h": "HK$33.66 (-4.65%) around 10:09 CST",
-      "ailisi": "RMB83.81 (+2.46%) at 10:11 CST",
-      "linglong": "RMB10.19 (-3.60%) at 10:11 CST"
-    }
-  },
-  "published_commit": "33f7e42db51d1da3df49829779c89603e70a746b",
+  "pending_increment": null,
+  "published_commit": "834b29621ef25e89581512eb0ae81957f92d9758",
   "stage_timings": {
     "started_at": "2026-10-15T00:35:57.701Z",
     "rules_and_state_read_seconds": null,
@@ -265,7 +287,9 @@
       "history/data/2026-10-15.json",
       "history/manifest.json"
     ],
-    "corrective_commit": true
+    "corrective_commit": true,
+    "final": true
   },
-  "candidate_commit": "834b29621ef25e89581512eb0ae81957f92d9758"
+  "candidate_commit": "834b29621ef25e89581512eb0ae81957f92d9758",
+  "finished_at": "2026-10-15T02:21:20.287Z"
 }
