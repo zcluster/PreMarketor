@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261015-20261015003557",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": null,
-  "heartbeat_at": "2026-10-15T00:48:28.042Z",
+  "run_id": "ah-review-20261015-20261015021142",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-10-15T02:21:42.546Z",
+  "heartbeat_at": "2026-10-15T02:11:42.546Z",
   "source_cutoff": "2026-10-15T00:42:13.259Z",
-  "main_base_sha": "618b4ff63445bd65ad3925350121d9e0200db9c2",
+  "main_base_sha": "33f7e42db51d1da3df49829779c89603e70a746b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules_read": {
@@ -212,9 +212,35 @@
         "ranking_rows": 15,
         "ranking_down_rows": 5
       }
+    },
+    "incremental_review": {
+      "checked_at": "2026-10-15T02:11:42.546Z",
+      "source": "HSTONG live cloud pages",
+      "material_change": true,
+      "quote_time_cst": "2026-10-15 10:11",
+      "notes": [
+        "Shanghai -1.70%, ChiNext -2.84%, HSI -1.19%, HSTECH -2.52%",
+        "Transsion A -1.99%; Transsion H -4.65% versus HK$35.30 offer",
+        "Ailisi +2.46%; Linglong -3.60%"
+      ]
     }
   },
-  "pending_increment": [],
+  "pending_increment": {
+    "detected_at": "2026-10-15T02:11:42.546Z",
+    "after_cutoff": "2026-10-15T00:42:13.259Z",
+    "material": true,
+    "reason": "A/H open materially confirms a deeper technology-led risk-off move; Transsion H debut fell versus HK$35.30 offer while A shares weakened.",
+    "observations": {
+      "shanghai": "3703.27 (-1.70%) at 10:11 CST",
+      "chinext": "2785.23 (-2.84%) at 10:11 CST",
+      "hsi": "24024.33 (-1.19%) at 10:11 CST",
+      "hstech": "4069.32 (-2.52%) at 10:11 CST",
+      "transsion_a": "RMB47.33 (-1.99%) at 10:11 CST",
+      "transsion_h": "HK$33.66 (-4.65%) around 10:09 CST",
+      "ailisi": "RMB83.81 (+2.46%) at 10:11 CST",
+      "linglong": "RMB10.19 (-3.60%) at 10:11 CST"
+    }
+  },
   "published_commit": "33f7e42db51d1da3df49829779c89603e70a746b",
   "stage_timings": {
     "started_at": "2026-10-15T00:35:57.701Z",
@@ -224,5 +250,6 @@
     "completed_at": "2026-10-15T00:48:28.042Z",
     "total_seconds": 750
   },
-  "error": null
+  "error": null,
+  "started_at": "2026-10-15T02:11:42.546Z"
 }
