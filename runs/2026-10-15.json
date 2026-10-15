@@ -3,8 +3,8 @@
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
   "stage": "external_research",
-  "lease_until": "2026-10-15T00:46:44.456Z",
-  "heartbeat_at": "2026-10-15T00:36:44.456Z",
+  "lease_until": "2026-10-15T00:49:56.770Z",
+  "heartbeat_at": "2026-10-15T00:39:56.770Z",
   "source_cutoff": null,
   "main_base_sha": "618b4ff63445bd65ad3925350121d9e0200db9c2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -15,7 +15,7 @@
       "complete": true
     },
     "request_counts": {
-      "github": 4,
+      "github": 6,
       "web": 0
     },
     "cache_hits": 0,
