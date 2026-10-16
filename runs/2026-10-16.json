@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261016-20261016014204",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "candidate_validated",
-  "lease_until": "2026-10-16T01:58:17.202Z",
-  "heartbeat_at": "2026-10-16T01:48:17.202Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-16T01:52:02.962Z",
   "source_cutoff": "2026-10-16T00:30:47.856Z",
   "main_base_sha": "03cbba254186dd4dac090a4ea166619b67f52e79",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -119,45 +119,23 @@
       }
     ],
     "publication": {
-      "commit": "03cbba254186dd4dac090a4ea166619b67f52e79",
-      "deployment_id": "dpl_5ZrHG3yjY7JRAJqc87VqD9Cf4vir",
-      "deployment_state": "READY",
-      "urls": {
-        "home": "https://premarketor.com/",
-        "archive": "https://premarketor.com/history/?date=2026-10-16",
-        "json": "https://premarketor.com/history/data/2026-10-16.json",
-        "manifest": "https://premarketor.com/history/manifest.json"
+      "verified_at": "2026-10-16T01:52:02.962Z",
+      "commit": "ccb930968c422c8a5f6c2f8363140a71d4179117",
+      "remote_readback_exact": true,
+      "files": [
+        "index.html",
+        "history/data/2026-10-16.json",
+        "history/manifest.json"
+      ],
+      "production": {
+        "homepage": true,
+        "history": true,
+        "zh": true,
+        "en": true,
+        "time": "2026-10-16 09:43 CST",
+        "non_empty": true
       },
-      "http_status": {
-        "home": 200,
-        "archive": 200,
-        "json": 200,
-        "manifest": 200
-      },
-      "github_remote_readback": {
-        "index": true,
-        "day_json": true,
-        "manifest": true
-      },
-      "machine_checks": {
-        "zh_cards": 3,
-        "en_cards": 3,
-        "zh_panel_rows": 10,
-        "en_panel_rows": 10,
-        "overnight_items_each": 3,
-        "us_markers_preserved": true,
-        "no_empty_state": true
-      },
-      "browser_render": {
-        "archive_zh": true,
-        "home_en": true,
-        "en_cards": [
-          "Accelink Technologies",
-          "Shennan Circuits",
-          "Zhaojin Mining"
-        ],
-        "en_panel_rows": 10
-      }
+      "headline": "A/H同步反弹、港股科技领跑修复，光迅科技量价确认而招金矿业走弱"
     },
     "incremental_review": {
       "checked_at": "2026-10-16T01:42:04.025Z",
@@ -180,22 +158,7 @@
       }
     }
   },
-  "pending_increment": {
-    "detected_at": "2026-10-16T01:42:04.025Z",
-    "after_cutoff": "2026-10-16T00:30:47.856Z",
-    "material": true,
-    "reason": "A/H opening reversal and company-level price feedback change the market view and key-stock statuses.",
-    "observations": {
-      "shanghai": "3728.47 (+0.57%) at 09:41 CST",
-      "chinext": "2807.70 (+0.88%)",
-      "hsi": "24368.13 (+1.27%)",
-      "hstech": "4148.72 (+2.16%)",
-      "accelink": "RMB137.36 (+3.31%)",
-      "shennan": "RMB316.94 (-0.58%)",
-      "zhaojin": "HK$16.80 (-3.50%)"
-    }
-  },
-  "published_commit": "03cbba254186dd4dac090a4ea166619b67f52e79",
+  "published_commit": "ccb930968c422c8a5f6c2f8363140a71d4179117",
   "stage_timings": {
     "rules_and_inputs": {
       "started_at": "2026-10-16T00:26:57.943Z",
