@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-16T07:42:04+08:00",
-  "status": "partial",
+  "attemptedAt": "2026-10-17T07:38:08+08:00",
+  "status": "ok",
   "groups": {
     "industry": {
-      "status": "partial",
+      "status": "ok",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-16T07:42:04+08:00",
+      "fetchedAt": "2026-10-17T07:38:08+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,163 +17,232 @@
       },
       "top": [
         {
-          "name": "休闲车",
-          "nameEn": "Recreational Vehicles",
-          "code": "BK2214",
-          "changePct": "+5.93%",
-          "leaderName": "Twin Vee PowerCats",
-          "leaderTicker": "VEEE",
-          "leaderChangePct": "+19.48%",
+          "name": "油气勘探与开发",
+          "nameEn": "Oil & Gas E&P",
+          "code": "BK2058",
+          "changePct": "+3.47%",
+          "leaderName": "Crescent Energy",
+          "leaderTicker": "CRGY",
+          "leaderChangePct": "+10.07%",
           "breadth": {
-            "advancers": 15,
+            "advancers": 66,
+            "decliners": 11,
+            "unchanged": 4
+          }
+        },
+        {
+          "name": "综合油气",
+          "nameEn": "Oil & Gas Integrated",
+          "code": "BK2224",
+          "changePct": "+2.85%",
+          "leaderName": "Equinor",
+          "leaderTicker": "EQNR",
+          "leaderChangePct": "+4.59%",
+          "breadth": {
+            "advancers": 18,
             "decliners": 2,
             "unchanged": 0
+          }
+        },
+        {
+          "name": "油气中游",
+          "nameEn": "Oil & Gas Midstream",
+          "code": "BK2226",
+          "changePct": "+2.74%",
+          "leaderName": "Targa Resources",
+          "leaderTicker": "TRGP",
+          "leaderChangePct": "+4.37%",
+          "breadth": {
+            "advancers": 37,
+            "decliners": 22,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "烟草",
+          "nameEn": "Tobacco",
+          "code": "BK2264",
+          "changePct": "+2.60%",
+          "leaderName": "Turning Point Brands",
+          "leaderTicker": "TPB",
+          "leaderChangePct": "+3.88%",
+          "breadth": {
+            "advancers": 5,
+            "decliners": 6,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "酿酒厂",
+          "nameEn": "Beverages - Wineries & Distilleries",
+          "code": "BK2464",
+          "changePct": "+2.08%",
+          "leaderName": "Agencia Comercial Spirits",
+          "leaderTicker": "AGCC",
+          "leaderChangePct": "+6.10%",
+          "breadth": {
+            "advancers": 9,
+            "decliners": 4,
+            "unchanged": 0
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "软件基础设施",
+          "nameEn": "Software - Infrastructure",
+          "code": "BK2508",
+          "changePct": "-3.48%",
+          "leaderName": "Exascale Labs",
+          "leaderTicker": "XLAB",
+          "leaderChangePct": "+72.79%",
+          "breadth": {
+            "advancers": 20,
+            "decliners": 155,
+            "unchanged": 5
           }
         },
         {
           "name": "广告代理",
           "nameEn": "Advertising Agencies",
           "code": "BK2030",
-          "changePct": "+5.52%",
-          "leaderName": "MindForge",
-          "leaderTicker": "MF",
-          "leaderChangePct": "+22.94%",
+          "changePct": "-3.59%",
+          "leaderName": "星际时尚",
+          "leaderTicker": "STFS",
+          "leaderChangePct": "+5.88%",
           "breadth": {
-            "advancers": 27,
-            "decliners": 10,
+            "advancers": 11,
+            "decliners": 26,
             "unchanged": 3
           }
         },
         {
-          "name": "抵押贷款金融",
-          "nameEn": "Mortgage Finance",
-          "code": "BK2479",
-          "changePct": "+5.31%",
-          "leaderName": "Better Home & Finance",
-          "leaderTicker": "BETR",
-          "leaderChangePct": "+32.51%",
+          "name": "电子元件",
+          "nameEn": "Electronic Components",
+          "code": "BK2072",
+          "changePct": "-3.69%",
+          "leaderName": "德斯维尔工业",
+          "leaderTicker": "DSWL",
+          "leaderChangePct": "+1.97%",
           "breadth": {
-            "advancers": 11,
-            "decliners": 2,
-            "unchanged": 0
+            "advancers": 3,
+            "decliners": 41,
+            "unchanged": 1
           }
         },
         {
-          "name": "奢侈品",
-          "nameEn": "Luxury Goods",
-          "code": "BK2276",
-          "changePct": "+5.14%",
-          "leaderName": "TheRealReal",
-          "leaderTicker": "REAL",
-          "leaderChangePct": "+15.82%",
+          "name": "电气设备及零件",
+          "nameEn": "Electrical Equipment & Parts",
+          "code": "BK2493",
+          "changePct": "-3.93%",
+          "leaderName": "智能充电",
+          "leaderTicker": "XCH",
+          "leaderChangePct": "+5.04%",
           "breadth": {
-            "advancers": 8,
-            "decliners": 2,
-            "unchanged": 0
+            "advancers": 7,
+            "decliners": 47,
+            "unchanged": 1
           }
         },
         {
-          "name": "白银",
-          "nameEn": "Silver",
-          "code": "BK2093",
-          "changePct": "+4.83%",
-          "leaderName": "Highlander Silver",
-          "leaderTicker": "HSLV",
-          "leaderChangePct": "+7.23%",
+          "name": "计算机硬件",
+          "nameEn": "Computer Hardware",
+          "code": "BK2492",
+          "changePct": "-5.81%",
+          "leaderName": "FF EAI Robotics Ecosystem",
+          "leaderTicker": "FFR",
+          "leaderChangePct": "+9.43%",
           "breadth": {
-            "advancers": 6,
-            "decliners": 0,
-            "unchanged": 0
+            "advancers": 4,
+            "decliners": 41,
+            "unchanged": 1
           }
         }
       ],
-      "bottom": [],
-      "missing": [
-        "bottom5"
-      ],
-      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
+      "missing": [],
+      "error": null
     },
     "concept": {
       "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-16T07:42:04+08:00",
+      "fetchedAt": "2026-10-17T07:38:08+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
         "pageCount": 5,
-        "total": 117
+        "total": 108
       },
       "top": [
         {
-          "name": "以太坊储备概念",
-          "nameEn": "ETH-Holding Companies",
-          "code": "BK23775",
-          "changePct": "+5.87%",
-          "leaderName": "BTC Digital",
-          "leaderTicker": "BTCT",
-          "leaderChangePct": "+7.28%",
+          "name": "页岩油",
+          "nameEn": "Shale Oil",
+          "code": "BK2585",
+          "changePct": "+2.85%",
+          "leaderName": "Ovintiv",
+          "leaderTicker": "OVV",
+          "leaderChangePct": "+4.84%",
           "breadth": {
-            "advancers": 6,
-            "decliners": 3,
-            "unchanged": 2
-          }
-        },
-        {
-          "name": "加密储备概念",
-          "nameEn": "Crypto Treasury",
-          "code": "BK23920",
-          "changePct": "+4.95%",
-          "leaderName": "BTC Digital",
-          "leaderTicker": "BTCT",
-          "leaderChangePct": "+7.28%",
-          "breadth": {
-            "advancers": 19,
-            "decliners": 10,
-            "unchanged": 3
-          }
-        },
-        {
-          "name": "体育",
-          "nameEn": "Sports",
-          "code": "BK2574",
-          "changePct": "+4.67%",
-          "leaderName": "沃尔弗林集团",
-          "leaderTicker": "WWW",
-          "leaderChangePct": "+6.32%",
-          "breadth": {
-            "advancers": 9,
+            "advancers": 13,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "加密货币概念股",
-          "nameEn": "Crypto",
-          "code": "BK20010",
-          "changePct": "+4.42%",
-          "leaderName": "Cypherpunk Technologies",
-          "leaderTicker": "CYPH",
-          "leaderChangePct": "+15.27%",
+          "name": "天然气",
+          "nameEn": "Natural Gas",
+          "code": "BK2582",
+          "changePct": "+2.72%",
+          "leaderName": "Targa Resources",
+          "leaderTicker": "TRGP",
+          "leaderChangePct": "+4.37%",
           "breadth": {
-            "advancers": 45,
-            "decliners": 21,
-            "unchanged": 7
+            "advancers": 12,
+            "decliners": 0,
+            "unchanged": 0
           }
         },
         {
-          "name": "SOL储备概念",
-          "nameEn": "SOL reserve concept",
-          "code": "BK23797",
-          "changePct": "+3.79%",
-          "leaderName": "DeFi Development",
-          "leaderTicker": "DFDV",
-          "leaderChangePct": "+6.94%",
+          "name": "避险资产",
+          "nameEn": "Safe-Haven Assets",
+          "code": "BK23679",
+          "changePct": "+2.29%",
+          "leaderName": "英国石油",
+          "leaderTicker": "BP",
+          "leaderChangePct": "+3.65%",
           "breadth": {
-            "advancers": 6,
+            "advancers": 11,
             "decliners": 3,
             "unchanged": 0
+          }
+        },
+        {
+          "name": "美国国防航空",
+          "nameEn": "Defense",
+          "code": "BK2654",
+          "changePct": "+2.26%",
+          "leaderName": "雷神技术",
+          "leaderTicker": "RTX",
+          "leaderChangePct": "+3.73%",
+          "breadth": {
+            "advancers": 8,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "无人机概念股",
+          "nameEn": "Drone concept stocks",
+          "code": "BK23548",
+          "changePct": "+1.99%",
+          "leaderName": "诺斯罗普格鲁曼",
+          "leaderTicker": "NOC",
+          "leaderChangePct": "+4.05%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 17,
+            "unchanged": 1
           }
         }
       ],
@@ -184,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-10-15",
-    "checked_at": "2026-10-16T07:42:28+08:00",
+    "expected_session_date": "2026-10-16",
+    "checked_at": "2026-10-17T07:38:38+08:00",
     "request_id": null,
-    "groups_sha256": "780bdb69b80d57d2d96a0492db4f0b444da09004d61999cdcc5033e378866c5a",
+    "groups_sha256": "4348eae27a6705262647a68209895ebace5e0c0b288378220e91fe860d98ed10",
     "errors": []
   }
 }
