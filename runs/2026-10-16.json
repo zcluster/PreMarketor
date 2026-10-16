@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261016-20261016002657",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": null,
-  "heartbeat_at": "2026-10-16T00:35:35.050Z",
+  "run_id": "ah-review-20261016-20261016014204",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-10-16T01:52:04.025Z",
+  "heartbeat_at": "2026-10-16T01:42:04.025Z",
   "source_cutoff": "2026-10-16T00:30:47.856Z",
-  "main_base_sha": "86dbd839676b9c370955c613787ef0712ae7ac86",
+  "main_base_sha": "03cbba254186dd4dac090a4ea166619b67f52e79",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -158,9 +158,29 @@
         ],
         "en_panel_rows": 10
       }
+    },
+    "incremental_review": {
+      "checked_at": "2026-10-16T01:42:04.025Z",
+      "source": "HSTONG live cloud pages",
+      "quote_time_cst": "2026-10-16 09:41",
+      "material_change": true
     }
   },
-  "pending_increment": [],
+  "pending_increment": {
+    "detected_at": "2026-10-16T01:42:04.025Z",
+    "after_cutoff": "2026-10-16T00:30:47.856Z",
+    "material": true,
+    "reason": "A/H opening reversal and company-level price feedback change the market view and key-stock statuses.",
+    "observations": {
+      "shanghai": "3728.47 (+0.57%) at 09:41 CST",
+      "chinext": "2807.70 (+0.88%)",
+      "hsi": "24368.13 (+1.27%)",
+      "hstech": "4148.72 (+2.16%)",
+      "accelink": "RMB137.36 (+3.31%)",
+      "shennan": "RMB316.94 (-0.58%)",
+      "zhaojin": "HK$16.80 (-3.50%)"
+    }
+  },
   "published_commit": "03cbba254186dd4dac090a4ea166619b67f52e79",
   "stage_timings": {
     "rules_and_inputs": {
@@ -183,5 +203,6 @@
       "completed_at": "2026-10-16T00:35:35.050Z"
     }
   },
-  "error": null
+  "error": null,
+  "started_at": "2026-10-16T01:42:04.025Z"
 }
