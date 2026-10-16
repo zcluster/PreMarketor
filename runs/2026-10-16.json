@@ -2,10 +2,10 @@
   "run_id": "ah-20261016-20261016002657",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rules_and_inputs",
-  "lease_until": "2026-10-16T00:36:57.943Z",
-  "heartbeat_at": "2026-10-16T00:26:57.943Z",
-  "source_cutoff": "2026-10-16T00:26:57.943Z",
+  "stage": "generation",
+  "lease_until": "2026-10-16T00:40:47.856Z",
+  "heartbeat_at": "2026-10-16T00:30:47.856Z",
+  "source_cutoff": "2026-10-16T00:30:47.856Z",
   "main_base_sha": "86dbd839676b9c370955c613787ef0712ae7ac86",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -19,13 +19,118 @@
     "main": {
       "sha": "86dbd839676b9c370955c613787ef0712ae7ac86",
       "tree_sha": "86039890c2976b0f16eff08a6d26ce6b625f4ef4"
-    }
+    },
+    "rankings": {
+      "snapshot_as_of": "2026-10-16T07:42:04+08:00",
+      "expected_session_date": "2026-10-15",
+      "publication_ready": true,
+      "industry": {
+        "status": "partial",
+        "top_count": 5,
+        "bottom_count": 0,
+        "error": "Timeout 20000ms waiting for final-page response"
+      },
+      "concept": {
+        "status": "ok",
+        "top_count": 5
+      }
+    },
+    "akshare": {
+      "fetched_at": "2026-10-15T12:41:03+08:00",
+      "status": "stale_partial",
+      "a_breadth": {
+        "up": 466,
+        "down": 5059,
+        "flat": 44,
+        "median_pct": -2.297
+      },
+      "hk_breadth": {
+        "up": 347,
+        "down": 1402,
+        "flat": 1061,
+        "median_pct": 0
+      }
+    },
+    "sources": [
+      {
+        "kind": "overnight",
+        "url": "https://www.reuters.com/markets/us/wall-st-futures-edge-higher-ahead-inflation-data-2026-10-15/",
+        "status": "verified"
+      },
+      {
+        "kind": "domestic_policy",
+        "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261015_1408926.html",
+        "status": "verified"
+      },
+      {
+        "kind": "domestic_policy",
+        "url": "https://www.miit.gov.cn/jgsj/aqs/gzdt/art/2026/art_0d5780e1a1bf4ce0b73e580f0f7c4679.html",
+        "status": "verified"
+      },
+      {
+        "kind": "hk_company",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1015/2026101501066.pdf",
+        "status": "verified"
+      }
+    ],
+    "candidates": [
+      {
+        "code": "002281",
+        "name": "光迅科技",
+        "decision": "conditional_watch",
+        "verification_status": "verified_with_quote_conflict",
+        "reason": "前三季盈利预增65.37%-82.26%；单一报价源显示10月15日下跌5.76%，另一来源价格冲突，开盘确认前不视为买点"
+      },
+      {
+        "code": "002916",
+        "name": "深南电路",
+        "decision": "conditional_watch",
+        "verification_status": "verified_catalyst_quote_unavailable",
+        "reason": "前三季盈利预增74.13%-78.43%，AI服务器/交换机/光模块与载板需求；最新可靠报价未取得"
+      },
+      {
+        "code": "01818",
+        "name": "招金矿业",
+        "decision": "avoid",
+        "verification_status": "verified",
+        "reason": "前三季收入增长但归母净利下降约7%，经营现金流下降约12.8%，与贵金属强势主题形成反证"
+      }
+    ],
+    "theme_reconciliation": [
+      {
+        "theme": "recreational_vehicles_luxury",
+        "decision": "no_candidate",
+        "reason": "A/H直接催化不足"
+      },
+      {
+        "theme": "crypto_clusters",
+        "decision": "no_candidate",
+        "reason": "A/H映射间接且监管/资产属性不一致"
+      },
+      {
+        "theme": "silver",
+        "decision": "avoid_01818",
+        "reason": "贵金属强势但公司利润和现金流走弱"
+      },
+      {
+        "theme": "advertising_mortgage_sports",
+        "decision": "no_candidate",
+        "reason": "未取得可核验直接公司催化"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "rules_and_inputs": {
-      "started_at": "2026-10-16T00:26:57.943Z"
+      "started_at": "2026-10-16T00:26:57.943Z",
+      "completed_at": "2026-10-16T00:30:47.856Z"
+    },
+    "research": {
+      "completed_at": "2026-10-16T00:30:47.856Z"
+    },
+    "generation": {
+      "started_at": "2026-10-16T00:30:47.856Z"
     }
   },
   "error": null
