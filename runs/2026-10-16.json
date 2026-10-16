@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261016-20261016002657",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-16T00:40:47.856Z",
-  "heartbeat_at": "2026-10-16T00:30:47.856Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-16T00:35:35.050Z",
   "source_cutoff": "2026-10-16T00:30:47.856Z",
   "main_base_sha": "86dbd839676b9c370955c613787ef0712ae7ac86",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -117,10 +117,51 @@
         "decision": "no_candidate",
         "reason": "未取得可核验直接公司催化"
       }
-    ]
+    ],
+    "publication": {
+      "commit": "03cbba254186dd4dac090a4ea166619b67f52e79",
+      "deployment_id": "dpl_5ZrHG3yjY7JRAJqc87VqD9Cf4vir",
+      "deployment_state": "READY",
+      "urls": {
+        "home": "https://premarketor.com/",
+        "archive": "https://premarketor.com/history/?date=2026-10-16",
+        "json": "https://premarketor.com/history/data/2026-10-16.json",
+        "manifest": "https://premarketor.com/history/manifest.json"
+      },
+      "http_status": {
+        "home": 200,
+        "archive": 200,
+        "json": 200,
+        "manifest": 200
+      },
+      "github_remote_readback": {
+        "index": true,
+        "day_json": true,
+        "manifest": true
+      },
+      "machine_checks": {
+        "zh_cards": 3,
+        "en_cards": 3,
+        "zh_panel_rows": 10,
+        "en_panel_rows": 10,
+        "overnight_items_each": 3,
+        "us_markers_preserved": true,
+        "no_empty_state": true
+      },
+      "browser_render": {
+        "archive_zh": true,
+        "home_en": true,
+        "en_cards": [
+          "Accelink Technologies",
+          "Shennan Circuits",
+          "Zhaojin Mining"
+        ],
+        "en_panel_rows": 10
+      }
+    }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "03cbba254186dd4dac090a4ea166619b67f52e79",
   "stage_timings": {
     "rules_and_inputs": {
       "started_at": "2026-10-16T00:26:57.943Z",
@@ -130,7 +171,16 @@
       "completed_at": "2026-10-16T00:30:47.856Z"
     },
     "generation": {
-      "started_at": "2026-10-16T00:30:47.856Z"
+      "started_at": "2026-10-16T00:30:47.856Z",
+      "completed_at": "2026-10-16T00:33:00.000Z"
+    },
+    "publish": {
+      "started_at": "2026-10-16T00:33:00.000Z",
+      "completed_at": "2026-10-16T00:34:25.000Z"
+    },
+    "production_verification": {
+      "started_at": "2026-10-16T00:34:25.000Z",
+      "completed_at": "2026-10-16T00:35:35.050Z"
     }
   },
   "error": null
