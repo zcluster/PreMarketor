@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261016-20261016014204",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-16T01:52:04.025Z",
-  "heartbeat_at": "2026-10-16T01:42:04.025Z",
+  "stage": "candidate_validated",
+  "lease_until": "2026-10-16T01:58:17.202Z",
+  "heartbeat_at": "2026-10-16T01:48:17.202Z",
   "source_cutoff": "2026-10-16T00:30:47.856Z",
   "main_base_sha": "03cbba254186dd4dac090a4ea166619b67f52e79",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -163,7 +163,21 @@
       "checked_at": "2026-10-16T01:42:04.025Z",
       "source": "HSTONG live cloud pages",
       "quote_time_cst": "2026-10-16 09:41",
-      "material_change": true
+      "material_change": true,
+      "candidate_validation": {
+        "validated_at": "2026-10-16T01:48:17.202Z",
+        "files": [
+          "index.html",
+          "history/data/2026-10-16.json",
+          "history/manifest.json"
+        ],
+        "bilingual_news_items": 14,
+        "major_news_items": 11,
+        "overnight_items": 3,
+        "stock_cards": 3,
+        "index_whitelist_ok": true,
+        "us_markers_unchanged": true
+      }
     }
   },
   "pending_increment": {
