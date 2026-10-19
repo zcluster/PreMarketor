@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261019-20261019012739",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-19T01:49:33.860Z",
-  "heartbeat_at": "2026-10-19T01:39:33.860Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-19T01:41:18.011Z",
   "source_cutoff": "2026-10-19T00:37:32.155Z",
   "main_base_sha": "ad8e475b691c5e594d1d182a06dc548953444ed0",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -236,7 +236,7 @@
       "equivalent_to": "scripts/validate_ah_run_state.py contract",
       "ok": true,
       "errors": [],
-      "validated_at": "2026-10-19T00:41:48.475Z"
+      "validated_at": "2026-10-19T01:41:18.011Z"
     },
     "incremental_review": {
       "checked_at": "2026-10-19T01:31:59.035Z",
@@ -291,26 +291,39 @@
         "history/manifest.json",
         "index.html"
       ]
+    },
+    "production_incremental": {
+      "verified_at": "2026-10-19T01:41:18.011Z",
+      "homepage_url": "https://premarketor.com/",
+      "history_url": "https://premarketor.com/history/?date=2026-10-19",
+      "homepage": {
+        "time": "2026-10-19 09:36 CST",
+        "zh": true,
+        "en": true,
+        "major_news": 11,
+        "overnight_items": 3,
+        "stock_cards": 4,
+        "asset_rows": 7,
+        "keyword_items": 10,
+        "ranking_rows": 15,
+        "no_undefined": true
+      },
+      "history": {
+        "date": "2026-10-19",
+        "title_match": true,
+        "zh_nonempty": true,
+        "major_news": 11,
+        "overnight_items": 3,
+        "stock_cards": 4,
+        "no_empty_state": true
+      },
+      "github_remote_exact": true,
+      "main_head": "248b2ebcefe5ed5ff07819c11037f27dfaef10a2",
+      "all": true
     }
   },
-  "pending_increment": [
-    {
-      "detected_at": "2026-10-19T01:27:39.190Z",
-      "after_cutoff": "2026-10-19T00:37:32.155Z",
-      "material": true,
-      "source": "Tencent batch quote cloud page",
-      "quote_time_cst": "2026-10-19 09:28",
-      "observations": {
-        "shanghai": "3694.12 (-0.60%)",
-        "chinext": "2760.35 (-0.43%)",
-        "688825.SH": "42.79 (-4.95%) call-auction indication",
-        "600183.SH": "116.50 (+1.66%) call-auction indication",
-        "600487.SH": "47.00 (+2.89%) call-auction indication"
-      },
-      "reason": "Call-auction price feedback changes the market baseline and candidate statuses."
-    }
-  ],
-  "published_commit": "ad8e475b691c5e594d1d182a06dc548953444ed0",
+  "pending_increment": [],
+  "published_commit": "248b2ebcefe5ed5ff07819c11037f27dfaef10a2",
   "stage_timings": {
     "rules_and_inputs": {
       "started_at": "2026-10-19T00:30:26.786Z"
@@ -349,6 +362,14 @@
     },
     "incremental_main_ref_update": {
       "completed_at": "2026-10-19T01:39:33.860Z"
+    },
+    "incremental_deployment_verification": {
+      "completed_at": "2026-10-19T01:41:18.011Z"
+    },
+    "incremental_total": {
+      "started_at": "2026-10-19T01:31:59.035Z",
+      "completed_at": "2026-10-19T01:41:18.011Z",
+      "duration_seconds": 559
     }
   },
   "error": null,
