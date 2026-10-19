@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261019-20261019012739",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "candidate_generation",
-  "lease_until": "2026-10-19T01:46:24.419Z",
-  "heartbeat_at": "2026-10-19T01:36:24.419Z",
+  "stage": "candidate_validated",
+  "lease_until": "2026-10-19T01:47:53.242Z",
+  "heartbeat_at": "2026-10-19T01:37:53.242Z",
   "source_cutoff": "2026-10-19T00:37:32.155Z",
   "main_base_sha": "ad8e475b691c5e594d1d182a06dc548953444ed0",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -245,6 +245,33 @@
       "market_phase": "post-call-auction/pre-continuous-trading",
       "source": "https://qt.gtimg.cn/q=sh000001,sz399006,sh688825,sh600183,sh600487",
       "material_change": true
+    },
+    "validation_incremental": {
+      "passed": true,
+      "errors": [],
+      "counts": {
+        "asset": 7,
+        "word": 10,
+        "major": 11,
+        "overnight": 3,
+        "news": 14,
+        "stock": 4,
+        "sector": 4,
+        "logic": 4,
+        "risk": 4,
+        "h3": 9
+      },
+      "protected": true,
+      "markerOnly": true,
+      "ak": true,
+      "panels": 15
+    },
+    "precommit_incremental": {
+      "main_sha": "ad8e475b691c5e594d1d182a06dc548953444ed0",
+      "tree_sha": "669147c99ac4b11f8baaf7e82615cc4f7167f378",
+      "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "pending_increment_count": 1,
+      "passed": true
     }
   },
   "pending_increment": [
@@ -291,6 +318,12 @@
       "started_at": "2026-10-19T00:30:26.786Z",
       "completed_at": "2026-10-19T00:41:48.475Z",
       "duration_seconds": 682
+    },
+    "incremental_generation": {
+      "completed_at": "2026-10-19T01:37:53.242Z"
+    },
+    "incremental_validation": {
+      "completed_at": "2026-10-19T01:37:53.242Z"
     }
   },
   "error": null,
