@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261019-20261019012739",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "candidate_validated",
-  "lease_until": "2026-10-19T01:47:53.242Z",
-  "heartbeat_at": "2026-10-19T01:37:53.242Z",
+  "stage": "deployment_verification",
+  "lease_until": "2026-10-19T01:49:33.860Z",
+  "heartbeat_at": "2026-10-19T01:39:33.860Z",
   "source_cutoff": "2026-10-19T00:37:32.155Z",
   "main_base_sha": "ad8e475b691c5e594d1d182a06dc548953444ed0",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -272,6 +272,25 @@
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
       "pending_increment_count": 1,
       "passed": true
+    },
+    "remote_readback_incremental": {
+      "ok": true,
+      "eq": {
+        "index": true,
+        "day": true,
+        "manifest": true
+      },
+      "errors": [],
+      "shas": {
+        "index": "a8ab56719b05d987b5688a3f5dd5ea241fbca313",
+        "day": "9673a0393906f21cdd2dd4301ec70cac3680e90d",
+        "manifest": "3ccb7ff6e65391b39a6d5d45ee90554ad8c75b37"
+      },
+      "files": [
+        "history/data/2026-10-19.json",
+        "history/manifest.json",
+        "index.html"
+      ]
     }
   },
   "pending_increment": [
@@ -324,8 +343,14 @@
     },
     "incremental_validation": {
       "completed_at": "2026-10-19T01:37:53.242Z"
+    },
+    "incremental_candidate_commit": {
+      "completed_at": "2026-10-19T01:39:33.860Z"
+    },
+    "incremental_main_ref_update": {
+      "completed_at": "2026-10-19T01:39:33.860Z"
     }
   },
   "error": null,
-  "candidate_commit": "ad8e475b691c5e594d1d182a06dc548953444ed0"
+  "candidate_commit": "248b2ebcefe5ed5ff07819c11037f27dfaef10a2"
 }
