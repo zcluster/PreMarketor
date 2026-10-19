@@ -2,10 +2,10 @@
   "run_id": "ah-20261019-20261019003026",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rules_and_inputs",
-  "lease_until": "2026-10-19T00:40:26.786Z",
-  "heartbeat_at": "2026-10-19T00:30:26.786Z",
-  "source_cutoff": "2026-10-19T00:30:26.786Z",
+  "stage": "research_complete",
+  "lease_until": "2026-10-19T00:44:52.980Z",
+  "heartbeat_at": "2026-10-19T00:32:52.980Z",
+  "source_cutoff": "2026-10-19T00:32:52.980Z",
   "main_base_sha": "ad643bed273b22a411a7c80d6a3670075cad2479",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -19,13 +19,141 @@
     "main": {
       "sha": "ad643bed273b22a411a7c80d6a3670075cad2479",
       "tree_sha": "f1715fcacba7336d8346ec97749940a33a70a6b6"
-    }
+    },
+    "us_rankings": {
+      "blob_sha": "db669fef793a6cd35159a27bd9eb03d78856c1d7",
+      "expected_session_date": "2026-10-16",
+      "attempted_at": "2026-10-17T07:38:08+08:00",
+      "publication_gate": "ready",
+      "rows": 15
+    },
+    "akshare": {
+      "blob_sha": "1164e39d0f790ab5267e7e9db62f1908e2b54e5e",
+      "fetched_at": "2026-10-16T12:33:43+08:00",
+      "analysis_ready": true,
+      "scope": "Friday intraday; not Monday live"
+    },
+    "research": {
+      "international": [
+        {
+          "source": "Reuters",
+          "url": "https://www.reuters.com/business/wall-st-futures-slip-rising-oil-treasury-yields-compound-ai-anxiety-2026-10-16/",
+          "fact": "Friday US tech selloff, energy relative strength"
+        },
+        {
+          "source": "Reuters",
+          "url": "https://www.reuters.com/business/energy/oil-falls-us-waives-sanctions-some-russian-supplies-2026-10-18/",
+          "fact": "Sunday Brent/WTI pullback"
+        },
+        {
+          "source": "Barrons",
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-101826",
+          "fact": "Sunday US index futures modestly higher"
+        }
+      ],
+      "policy": [
+        {
+          "source": "State Council/National Data Administration",
+          "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/1016/20261016180912163738753_pc.html",
+          "fact": "State Council reviewed AI+ action progress"
+        },
+        {
+          "source": "NDRC",
+          "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202610/t20261016_1409628.html",
+          "fact": "inclusive elderly-care pricing guidance"
+        },
+        {
+          "source": "MIIT",
+          "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2026/art_867cd813362a45ca8da581af6d3bf147.html",
+          "fact": "NEV catalog/draft and industrial data-security policy"
+        }
+      ],
+      "corporate": [
+        {
+          "symbol": "688825.SH",
+          "company": "长鑫科技",
+          "fact": "Q1-3 profit forecast plus RMB1-2bn proposed buyback; disclosed after Friday close",
+          "price": "45.02 at 2026-10-16 close, +3.28%; pre-announcement"
+        },
+        {
+          "symbol": "600183.SH",
+          "company": "生益科技",
+          "fact": "Q1-3 profit forecast +164%-181%; AI PCB/CCL demand",
+          "price": "114.60 at 2026-10-16 close; pre-announcement"
+        },
+        {
+          "symbol": "600487.SH",
+          "company": "亨通光电",
+          "fact": "Q1-3 profit forecast +151%-168%; AI/data-center optical demand",
+          "price": "45.68 at 2026-10-16 close, +0.40%; pre-announcement"
+        },
+        {
+          "symbol": "000016.SZ",
+          "company": "*ST康佳A",
+          "fact": "SZSE listing termination; no delisting-consolidation period",
+          "price": "suspended since 2026-09-04; no current tradable quote"
+        },
+        {
+          "source": "HKEX",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/advancedsearch/search_active_main.aspx",
+          "fact": "Oct 16 late announcements incl. rights issues, investigations, disposal/name-change and resumption updates"
+        }
+      ],
+      "market_calendar": {
+        "hk_cash_market": "closed 2026-10-19; reopens 2026-10-20",
+        "source": "HKEX calendar"
+      }
+    },
+    "theme_reconciliation": [
+      {
+        "theme": "US energy/defense strength",
+        "mapping": "A/H energy and defense/drone sentiment",
+        "decision": "watch_only",
+        "reason": "Sunday oil pullback and no fresh company-specific A/H catalyst/price confirmation"
+      },
+      {
+        "theme": "US hardware/electronic components/software weakness",
+        "mapping": "China semiconductors/PCB/optical",
+        "decision": "negative_counterevidence",
+        "reason": "keep earnings candidates conditional; require Monday open confirmation"
+      },
+      {
+        "theme": "tobacco/wineries",
+        "mapping": "limited direct A/H read-through",
+        "decision": "no_candidate"
+      }
+    ],
+    "candidate_decisions": [
+      {
+        "symbol": "688825.SH",
+        "state": "conditional_watch",
+        "quote_status": "Friday close only; disclosure came after close"
+      },
+      {
+        "symbol": "600183.SH",
+        "state": "conditional_watch",
+        "quote_status": "Friday close only; disclosure came after close"
+      },
+      {
+        "symbol": "600487.SH",
+        "state": "conditional_watch",
+        "quote_status": "Friday close only; disclosure came after close"
+      },
+      {
+        "symbol": "000016.SZ",
+        "state": "avoid",
+        "quote_status": "suspended; no tradable quote"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "rules_and_inputs": {
       "started_at": "2026-10-19T00:30:26.786Z"
+    },
+    "research": {
+      "completed_at": "2026-10-19T00:32:52.980Z"
     }
   },
   "error": null
