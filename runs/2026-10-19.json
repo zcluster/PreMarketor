@@ -2,10 +2,10 @@
   "run_id": "ah-20261019-20261019003026",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research_complete",
-  "lease_until": "2026-10-19T00:44:52.980Z",
-  "heartbeat_at": "2026-10-19T00:32:52.980Z",
-  "source_cutoff": "2026-10-19T00:32:52.980Z",
+  "stage": "prepublish_validation",
+  "lease_until": "2026-10-19T00:47:32.155Z",
+  "heartbeat_at": "2026-10-19T00:37:32.155Z",
+  "source_cutoff": "2026-10-19T00:37:32.155Z",
   "main_base_sha": "ad643bed273b22a411a7c80d6a3670075cad2479",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -144,7 +144,33 @@
         "state": "avoid",
         "quote_status": "suspended; no tradable quote"
       }
-    ]
+    ],
+    "generation": {
+      "time": "2026-10-19 08:34 CST",
+      "news_count": 10,
+      "stock_cards": 4,
+      "us_ranking_rows": 15,
+      "industry_down_rows": 5,
+      "bilingual": true
+    },
+    "validation": {
+      "status": "passed",
+      "checks": {
+        "markerOnly": true,
+        "protected": true,
+        "homeArchive": true,
+        "time": true,
+        "entry": true,
+        "modules": true,
+        "keyword": true,
+        "news": true,
+        "order": true,
+        "bans": true,
+        "panel": true,
+        "manifest": true,
+        "noHistoryEmbed": true
+      }
+    }
   },
   "pending_increment": [],
   "published_commit": null,
@@ -154,6 +180,9 @@
     },
     "research": {
       "completed_at": "2026-10-19T00:32:52.980Z"
+    },
+    "generation_translation": {
+      "completed_at": "2026-10-19T00:37:32.155Z"
     }
   },
   "error": null
