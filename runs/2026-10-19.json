@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261019-20261019012739",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-19T01:37:39.190Z",
-  "heartbeat_at": "2026-10-19T01:27:39.190Z",
+  "stage": "candidate_generation",
+  "lease_until": "2026-10-19T01:41:59.035Z",
+  "heartbeat_at": "2026-10-19T01:31:59.035Z",
   "source_cutoff": "2026-10-19T00:37:32.155Z",
   "main_base_sha": "ad8e475b691c5e594d1d182a06dc548953444ed0",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -239,9 +239,9 @@
       "validated_at": "2026-10-19T00:41:48.475Z"
     },
     "incremental_review": {
-      "checked_at": "2026-10-19T01:27:39.190Z",
+      "checked_at": "2026-10-19T01:31:59.035Z",
       "cutoff": "2026-10-19T00:37:32.155Z",
-      "quote_time_cst": "2026-10-19 09:27",
+      "quote_time_cst": "2026-10-19 09:28",
       "market_phase": "post-call-auction/pre-continuous-trading",
       "source": "https://qt.gtimg.cn/q=sh000001,sz399006,sh688825,sh600183,sh600487",
       "material_change": true
@@ -253,7 +253,7 @@
       "after_cutoff": "2026-10-19T00:37:32.155Z",
       "material": true,
       "source": "Tencent batch quote cloud page",
-      "quote_time_cst": "2026-10-19 09:27",
+      "quote_time_cst": "2026-10-19 09:28",
       "observations": {
         "shanghai": "3694.12 (-0.60%)",
         "chinext": "2760.35 (-0.43%)",
