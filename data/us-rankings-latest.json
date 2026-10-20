@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-20T08:23:40+08:00",
+  "attemptedAt": "2026-10-21T07:55:22+08:00",
   "status": "partial",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-20T08:23:40+08:00",
+      "fetchedAt": "2026-10-21T07:55:22+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,73 +17,73 @@
       },
       "top": [
         {
-          "name": "互联网零售",
-          "nameEn": "Internet Retail",
-          "code": "BK2431",
-          "changePct": "+3.80%",
-          "leaderName": "震坤行",
-          "leaderTicker": "ZKH",
-          "leaderChangePct": "+6.29%",
+          "name": "纺织制造",
+          "nameEn": "Textile Manufacturing",
+          "code": "BK2499",
+          "changePct": "+4.72%",
+          "leaderName": "奥尔巴尼国际",
+          "leaderTicker": "AIN",
+          "leaderChangePct": "+5.67%",
           "breadth": {
-            "advancers": 17,
-            "decliners": 22,
-            "unchanged": 2
+            "advancers": 1,
+            "decliners": 4,
+            "unchanged": 0
           }
         },
         {
-          "name": "计算机硬件",
-          "nameEn": "Computer Hardware",
-          "code": "BK2492",
-          "changePct": "+3.13%",
-          "leaderName": "西部数据",
-          "leaderTicker": "WDC",
-          "leaderChangePct": "+6.09%",
+          "name": "抵押贷款金融",
+          "nameEn": "Mortgage Finance",
+          "code": "BK2479",
+          "changePct": "+4.70%",
+          "leaderName": "Better Home & Finance",
+          "leaderTicker": "BETR",
+          "leaderChangePct": "+13.68%",
           "breadth": {
-            "advancers": 29,
-            "decliners": 15,
-            "unchanged": 2
+            "advancers": 11,
+            "decliners": 2,
+            "unchanged": 0
           }
         },
         {
-          "name": "油气钻探",
-          "nameEn": "Oil & Gas Drilling",
-          "code": "BK2274",
-          "changePct": "+2.65%",
-          "leaderName": "Transocean",
-          "leaderTicker": "RIG",
-          "leaderChangePct": "+4.80%",
+          "name": "咨询服务",
+          "nameEn": "Consulting Services",
+          "code": "BK2476",
+          "changePct": "+4.14%",
+          "leaderName": "艾可菲",
+          "leaderTicker": "EFX",
+          "leaderChangePct": "+11.33%",
           "breadth": {
-            "advancers": 7,
+            "advancers": 13,
+            "decliners": 8,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "机场和航空服务",
+          "nameEn": "Airports & Air Services",
+          "code": "BK2234",
+          "changePct": "+3.99%",
+          "leaderName": "Pacific Airport",
+          "leaderTicker": "PAC",
+          "leaderChangePct": "+7.05%",
+          "breadth": {
+            "advancers": 6,
             "decliners": 3,
             "unchanged": 0
           }
         },
         {
-          "name": "商业设备和用品",
-          "nameEn": "Business Equipment & Supplies",
-          "code": "BK2509",
-          "changePct": "+2.63%",
-          "leaderName": "Crane NXT",
-          "leaderTicker": "CXT",
-          "leaderChangePct": "+3.71%",
+          "name": "生物技术",
+          "nameEn": "Biotechnology",
+          "code": "BK2069",
+          "changePct": "+3.61%",
+          "leaderName": "Evaxion A/S",
+          "leaderTicker": "EVAX",
+          "leaderChangePct": "+21.62%",
           "breadth": {
-            "advancers": 2,
-            "decliners": 2,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "汽车制造",
-          "nameEn": "Auto Manufacturers",
-          "code": "BK2468",
-          "changePct": "+2.46%",
-          "leaderName": "SONO Group",
-          "leaderTicker": "SSM",
-          "leaderChangePct": "+4.39%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 23,
-            "unchanged": 1
+            "advancers": 479,
+            "decliners": 104,
+            "unchanged": 19
           }
         }
       ],
@@ -98,7 +98,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-20T08:23:40+08:00",
+      "fetchedAt": "2026-10-21T07:55:22+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -107,72 +107,72 @@
       },
       "top": [
         {
-          "name": "存储概念",
-          "nameEn": "Data storage stock",
-          "code": "BK23925",
-          "changePct": "+4.05%",
-          "leaderName": "Rambus",
-          "leaderTicker": "RMBS",
-          "leaderChangePct": "+6.20%",
+          "name": "激光雷达概念",
+          "nameEn": "Lidar Technology",
+          "code": "BK2539",
+          "changePct": "+4.43%",
+          "leaderName": "禾赛",
+          "leaderTicker": "HSAI",
+          "leaderChangePct": "+8.28%",
           "breadth": {
-            "advancers": 7,
+            "advancers": 4,
+            "decliners": 3,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "减肥药概念",
+          "nameEn": "Weight Loss Drugs",
+          "code": "BK2152",
+          "changePct": "+3.29%",
+          "leaderName": "Kailera Therapeutics",
+          "leaderTicker": "KLRA",
+          "leaderChangePct": "+12.77%",
+          "breadth": {
+            "advancers": 11,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "充电桩",
-          "nameEn": "EV Charging",
-          "code": "BK2547",
-          "changePct": "+2.74%",
-          "leaderName": "特斯拉",
-          "leaderTicker": "TSLA",
-          "leaderChangePct": "+3.76%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 5,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "WSB热门概念",
-          "nameEn": "WallStreetBets",
-          "code": "BK2555",
-          "changePct": "+2.73%",
-          "leaderName": "Palantir",
-          "leaderTicker": "PLTR",
-          "leaderChangePct": "+4.36%",
+          "name": "无人机概念股",
+          "nameEn": "Drone concept stocks",
+          "code": "BK23548",
+          "changePct": "+3.16%",
+          "leaderName": "诺斯罗普格鲁曼",
+          "leaderTicker": "NOC",
+          "leaderChangePct": "+4.57%",
           "breadth": {
             "advancers": 7,
-            "decliners": 15,
-            "unchanged": 0
+            "decliners": 12,
+            "unchanged": 1
           }
         },
         {
-          "name": "新能源汽车",
-          "nameEn": "Electric Vehicles",
-          "code": "BK2568",
-          "changePct": "+2.64%",
-          "leaderName": "特斯拉",
-          "leaderTicker": "TSLA",
-          "leaderChangePct": "+3.76%",
+          "name": "加密储备概念",
+          "nameEn": "Crypto Treasury",
+          "code": "BK23920",
+          "changePct": "+3.12%",
+          "leaderName": "BNB Standard",
+          "leaderTicker": "BNC",
+          "leaderChangePct": "+9.21%",
           "breadth": {
-            "advancers": 1,
-            "decliners": 11,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "美国知名零售商",
-          "nameEn": "Top Retailers",
-          "code": "BK2157",
-          "changePct": "+2.60%",
-          "leaderName": "亚马逊",
-          "leaderTicker": "AMZN",
-          "leaderChangePct": "+4.98%",
-          "breadth": {
-            "advancers": 8,
+            "advancers": 22,
             "decliners": 8,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "抗癌医药",
+          "nameEn": "Cancer Research",
+          "code": "BK2573",
+          "changePct": "+2.90%",
+          "leaderName": "施贵宝",
+          "leaderTicker": "BMY",
+          "leaderChangePct": "+4.84%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 1,
             "unchanged": 0
           }
         }
@@ -184,10 +184,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-10-19",
-    "checked_at": "2026-10-20T08:24:04+08:00",
+    "expected_session_date": "2026-10-20",
+    "checked_at": "2026-10-21T07:55:47+08:00",
     "request_id": null,
-    "groups_sha256": "061b7411c24940a595fc5d1df9e4d2abcccca5a46af1fd04ab40297d5b1948cc",
+    "groups_sha256": "3b193fed89aa1c78fb376e5fb063b913a95d8fec65eb457034a7191763f138eb",
     "errors": []
   }
 }
