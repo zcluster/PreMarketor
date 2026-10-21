@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261021-20261021014455",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-21T02:00:05.745Z",
-  "heartbeat_at": "2026-10-21T01:50:05.745Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": "2026-10-21T01:52:24.900Z",
+  "heartbeat_at": "2026-10-21T01:52:24.900Z",
   "source_cutoff": "2026-10-21T00:37:09.786Z",
   "main_base_sha": "3cec14211398425984f6d44863caa0e6dd50c270",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -234,7 +234,12 @@
         "other_entries_unchanged": true,
         "manifest_history_preserved": true,
         "rankings_publication_gate": true,
-        "akshare_parse": true
+        "akshare_parse": true,
+        "remote_exact_readback": true,
+        "production_html_json_dom": true,
+        "bilingual_rendered": true,
+        "archive_nonempty": true,
+        "deployment_ready": true
       },
       "candidate_commit": {
         "sha": "7f4dc683bf50cbc0878eee081dc2f0dd4bc21d43",
@@ -245,41 +250,60 @@
           "manifest": "74d617628536f191bac8395d0b248455bac85152"
         },
         "parent": "3cec14211398425984f6d44863caa0e6dd50c270"
+      },
+      "verification": {
+        "github": {
+          "commit": "7f4dc683bf50cbc0878eee081dc2f0dd4bc21d43",
+          "blobs": {
+            "index": "be1c6bcc143f877b4b91576c29693428c26f9c6e",
+            "history": "f1c9687ab33863ecbabae3ff421560c7c7b8b0af",
+            "manifest": "74d617628536f191bac8395d0b248455bac85152"
+          },
+          "exact_readback": true,
+          "changed_files": [
+            "index.html",
+            "history/data/2026-10-21.json",
+            "history/manifest.json"
+          ]
+        },
+        "deployment": {
+          "id": "dpl_45ZyqQCPcmntZwyBCtNK2RyJ9ynq",
+          "state": "READY",
+          "target": "production",
+          "commit": "7f4dc683bf50cbc0878eee081dc2f0dd4bc21d43"
+        },
+        "production": {
+          "homepage": {
+            "url": "https://premarketor.com/",
+            "http_status": 200,
+            "cn_rendered": true,
+            "en_rendered": true,
+            "time": "2026-10-21 09:47 CST"
+          },
+          "archive": {
+            "url": "https://premarketor.com/history/?date=2026-10-21",
+            "http_status": 200,
+            "cn_rendered": true,
+            "no_empty_state": true
+          },
+          "archive_json": {
+            "url": "https://premarketor.com/history/data/2026-10-21.json",
+            "http_status": 200,
+            "exact": true,
+            "bilingual": true
+          },
+          "manifest": {
+            "url": "https://premarketor.com/history/manifest.json",
+            "http_status": 200,
+            "head_date": "2026-10-21",
+            "exact": true
+          },
+          "protected_us_unchanged": true
+        }
       }
     }
   },
-  "pending_increment": [
-    {
-      "material": true,
-      "category": "opening_price_feedback",
-      "ticker": "300750.SZ / 03750.HK",
-      "observed_at": "2026-10-21 09:44 CST",
-      "source": "https://qt.gtimg.cn/q=s_sh000001,s_sz399001,s_sz399006,r_hkHSI,r_hkHSTECH,sz300750,hk03750",
-      "facts": {
-        "shanghai": "+0.02%",
-        "shenzhen": "+0.46%",
-        "chinext": "+0.18%",
-        "hsi": "+0.49%",
-        "hstech": "+0.93%",
-        "catl_a": "-8.97%",
-        "catl_h": "-2.87%"
-      },
-      "corroboration": "https://www.reuters.com/business/autos-transportation/chinas-catl-profit-growth-slows-third-quarter-competition-intensifies-2026-10-20/",
-      "impact": "Downgrade CATL from conditional watch to avoid; battery/EV rotation and risk language materially change."
-    },
-    {
-      "material": false,
-      "category": "post_cutoff_scan",
-      "checked": [
-        "CNINFO latest announcements",
-        "SSE announcement index",
-        "HKEX title search",
-        "CLS/Jin10-equivalent premarket discovery",
-        "cross-source search"
-      ],
-      "note": "No other post-cutoff item independently verified as changing the market/sector/risk/stock thesis."
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "7f4dc683bf50cbc0878eee081dc2f0dd4bc21d43",
   "stage_timings": {
     "rules_and_inputs": {
@@ -323,7 +347,11 @@
       "finished_at": "2026-10-21T01:50:05.745Z"
     },
     "deployment_verification": {
-      "started_at": "2026-10-21T01:50:05.745Z"
+      "started_at": "2026-10-21T01:50:05.745Z",
+      "finished_at": "2026-10-21T01:52:24.900Z"
+    },
+    "published": {
+      "finished_at": "2026-10-21T01:52:24.900Z"
     }
   },
   "error": null,
