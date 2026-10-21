@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261021-20261021014455",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "main_update_ref",
-  "lease_until": "2026-10-21T01:59:25.888Z",
-  "heartbeat_at": "2026-10-21T01:49:25.888Z",
+  "stage": "deployment_verification",
+  "lease_until": "2026-10-21T02:00:05.745Z",
+  "heartbeat_at": "2026-10-21T01:50:05.745Z",
   "source_cutoff": "2026-10-21T00:37:09.786Z",
   "main_base_sha": "3cec14211398425984f6d44863caa0e6dd50c270",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -280,7 +280,7 @@
       "note": "No other post-cutoff item independently verified as changing the market/sector/risk/stock thesis."
     }
   ],
-  "published_commit": "3cec14211398425984f6d44863caa0e6dd50c270",
+  "published_commit": "7f4dc683bf50cbc0878eee081dc2f0dd4bc21d43",
   "stage_timings": {
     "rules_and_inputs": {
       "started_at": "2026-10-21T00:32:30.605Z",
@@ -319,7 +319,11 @@
       "finished_at": "2026-10-21T01:49:25.888Z"
     },
     "main_update_ref": {
-      "started_at": "2026-10-21T01:49:25.888Z"
+      "started_at": "2026-10-21T01:49:25.888Z",
+      "finished_at": "2026-10-21T01:50:05.745Z"
+    },
+    "deployment_verification": {
+      "started_at": "2026-10-21T01:50:05.745Z"
     }
   },
   "error": null,
