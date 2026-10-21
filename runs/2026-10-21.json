@@ -2,10 +2,10 @@
   "run_id": "ah-20261021-20261021003230",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-10-21T00:46:24.444Z",
-  "heartbeat_at": "2026-10-21T00:34:24.444Z",
-  "source_cutoff": "2026-10-21T00:32:30.605Z",
+  "stage": "generation",
+  "lease_until": "2026-10-21T00:49:09.786Z",
+  "heartbeat_at": "2026-10-21T00:37:09.786Z",
+  "source_cutoff": "2026-10-21T00:37:09.786Z",
   "main_base_sha": "88c1b3b9aa9c309664e28fe4abba71e3abf050ea",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -35,6 +35,93 @@
         "industry_status": "partial",
         "concept_status": "ok"
       }
+    },
+    "research": {
+      "cutoff": "2026-10-21T00:37:09.786Z",
+      "sources": [
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261020_1408278.html",
+          "kind": "primary_policy",
+          "published": "2026-10-20"
+        },
+        {
+          "url": "https://wap.miit.gov.cn/zwgk/wjgs/art/2026/art_7470f4a0fd8c4b64ad0e23590f50715c.html",
+          "kind": "primary_policy",
+          "published": "2026-10-19"
+        },
+        {
+          "url": "https://www.miit.gov.cn/xbymdz/sy/xbdh/xwfb/index.html",
+          "kind": "primary_policy_index",
+          "published": "2026-10-20"
+        },
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-21/1225613175.PDF",
+          "kind": "primary_company_filing",
+          "published": "2026-10-21"
+        },
+        {
+          "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/",
+          "kind": "primary_exchange_index",
+          "published": "2026-10-21"
+        },
+        {
+          "url": "https://www1.hkexnews.hk/search/predefineddoc.xhtml?predefineddocuments=7",
+          "kind": "primary_exchange_index",
+          "published": "2026-10-20"
+        },
+        {
+          "url": "https://apnews.com/article/0a5ea168499c6ae617c49e10bf48f9c6",
+          "kind": "market_close",
+          "published": "2026-10-20"
+        },
+        {
+          "url": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-strong-earnings-offset-ai-credit-fears-d55414c3",
+          "kind": "market_close",
+          "published": "2026-10-20"
+        }
+      ],
+      "candidates": [
+        {
+          "ticker": "300750.SZ / 03750.HK",
+          "name": "宁德时代/CATL",
+          "verification_status": "verified",
+          "decision": "conditional_watch",
+          "filing": "https://static.cninfo.com.cn/finalpage/2026-10-21/1225613175.PDF",
+          "quote_attempt": "https://www.etnet.com.hk/www/tc//ashares/quote.php?code=300750",
+          "quote_note": "page exposed 2026-10-20 close context; quote timing/dual-listing basis disclosed"
+        },
+        {
+          "ticker": "601326.SH / 03369.HK",
+          "name": "秦港股份/Qinhuangdao Port",
+          "verification_status": "verified",
+          "decision": "avoid",
+          "event_source": "https://www.stcn.com/article/detail/4228953.html",
+          "quote_source": "https://www.futunn.com/hk/stock/601326-SH",
+          "quote_note": "A-share 2026-10-20 close CNY3.57; suspended from 2026-10-21 open"
+        },
+        {
+          "ticker": "688636.SH",
+          "name": "智明达",
+          "verification_status": "source_unavailable",
+          "decision": "omit_card",
+          "attempts": [
+            "https://www.sse.com.cn/disclosure/listedinfo/announcement/",
+            "https://vip.stock.finance.sina.com.cn/corp/go.php/vCB_AllBulletin/stockid/688636.phtml"
+          ],
+          "reason": "primary filing details/fully timestamped latest quote could not both be obtained before cutoff"
+        },
+        {
+          "ticker": "600660.SH / 03606.HK",
+          "name": "福耀玻璃/Fuyao Glass",
+          "verification_status": "source_unavailable",
+          "decision": "omit_card",
+          "attempts": [
+            "https://www.sse.com.cn/disclosure/listedinfo/announcement/",
+            "https://quote.eastmoney.com/sh600660.html"
+          ],
+          "reason": "official report and same-session timestamped close were not jointly retrievable before cutoff"
+        }
+      ]
     }
   },
   "pending_increment": [],
@@ -45,7 +132,11 @@
       "finished_at": "2026-10-21T00:34:24.444Z"
     },
     "research": {
-      "started_at": "2026-10-21T00:34:24.444Z"
+      "started_at": "2026-10-21T00:34:24.444Z",
+      "finished_at": "2026-10-21T00:37:09.786Z"
+    },
+    "generation": {
+      "started_at": "2026-10-21T00:37:09.786Z"
     }
   },
   "error": null
