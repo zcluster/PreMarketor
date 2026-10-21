@@ -2,9 +2,9 @@
   "run_id": "ah-20261021-20261021003230",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rules_and_inputs",
-  "lease_until": "2026-10-21T00:42:30.605Z",
-  "heartbeat_at": "2026-10-21T00:32:30.605Z",
+  "stage": "research",
+  "lease_until": "2026-10-21T00:46:24.444Z",
+  "heartbeat_at": "2026-10-21T00:34:24.444Z",
   "source_cutoff": "2026-10-21T00:32:30.605Z",
   "main_base_sha": "88c1b3b9aa9c309664e28fe4abba71e3abf050ea",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -19,13 +19,33 @@
     "main": {
       "sha": "88c1b3b9aa9c309664e28fe4abba71e3abf050ea",
       "tree_sha": "1be54f49f78b0662b74b74b0aa82a3387d536f24"
+    },
+    "snapshots": {
+      "akshare": {
+        "path": "data/akshare-latest.json",
+        "blob_sha": "3f76f5f493f274baa910fdfde562fec8b3dc34a5",
+        "fetched_at": "2026-10-20T12:52:29+08:00",
+        "analysis_ready": true
+      },
+      "us_rankings": {
+        "path": "data/us-rankings-latest.json",
+        "blob_sha": "bddb860b9b0b2b9dcd6958a3f4cdecc4faf2fa33",
+        "fetched_at": "2026-10-21T07:55:22+08:00",
+        "publication_ready": true,
+        "industry_status": "partial",
+        "concept_status": "ok"
+      }
     }
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "rules_and_inputs": {
-      "started_at": "2026-10-21T00:32:30.605Z"
+      "started_at": "2026-10-21T00:32:30.605Z",
+      "finished_at": "2026-10-21T00:34:24.444Z"
+    },
+    "research": {
+      "started_at": "2026-10-21T00:34:24.444Z"
     }
   },
   "error": null
