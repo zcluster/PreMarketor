@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261021-20261021014455",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-21T01:54:55.322Z",
-  "heartbeat_at": "2026-10-21T01:44:55.322Z",
+  "stage": "generation",
+  "lease_until": "2026-10-21T01:55:47.994Z",
+  "heartbeat_at": "2026-10-21T01:45:47.994Z",
   "source_cutoff": "2026-10-21T00:37:09.786Z",
   "main_base_sha": "3cec14211398425984f6d44863caa0e6dd50c270",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -179,10 +179,72 @@
       "started_at": "2026-10-21T01:44:55.322Z",
       "cutoff": "2026-10-21T00:37:09.786Z",
       "main_sha": "3cec14211398425984f6d44863caa0e6dd50c270",
-      "findings": []
+      "findings": [
+        {
+          "material": true,
+          "category": "opening_price_feedback",
+          "ticker": "300750.SZ / 03750.HK",
+          "observed_at": "2026-10-21 09:44 CST",
+          "source": "https://qt.gtimg.cn/q=s_sh000001,s_sz399001,s_sz399006,r_hkHSI,r_hkHSTECH,sz300750,hk03750",
+          "facts": {
+            "shanghai": "+0.02%",
+            "shenzhen": "+0.46%",
+            "chinext": "+0.18%",
+            "hsi": "+0.49%",
+            "hstech": "+0.93%",
+            "catl_a": "-8.97%",
+            "catl_h": "-2.87%"
+          },
+          "corroboration": "https://www.reuters.com/business/autos-transportation/chinas-catl-profit-growth-slows-third-quarter-competition-intensifies-2026-10-20/",
+          "impact": "Downgrade CATL from conditional watch to avoid; battery/EV rotation and risk language materially change."
+        },
+        {
+          "material": false,
+          "category": "post_cutoff_scan",
+          "checked": [
+            "CNINFO latest announcements",
+            "SSE announcement index",
+            "HKEX title search",
+            "CLS/Jin10-equivalent premarket discovery",
+            "cross-source search"
+          ],
+          "note": "No other post-cutoff item independently verified as changing the market/sector/risk/stock thesis."
+        }
+      ]
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "material": true,
+      "category": "opening_price_feedback",
+      "ticker": "300750.SZ / 03750.HK",
+      "observed_at": "2026-10-21 09:44 CST",
+      "source": "https://qt.gtimg.cn/q=s_sh000001,s_sz399001,s_sz399006,r_hkHSI,r_hkHSTECH,sz300750,hk03750",
+      "facts": {
+        "shanghai": "+0.02%",
+        "shenzhen": "+0.46%",
+        "chinext": "+0.18%",
+        "hsi": "+0.49%",
+        "hstech": "+0.93%",
+        "catl_a": "-8.97%",
+        "catl_h": "-2.87%"
+      },
+      "corroboration": "https://www.reuters.com/business/autos-transportation/chinas-catl-profit-growth-slows-third-quarter-competition-intensifies-2026-10-20/",
+      "impact": "Downgrade CATL from conditional watch to avoid; battery/EV rotation and risk language materially change."
+    },
+    {
+      "material": false,
+      "category": "post_cutoff_scan",
+      "checked": [
+        "CNINFO latest announcements",
+        "SSE announcement index",
+        "HKEX title search",
+        "CLS/Jin10-equivalent premarket discovery",
+        "cross-source search"
+      ],
+      "note": "No other post-cutoff item independently verified as changing the market/sector/risk/stock thesis."
+    }
+  ],
   "published_commit": "3cec14211398425984f6d44863caa0e6dd50c270",
   "stage_timings": {
     "rules_and_inputs": {
@@ -194,8 +256,7 @@
       "finished_at": "2026-10-21T00:37:09.786Z"
     },
     "generation": {
-      "started_at": "2026-10-21T00:37:09.786Z",
-      "finished_at": "2026-10-21T00:41:18.622Z"
+      "started_at": "2026-10-21T01:45:47.994Z"
     },
     "prepublish": {
       "started_at": "2026-10-21T00:41:18.622Z",
@@ -210,7 +271,8 @@
       "finished_at": "2026-10-21T00:46:42.139Z"
     },
     "incremental_research": {
-      "started_at": "2026-10-21T01:44:55.322Z"
+      "started_at": "2026-10-21T01:44:55.322Z",
+      "finished_at": "2026-10-21T01:45:47.994Z"
     }
   },
   "error": null
