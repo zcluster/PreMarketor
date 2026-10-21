@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261021-20261021014455",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-21T01:55:47.994Z",
-  "heartbeat_at": "2026-10-21T01:45:47.994Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-10-21T01:58:05.342Z",
+  "heartbeat_at": "2026-10-21T01:48:05.342Z",
   "source_cutoff": "2026-10-21T00:37:09.786Z",
   "main_base_sha": "3cec14211398425984f6d44863caa0e6dd50c270",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -210,7 +210,32 @@
           ],
           "note": "No other post-cutoff item independently verified as changing the market/sector/risk/stock thesis."
         }
-      ]
+      ],
+      "candidate": {
+        "title": "指数小幅走强难掩宁德时代A/H显著分化；电池链转为回避，政策主线保留",
+        "time": "2026-10-21 09:47 CST",
+        "files": [
+          "index.html",
+          "history/data/2026-10-21.json",
+          "history/manifest.json"
+        ],
+        "material_change": "CATL dual-listing opening underperformance changes stock status, battery rotation and risk."
+      },
+      "validation": {
+        "marker_only": true,
+        "protected_us": true,
+        "cn_en_tag_sequence": true,
+        "cn_en_class_sequence": true,
+        "cn_en_source_urls": true,
+        "major_news": 11,
+        "overnight_items": 3,
+        "stock_cards": 2,
+        "ah_entry_count": 1,
+        "other_entries_unchanged": true,
+        "manifest_history_preserved": true,
+        "rankings_publication_gate": true,
+        "akshare_parse": true
+      }
     }
   },
   "pending_increment": [
@@ -256,7 +281,8 @@
       "finished_at": "2026-10-21T00:37:09.786Z"
     },
     "generation": {
-      "started_at": "2026-10-21T01:45:47.994Z"
+      "started_at": "2026-10-21T01:45:47.994Z",
+      "finished_at": "2026-10-21T01:48:05.342Z"
     },
     "prepublish": {
       "started_at": "2026-10-21T00:41:18.622Z",
@@ -273,6 +299,9 @@
     "incremental_research": {
       "started_at": "2026-10-21T01:44:55.322Z",
       "finished_at": "2026-10-21T01:45:47.994Z"
+    },
+    "hard_validation": {
+      "started_at": "2026-10-21T01:48:05.342Z"
     }
   },
   "error": null
