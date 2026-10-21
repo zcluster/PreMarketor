@@ -2,9 +2,9 @@
   "run_id": "ah-20261021-20261021003230",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-21T00:49:09.786Z",
-  "heartbeat_at": "2026-10-21T00:37:09.786Z",
+  "stage": "prepublish",
+  "lease_until": "2026-10-21T00:53:18.622Z",
+  "heartbeat_at": "2026-10-21T00:41:18.622Z",
   "source_cutoff": "2026-10-21T00:37:09.786Z",
   "main_base_sha": "88c1b3b9aa9c309664e28fe4abba71e3abf050ea",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -122,6 +122,18 @@
           "reason": "official report and same-session timestamped close were not jointly retrievable before cutoff"
         }
       ]
+    },
+    "validation": {
+      "all_passed": true,
+      "news_count": 11,
+      "stock_cards": 2,
+      "sector_rows": {
+        "industry_top": 5,
+        "industry_bottom": 0,
+        "concept_top": 5
+      },
+      "protected_us": true,
+      "whitelist_only": true
     }
   },
   "pending_increment": [],
@@ -136,7 +148,11 @@
       "finished_at": "2026-10-21T00:37:09.786Z"
     },
     "generation": {
-      "started_at": "2026-10-21T00:37:09.786Z"
+      "started_at": "2026-10-21T00:37:09.786Z",
+      "finished_at": "2026-10-21T00:41:18.622Z"
+    },
+    "prepublish": {
+      "started_at": "2026-10-21T00:41:18.622Z"
     }
   },
   "error": null
