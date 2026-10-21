@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261021-20261021003230",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "prepublish",
-  "lease_until": "2026-10-21T00:53:18.622Z",
-  "heartbeat_at": "2026-10-21T00:41:18.622Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": "2026-10-21T00:46:42.139Z",
+  "heartbeat_at": "2026-10-21T00:46:42.139Z",
   "source_cutoff": "2026-10-21T00:37:09.786Z",
   "main_base_sha": "88c1b3b9aa9c309664e28fe4abba71e3abf050ea",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -134,10 +134,50 @@
       },
       "protected_us": true,
       "whitelist_only": true
+    },
+    "verification": {
+      "github": {
+        "commit": "3cec14211398425984f6d44863caa0e6dd50c270",
+        "index_blob": "74dc2d0d6f74b0cc628490b7ca7cec4b9978b03f",
+        "history_blob": "ddc3e689432a45706205d110db2596a21d4dbd61",
+        "manifest_blob": "865da288340f5f995b439bf0b05b7982b9c6d8b1",
+        "exact_readback": true
+      },
+      "deployment": {
+        "id": "dpl_G2ov6cueHDZSu4AwKA1gqL2YwGhu",
+        "state": "READY",
+        "target": "production",
+        "commit": "3cec14211398425984f6d44863caa0e6dd50c270"
+      },
+      "production": {
+        "homepage": {
+          "url": "https://premarketor.com/",
+          "http_status": 200,
+          "cn_rendered": true,
+          "en_rendered": true
+        },
+        "archive": {
+          "url": "https://premarketor.com/history/?date=2026-10-21",
+          "http_status": 200,
+          "cn_rendered": true
+        },
+        "archive_json": {
+          "url": "https://premarketor.com/history/data/2026-10-21.json",
+          "http_status": 200,
+          "cn_en_exact": true
+        },
+        "manifest": {
+          "url": "https://premarketor.com/history/manifest.json",
+          "http_status": 200,
+          "head_date": "2026-10-21"
+        },
+        "updated_at": "2026-10-21 08:39 CST",
+        "protected_us_unchanged": true
+      }
     }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "3cec14211398425984f6d44863caa0e6dd50c270",
   "stage_timings": {
     "rules_and_inputs": {
       "started_at": "2026-10-21T00:32:30.605Z",
@@ -152,7 +192,16 @@
       "finished_at": "2026-10-21T00:41:18.622Z"
     },
     "prepublish": {
-      "started_at": "2026-10-21T00:41:18.622Z"
+      "started_at": "2026-10-21T00:41:18.622Z",
+      "finished_at": "2026-10-21T00:46:42.139Z"
+    },
+    "publish": {
+      "started_at": "2026-10-21T00:41:18.622Z",
+      "finished_at": "2026-10-21T00:46:42.139Z"
+    },
+    "verification": {
+      "started_at": "2026-10-21T00:41:18.622Z",
+      "finished_at": "2026-10-21T00:46:42.139Z"
     }
   },
   "error": null
