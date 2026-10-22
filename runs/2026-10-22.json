@@ -2,10 +2,10 @@
   "run_id": "ah-20261022-20261022003705",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "lease_acquired",
-  "lease_until": "2026-10-22T00:47:05.487Z",
-  "heartbeat_at": "2026-10-22T00:37:05.487Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "lease_until": "2026-10-22T00:52:30.088Z",
+  "heartbeat_at": "2026-10-22T00:40:30.088Z",
+  "source_cutoff": "2026-10-22T00:40:30.088Z",
   "main_base_sha": "413d9ec20274da4f16b7898f4e63bd3b18a89662",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -15,13 +15,126 @@
       "fully_read": true,
       "line_count": 240,
       "read_at": "2026-10-22T00:37:05.487Z"
-    }
+    },
+    "us_rankings": {
+      "status": "ok",
+      "expected_session_date": "2026-10-21",
+      "attempted_at": "2026-10-22T08:01:22+08:00",
+      "publication_gate_ready": true,
+      "industry_rows": 10,
+      "concept_rows": 5
+    },
+    "akshare": {
+      "status": "degraded_stale_intraday",
+      "fetched_at": "2026-10-21T12:49:45+08:00",
+      "market_date": "2026-10-21",
+      "note": "Only the prior-day intraday snapshot is available; it will be labeled historical and not treated as a close or current quote."
+    },
+    "sources": [
+      {
+        "kind": "policy_primary",
+        "url": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2026/202610/t20261021_197540.html",
+        "status": "verified"
+      },
+      {
+        "kind": "policy_primary",
+        "url": "https://www.cac.gov.cn/2026-10/21/c_1794335738058301.htm",
+        "status": "verified"
+      },
+      {
+        "kind": "policy_primary",
+        "url": "https://www.miit.gov.cn/xbymdz/zwgk/index.html",
+        "status": "verified"
+      },
+      {
+        "kind": "regulator_primary",
+        "url": "https://www.csrc.gov.cn/chongqing/c101075/c7665855/content.shtml",
+        "status": "verified"
+      },
+      {
+        "kind": "overnight_market",
+        "url": "https://www.reuters.com/legal/transactional/nasdaq-futures-lead-gains-spacex-super-micro-results-lift-ai-trade-2026-10-21/",
+        "status": "verified"
+      },
+      {
+        "kind": "runtime_futures",
+        "url": "https://www.swissinfo.ch/eng/us-stock-futures-drop-after-earnings%2C-oil-gains%3A-markets-wrap/92254614",
+        "status": "verified"
+      },
+      {
+        "kind": "company_discovery",
+        "url": "https://www.stcn.com/article/detail/4231601.html",
+        "status": "verified"
+      },
+      {
+        "kind": "company_discovery",
+        "url": "https://www.nbd.com.cn/articles/2026-10-21/4611782.html",
+        "status": "verified"
+      }
+    ],
+    "candidates": [
+      {
+        "ticker": "600183.SH",
+        "name": "生益科技",
+        "verification_status": "verified",
+        "decision": "conditional_watch",
+        "quote": "2026-10-21 close 118.99, +1.50%; announcement came after close"
+      },
+      {
+        "ticker": "603162.SH",
+        "name": "海通发展",
+        "verification_status": "verified",
+        "decision": "conditional_watch",
+        "quote": "2026-10-21 close 10.76, +6.32%; announcement came after close"
+      },
+      {
+        "ticker": "300750.SZ/03750.HK",
+        "name": "宁德时代",
+        "verification_status": "verified",
+        "decision": "avoid",
+        "quote": "2026-10-21 A-share close 227.90, -12.03%"
+      }
+    ],
+    "ranking_theme_reconciliation": [
+      {
+        "theme": "Electrical equipment",
+        "rank": "industry_top_1",
+        "decision": "no_candidate",
+        "reason": "No fresh company-primary A/H catalyst verified before cutoff; theme retained in rotation map."
+      },
+      {
+        "theme": "Aerospace and defense",
+        "rank": "industry_top_2",
+        "decision": "no_candidate",
+        "reason": "No fresh company-specific A/H disclosure with a verified current quote."
+      },
+      {
+        "theme": "Crypto cluster",
+        "rank": "concept_top_1_and_repeated",
+        "decision": "no_candidate",
+        "reason": "High-beta US move verified, but no fresh A/H primary company event was verified."
+      },
+      {
+        "theme": "Space",
+        "rank": "concept_top_2",
+        "decision": "no_candidate",
+        "reason": "Theme mapped in the brief without forcing an A/H card."
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "rules_and_inputs": {
-      "started_at": "2026-10-22T00:37:05.487Z"
+      "started_at": "2026-10-22T00:37:05.487Z",
+      "completed_at": "2026-10-22T00:40:30.088Z"
+    },
+    "research": {
+      "started_at": "2026-10-22T00:38:00.000Z",
+      "completed_at": "2026-10-22T00:40:30.088Z"
+    },
+    "generation": {
+      "started_at": "2026-10-22T00:40:30.088Z"
     }
   },
   "error": null
