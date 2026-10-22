@@ -2,9 +2,9 @@
   "run_id": "ah-20261022-20261022003705",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-22T00:52:30.088Z",
-  "heartbeat_at": "2026-10-22T00:40:30.088Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-10-22T00:55:10.581Z",
+  "heartbeat_at": "2026-10-22T00:43:10.581Z",
   "source_cutoff": "2026-10-22T00:40:30.088Z",
   "main_base_sha": "413d9ec20274da4f16b7898f4e63bd3b18a89662",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -120,7 +120,34 @@
         "decision": "no_candidate",
         "reason": "Theme mapped in the brief without forcing an A/H card."
       }
-    ]
+    ],
+    "validation": {
+      "hard": true,
+      "checks": {
+        "markerProtection": true,
+        "usBriefPreserved": true,
+        "usTimePreserved": true,
+        "usUpdatedPreserved": true,
+        "zhNews": 14,
+        "enNews": 14,
+        "zhNewsModule": 11,
+        "enNewsModule": 11,
+        "zhOvernight": 3,
+        "enOvernight": 3,
+        "zhCards": 3,
+        "enCards": 3,
+        "zhWords": 12,
+        "enWords": 12,
+        "manifestHead": "2026-10-22",
+        "historyEntries": 1,
+        "rankingZhRows": 15,
+        "rankingEnRows": 15
+      },
+      "indexLen": 87822,
+      "historyLen": 25957,
+      "manifestLen": 19510,
+      "result": "passed"
+    }
   },
   "pending_increment": [],
   "published_commit": null,
@@ -134,7 +161,13 @@
       "completed_at": "2026-10-22T00:40:30.088Z"
     },
     "generation": {
-      "started_at": "2026-10-22T00:40:30.088Z"
+      "started_at": "2026-10-22T00:40:30.088Z",
+      "completed_at": "2026-10-22T00:43:10.581Z"
+    },
+    "hard_validation": {
+      "started_at": "2026-10-22T00:43:10.581Z",
+      "completed_at": "2026-10-22T00:43:10.581Z",
+      "result": "passed"
     }
   },
   "error": null
