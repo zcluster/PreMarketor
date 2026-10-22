@@ -3,8 +3,8 @@
   "owner": "发布 MarketAhead A/H 早报",
   "status": "published",
   "stage": "published",
-  "lease_until": null,
-  "heartbeat_at": "2026-10-22T00:46:41.961Z",
+  "lease_until": "2026-10-22T01:27:52Z",
+  "heartbeat_at": "2026-10-22T01:27:52Z",
   "source_cutoff": "2026-10-22T00:40:30.088Z",
   "main_base_sha": "413d9ec20274da4f16b7898f4e63bd3b18a89662",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -210,6 +210,84 @@
       "history_json": "https://premarketor.com/history/data/2026-10-22.json",
       "manifest": "https://premarketor.com/history/manifest.json",
       "note": "Homepage, history JSON, and manifest were byte-identical to the committed artifacts. The archive route returned HTTP 200 and loads the verified dated JSON client-side."
+    },
+    "incremental_review": {
+      "run_id": "ah-review-20261022-012752Z",
+      "reviewed_at": "2026-10-22T01:27:52Z",
+      "source_cutoff": "2026-10-22T00:40:30.088Z",
+      "main_head": "60fcb5e301522d5ef52fe513bcaf76b115fbb771",
+      "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "mode": "09:15_incremental",
+      "outcome": "no_material_increment",
+      "material_increment_count": 0,
+      "repository_update_required": false,
+      "reviewed_items": [
+        {
+          "first_available": "2026-10-22T08:47:00+08:00",
+          "event": "两市融资余额较前一交易日减少9.61亿元",
+          "sources": [
+            "https://www.cls.cn/",
+            "https://www.stcn.com/"
+          ],
+          "disposition": "excluded",
+          "reason": "常规资金数据，幅度不足以改变首轮大盘或风险判断"
+        },
+        {
+          "first_available": "2026-10-22T09:01:00+08:00",
+          "event": "工业和信息化部工业软件标准化技术委员会成立",
+          "sources": [
+            "https://www.stcn.com/"
+          ],
+          "disposition": "excluded",
+          "reason": "强化既有科技政策主线，但未改变板块排序或重点个股"
+        },
+        {
+          "first_available": "2026-10-22T09:03:00+08:00",
+          "event": "富时中国A50指数期货盘初上涨0.15%，国内商品期货多数下跌",
+          "sources": [
+            "https://www.stcn.com/"
+          ],
+          "disposition": "excluded",
+          "reason": "小幅竞价信号不足以推翻首轮期指回落、油价上行的风险框架"
+        },
+        {
+          "first_available": "2026-10-22T09:04:00+08:00",
+          "event": "科华数据与进迭时空达成战略合作；其余公司动态包括豪鹏科技创投基金、华大基因产品CE认证",
+          "sources": [
+            "https://www.stcn.com/"
+          ],
+          "disposition": "excluded",
+          "reason": "未发现会改变大盘、轮动、风险或现有重点股状态的原始披露"
+        }
+      ],
+      "hkex_targeted_check": {
+        "checked_at": "2026-10-22T01:27:52Z",
+        "source": "https://www.hkexnews.hk/",
+        "outcome": "no_verified_material_post_cutoff_event",
+        "note": "未发现会改变恒生科技、停复牌、业绩或重大风险判断的08:40后重要新增"
+      },
+      "live_market_check": {
+        "checked_at": "2026-10-22T01:27:52Z",
+        "us_futures": "Dow、S&P 500和Nasdaq期指较隔夜现货回落，方向与首轮一致",
+        "oil": "Brent约110.11美元、WTI约98.12美元，中东风险推动上涨，方向与首轮一致",
+        "a50": "09:03 CST盘初约+0.15%，不足以改变首轮判断",
+        "sources": [
+          "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-meta-tesla-earnings-spacex-super-micro-nasdaq/",
+          "https://www.reuters.com/business/energy/oil-rises-us-orders-diplomats-leave-saudi-arabia-amid-escalating-tensions-2026-10-22/",
+          "https://www.stcn.com/"
+        ]
+      },
+      "production_check": {
+        "checked_at": "2026-10-22T01:27:52Z",
+        "homepage_status": 200,
+        "manifest_status": 200,
+        "history_json_status": 200,
+        "archive_status": 200,
+        "homepage_exact_main": true,
+        "manifest_exact_main": true,
+        "history_json_exact_main": true,
+        "archive_non_empty": true
+      }
     }
   },
   "pending_increment": [],
@@ -248,8 +326,13 @@
       "started_at": "2026-10-22T00:46:41.961Z",
       "completed_at": "2026-10-22T00:46:41.961Z",
       "result": "passed"
+    },
+    "incremental_review": {
+      "started_at": "2026-10-22T01:24:35Z",
+      "completed_at": "2026-10-22T01:27:52Z",
+      "result": "no_material_increment"
     }
   },
   "error": null,
-  "completed_at": "2026-10-22T00:46:41.961Z"
+  "completed_at": "2026-10-22T01:27:52Z"
 }
