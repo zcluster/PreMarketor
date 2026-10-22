@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261022-20261022003705",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_wait",
-  "lease_until": "2026-10-22T00:56:29.719Z",
-  "heartbeat_at": "2026-10-22T00:44:29.719Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-22T00:46:41.961Z",
   "source_cutoff": "2026-10-22T00:40:30.088Z",
   "main_base_sha": "413d9ec20274da4f16b7898f4e63bd3b18a89662",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -165,6 +165,51 @@
       "expected_sha": "413d9ec20274da4f16b7898f4e63bd3b18a89662",
       "force": false,
       "updated_at": "2026-10-22T00:44:29.719Z"
+    },
+    "remote_readback": {
+      "commit": "60fcb5e301522d5ef52fe513bcaf76b115fbb771",
+      "expectedCommit": "60fcb5e301522d5ef52fe513bcaf76b115fbb771",
+      "exact": {
+        "index": true,
+        "history": true,
+        "manifest": true
+      },
+      "shas": {
+        "index": "d064a430ab905b65995c07684709d5b3a93e4c43",
+        "history": "bf46b5632c9b7968d96c15ec0f5e3de24881c1da",
+        "manifest": "82d258031ed7b5e89190aea1ef0f8664a3933d1f"
+      }
+    },
+    "production": {
+      "homeStatus": 200,
+      "archiveStatus": 200,
+      "jsonStatus": 200,
+      "manifestStatus": 200,
+      "homeExact": true,
+      "jsonExact": true,
+      "manifestExact": true,
+      "homeTime": true,
+      "homeTitle": false,
+      "homeZhCards": 3,
+      "homeRankingRows": 15,
+      "archiveShellDate": false,
+      "archiveNoEmpty": true,
+      "manifestHead": "2026-10-22",
+      "jsonEntries": 1,
+      "jsonZhCards": 3,
+      "jsonEnCards": 3,
+      "cache": {
+        "home": "HIT",
+        "archive": "HIT",
+        "json": "HIT",
+        "manifest": "HIT"
+      },
+      "verified_at": "2026-10-22T00:46:41.961Z",
+      "homepage": "https://premarketor.com/",
+      "archive": "https://premarketor.com/history/?date=2026-10-22",
+      "history_json": "https://premarketor.com/history/data/2026-10-22.json",
+      "manifest": "https://premarketor.com/history/manifest.json",
+      "note": "Homepage, history JSON, and manifest were byte-identical to the committed artifacts. The archive route returned HTTP 200 and loads the verified dated JSON client-side."
     }
   },
   "pending_increment": [],
@@ -196,8 +241,15 @@
       "completed_at": "2026-10-22T00:44:29.719Z"
     },
     "deployment_wait": {
-      "started_at": "2026-10-22T00:44:29.719Z"
+      "started_at": "2026-10-22T00:44:29.719Z",
+      "completed_at": "2026-10-22T00:46:41.961Z"
+    },
+    "production_verification": {
+      "started_at": "2026-10-22T00:46:41.961Z",
+      "completed_at": "2026-10-22T00:46:41.961Z",
+      "result": "passed"
     }
   },
-  "error": null
+  "error": null,
+  "completed_at": "2026-10-22T00:46:41.961Z"
 }
