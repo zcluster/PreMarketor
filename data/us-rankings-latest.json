@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-23T08:00:12+08:00",
+  "attemptedAt": "2026-10-24T07:52:10+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-23T08:00:12+08:00",
+      "fetchedAt": "2026-10-24T07:52:10+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,58 +17,16 @@
       },
       "top": [
         {
-          "name": "住宅施工",
-          "nameEn": "Residential Construction",
-          "code": "BK2005",
-          "changePct": "+6.43%",
-          "leaderName": "Dream Finders Homes",
-          "leaderTicker": "DFH",
-          "leaderChangePct": "+12.20%",
-          "breadth": {
-            "advancers": 18,
-            "decliners": 2,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "咨询服务",
-          "nameEn": "Consulting Services",
-          "code": "BK2476",
-          "changePct": "+5.64%",
-          "leaderName": "CRA国际",
-          "leaderTicker": "CRAI",
-          "leaderChangePct": "+9.59%",
-          "breadth": {
-            "advancers": 14,
-            "decliners": 8,
-            "unchanged": 2
-          }
-        },
-        {
-          "name": "抵押贷款金融",
-          "nameEn": "Mortgage Finance",
-          "code": "BK2479",
-          "changePct": "+5.62%",
-          "leaderName": "loanDepot",
-          "leaderTicker": "LDI",
+          "name": "油气钻探",
+          "nameEn": "Oil & Gas Drilling",
+          "code": "BK2274",
+          "changePct": "+6.15%",
+          "leaderName": "Noble",
+          "leaderTicker": "NE",
           "leaderChangePct": "+8.53%",
           "breadth": {
             "advancers": 10,
-            "decliners": 2,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "杂货店",
-          "nameEn": "Grocery Stores",
-          "code": "BK2095",
-          "changePct": "+5.40%",
-          "leaderName": "Natural Grocers by Vitamin Cottage",
-          "leaderTicker": "NGVC",
-          "leaderChangePct": "+7.65%",
-          "breadth": {
-            "advancers": 11,
-            "decliners": 2,
+            "decliners": 0,
             "unchanged": 0
           }
         },
@@ -76,85 +34,127 @@
           "name": "人力资源与就业服务",
           "nameEn": "Staffing & Employment Services",
           "code": "BK2496",
-          "changePct": "+5.07%",
-          "leaderName": "迦里仕人才",
-          "leaderTicker": "GLXG",
-          "leaderChangePct": "+9.38%",
+          "changePct": "+6.10%",
+          "leaderName": "罗致恒富",
+          "leaderTicker": "RHI",
+          "leaderChangePct": "+21.74%",
           "breadth": {
             "advancers": 12,
-            "decliners": 6,
-            "unchanged": 2
+            "decliners": 5,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "油气设备与服务",
+          "nameEn": "Oil & Gas Equipment & Services",
+          "code": "BK2257",
+          "changePct": "+4.94%",
+          "leaderName": "潮水公司",
+          "leaderTicker": "TDW",
+          "leaderChangePct": "+8.11%",
+          "breadth": {
+            "advancers": 46,
+            "decliners": 3,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "油气勘探与开发",
+          "nameEn": "Oil & Gas E&P",
+          "code": "BK2058",
+          "changePct": "+3.25%",
+          "leaderName": "Trio Petroleum",
+          "leaderTicker": "TPET",
+          "leaderChangePct": "+13.16%",
+          "breadth": {
+            "advancers": 69,
+            "decliners": 8,
+            "unchanged": 4
+          }
+        },
+        {
+          "name": "焦炭",
+          "nameEn": "Coking Coal",
+          "code": "BK2505",
+          "changePct": "+2.90%",
+          "leaderName": "Warrior Met Coal",
+          "leaderTicker": "HCC",
+          "leaderChangePct": "+3.37%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 1,
+            "unchanged": 0
           }
         }
       ],
       "bottom": [
         {
-          "name": "铝",
-          "nameEn": "Aluminum",
-          "code": "BK2211",
-          "changePct": "-7.81%",
-          "leaderName": "美国铝业公司",
-          "leaderTicker": "AA",
-          "leaderChangePct": "-4.98%",
+          "name": "电信服务",
+          "nameEn": "Telecom Services",
+          "code": "BK2088",
+          "changePct": "-3.16%",
+          "leaderName": "Optimum Communications",
+          "leaderTicker": "OPTU",
+          "leaderChangePct": "+9.90%",
           "breadth": {
-            "advancers": 0,
-            "decliners": 4,
-            "unchanged": 0
+            "advancers": 22,
+            "decliners": 33,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "人寿保险",
+          "nameEn": "Insurance - Life",
+          "code": "BK2512",
+          "changePct": "-3.18%",
+          "leaderName": "Security National Financial",
+          "leaderTicker": "SNFCA",
+          "leaderChangePct": "+0.77%",
+          "breadth": {
+            "advancers": 1,
+            "decliners": 20,
+            "unchanged": 1
           }
         },
         {
           "name": "电气设备及零件",
           "nameEn": "Electrical Equipment & Parts",
           "code": "BK2493",
-          "changePct": "-7.95%",
-          "leaderName": "智能充电",
-          "leaderTicker": "XCH",
-          "leaderChangePct": "+12.43%",
+          "changePct": "-3.37%",
+          "leaderName": "晖阳新能源",
+          "leaderTicker": "EPOW",
+          "leaderChangePct": "+25.09%",
           "breadth": {
-            "advancers": 10,
-            "decliners": 41,
-            "unchanged": 4
+            "advancers": 21,
+            "decliners": 27,
+            "unchanged": 6
           }
         },
         {
-          "name": "电子元件",
-          "nameEn": "Electronic Components",
-          "code": "BK2072",
-          "changePct": "-8.02%",
-          "leaderName": "Gauzy",
-          "leaderTicker": "GAUZ",
-          "leaderChangePct": "+6.52%",
+          "name": "房地产服务",
+          "nameEn": "Real Estate Services",
+          "code": "BK2038",
+          "changePct": "-3.45%",
+          "leaderName": "reAlpha Tech",
+          "leaderTicker": "AIRE",
+          "leaderChangePct": "+23.88%",
           "breadth": {
-            "advancers": 6,
-            "decliners": 38,
-            "unchanged": 1
+            "advancers": 18,
+            "decliners": 29,
+            "unchanged": 6
           }
         },
         {
-          "name": "半导体设备与材料",
-          "nameEn": "Semiconductor Equipment & Materials",
-          "code": "BK2016",
-          "changePct": "-8.82%",
-          "leaderName": "Forge Nano",
-          "leaderTicker": "NANO",
-          "leaderChangePct": "+2.96%",
+          "name": "纺织制造",
+          "nameEn": "Textile Manufacturing",
+          "code": "BK2499",
+          "changePct": "-3.57%",
+          "leaderName": "SMJ International Holdings",
+          "leaderTicker": "SMJF",
+          "leaderChangePct": "+2.86%",
           "breadth": {
             "advancers": 2,
-            "decliners": 29,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "金属加工",
-          "nameEn": "Metal Fabrication",
-          "code": "BK2270",
-          "changePct": "-9.31%",
-          "leaderName": "铭腾国际",
-          "leaderTicker": "MTEN",
-          "leaderChangePct": "+16.15%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 14,
+            "decliners": 3,
             "unchanged": 0
           }
         }
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-23T08:00:12+08:00",
+      "fetchedAt": "2026-10-24T07:52:10+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,72 +176,72 @@
       },
       "top": [
         {
-          "name": "软件外包",
-          "nameEn": "Software Outsourcing",
-          "code": "BK2586",
-          "changePct": "+4.09%",
-          "leaderName": "儒博实业",
-          "leaderTicker": "ROP",
-          "leaderChangePct": "+9.73%",
+          "name": "激光雷达概念",
+          "nameEn": "Lidar Technology",
+          "code": "BK2539",
+          "changePct": "+5.78%",
+          "leaderName": "AEye",
+          "leaderTicker": "LIDR",
+          "leaderChangePct": "+10.41%",
           "breadth": {
-            "advancers": 7,
-            "decliners": 2,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "可再生能源",
-          "nameEn": "Renewable Energy",
-          "code": "BK2572",
-          "changePct": "+3.59%",
-          "leaderName": "新纪元能源",
-          "leaderTicker": "NEE",
-          "leaderChangePct": "+4.62%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 2,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "体育博彩",
-          "nameEn": "Sports Betting",
-          "code": "BK23588",
-          "changePct": "+2.89%",
-          "leaderName": "Flutter Entertainment",
-          "leaderTicker": "FLUT",
-          "leaderChangePct": "+4.38%",
-          "breadth": {
-            "advancers": 7,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "枪械制造",
-          "nameEn": "Firearm Manufacturers",
-          "code": "BK2581",
-          "changePct": "+2.87%",
-          "leaderName": "Cadre Holdings",
-          "leaderTicker": "CDRE",
-          "leaderChangePct": "+6.74%",
-          "breadth": {
-            "advancers": 3,
+            "advancers": 6,
             "decliners": 1,
             "unchanged": 0
           }
         },
         {
-          "name": "CAR-T疗法",
-          "nameEn": "CAR-T Therapy",
-          "code": "BK2113",
-          "changePct": "+2.68%",
-          "leaderName": "Vericel",
-          "leaderTicker": "VCEL",
-          "leaderChangePct": "+4.96%",
+          "name": "网络安全概念",
+          "nameEn": "Cybersecurity",
+          "code": "BK2570",
+          "changePct": "+4.55%",
+          "leaderName": "SailPoint",
+          "leaderTicker": "SAIL",
+          "leaderChangePct": "+8.62%",
           "breadth": {
-            "advancers": 8,
+            "advancers": 20,
+            "decliners": 5,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "页岩油",
+          "nameEn": "Shale Oil",
+          "code": "BK2585",
+          "changePct": "+3.04%",
+          "leaderName": "阿帕奇石油",
+          "leaderTicker": "APA",
+          "leaderChangePct": "+4.98%",
+          "breadth": {
+            "advancers": 13,
             "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "天然气",
+          "nameEn": "Natural Gas",
+          "code": "BK2582",
+          "changePct": "+2.66%",
+          "leaderName": "戴文能源",
+          "leaderTicker": "DVN",
+          "leaderChangePct": "+4.49%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "存储概念",
+          "nameEn": "Data storage stock",
+          "code": "BK23925",
+          "changePct": "+2.19%",
+          "leaderName": "SK海力士",
+          "leaderTicker": "SKHY",
+          "leaderChangePct": "+4.05%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 5,
             "unchanged": 0
           }
         }
@@ -253,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-10-22",
-    "checked_at": "2026-10-23T08:00:17+08:00",
+    "expected_session_date": "2026-10-23",
+    "checked_at": "2026-10-24T07:52:29+08:00",
     "request_id": null,
-    "groups_sha256": "eacd5ea19d99ecfb4cbce5312aaa825308d3d9e04e544d835a77d1c61a0f8733",
+    "groups_sha256": "418554722c5b6b875df16d238214d23f05d53753c4341daea7d5b962694482f1",
     "errors": []
   }
 }
