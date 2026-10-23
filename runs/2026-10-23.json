@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261023-20261023021109",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-10-23T02:21:09Z",
-  "heartbeat_at": "2026-10-23T02:11:09Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-10-23T02:25:49Z",
+  "heartbeat_at": "2026-10-23T02:15:49Z",
   "source_cutoff": "2026-10-23T02:11:09Z",
   "main_base_sha": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -175,17 +175,46 @@
           "source": "Google Finance"
         }
       ],
-      "materiality": "A/H direction diverged and Ping An Healthcare post-results price feedback invalidated the conditional-long framing"
+      "materiality": "A/H direction diverged and Ping An Healthcare post-results price feedback invalidated the conditional-long framing",
+      "completed_at": "2026-10-23T02:13:20Z",
+      "discovery_reconciliation": {
+        "sources": [
+          "Jin10 A-share premarket brief",
+          "CLS homepage",
+          "STCN e-company"
+        ],
+        "baseline_cutoff": "2026-10-23T00:38:01.345Z",
+        "review_cutoff": "2026-10-23T02:13:20Z",
+        "material_increment_count": 2,
+        "included_count": 2,
+        "excluded_material_count": 0,
+        "note": "No new targeted HKEX filing or domestic-policy item after the first-run cutoff changed the view; post-open A/H divergence and focused-stock price feedback were material."
+      },
+      "validation": {
+        "marker_whitelist": true,
+        "us_protected": true,
+        "bilingual_class_sequence": true,
+        "major_news_each": 11,
+        "overnight_items_each": 3,
+        "stock_cards_each": 4,
+        "asset_rows_each": 8,
+        "keywords_each": 12,
+        "panel_rows_each": 15,
+        "history_preserved": true,
+        "manifest_preserved": true
+      }
     }
   },
   "pending_increment": [
     {
       "type": "market_open",
-      "summary": "A股显著下跌，港股科技指数相对走强，A/H风险偏好分化"
+      "status": "included",
+      "summary": "上证-1.80%、创业板-2.65%，恒指-0.51%而恒科+1.67%，确认A/H及港股内部显著分化"
     },
     {
       "type": "focused_stock",
-      "summary": "平安健康绩后下跌且显著跑输恒生科技指数，需调整重点个股判断"
+      "status": "included",
+      "summary": "平安健康绩后-3.24%且显著跑输恒科，由条件关注降为回避"
     }
   ],
   "published_commit": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
@@ -216,7 +245,9 @@
       "duration_seconds": 646
     },
     "incremental_review": {
-      "started_at": "2026-10-23T02:08:08Z"
+      "started_at": "2026-10-23T02:08:08Z",
+      "research_completed_at": "2026-10-23T02:13:20Z",
+      "validation_started_at": "2026-10-23T02:13:20Z"
     }
   },
   "error": null
