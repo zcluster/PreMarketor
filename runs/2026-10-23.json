@@ -2,10 +2,10 @@
   "run_id": "ah-20261023-20261023003223",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-10-23T00:45:15.400Z",
-  "heartbeat_at": "2026-10-23T00:35:15.400Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "lease_until": "2026-10-23T00:48:01.345Z",
+  "heartbeat_at": "2026-10-23T00:38:01.345Z",
+  "source_cutoff": "2026-10-23T00:38:01.345Z",
   "main_base_sha": "eb5fb760445403a3a3700f455152309ff9294ec4",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -28,12 +28,68 @@
       "fetched_at": "2026-10-22T12:48:32+08:00",
       "market_date": "2026-10-22",
       "note": "10月22日盘中快照，只作历史基线"
+    },
+    "research": {
+      "window": "2026-10-22 A/H close to 2026-10-23 08:40 CST",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/",
+          "type": "Reuters",
+          "note": "Oct 22 US close: S&P -1.21%, Nasdaq -2.60%, Dow +0.02%; AI/semiconductor selloff"
+        },
+        {
+          "url": "https://www1.hkexnews.hk/search/predefineddoc.xhtml?predefineddocuments=7",
+          "type": "HKEX results list",
+          "note": "Oct 22 results and quarterly releases"
+        },
+        {
+          "url": "https://www1.hkexnews.hk/search/predefineddoc.xhtml?lang=en&predefineddocuments=9",
+          "type": "HKEX suspensions list",
+          "note": "Oct 22 halts/resumptions and delisting disclosures"
+        },
+        {
+          "url": "https://zfxxgk.ndrc.gov.cn/wap/iteminfo.jsp?id=20667",
+          "type": "NDRC primary",
+          "note": "Outbound Investment Management Measures, effective Dec 1"
+        },
+        {
+          "url": "https://www.ndrc.gov.cn/fggz/202610/t20261022_1408303.html",
+          "type": "NDRC primary",
+          "note": "China Marine Economy Development Report 2026"
+        }
+      ],
+      "company_events": [
+        {
+          "ticker": "06067.HK / 300568.SZ",
+          "status": "conditional_watch",
+          "reason": "Q3 revenue +73.57%, attributable profit +972.41%; inventory +54.63%, long-term borrowing +30.56%; current quote unavailable after cloud attempts"
+        },
+        {
+          "ticker": "01833.HK",
+          "status": "conditional_watch",
+          "reason": "9M net profit +35%, adjusted +19.5%, revenue -5.8%; current quote unavailable after cloud attempts"
+        },
+        {
+          "ticker": "00728.HK / 601728.SH",
+          "status": "avoid",
+          "reason": "9M operating revenue -3.7%, attributable profit -14.8% under IFRS"
+        },
+        {
+          "ticker": "01691.HK / 002242.SZ",
+          "status": "avoid",
+          "reason": "Joyoung Q3 attributable profit -74.69%, 9M profit -41.75%, operating cash flow negative"
+        }
+      ],
+      "quote_attempts": {
+        "hk_market_finance_api": "no tool response / invalid market arguments",
+        "web_search": "no verifiable Oct 22 closes for 06067/01833/00728/01691; only older snapshots",
+        "us_representatives": "14 of 15 resolved; NANO unavailable"
+      }
     }
   },
   "pending_increment": [
-    "国内政策与交易所公告核验",
-    "当前夜盘及代表ticker复核",
-    "双语生成与硬校验"
+    "双语生成与硬校验",
+    "原子发布与生产验收"
   ],
   "published_commit": null,
   "stage_timings": {
@@ -42,7 +98,11 @@
       "completed_at": "2026-10-23T00:35:15.400Z"
     },
     "research": {
-      "started_at": "2026-10-23T00:35:15.400Z"
+      "started_at": "2026-10-23T00:35:15.400Z",
+      "completed_at": "2026-10-23T00:38:01.345Z"
+    },
+    "generation": {
+      "started_at": "2026-10-23T00:38:01.345Z"
     }
   },
   "error": null
