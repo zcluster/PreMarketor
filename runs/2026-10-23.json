@@ -1,11 +1,11 @@
 {
   "run_id": "ah-review-20261023-20261023021109",
   "owner": "MarketAhead A/H 09:15 incremental review",
-  "status": "running",
-  "stage": "candidate_commit",
-  "lease_until": "2026-10-23T02:27:30Z",
-  "heartbeat_at": "2026-10-23T02:17:30Z",
-  "source_cutoff": "2026-10-23T02:11:09Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": "2026-10-23T02:18:47Z",
+  "heartbeat_at": "2026-10-23T02:18:47Z",
+  "source_cutoff": "2026-10-23T02:13:20Z",
   "main_base_sha": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -87,19 +87,25 @@
       }
     },
     "publication": {
-      "commit": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
+      "commit": "bc9c39cf086dc279a5ba7d04fb0204aa944aa1d1",
       "remote_readback": {
-        "head": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
-        "index_sha": "41d6596030cbb4e4f40e81ab3226a84f84aefd86",
-        "history_sha": "79a230c905b18512c3fa33261bda813b1f77c1cc",
-        "manifest_sha": "db7143db3df63c4ad5fb1c98250475f4fb7d61fa",
+        "head": "bc9c39cf086dc279a5ba7d04fb0204aa944aa1d1",
+        "index_sha": "f13fb6077023aab0f0b7d087cb8b782a2f856eb9",
+        "history_sha": "a58a19d82b97c4a73ddda3e8f3c0fb90255040d2",
+        "manifest_sha": "905b6baf8e3c4cbc634bcf3ff8a3a522eb049ca2",
         "index_exact": true,
         "history_exact": true,
         "manifest_exact": true
-      }
+      },
+      "files": [
+        "index.html",
+        "history/data/2026-10-23.json",
+        "history/manifest.json"
+      ],
+      "us_protected": true
     },
     "production": {
-      "checked_at": "2026-10-23T00:43:09.571Z",
+      "checked_at": "2026-10-23T02:18:47Z",
       "urls": [
         "https://premarketor.com/",
         "https://premarketor.com/history/?date=2026-10-23",
@@ -116,30 +122,19 @@
         "home_exact": true,
         "json_exact": true,
         "manifest_exact": true,
-        "home_time": "2026-10-23 08:39 CST",
-        "home_updated": "2026-10-23 08:39 CST",
-        "home_cards": 4,
-        "home_panel_rows_zh": 15,
-        "home_panel_rows_en": 15,
-        "home_panel_down_zh": 5,
-        "home_panel_down_en": 5,
+        "home_time": "2026-10-23 10:13 CST",
+        "home_updated": "2026-10-23 10:13 CST",
+        "bilingual": true,
+        "major_news_each": 11,
+        "overnight_items_each": 3,
+        "stock_cards_each": 4,
+        "asset_rows_each": 8,
+        "keywords_each": 12,
+        "panel_rows_each": 15,
         "us_protected": true,
         "archive_shell_nonempty": true,
         "archive_json_date": "2026-10-23",
-        "archive_entries": 1,
-        "archive_zh_cards": 4,
-        "archive_en_cards": 4,
-        "archive_bilingual": true,
-        "manifest_head": {
-          "date": "2026-10-23",
-          "title": "油价与芯片抛售压制风险偏好，星源材质和平安健康业绩提供结构线索",
-          "summary": "隔夜纳斯达克跌2.60%、半导体设备与材料行业跌8.82%，油价上行继续压制高估值成长；星源材质三季度收入和利润高增但库存、借款同步抬升，平安健康盈利改善而收入仍下降。中国电信与九阳业绩承压，今日以条件关注和回避为主。",
-          "updated": "2026-10-23 08:39 CST",
-          "types": [
-            "AH"
-          ],
-          "file": "history/data/2026-10-23.json"
-        }
+        "archive_entries": 1
       }
     },
     "incremental_review": {
@@ -216,19 +211,8 @@
       }
     }
   },
-  "pending_increment": [
-    {
-      "type": "market_open",
-      "status": "included",
-      "summary": "上证-1.80%、创业板-2.65%，恒指-0.51%而恒科+1.67%，确认A/H及港股内部显著分化"
-    },
-    {
-      "type": "focused_stock",
-      "status": "included",
-      "summary": "平安健康绩后-3.24%且显著跑输恒科，由条件关注降为回避"
-    }
-  ],
-  "published_commit": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
+  "pending_increment": [],
+  "published_commit": "bc9c39cf086dc279a5ba7d04fb0204aa944aa1d1",
   "stage_timings": {
     "rules_and_inputs": {
       "started_at": "2026-10-23T00:32:23.812Z",
@@ -259,7 +243,11 @@
       "started_at": "2026-10-23T02:08:08Z",
       "research_completed_at": "2026-10-23T02:13:20Z",
       "validation_started_at": "2026-10-23T02:13:20Z",
-      "validation_completed_at": "2026-10-23T02:17:30Z"
+      "validation_completed_at": "2026-10-23T02:17:30Z",
+      "publication_completed_at": "2026-10-23T02:18:00Z",
+      "deployment_verification_completed_at": "2026-10-23T02:18:47Z",
+      "completed_at": "2026-10-23T02:18:47Z",
+      "duration_seconds": 639
     }
   },
   "error": null
