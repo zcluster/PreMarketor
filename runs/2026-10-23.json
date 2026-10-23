@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261023-20261023021109",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-10-23T02:25:49Z",
-  "heartbeat_at": "2026-10-23T02:15:49Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-10-23T02:27:30Z",
+  "heartbeat_at": "2026-10-23T02:17:30Z",
   "source_cutoff": "2026-10-23T02:11:09Z",
   "main_base_sha": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -202,6 +202,17 @@
         "panel_rows_each": 15,
         "history_preserved": true,
         "manifest_preserved": true
+      },
+      "candidate": {
+        "base": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
+        "commit": "bc9c39cf086dc279a5ba7d04fb0204aa944aa1d1",
+        "tree": "04288ac103b669e0b85e42dd13a9ef1088bf651f",
+        "blobs": {
+          "index": "f13fb6077023aab0f0b7d087cb8b782a2f856eb9",
+          "history": "a58a19d82b97c4a73ddda3e8f3c0fb90255040d2",
+          "manifest": "905b6baf8e3c4cbc634bcf3ff8a3a522eb049ca2"
+        },
+        "message": "Update A/H market brief for 2026-10-23"
       }
     }
   },
@@ -247,7 +258,8 @@
     "incremental_review": {
       "started_at": "2026-10-23T02:08:08Z",
       "research_completed_at": "2026-10-23T02:13:20Z",
-      "validation_started_at": "2026-10-23T02:13:20Z"
+      "validation_started_at": "2026-10-23T02:13:20Z",
+      "validation_completed_at": "2026-10-23T02:17:30Z"
     }
   },
   "error": null
