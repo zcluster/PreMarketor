@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261023-20261023003223",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-23T00:51:08.279Z",
-  "heartbeat_at": "2026-10-23T00:41:08.279Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": "2026-10-23T00:43:09.571Z",
+  "heartbeat_at": "2026-10-23T00:43:09.571Z",
   "source_cutoff": "2026-10-23T00:38:01.345Z",
   "main_base_sha": "eb5fb760445403a3a3700f455152309ff9294ec4",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -97,11 +97,53 @@
         "history_exact": true,
         "manifest_exact": true
       }
+    },
+    "production": {
+      "checked_at": "2026-10-23T00:43:09.571Z",
+      "urls": [
+        "https://premarketor.com/",
+        "https://premarketor.com/history/?date=2026-10-23",
+        "https://premarketor.com/history/data/2026-10-23.json",
+        "https://premarketor.com/history/manifest.json"
+      ],
+      "validation": {
+        "statuses": {
+          "home": 200,
+          "archive": 200,
+          "json": 200,
+          "manifest": 200
+        },
+        "home_exact": true,
+        "json_exact": true,
+        "manifest_exact": true,
+        "home_time": "2026-10-23 08:39 CST",
+        "home_updated": "2026-10-23 08:39 CST",
+        "home_cards": 4,
+        "home_panel_rows_zh": 15,
+        "home_panel_rows_en": 15,
+        "home_panel_down_zh": 5,
+        "home_panel_down_en": 5,
+        "us_protected": true,
+        "archive_shell_nonempty": true,
+        "archive_json_date": "2026-10-23",
+        "archive_entries": 1,
+        "archive_zh_cards": 4,
+        "archive_en_cards": 4,
+        "archive_bilingual": true,
+        "manifest_head": {
+          "date": "2026-10-23",
+          "title": "油价与芯片抛售压制风险偏好，星源材质和平安健康业绩提供结构线索",
+          "summary": "隔夜纳斯达克跌2.60%、半导体设备与材料行业跌8.82%，油价上行继续压制高估值成长；星源材质三季度收入和利润高增但库存、借款同步抬升，平安健康盈利改善而收入仍下降。中国电信与九阳业绩承压，今日以条件关注和回避为主。",
+          "updated": "2026-10-23 08:39 CST",
+          "types": [
+            "AH"
+          ],
+          "file": "history/data/2026-10-23.json"
+        }
+      }
     }
   },
-  "pending_increment": [
-    "生产站HTML/JSON/manifest验收"
-  ],
+  "pending_increment": [],
   "published_commit": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
   "stage_timings": {
     "rules_and_inputs": {
@@ -121,7 +163,13 @@
       "commit": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5"
     },
     "deployment_verification": {
-      "started_at": "2026-10-23T00:41:08.279Z"
+      "started_at": "2026-10-23T00:41:08.279Z",
+      "completed_at": "2026-10-23T00:43:09.571Z"
+    },
+    "total": {
+      "started_at": "2026-10-23T00:32:23.812Z",
+      "completed_at": "2026-10-23T00:43:09.571Z",
+      "duration_seconds": 646
     }
   },
   "error": null
