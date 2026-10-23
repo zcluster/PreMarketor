@@ -2,9 +2,9 @@
   "run_id": "ah-20261023-20261023003223",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-23T00:48:01.345Z",
-  "heartbeat_at": "2026-10-23T00:38:01.345Z",
+  "stage": "deployment_verification",
+  "lease_until": "2026-10-23T00:51:08.279Z",
+  "heartbeat_at": "2026-10-23T00:41:08.279Z",
   "source_cutoff": "2026-10-23T00:38:01.345Z",
   "main_base_sha": "eb5fb760445403a3a3700f455152309ff9294ec4",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -85,13 +85,24 @@
         "web_search": "no verifiable Oct 22 closes for 06067/01833/00728/01691; only older snapshots",
         "us_representatives": "14 of 15 resolved; NANO unavailable"
       }
+    },
+    "publication": {
+      "commit": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
+      "remote_readback": {
+        "head": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
+        "index_sha": "41d6596030cbb4e4f40e81ab3226a84f84aefd86",
+        "history_sha": "79a230c905b18512c3fa33261bda813b1f77c1cc",
+        "manifest_sha": "db7143db3df63c4ad5fb1c98250475f4fb7d61fa",
+        "index_exact": true,
+        "history_exact": true,
+        "manifest_exact": true
+      }
     }
   },
   "pending_increment": [
-    "双语生成与硬校验",
-    "原子发布与生产验收"
+    "生产站HTML/JSON/manifest验收"
   ],
-  "published_commit": null,
+  "published_commit": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
   "stage_timings": {
     "rules_and_inputs": {
       "started_at": "2026-10-23T00:32:23.812Z",
@@ -102,7 +113,15 @@
       "completed_at": "2026-10-23T00:38:01.345Z"
     },
     "generation": {
-      "started_at": "2026-10-23T00:38:01.345Z"
+      "started_at": "2026-10-23T00:38:01.345Z",
+      "completed_at": "2026-10-23T00:41:08.279Z"
+    },
+    "publication": {
+      "completed_at": "2026-10-23T00:41:08.279Z",
+      "commit": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5"
+    },
+    "deployment_verification": {
+      "started_at": "2026-10-23T00:41:08.279Z"
     }
   },
   "error": null
