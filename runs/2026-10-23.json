@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261023-20261023003223",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "completed",
-  "lease_until": "2026-10-23T00:43:09.571Z",
-  "heartbeat_at": "2026-10-23T00:43:09.571Z",
-  "source_cutoff": "2026-10-23T00:38:01.345Z",
-  "main_base_sha": "eb5fb760445403a3a3700f455152309ff9294ec4",
+  "run_id": "ah-review-20261023-20261023021109",
+  "owner": "MarketAhead A/H 09:15 incremental review",
+  "status": "running",
+  "stage": "research",
+  "lease_until": "2026-10-23T02:21:09Z",
+  "heartbeat_at": "2026-10-23T02:11:09Z",
+  "source_cutoff": "2026-10-23T02:11:09Z",
+  "main_base_sha": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -141,9 +141,53 @@
           "file": "history/data/2026-10-23.json"
         }
       }
+    },
+    "incremental_review": {
+      "started_at": "2026-10-23T02:08:08Z",
+      "baseline_cutoff": "2026-10-23T00:38:01.345Z",
+      "market_quotes": [
+        {
+          "instrument": "Shanghai Composite",
+          "value": 3592.21,
+          "change_pct": -1.8,
+          "as_of": "2026-10-23T10:02:30+08:00",
+          "source": "Google Finance"
+        },
+        {
+          "instrument": "ChiNext",
+          "value": 2508.74,
+          "change_pct": -2.65,
+          "as_of": "2026-10-23T09:59:52+08:00",
+          "source": "Google Finance"
+        },
+        {
+          "instrument": "Hang Seng TECH",
+          "value": 3857.42,
+          "change_pct": 1.67,
+          "as_of": "2026-10-23T09:49:52+08:00",
+          "source": "Investing.com"
+        },
+        {
+          "instrument": "Ping An Healthcare 01833.HK",
+          "value": 5.38,
+          "change_pct": -3.24,
+          "as_of": "2026-10-23T10:00:00+08:00",
+          "source": "Google Finance"
+        }
+      ],
+      "materiality": "A/H direction diverged and Ping An Healthcare post-results price feedback invalidated the conditional-long framing"
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "type": "market_open",
+      "summary": "A股显著下跌，港股科技指数相对走强，A/H风险偏好分化"
+    },
+    {
+      "type": "focused_stock",
+      "summary": "平安健康绩后下跌且显著跑输恒生科技指数，需调整重点个股判断"
+    }
+  ],
   "published_commit": "42bb33835bdf0d5da3d17ae8adf13d55dcd822f5",
   "stage_timings": {
     "rules_and_inputs": {
@@ -170,6 +214,9 @@
       "started_at": "2026-10-23T00:32:23.812Z",
       "completed_at": "2026-10-23T00:43:09.571Z",
       "duration_seconds": 646
+    },
+    "incremental_review": {
+      "started_at": "2026-10-23T02:08:08Z"
     }
   },
   "error": null
