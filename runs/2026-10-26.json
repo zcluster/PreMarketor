@@ -2,9 +2,9 @@
   "run_id": "ah-20261026-review-20261026014310",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-10-26T01:56:17.414Z",
-  "heartbeat_at": "2026-10-26T01:46:17.414Z",
+  "stage": "candidate_creation",
+  "lease_until": "2026-10-26T01:57:06.108Z",
+  "heartbeat_at": "2026-10-26T01:47:06.108Z",
   "source_cutoff": "2026-10-26T00:44:08.085Z",
   "main_base_sha": "0c2e7563b90038477c977df74ab1e3731193cee6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -354,6 +354,39 @@
         ],
         "zh_length": 10043,
         "en_length": 16824
+      },
+      "hard_validation": {
+        "ok": true,
+        "checks": {
+          "outside_allowed_unchanged": true,
+          "us_brief_unchanged": true,
+          "us_time_unchanged": true,
+          "us_updated_unchanged": true,
+          "panel_zh_unchanged": true,
+          "panel_en_unchanged": true,
+          "index_history_match": true,
+          "time_match": true,
+          "entry_types": true,
+          "manifest_count": true,
+          "manifest_history_preserved": true,
+          "manifest_today": true,
+          "zh_major_count": true,
+          "en_major_count": true,
+          "zh_overnight_count": true,
+          "en_overnight_count": true,
+          "card_count": true,
+          "sector_count": true,
+          "logic_count": true,
+          "risk_count": true,
+          "bilingual_class_shapes": true,
+          "prices_bilingual": true,
+          "negative_not_bullish": true,
+          "no_stale_confirmation": true,
+          "safe_html": true,
+          "no_empty": true,
+          "title_summary": true
+        },
+        "validated_at": "2026-10-26T01:47:06.108Z"
       }
     }
   },
@@ -392,7 +425,9 @@
       "lease_acquired_at": "2026-10-26T01:43:10.288Z",
       "generation_started_at": "2026-10-26T01:43:10.288Z",
       "generation_completed_at": "2026-10-26T01:46:17.414Z",
-      "hard_validation_started_at": "2026-10-26T01:46:17.414Z"
+      "hard_validation_started_at": "2026-10-26T01:46:17.414Z",
+      "hard_validation_completed_at": "2026-10-26T01:47:06.108Z",
+      "candidate_creation_started_at": "2026-10-26T01:47:06.108Z"
     }
   },
   "error": null
