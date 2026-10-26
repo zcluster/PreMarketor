@@ -2,10 +2,10 @@
   "run_id": "ah-20261026-20261026003441",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "inputs_and_publication_gate",
-  "lease_until": "2026-10-26T00:44:41.520Z",
-  "heartbeat_at": "2026-10-26T00:34:41.520Z",
-  "source_cutoff": "2026-10-26T00:34:41.520Z",
+  "stage": "research",
+  "lease_until": "2026-10-26T00:45:32.272Z",
+  "heartbeat_at": "2026-10-26T00:35:32.272Z",
+  "source_cutoff": "2026-10-26T00:35:32.272Z",
   "main_base_sha": "b75e634c897d00ff67cd722d9842c32cff9d268f",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -19,6 +19,41 @@
       "akshare_sha": "4a63994447953094135a55b1c80c682b55a3c6fe",
       "today_history_exists": false,
       "read_at": "2026-10-26T00:34:41.520Z"
+    },
+    "rankings": {
+      "publication_gate": {
+        "ready": true,
+        "expected_session_date": "2026-10-23",
+        "checked_at": "2026-10-24T07:52:29+08:00",
+        "errors": []
+      },
+      "fetched_at": "2026-10-24T07:52:10+08:00",
+      "status": "ok",
+      "industry_rows": 10,
+      "concept_rows": 5,
+      "validation": "NYSE/Nasdaq Friday 2026-10-23 cash session completed; snapshot fetched after 16:00 America/New_York"
+    },
+    "akshare": {
+      "status": "ok",
+      "fetched_at": "2026-10-23T12:51:20+08:00",
+      "analysis_ready": true,
+      "usage": "previous-session intraday baseline only; not 2026-10-26 live",
+      "A": {
+        "market_date": "2026-10-23",
+        "phase": "intraday_snapshot",
+        "advancers": 642,
+        "decliners": 4872,
+        "unchanged": 59,
+        "median": -3.358
+      },
+      "HK": {
+        "market_date": "2026-10-23",
+        "phase": "intraday_snapshot",
+        "advancers": 799,
+        "decliners": 867,
+        "unchanged": 1139,
+        "median": 0
+      }
     }
   },
   "pending_increment": [],
@@ -27,6 +62,9 @@
     "rules_and_inputs": {
       "started_at": "2026-10-26T00:34:41.520Z",
       "rules_read_completed_at": "2026-10-26T00:34:41.520Z"
+    },
+    "research": {
+      "started_at": "2026-10-26T00:35:32.272Z"
     }
   },
   "error": null
