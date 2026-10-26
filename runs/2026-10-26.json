@@ -2,10 +2,10 @@
   "run_id": "ah-20261026-20261026003441",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-10-26T00:45:32.272Z",
-  "heartbeat_at": "2026-10-26T00:35:32.272Z",
-  "source_cutoff": "2026-10-26T00:35:32.272Z",
+  "stage": "research_synthesis",
+  "lease_until": "2026-10-26T00:48:08.002Z",
+  "heartbeat_at": "2026-10-26T00:38:08.002Z",
+  "source_cutoff": "2026-10-26T00:38:08.002Z",
   "main_base_sha": "b75e634c897d00ff67cd722d9842c32cff9d268f",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -54,7 +54,170 @@
         "unchanged": 1139,
         "median": 0
       }
-    }
+    },
+    "research": {
+      "cutoff_cst": "2026-10-26T00:38:08.002Z",
+      "discovery_sources": [
+        {
+          "name": "财联社/东方财富盘前早报",
+          "url": "https://wap.eastmoney.com/a/202610263907415622.html",
+          "checked_at": "2026-10-26T00:38:08.002Z"
+        },
+        {
+          "name": "HKEX latest listed company information",
+          "url": "https://www.hkexnews.hk/listedco/listconews/mainindex/SEHK_LISTEDCO_STOCKNAME_TODAY.HTM",
+          "checked_at": "2026-10-26T00:38:08.002Z"
+        },
+        {
+          "name": "证券时报电子报",
+          "url": "https://epaper.stcn.com/",
+          "checked_at": "2026-10-26T00:38:08.002Z"
+        }
+      ],
+      "policies": [
+        {
+          "event": "7000亿元一年期MLF",
+          "source": "中国人民银行公告/新华社",
+          "url": "https://www3.xinhuanet.com/20261023/9d017899050149a39cc58ad7005b42cb/c.html",
+          "published": "2026-10-23 18:59 CST"
+        },
+        {
+          "event": "AI就业友好型发展意见",
+          "source": "国务院办公厅/中国政府网",
+          "url": "https://www.mee.gov.cn/zcwj/gwywj/202610/t20261024_1184583.shtml",
+          "published": "2026-10-24"
+        },
+        {
+          "event": "上证综合指数编制修订生效",
+          "source": "上交所（盘前发现源核验）",
+          "url": "https://wap.eastmoney.com/a/202610263907415622.html",
+          "effective": "2026-10-26"
+        }
+      ],
+      "company_events": [
+        {
+          "company": "德明利",
+          "ticker": "001309",
+          "event": "2026Q3 revenue RMB11.645bn +356.64%; net profit RMB2.729bn +2902.75%",
+          "source": "CNInfo filing",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-26/1225620615.PDF",
+          "filing_date": "2026-10-23",
+          "last_price": "CNY251.00 +3.22% at 2026-10-23 close"
+        },
+        {
+          "company": "寒武纪",
+          "ticker": "688256",
+          "event": "2026Q3 revenue RMB3.531bn +104.47%; net profit RMB1.404bn +147.74%",
+          "source": "SSE filing mirrored by financial press",
+          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12657969",
+          "filing_date": "2026-10-23",
+          "last_price": "CNY932.20 +5.46% at 2026-10-23 close; inventory/cash-flow counterevidence noted"
+        },
+        {
+          "company": "光迅科技",
+          "ticker": "002281",
+          "event": "2026Q3 revenue RMB5.073bn +54.27%; net profit RMB702m +102.62%",
+          "source": "company filing/Shanghai Securities News",
+          "url": "https://paper.cnstock.com/html/2026-10/26/content_2281004.htm",
+          "filing_date": "2026-10-25",
+          "last_price": "CNY128.63 +0.81% at 2026-10-23 close; no post-filing trade"
+        }
+      ],
+      "hk_directional_check": [
+        {
+          "event": "东山精密H股发行价HKD86.80, expected listing 2026-10-28",
+          "source": "HKEX announcement discovered in Cailian morning brief",
+          "url": "https://wap.eastmoney.com/a/202610263907415622.html"
+        },
+        {
+          "event": "Pacific Legend 08547 delayed annual results and continued suspension",
+          "source": "HKEX title search",
+          "url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=190369"
+        }
+      ],
+      "us_close": {
+        "dow": -1.23,
+        "sp500": -0.52,
+        "nasdaq": -0.21,
+        "energy": "+2.5%",
+        "telecom": "AT&T and T-Mobile nearly -8%",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/wall-street-futures-dip-after-ai-rout-telecoms-slide-2026-10-23/"
+      },
+      "runtime": {
+        "futures": "Dow +0.34%, S&P 500 +0.48%, Nasdaq 100 +0.66% at about 08:25 CST",
+        "oil": "WTI about -0.99%/Reuters later -1.55% at 08:18 CST; Brent -1.34%",
+        "representative_overnight_quotes": "unavailable for all 15 panel tickers; no Friday close substituted"
+      }
+    },
+    "coverage_reconciliation": [
+      {
+        "event": "MLF 7000亿元",
+        "discovery": "财联社/东方财富",
+        "primary": "央行公告经新华社",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "AI就业友好型意见",
+        "discovery": "财联社/东方财富",
+        "primary": "国务院办公厅/中国政府网",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "指数编制修订今日生效",
+        "discovery": "财联社/东方财富",
+        "primary": "上交所公告",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "德明利三季报",
+        "discovery": "财联社/东方财富+证券时报线索",
+        "primary": "巨潮资讯",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "寒武纪三季报",
+        "discovery": "财联社/东方财富",
+        "primary": "上交所披露文本",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "光迅科技三季报",
+        "discovery": "财联社/东方财富",
+        "primary": "公司披露/上海证券报",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "天齐锂业三季报",
+        "discovery": "财联社/东方财富",
+        "primary": "巨潮资讯",
+        "importance": "medium",
+        "included": false,
+        "reason": "news budget prioritizes storage/AI/optics directly aligned with strongest US themes"
+      },
+      {
+        "event": "华能水电收购",
+        "discovery": "财联社/东方财富",
+        "primary": "company disclosure cited by discovery",
+        "importance": "medium",
+        "included": false,
+        "reason": "company-event minimum already met; lower incremental impact than tech earnings"
+      },
+      {
+        "event": "Pacific Legend delayed results",
+        "discovery": "HKEX",
+        "primary": "HKEX title search",
+        "importance": "low",
+        "included": false,
+        "reason": "small-cap continued suspension; no index-level impact"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -64,7 +227,8 @@
       "rules_read_completed_at": "2026-10-26T00:34:41.520Z"
     },
     "research": {
-      "started_at": "2026-10-26T00:35:32.272Z"
+      "started_at": "2026-10-26T00:35:32.272Z",
+      "last_checkpoint_at": "2026-10-26T00:38:08.002Z"
     }
   },
   "error": null
