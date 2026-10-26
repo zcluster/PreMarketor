@@ -2,10 +2,10 @@
   "run_id": "ah-20261026-20261026003441",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-26T00:51:48.886Z",
-  "heartbeat_at": "2026-10-26T00:41:48.886Z",
-  "source_cutoff": "2026-10-26T00:41:48.886Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-10-26T00:54:08.085Z",
+  "heartbeat_at": "2026-10-26T00:44:08.085Z",
+  "source_cutoff": "2026-10-26T00:44:08.085Z",
   "main_base_sha": "b75e634c897d00ff67cd722d9842c32cff9d268f",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -226,6 +226,24 @@
         "寒武纪"
       ],
       "status": "generated; prepublish validation pending"
+    },
+    "hard_validation": {
+      "ok": true,
+      "errors": [],
+      "checked_at": "2026-10-26T00:43:40.022Z",
+      "counts": {
+        "zh_major": 11,
+        "zh_overnight": 3,
+        "cards": 3,
+        "panel_rows": 15,
+        "panel_down": 5
+      },
+      "latest_main_sha": "b75e634c897d00ff67cd722d9842c32cff9d268f",
+      "latest_rules_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "latest_rankings_sha": "028679a857915b452546c84204d544033a5e770d",
+      "latest_index_sha": "585059b36cbe30893c596022af047b2e7171833d",
+      "latest_manifest_sha": "14c1414d65308ca919199c915d2ec86ebf1f5dfe",
+      "latest_akshare_sha": "4a63994447953094135a55b1c80c682b55a3c6fe"
     }
   },
   "pending_increment": [],
@@ -238,6 +256,10 @@
     "research": {
       "started_at": "2026-10-26T00:35:32.272Z",
       "last_checkpoint_at": "2026-10-26T00:38:08.002Z"
+    },
+    "generation": {
+      "started_at": "2026-10-26T00:41:48.886Z",
+      "hard_validation_completed_at": "2026-10-26T00:44:08.085Z"
     }
   },
   "error": null
