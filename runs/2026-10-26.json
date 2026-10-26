@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261026-20261026003441",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "completed",
-  "lease_until": "2026-10-26T00:47:11.008Z",
-  "heartbeat_at": "2026-10-26T00:47:11.008Z",
+  "run_id": "ah-20261026-review-20261026014310",
+  "owner": "MarketAhead A/H 09:15 incremental review",
+  "status": "running",
+  "stage": "generation",
+  "lease_until": "2026-10-26T01:53:10.288Z",
+  "heartbeat_at": "2026-10-26T01:43:10.288Z",
   "source_cutoff": "2026-10-26T00:44:08.085Z",
-  "main_base_sha": "b75e634c897d00ff67cd722d9842c32cff9d268f",
+  "main_base_sha": "0c2e7563b90038477c977df74ab1e3731193cee6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -288,9 +288,71 @@
       "manifest_exact": true,
       "history_shell_ok": true,
       "ok": true
+    },
+    "incremental_review": {
+      "cutoff": "2026-10-26T00:44:08.085Z",
+      "checked_at": "2026-10-26T01:43:10.288Z",
+      "main_head": "0c2e7563b90038477c977df74ab1e3731193cee6",
+      "official_and_discovery_delta": "No post-cutoff material policy, exchange announcement, HKEX clarification, suspension/resumption, or reliable discovery-source item found in targeted checks.",
+      "opening_feedback": {
+        "source": "Eastmoney live quote pages and Xueqiu HSTECH live quote page",
+        "captured_at_cst": "2026-10-26 09:41-09:42 CST",
+        "urls": [
+          "https://quote.eastmoney.com/zs000001.html",
+          "https://quote.eastmoney.com/zs399006.html",
+          "https://quote.eastmoney.com/sz001309.html",
+          "https://quote.eastmoney.com/kcb/688256.html",
+          "https://quote.eastmoney.com/sz002281.html",
+          "https://www.xueqiu.com/S/HKHSTECH"
+        ],
+        "shanghai": {
+          "price": 3673.42,
+          "change_pct": -0.46
+        },
+        "chinext": {
+          "price": 2618.9,
+          "change_pct": -2.43
+        },
+        "hang_seng": {
+          "price": 23071.26,
+          "change_pct": -0.1
+        },
+        "hang_seng_tech": {
+          "price": 3822.08,
+          "change_pct": -1.28
+        },
+        "demingli": {
+          "price": 245.34,
+          "change_pct": -2.25,
+          "high": 248.49,
+          "low": 239.28
+        },
+        "cambricon": {
+          "price": 930.41,
+          "change_pct": -0.19,
+          "high": 937,
+          "low": 908.1
+        },
+        "accelink": {
+          "price": 124.08,
+          "change_pct": -3.54,
+          "high": 128.98,
+          "low": 124.01
+        }
+      },
+      "materiality": {
+        "material": true,
+        "reason": "A/H opening feedback invalidates the positive-futures confirmation path: growth and HSTECH weakened, and two of three focus stocks sold off despite strong earnings. This changes market judgment, risk wording, and focus-stock status."
+      }
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "type": "material_opening_feedback",
+      "observed_at": "2026-10-26T01:43:10.288Z",
+      "summary": "ChiNext -2.43%, HSTECH -1.28%, Accelink -3.54%, Demingli -2.25%, Cambricon -0.19%; update headline/risk/sector validation and stock-card conditions."
+    }
+  ],
   "published_commit": "0c2e7563b90038477c977df74ab1e3731193cee6",
   "stage_timings": {
     "rules_and_inputs": {
@@ -313,7 +375,12 @@
       "started_at": "2026-10-26T00:45:38.238Z",
       "completed_at": "2026-10-26T00:47:11.008Z"
     },
-    "total_seconds": 749
+    "total_seconds": 749,
+    "incremental_review": {
+      "started_at": "2026-10-26T01:39:20.000Z",
+      "lease_acquired_at": "2026-10-26T01:43:10.288Z",
+      "generation_started_at": "2026-10-26T01:43:10.288Z"
+    }
   },
   "error": null
 }
