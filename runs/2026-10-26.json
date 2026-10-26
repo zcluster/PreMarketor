@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261026-review-20261026014310",
   "owner": "MarketAhead A/H 09:15 incremental review",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-26T01:58:26.265Z",
-  "heartbeat_at": "2026-10-26T01:48:26.265Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": "2026-10-26T01:49:38.994Z",
+  "heartbeat_at": "2026-10-26T01:49:38.994Z",
   "source_cutoff": "2026-10-26T00:44:08.085Z",
   "main_base_sha": "0c2e7563b90038477c977df74ab1e3731193cee6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -421,16 +421,50 @@
           "history/manifest.json"
         ],
         "ref_update_at": "2026-10-26T01:48:26.265Z"
+      },
+      "remote_readback": {
+        "ok": true,
+        "checks": {
+          "head": true,
+          "index": true,
+          "history": true,
+          "manifest": true
+        },
+        "head": "beb573ad5a3eb4a5ae560f11e4024db4fed7ebf0",
+        "verified_at": "2026-10-26T01:48:45.132Z"
+      },
+      "production_verification": {
+        "ok": true,
+        "errors": [],
+        "checks": {
+          "statuses": true,
+          "home_exact": true,
+          "history_exact": true,
+          "manifest_exact": true,
+          "home_time": true,
+          "home_markers": true,
+          "home_content": true,
+          "history_bilingual": true,
+          "history_counts": true,
+          "manifest_today": true,
+          "history_shell": true
+        },
+        "statuses": {
+          "home": 200,
+          "history_json": 200,
+          "manifest": 200,
+          "history_page": 200
+        },
+        "verified_at": "2026-10-26T01:49:28.968Z"
+      },
+      "result": {
+        "title": "A股港股早报：开盘科技走弱，政策托底未能抵消成长压力",
+        "updated": "2026-10-26 09:46 CST",
+        "material_change": true
       }
     }
   },
-  "pending_increment": [
-    {
-      "type": "material_opening_feedback",
-      "observed_at": "2026-10-26T01:43:10.288Z",
-      "summary": "ChiNext -2.43%, HSTECH -1.28%, Accelink -3.54%, Demingli -2.25%, Cambricon -0.19%; update headline/risk/sector validation and stock-card conditions."
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "beb573ad5a3eb4a5ae560f11e4024db4fed7ebf0",
   "stage_timings": {
     "rules_and_inputs": {
@@ -465,7 +499,9 @@
       "candidate_created_at": "2026-10-26T01:47:53.650Z",
       "main_ref_update_started_at": "2026-10-26T01:47:53.650Z",
       "main_ref_updated_at": "2026-10-26T01:48:26.265Z",
-      "deployment_verification_started_at": "2026-10-26T01:48:26.265Z"
+      "deployment_verification_started_at": "2026-10-26T01:48:26.265Z",
+      "deployment_verification_completed_at": "2026-10-26T01:49:38.994Z",
+      "completed_at": "2026-10-26T01:49:38.994Z"
     }
   },
   "error": null
