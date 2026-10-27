@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261027-012700",
   "owner": "MarketAhead A/H 09:15 incremental review",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-27T01:52:00.000Z",
-  "heartbeat_at": "2026-10-27T01:42:00.000Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-27T01:43:00.000Z",
   "source_cutoff": "2026-10-27T00:33:24.777Z",
   "main_base_sha": "8c496723a2141c2a862929b79fe45ee72fc53367",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -208,7 +208,42 @@
         "commit": "ec432ba2d00cfd8a81f12ade6ccba8486a346765",
         "committed_at": "2026-10-27T01:41:30.000Z",
         "ref_update": "force=false CAS succeeded"
-      }
+      },
+      "production": {
+        "verified_at": "2026-10-27T01:43:00.000Z",
+        "urls": [
+          "https://premarketor.com/",
+          "https://premarketor.com/history/?date=2026-10-27",
+          "https://premarketor.com/history/data/2026-10-27.json",
+          "https://premarketor.com/history/manifest.json"
+        ],
+        "statuses": {
+          "homepage": 200,
+          "archive": 200,
+          "history": 200,
+          "manifest": 200
+        },
+        "checks": {
+          "homepage_marker_exact": true,
+          "homepage_time_exact": true,
+          "history_json_exact": true,
+          "manifest_json_exact": true,
+          "manifest_top_record": true,
+          "bilingual_payload": true,
+          "rendered_archive_chinese": true,
+          "rendered_archive_time": true,
+          "rendered_archive_non_empty": true,
+          "us_content_protected": true,
+          "github_remote_readback_exact": true
+        },
+        "counts": {
+          "major_news": 12,
+          "overnight": 3,
+          "stock_cards": 4
+        },
+        "note": "Static HTML/JSON exact-match checks passed; cloud browser rendered the dated archive with the 09:34 CST A/H brief and no empty state."
+      },
+      "completed_at": "2026-10-27T01:43:00.000Z"
     }
   },
   "pending_increment": [],
@@ -234,8 +269,12 @@
     "incremental_review": {
       "started_at": "2026-10-27T01:27:00.000Z",
       "research_completed_at": "2026-10-27T01:34:30.000Z",
-      "candidate_validated_at": "2026-10-27T01:35:00.000Z"
+      "candidate_validated_at": "2026-10-27T01:35:00.000Z",
+      "deployment_verified_at": "2026-10-27T01:43:00.000Z",
+      "completed_at": "2026-10-27T01:43:00.000Z",
+      "total_seconds": 960
     }
   },
-  "error": null
+  "error": null,
+  "completed_at": "2026-10-27T01:43:00.000Z"
 }
