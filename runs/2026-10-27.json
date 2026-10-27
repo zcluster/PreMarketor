@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261027-012700",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-27T01:37:00.000Z",
-  "heartbeat_at": "2026-10-27T01:27:00.000Z",
+  "stage": "incremental_market_check",
+  "lease_until": "2026-10-27T01:41:00.000Z",
+  "heartbeat_at": "2026-10-27T01:31:00.000Z",
   "source_cutoff": "2026-10-27T00:33:24.777Z",
   "main_base_sha": "8c496723a2141c2a862929b79fe45ee72fc53367",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -124,7 +124,24 @@
       "started_at": "2026-10-27T01:27:00.000Z",
       "source_cutoff": "2026-10-27T00:33:24.777Z",
       "baseline_commit": "8c496723a2141c2a862929b79fe45ee72fc53367",
-      "scope": "new or missed evidence after first-run cutoff; no duplicate full generation"
+      "scope": "new or missed evidence after first-run cutoff; no duplicate full generation",
+      "opening_auction": {
+        "captured_at": "2026-10-27T01:29:16Z",
+        "source": "Eastmoney delayed quote JSON via cloud browser",
+        "indices": [
+          "上证指数 3698.44 +0.02%",
+          "创业板指 2661.71 +0.89%",
+          "恒生指数 23260.14 +0.21%",
+          "恒生科技 3886.18 +0.74%"
+        ],
+        "candidates": [
+          "香农芯创 111.20 +1.96%",
+          "中兴通讯 28.45 +1.50%",
+          "多利科技 16.19 +7.15%",
+          "格力电器 36.04 -3.07%"
+        ],
+        "note": "09:25-09:29 call-auction/indicative snapshot; continuous-session recheck required before conclusion"
+      }
     }
   },
   "pending_increment": [],
