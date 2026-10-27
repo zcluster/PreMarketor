@@ -2,9 +2,9 @@
   "run_id": "ah-20261027-20261027003324",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "inputs_loaded",
-  "lease_until": "2026-10-27T00:43:24.777Z",
-  "heartbeat_at": "2026-10-27T00:33:24.777Z",
+  "stage": "generation",
+  "lease_until": "2026-10-27T00:46:29.134Z",
+  "heartbeat_at": "2026-10-27T00:36:29.134Z",
   "source_cutoff": "2026-10-27T00:33:24.777Z",
   "main_base_sha": "f156cb96ce7e184058c19c6f4324dee1f8f99fb3",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -19,6 +19,18 @@
       "akshare_sha": "011f1fe90cfb446be121b657d73655df773a0440",
       "today_history_exists": false,
       "read_at": "2026-10-27T00:33:24.777Z"
+    },
+    "research": {
+      "completed_at": "2026-10-27T00:36:29.134Z",
+      "ranking_gate": "ready",
+      "ranking_session": "2026-10-26",
+      "akshare": "2026-10-26 intraday_snapshot; degraded/stale for 2026-10-27",
+      "candidate_states": [
+        "conditional_watch:300475 香农芯创",
+        "conditional_watch:000063/00763 中兴通讯",
+        "conditional_watch:001311 多利科技",
+        "avoid:000651 格力电器"
+      ]
     }
   },
   "pending_increment": [],
@@ -27,6 +39,9 @@
     "rules_and_inputs": {
       "started_at": "2026-10-27T00:32:14.000Z",
       "completed_at": "2026-10-27T00:33:24.777Z"
+    },
+    "research": {
+      "completed_at": "2026-10-27T00:36:29.134Z"
     }
   },
   "error": null
