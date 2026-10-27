@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261027-012700",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "creating_candidate_commit",
-  "lease_until": "2026-10-27T01:46:00.000Z",
-  "heartbeat_at": "2026-10-27T01:36:00.000Z",
+  "stage": "candidate_revalidated",
+  "lease_until": "2026-10-27T01:49:00.000Z",
+  "heartbeat_at": "2026-10-27T01:39:00.000Z",
   "source_cutoff": "2026-10-27T00:33:24.777Z",
   "main_base_sha": "8c496723a2141c2a862929b79fe45ee72fc53367",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -182,9 +182,21 @@
           "logic": 4,
           "risks": 4,
           "history_preserved": true,
-          "manifest_preserved": true
+          "manifest_preserved": true,
+          "index_equals_history": true,
+          "wti_dollar_preserved": true,
+          "safe_marker_replacement": true
         }
-      }
+      },
+      "recoverable_errors": [
+        {
+          "stage": "creating_candidate_commit",
+          "code": "candidate_serialization_error",
+          "occurred_at": "2026-10-27T01:38:00.000Z",
+          "message": "Approval preflight rejected index payload because string replacement interpreted $101.42 as a capture-group token; main was unchanged.",
+          "resolution": "Rebuilt index from baseline with callback-based marker replacement; verified A_H_BRIEF equals history HTML byte-for-byte, $101.42 preserved, US markers and outside-marker bytes unchanged."
+        }
+      ]
     }
   },
   "pending_increment": [],
