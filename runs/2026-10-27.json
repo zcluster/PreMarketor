@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261027-012700",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "incremental_market_check",
-  "lease_until": "2026-10-27T01:41:00.000Z",
-  "heartbeat_at": "2026-10-27T01:31:00.000Z",
+  "stage": "candidate_validated",
+  "lease_until": "2026-10-27T01:45:00.000Z",
+  "heartbeat_at": "2026-10-27T01:35:00.000Z",
   "source_cutoff": "2026-10-27T00:33:24.777Z",
   "main_base_sha": "8c496723a2141c2a862929b79fe45ee72fc53367",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -141,6 +141,49 @@
           "格力电器 36.04 -3.07%"
         ],
         "note": "09:25-09:29 call-auction/indicative snapshot; continuous-session recheck required before conclusion"
+      },
+      "research": {
+        "completed_at": "2026-10-27T01:34:30.000Z",
+        "policy_and_major_announcement_increment_count": 0,
+        "first_run_material_omission_count": 1,
+        "omission": "Reuters 2026-10-26 20:02 CST China AI valuation-reset analysis",
+        "continuous_quotes_at": "2026-10-27T01:30:30Z",
+        "indices": [
+          "上证 +0.12%",
+          "创业板 +1.04%",
+          "恒指 +0.09%",
+          "恒科 +0.79%"
+        ],
+        "candidates": [
+          "香农芯创 +2.70% conditional_watch",
+          "中兴通讯 +1.21% conditional_watch",
+          "多利科技 +4.77% bullish_candidate",
+          "格力电器 -2.37% avoid"
+        ]
+      },
+      "candidate": {
+        "validated_at": "2026-10-27T01:35:00.000Z",
+        "baseline_commit": "8c496723a2141c2a862929b79fe45ee72fc53367",
+        "files": [
+          "index.html",
+          "history/data/2026-10-27.json",
+          "history/manifest.json"
+        ],
+        "checks": {
+          "marker_outside_protected": true,
+          "us_content_protected": true,
+          "bilingual_counts_equal": true,
+          "assets": 8,
+          "keywords": 12,
+          "major_news": 12,
+          "overnight": 3,
+          "cards": 4,
+          "sectors": 4,
+          "logic": 4,
+          "risks": 4,
+          "history_preserved": true,
+          "manifest_preserved": true
+        }
       }
     }
   },
@@ -165,7 +208,9 @@
     },
     "total_seconds": 581,
     "incremental_review": {
-      "started_at": "2026-10-27T01:27:00.000Z"
+      "started_at": "2026-10-27T01:27:00.000Z",
+      "research_completed_at": "2026-10-27T01:34:30.000Z",
+      "candidate_validated_at": "2026-10-27T01:35:00.000Z"
     }
   },
   "error": null
