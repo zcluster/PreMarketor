@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261027-20261027003324",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deploy_verification",
-  "lease_until": "2026-10-27T00:50:37.315Z",
-  "heartbeat_at": "2026-10-27T00:40:37.315Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-27T00:41:55.118Z",
   "source_cutoff": "2026-10-27T00:33:24.777Z",
   "main_base_sha": "f156cb96ce7e184058c19c6f4324dee1f8f99fb3",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -85,6 +85,40 @@
       "commit": "8c496723a2141c2a862929b79fe45ee72fc53367",
       "committed_at": "2026-10-27T00:40:37.315Z",
       "ref_update": "force=false CAS succeeded"
+    },
+    "production": {
+      "verified_at": "2026-10-27T00:41:55.118Z",
+      "urls": [
+        "https://premarketor.com/",
+        "https://premarketor.com/history/?date=2026-10-27",
+        "https://premarketor.com/history/data/2026-10-27.json",
+        "https://premarketor.com/history/manifest.json"
+      ],
+      "checks": {
+        "homepage200": true,
+        "archive200": true,
+        "history200": true,
+        "manifest200": true,
+        "homepageExact": true,
+        "homepageTime": true,
+        "homepageChinese": true,
+        "homepagePanels": true,
+        "historyExact": true,
+        "historyBilingual": true,
+        "historyNonEmpty": true,
+        "historyCards": true,
+        "manifestExact": true,
+        "manifestTop": true,
+        "archiveLoader": true,
+        "usProtected": true
+      },
+      "statuses": {
+        "homepage": 200,
+        "archive": 200,
+        "history": 200,
+        "manifest": 200
+      },
+      "remote_readback": "exact blob and byte match"
     }
   },
   "pending_increment": [],
@@ -102,7 +136,12 @@
     },
     "commit": {
       "completed_at": "2026-10-27T00:40:37.315Z"
-    }
+    },
+    "deployment_verification": {
+      "completed_at": "2026-10-27T00:41:55.118Z"
+    },
+    "total_seconds": 581
   },
-  "error": null
+  "error": null,
+  "completed_at": "2026-10-27T00:41:55.118Z"
 }
