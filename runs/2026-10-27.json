@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261027-20261027003324",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "completed",
-  "lease_until": null,
-  "heartbeat_at": "2026-10-27T00:41:55.118Z",
+  "run_id": "ah-review-20261027-012700",
+  "owner": "MarketAhead A/H 09:15 incremental review",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-10-27T01:37:00.000Z",
+  "heartbeat_at": "2026-10-27T01:27:00.000Z",
   "source_cutoff": "2026-10-27T00:33:24.777Z",
-  "main_base_sha": "f156cb96ce7e184058c19c6f4324dee1f8f99fb3",
+  "main_base_sha": "8c496723a2141c2a862929b79fe45ee72fc53367",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -119,6 +119,12 @@
         "manifest": 200
       },
       "remote_readback": "exact blob and byte match"
+    },
+    "incremental_review": {
+      "started_at": "2026-10-27T01:27:00.000Z",
+      "source_cutoff": "2026-10-27T00:33:24.777Z",
+      "baseline_commit": "8c496723a2141c2a862929b79fe45ee72fc53367",
+      "scope": "new or missed evidence after first-run cutoff; no duplicate full generation"
     }
   },
   "pending_increment": [],
@@ -140,8 +146,10 @@
     "deployment_verification": {
       "completed_at": "2026-10-27T00:41:55.118Z"
     },
-    "total_seconds": 581
+    "total_seconds": 581,
+    "incremental_review": {
+      "started_at": "2026-10-27T01:27:00.000Z"
+    }
   },
-  "error": null,
-  "completed_at": "2026-10-27T00:41:55.118Z"
+  "error": null
 }
