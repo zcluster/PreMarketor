@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261028-20261028002655",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deploying",
-  "lease_until": "2026-10-28T00:46:43.825Z",
-  "heartbeat_at": "2026-10-28T00:36:43.825Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-28T00:37:46.193Z",
   "source_cutoff": "2026-10-28T00:26:55.340Z",
   "main_base_sha": "4b2cb47afbff9cf9e21c8afcc9debeb4a5e96cde",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -138,7 +138,30 @@
       "force": false,
       "ref_update": "success",
       "committed_at": "2026-10-28T00:36:37.993Z",
-      "production_verified": false
+      "production_verified": true,
+      "production_verified_at": "2026-10-28T00:37:46.193Z",
+      "production": {
+        "homepage_status": 200,
+        "history_page_status": 200,
+        "history_json_status": 200,
+        "manifest_status": 200,
+        "homepage_exact_commit": true,
+        "history_exact_commit": true,
+        "manifest_exact_commit": true,
+        "ah_time": "2026-10-28 08:35 CST",
+        "cards_cn": 4,
+        "cards_en": 4,
+        "panel_rows_cn": 15,
+        "panel_rows_en": 15,
+        "industry_down_cn": 5,
+        "industry_down_en": 5,
+        "empty_state": false,
+        "us_markers_unchanged": true,
+        "history_page_has_date": false
+      },
+      "homepage_url": "https://premarketor.com/",
+      "archive_url": "https://premarketor.com/history/?date=2026-10-28",
+      "archive_json_url": "https://premarketor.com/history/data/2026-10-28.json"
     }
   },
   "pending_increment": [],
@@ -155,6 +178,10 @@
     "generation": {
       "started_at": "2026-10-28T00:35:31.287Z",
       "completed_at": "2026-10-28T00:36:43.825Z"
+    },
+    "deploying": {
+      "started_at": "2026-10-28T00:36:37.993Z",
+      "completed_at": "2026-10-28T00:37:46.193Z"
     }
   },
   "error": null
