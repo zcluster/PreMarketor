@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261028-013638",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "main_ref_update",
-  "lease_until": "2026-10-28T01:59:00.000Z",
-  "heartbeat_at": "2026-10-28T01:49:00.000Z",
+  "stage": "deployment_verification",
+  "lease_until": "2026-10-28T02:01:00.000Z",
+  "heartbeat_at": "2026-10-28T01:51:00.000Z",
   "source_cutoff": "2026-10-28T00:26:55.340Z",
   "main_base_sha": "4b2cb47afbff9cf9e21c8afcc9debeb4a5e96cde",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -268,11 +268,16 @@
         "index": "f71666e686ab74eacd2cec47f44c568b36872602",
         "history": "39ae2b18de74201a528f27df10298144ee0f0357",
         "manifest": "e59656551b4695aa89f7604b0fcc1d52ad4580c5"
+      },
+      "publish": {
+        "commit": "18e2545696dfc07e2546b02680445043ffb8c8ac",
+        "committed_at": "2026-10-28T01:51:00.000Z",
+        "ref_update": "force=false CAS succeeded"
       }
     }
   },
   "pending_increment": [],
-  "published_commit": "8a3e18b7404066784d03a7ab64eb12be6fb41568",
+  "published_commit": "18e2545696dfc07e2546b02680445043ffb8c8ac",
   "stage_timings": {
     "rules_and_inputs": {
       "started_at": "2026-10-28T00:25:56.000Z",
