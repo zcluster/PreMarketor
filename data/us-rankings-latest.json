@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-27T08:28:53+08:00",
+  "attemptedAt": "2026-10-28T08:31:22+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-27T08:28:53+08:00",
+      "fetchedAt": "2026-10-28T08:31:22+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,145 +17,145 @@
       },
       "top": [
         {
-          "name": "汽车制造",
-          "nameEn": "Auto Manufacturers",
-          "code": "BK2468",
-          "changePct": "+3.86%",
-          "leaderName": "Cenntro Electric",
-          "leaderTicker": "CENN",
-          "leaderChangePct": "+12.82%",
+          "name": "计算机硬件",
+          "nameEn": "Computer Hardware",
+          "code": "BK2492",
+          "changePct": "+5.53%",
+          "leaderName": "Braiin",
+          "leaderTicker": "BRAI",
+          "leaderChangePct": "+56.13%",
           "breadth": {
-            "advancers": 11,
-            "decliners": 16,
+            "advancers": 36,
+            "decliners": 7,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "铀",
+          "nameEn": "Uranium",
+          "code": "BK2430",
+          "changePct": "+5.45%",
+          "leaderName": "Centrus Energy",
+          "leaderTicker": "LEU",
+          "leaderChangePct": "+11.15%",
+          "breadth": {
+            "advancers": 12,
+            "decliners": 0,
             "unchanged": 1
           }
         },
         {
-          "name": "通讯设备",
-          "nameEn": "Communication Equipment",
-          "code": "BK2098",
-          "changePct": "+3.51%",
-          "leaderName": "ClearOne通讯",
-          "leaderTicker": "CLRO",
-          "leaderChangePct": "+52.92%",
+          "name": "白银",
+          "nameEn": "Silver",
+          "code": "BK2093",
+          "changePct": "+4.87%",
+          "leaderName": "Highlander Silver",
+          "leaderTicker": "HSLV",
+          "leaderChangePct": "+7.06%",
           "breadth": {
-            "advancers": 32,
-            "decliners": 11,
-            "unchanged": 2
-          }
-        },
-        {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "+3.10%",
-          "leaderName": "GrafTech",
-          "leaderTicker": "EAF",
-          "leaderChangePct": "+25.15%",
-          "breadth": {
-            "advancers": 27,
-            "decliners": 24,
-            "unchanged": 3
-          }
-        },
-        {
-          "name": "半导体",
-          "nameEn": "Semiconductors",
-          "code": "BK2015",
-          "changePct": "+2.60%",
-          "leaderName": "GCT SEMICONDUCTOR HOLDING INC C/WTS 01/03/2029(TO PUR COM)",
-          "leaderTicker": "GCTS.WS",
-          "leaderChangePct": "+19.76%",
-          "breadth": {
-            "advancers": 56,
-            "decliners": 13,
+            "advancers": 6,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "建筑工程",
-          "nameEn": "Engineering & Construction",
-          "code": "BK2033",
-          "changePct": "+2.50%",
-          "leaderName": "Masonglory",
-          "leaderTicker": "MSGY",
-          "leaderChangePct": "+27.84%",
+          "name": "焦炭",
+          "nameEn": "Coking Coal",
+          "code": "BK2505",
+          "changePct": "+4.72%",
+          "leaderName": "Ramaco Resources-B",
+          "leaderTicker": "METCB",
+          "leaderChangePct": "+12.00%",
           "breadth": {
-            "advancers": 33,
-            "decliners": 16,
-            "unchanged": 3
+            "advancers": 5,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "铝",
+          "nameEn": "Aluminum",
+          "code": "BK2211",
+          "changePct": "+4.59%",
+          "leaderName": "凯撒铝业",
+          "leaderTicker": "KALU",
+          "leaderChangePct": "+10.22%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 0,
+            "unchanged": 0
           }
         }
       ],
       "bottom": [
         {
-          "name": "百货公司",
-          "nameEn": "Department Stores",
-          "code": "BK2080",
-          "changePct": "-2.74%",
-          "leaderName": "DILLARDS CAP TR I 7.5% PRF CAP SECS USD25",
-          "leaderTicker": "DDT",
-          "leaderChangePct": "+0.96%",
+          "name": "医疗保健设施",
+          "nameEn": "Medical Care Facilities",
+          "code": "BK2486",
+          "changePct": "-2.45%",
+          "leaderName": "Airsculpt Technologies",
+          "leaderTicker": "AIRS",
+          "leaderChangePct": "+8.55%",
           "breadth": {
-            "advancers": 2,
-            "decliners": 3,
-            "unchanged": 0
+            "advancers": 13,
+            "decliners": 35,
+            "unchanged": 4
           }
         },
         {
-          "name": "太阳能",
-          "nameEn": "Solar",
-          "code": "BK2047",
-          "changePct": "-2.93%",
-          "leaderName": "SUNation Energy",
-          "leaderTicker": "SUNE",
-          "leaderChangePct": "+2.58%",
+          "name": "专业商务服务",
+          "nameEn": "Specialty Business Services",
+          "code": "BK2474",
+          "changePct": "-2.58%",
+          "leaderName": "BlackSky Technology",
+          "leaderTicker": "BKSY",
+          "leaderChangePct": "+7.34%",
+          "breadth": {
+            "advancers": 20,
+            "decliners": 23,
+            "unchanged": 4
+          }
+        },
+        {
+          "name": "人力资源与就业服务",
+          "nameEn": "Staffing & Employment Services",
+          "code": "BK2496",
+          "changePct": "-3.47%",
+          "leaderName": "凯利服务-B",
+          "leaderTicker": "KELYB",
+          "leaderChangePct": "+7.55%",
           "breadth": {
             "advancers": 3,
-            "decliners": 19,
-            "unchanged": 0
+            "decliners": 16,
+            "unchanged": 1
           }
         },
         {
-          "name": "地区银行",
-          "nameEn": "Banks - Regional",
-          "code": "BK2456",
-          "changePct": "-3.08%",
-          "leaderName": "Citizens Community Bancorp",
-          "leaderTicker": "CZWI",
-          "leaderChangePct": "+5.93%",
-          "breadth": {
-            "advancers": 188,
-            "decliners": 149,
-            "unchanged": 23
-          }
-        },
-        {
-          "name": "啤酒",
-          "nameEn": "Beverages - Brewers",
-          "code": "BK2427",
-          "changePct": "-4.64%",
-          "leaderName": "波斯顿啤酒",
-          "leaderTicker": "SAM",
-          "leaderChangePct": "-0.40%",
+          "name": "医疗设施REITs",
+          "nameEn": "REIT - Healthcare Facilities",
+          "code": "BK2503",
+          "changePct": "-4.73%",
+          "leaderName": "AH Realty Trust",
+          "leaderTicker": "AHRT",
+          "leaderChangePct": "0.00%",
           "breadth": {
             "advancers": 0,
-            "decliners": 8,
-            "unchanged": 0
+            "decliners": 17,
+            "unchanged": 1
           }
         },
         {
-          "name": "受监管自来水",
-          "nameEn": "Utilities - Regulated Water",
-          "code": "BK2458",
-          "changePct": "-8.33%",
-          "leaderName": "米德尔赛克斯水务公司",
-          "leaderTicker": "MSEX",
-          "leaderChangePct": "+0.29%",
+          "name": "油气炼制与销售",
+          "nameEn": "Oil & Gas Refining & Marketing",
+          "code": "BK2060",
+          "changePct": "-7.59%",
+          "leaderName": "AI OKTO",
+          "leaderTicker": "AIOK",
+          "leaderChangePct": "+46.51%",
           "breadth": {
-            "advancers": 2,
-            "decliners": 10,
-            "unchanged": 1
+            "advancers": 4,
+            "decliners": 15,
+            "unchanged": 0
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-27T08:28:53+08:00",
+      "fetchedAt": "2026-10-28T08:31:22+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,71 +176,71 @@
       },
       "top": [
         {
-          "name": "充电桩",
-          "nameEn": "EV Charging",
-          "code": "BK2547",
-          "changePct": "+4.46%",
-          "leaderName": "特斯拉",
-          "leaderTicker": "TSLA",
-          "leaderChangePct": "+5.21%",
+          "name": "稀土概念",
+          "nameEn": "Rare Earth Stocks",
+          "code": "BK23700",
+          "changePct": "+9.45%",
+          "leaderName": "Critical Metals",
+          "leaderTicker": "CRML",
+          "leaderChangePct": "+27.43%",
           "breadth": {
-            "advancers": 5,
-            "decliners": 4,
+            "advancers": 13,
+            "decliners": 1,
             "unchanged": 0
           }
         },
         {
-          "name": "新能源汽车",
-          "nameEn": "Electric Vehicles",
-          "code": "BK2568",
-          "changePct": "+4.04%",
-          "leaderName": "特斯拉",
-          "leaderTicker": "TSLA",
-          "leaderChangePct": "+5.21%",
+          "name": "加密矿企",
+          "nameEn": "Crypto Mining",
+          "code": "BK23921",
+          "changePct": "+7.26%",
+          "leaderName": "Cipher Digital",
+          "leaderTicker": "CIFR",
+          "leaderChangePct": "+9.99%",
           "breadth": {
-            "advancers": 5,
-            "decliners": 7,
+            "advancers": 13,
+            "decliners": 0,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "锂矿概念股",
+          "nameEn": "Lithium mining stocks",
+          "code": "BK23987",
+          "changePct": "+6.07%",
+          "leaderName": "Lithium Argentina AG",
+          "leaderTicker": "LAR",
+          "leaderChangePct": "+9.83%",
+          "breadth": {
+            "advancers": 6,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "英伟达持仓概念",
-          "nameEn": "NVIDIA Portfolio",
-          "code": "BK20882",
-          "changePct": "+3.90%",
-          "leaderName": "诺基亚",
-          "leaderTicker": "NOK",
-          "leaderChangePct": "+6.14%",
+          "name": "锂电池",
+          "nameEn": "Lithium Battery",
+          "code": "BK2552",
+          "changePct": "+5.97%",
+          "leaderName": "Enovix",
+          "leaderTicker": "ENVX",
+          "leaderChangePct": "+25.00%",
           "breadth": {
-            "advancers": 5,
-            "decliners": 2,
+            "advancers": 12,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "储能概念股",
-          "nameEn": "Energy Storage Concept",
-          "code": "BK23939",
-          "changePct": "+3.41%",
-          "leaderName": "GE Vernova",
-          "leaderTicker": "GEV",
-          "leaderChangePct": "+4.92%",
+          "name": "室温超导概念",
+          "nameEn": "Room-Temp Superconductors",
+          "code": "BK2147",
+          "changePct": "+5.30%",
+          "leaderName": "美国超导",
+          "leaderTicker": "AMSC",
+          "leaderChangePct": "+8.78%",
           "breadth": {
-            "advancers": 5,
-            "decliners": 3,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "存储概念",
-          "nameEn": "Data storage stock",
-          "code": "BK23925",
-          "changePct": "+3.30%",
-          "leaderName": "Rambus",
-          "leaderTicker": "RMBS",
-          "leaderChangePct": "+5.45%",
-          "breadth": {
-            "advancers": 7,
+            "advancers": 3,
             "decliners": 0,
             "unchanged": 0
           }
@@ -253,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-10-26",
-    "checked_at": "2026-10-27T08:28:58+08:00",
-    "request_id": null,
-    "groups_sha256": "0cfd2c5c79ff1a15a537afd0022b30e127722594525822bad62ff0c00ecdf0e1",
+    "expected_session_date": "2026-10-27",
+    "checked_at": "2026-10-28T08:31:34+08:00",
+    "request_id": "ah-20261028-20261028002655",
+    "groups_sha256": "d56cb8dac7282ebb363976b7af3f4dd40884ff113ea66290a2bdf58453d1c466",
     "errors": []
   }
 }
