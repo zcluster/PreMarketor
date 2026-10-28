@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261028-013638",
   "owner": "MarketAhead A/H 09:15 incremental review",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-28T02:01:00.000Z",
-  "heartbeat_at": "2026-10-28T01:51:00.000Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-28T01:54:00.000Z",
   "source_cutoff": "2026-10-28T00:26:55.340Z",
   "main_base_sha": "4b2cb47afbff9cf9e21c8afcc9debeb4a5e96cde",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -273,7 +273,40 @@
         "commit": "18e2545696dfc07e2546b02680445043ffb8c8ac",
         "committed_at": "2026-10-28T01:51:00.000Z",
         "ref_update": "force=false CAS succeeded"
-      }
+      },
+      "production": {
+        "verified_at": "2026-10-28T01:54:00.000Z",
+        "urls": [
+          "https://premarketor.com/",
+          "https://premarketor.com/history/?date=2026-10-28",
+          "https://premarketor.com/history/data/2026-10-28.json",
+          "https://premarketor.com/history/manifest.json"
+        ],
+        "statuses": {
+          "home": 200,
+          "archive": 200,
+          "history": 200,
+          "manifest": 200
+        },
+        "checks": {
+          "homepage_exact": true,
+          "homepage_time_exact": true,
+          "homepage_updated_exact": true,
+          "history_json_exact": true,
+          "manifest_json_exact": true,
+          "manifest_top": true,
+          "bilingual": true,
+          "non_empty": true,
+          "github_remote_readback_exact": true,
+          "us_protected": true
+        },
+        "counts": {
+          "major": 12,
+          "overnight": 3,
+          "cards": 4
+        }
+      },
+      "completed_at": "2026-10-28T01:54:00.000Z"
     }
   },
   "pending_increment": [],
@@ -298,8 +331,11 @@
     "incremental_review": {
       "started_at": "2026-10-28T01:36:38.010Z",
       "research_completed_at": "2026-10-28T01:40:00.000Z",
-      "candidate_validated_at": "2026-10-28T01:46:00.000Z"
+      "candidate_validated_at": "2026-10-28T01:46:00.000Z",
+      "deployment_verified_at": "2026-10-28T01:54:00.000Z",
+      "completed_at": "2026-10-28T01:54:00.000Z"
     }
   },
-  "error": null
+  "error": null,
+  "completed_at": "2026-10-28T01:54:00.000Z"
 }
