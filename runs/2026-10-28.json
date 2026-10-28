@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261028-013638",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-28T01:46:38.010Z",
-  "heartbeat_at": "2026-10-28T01:36:38.010Z",
+  "stage": "generation",
+  "lease_until": "2026-10-28T01:50:00.000Z",
+  "heartbeat_at": "2026-10-28T01:40:00.000Z",
   "source_cutoff": "2026-10-28T00:26:55.340Z",
   "main_base_sha": "4b2cb47afbff9cf9e21c8afcc9debeb4a5e96cde",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -176,6 +176,51 @@
         "manifest_sha": "9b9db74492251208c1dadc4f067db4bf7c85242b",
         "rankings_sha": "d7c1c5cc6c05a4a4ef6723baa4606c2fe25d83de",
         "akshare_sha": "7937a05f2af483173345425db676a57eedf5ff6d"
+      },
+      "research": {
+        "completed_at": "2026-10-28T01:40:00.000Z",
+        "policy_and_major_announcement_increment_count": 0,
+        "opening_quotes": {
+          "captured_at": "2026-10-28T09:38:00+08:00 approx",
+          "source": "Eastmoney delayed quote JSON via cloud browser",
+          "indices": [
+            "上证 3660.16 +0.33%",
+            "创业板 2570.95 +0.89%",
+            "恒指 23101.19 +0.26%",
+            "恒科 3842.47 +1.11%"
+          ],
+          "candidates": [
+            "沪电股份 102.85 +3.68%",
+            "恒瑞医药 47.77 +4.87%",
+            "东山精密A 102.65 +1.54%",
+            "东山精密H 82.05 -5.47%",
+            "五粮液 72.00 -4.48%"
+          ]
+        },
+        "material_changes": [
+          "A/H major indices moved from prior-session weak breadth to synchronized positive opening",
+          "沪电股份 and 恒瑞医药 received positive post-filing price confirmation",
+          "东山精密 H-share debut traded 5.47% below offer price despite A-share strength",
+          "五粮液 negative earnings signal received further negative price confirmation"
+        ],
+        "decisions": [
+          {
+            "ticker": "SZ.002463",
+            "decision": "bullish_candidate"
+          },
+          {
+            "ticker": "SH.600276/HK.01276",
+            "decision": "bullish_candidate"
+          },
+          {
+            "ticker": "SZ.002384/HK.02384",
+            "decision": "avoid"
+          },
+          {
+            "ticker": "SZ.000858",
+            "decision": "avoid"
+          }
+        ]
       }
     }
   },
@@ -199,7 +244,8 @@
       "completed_at": "2026-10-28T00:37:46.193Z"
     },
     "incremental_review": {
-      "started_at": "2026-10-28T01:36:38.010Z"
+      "started_at": "2026-10-28T01:36:38.010Z",
+      "research_completed_at": "2026-10-28T01:40:00.000Z"
     }
   },
   "error": null
