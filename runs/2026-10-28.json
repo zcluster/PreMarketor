@@ -1,10 +1,10 @@
 {
-  "run_id": "ah-20261028-20261028002655",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "completed",
-  "lease_until": null,
-  "heartbeat_at": "2026-10-28T00:37:46.193Z",
+  "run_id": "ah-review-20261028-013638",
+  "owner": "MarketAhead A/H 09:15 incremental review",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-10-28T01:46:38.010Z",
+  "heartbeat_at": "2026-10-28T01:36:38.010Z",
   "source_cutoff": "2026-10-28T00:26:55.340Z",
   "main_base_sha": "4b2cb47afbff9cf9e21c8afcc9debeb4a5e96cde",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -162,6 +162,21 @@
       "homepage_url": "https://premarketor.com/",
       "archive_url": "https://premarketor.com/history/?date=2026-10-28",
       "archive_json_url": "https://premarketor.com/history/data/2026-10-28.json"
+    },
+    "incremental_review": {
+      "started_at": "2026-10-28T01:36:38.010Z",
+      "source_cutoff": "2026-10-28T00:26:55.340Z",
+      "baseline_commit": "8a3e18b7404066784d03a7ab64eb12be6fb41568",
+      "rules_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "scope": "evidence after first-run cutoff plus missed material evidence; no duplicate full generation",
+      "inputs": {
+        "state_head": "dd26038053080d11d4a4cdd02fb248118557c203",
+        "index_sha": "e0e067144f044c7025d63e65d2f83ad43ee343a2",
+        "history_sha": "ccfd552ee8c74780a99fd8ff00968fb6c534a8c0",
+        "manifest_sha": "9b9db74492251208c1dadc4f067db4bf7c85242b",
+        "rankings_sha": "d7c1c5cc6c05a4a4ef6723baa4606c2fe25d83de",
+        "akshare_sha": "7937a05f2af483173345425db676a57eedf5ff6d"
+      }
     }
   },
   "pending_increment": [],
@@ -182,6 +197,9 @@
     "deploying": {
       "started_at": "2026-10-28T00:36:37.993Z",
       "completed_at": "2026-10-28T00:37:46.193Z"
+    },
+    "incremental_review": {
+      "started_at": "2026-10-28T01:36:38.010Z"
     }
   },
   "error": null
