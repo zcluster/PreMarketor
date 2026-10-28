@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261028-013638",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "creating_candidate_commit",
-  "lease_until": "2026-10-28T01:56:00.000Z",
-  "heartbeat_at": "2026-10-28T01:46:00.000Z",
+  "stage": "main_ref_update",
+  "lease_until": "2026-10-28T01:59:00.000Z",
+  "heartbeat_at": "2026-10-28T01:49:00.000Z",
   "source_cutoff": "2026-10-28T00:26:55.340Z",
   "main_base_sha": "4b2cb47afbff9cf9e21c8afcc9debeb4a5e96cde",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -261,6 +261,13 @@
           "manifestTop": true,
           "noBad": true
         }
+      },
+      "candidate_commit": "18e2545696dfc07e2546b02680445043ffb8c8ac",
+      "candidate_tree": "99a6fedacc843fc431213fd10ff96683f822168a",
+      "candidate_blobs": {
+        "index": "f71666e686ab74eacd2cec47f44c568b36872602",
+        "history": "39ae2b18de74201a528f27df10298144ee0f0357",
+        "manifest": "e59656551b4695aa89f7604b0fcc1d52ad4580c5"
       }
     }
   },
