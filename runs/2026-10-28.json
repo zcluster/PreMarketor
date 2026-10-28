@@ -2,9 +2,9 @@
   "run_id": "ah-20261028-20261028002655",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "external_research",
-  "lease_until": "2026-10-28T00:41:18.974Z",
-  "heartbeat_at": "2026-10-28T00:31:18.974Z",
+  "stage": "generation",
+  "lease_until": "2026-10-28T00:45:31.287Z",
+  "heartbeat_at": "2026-10-28T00:35:31.287Z",
   "source_cutoff": "2026-10-28T00:26:55.340Z",
   "main_base_sha": "4b2cb47afbff9cf9e21c8afcc9debeb4a5e96cde",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -23,16 +23,16 @@
     "research": {
       "started_at": "2026-10-28T00:28:27.922Z",
       "ranking_gate": {
-        "status": "requested",
-        "snapshot_sha": "d14cd37ee6619d4b09c7671509950feac4ff9da8",
-        "expected_session_date": "2026-10-26",
-        "required_session_date": "2026-10-27",
+        "status": "ready",
+        "snapshot_sha": "dc24fa9153407a01a59a0e8fd308ec949c4d5e50",
+        "attempted_at": "2026-10-28T08:31:22+08:00",
+        "expected_session_date": "2026-10-27",
         "request_id": "ah-20261028-20261028002655",
-        "requested_at": "2026-10-28T00:30:58.878Z",
         "request_commit": "ee164271e74bedefd13a97f287cf9ee2047115dd",
-        "request_branch_prior_head": "8f27351be4d96c5dc9abcb5d111f0da3ea9e82a7",
-        "main_head_at_request": "4b2cb47afbff9cf9e21c8afcc9debeb4a5e96cde",
-        "main_tree_at_request": "81a79c55e86a589ff0488a5814edd8117074bb74"
+        "workflow_run_id": 40609277219,
+        "workflow_conclusion": "success",
+        "industry_rows": 10,
+        "concept_rows": 5
       },
       "akshare": {
         "sha": "7937a05f2af483173345425db676a57eedf5ff6d",
@@ -48,7 +48,83 @@
         "CSRC Oct 27",
         "Eastmoney/Shanghai Securities/First Financial Oct 27 announcements",
         "HKEX Oct 27 results"
-      ]
+      ],
+      "candidates": [
+        {
+          "ticker": "SZ.002463",
+          "name": "沪电股份",
+          "decision": "conditional_watch",
+          "price": "99.20 CNY, 2026-10-27 close",
+          "reason": "Q3 revenue +90.02%, profit +160.77%; OCF -6.61%; filing after close"
+        },
+        {
+          "ticker": "SH.600276/HK.01276",
+          "name": "恒瑞医药",
+          "decision": "conditional_watch",
+          "price": "45.55 CNY, 2026-10-27 A close",
+          "reason": "Q3 revenue +20.55%, profit +88.92%; pre/post-filing confirmation pending"
+        },
+        {
+          "ticker": "SZ.002384/HK.02384",
+          "name": "东山精密",
+          "decision": "conditional_watch",
+          "price": "121.59 CNY prior close; H offer 86.80 HKD",
+          "reason": "H-share listing; first-day and cross-market confirmation required"
+        },
+        {
+          "ticker": "SZ.000858",
+          "name": "五粮液",
+          "decision": "avoid",
+          "price": "75.38 CNY, 2026-10-27 close",
+          "reason": "Q3 revenue -37.68%, profit -48.25%; nine-month OCF -99.83%"
+        }
+      ],
+      "major_theme_decisions": [
+        {
+          "theme": "Computer Hardware",
+          "decision": "conditional_watch",
+          "candidate": "SZ.002463"
+        },
+        {
+          "theme": "Uranium/Rare Earth/Lithium",
+          "decision": "no_candidate",
+          "reason": "sector watch only pending A/H opening confirmation"
+        },
+        {
+          "theme": "Crypto Mining/Room-Temp Superconductors",
+          "decision": "no_candidate",
+          "reason": "no sufficiently direct A/H business evidence"
+        },
+        {
+          "theme": "Refining & Marketing",
+          "decision": "avoid",
+          "reason": "negative sector signal; no long packaging"
+        }
+      ],
+      "futures": {
+        "captured_at": "2026-10-28T08:00:00+08:00 approx",
+        "delay": "10 minutes",
+        "dow": "+0.01%",
+        "sp500": "+0.03%",
+        "nasdaq100": "+0.09%",
+        "wti": "$100.43 +0.53% at approx 08:08 CST"
+      }
+    },
+    "generation": {
+      "generated_at": "2026-10-28 08:35 CST",
+      "title": "AI硬件与资源链领涨外盘，A/H弱宽度等待政策、财报与开盘价格验证",
+      "cn_html_length": 10096,
+      "en_html_length": 14929,
+      "counts": {
+        "assets": 8,
+        "news_items": 15,
+        "stock_cards": 4,
+        "sector_tiles": 4,
+        "logic_steps": 4,
+        "risk_items": 4
+      },
+      "bilingual_structure": true,
+      "protected_markers": true
     }
   },
   "pending_increment": [],
@@ -57,6 +133,10 @@
     "rules_and_inputs": {
       "started_at": "2026-10-28T00:25:56.000Z",
       "completed_at": "2026-10-28T00:26:55.340Z"
+    },
+    "external_research": {
+      "started_at": "2026-10-28T00:28:27.922Z",
+      "completed_at": "2026-10-28T00:35:31.287Z"
     }
   },
   "error": null
