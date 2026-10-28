@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261028-013638",
   "owner": "MarketAhead A/H 09:15 incremental review",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-28T01:50:00.000Z",
-  "heartbeat_at": "2026-10-28T01:40:00.000Z",
+  "stage": "creating_candidate_commit",
+  "lease_until": "2026-10-28T01:56:00.000Z",
+  "heartbeat_at": "2026-10-28T01:46:00.000Z",
   "source_cutoff": "2026-10-28T00:26:55.340Z",
   "main_base_sha": "4b2cb47afbff9cf9e21c8afcc9debeb4a5e96cde",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -221,6 +221,46 @@
             "decision": "avoid"
           }
         ]
+      },
+      "candidate": {
+        "validated_at": "2026-10-28T01:46:00.000Z",
+        "display_time": "2026-10-28 09:43 CST",
+        "files": [
+          "index.html",
+          "history/data/2026-10-28.json",
+          "history/manifest.json"
+        ],
+        "checks": {
+          "outside": true,
+          "usBrief": true,
+          "usTime": true,
+          "usUpdated": true,
+          "panelsCn": true,
+          "panelsEn": true,
+          "indexHistory": true,
+          "zhRoot": true,
+          "enRoot": true,
+          "majorZh": 12,
+          "majorEn": 12,
+          "overnightZh": 3,
+          "overnightEn": 3,
+          "cardsZh": 4,
+          "cardsEn": 4,
+          "assetsZh": 8,
+          "assetsEn": 8,
+          "keywordsZh": 12,
+          "keywordsEn": 12,
+          "sectorsZh": 4,
+          "sectorsEn": 4,
+          "logicZh": 4,
+          "logicEn": 4,
+          "risksZh": 4,
+          "risksEn": 4,
+          "historyEntries": 1,
+          "ahEntries": 1,
+          "manifestTop": true,
+          "noBad": true
+        }
       }
     }
   },
@@ -245,7 +285,8 @@
     },
     "incremental_review": {
       "started_at": "2026-10-28T01:36:38.010Z",
-      "research_completed_at": "2026-10-28T01:40:00.000Z"
+      "research_completed_at": "2026-10-28T01:40:00.000Z",
+      "candidate_validated_at": "2026-10-28T01:46:00.000Z"
     }
   },
   "error": null
