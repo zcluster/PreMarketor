@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261029-20261029002720",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-29T00:42:04.393Z",
-  "heartbeat_at": "2026-10-29T00:32:04.393Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-29T00:33:40.890Z",
   "source_cutoff": "2026-10-29T00:27:20.276Z",
   "main_base_sha": "2a4e5fd989f814dd936ef289511332456753c384",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -143,6 +143,44 @@
         "historyEntries": 1,
         "manifestTop": true
       }
-    }
-  }
+    },
+    "publish": {
+      "base_main_sha": "c6558488d159d8b6056bf6e5c656e14b65026095",
+      "commit_sha": "b9fba3b7e8bf50f4edfddadd5b2efc679a5e417e",
+      "tree_sha": "e94aeaef0c3a529d8f354f06727f6923a6294105",
+      "blobs": {
+        "index": "adab9c352bd8cd9e5d1082a947249e692eb22876",
+        "history": "5288bba73f577c36b5126187f2c3889eedc1bf58",
+        "manifest": "baaf5e591c818c967415168a16af49b87a355a80"
+      },
+      "force": false,
+      "ref_update": "success",
+      "committed_at": "2026-10-29T00:33:40.890Z",
+      "production_verified": true,
+      "production_verified_at": "2026-10-29T00:33:40.890Z",
+      "production": {
+        "homepage_status": 200,
+        "history_page_status": 200,
+        "history_json_status": 200,
+        "manifest_status": 200,
+        "homepage_exact_commit": true,
+        "history_exact_commit": true,
+        "manifest_exact_commit": true,
+        "ah_time": "2026-10-29 08:31 CST",
+        "cards_cn": 5,
+        "cards_en": 5,
+        "panel_rows_cn": 10,
+        "panel_rows_en": 10,
+        "industry_bottom_unavailable": true,
+        "empty_state": false,
+        "us_markers_unchanged": true
+      },
+      "homepage_url": "https://premarketor.com/",
+      "archive_url": "https://premarketor.com/history/?date=2026-10-29",
+      "archive_json_url": "https://premarketor.com/history/data/2026-10-29.json"
+    },
+    "duration_seconds": 381
+  },
+  "published_commit": "b9fba3b7e8bf50f4edfddadd5b2efc679a5e417e",
+  "error": null
 }
