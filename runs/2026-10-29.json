@@ -1,0 +1,30 @@
+{
+  "run_id": "ah-20261029-20261029002720",
+  "owner": "发布 MarketAhead A/H 早报",
+  "status": "running",
+  "stage": "ranking_refresh",
+  "lease_until": "2026-10-29T00:37:20.276Z",
+  "heartbeat_at": "2026-10-29T00:27:20.276Z",
+  "source_cutoff": "2026-10-29T00:27:20.276Z",
+  "main_base_sha": "2a4e5fd989f814dd936ef289511332456753c384",
+  "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+  "evidence": {
+    "inputs": {
+      "main_head": "2a4e5fd989f814dd936ef289511332456753c384",
+      "state_head": "8a2a1deb6d1e75232d43e0d4979ed6008110f099",
+      "rules_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "index_sha": "bbd00bd9dc80585867624b0a9e9fef9aff5ea6f8",
+      "manifest_sha": "d1c65cfe84322c8a466864eb13421ee43d4e55cc",
+      "rankings_sha": "d7c1c5cc6c05a4a4ef6723baa4606c2fe25d83de",
+      "akshare_sha": "e6242638f43d94d1c322dde02f57f46573088f09",
+      "today_history_exists": false,
+      "read_at": "2026-10-29T00:27:20.276Z"
+    },
+    "research": {
+      "ranking_gate": {
+        "status": "refresh_requested",
+        "expected_session_date": "2026-10-28"
+      }
+    }
+  }
+}
