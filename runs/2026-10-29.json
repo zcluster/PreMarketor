@@ -2,9 +2,9 @@
   "run_id": "ah-20261029-20261029002720",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-10-29T00:39:08.091Z",
-  "heartbeat_at": "2026-10-29T00:29:08.091Z",
+  "stage": "generation",
+  "lease_until": "2026-10-29T00:42:04.393Z",
+  "heartbeat_at": "2026-10-29T00:32:04.393Z",
   "source_cutoff": "2026-10-29T00:27:20.276Z",
   "main_base_sha": "2a4e5fd989f814dd936ef289511332456753c384",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -21,13 +21,128 @@
       "read_at": "2026-10-29T00:27:20.276Z"
     },
     "research": {
+      "started_at": "2026-10-29T00:29:08.091Z",
+      "completed_at": "2026-10-29T00:32:04.393Z",
       "ranking_gate": {
-        "status": "waiting",
+        "status": "ready",
+        "snapshot_sha": "814dd2eb63a5c7e563407c389af9e2de84e743f9",
+        "attempted_at": "2026-10-29T08:28:35+08:00",
         "expected_session_date": "2026-10-28",
         "request_id": "ah-20261029-20261029002720",
-        "request_commit": "f7d12cff68499b8442406691fd56ccf19d419fda"
+        "request_commit": "f7d12cff68499b8442406691fd56ccf19d419fda",
+        "industry_rows": 5,
+        "industry_bottom_unavailable": true,
+        "industry_error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\"",
+        "concept_rows": 5
       },
-      "started_at": "2026-10-29T00:29:08.091Z"
+      "akshare": {
+        "sha": "e6242638f43d94d1c322dde02f57f46573088f09",
+        "fetched_at": "2026-10-28T13:44:09+08:00",
+        "A_market_date": "2026-10-28",
+        "A_phase": "intraday_snapshot",
+        "A_breadth": "4126/1210/156 median +1.286%",
+        "HK_phase": "intraday_snapshot",
+        "HK_breadth": "891/754/1157 median 0.00%"
+      },
+      "sources": [
+        "NDRC 2026-10-28",
+        "MIIT 2026-10-28",
+        "CNINFO/SSE 2026-10-28",
+        "HKEX 2026-10-28",
+        "Reuters/AP 2026-10-28 to 2026-10-29",
+        "public delayed quote discovery through 2026-10-28 close"
+      ],
+      "candidates": [
+        {
+          "ticker": "SH.688525",
+          "name": "佰维存储",
+          "decision": "conditional_watch",
+          "price": "164.00 CNY, 2026-10-28 close",
+          "reason": "Q3 profit growth and storage mapping; nine-month OCF deeply negative"
+        },
+        {
+          "ticker": "SH.600487",
+          "name": "亨通光电",
+          "decision": "conditional_watch",
+          "price": "48.47 CNY, 2026-10-28 close",
+          "reason": "Q3 profit +299.10%, operating cash flow +70.57%"
+        },
+        {
+          "ticker": "SZ.300394",
+          "name": "天孚通信",
+          "decision": "conditional_watch",
+          "price": "201.43 CNY, 2026-10-28 close",
+          "reason": "Q3 profit +55.30%, prior-day +6.79% raises chase risk"
+        },
+        {
+          "ticker": "SH.601857/HK.00857",
+          "name": "中国石油股份",
+          "decision": "conditional_watch",
+          "price": "9.95 HKD, 2026-10-28 H close",
+          "reason": "nine-month profit +21.9%, H-share price -1.09% awaiting confirmation"
+        },
+        {
+          "ticker": "SH.600547/HK.01787",
+          "name": "山东黄金",
+          "decision": "avoid",
+          "price": "24.99 CNY / 17.03 HKD, 2026-10-28 close",
+          "reason": "Q3 attributable loss and nine-month profit -19.60%"
+        }
+      ],
+      "futures": {
+        "captured_at": "2026-10-29 early Asia",
+        "sp500": "-0.4%",
+        "nasdaq100": "-0.9%",
+        "wti": "about $101.95",
+        "source": "public market reports"
+      }
+    },
+    "generation": {
+      "generated_at": "2026-10-29 08:31 CST",
+      "title": "Fed暂停但科技财报分化，存储与光通信业绩映射等待A/H开盘确认",
+      "cn_html_length": 10742,
+      "en_html_length": 16280,
+      "counts": {
+        "assets": 8,
+        "major_news": 11,
+        "overnight_items": 3,
+        "stock_cards": 5,
+        "sector_tiles": 4,
+        "logic_steps": 4,
+        "risk_items": 5,
+        "panel_rows": 10
+      },
+      "bilingual_structure": true,
+      "protected_markers": true,
+      "checks": {
+        "display": "2026-10-29 08:31 CST",
+        "rootCn": true,
+        "rootEn": true,
+        "assetsCn": 8,
+        "assetsEn": 8,
+        "majorCn": 11,
+        "majorEn": 11,
+        "overnightCn": 3,
+        "overnightEn": 3,
+        "cardsCn": 5,
+        "cardsEn": 5,
+        "sectorsCn": 4,
+        "sectorsEn": 4,
+        "logicCn": 4,
+        "logicEn": 4,
+        "risksCn": 5,
+        "risksEn": 5,
+        "panelRowsCn": 10,
+        "panelRowsEn": 10,
+        "panelDownCn": 0,
+        "panelDownEn": 0,
+        "outsideUnchanged": true,
+        "usBriefUnchanged": true,
+        "usTimeUnchanged": true,
+        "usUpdatedUnchanged": true,
+        "historyEntries": 1,
+        "manifestTop": true
+      }
     }
   }
 }
