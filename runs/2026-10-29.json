@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261029-021033",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-10-29T02:26:30.000Z",
-  "heartbeat_at": "2026-10-29T02:16:30.000Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-10-29T02:29:00.000Z",
+  "heartbeat_at": "2026-10-29T02:19:00.000Z",
   "source_cutoff": "2026-10-29T00:27:20.276Z",
   "main_base_sha": "6d4d0bf5292195b9be75227f478b6fdd81c37a6a",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -224,6 +224,33 @@
         }
       ],
       "decision": "Opening weakness materially invalidates the first-run technology-risk baseline and candidate statuses; update required."
+    },
+    "validation": {
+      "main": "6d4d0bf5292195b9be75227f478b6fdd81c37a6a",
+      "cn_root": true,
+      "en_root": true,
+      "cn_news": 11,
+      "en_news": 11,
+      "cn_overnight": 3,
+      "en_overnight": 3,
+      "cn_assets": 8,
+      "en_assets": 8,
+      "cn_keywords": 12,
+      "en_keywords": 12,
+      "cn_cards": 5,
+      "en_cards": 5,
+      "cn_logic": 4,
+      "en_logic": 4,
+      "cn_risk": 5,
+      "en_risk": 5,
+      "outside": true,
+      "us_brief": true,
+      "us_time": true,
+      "us_updated": true,
+      "history_exact": true,
+      "history_ah": 1,
+      "manifest_records": 51,
+      "forbidden": 0
     }
   },
   "published_commit": "b9fba3b7e8bf50f4edfddadd5b2efc679a5e417e",
@@ -237,6 +264,9 @@
     },
     "hard_validation": {
       "started_at": "2026-10-29T02:16:30.000Z"
+    },
+    "candidate_commit": {
+      "started_at": "2026-10-29T02:19:00.000Z"
     }
   },
   "pending_increment": []
