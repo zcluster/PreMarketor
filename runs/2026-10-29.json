@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261029-021033",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-29T02:39:00.000Z",
-  "heartbeat_at": "2026-10-29T02:29:00.000Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-29T02:31:00.000Z",
   "source_cutoff": "2026-10-29T00:27:20.276Z",
   "main_base_sha": "6d4d0bf5292195b9be75227f478b6fdd81c37a6a",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -307,6 +307,28 @@
         "manifest": "67fe47c8fca7ab207b0e83c7714727ce0d3c3ca0"
       },
       "force": false
+    },
+    "production_verification": {
+      "verified_at": "2026-10-29 10:31 CST",
+      "github_remote_exact": true,
+      "homepage_status": 200,
+      "history_json_status": 200,
+      "manifest_status": 200,
+      "archive_rendered": true,
+      "bilingual_rendered": true,
+      "ah_time": "2026-10-29 10:16 CST",
+      "major_news_cn": 11,
+      "major_news_en": 11,
+      "overnight_cn": 3,
+      "overnight_en": 3,
+      "stock_cards_cn": 5,
+      "stock_cards_en": 5,
+      "currency_values_visible": true,
+      "us_markers_unchanged": true,
+      "homepage_url": "https://premarketor.com/",
+      "archive_url": "https://premarketor.com/history/?date=2026-10-29",
+      "content_commit": "e689ffe808c584ccdcd9d1f1282290d4e8c33aec",
+      "final_commit": "f5a9fb735cac669964b8a7acdec50c28ddd8b246"
     }
   },
   "published_commit": "f5a9fb735cac669964b8a7acdec50c28ddd8b246",
@@ -329,6 +351,9 @@
     },
     "deployment_verification": {
       "started_at": "2026-10-29T02:22:00.000Z"
+    },
+    "completed": {
+      "at": "2026-10-29T02:31:00.000Z"
     }
   },
   "pending_increment": [],
