@@ -1,6 +1,7 @@
 {
-  "request_id": "ah-20261028-20261028002655",
-  "requested_at": "2026-10-28T00:30:58.878Z",
-  "expected_session_date": "2026-10-27",
-  "requester": "AH"
+  "request_id": "ah-20261029-20261029002720",
+  "requester": "A/H first run",
+  "requested_at": "2026-10-29T00:28:07.099Z",
+  "expected_session_date": "2026-10-28",
+  "reason": "data/us-rankings-latest.json does not cover the latest completed US session required for the 2026-10-29 A/H brief"
 }
