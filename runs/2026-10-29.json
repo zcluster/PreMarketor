@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261029-021033",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-29T02:20:33.000Z",
-  "heartbeat_at": "2026-10-29T02:10:33.000Z",
+  "stage": "generation",
+  "lease_until": "2026-10-29T02:24:30.000Z",
+  "heartbeat_at": "2026-10-29T02:14:30.000Z",
   "source_cutoff": "2026-10-29T00:27:20.276Z",
   "main_base_sha": "6d4d0bf5292195b9be75227f478b6fdd81c37a6a",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -179,13 +179,62 @@
       "archive_url": "https://premarketor.com/history/?date=2026-10-29",
       "archive_json_url": "https://premarketor.com/history/data/2026-10-29.json"
     },
-    "duration_seconds": 381
+    "duration_seconds": 381,
+    "incremental_review": {
+      "source_cutoff": "2026-10-29T00:27:20.276Z",
+      "reviewed_at": "2026-10-29 10:14 CST",
+      "material": true,
+      "items": [
+        {
+          "type": "opening_market",
+          "source": "Eastmoney cloud quote API",
+          "captured_at": "2026-10-29 10:12 CST",
+          "data": {
+            "shanghai": "-0.77%",
+            "chinext": "-3.58%",
+            "hsi": "+0.07%",
+            "hstech": "-1.77%"
+          }
+        },
+        {
+          "type": "candidate_prices",
+          "source": "Eastmoney cloud quote API",
+          "captured_at": "2026-10-29 10:12 CST",
+          "data": {
+            "baowei": "-14.01%",
+            "hengtong": "-5.05%",
+            "tianfu": "-18.54%",
+            "petrochina_a": "+0.83%",
+            "petrochina_h": "+3.92%",
+            "shandong_gold_a": "-2.48%",
+            "shandong_gold_h": "-4.08%"
+          }
+        },
+        {
+          "type": "omitted_hk_announcement",
+          "source": "HKEX",
+          "released_at": "2026-10-29 07:30 CST",
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1029/2026102900053.pdf",
+          "data": {
+            "issuer": "Innovent Biologics",
+            "q3_product_revenue": "over RMB4.7bn",
+            "yoy": "over +40%",
+            "price_feedback": "+0.18%"
+          }
+        }
+      ],
+      "decision": "Opening weakness materially invalidates the first-run technology-risk baseline and candidate statuses; update required."
+    }
   },
   "published_commit": "b9fba3b7e8bf50f4edfddadd5b2efc679a5e417e",
   "error": null,
   "stage_timings": {
     "incremental_research": {
       "started_at": "2026-10-29T02:10:33.000Z"
+    },
+    "generation": {
+      "started_at": "2026-10-29T02:14:30.000Z"
     }
-  }
+  },
+  "pending_increment": []
 }
