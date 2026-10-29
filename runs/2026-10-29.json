@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261029-021033",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-10-29T02:36:00.000Z",
-  "heartbeat_at": "2026-10-29T02:26:00.000Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-10-29T02:37:00.000Z",
+  "heartbeat_at": "2026-10-29T02:27:00.000Z",
   "source_cutoff": "2026-10-29T00:27:20.276Z",
   "main_base_sha": "6d4d0bf5292195b9be75227f478b6fdd81c37a6a",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -267,6 +267,27 @@
       "detected_at": "2026-10-29T02:26:00.000Z",
       "issue": "Leading decimal prices 46.02 and 10.34 and sentence-leading 10:12 were stripped by existing render-time title cleaner",
       "resolution": "Prefix short prices with currency units and sentence time with 截至/At; rerun all validations."
+    },
+    "dom_correction_validation": {
+      "cn_news": 11,
+      "en_news": 11,
+      "cn_overnight": 3,
+      "en_overnight": 3,
+      "assets": [
+        8,
+        8
+      ],
+      "keywords": [
+        12,
+        12
+      ],
+      "cards": [
+        5,
+        5
+      ],
+      "history_exact": true,
+      "currency_visible": true,
+      "time_prefixed": true
     }
   },
   "published_commit": "e689ffe808c584ccdcd9d1f1282290d4e8c33aec",
