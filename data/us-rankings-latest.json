@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-28T08:32:24+08:00",
-  "status": "ok",
+  "attemptedAt": "2026-10-29T08:28:35+08:00",
+  "status": "partial",
   "groups": {
     "industry": {
-      "status": "ok",
+      "status": "partial",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-28T08:32:24+08:00",
+      "fetchedAt": "2026-10-29T08:28:35+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,55 +17,117 @@
       },
       "top": [
         {
-          "name": "计算机硬件",
-          "nameEn": "Computer Hardware",
-          "code": "BK2492",
-          "changePct": "+5.53%",
-          "leaderName": "Braiin",
-          "leaderTicker": "BRAI",
-          "leaderChangePct": "+56.13%",
+          "name": "电气设备及零件",
+          "nameEn": "Electrical Equipment & Parts",
+          "code": "BK2493",
+          "changePct": "+7.59%",
+          "leaderName": "Ultralife",
+          "leaderTicker": "ULBI",
+          "leaderChangePct": "+145.44%",
           "breadth": {
-            "advancers": 36,
-            "decliners": 7,
+            "advancers": 42,
+            "decliners": 10,
             "unchanged": 3
           }
         },
         {
-          "name": "铀",
-          "nameEn": "Uranium",
-          "code": "BK2430",
-          "changePct": "+5.45%",
-          "leaderName": "Centrus Energy",
-          "leaderTicker": "LEU",
-          "leaderChangePct": "+11.15%",
+          "name": "油气钻探",
+          "nameEn": "Oil & Gas Drilling",
+          "code": "BK2274",
+          "changePct": "+4.15%",
+          "leaderName": "纳伯斯实业",
+          "leaderTicker": "NBR",
+          "leaderChangePct": "+10.51%",
           "breadth": {
-            "advancers": 12,
-            "decliners": 0,
+            "advancers": 9,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "电子元件",
+          "nameEn": "Electronic Components",
+          "code": "BK2072",
+          "changePct": "+3.58%",
+          "leaderName": "伟创力",
+          "leaderTicker": "FLEX",
+          "leaderChangePct": "+11.61%",
+          "breadth": {
+            "advancers": 32,
+            "decliners": 12,
             "unchanged": 1
           }
         },
         {
-          "name": "白银",
-          "nameEn": "Silver",
-          "code": "BK2093",
-          "changePct": "+4.87%",
-          "leaderName": "Highlander Silver",
-          "leaderTicker": "HSLV",
-          "leaderChangePct": "+7.06%",
+          "name": "半导体设备与材料",
+          "nameEn": "Semiconductor Equipment & Materials",
+          "code": "BK2016",
+          "changePct": "+3.23%",
+          "leaderName": "AXT Inc",
+          "leaderTicker": "AXTI",
+          "leaderChangePct": "+10.56%",
           "breadth": {
-            "advancers": 6,
+            "advancers": 24,
+            "decliners": 7,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "建筑工程",
+          "nameEn": "Engineering & Construction",
+          "code": "BK2033",
+          "changePct": "+2.80%",
+          "leaderName": "Axonex AI",
+          "leaderTicker": "AXNX",
+          "leaderChangePct": "+17.49%",
+          "breadth": {
+            "advancers": 36,
+            "decliners": 12,
+            "unchanged": 4
+          }
+        }
+      ],
+      "bottom": [],
+      "missing": [
+        "bottom5"
+      ],
+      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
+    },
+    "concept": {
+      "status": "ok",
+      "source": "Moomoo Sparks",
+      "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
+      "httpStatus": 200,
+      "fetchedAt": "2026-10-29T08:28:35+08:00",
+      "pagination": {
+        "page": 0,
+        "pageSize": 24,
+        "pageCount": 5,
+        "total": 118
+      },
+      "top": [
+        {
+          "name": "存储概念",
+          "nameEn": "Data storage stock",
+          "code": "BK23925",
+          "changePct": "+8.77%",
+          "leaderName": "SK海力士",
+          "leaderTicker": "SKHY",
+          "leaderChangePct": "+13.30%",
+          "breadth": {
+            "advancers": 7,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "焦炭",
-          "nameEn": "Coking Coal",
-          "code": "BK2505",
-          "changePct": "+4.72%",
-          "leaderName": "Ramaco Resources-B",
-          "leaderTicker": "METCB",
-          "leaderChangePct": "+12.00%",
+          "name": "医药外包概念",
+          "nameEn": "CRO",
+          "code": "BK2528",
+          "changePct": "+5.40%",
+          "leaderName": "Icon PLC",
+          "leaderTicker": "ICLR",
+          "leaderChangePct": "+17.04%",
           "breadth": {
             "advancers": 5,
             "decliners": 0,
@@ -73,176 +135,45 @@
           }
         },
         {
-          "name": "铝",
-          "nameEn": "Aluminum",
-          "code": "BK2211",
-          "changePct": "+4.59%",
-          "leaderName": "凯撒铝业",
-          "leaderTicker": "KALU",
-          "leaderChangePct": "+10.22%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        }
-      ],
-      "bottom": [
-        {
-          "name": "医疗保健设施",
-          "nameEn": "Medical Care Facilities",
-          "code": "BK2486",
-          "changePct": "-2.45%",
-          "leaderName": "Airsculpt Technologies",
-          "leaderTicker": "AIRS",
-          "leaderChangePct": "+8.55%",
-          "breadth": {
-            "advancers": 13,
-            "decliners": 35,
-            "unchanged": 4
-          }
-        },
-        {
-          "name": "专业商务服务",
-          "nameEn": "Specialty Business Services",
-          "code": "BK2474",
-          "changePct": "-2.58%",
-          "leaderName": "BlackSky Technology",
-          "leaderTicker": "BKSY",
-          "leaderChangePct": "+7.34%",
-          "breadth": {
-            "advancers": 20,
-            "decliners": 23,
-            "unchanged": 4
-          }
-        },
-        {
-          "name": "人力资源与就业服务",
-          "nameEn": "Staffing & Employment Services",
-          "code": "BK2496",
-          "changePct": "-3.47%",
-          "leaderName": "凯利服务-B",
-          "leaderTicker": "KELYB",
-          "leaderChangePct": "+7.55%",
-          "breadth": {
-            "advancers": 3,
-            "decliners": 16,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "医疗设施REITs",
-          "nameEn": "REIT - Healthcare Facilities",
-          "code": "BK2503",
-          "changePct": "-4.73%",
-          "leaderName": "AH Realty Trust",
-          "leaderTicker": "AHRT",
-          "leaderChangePct": "0.00%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 17,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "油气炼制与销售",
-          "nameEn": "Oil & Gas Refining & Marketing",
-          "code": "BK2060",
-          "changePct": "-7.59%",
-          "leaderName": "AI OKTO",
-          "leaderTicker": "AIOK",
-          "leaderChangePct": "+46.51%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 15,
-            "unchanged": 0
-          }
-        }
-      ],
-      "missing": [],
-      "error": null
-    },
-    "concept": {
-      "status": "ok",
-      "source": "Moomoo Sparks",
-      "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
-      "httpStatus": 200,
-      "fetchedAt": "2026-10-28T08:32:24+08:00",
-      "pagination": {
-        "page": 0,
-        "pageSize": 24,
-        "pageCount": 5,
-        "total": 106
-      },
-      "top": [
-        {
-          "name": "稀土概念",
-          "nameEn": "Rare Earth Stocks",
-          "code": "BK23700",
-          "changePct": "+9.45%",
-          "leaderName": "Critical Metals",
-          "leaderTicker": "CRML",
-          "leaderChangePct": "+27.43%",
-          "breadth": {
-            "advancers": 13,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
           "name": "加密矿企",
           "nameEn": "Crypto Mining",
           "code": "BK23921",
-          "changePct": "+7.26%",
-          "leaderName": "Cipher Digital",
-          "leaderTicker": "CIFR",
-          "leaderChangePct": "+9.99%",
+          "changePct": "+5.21%",
+          "leaderName": "Galaxy Digital",
+          "leaderTicker": "GLXY",
+          "leaderChangePct": "+11.12%",
           "breadth": {
-            "advancers": 13,
-            "decliners": 0,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "锂矿概念股",
-          "nameEn": "Lithium mining stocks",
-          "code": "BK23987",
-          "changePct": "+6.07%",
-          "leaderName": "Lithium Argentina AG",
-          "leaderTicker": "LAR",
-          "leaderChangePct": "+9.83%",
-          "breadth": {
-            "advancers": 6,
+            "advancers": 14,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "锂电池",
-          "nameEn": "Lithium Battery",
-          "code": "BK2552",
-          "changePct": "+5.97%",
-          "leaderName": "Enovix",
-          "leaderTicker": "ENVX",
-          "leaderChangePct": "+25.00%",
+          "name": "OLED概念",
+          "nameEn": "OLED Technology",
+          "code": "BK2448",
+          "changePct": "+4.97%",
+          "leaderName": "应用材料",
+          "leaderTicker": "AMAT",
+          "leaderChangePct": "+5.07%",
           "breadth": {
-            "advancers": 12,
+            "advancers": 4,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "室温超导概念",
-          "nameEn": "Room-Temp Superconductors",
-          "code": "BK2147",
-          "changePct": "+5.30%",
-          "leaderName": "美国超导",
-          "leaderTicker": "AMSC",
-          "leaderChangePct": "+8.78%",
+          "name": "光伏太阳能",
+          "nameEn": "Solar Power",
+          "code": "BK2450",
+          "changePct": "+3.80%",
+          "leaderName": "应用材料",
+          "leaderTicker": "AMAT",
+          "leaderChangePct": "+5.07%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 0,
-            "unchanged": 0
+            "advancers": 5,
+            "decliners": 8,
+            "unchanged": 2
           }
         }
       ],
@@ -253,10 +184,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-10-27",
-    "checked_at": "2026-10-28T08:32:51+08:00",
-    "request_id": null,
-    "groups_sha256": "29e72bd3cd82caa85dda4d05ecb5cc0bc04665d85e02e4a76a22be39327d641d",
+    "expected_session_date": "2026-10-28",
+    "checked_at": "2026-10-29T08:29:01+08:00",
+    "request_id": "ah-20261029-20261029002720",
+    "groups_sha256": "36ffec134be1fb2bd467410a5c152777d35debeddd76ce3915bb9dcaf1ac34d4",
     "errors": []
   }
 }
