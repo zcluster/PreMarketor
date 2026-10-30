@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261030-021824",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-30T02:34:08.413Z",
-  "heartbeat_at": "2026-10-30T02:24:08.413Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-10-30T02:37:17.611Z",
+  "heartbeat_at": "2026-10-30T02:27:17.611Z",
   "source_cutoff": "2026-10-30T01:45:00.000Z",
   "main_base_sha": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -589,7 +589,47 @@
         "risk": "前三季度经营现金流32.16亿元，显著低于归母净利润403.75亿元，应收账款和存货上升"
       },
       "material_change": true,
-      "material_reason": "工业富联业绩与逆势价格确认提供A股AI算力正向分支，改变板块轮动并新增重点个股"
+      "material_reason": "工业富联业绩与逆势价格确认提供A股AI算力正向分支，改变板块轮动并新增重点个股",
+      "validation": {
+        "passed": true,
+        "zhMajor": 13,
+        "enMajor": 13,
+        "zhOvernight": 3,
+        "enOvernight": 3,
+        "zhCards": 5,
+        "enCards": 5,
+        "zhAssets": 9,
+        "enAssets": 9,
+        "zhKeywords": 12,
+        "enKeywords": 12,
+        "zhConfirmed": 1,
+        "enConfirmed": 1,
+        "zhAvoid": 4,
+        "enAvoid": 4,
+        "outsideAllowed": true,
+        "usBrief": true,
+        "usTime": true,
+        "usUpdated": true,
+        "panelZh": true,
+        "panelEn": true,
+        "records": 52,
+        "current": 1,
+        "types": [
+          "AH"
+        ],
+        "files": [
+          "index.html",
+          "history/data/2026-10-30.json",
+          "history/manifest.json"
+        ],
+        "marker_only": true,
+        "bilingual_consistent": true
+      },
+      "candidate": {
+        "base_main_sha": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
+        "title": "A股跌幅收窄、港股科技走强，工业富联绩后逆势确认AI算力主线",
+        "time": "2026-10-30 10:28 CST"
+      }
     }
   },
   "pending_increment": [
@@ -640,7 +680,11 @@
     "late_review_1018": {
       "started_at": "2026-10-30T02:21:55.028Z",
       "research_completed_at": "2026-10-30T02:24:08.413Z",
-      "generation_started_at": "2026-10-30T02:24:08.413Z"
+      "generation_started_at": "2026-10-30T02:24:08.413Z",
+      "generation_completed_at": "2026-10-30T02:27:17.611Z",
+      "validation_started_at": "2026-10-30T02:27:17.611Z",
+      "validation_completed_at": "2026-10-30T02:27:17.611Z",
+      "commit_started_at": "2026-10-30T02:27:17.611Z"
     }
   },
   "error": null,
