@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-30T08:31:37+08:00",
-  "status": "ok",
+  "attemptedAt": "2026-10-30T09:03:54+08:00",
+  "status": "partial",
   "groups": {
     "industry": {
-      "status": "ok",
+      "status": "partial",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-30T08:31:37+08:00",
+      "fetchedAt": "2026-10-30T09:03:54+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -87,87 +87,18 @@
           }
         }
       ],
-      "bottom": [
-        {
-          "name": "黄金",
-          "nameEn": "Gold",
-          "code": "BK2110",
-          "changePct": "-3.07%",
-          "leaderName": "Mayfair Gold",
-          "leaderTicker": "MINE",
-          "leaderChangePct": "+1.69%",
-          "breadth": {
-            "advancers": 2,
-            "decliners": 53,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "互联网零售",
-          "nameEn": "Internet Retail",
-          "code": "BK2431",
-          "changePct": "-3.14%",
-          "leaderName": "DoorDash",
-          "leaderTicker": "DASH",
-          "leaderChangePct": "+5.61%",
-          "breadth": {
-            "advancers": 21,
-            "decliners": 19,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "白银",
-          "nameEn": "Silver",
-          "code": "BK2093",
-          "changePct": "-3.19%",
-          "leaderName": "Endeavour Silver",
-          "leaderTicker": "EXK",
-          "leaderChangePct": "-2.63%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 6,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "农业和重型机械",
-          "nameEn": "Farm & Heavy Construction Machinery",
-          "code": "BK2471",
-          "changePct": "-3.99%",
-          "leaderName": "特雷克斯",
-          "leaderTicker": "TEX",
-          "leaderChangePct": "+5.96%",
-          "breadth": {
-            "advancers": 14,
-            "decliners": 11,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "互联网内容与信息",
-          "nameEn": "Internet Content & Information",
-          "code": "BK2004",
-          "changePct": "-9.77%",
-          "leaderName": "MediaAlpha",
-          "leaderTicker": "MAX",
-          "leaderChangePct": "+20.56%",
-          "breadth": {
-            "advancers": 40,
-            "decliners": 30,
-            "unchanged": 1
-          }
-        }
+      "bottom": [],
+      "missing": [
+        "bottom5"
       ],
-      "missing": [],
-      "error": null
+      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
     },
     "concept": {
       "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-30T08:31:37+08:00",
+      "fetchedAt": "2026-10-30T09:03:54+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -254,9 +185,9 @@
   "publicationGate": {
     "ready": true,
     "expected_session_date": "2026-10-29",
-    "checked_at": "2026-10-30T08:31:48+08:00",
-    "request_id": "ah-20261030-20261030003300",
-    "groups_sha256": "b4e4df3c2e7643b99c8a87942b34b7483e6387622e7f5a1bbacf9e6bcb4a4f58",
+    "checked_at": "2026-10-30T09:04:25+08:00",
+    "request_id": null,
+    "groups_sha256": "efd7a345f9577180fd7c324f14e5e07d410a1d31beffcba9520166ec977cb870",
     "errors": []
   }
 }
