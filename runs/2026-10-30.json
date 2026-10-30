@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261030-014555",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-30T02:00:00.000Z",
-  "heartbeat_at": "2026-10-30T01:50:00.000Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-10-30T02:08:00.000Z",
+  "heartbeat_at": "2026-10-30T01:55:27.123Z",
   "source_cutoff": "2026-10-30T00:33:00.000Z",
   "main_base_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -362,7 +362,43 @@
         ]
       },
       "material_change": true,
-      "material_reason": "A股成长显著下挫、港股转强形成分化；三只条件候选全部失效，需改变个股状态与风险提示"
+      "material_reason": "A股成长显著下挫、港股转强形成分化；三只条件候选全部失效，需改变个股状态与风险提示",
+      "validation": {
+        "passed": true,
+        "major_news_zh": 12,
+        "major_news_en": 12,
+        "overnight_zh": 3,
+        "overnight_en": 3,
+        "cards_zh": 4,
+        "cards_en": 4,
+        "assets_zh": 8,
+        "assets_en": 8,
+        "keywords_zh": 12,
+        "keywords_en": 12,
+        "avoid_cards_zh": 4,
+        "avoid_cards_en": 4,
+        "index_outside_allowed_markers_unchanged": true,
+        "us_brief_unchanged": true,
+        "us_time_unchanged": true,
+        "us_updated_unchanged": true,
+        "us_sector_panel_zh_unchanged": true,
+        "us_sector_panel_en_unchanged": true,
+        "manifest_records": 52,
+        "current_date_records": 1,
+        "current_types": [
+          "AH"
+        ]
+      },
+      "candidate": {
+        "base_main_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
+        "time": "2026-10-30 09:53 CST",
+        "title": "A股成长继续下挫、港股逆势企稳，三只条件候选全部失效",
+        "files": [
+          "index.html",
+          "history/data/2026-10-30.json",
+          "history/manifest.json"
+        ]
+      }
     }
   },
   "pending_increment": [
@@ -391,7 +427,15 @@
       "completed_at": "2026-10-30T01:50:00.000Z"
     },
     "generation": {
-      "started_at": "2026-10-30T01:50:00.000Z"
+      "started_at": "2026-10-30T01:50:00.000Z",
+      "completed_at": "2026-10-30T01:55:27.123Z"
+    },
+    "validation": {
+      "started_at": "2026-10-30T01:55:27.123Z",
+      "completed_at": "2026-10-30T01:55:27.123Z"
+    },
+    "commit": {
+      "started_at": "2026-10-30T01:55:27.123Z"
     }
   },
   "error": null,
