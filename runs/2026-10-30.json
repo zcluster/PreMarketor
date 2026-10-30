@@ -2,9 +2,9 @@
   "run_id": "ah-20261030-20261030003300",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "inputs",
-  "lease_until": "2026-10-30T00:43:00.000Z",
-  "heartbeat_at": "2026-10-30T00:33:00.000Z",
+  "stage": "research",
+  "lease_until": "2026-10-30T00:48:00.000Z",
+  "heartbeat_at": "2026-10-30T00:38:00.000Z",
   "source_cutoff": "2026-10-30T00:33:00.000Z",
   "main_base_sha": "0bfe318d3949a061ee0ca4d16e5f8c118e0f2f2c",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -19,12 +19,49 @@
       "akshare_sha": "b630d50497c962dcfafbe03d063c85fa69167ed4",
       "today_history_exists": false,
       "read_at": "2026-10-30T00:33:00.000Z"
+    },
+    "research": {
+      "ranking_gate": {
+        "status": "refresh_requested",
+        "old_expected_session_date": "2026-10-28",
+        "required_session_date": "2026-10-29",
+        "request_id": "ah-20261030-20261030003300",
+        "request_commit": "1abdf7284db073cc83978dcc8c51e506a9cad314",
+        "requested_at": "2026-10-30T00:34:00.000Z"
+      },
+      "akshare": {
+        "sha": "b630d50497c962dcfafbe03d063c85fa69167ed4",
+        "fetched_at": "2026-10-29T13:49:55+08:00",
+        "A_market_date": "2026-10-29",
+        "A_phase": "intraday_snapshot",
+        "A_breadth": "953/4363/97 median -1.733%",
+        "HK_phase": "intraday_snapshot",
+        "HK_breadth": "584/1075/1144 median 0.00%"
+      },
+      "discovery_sources": [
+        "财联社 2026-10-30",
+        "东方财富 2026-10-30",
+        "四大证券报头版 2026-10-30"
+      ],
+      "official_sources": [
+        "商务部四部门海南自贸港通知 2026-10-29",
+        "工信部新一代通信网座谈会 2026-10-29",
+        "上交所并购重组审核信息 2026-10-29",
+        "HKEX 2026-10-29"
+      ],
+      "overnight_sources": [
+        "Reuters 2026-10-29 US close",
+        "AP 2026-10-29 US close",
+        "Amazon Q3 2026 release"
+      ]
     }
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
-    "inputs_started_at": "2026-10-30T00:33:00.000Z"
+    "inputs_started_at": "2026-10-30T00:33:00.000Z",
+    "inputs_completed_at": "2026-10-30T00:34:00.000Z",
+    "research_started_at": "2026-10-30T00:34:00.000Z"
   },
   "error": null
 }
