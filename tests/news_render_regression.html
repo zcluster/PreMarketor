@@ -37,7 +37,25 @@
     check('en', 'English title');
     if (check('zh', '中文标题') !== zh) throw Error('Repeated language render changed detail');
     check('zh', '中文标题');
-    result.textContent = 'PASS: Chinese and English rendering, repeated renders, prefixes, timestamp and source attributes';
+    const history = await (await fetch('../history/index.html')).text();
+    const archive = document.createElement('iframe');
+    const archiveLoaded = new Promise((resolve, reject) => { archive.onload = resolve; setTimeout(() => reject(Error('archive load timed out')), 15000); });
+    const archiveMock = `<script>window.fetch = function(){return Promise.resolve({ok:true,json:function(){return Promise.resolve({date:'2026-09-07',entries:[${JSON.stringify(entry)}]});}});};<\/script>`;
+    archive.srcdoc = history.replace('new URLSearchParams(location.search)', "new URLSearchParams('?date=2026-09-07')").replace('<script>\n(function(){', archiveMock + '<script>\n(function(){').replace('  function render(data){', '  window.__testClean = cleanNewsTitlePrefixes;\n  function render(data){');
+    document.body.appendChild(archive);
+    await archiveLoaded;
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const archiveRoot = archive.contentDocument.querySelector('#archive-root');
+    const archiveTitle = archiveRoot.querySelector('.news-title');
+    const archiveDetail = archiveRoot.querySelector('.news-detail');
+    if (!archiveTitle || archiveTitle.textContent.trim() !== '中文标题 marked' || !archiveTitle.querySelector('em')) throw Error('archive title cleanup or markup');
+    const archiveTime = archiveDetail.querySelector('time'), archiveLink = archiveDetail.querySelector('a');
+    if (!archiveTime || archiveTime.textContent !== '08:30' || archiveTime.getAttribute('datetime') !== '2026-09-07T08:30:00Z') throw Error('archive timestamp lost');
+    if (!archiveLink || archiveLink.getAttribute('href') !== 'https://www.reuters.com/example' || archiveLink.target !== '_blank' || archiveLink.rel !== 'noopener' || archiveLink.dataset.source !== 'reuters') throw Error('archive link lost');
+    archive.contentWindow.__testClean(archiveRoot);
+    archive.contentWindow.__testClean(archiveRoot);
+    if (archiveDetail.querySelector('time') !== archiveTime || archiveDetail.querySelector('a') !== archiveLink) throw Error('archive repeated cleanup changed nodes');
+    result.textContent = 'PASS: homepage Chinese and English, archive Chinese, repeated cleanup, timestamp and source attributes';
   } catch (error) { result.textContent = 'FAIL: ' + error.stack; }
 })();
 </script>
