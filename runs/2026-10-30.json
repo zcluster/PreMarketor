@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261030-021824",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-30T02:31:55.028Z",
-  "heartbeat_at": "2026-10-30T02:21:55.028Z",
+  "stage": "generation",
+  "lease_until": "2026-10-30T02:34:08.413Z",
+  "heartbeat_at": "2026-10-30T02:24:08.413Z",
   "source_cutoff": "2026-10-30T01:45:00.000Z",
   "main_base_sha": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -586,7 +586,7 @@
           "prior_close": 45.22
         },
         "decision": "confirmed_watch",
-        "risk": "前三季度经营现金流3.22亿元显著低于归母净利润403.75亿元，应收账款和存货上升"
+        "risk": "前三季度经营现金流32.16亿元，显著低于归母净利润403.75亿元，应收账款和存货上升"
       },
       "material_change": true,
       "material_reason": "工业富联业绩与逆势价格确认提供A股AI算力正向分支，改变板块轮动并新增重点个股"
@@ -638,7 +638,9 @@
     },
     "incremental_completed_at": "2026-10-30T02:15:58.537Z",
     "late_review_1018": {
-      "started_at": "2026-10-30T02:21:55.028Z"
+      "started_at": "2026-10-30T02:21:55.028Z",
+      "research_completed_at": "2026-10-30T02:24:08.413Z",
+      "generation_started_at": "2026-10-30T02:24:08.413Z"
     }
   },
   "error": null,
