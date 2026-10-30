@@ -2,9 +2,9 @@
   "run_id": "ah-20261030-20261030003300",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-10-30T00:50:00.000Z",
-  "heartbeat_at": "2026-10-30T00:35:00.000Z",
+  "stage": "prepublish_validation",
+  "lease_until": "2026-10-30T00:53:00.000Z",
+  "heartbeat_at": "2026-10-30T00:38:00.000Z",
   "source_cutoff": "2026-10-30T00:33:00.000Z",
   "main_base_sha": "b99a7721221710d2b76ffa698b882d8ec3490b6f",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -183,6 +183,33 @@
           "decision": "avoid"
         }
       ]
+    },
+    "prepublish": {
+      "validation": {
+        "passed": true,
+        "majorNews": 12,
+        "overnight": 3,
+        "cards": 4,
+        "assets": 8,
+        "keywords": 12,
+        "panelRows": 15,
+        "panelDown": 5,
+        "manifestOld": 51,
+        "manifestNew": 52
+      },
+      "main_head": "b99a7721221710d2b76ffa698b882d8ec3490b6f",
+      "index_sha": "d8a1ad5f87c25586f18f765e80b450088a4731d2",
+      "manifest_sha": "84e68baf790eed06d33222fd8aae00b7a67cbf76",
+      "rankings_sha": "673307871da98e0aaddd8253b57ae8f025c01201",
+      "akshare_sha": "b630d50497c962dcfafbe03d063c85fa69167ed4",
+      "history_2026_10_30_exists": false,
+      "files": [
+        "index.html",
+        "history/data/2026-10-30.json",
+        "history/manifest.json"
+      ],
+      "marker_only": true,
+      "us_markers_unchanged": true
     }
   },
   "pending_increment": [],
@@ -192,7 +219,10 @@
     "inputs_completed_at": "2026-10-30T00:34:00.000Z",
     "research_started_at": "2026-10-30T00:34:00.000Z",
     "research_completed_at": "2026-10-30T00:35:00.000Z",
-    "generation_started_at": "2026-10-30T00:35:00.000Z"
+    "generation_started_at": "2026-10-30T00:35:00.000Z",
+    "generation_completed_at": "2026-10-30T00:38:00.000Z",
+    "validation_started_at": "2026-10-30T00:38:00.000Z",
+    "validation_completed_at": "2026-10-30T00:38:00.000Z"
   },
   "error": null
 }
