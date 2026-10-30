@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261030-021824",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "main_ref_update",
-  "lease_until": "2026-10-30T02:42:31.809Z",
-  "heartbeat_at": "2026-10-30T02:32:31.809Z",
+  "stage": "deployment_verification",
+  "lease_until": "2026-10-30T02:45:05.634Z",
+  "heartbeat_at": "2026-10-30T02:35:05.634Z",
   "source_cutoff": "2026-10-30T01:45:00.000Z",
   "main_base_sha": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -641,6 +641,20 @@
         "expected_main_sha": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
         "force": false,
         "message": "Update A/H market brief for 2026-10-30"
+      },
+      "publish": {
+        "commit": "afb738f49fa9a14739d936ee159e9204e2594333",
+        "tree": "8f6cd81c2c419b1aa00eac0ecceae482c0359572",
+        "blobs": {
+          "index": "8f4fa90c77fea90092d07491121dd7f154e05f34",
+          "day": "d6805aa280d3d49cdb94661832161d9b2246c0cf",
+          "manifest": "cd311fe9d0da50a5d19aa76c231222a71d3e7b90"
+        },
+        "main_update_ref": {
+          "force": false,
+          "expected_sha": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
+          "success": true
+        }
       }
     }
   },
@@ -652,7 +666,7 @@
       "reason": "AI算力业绩高增且10:18价格逆势确认，首轮遗漏"
     }
   ],
-  "published_commit": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
+  "published_commit": "afb738f49fa9a14739d936ee159e9204e2594333",
   "stage_timings": {
     "inputs_started_at": "2026-10-30T00:33:00.000Z",
     "inputs_completed_at": "2026-10-30T00:34:00.000Z",
@@ -696,7 +710,9 @@
       "generation_completed_at": "2026-10-30T02:27:17.611Z",
       "validation_started_at": "2026-10-30T02:27:17.611Z",
       "validation_completed_at": "2026-10-30T02:27:17.611Z",
-      "commit_started_at": "2026-10-30T02:27:17.611Z"
+      "commit_started_at": "2026-10-30T02:27:17.611Z",
+      "commit_completed_at": "2026-10-30T02:35:05.634Z",
+      "deployment_started_at": "2026-10-30T02:35:05.634Z"
     }
   },
   "error": null,
