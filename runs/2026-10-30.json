@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-review-20261030-014555",
+  "run_id": "ah-review-20261030-021824",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "published",
-  "stage": "published",
-  "lease_until": null,
-  "heartbeat_at": "2026-10-30T02:15:58.537Z",
-  "source_cutoff": "2026-10-30T00:33:00.000Z",
-  "main_base_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-10-30T02:31:55.028Z",
+  "heartbeat_at": "2026-10-30T02:21:55.028Z",
+  "source_cutoff": "2026-10-30T01:45:00.000Z",
+  "main_base_sha": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -494,9 +494,112 @@
         },
         "passed": true
       }
+    },
+    "late_review_1018": {
+      "started_at": "2026-10-30T02:21:55.028Z",
+      "prior_published_commit": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
+      "prior_review_cutoff": "2026-10-30T01:45:00.000Z",
+      "inputs": {
+        "main_head": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
+        "state_head": "6c762aa44cc2b5a4b2c502a334e29def844313c8",
+        "rules_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+        "index_sha": "2b9a452c45750c3abc193352cd5cad3321adceb8",
+        "day_sha": "02d46753afaafe9c3ced524edbec93391c7ed689",
+        "manifest_sha": "3fa7401859c96c6a45a8382f231f8c40e1e201e4",
+        "akshare_sha": "b630d50497c962dcfafbe03d063c85fa69167ed4",
+        "rankings_sha": "be56bcfe6b7cdaf1d6c0df14ffd732e352ac0032"
+      },
+      "quote_batch": {
+        "observed_at": "2026-10-30 10:18 CST",
+        "source": "Eastmoney cloud quotes",
+        "markets": [
+          {
+            "ticker": "SH.000001",
+            "price": 3628.42,
+            "change_pct": -0.63
+          },
+          {
+            "ticker": "SZ.399006",
+            "price": 2484.15,
+            "change_pct": -1.33
+          },
+          {
+            "ticker": "HK.HSI",
+            "price": 23226.53,
+            "change_pct": 1.17
+          },
+          {
+            "ticker": "HK.HSTECH",
+            "price": 3789.99,
+            "change_pct": 1.22
+          }
+        ],
+        "candidates": [
+          {
+            "ticker": "SZ.300308",
+            "price": 581.05,
+            "change_pct": -0.17,
+            "decision": "avoid",
+            "reason": "仍低于582.05再评估线"
+          },
+          {
+            "ticker": "SH.600183",
+            "price": 91.08,
+            "change_pct": -3.23,
+            "decision": "avoid",
+            "reason": "仍低于94再评估线"
+          },
+          {
+            "ticker": "SH.600958",
+            "price": 8.19,
+            "change_pct": -0.73,
+            "decision": "avoid",
+            "reason": "仍低于8.25再评估线"
+          },
+          {
+            "ticker": "HK.01876",
+            "price": 5.92,
+            "change_pct": 4.59,
+            "decision": "avoid",
+            "reason": "反弹未改变销量与EBITDA下滑"
+          }
+        ]
+      },
+      "omitted_event": {
+        "ticker": "SH.601138",
+        "title": "富士康工业互联网股份有限公司2026年第三季度报告",
+        "published_at": "2026-10-29 20:01 CST",
+        "source_url": "https://paper.cnstock.com/html/2026-10/30/content_2283745.htm",
+        "facts": {
+          "q3_revenue_yoy_pct": 57.73,
+          "q3_net_profit_yoy_pct": 60.35,
+          "nine_month_net_profit_yoy_pct": 79.55,
+          "cloud_revenue_yoy_pct": 75,
+          "cloud_revenue_qoq_pct": 25,
+          "ai_gpu_rack_shipments_yoy_pct": 70,
+          "ai_asic_server_shipments_yoy_multiple": 1.5
+        },
+        "price": {
+          "observed_at": "2026-10-30 10:18 CST",
+          "price_cny": 45.75,
+          "change_pct": 1.17,
+          "prior_close": 45.22
+        },
+        "decision": "confirmed_watch",
+        "risk": "前三季度经营现金流3.22亿元显著低于归母净利润403.75亿元，应收账款和存货上升"
+      },
+      "material_change": true,
+      "material_reason": "工业富联业绩与逆势价格确认提供A股AI算力正向分支，改变板块轮动并新增重点个股"
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "event": "工业富联2026年第三季度报告",
+      "first_available_at": "2026-10-29T20:01:00+08:00",
+      "importance": "material",
+      "reason": "AI算力业绩高增且10:18价格逆势确认，首轮遗漏"
+    }
+  ],
   "published_commit": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
   "stage_timings": {
     "inputs_started_at": "2026-10-30T00:33:00.000Z",
@@ -533,7 +636,10 @@
       "started_at": "2026-10-30T02:03:50.189Z",
       "completed_at": "2026-10-30T02:15:58.537Z"
     },
-    "incremental_completed_at": "2026-10-30T02:15:58.537Z"
+    "incremental_completed_at": "2026-10-30T02:15:58.537Z",
+    "late_review_1018": {
+      "started_at": "2026-10-30T02:21:55.028Z"
+    }
   },
   "error": null,
   "metrics": {
