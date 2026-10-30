@@ -2,11 +2,11 @@
   "run_id": "ah-20261030-20261030003300",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-10-30T00:48:00.000Z",
-  "heartbeat_at": "2026-10-30T00:38:00.000Z",
+  "stage": "generation",
+  "lease_until": "2026-10-30T00:50:00.000Z",
+  "heartbeat_at": "2026-10-30T00:35:00.000Z",
   "source_cutoff": "2026-10-30T00:33:00.000Z",
-  "main_base_sha": "0bfe318d3949a061ee0ca4d16e5f8c118e0f2f2c",
+  "main_base_sha": "b99a7721221710d2b76ffa698b882d8ec3490b6f",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -22,12 +22,13 @@
     },
     "research": {
       "ranking_gate": {
-        "status": "refresh_requested",
-        "old_expected_session_date": "2026-10-28",
-        "required_session_date": "2026-10-29",
-        "request_id": "ah-20261030-20261030003300",
-        "request_commit": "1abdf7284db073cc83978dcc8c51e506a9cad314",
-        "requested_at": "2026-10-30T00:34:00.000Z"
+        "status": "ready",
+        "expected_session_date": "2026-10-29",
+        "fetched_at": "2026-10-30T08:31:37+08:00",
+        "rankings_sha": "673307871da98e0aaddd8253b57ae8f025c01201",
+        "industry_rows": 10,
+        "concept_rows": 5,
+        "request_id": "ah-20261030-20261030003300"
       },
       "akshare": {
         "sha": "b630d50497c962dcfafbe03d063c85fa69167ed4",
@@ -53,6 +54,134 @@
         "Reuters 2026-10-29 US close",
         "AP 2026-10-29 US close",
         "Amazon Q3 2026 release"
+      ],
+      "sources": {
+        "policy": [
+          {
+            "title": "四部门支持海南自由贸易港贸易便利化若干措施",
+            "date": "2026-10-29",
+            "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_9e5f65dc7913491ebffb28967610a613.html"
+          },
+          {
+            "title": "工业和信息化部召开新一代通信网络发展座谈会",
+            "date": "2026-10-29",
+            "url": "https://www.miit.gov.cn/xwdt/gxdt/sjdt/art/2026/art_63d0f14e2a9847cdab9a02b267ee3fd8.html"
+          }
+        ],
+        "company": [
+          {
+            "ticker": "SZ.300308",
+            "title": "中际旭创三季报",
+            "price": "582.05 CNY, -8.53%, 2026-10-29 close",
+            "status": "conditional_watch"
+          },
+          {
+            "ticker": "SZ.300502",
+            "title": "新易盛三季报",
+            "price": "228.40 CNY, -11.06%, 2026-10-29 close",
+            "status": "news_only"
+          },
+          {
+            "ticker": "SH.600183",
+            "title": "生益科技三季报",
+            "price": "94.12 CNY, -8.17%, 2026-10-29 close",
+            "status": "conditional_watch"
+          },
+          {
+            "ticker": "SH.600958",
+            "title": "东方证券吸收合并上海证券获审核通过",
+            "price": "8.25 CNY, -1.43%, 2026-10-29 close",
+            "status": "conditional_watch"
+          },
+          {
+            "ticker": "HK.00175",
+            "title": "吉利汽车九个月业绩",
+            "price": "13.67 HKD, about -4%, 2026-10-29 intraday",
+            "status": "news_only"
+          },
+          {
+            "ticker": "HK.01876",
+            "title": "百威亚太九个月业绩",
+            "price": "5.66 HKD, -2.58%, 2026-10-29 close",
+            "status": "avoid"
+          }
+        ],
+        "us": [
+          {
+            "title": "US stocks close lower as megacap and software selloff offsets healthcare gains",
+            "date": "2026-10-29",
+            "url": "https://www.reuters.com/markets/us/"
+          },
+          {
+            "title": "Amazon AWS growth accelerates but spending outlook weighs on shares",
+            "date": "2026-10-29",
+            "url": "https://www.reuters.com/technology/"
+          },
+          {
+            "title": "Oil eases on diplomacy while Hormuz risks remain",
+            "date": "2026-10-29",
+            "url": "https://www.reuters.com/business/energy/"
+          }
+        ]
+      },
+      "ranking_decisions": [
+        {
+          "group": "industry",
+          "name": "汽车和卡车经销",
+          "move": "+7.57%",
+          "decision": "no_candidate",
+          "reason": "US company-specific move; no directly verified A/H beneficiary and China auto price feedback is weak"
+        },
+        {
+          "group": "industry",
+          "name": "安全与保护",
+          "move": "+5.95%",
+          "decision": "no_candidate",
+          "reason": "ADT-led move lacks verified A/H company catalyst"
+        },
+        {
+          "group": "industry",
+          "name": "奢侈品",
+          "move": "+5.22%",
+          "decision": "no_candidate",
+          "reason": "broad theme only; no fresh A/H company-specific catalyst"
+        },
+        {
+          "group": "industry",
+          "name": "互联网内容与信息",
+          "move": "-9.77%",
+          "decision": "avoid",
+          "reason": "negative mapping to Hong Kong internet and technology risk; not packaged as bullish"
+        },
+        {
+          "group": "concept",
+          "name": "减肥药",
+          "move": "+4.36%",
+          "decision": "no_candidate",
+          "reason": "no fresh verified A/H company-specific catalyst"
+        }
+      ],
+      "candidate_status": [
+        {
+          "ticker": "SZ.300308",
+          "verification_status": "verified",
+          "decision": "conditional_watch"
+        },
+        {
+          "ticker": "SH.600183",
+          "verification_status": "verified",
+          "decision": "conditional_watch"
+        },
+        {
+          "ticker": "SH.600958",
+          "verification_status": "verified",
+          "decision": "conditional_watch"
+        },
+        {
+          "ticker": "HK.01876",
+          "verification_status": "verified",
+          "decision": "avoid"
+        }
       ]
     }
   },
@@ -61,7 +190,9 @@
   "stage_timings": {
     "inputs_started_at": "2026-10-30T00:33:00.000Z",
     "inputs_completed_at": "2026-10-30T00:34:00.000Z",
-    "research_started_at": "2026-10-30T00:34:00.000Z"
+    "research_started_at": "2026-10-30T00:34:00.000Z",
+    "research_completed_at": "2026-10-30T00:35:00.000Z",
+    "generation_started_at": "2026-10-30T00:35:00.000Z"
   },
   "error": null
 }
