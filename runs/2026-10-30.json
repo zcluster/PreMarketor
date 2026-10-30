@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261030-014555",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "candidate_commit",
-  "lease_until": "2026-10-30T02:08:00.000Z",
-  "heartbeat_at": "2026-10-30T01:55:27.123Z",
+  "stage": "main_ref_update",
+  "lease_until": "2026-10-30T02:18:00.000Z",
+  "heartbeat_at": "2026-10-30T02:00:30.994Z",
   "source_cutoff": "2026-10-30T00:33:00.000Z",
   "main_base_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -398,6 +398,18 @@
           "history/data/2026-10-30.json",
           "history/manifest.json"
         ]
+      },
+      "publish_candidate": {
+        "commit": "ebff9f091357d3101fcd51b7c7c0373dc9b6fd6b",
+        "tree": "843694334032aad5539e948c11030d1871580e9c",
+        "blobs": {
+          "index": "2b9a452c45750c3abc193352cd5cad3321adceb8",
+          "day": "02d46753afaafe9c3ced524edbec93391c7ed689",
+          "manifest": "40ff6e9ca6a8cec1c3cac61b0b32746e530fa9c1"
+        },
+        "message": "Update A/H market brief for 2026-10-30",
+        "expected_main_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
+        "force": false
       }
     }
   },
