@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261030-014555",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-30T02:25:00.000Z",
-  "heartbeat_at": "2026-10-30T02:03:50.189Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-30T02:15:58.537Z",
   "source_cutoff": "2026-10-30T00:33:00.000Z",
   "main_base_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -412,27 +412,92 @@
         "force": false
       },
       "publish": {
-        "commit": "ebff9f091357d3101fcd51b7c7c0373dc9b6fd6b",
-        "tree": "843694334032aad5539e948c11030d1871580e9c",
-        "blobs": {
+        "primary_commit": "ebff9f091357d3101fcd51b7c7c0373dc9b6fd6b",
+        "correction_commit": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
+        "final_tree": "9e006accb111fe4dc47adb91beafda76b92ee822",
+        "final_blobs": {
           "index": "2b9a452c45750c3abc193352cd5cad3321adceb8",
           "day": "02d46753afaafe9c3ced524edbec93391c7ed689",
-          "manifest": "40ff6e9ca6a8cec1c3cac61b0b32746e530fa9c1"
+          "manifest": "3fa7401859c96c6a45a8382f231f8c40e1e201e4"
         },
         "main_update_ref": {
           "force": false,
-          "expected_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
+          "initial_expected_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
+          "correction_expected_sha": "ebff9f091357d3101fcd51b7c7c0373dc9b6fd6b",
           "success": true
-        }
+        },
+        "correction": "Set history/manifest.json top-level updated to 2026-10-30 09:53 CST after production consistency check"
+      },
+      "production": {
+        "github_readback": {
+          "head": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
+          "headMatches": true,
+          "indexSha": "2b9a452c45750c3abc193352cd5cad3321adceb8",
+          "daySha": "02d46753afaafe9c3ced524edbec93391c7ed689",
+          "manifestSha": "3fa7401859c96c6a45a8382f231f8c40e1e201e4",
+          "indexExact": true,
+          "dayExact": true,
+          "manifestExact": true
+        },
+        "home": {
+          "status": 200,
+          "time": "2026-10-30 09:53 CST",
+          "updated": "2026-10-30 09:53 CST",
+          "newTitleSignal": true,
+          "newPriceSignal": true,
+          "avoidCards": 4,
+          "usTime": "2026-10-29 20:36 CST"
+        },
+        "archive_json": {
+          "status": 200,
+          "updated": "2026-10-30 09:53 CST",
+          "title": "A股成长继续下挫、港股逆势企稳，三只条件候选全部失效",
+          "time": "2026-10-30 09:53 CST",
+          "zhExact": true,
+          "enExact": true,
+          "zhNews": 15,
+          "enNews": 15,
+          "zhCards": 4,
+          "enCards": 4
+        },
+        "manifest": {
+          "status": 200,
+          "updated": "2026-10-30 09:53 CST",
+          "recordUpdated": "2026-10-30 09:53 CST",
+          "recordTitle": "A股成长继续下挫、港股逆势企稳，三只条件候选全部失效",
+          "records": 52,
+          "types": [
+            "AH"
+          ]
+        },
+        "history_page": {
+          "status": 200,
+          "loaderPresent": true
+        },
+        "headers": {
+          "home": {
+            "cache": "MISS",
+            "lastModified": "Fri, 30 Oct 2026 02:15:16 GMT"
+          },
+          "day": {
+            "cache": "MISS",
+            "lastModified": "Fri, 30 Oct 2026 02:14:19 GMT"
+          },
+          "manifest": {
+            "cache": "MISS",
+            "lastModified": "Fri, 30 Oct 2026 02:14:46 GMT"
+          },
+          "history": {
+            "cache": "MISS",
+            "lastModified": "Fri, 30 Oct 2026 02:15:43 GMT"
+          }
+        },
+        "passed": true
       }
     }
   },
-  "pending_increment": [
-    "Update opening A/H split",
-    "Downgrade three failed conditional candidates",
-    "Keep Budweiser APAC avoid despite bounce"
-  ],
-  "published_commit": "1445416da0953e0439727b95f62a13d8202900e6",
+  "pending_increment": [],
+  "published_commit": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
   "stage_timings": {
     "inputs_started_at": "2026-10-30T00:33:00.000Z",
     "inputs_completed_at": "2026-10-30T00:34:00.000Z",
@@ -465,8 +530,10 @@
       "completed_at": "2026-10-30T02:03:50.189Z"
     },
     "deployment_verification": {
-      "started_at": "2026-10-30T02:03:50.189Z"
-    }
+      "started_at": "2026-10-30T02:03:50.189Z",
+      "completed_at": "2026-10-30T02:15:58.537Z"
+    },
+    "incremental_completed_at": "2026-10-30T02:15:58.537Z"
   },
   "error": null,
   "metrics": {
