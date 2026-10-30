@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261030-20261030003300",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-30T00:55:00.000Z",
-  "heartbeat_at": "2026-10-30T00:40:00.000Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": "2026-10-30T00:42:00.000Z",
+  "heartbeat_at": "2026-10-30T00:42:00.000Z",
   "source_cutoff": "2026-10-30T00:33:00.000Z",
   "main_base_sha": "b99a7721221710d2b76ffa698b882d8ec3490b6f",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -224,6 +224,74 @@
         "expected_sha": "b99a7721221710d2b76ffa698b882d8ec3490b6f",
         "success": true
       }
+    },
+    "production": {
+      "remote_readback": {
+        "head": "1445416da0953e0439727b95f62a13d8202900e6",
+        "headMatches": true,
+        "indexSha": "f04d334f3e77dd43d8c61c19b7a0c5c06f13b137",
+        "daySha": "2ad5871b0a2e9a59ae1da92807ba16a4098ad9b4",
+        "manifestSha": "6a7ad6ada894d7ef4afc2f8a4f5bb60c7e12e54e",
+        "indexExact": true,
+        "dayExact": true,
+        "manifestExact": true
+      },
+      "home": {
+        "status": 200,
+        "ahExact": true,
+        "ahCards": 4,
+        "ahMajorNews": 12,
+        "ahOvernight": 3,
+        "cnPanelRows": 15,
+        "enPanelRows": 15,
+        "cnDown": 5,
+        "enDown": 5,
+        "usTime": "2026-10-29 20:36 CST",
+        "ahTime": "2026-10-30 08:39 CST"
+      },
+      "http": [
+        {
+          "url": "https://premarketor.com/",
+          "status": 200,
+          "statusText": "OK",
+          "cache": "HIT",
+          "lastModified": "Fri, 30 Oct 2026 00:40:36 GMT"
+        },
+        {
+          "url": "https://premarketor.com/history/data/2026-10-30.json",
+          "status": 200,
+          "statusText": "OK",
+          "cache": "HIT",
+          "lastModified": "Fri, 30 Oct 2026 00:40:45 GMT"
+        },
+        {
+          "url": "https://premarketor.com/history/manifest.json",
+          "status": 200,
+          "statusText": "OK",
+          "cache": "HIT",
+          "lastModified": "Fri, 30 Oct 2026 00:40:39 GMT"
+        },
+        {
+          "url": "https://premarketor.com/history/?date=2026-10-30",
+          "status": 200,
+          "statusText": "OK",
+          "cache": "HIT",
+          "lastModified": "Fri, 30 Oct 2026 00:40:49 GMT"
+        }
+      ],
+      "archive_json": {
+        "zh_exact": true,
+        "en_exact": true,
+        "zh_cards": 4,
+        "en_cards": 4
+      },
+      "manifest": {
+        "first_date": "2026-10-30",
+        "types": [
+          "AH"
+        ],
+        "records": 52
+      }
     }
   },
   "pending_increment": [],
@@ -239,7 +307,24 @@
     "validation_completed_at": "2026-10-30T00:38:00.000Z",
     "commit_started_at": "2026-10-30T00:39:00.000Z",
     "commit_completed_at": "2026-10-30T00:40:00.000Z",
-    "deployment_verification_started_at": "2026-10-30T00:40:00.000Z"
+    "deployment_verification_started_at": "2026-10-30T00:40:00.000Z",
+    "deployment_verification_completed_at": "2026-10-30T00:42:00.000Z",
+    "completed_at": "2026-10-30T00:42:00.000Z",
+    "total_wall_seconds": 540
   },
-  "error": null
+  "error": null,
+  "metrics": {
+    "github_reads": 34,
+    "github_writes": 19,
+    "web_research_requests": 18,
+    "ranking_refresh_workflow_runs": 1,
+    "ranking_refresh_retries": 0,
+    "deployment_fetches": 9,
+    "cache_reused": [
+      "brief_rules.md",
+      "AKShare snapshot",
+      "verified research evidence"
+    ],
+    "notes": "Parallel phases are not summed into total wall time."
+  }
 }
