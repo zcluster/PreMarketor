@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261030-20261030003300",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": "2026-10-30T00:42:00.000Z",
-  "heartbeat_at": "2026-10-30T00:42:00.000Z",
+  "run_id": "ah-review-20261030-014555",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-10-30T01:55:55.000Z",
+  "heartbeat_at": "2026-10-30T01:45:55.000Z",
   "source_cutoff": "2026-10-30T00:33:00.000Z",
-  "main_base_sha": "b99a7721221710d2b76ffa698b882d8ec3490b6f",
+  "main_base_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -310,7 +310,10 @@
     "deployment_verification_started_at": "2026-10-30T00:40:00.000Z",
     "deployment_verification_completed_at": "2026-10-30T00:42:00.000Z",
     "completed_at": "2026-10-30T00:42:00.000Z",
-    "total_wall_seconds": 540
+    "total_wall_seconds": 540,
+    "incremental_research": {
+      "started_at": "2026-10-30T01:45:55.000Z"
+    }
   },
   "error": null,
   "metrics": {
