@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-29T09:00:13+08:00",
-  "status": "partial",
+  "attemptedAt": "2026-10-30T08:31:37+08:00",
+  "status": "ok",
   "groups": {
     "industry": {
-      "status": "partial",
+      "status": "ok",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-29T09:00:13+08:00",
+      "fetchedAt": "2026-10-30T08:31:37+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,27 +17,41 @@
       },
       "top": [
         {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "+7.59%",
-          "leaderName": "Ultralife",
-          "leaderTicker": "ULBI",
-          "leaderChangePct": "+145.44%",
+          "name": "汽车和卡车经销",
+          "nameEn": "Auto & Truck Dealerships",
+          "code": "BK2256",
+          "changePct": "+7.57%",
+          "leaderName": "美国汽车行",
+          "leaderTicker": "CRMT",
+          "leaderChangePct": "+22.25%",
           "breadth": {
-            "advancers": 42,
-            "decliners": 10,
-            "unchanged": 3
+            "advancers": 22,
+            "decliners": 3,
+            "unchanged": 1
           }
         },
         {
-          "name": "油气钻探",
-          "nameEn": "Oil & Gas Drilling",
-          "code": "BK2274",
-          "changePct": "+4.15%",
-          "leaderName": "纳伯斯实业",
-          "leaderTicker": "NBR",
-          "leaderChangePct": "+10.51%",
+          "name": "安全与保护",
+          "nameEn": "Security & Protection Services",
+          "code": "BK2268",
+          "changePct": "+5.95%",
+          "leaderName": "ADT Inc",
+          "leaderTicker": "ADT",
+          "leaderChangePct": "+33.20%",
+          "breadth": {
+            "advancers": 13,
+            "decliners": 8,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "奢侈品",
+          "nameEn": "Luxury Goods",
+          "code": "BK2276",
+          "changePct": "+5.22%",
+          "leaderName": "LuxExperience BV",
+          "leaderTicker": "LUXE",
+          "leaderChangePct": "+5.99%",
           "breadth": {
             "advancers": 9,
             "decliners": 1,
@@ -45,60 +59,115 @@
           }
         },
         {
-          "name": "电子元件",
-          "nameEn": "Electronic Components",
-          "code": "BK2072",
-          "changePct": "+3.58%",
-          "leaderName": "伟创力",
-          "leaderTicker": "FLEX",
-          "leaderChangePct": "+11.61%",
+          "name": "广播",
+          "nameEn": "Broadcasting",
+          "code": "BK2497",
+          "changePct": "+4.85%",
+          "leaderName": "格雷电视-A",
+          "leaderTicker": "GTN.A",
+          "leaderChangePct": "+29.37%",
           "breadth": {
-            "advancers": 32,
-            "decliners": 12,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "半导体设备与材料",
-          "nameEn": "Semiconductor Equipment & Materials",
-          "code": "BK2016",
-          "changePct": "+3.23%",
-          "leaderName": "AXT Inc",
-          "leaderTicker": "AXTI",
-          "leaderChangePct": "+10.56%",
-          "breadth": {
-            "advancers": 24,
+            "advancers": 9,
             "decliners": 7,
             "unchanged": 0
           }
         },
         {
-          "name": "建筑工程",
-          "nameEn": "Engineering & Construction",
-          "code": "BK2033",
-          "changePct": "+2.80%",
-          "leaderName": "Axonex AI",
-          "leaderTicker": "AXNX",
-          "leaderChangePct": "+17.49%",
+          "name": "鞋类及配饰",
+          "nameEn": "Footwear & Accessories",
+          "code": "BK2106",
+          "changePct": "+4.79%",
+          "leaderName": "卡骆驰",
+          "leaderTicker": "CROX",
+          "leaderChangePct": "+25.54%",
           "breadth": {
-            "advancers": 36,
-            "decliners": 12,
-            "unchanged": 4
+            "advancers": 12,
+            "decliners": 1,
+            "unchanged": 0
           }
         }
       ],
-      "bottom": [],
-      "missing": [
-        "bottom5"
+      "bottom": [
+        {
+          "name": "黄金",
+          "nameEn": "Gold",
+          "code": "BK2110",
+          "changePct": "-3.07%",
+          "leaderName": "Mayfair Gold",
+          "leaderTicker": "MINE",
+          "leaderChangePct": "+1.69%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 53,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "互联网零售",
+          "nameEn": "Internet Retail",
+          "code": "BK2431",
+          "changePct": "-3.14%",
+          "leaderName": "DoorDash",
+          "leaderTicker": "DASH",
+          "leaderChangePct": "+5.61%",
+          "breadth": {
+            "advancers": 21,
+            "decliners": 19,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "白银",
+          "nameEn": "Silver",
+          "code": "BK2093",
+          "changePct": "-3.19%",
+          "leaderName": "Endeavour Silver",
+          "leaderTicker": "EXK",
+          "leaderChangePct": "-2.63%",
+          "breadth": {
+            "advancers": 0,
+            "decliners": 6,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "农业和重型机械",
+          "nameEn": "Farm & Heavy Construction Machinery",
+          "code": "BK2471",
+          "changePct": "-3.99%",
+          "leaderName": "特雷克斯",
+          "leaderTicker": "TEX",
+          "leaderChangePct": "+5.96%",
+          "breadth": {
+            "advancers": 14,
+            "decliners": 11,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "互联网内容与信息",
+          "nameEn": "Internet Content & Information",
+          "code": "BK2004",
+          "changePct": "-9.77%",
+          "leaderName": "MediaAlpha",
+          "leaderTicker": "MAX",
+          "leaderChangePct": "+20.56%",
+          "breadth": {
+            "advancers": 40,
+            "decliners": 30,
+            "unchanged": 1
+          }
+        }
       ],
-      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
+      "missing": [],
+      "error": null
     },
     "concept": {
       "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-29T09:00:13+08:00",
+      "fetchedAt": "2026-10-30T08:31:37+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -107,73 +176,73 @@
       },
       "top": [
         {
-          "name": "存储概念",
-          "nameEn": "Data storage stock",
-          "code": "BK23925",
-          "changePct": "+8.77%",
-          "leaderName": "SK海力士",
-          "leaderTicker": "SKHY",
-          "leaderChangePct": "+13.30%",
+          "name": "减肥药概念",
+          "nameEn": "Weight Loss Drugs",
+          "code": "BK2152",
+          "changePct": "+4.36%",
+          "leaderName": "礼来",
+          "leaderTicker": "LLY",
+          "leaderChangePct": "+6.63%",
+          "breadth": {
+            "advancers": 9,
+            "decliners": 2,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "邮轮概念",
+          "nameEn": "Cruise Lines",
+          "code": "BK2447",
+          "changePct": "+4.08%",
+          "leaderName": "挪威邮轮",
+          "leaderTicker": "NCLH",
+          "leaderChangePct": "+13.45%",
+          "breadth": {
+            "advancers": 5,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "体育",
+          "nameEn": "Sports",
+          "code": "BK2574",
+          "changePct": "+3.47%",
+          "leaderName": "Escalade",
+          "leaderTicker": "ESCA",
+          "leaderChangePct": "+8.63%",
+          "breadth": {
+            "advancers": 8,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "美国国防航空",
+          "nameEn": "Defense",
+          "code": "BK2654",
+          "changePct": "+3.18%",
+          "leaderName": "亨廷顿英格尔斯工业",
+          "leaderTicker": "HII",
+          "leaderChangePct": "+13.23%",
+          "breadth": {
+            "advancers": 9,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "抗癌医药",
+          "nameEn": "Cancer Research",
+          "code": "BK2573",
+          "changePct": "+3.09%",
+          "leaderName": "精确射线",
+          "leaderTicker": "ARAY",
+          "leaderChangePct": "+6.87%",
           "breadth": {
             "advancers": 7,
             "decliners": 0,
             "unchanged": 0
-          }
-        },
-        {
-          "name": "医药外包概念",
-          "nameEn": "CRO",
-          "code": "BK2528",
-          "changePct": "+5.40%",
-          "leaderName": "Icon PLC",
-          "leaderTicker": "ICLR",
-          "leaderChangePct": "+17.04%",
-          "breadth": {
-            "advancers": 5,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "加密矿企",
-          "nameEn": "Crypto Mining",
-          "code": "BK23921",
-          "changePct": "+5.21%",
-          "leaderName": "Galaxy Digital",
-          "leaderTicker": "GLXY",
-          "leaderChangePct": "+11.12%",
-          "breadth": {
-            "advancers": 14,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "OLED概念",
-          "nameEn": "OLED Technology",
-          "code": "BK2448",
-          "changePct": "+4.97%",
-          "leaderName": "应用材料",
-          "leaderTicker": "AMAT",
-          "leaderChangePct": "+5.07%",
-          "breadth": {
-            "advancers": 4,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "光伏太阳能",
-          "nameEn": "Solar Power",
-          "code": "BK2450",
-          "changePct": "+3.80%",
-          "leaderName": "应用材料",
-          "leaderTicker": "AMAT",
-          "leaderChangePct": "+5.07%",
-          "breadth": {
-            "advancers": 5,
-            "decliners": 8,
-            "unchanged": 2
           }
         }
       ],
@@ -184,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-10-28",
-    "checked_at": "2026-10-29T09:00:39+08:00",
-    "request_id": null,
-    "groups_sha256": "769c291b21537202d1a47b5be225f832aeff3e9fc9344e33294d89b9d4a9b3a2",
+    "expected_session_date": "2026-10-29",
+    "checked_at": "2026-10-30T08:31:48+08:00",
+    "request_id": "ah-20261030-20261030003300",
+    "groups_sha256": "b4e4df3c2e7643b99c8a87942b34b7483e6387622e7f5a1bbacf9e6bcb4a4f58",
     "errors": []
   }
 }
