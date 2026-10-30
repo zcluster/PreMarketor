@@ -1098,15 +1098,14 @@ Updated: 2026-10-30 20:35 CST
   }
   function cleanNewsTitlePrefixes(scope){
     var root = scope || document;
-    var nodes = Array.prototype.slice.call(root.querySelectorAll('.news-title,.stock-name,[class*="title"],[class*="headline"],[class*="flash"],[class*="news"]'));
-    nodes = nodes.concat(Array.prototype.slice.call(root.querySelectorAll('*')).filter(function(el){
-      return el.children.length === 0 && (el.textContent || '').length < 120;
-    }));
+    var nodes = Array.prototype.slice.call(root.querySelectorAll('.news-title,.stock-name,[class*="title"],[class*="headline"],[class*="flash"]'));
     nodes.forEach(function(node){
       if(/^(SCRIPT|STYLE|TIME|CODE)$/i.test(node.tagName)){return;}
-      var text = node.textContent || '';
+      var first = node.firstChild;
+      if(!first || first.nodeType !== 3){return;}
+      var text = first.nodeValue || '';
       var cleaned = text.replace(/^\s*(?:\d{1,2})?[:：]\d{2,4}\s*/, '').replace(/^\s*\d{1,2}[.、]\s*/, '');
-      if(cleaned && cleaned !== text){node.textContent = cleaned;}
+      if(cleaned && cleaned !== text){first.nodeValue = cleaned;}
     });
   }
   if('MutationObserver' in window){

@@ -1,0 +1,43 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>News render regression</title>
+<pre id="result">Running…</pre>
+<script>
+(async function(){
+  const result = document.getElementById('result');
+  try {
+    const page = await (await fetch('../index.html')).text();
+    const fixture = language => `<div class="news-list"><div class="news-item"><div><div class="news-title">${language === 'zh' ? '1、 中文标题' : '1. English title'} <em>marked</em></div><div class="news-detail"><time datetime="2026-09-07T08:30:00Z">08:30</time> ${language === 'zh' ? '正文' : 'Details'} <a href="https://www.reuters.com/example" target="_blank" rel="noopener" data-source="reuters">Reuters</a></div></div></div></div>`;
+    const entry = {type:'AH', html:fixture('zh'), html_en:fixture('en'), time:'2026-09-07'};
+    const mock = `<script>window.fetch = function(url) { return Promise.resolve({ok:true,json:function(){return Promise.resolve(url.includes('manifest') ? {records:[{date:'2026-09-07',types:['AH']}]} : {entries:[${JSON.stringify(entry)}]});}}); };<\/script>`;
+    const frame = document.createElement('iframe');
+    const loaded = new Promise((resolve, reject) => { frame.onload = resolve; setTimeout(() => reject(Error('frame load timed out')), 15000); });
+    frame.srcdoc = page.replace('<script>\n(function(){', mock + '<script>\n(function(){').replace("  if('MutationObserver' in window){", "  window.__testClean = cleanNewsTitlePrefixes;\n  if('MutationObserver' in window){");
+    document.body.appendChild(frame);
+    await loaded;
+    const doc = frame.contentDocument;
+    await new Promise(resolve => setTimeout(resolve, 100));
+    function check(lang, expected){
+      doc.querySelector(`[data-lang="${lang}"]`).click();
+      const container = doc.querySelector('#ah-content');
+      const title = container.querySelector('.news-title');
+      const detail = container.querySelector('.news-detail');
+      if (!title || title.textContent.trim() !== expected + ' marked' || !title.querySelector('em')) throw Error(lang + ': title cleanup or markup');
+      const time = detail.querySelector('time'), link = detail.querySelector('a');
+      if (!time || time.textContent !== '08:30' || time.getAttribute('datetime') !== '2026-09-07T08:30:00Z') throw Error(lang + ': timestamp lost');
+      if (!link || link.getAttribute('href') !== 'https://www.reuters.com/example' || link.target !== '_blank' || link.rel !== 'noopener' || link.dataset.source !== 'reuters') throw Error(lang + ': source link lost');
+      return detail.innerHTML;
+    }
+    const zh = check('zh', '中文标题');
+    const detail = doc.querySelector('#ah-content .news-detail');
+    const timestamp = detail.querySelector('time'), source = detail.querySelector('a');
+    frame.contentWindow.__testClean(doc.querySelector('#ah-content'));
+    frame.contentWindow.__testClean(doc.querySelector('#ah-content'));
+    if (detail.innerHTML !== zh || detail.querySelector('time') !== timestamp || detail.querySelector('a') !== source) throw Error('Repeated cleanup changed nodes');
+    check('en', 'English title');
+    if (check('zh', '中文标题') !== zh) throw Error('Repeated language render changed detail');
+    check('zh', '中文标题');
+    result.textContent = 'PASS: Chinese and English rendering, repeated renders, prefixes, timestamp and source attributes';
+  } catch (error) { result.textContent = 'FAIL: ' + error.stack; }
+})();
+</script>
