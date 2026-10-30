@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261030-021824",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-10-30T02:45:05.634Z",
-  "heartbeat_at": "2026-10-30T02:35:05.634Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-10-30T02:39:52.149Z",
   "source_cutoff": "2026-10-30T01:45:00.000Z",
   "main_base_sha": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -655,17 +655,82 @@
           "expected_sha": "08b7cc5c1f451655d9e4986369cf1bb8a2e3f0ed",
           "success": true
         }
+      },
+      "production": {
+        "github_readback": {
+          "head": "afb738f49fa9a14739d936ee159e9204e2594333",
+          "headMatches": true,
+          "indexSha": "8f4fa90c77fea90092d07491121dd7f154e05f34",
+          "daySha": "d6805aa280d3d49cdb94661832161d9b2246c0cf",
+          "manifestSha": "cd311fe9d0da50a5d19aa76c231222a71d3e7b90",
+          "indexExact": true,
+          "dayExact": true,
+          "manifestExact": true
+        },
+        "home": {
+          "status": 200,
+          "time": "2026-10-30 10:28 CST",
+          "updated": "2026-10-30 10:28 CST",
+          "titleSignal": false,
+          "fiiCard": true,
+          "confirmed": 1,
+          "usTime": "2026-10-29 20:36 CST",
+          "briefExact": true,
+          "profitSignal": true,
+          "cache": "HIT",
+          "lastModified": "Fri, 30 Oct 2026 02:38:02 GMT"
+        },
+        "archive_json": {
+          "status": 200,
+          "updated": "2026-10-30 10:28 CST",
+          "title": "A股跌幅收窄、港股科技走强，工业富联绩后逆势确认AI算力主线",
+          "time": "2026-10-30 10:28 CST",
+          "zhExact": true,
+          "enExact": true,
+          "zhMajor": 13,
+          "enMajor": 13,
+          "zhOvernight": 3,
+          "enOvernight": 3,
+          "zhCards": 5,
+          "enCards": 5
+        },
+        "manifest": {
+          "status": 200,
+          "updated": "2026-10-30 10:28 CST",
+          "recordUpdated": "2026-10-30 10:28 CST",
+          "title": "A股跌幅收窄、港股科技走强，工业富联绩后逆势确认AI算力主线",
+          "records": 52,
+          "types": [
+            "AH"
+          ]
+        },
+        "history_page": {
+          "status": 200,
+          "loader": true
+        },
+        "headers": {
+          "home": {
+            "cache": "MISS",
+            "lastModified": "Fri, 30 Oct 2026 02:38:02 GMT"
+          },
+          "day": {
+            "cache": "MISS",
+            "lastModified": "Fri, 30 Oct 2026 02:37:34 GMT"
+          },
+          "manifest": {
+            "cache": "MISS",
+            "lastModified": "Fri, 30 Oct 2026 02:38:34 GMT"
+          },
+          "history": {
+            "cache": "MISS",
+            "lastModified": "Fri, 30 Oct 2026 02:39:04 GMT"
+          }
+        },
+        "passed": true
       }
     }
   },
-  "pending_increment": [
-    {
-      "event": "工业富联2026年第三季度报告",
-      "first_available_at": "2026-10-29T20:01:00+08:00",
-      "importance": "material",
-      "reason": "AI算力业绩高增且10:18价格逆势确认，首轮遗漏"
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "afb738f49fa9a14739d936ee159e9204e2594333",
   "stage_timings": {
     "inputs_started_at": "2026-10-30T00:33:00.000Z",
@@ -712,7 +777,9 @@
       "validation_completed_at": "2026-10-30T02:27:17.611Z",
       "commit_started_at": "2026-10-30T02:27:17.611Z",
       "commit_completed_at": "2026-10-30T02:35:05.634Z",
-      "deployment_started_at": "2026-10-30T02:35:05.634Z"
+      "deployment_started_at": "2026-10-30T02:35:05.634Z",
+      "deployment_completed_at": "2026-10-30T02:39:52.149Z",
+      "completed_at": "2026-10-30T02:39:52.149Z"
     }
   },
   "error": null,
