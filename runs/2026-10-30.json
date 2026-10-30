@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261030-014555",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-10-30T01:55:55.000Z",
-  "heartbeat_at": "2026-10-30T01:45:55.000Z",
+  "stage": "generation",
+  "lease_until": "2026-10-30T02:00:00.000Z",
+  "heartbeat_at": "2026-10-30T01:50:00.000Z",
   "source_cutoff": "2026-10-30T00:33:00.000Z",
   "main_base_sha": "8e70fcffd2613f71ab103b2358d058d0fb39945b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -292,9 +292,84 @@
         ],
         "records": 52
       }
+    },
+    "incremental_review": {
+      "checked_at": "2026-10-30T01:50:00.000Z",
+      "source_cutoff": "2026-10-30T00:33:00.000Z",
+      "post_cutoff_news": "No new verified policy or exchange announcement changed the 08:39 thesis",
+      "opening_feedback": {
+        "source": "Eastmoney cloud quote batch",
+        "observed_at": "2026-10-30 09:45 CST",
+        "markets": [
+          {
+            "ticker": "SH.000001",
+            "name": "上证指数",
+            "price": 3607.26,
+            "change_pct": -1.21
+          },
+          {
+            "ticker": "SZ.399006",
+            "name": "创业板指",
+            "price": 2438.09,
+            "change_pct": -3.16
+          },
+          {
+            "ticker": "HK.HSI",
+            "name": "恒生指数",
+            "price": 23100.21,
+            "change_pct": 0.62
+          },
+          {
+            "ticker": "HK.HSTECH",
+            "name": "恒生科技指数",
+            "price": 3755.51,
+            "change_pct": 0.3
+          }
+        ],
+        "candidates": [
+          {
+            "ticker": "SZ.300308",
+            "name": "中际旭创",
+            "price": 551.7,
+            "change_pct": -5.21,
+            "decision": "avoid",
+            "reason": "跌破582.05确认阈值，科技弱势延续"
+          },
+          {
+            "ticker": "SH.600183",
+            "name": "生益科技",
+            "price": 86.18,
+            "change_pct": -8.44,
+            "decision": "avoid",
+            "reason": "跌破94元确认阈值且继续大跌"
+          },
+          {
+            "ticker": "SH.600958",
+            "name": "东方证券",
+            "price": 8.15,
+            "change_pct": -1.21,
+            "decision": "avoid",
+            "reason": "跌破8.25确认阈值，未形成量价确认"
+          },
+          {
+            "ticker": "HK.01876",
+            "name": "百威亚太",
+            "price": 5.84,
+            "change_pct": 3.18,
+            "decision": "avoid",
+            "reason": "反弹不改变销量及EBITDA下降的负面基本面"
+          }
+        ]
+      },
+      "material_change": true,
+      "material_reason": "A股成长显著下挫、港股转强形成分化；三只条件候选全部失效，需改变个股状态与风险提示"
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    "Update opening A/H split",
+    "Downgrade three failed conditional candidates",
+    "Keep Budweiser APAC avoid despite bounce"
+  ],
   "published_commit": "1445416da0953e0439727b95f62a13d8202900e6",
   "stage_timings": {
     "inputs_started_at": "2026-10-30T00:33:00.000Z",
@@ -312,7 +387,11 @@
     "completed_at": "2026-10-30T00:42:00.000Z",
     "total_wall_seconds": 540,
     "incremental_research": {
-      "started_at": "2026-10-30T01:45:55.000Z"
+      "started_at": "2026-10-30T01:45:55.000Z",
+      "completed_at": "2026-10-30T01:50:00.000Z"
+    },
+    "generation": {
+      "started_at": "2026-10-30T01:50:00.000Z"
     }
   },
   "error": null,
