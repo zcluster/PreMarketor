@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-10-30T09:03:54+08:00",
+  "attemptedAt": "2026-10-31T08:48:45+08:00",
   "status": "partial",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-30T09:03:54+08:00",
+      "fetchedAt": "2026-10-31T08:48:45+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,72 +17,72 @@
       },
       "top": [
         {
-          "name": "汽车和卡车经销",
-          "nameEn": "Auto & Truck Dealerships",
-          "code": "BK2256",
-          "changePct": "+7.57%",
-          "leaderName": "美国汽车行",
-          "leaderTicker": "CRMT",
-          "leaderChangePct": "+22.25%",
+          "name": "抵押贷款金融",
+          "nameEn": "Mortgage Finance",
+          "code": "BK2479",
+          "changePct": "+5.90%",
+          "leaderName": "Rocket",
+          "leaderTicker": "RKT",
+          "leaderChangePct": "+7.38%",
           "breadth": {
-            "advancers": 22,
+            "advancers": 4,
+            "decliners": 7,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "化学制品",
+          "nameEn": "Chemicals",
+          "code": "BK2020",
+          "changePct": "+4.41%",
+          "leaderName": "梅思恩",
+          "leaderTicker": "MEOH",
+          "leaderChangePct": "+14.04%",
+          "breadth": {
+            "advancers": 11,
             "decliners": 3,
             "unchanged": 1
           }
         },
         {
-          "name": "安全与保护",
-          "nameEn": "Security & Protection Services",
-          "code": "BK2268",
-          "changePct": "+5.95%",
-          "leaderName": "ADT Inc",
-          "leaderTicker": "ADT",
-          "leaderChangePct": "+33.20%",
+          "name": "污染控制与治理",
+          "nameEn": "Pollution & Treatment Controls",
+          "code": "BK2227",
+          "changePct": "+3.82%",
+          "leaderName": "TOMI Environmental Solutions",
+          "leaderTicker": "TOMZ",
+          "leaderChangePct": "+13.53%",
           "breadth": {
-            "advancers": 13,
-            "decliners": 8,
-            "unchanged": 1
+            "advancers": 4,
+            "decliners": 12,
+            "unchanged": 2
           }
         },
         {
-          "name": "奢侈品",
-          "nameEn": "Luxury Goods",
-          "code": "BK2276",
-          "changePct": "+5.22%",
-          "leaderName": "LuxExperience BV",
-          "leaderTicker": "LUXE",
-          "leaderChangePct": "+5.99%",
+          "name": "糖果",
+          "nameEn": "Confectioners",
+          "code": "BK2473",
+          "changePct": "+3.63%",
+          "leaderName": "亿滋",
+          "leaderTicker": "MDLZ",
+          "leaderChangePct": "+3.85%",
           "breadth": {
-            "advancers": 9,
+            "advancers": 4,
             "decliners": 1,
             "unchanged": 0
           }
         },
         {
-          "name": "广播",
-          "nameEn": "Broadcasting",
-          "code": "BK2497",
-          "changePct": "+4.85%",
-          "leaderName": "格雷电视-A",
-          "leaderTicker": "GTN.A",
-          "leaderChangePct": "+29.37%",
+          "name": "油气钻探",
+          "nameEn": "Oil & Gas Drilling",
+          "code": "BK2274",
+          "changePct": "+3.03%",
+          "leaderName": "Patterson-UTI Energy",
+          "leaderTicker": "PTEN",
+          "leaderChangePct": "+4.96%",
           "breadth": {
-            "advancers": 9,
-            "decliners": 7,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "鞋类及配饰",
-          "nameEn": "Footwear & Accessories",
-          "code": "BK2106",
-          "changePct": "+4.79%",
-          "leaderName": "卡骆驰",
-          "leaderTicker": "CROX",
-          "leaderChangePct": "+25.54%",
-          "breadth": {
-            "advancers": 12,
-            "decliners": 1,
+            "advancers": 7,
+            "decliners": 3,
             "unchanged": 0
           }
         }
@@ -98,7 +98,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-10-30T09:03:54+08:00",
+      "fetchedAt": "2026-10-31T08:48:45+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -107,72 +107,72 @@
       },
       "top": [
         {
+          "name": "枪械制造",
+          "nameEn": "Firearm Manufacturers",
+          "code": "BK2581",
+          "changePct": "+3.03%",
+          "leaderName": "欧林",
+          "leaderTicker": "OLN",
+          "leaderChangePct": "+9.66%",
+          "breadth": {
+            "advancers": 1,
+            "decliners": 3,
+            "unchanged": 0
+          }
+        },
+        {
           "name": "减肥药概念",
           "nameEn": "Weight Loss Drugs",
           "code": "BK2152",
-          "changePct": "+4.36%",
+          "changePct": "+2.37%",
           "leaderName": "礼来",
           "leaderTicker": "LLY",
-          "leaderChangePct": "+6.63%",
+          "leaderChangePct": "+3.19%",
           "breadth": {
-            "advancers": 9,
+            "advancers": 6,
+            "decliners": 5,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "体育博彩",
+          "nameEn": "Sports Betting",
+          "code": "BK23588",
+          "changePct": "+2.27%",
+          "leaderName": "Flutter Entertainment",
+          "leaderTicker": "FLUT",
+          "leaderChangePct": "+4.29%",
+          "breadth": {
+            "advancers": 5,
             "decliners": 2,
             "unchanged": 0
           }
         },
         {
-          "name": "邮轮概念",
-          "nameEn": "Cruise Lines",
-          "code": "BK2447",
-          "changePct": "+4.08%",
-          "leaderName": "挪威邮轮",
-          "leaderTicker": "NCLH",
-          "leaderChangePct": "+13.45%",
+          "name": "页岩油",
+          "nameEn": "Shale Oil",
+          "code": "BK2585",
+          "changePct": "+2.07%",
+          "leaderName": "Diamondback Energy",
+          "leaderTicker": "FANG",
+          "leaderChangePct": "+2.74%",
           "breadth": {
-            "advancers": 5,
+            "advancers": 13,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "体育",
-          "nameEn": "Sports",
-          "code": "BK2574",
-          "changePct": "+3.47%",
-          "leaderName": "Escalade",
-          "leaderTicker": "ESCA",
-          "leaderChangePct": "+8.63%",
-          "breadth": {
-            "advancers": 8,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "美国国防航空",
-          "nameEn": "Defense",
-          "code": "BK2654",
-          "changePct": "+3.18%",
-          "leaderName": "亨廷顿英格尔斯工业",
-          "leaderTicker": "HII",
-          "leaderChangePct": "+13.23%",
+          "name": "天然气",
+          "nameEn": "Natural Gas",
+          "code": "BK2582",
+          "changePct": "+1.85%",
+          "leaderName": "Phillips 66",
+          "leaderTicker": "PSX",
+          "leaderChangePct": "+3.37%",
           "breadth": {
             "advancers": 9,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "抗癌医药",
-          "nameEn": "Cancer Research",
-          "code": "BK2573",
-          "changePct": "+3.09%",
-          "leaderName": "精确射线",
-          "leaderTicker": "ARAY",
-          "leaderChangePct": "+6.87%",
-          "breadth": {
-            "advancers": 7,
-            "decliners": 0,
+            "decliners": 3,
             "unchanged": 0
           }
         }
@@ -184,10 +184,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-10-29",
-    "checked_at": "2026-10-30T09:04:25+08:00",
+    "expected_session_date": "2026-10-30",
+    "checked_at": "2026-10-31T08:49:09+08:00",
     "request_id": null,
-    "groups_sha256": "efd7a345f9577180fd7c324f14e5e07d410a1d31beffcba9520166ec977cb870",
+    "groups_sha256": "989df563580a3f458ee0a76877162c9d8798d1143705e85174a5566872dbdd6c",
     "errors": []
   }
 }
