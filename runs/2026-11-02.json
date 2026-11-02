@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261102-20261102013548",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "candidate_commit_creation",
-  "lease_until": "2026-11-02T01:49:30.000Z",
-  "heartbeat_at": "2026-11-02T01:39:30.000Z",
+  "stage": "main_ref_update",
+  "lease_until": "2026-11-02T01:51:00.000Z",
+  "heartbeat_at": "2026-11-02T01:41:00.000Z",
   "source_cutoff": "2026-11-02T01:39:30.000Z",
   "main_base_sha": "0dab6e669be2afd4ec83065eb7ad59ae32d3de0c",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -122,7 +122,8 @@
           "industry Bottom5 timeout",
           "US representative premarket quotes unavailable"
         ]
-      }
+      },
+      "candidate_commit": "91810c18d63efdf2f55f00fbc8ce81496d688910"
     }
   },
   "pending_increment": [],
@@ -137,7 +138,8 @@
     "commit_completed_at": "2026-11-02T00:42:00.000Z",
     "production_verified_at": "2026-11-02T00:43:00.000Z",
     "incremental_review_started_at": "2026-11-02T01:35:48.000Z",
-    "validation_completed_at": "2026-11-02T01:39:30.000Z"
+    "validation_completed_at": "2026-11-02T01:39:30.000Z",
+    "candidate_commit_created_at": "2026-11-02T01:41:00.000Z"
   },
   "error": null,
   "completed_at": null
