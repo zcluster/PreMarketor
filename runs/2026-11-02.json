@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261102-20261102003517",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "production_verified",
-  "lease_until": null,
-  "heartbeat_at": "2026-11-02T00:43:00.000Z",
-  "source_cutoff": "2026-11-02T00:40:00.000Z",
-  "main_base_sha": "f8d4dab9ba3f7aadd7b030b533fd4e800ba3bfeb",
+  "run_id": "ah-review-20261102-20261102013548",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "generation",
+  "lease_until": "2026-11-02T01:45:48.000Z",
+  "heartbeat_at": "2026-11-02T01:35:48.000Z",
+  "source_cutoff": "2026-11-02T01:35:48.000Z",
+  "main_base_sha": "0dab6e669be2afd4ec83065eb7ad59ae32d3de0c",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -79,6 +79,30 @@
       "panel_rows_en": 10,
       "industry_bottom5": "unavailable_last_page_timeout",
       "us_protected": true
+    },
+    "incremental_review": {
+      "first_run_cutoff": "2026-11-02T00:40:00.000Z",
+      "reviewed_at": "2026-11-02T01:35:48.000Z",
+      "current_main": "0dab6e669be2afd4ec83065eb7ad59ae32d3de0c",
+      "material": true,
+      "reason": "开盘指数未延续单边科技去风险，长飞光纤A/H同步收复确认价位",
+      "quotes": {
+        "上证指数": "3595.53 / -0.10%",
+        "创业板指": "2419.65 / +0.25%",
+        "恒生指数": "23410.43 / +0.50%",
+        "TCL科技": "4.46 / -0.89%",
+        "长飞光纤A": "266.67 / +5.45%",
+        "长飞光纤H": "100.20 / +4.21%",
+        "屹唐股份": "17.70 / +1.78%",
+        "赛力斯A": "41.32 / +1.65%",
+        "赛力斯H": "29.72 / +1.36%",
+        "TCL中环": "停牌"
+      },
+      "quote_source": "东方财富公开延迟行情",
+      "source_limitations": [
+        "恒生科技实时指数未从同一接口返回",
+        "AKShare云端快照仍为2026-10-30"
+      ]
     }
   },
   "pending_increment": [],
@@ -88,11 +112,12 @@
     "inputs_completed_at": "2026-11-02T00:35:30.000Z",
     "research_started_at": "2026-11-02T00:35:30.000Z",
     "research_completed_at": "2026-11-02T00:42:00.000Z",
-    "generation_started_at": "2026-11-02T00:42:00.000Z",
+    "generation_started_at": "2026-11-02T01:35:48.000Z",
     "generation_completed_at": "2026-11-02T00:40:00.000Z",
     "commit_completed_at": "2026-11-02T00:42:00.000Z",
-    "production_verified_at": "2026-11-02T00:43:00.000Z"
+    "production_verified_at": "2026-11-02T00:43:00.000Z",
+    "incremental_review_started_at": "2026-11-02T01:35:48.000Z"
   },
   "error": null,
-  "completed_at": "2026-11-02T00:43:00.000Z"
+  "completed_at": null
 }
