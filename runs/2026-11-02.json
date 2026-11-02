@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261102-20261102013548",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-11-02T01:52:00.000Z",
-  "heartbeat_at": "2026-11-02T01:42:00.000Z",
+  "status": "published",
+  "stage": "production_verified",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-02T01:43:01.000Z",
   "source_cutoff": "2026-11-02T01:39:30.000Z",
   "main_base_sha": "0dab6e669be2afd4ec83065eb7ad59ae32d3de0c",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -129,6 +129,28 @@
         "commit": "91810c18d63efdf2f55f00fbc8ce81496d688910",
         "updated_at": "2026-11-02T01:42:00.000Z",
         "force": false
+      },
+      "production": {
+        "verified": true,
+        "verified_at": "2026-11-02T01:43:01.000Z",
+        "statuses": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "github_remote_exact": true,
+        "homepage_time": "2026-11-02 09:37 CST",
+        "history_rendered": true,
+        "zh_rendered": true,
+        "en_rendered": true,
+        "title": "A/H开盘企稳、光通信A/H同步反弹，周末业绩开始获价格确认",
+        "files": [
+          "index.html",
+          "history/data/2026-11-02.json",
+          "history/manifest.json"
+        ],
+        "us_protected": true
       }
     }
   },
@@ -147,8 +169,9 @@
     "validation_completed_at": "2026-11-02T01:39:30.000Z",
     "candidate_commit_created_at": "2026-11-02T01:41:00.000Z",
     "main_ref_updated_at": "2026-11-02T01:42:00.000Z",
-    "deployment_verification_started_at": "2026-11-02T01:42:00.000Z"
+    "deployment_verification_started_at": "2026-11-02T01:42:00.000Z",
+    "deployment_verification_completed_at": "2026-11-02T01:43:01.000Z"
   },
   "error": null,
-  "completed_at": null
+  "completed_at": "2026-11-02T01:43:01.000Z"
 }
