@@ -32,7 +32,7 @@
       var first = node.firstChild;
       if(!first || first.nodeType !== 3){return;}
       var text = first.nodeValue || '';
-      var cleaned = text.replace(/^\s*(?:\d{1,2})?[:：]\d{2,4}\s*/, '').replace(/^\s*\d{1,2}[.、]\s*/, '');
+      var cleaned = text.replace(/^\s*(?:\d{1,2})?[:：]\d{2,4}\s*/, '').replace(/^\s*\d{1,2}(?:\.\s+|、\s*)/, '');
       if(cleaned && cleaned !== text){first.nodeValue = cleaned;}
     });
   }
