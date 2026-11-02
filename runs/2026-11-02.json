@@ -1,11 +1,11 @@
 {
   "run_id": "ah-20261102-20261102003517",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-02T01:00:00.000Z",
-  "heartbeat_at": "2026-11-02T00:42:00.000Z",
-  "source_cutoff": "2026-11-02T00:42:00.000Z",
+  "status": "published",
+  "stage": "production_verified",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-02T00:43:00.000Z",
+  "source_cutoff": "2026-11-02T00:40:00.000Z",
   "main_base_sha": "f8d4dab9ba3f7aadd7b030b533fd4e800ba3bfeb",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -56,16 +56,43 @@
         "TCL中环 002129": "avoid; suspended and YTD loss",
         "中国稀土 000831": "event only; suspended, reorg uncertain"
       }
+    },
+    "publication": {
+      "initial_commit": "4e4775e26e2f2cea06ceb05d45abfdc32a2b196b",
+      "final_commit": "0dab6e669be2afd4ec83065eb7ad59ae32d3de0c",
+      "files": [
+        "index.html",
+        "history/data/2026-11-02.json",
+        "history/manifest.json"
+      ],
+      "remote_readback": true,
+      "production_http_statuses": [
+        200,
+        200,
+        200,
+        200
+      ],
+      "homepage_time": "2026-11-02 08:41 CST",
+      "zh_cards": 5,
+      "en_cards": 5,
+      "panel_rows_zh": 10,
+      "panel_rows_en": 10,
+      "industry_bottom5": "unavailable_last_page_timeout",
+      "us_protected": true
     }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "0dab6e669be2afd4ec83065eb7ad59ae32d3de0c",
   "stage_timings": {
     "inputs_started_at": "2026-11-02T00:35:17.000Z",
     "inputs_completed_at": "2026-11-02T00:35:30.000Z",
     "research_started_at": "2026-11-02T00:35:30.000Z",
     "research_completed_at": "2026-11-02T00:42:00.000Z",
-    "generation_started_at": "2026-11-02T00:42:00.000Z"
+    "generation_started_at": "2026-11-02T00:42:00.000Z",
+    "generation_completed_at": "2026-11-02T00:40:00.000Z",
+    "commit_completed_at": "2026-11-02T00:42:00.000Z",
+    "production_verified_at": "2026-11-02T00:43:00.000Z"
   },
-  "error": null
+  "error": null,
+  "completed_at": "2026-11-02T00:43:00.000Z"
 }
