@@ -2,10 +2,10 @@
   "run_id": "ah-20261102-20261102003517",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "inputs",
-  "lease_until": "2026-11-02T00:50:00.000Z",
-  "heartbeat_at": "2026-11-02T00:35:30.000Z",
-  "source_cutoff": "2026-11-02T00:35:17.000Z",
+  "stage": "research",
+  "lease_until": "2026-11-02T01:00:00.000Z",
+  "heartbeat_at": "2026-11-02T00:42:00.000Z",
+  "source_cutoff": "2026-11-02T00:42:00.000Z",
   "main_base_sha": "f8d4dab9ba3f7aadd7b030b533fd4e800ba3bfeb",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -37,6 +37,25 @@
       "A_breadth": "1805/3466/144 median -0.87%",
       "HK_phase": "intraday_snapshot",
       "HK_breadth": "862/862/1080 median 0.00%"
+    },
+    "research": {
+      "completed_at": "2026-11-02T00:42:00.000Z",
+      "sources": [
+        "NBS Oct PMI",
+        "PBOC liquidity framework secondary official-government summaries",
+        "CAC Wuzhen conference",
+        "SSE/CNINFO weekend filings",
+        "Reuters US close and Intel",
+        "Moomoo rankings snapshot"
+      ],
+      "candidate_status": {
+        "TCL科技 000100": "condition_watch; weekend Q3 results, no post-disclosure price",
+        "长飞光纤 601869/06869": "condition_watch; strong Q3, but Fri A -7.57%/H -4.99% and US semis -7.2%",
+        "屹唐股份 688729": "condition_watch; CNY18bn project, no post-disclosure price",
+        "赛力斯 601127/09927": "avoid; YTD loss and negative price feedback",
+        "TCL中环 002129": "avoid; suspended and YTD loss",
+        "中国稀土 000831": "event only; suspended, reorg uncertain"
+      }
     }
   },
   "pending_increment": [],
@@ -44,7 +63,9 @@
   "stage_timings": {
     "inputs_started_at": "2026-11-02T00:35:17.000Z",
     "inputs_completed_at": "2026-11-02T00:35:30.000Z",
-    "research_started_at": "2026-11-02T00:35:30.000Z"
+    "research_started_at": "2026-11-02T00:35:30.000Z",
+    "research_completed_at": "2026-11-02T00:42:00.000Z",
+    "generation_started_at": "2026-11-02T00:42:00.000Z"
   },
   "error": null
 }
