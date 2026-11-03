@@ -2,9 +2,9 @@
   "run_id": "ah-20261103-20261103002800",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-11-03T00:47:54.592Z",
-  "heartbeat_at": "2026-11-03T00:32:54.592Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-11-03T00:48:21.928Z",
+  "heartbeat_at": "2026-11-03T00:33:21.928Z",
   "source_cutoff": "2026-11-03T00:28:00.000Z",
   "main_base_sha": "4c6d19da088169a68115cfd914a532c0342edfe6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -184,6 +184,29 @@
       "news_count": true,
       "ranking_panel_parity": true,
       "source_timestamps_disclosed": true
+    },
+    "precommit": {
+      "head": "316f27b924ec8c38b7e7304a7db494e42ed467c8",
+      "tree": "b4189786685f0cd5cb0f45445fd097b7ca56e4ae",
+      "rulesSha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "indexSha": "da88c4e41001d71f8f965d945480b2650b32ff1a",
+      "manifestSha": "1f3b3db599f6601dccf0a611da86799eaa4c6238",
+      "rankSha": "004d7e4cb88985d633d3c3ce77d73843778e82a0",
+      "akSha": "181dea41f10fd27171b4f0e7180602d00236439b",
+      "stateSha": "672e800a757c676adb7797f6282d388ad2454787",
+      "stateRun": "ah-20261103-20261103002800",
+      "stateStatus": "running",
+      "stateStage": "hard_validation",
+      "stateLease": "2026-11-03T00:47:54.592Z",
+      "rankReady": true,
+      "rankSession": "2026-11-02",
+      "rankRequest": "ah-20261103-20261103002800",
+      "rulesSame": true,
+      "indexSame": true,
+      "manifestSame": true,
+      "rankSame": true,
+      "akSame": true,
+      "leaseOurs": true
     }
   },
   "pending_increment": [],
@@ -196,7 +219,9 @@
     "research_completed_at": "2026-11-03T00:30:28.793Z",
     "generation_started_at": "2026-11-03T00:30:28.793Z",
     "generation_completed_at": "2026-11-03T00:32:54.592Z",
-    "validation_started_at": "2026-11-03T00:32:54.592Z"
+    "validation_started_at": "2026-11-03T00:32:54.592Z",
+    "validation_completed_at": "2026-11-03T00:33:21.928Z",
+    "candidate_commit_started_at": "2026-11-03T00:33:21.928Z"
   },
   "error": null
 }
