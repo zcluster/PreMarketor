@@ -2,9 +2,9 @@
   "run_id": "ah-20261103-20261103002800",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-11-03T00:45:28.793Z",
-  "heartbeat_at": "2026-11-03T00:30:28.793Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-11-03T00:47:54.592Z",
+  "heartbeat_at": "2026-11-03T00:32:54.592Z",
   "source_cutoff": "2026-11-03T00:28:00.000Z",
   "main_base_sha": "4c6d19da088169a68115cfd914a532c0342edfe6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -149,6 +149,41 @@
           "reason": "BILI ADR move is direct to Bilibili but no new company catalyst verified; not forced into a card."
         }
       ]
+    },
+    "generation": {
+      "time": "2026-11-03 08:33 CST",
+      "zh_chars": 11951,
+      "en_chars": 20102,
+      "major_news_count": 11,
+      "stock_cards": [
+        {
+          "ticker": "002236.SZ",
+          "status": "conditional_watch"
+        },
+        {
+          "ticker": "300857.SZ",
+          "status": "conditional_watch"
+        },
+        {
+          "ticker": "300972.SZ",
+          "status": "avoid"
+        }
+      ],
+      "panel_rows": {
+        "industry": 10,
+        "concept": 5,
+        "down": 5
+      },
+      "akshare_mode": "stale_single_source_degraded"
+    },
+    "validation": {
+      "structure_parity": true,
+      "history_complete": true,
+      "protected_us_markers": true,
+      "allowed_index_regions_only": true,
+      "news_count": true,
+      "ranking_panel_parity": true,
+      "source_timestamps_disclosed": true
     }
   },
   "pending_increment": [],
@@ -159,7 +194,9 @@
     "ranking_refresh_started_at": "2026-11-03T00:28:00.000Z",
     "research_started_at": "2026-11-03T00:28:52.230Z",
     "research_completed_at": "2026-11-03T00:30:28.793Z",
-    "generation_started_at": "2026-11-03T00:30:28.793Z"
+    "generation_started_at": "2026-11-03T00:30:28.793Z",
+    "generation_completed_at": "2026-11-03T00:32:54.592Z",
+    "validation_started_at": "2026-11-03T00:32:54.592Z"
   },
   "error": null
 }
