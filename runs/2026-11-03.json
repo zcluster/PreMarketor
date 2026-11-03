@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261103-20261103014934",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-11-03T02:07:00.000Z",
-  "heartbeat_at": "2026-11-03T01:52:00.000Z",
+  "stage": "main_ref_update",
+  "lease_until": "2026-11-03T02:08:20.000Z",
+  "heartbeat_at": "2026-11-03T01:53:20.000Z",
   "source_cutoff": "2026-11-03T00:28:00.000Z",
   "main_base_sha": "a538a88e385f190a304af63a3f7103cf0df7bfad",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -373,6 +373,17 @@
         "protected_us_markers": true,
         "index_outside_ah_markers_unchanged": true,
         "stale_akshare_disclosed": true
+      },
+      "candidate_commit": {
+        "commit": "28aa933928732371d3da3a4c8689c72ac22db2f3",
+        "tree": "f10e2174546590d11a1b16add6616420e082c42c",
+        "parent": "a538a88e385f190a304af63a3f7103cf0df7bfad",
+        "blobs": {
+          "index": "9f464b38b0ec981db27dd96d02b83a2f0febfc1f",
+          "history": "e6db8fdd6a0cfc94cad860c5550e28168ab911b9",
+          "manifest": "6666922dd2349dafb235c7e07a119b8c078925dc"
+        },
+        "force": false
       }
     }
   },
@@ -402,7 +413,8 @@
     "review_research_completed_at": "2026-11-03T01:50:47.000Z",
     "review_generation_completed_at": "2026-11-03T01:51:59.000Z",
     "review_validation_started_at": "2026-11-03T01:51:59.000Z",
-    "review_validation_completed_at": "2026-11-03T01:52:00.000Z"
+    "review_validation_completed_at": "2026-11-03T01:52:00.000Z",
+    "review_candidate_commit_created_at": "2026-11-03T01:53:20.000Z"
   },
   "error": null
 }
