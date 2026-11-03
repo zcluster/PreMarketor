@@ -1,0 +1,47 @@
+{
+  "run_id": "ah-20261103-20261103002800",
+  "owner": "发布 MarketAhead A/H 早报",
+  "status": "running",
+  "stage": "inputs",
+  "lease_until": "2026-11-03T00:38:00.000Z",
+  "heartbeat_at": "2026-11-03T00:28:00.000Z",
+  "source_cutoff": "2026-11-03T00:28:00.000Z",
+  "main_base_sha": "4c6d19da088169a68115cfd914a532c0342edfe6",
+  "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+  "evidence": {
+    "inputs": {
+      "main_head": "4c6d19da088169a68115cfd914a532c0342edfe6",
+      "state_head": "4d895db9cc56cbbe80a473d3290c36410d74ce60",
+      "rules_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "index_sha": "d1a4ae05214abb7c876da5384bd938f3494e70f2",
+      "manifest_sha": "1f3b3db599f6601dccf0a611da86799eaa4c6238",
+      "rankings_sha": "f8cb91434109dda34b5564cf82d90902837ed057",
+      "akshare_sha": "181dea41f10fd27171b4f0e7180602d00236439b",
+      "today_history_exists": false,
+      "read_at": "2026-11-03T00:27:00.000Z"
+    },
+    "ranking_gate": {
+      "expected_session_date": "2026-11-02",
+      "ready": false,
+      "observed_expected_session_date": "2026-10-30",
+      "observed_attempted_at": "2026-10-31T08:48:45+08:00",
+      "reason": "stale_for_latest_completed_us_session"
+    },
+    "akshare": {
+      "fetched_at": "2026-11-02T14:05:51+08:00",
+      "status": "ok",
+      "stale_for_run_date": true,
+      "A_market_date": "2026-11-02",
+      "A_market_phase": "intraday_snapshot",
+      "HK_market_phase": "intraday_snapshot"
+    }
+  },
+  "pending_increment": [],
+  "published_commit": null,
+  "stage_timings": {
+    "inputs_started_at": "2026-11-03T00:26:26.000Z",
+    "inputs_completed_at": "2026-11-03T00:28:00.000Z",
+    "ranking_refresh_started_at": "2026-11-03T00:28:00.000Z"
+  },
+  "error": null
+}
