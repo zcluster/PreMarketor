@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261103-20261103002800",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": "2026-11-03T00:35:58.984Z",
-  "heartbeat_at": "2026-11-03T00:35:58.984Z",
+  "run_id": "ah-review-20261103-20261103014934",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "research",
+  "lease_until": "2026-11-03T01:59:34.000Z",
+  "heartbeat_at": "2026-11-03T01:49:34.000Z",
   "source_cutoff": "2026-11-03T00:28:00.000Z",
-  "main_base_sha": "4c6d19da088169a68115cfd914a532c0342edfe6",
+  "main_base_sha": "a538a88e385f190a304af63a3f7103cf0df7bfad",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -276,9 +276,78 @@
         "homeUsProtected": true
       },
       "pass": true
+    },
+    "incremental_review": {
+      "started_at": "2026-11-03T01:49:34.000Z",
+      "first_run_research_cutoff": "2026-11-03T00:30:28.793Z",
+      "initial_published_commit": "a538a88e385f190a304af63a3f7103cf0df7bfad",
+      "quote_source": "Eastmoney delayed quote API via cloud browser",
+      "quote_checked_at": "2026-11-03T01:48:00.000Z",
+      "observations": [
+        {
+          "ticker": "000001.SH",
+          "price": 3591.07,
+          "change_pct": -1.29
+        },
+        {
+          "ticker": "399006.SZ",
+          "price": 2429.27,
+          "change_pct": -1.2
+        },
+        {
+          "ticker": "HSI",
+          "price": 23405.9,
+          "change_pct": 0.05
+        },
+        {
+          "ticker": "002236.SZ",
+          "price": 14.43,
+          "change_pct": 1.33
+        },
+        {
+          "ticker": "300857.SZ",
+          "price": 144.2,
+          "change_pct": -4.13
+        },
+        {
+          "ticker": "300972.SZ",
+          "price": 141.53,
+          "change_pct": -5.31
+        },
+        {
+          "ticker": "09626.HK",
+          "price": 107.6,
+          "change_pct": 3.26
+        },
+        {
+          "ticker": "00700.HK",
+          "change_pct": 1.58
+        },
+        {
+          "ticker": "09988.HK",
+          "change_pct": 1.26
+        },
+        {
+          "ticker": "00981.HK",
+          "change_pct": -2.11
+        }
+      ],
+      "materiality": "A-share index weakness confirms overseas technology pressure; Hong Kong internet/semiconductor divergence changes rotation view; Dahua gets positive confirmation while Xiechuang and Wancheng receive negative price feedback.",
+      "bounded_incremental_scan": {
+        "status": "completed",
+        "result": "No later verified policy or exchange announcement exceeded the impact of the opening-price evidence.",
+        "sources": [
+          "https://finance.eastmoney.com/a/202611033919187447.html",
+          "https://basic.10jqka.com.cn/002236/event.html"
+        ]
+      }
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    "Update A/H market view with 09:48 CST opening-price confirmation",
+    "Upgrade Dahua to bullish candidate; downgrade Xiechuang to avoid; retain Wancheng avoid",
+    "Update bilingual index/history/manifest only"
+  ],
   "published_commit": "a538a88e385f190a304af63a3f7103cf0df7bfad",
   "stage_timings": {
     "inputs_started_at": "2026-11-03T00:26:26.000Z",
@@ -295,7 +364,8 @@
     "deployment_verification_started_at": "2026-11-03T00:34:05.770Z",
     "deployment_verification_completed_at": "2026-11-03T00:35:58.984Z",
     "completed_at": "2026-11-03T00:35:58.984Z",
-    "total_wall_seconds": 573
+    "total_wall_seconds": 573,
+    "review_started_at": "2026-11-03T01:49:34.000Z"
   },
   "error": null
 }
