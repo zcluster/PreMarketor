@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261103-20261103014934",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-03T01:59:34.000Z",
-  "heartbeat_at": "2026-11-03T01:49:34.000Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-11-03T02:07:00.000Z",
+  "heartbeat_at": "2026-11-03T01:52:00.000Z",
   "source_cutoff": "2026-11-03T00:28:00.000Z",
   "main_base_sha": "a538a88e385f190a304af63a3f7103cf0df7bfad",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -340,6 +340,39 @@
           "https://finance.eastmoney.com/a/202611033919187447.html",
           "https://basic.10jqka.com.cn/002236/event.html"
         ]
+      },
+      "generation": {
+        "updated": "2026-11-03 09:51 CST",
+        "title": "A股开盘转弱确认科技压力，港股平台强芯片弱；大华获订单确认",
+        "material_changes": [
+          "A-share view changed from policy cushion to index defense",
+          "HK rotation changed to platform resilience versus chip weakness",
+          "Dahua upgraded to bullish candidate",
+          "Sharetronic downgraded to avoid",
+          "Wanchen avoid confirmed"
+        ],
+        "allowed_files": [
+          "index.html",
+          "history/data/2026-11-03.json",
+          "history/manifest.json"
+        ]
+      },
+      "validation": {
+        "bilingual_structure_parity": true,
+        "assets_each": 8,
+        "keyword_items_each": 12,
+        "major_news_each": 11,
+        "overnight_items_each": 3,
+        "stock_cards_each": 3,
+        "stock_tickers": [
+          "002236.SZ",
+          "300857.SZ",
+          "300972.SZ"
+        ],
+        "negative_not_bullish": true,
+        "protected_us_markers": true,
+        "index_outside_ah_markers_unchanged": true,
+        "stale_akshare_disclosed": true
       }
     }
   },
@@ -365,7 +398,11 @@
     "deployment_verification_completed_at": "2026-11-03T00:35:58.984Z",
     "completed_at": "2026-11-03T00:35:58.984Z",
     "total_wall_seconds": 573,
-    "review_started_at": "2026-11-03T01:49:34.000Z"
+    "review_started_at": "2026-11-03T01:49:34.000Z",
+    "review_research_completed_at": "2026-11-03T01:50:47.000Z",
+    "review_generation_completed_at": "2026-11-03T01:51:59.000Z",
+    "review_validation_started_at": "2026-11-03T01:51:59.000Z",
+    "review_validation_completed_at": "2026-11-03T01:52:00.000Z"
   },
   "error": null
 }
