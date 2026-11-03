@@ -2,9 +2,9 @@
   "run_id": "ah-20261103-20261103002800",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-03T00:40:52.230Z",
-  "heartbeat_at": "2026-11-03T00:28:52.230Z",
+  "stage": "generation",
+  "lease_until": "2026-11-03T00:45:28.793Z",
+  "heartbeat_at": "2026-11-03T00:30:28.793Z",
   "source_cutoff": "2026-11-03T00:28:00.000Z",
   "main_base_sha": "4c6d19da088169a68115cfd914a532c0342edfe6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -22,13 +22,14 @@
     },
     "ranking_gate": {
       "expected_session_date": "2026-11-02",
-      "ready": false,
-      "observed_expected_session_date": "2026-10-30",
-      "observed_attempted_at": "2026-10-31T08:48:45+08:00",
-      "reason": "stale_for_latest_completed_us_session",
+      "ready": true,
+      "observed_expected_session_date": "2026-11-02",
+      "attempted_at": "2026-11-03T08:28:11+08:00",
+      "checked_at": "2026-11-03T08:28:22+08:00",
+      "request_id": "ah-20261103-20261103002800",
+      "snapshot_sha": "004d7e4cb88985d633d3c3ce77d73843778e82a0",
       "request_commit": "24db367b12f847c96d9141584ee790496d290f1e",
-      "requested_at": "2026-11-03T00:29:00.000Z",
-      "request_id": "ah-20261103-20261103002800"
+      "groups_sha256": "a1267d1bb0207fc723bb998173094a60e16d5eb745f32ec0a705eece03a6c52a"
     },
     "akshare": {
       "fetched_at": "2026-11-02T14:05:51+08:00",
@@ -37,6 +38,117 @@
       "A_market_date": "2026-11-02",
       "A_market_phase": "intraday_snapshot",
       "HK_market_phase": "intraday_snapshot"
+    },
+    "research": {
+      "source_cutoff": "2026-11-03T00:30:28.793Z",
+      "domestic_discovery": [
+        {
+          "source": "金十A股盘前/上海有色转述",
+          "url": "https://news-pro.smm.cn/article/1961852",
+          "checked_at": "2026-11-03T00:30:28.793Z"
+        },
+        {
+          "source": "财联社/科创板日报",
+          "url": "https://www.cls.cn/subject/2012",
+          "checked_at": "2026-11-03T00:30:28.793Z"
+        },
+        {
+          "source": "东方财富盘前交叉",
+          "url": "https://finance.eastmoney.com/",
+          "checked_at": "2026-11-03T00:30:28.793Z"
+        }
+      ],
+      "policies": [
+        {
+          "event": "SFISF 11月3日操作，31家申报超过1000亿元",
+          "url": "https://www.xinhuanet.com/fortune/20261102/8f786bad324747f3be7726525dd20290/c.html",
+          "decision": "include"
+        },
+        {
+          "event": "回购增持再贷款转长期、利率降至1%",
+          "url": "https://www.xinhuanet.com/fortune/20261102/871d29b4b44b4c238022d3ae90db6bdc/c.html",
+          "decision": "include"
+        }
+      ],
+      "company_events": [
+        {
+          "ticker": "002236.SZ",
+          "event": "AI超节点中标约26.3亿元含税，尚未签正式合同",
+          "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=80114646&gather=1&id=12688402",
+          "price": "2026-11-02 close 14.24 +1.28%",
+          "decision": "conditional_watch"
+        },
+        {
+          "ticker": "300857.SZ",
+          "event": "控股股东拟增持5亿至10亿元，无价格区间且存在筹资/实施风险",
+          "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12688262&stockid=300857",
+          "price": "2026-11-02 close 150.41 +2.97%",
+          "decision": "conditional_watch"
+        },
+        {
+          "ticker": "300972.SZ",
+          "event": "因未及时披露关联交易等事项被立案",
+          "url": "https://www.yicai.com/brief/103421919.html",
+          "price": "2026-11-02 close sources inconsistent; no current quote",
+          "decision": "avoid"
+        },
+        {
+          "ticker": "603289.SH",
+          "event": "拟控股存储模组公司，跨行业整合与业绩承诺风险",
+          "url": "https://stock.stockstar.com/notice/SN2026110200027380.shtml",
+          "decision": "news_only"
+        }
+      ],
+      "us_overnight": [
+        {
+          "event": "S&P500 -0.5%, Nasdaq -1.1%, Dow +0.4%",
+          "url": "https://apnews.com/article/475bb37b4d95dd99e26c94e708c99f8f"
+        },
+        {
+          "event": "ORCL -8.84%, MRVL -12.73%, LITE -18.62%, INTC -8.84%, AMD -7.55%",
+          "source": "runtime finance quotes",
+          "asof": "2026-11-03 08:12-08:15 CST"
+        },
+        {
+          "event": "AAPL -1.61% after results; margin/memory-cost pressure",
+          "source": "Reuters + runtime finance quote"
+        }
+      ],
+      "hk_check": {
+        "source": "HKEX predefined documents and trading arrangements",
+        "urls": [
+          "https://www1.hkexnews.hk/search/predefineddoc.xhtml?lang=en&predefineddocuments=9",
+          "https://www.hkex.com.hk/eng/market/sec_tradinfo/tradarng/tradarng_news/currentmonth/news.htm"
+        ],
+        "result": "No verified HSTECH-weight event meeting inclusion threshold; minor resumption/delisting items excluded."
+      },
+      "major_theme_reconciliation": [
+        {
+          "theme": "Textile Manufacturing +8.66%",
+          "decision": "no_candidate",
+          "reason": "No direct A/H candidate with verified material exposure found in bounded check."
+        },
+        {
+          "theme": "Solar +8.01%",
+          "decision": "no_candidate",
+          "reason": "US move lacks direct single-company catalyst; A/H must first confirm at open."
+        },
+        {
+          "theme": "Communication Equipment -4.91% / MRVL-LITE selloff",
+          "decision": "avoid",
+          "reason": "Optical/communications mapping faces clear negative US price feedback; no long card before A/H open confirmation."
+        },
+        {
+          "theme": "Computer Hardware -6.24% / AI capex selloff",
+          "decision": "avoid",
+          "reason": "Hardware and server chain remain under US valuation pressure."
+        },
+        {
+          "theme": "Live Streaming +4.85%",
+          "decision": "no_candidate",
+          "reason": "BILI ADR move is direct to Bilibili but no new company catalyst verified; not forced into a card."
+        }
+      ]
     }
   },
   "pending_increment": [],
@@ -45,7 +157,9 @@
     "inputs_started_at": "2026-11-03T00:26:26.000Z",
     "inputs_completed_at": "2026-11-03T00:28:00.000Z",
     "ranking_refresh_started_at": "2026-11-03T00:28:00.000Z",
-    "research_started_at": "2026-11-03T00:28:52.230Z"
+    "research_started_at": "2026-11-03T00:28:52.230Z",
+    "research_completed_at": "2026-11-03T00:30:28.793Z",
+    "generation_started_at": "2026-11-03T00:30:28.793Z"
   },
   "error": null
 }
