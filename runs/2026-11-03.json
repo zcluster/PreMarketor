@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261103-20261103002800",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-11-03T00:49:05.770Z",
-  "heartbeat_at": "2026-11-03T00:34:05.770Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": "2026-11-03T00:35:58.984Z",
+  "heartbeat_at": "2026-11-03T00:35:58.984Z",
   "source_cutoff": "2026-11-03T00:28:00.000Z",
   "main_base_sha": "4c6d19da088169a68115cfd914a532c0342edfe6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -214,6 +214,68 @@
       "parent": "316f27b924ec8c38b7e7304a7db494e42ed467c8",
       "force": false,
       "main_update": true
+    },
+    "production_verification": {
+      "mainHead": "a538a88e385f190a304af63a3f7103cf0df7bfad",
+      "commitExpected": "a538a88e385f190a304af63a3f7103cf0df7bfad",
+      "indexSha": "cfaa7b44dbbbb2472bf50c161639fdd034950eb2",
+      "indexExpected": "cfaa7b44dbbbb2472bf50c161639fdd034950eb2",
+      "historySha": "012942897e1e4e9d65bda8fd554e5ac7ca74c005",
+      "historyExpected": "012942897e1e4e9d65bda8fd554e5ac7ca74c005",
+      "manifestSha": "2d030227a5596033a16a3eef0397e1e8854a119d",
+      "manifestExpected": "2d030227a5596033a16a3eef0397e1e8854a119d",
+      "deployment": {
+        "id": "dpl_2Q5Fpujj2pyzQW7Z1WZjsjfS6KKn",
+        "url": "market-ahead-8h4urmuo8-zcluster-projects.vercel.app",
+        "state": "READY",
+        "target": "production",
+        "gitSha": "a538a88e385f190a304af63a3f7103cf0df7bfad"
+      },
+      "production": {
+        "statuses": {
+          "home": 200,
+          "data": 200,
+          "manifest": 200,
+          "archive": 200
+        },
+        "homeTime": true,
+        "homeTitleContent": true,
+        "homeCards": 7,
+        "homePanelRows": 30,
+        "homePanelTimeZh": true,
+        "homePanelTimeEn": true,
+        "dataDate": "2026-11-03",
+        "dataUpdated": "2026-11-03 08:33 CST",
+        "entries": [
+          "AH"
+        ],
+        "zhLen": 11951,
+        "enLen": 20102,
+        "zhCards": 3,
+        "enCards": 3,
+        "zhOvernight": 1,
+        "enOvernight": 1,
+        "enTitle": true,
+        "manifestTop": {
+          "date": "2026-11-03",
+          "title": "政策工具托底对冲美股科技抛售，订单与增持事件等待开盘确认",
+          "summary": "互换便利与回购增持再贷款加码，11月2日A/H宽度修复；但纳指跌1.1%，ORCL、MRVL、LITE、INTC与AMD同步承压。盘前以大华和协创数据作条件关注、万辰集团回避，等待开盘量价确认。",
+          "updated": "2026-11-03 08:33 CST",
+          "types": [
+            "AH"
+          ],
+          "file": "history/data/2026-11-03.json"
+        },
+        "archiveLoader": true,
+        "archiveNoStaticEmpty": true,
+        "pass": true,
+        "homeAhCards": 3,
+        "homeAhExact": true,
+        "homeAhTime": true,
+        "homeAhUpdated": true,
+        "homeUsProtected": true
+      },
+      "pass": true
     }
   },
   "pending_increment": [],
@@ -230,7 +292,10 @@
     "validation_completed_at": "2026-11-03T00:33:21.928Z",
     "candidate_commit_started_at": "2026-11-03T00:33:21.928Z",
     "main_update_completed_at": "2026-11-03T00:34:05.770Z",
-    "deployment_verification_started_at": "2026-11-03T00:34:05.770Z"
+    "deployment_verification_started_at": "2026-11-03T00:34:05.770Z",
+    "deployment_verification_completed_at": "2026-11-03T00:35:58.984Z",
+    "completed_at": "2026-11-03T00:35:58.984Z",
+    "total_wall_seconds": 573
   },
   "error": null
 }
