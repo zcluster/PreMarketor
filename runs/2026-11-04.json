@@ -2,10 +2,10 @@
   "run_id": "ah-20261104-20261104002845",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-04T00:41:05.000Z",
-  "heartbeat_at": "2026-11-04T00:31:05.000Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "lease_until": "2026-11-04T00:45:30.000Z",
+  "heartbeat_at": "2026-11-04T00:35:30.000Z",
+  "source_cutoff": "2026-11-04T00:35:00.000Z",
   "main_base_sha": "23f1237e2a6ed0a5e768631433e00ec5bb119f58",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -21,7 +21,93 @@
       "expected_session_date": "2026-11-03",
       "requester": "AH",
       "commit": "838dc62d972ed67703130a3fef154bc666d9db99"
-    }
+    },
+    "rankings": {
+      "gate": "ready",
+      "expected_session_date": "2026-11-03",
+      "request_id": "ah-20261104-20261104002845",
+      "attemptedAt": "2026-11-04T08:32:22+08:00",
+      "industry_rows": 10,
+      "concept_rows": 5
+    },
+    "market": {
+      "akshare": {
+        "fetchedAt": "2026-11-02T14:05:51+08:00",
+        "status": "stale_historical_reference_only",
+        "A_breadth": "4470/788/75; median +1.955%",
+        "HK_breadth": "999/757/1049; median 0%"
+      },
+      "latest_close": {
+        "A": "2026-11-03: SSE -0.82%, ChiNext -2.73%, 2108 up/3309 down",
+        "HK": "2026-11-03: HSI +0.57%, HSTECH +0.74%"
+      }
+    },
+    "sources": [
+      {
+        "event": "PBOC FX reserve ratio 4%->6% effective Nov 15",
+        "source": "https://www3.xinhuanet.com/fortune/20261103/80f848e7f7e547b2a7b72ef4c64c3262/c.html"
+      },
+      {
+        "event": "NDRC new growth drivers / AI+ / data",
+        "source": "https://www.ndrc.gov.cn/xwdt/xwfb/202611/t20261103_1408537.html"
+      },
+      {
+        "event": "AMD Q3 and Q4 guide",
+        "source": "https://rss.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html"
+      },
+      {
+        "event": "Yunnan Germanium InP contract",
+        "source": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12689897&stockid=002428"
+      },
+      {
+        "event": "Yoozoo GPU purchase",
+        "source": "https://static.cninfo.com.cn/finalpage/2026-11-04/1225656231.PDF"
+      },
+      {
+        "event": "Willfar grid awards",
+        "source": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688100"
+      },
+      {
+        "event": "Dongshan shareholder-return proposal",
+        "source": "https://static.cninfo.com.cn/finalpage/2026-11-04/1225656254.PDF"
+      },
+      {
+        "event": "Yum China Q3",
+        "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1103/2026110302189.pdf"
+      }
+    ],
+    "major_theme_decisions": [
+      {
+        "theme": "Electrical equipment +5.76% / solar +4.79%",
+        "decision": "conditional_watch",
+        "candidate": "威胜信息 688100",
+        "reason": "grid awards 7.75% of 2025 revenue; contracts not yet signed; 11/3 close +0.82% predates announcement"
+      },
+      {
+        "theme": "Electronic components +4.02% / AMD data-center beat",
+        "decision": "conditional_watch",
+        "candidate": "云南锗业 002428",
+        "reason": "90万片 InP framework and 2027 contract; export permits/order execution required; 11/3 -5.08% predates announcement"
+      },
+      {
+        "theme": "Crypto mining +13.77%, crypto treasury +5.83%, ETH +5.33%, SOL +4.61%",
+        "decision": "no_candidate",
+        "candidate": null,
+        "reason": "no directly exposed A/H issuer verified; do not substitute pure sentiment linkage"
+      },
+      {
+        "theme": "Food distribution -6.34%",
+        "decision": "conditional_watch",
+        "candidate": "百胜中国 09987",
+        "reason": "Q3 revenue +8%, EPS +20%, ADR +1.61% at 08:15 CST; same-store sales at 97% of prior year"
+      },
+      {
+        "theme": "GPU procurement",
+        "decision": "avoid",
+        "candidate": "游族网络 002174",
+        "reason": "CNY4.225bn purchase, undisclosed counterparty and funding/delivery uncertainty; 3Q net loss; no downstream revenue evidence"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -30,7 +116,9 @@
     "started_at": "2026-11-04T00:28:45.000Z",
     "inputs_started_at": "2026-11-04T00:28:45.000Z",
     "inputs_completed_at": "2026-11-04T00:30:20.000Z",
-    "research_started_at": "2026-11-04T00:30:20.000Z"
+    "research_started_at": "2026-11-04T00:30:20.000Z",
+    "research_completed_at": "2026-11-04T00:35:00.000Z",
+    "generation_started_at": "2026-11-04T00:35:30.000Z"
   },
   "error": null
 }
