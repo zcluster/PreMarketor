@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261104-20261104020105",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "main_ref_update",
-  "lease_until": "2026-11-04T02:34:30.000Z",
-  "heartbeat_at": "2026-11-04T02:19:30.000Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-04T02:24:30.000Z",
   "source_cutoff": "2026-11-04T00:35:00.000Z",
   "main_base_sha": "f2f0042f64dd20eaae07990ec5937eb63e13a611",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -321,16 +321,56 @@
           "history/data/2026-11-04.json",
           "history/manifest.json"
         ]
+      },
+      "main_update": {
+        "commit": "94c7807874af90a82f2368261a31ffa3903b7727",
+        "expected_parent": "f2f0042f64dd20eaae07990ec5937eb63e13a611",
+        "force": false
+      },
+      "remote_readback": {
+        "main_head": "94c7807874af90a82f2368261a31ffa3903b7727",
+        "files_exact": true,
+        "changed_files": [
+          "index.html",
+          "history/data/2026-11-04.json",
+          "history/manifest.json"
+        ]
+      },
+      "deployment": {
+        "provider": "Vercel",
+        "id": "dpl_CxukMy39bHB8LNSiwkhKAeaEAPUu",
+        "state": "READY",
+        "sha": "94c7807874af90a82f2368261a31ffa3903b7727",
+        "production": true,
+        "url": "https://market-ahead-dzerjkww7-zcluster-projects.vercel.app"
+      },
+      "production_verification": {
+        "verified_at": "2026-11-04T02:24:30.000Z",
+        "homepage": "https://premarketor.com/",
+        "archive": "https://premarketor.com/history/?date=2026-11-04",
+        "day_json": "https://premarketor.com/history/data/2026-11-04.json",
+        "manifest": "https://premarketor.com/history/manifest.json",
+        "checks": {
+          "status": true,
+          "rootExact": true,
+          "dayExact": true,
+          "manifestExact": true,
+          "date": true,
+          "time": true,
+          "bilingual": true,
+          "zhNews": true,
+          "enNews": true,
+          "zhCards": true,
+          "enCards": true,
+          "noEmpty": true,
+          "archiveShell": true
+        },
+        "us_markers_unchanged": true
       }
     }
   },
-  "pending_increment": [
-    "Update market view for flat A shares versus weak HSTECH",
-    "Upgrade Yunnan Germanium and Yum China to bullish candidates",
-    "Downgrade Willfar from conditional watch to avoid due negative price confirmation",
-    "Retain Yoozoo avoid despite positive price move"
-  ],
-  "published_commit": "4982ab8ab7e94cd0683e3b508cb649c20da17129",
+  "pending_increment": [],
+  "published_commit": "94c7807874af90a82f2368261a31ffa3903b7727",
   "candidate_commit": "94c7807874af90a82f2368261a31ffa3903b7727",
   "stage_timings": {
     "started_at": "2026-11-04T00:28:45.000Z",
@@ -350,7 +390,10 @@
     "total_seconds": 1065,
     "review_started_at": "2026-11-04T02:01:05.000Z",
     "review_validation_completed_at": "2026-11-04T02:16:45.000Z",
-    "review_candidate_commit_created_at": "2026-11-04T02:19:30.000Z"
+    "review_candidate_commit_created_at": "2026-11-04T02:19:30.000Z",
+    "review_main_update_completed_at": "2026-11-04T02:21:00.000Z",
+    "review_deployment_verification_completed_at": "2026-11-04T02:24:30.000Z",
+    "review_completed_at": "2026-11-04T02:24:30.000Z"
   },
   "error": null
 }
