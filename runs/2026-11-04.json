@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261104-20261104002845",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-11-04T00:51:20.000Z",
-  "heartbeat_at": "2026-11-04T00:41:20.000Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-04T00:46:30.000Z",
   "source_cutoff": "2026-11-04T00:35:00.000Z",
   "main_base_sha": "23f1237e2a6ed0a5e768631433e00ec5bb119f58",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -168,6 +168,63 @@
       "commit": "4982ab8ab7e94cd0683e3b508cb649c20da17129",
       "expected_parent": "f1866a82af46fd42ecd9ec7e4d1d82b440188a4e",
       "force": false
+    },
+    "remote_readback": {
+      "main_head": "4982ab8ab7e94cd0683e3b508cb649c20da17129",
+      "files_exact": true,
+      "changed_files": [
+        "index.html",
+        "history/data/2026-11-04.json",
+        "history/manifest.json"
+      ]
+    },
+    "deployment": {
+      "provider": "Vercel",
+      "id": "dpl_Biz5GuDgTCVo788QaF683a9D55o5",
+      "state": "READY",
+      "sha": "4982ab8ab7e94cd0683e3b508cb649c20da17129",
+      "production": true,
+      "url": "https://market-ahead-1u3plugii-zcluster-projects.vercel.app"
+    },
+    "production_verification": {
+      "verified_at": "2026-11-04T00:46:30.000Z",
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "http_status": 200,
+        "exact_commit_content": true,
+        "actual_render_zh": true,
+        "actual_render_en": true,
+        "empty_state": false
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-11-04",
+        "http_status": 200,
+        "actual_render_zh": true,
+        "entry_selected": "AH",
+        "empty_state": false
+      },
+      "day_json": {
+        "url": "https://premarketor.com/history/data/2026-11-04.json",
+        "http_status": 200,
+        "exact_commit_content": true,
+        "zh_en_nonempty": true
+      },
+      "manifest": {
+        "url": "https://premarketor.com/history/manifest.json",
+        "http_status": 200,
+        "exact_commit_content": true
+      },
+      "rendered_counts": {
+        "stock_cards_zh": 4,
+        "stock_cards_en": 4,
+        "sector_rows_zh": 15,
+        "sector_rows_en": 15,
+        "major_news_zh": 12,
+        "major_news_en": 12,
+        "overnight_zh": 3,
+        "overnight_en": 3
+      },
+      "us_markers_unchanged": true
     }
   },
   "pending_increment": [],
@@ -185,7 +242,10 @@
     "validation_completed_at": "2026-11-04T00:39:10.000Z",
     "candidate_commit_created_at": "2026-11-04T00:40:20.000Z",
     "main_update_completed_at": "2026-11-04T00:41:20.000Z",
-    "deployment_verification_started_at": "2026-11-04T00:41:20.000Z"
+    "deployment_verification_started_at": "2026-11-04T00:41:20.000Z",
+    "deployment_verification_completed_at": "2026-11-04T00:46:30.000Z",
+    "completed_at": "2026-11-04T00:46:30.000Z",
+    "total_seconds": 1065
   },
   "error": null
 }
