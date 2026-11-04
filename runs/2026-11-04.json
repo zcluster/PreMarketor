@@ -2,9 +2,9 @@
   "run_id": "ah-20261104-20261104002845",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-11-04T00:45:30.000Z",
-  "heartbeat_at": "2026-11-04T00:35:30.000Z",
+  "stage": "validation",
+  "lease_until": "2026-11-04T00:47:20.000Z",
+  "heartbeat_at": "2026-11-04T00:37:20.000Z",
   "source_cutoff": "2026-11-04T00:35:00.000Z",
   "main_base_sha": "23f1237e2a6ed0a5e768631433e00ec5bb119f58",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -107,7 +107,36 @@
         "candidate": "游族网络 002174",
         "reason": "CNY4.225bn purchase, undisclosed counterparty and funding/delivery uncertainty; 3Q net loss; no downstream revenue evidence"
       }
-    ]
+    ],
+    "draft": {
+      "time": "2026-11-04 08:39 CST",
+      "zh_news": 12,
+      "en_news": 12,
+      "overnight_items": 3,
+      "cards": [
+        {
+          "ticker": "002428.SZ",
+          "status": "conditional_watch"
+        },
+        {
+          "ticker": "688100.SH",
+          "status": "conditional_watch"
+        },
+        {
+          "ticker": "09987.HK / YUMC",
+          "status": "conditional_watch"
+        },
+        {
+          "ticker": "002174.SZ",
+          "status": "avoid"
+        }
+      ],
+      "ranking_rows": {
+        "industry": 10,
+        "concept": 5
+      },
+      "akshare_degraded": true
+    }
   },
   "pending_increment": [],
   "published_commit": null,
@@ -118,7 +147,9 @@
     "inputs_completed_at": "2026-11-04T00:30:20.000Z",
     "research_started_at": "2026-11-04T00:30:20.000Z",
     "research_completed_at": "2026-11-04T00:35:00.000Z",
-    "generation_started_at": "2026-11-04T00:35:30.000Z"
+    "generation_started_at": "2026-11-04T00:35:30.000Z",
+    "generation_completed_at": "2026-11-04T00:37:20.000Z",
+    "validation_started_at": "2026-11-04T00:37:20.000Z"
   },
   "error": null
 }
