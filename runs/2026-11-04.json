@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261104-20261104020105",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-04T02:11:05.000Z",
-  "heartbeat_at": "2026-11-04T02:01:05.000Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-11-04T02:31:45.000Z",
+  "heartbeat_at": "2026-11-04T02:16:45.000Z",
   "source_cutoff": "2026-11-04T00:35:00.000Z",
   "main_base_sha": "f2f0042f64dd20eaae07990ec5937eb63e13a611",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -287,6 +287,24 @@
           "https://finance.eastmoney.com/a/202611033920410390.html",
           "https://epaper.cs.com.cn/zgzqb/html/2026-11/04/nw.D110000zgzqb_20261104_4-A02.htm"
         ]
+      },
+      "validation": {
+        "passed": true,
+        "checks": [
+          "8 asset rows per language",
+          "12 major news + 3 overnight items per language",
+          "4 stock cards with exact ticker parity",
+          "4 sector tiles, 5 logic steps, 5 risks per language",
+          "Yunnan Germanium/Yum China bullish; Willfar/Yoozoo avoid",
+          "US markers unchanged",
+          "index edits confined to A_H_UPDATED/A_H_TIME/A_H_BRIEF"
+        ],
+        "candidate_time": "2026-11-04 10:03 CST",
+        "files": [
+          "index.html",
+          "history/data/2026-11-04.json",
+          "history/manifest.json"
+        ]
       }
     }
   },
@@ -314,7 +332,8 @@
     "deployment_verification_completed_at": "2026-11-04T00:46:30.000Z",
     "completed_at": "2026-11-04T00:46:30.000Z",
     "total_seconds": 1065,
-    "review_started_at": "2026-11-04T02:01:05.000Z"
+    "review_started_at": "2026-11-04T02:01:05.000Z",
+    "review_validation_completed_at": "2026-11-04T02:16:45.000Z"
   },
   "error": null
 }
