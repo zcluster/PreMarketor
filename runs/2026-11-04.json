@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261104-20261104002845",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": null,
-  "heartbeat_at": "2026-11-04T00:46:30.000Z",
+  "run_id": "ah-review-20261104-20261104020105",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "research",
+  "lease_until": "2026-11-04T02:11:05.000Z",
+  "heartbeat_at": "2026-11-04T02:01:05.000Z",
   "source_cutoff": "2026-11-04T00:35:00.000Z",
-  "main_base_sha": "23f1237e2a6ed0a5e768631433e00ec5bb119f58",
+  "main_base_sha": "f2f0042f64dd20eaae07990ec5937eb63e13a611",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -225,9 +225,77 @@
         "overnight_en": 3
       },
       "us_markers_unchanged": true
+    },
+    "incremental_review": {
+      "started_at": "2026-11-04T02:01:05.000Z",
+      "first_run_cutoff": "2026-11-04T00:35:00.000Z",
+      "first_run_commit": "4982ab8ab7e94cd0683e3b508cb649c20da17129",
+      "current_main": "f2f0042f64dd20eaae07990ec5937eb63e13a611",
+      "main_advance": "GitHub Actions refreshed US rankings snapshot and homepage panels only",
+      "quote_source": "Eastmoney public delayed quote API via cloud browser",
+      "quote_checked_at": "2026-11-04T01:59:00.000Z",
+      "observations": [
+        {
+          "ticker": "000001.SH",
+          "price": 3600.52,
+          "change_pct": -0.21
+        },
+        {
+          "ticker": "399006.SZ",
+          "price": 2399.4,
+          "change_pct": 0.32
+        },
+        {
+          "ticker": "HSI",
+          "price": 23453.45,
+          "change_pct": -0.31
+        },
+        {
+          "ticker": "HSTECH",
+          "price": 3821.08,
+          "change_pct": -1.21
+        },
+        {
+          "ticker": "002428.SZ",
+          "price": 75.38,
+          "change_pct": 10,
+          "high": 75.38,
+          "low": 72
+        },
+        {
+          "ticker": "688100.SH",
+          "price": 25.65,
+          "change_pct": -0.81
+        },
+        {
+          "ticker": "09987.HK",
+          "price": 389.4,
+          "change_pct": 2.8
+        },
+        {
+          "ticker": "002174.SZ",
+          "price": 10.9,
+          "change_pct": 1.68
+        }
+      ],
+      "materiality": "Yunnan Germanium limit-up confirms InP/optical catalyst; Yum China gains 2.8% and confirms earnings resilience; HSTECH falls 1.21% despite flat-to-positive A shares, changing market/sector view; Willfar fails positive price confirmation; Yoozoo remains avoid despite rebound because procurement/funding risks persist.",
+      "bounded_scan": {
+        "completed": true,
+        "after_cutoff_material_news": [],
+        "note": "No verified post-cutoff policy or exchange announcement exceeded the impact of opening-price confirmation.",
+        "discovery": [
+          "https://finance.eastmoney.com/a/202611033920410390.html",
+          "https://epaper.cs.com.cn/zgzqb/html/2026-11/04/nw.D110000zgzqb_20261104_4-A02.htm"
+        ]
+      }
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    "Update market view for flat A shares versus weak HSTECH",
+    "Upgrade Yunnan Germanium and Yum China to bullish candidates",
+    "Downgrade Willfar from conditional watch to avoid due negative price confirmation",
+    "Retain Yoozoo avoid despite positive price move"
+  ],
   "published_commit": "4982ab8ab7e94cd0683e3b508cb649c20da17129",
   "candidate_commit": "4982ab8ab7e94cd0683e3b508cb649c20da17129",
   "stage_timings": {
@@ -245,7 +313,8 @@
     "deployment_verification_started_at": "2026-11-04T00:41:20.000Z",
     "deployment_verification_completed_at": "2026-11-04T00:46:30.000Z",
     "completed_at": "2026-11-04T00:46:30.000Z",
-    "total_seconds": 1065
+    "total_seconds": 1065,
+    "review_started_at": "2026-11-04T02:01:05.000Z"
   },
   "error": null
 }
