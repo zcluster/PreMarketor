@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261104-20261104020105",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-11-04T02:31:45.000Z",
-  "heartbeat_at": "2026-11-04T02:16:45.000Z",
+  "stage": "main_ref_update",
+  "lease_until": "2026-11-04T02:34:30.000Z",
+  "heartbeat_at": "2026-11-04T02:19:30.000Z",
   "source_cutoff": "2026-11-04T00:35:00.000Z",
   "main_base_sha": "f2f0042f64dd20eaae07990ec5937eb63e13a611",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -305,6 +305,22 @@
           "history/data/2026-11-04.json",
           "history/manifest.json"
         ]
+      },
+      "candidate": {
+        "commit": "94c7807874af90a82f2368261a31ffa3903b7727",
+        "parent": "f2f0042f64dd20eaae07990ec5937eb63e13a611",
+        "tree": "d9af5f0bf42606282eaf557730339d6bb369a5a6",
+        "blobs": {
+          "index": "eacd4abbdf5c5a07312fd01755f6972671753869",
+          "today": "5de6100e6a6239a2e6af3e37a18e0cab0a408d0f",
+          "manifest": "1863d6a4cfcf036898cc2763e0d4f335756fb441"
+        },
+        "force": false,
+        "files": [
+          "index.html",
+          "history/data/2026-11-04.json",
+          "history/manifest.json"
+        ]
       }
     }
   },
@@ -315,7 +331,7 @@
     "Retain Yoozoo avoid despite positive price move"
   ],
   "published_commit": "4982ab8ab7e94cd0683e3b508cb649c20da17129",
-  "candidate_commit": "4982ab8ab7e94cd0683e3b508cb649c20da17129",
+  "candidate_commit": "94c7807874af90a82f2368261a31ffa3903b7727",
   "stage_timings": {
     "started_at": "2026-11-04T00:28:45.000Z",
     "inputs_started_at": "2026-11-04T00:28:45.000Z",
@@ -333,7 +349,8 @@
     "completed_at": "2026-11-04T00:46:30.000Z",
     "total_seconds": 1065,
     "review_started_at": "2026-11-04T02:01:05.000Z",
-    "review_validation_completed_at": "2026-11-04T02:16:45.000Z"
+    "review_validation_completed_at": "2026-11-04T02:16:45.000Z",
+    "review_candidate_commit_created_at": "2026-11-04T02:19:30.000Z"
   },
   "error": null
 }
