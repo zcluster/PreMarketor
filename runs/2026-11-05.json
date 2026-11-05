@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261105-20261105020830",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-11-05T02:27:30.000Z",
-  "heartbeat_at": "2026-11-05T02:12:30.000Z",
+  "stage": "main_ref_update",
+  "lease_until": "2026-11-05T02:29:30.000Z",
+  "heartbeat_at": "2026-11-05T02:14:30.000Z",
   "source_cutoff": "2026-11-05T00:40:00.000Z",
   "main_base_sha": "f0fbf03c89c273eb669f1f1b9fe4d1d025c98287",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -335,6 +335,22 @@
           "history/manifest.json"
         ],
         "rankings_sha": "240a4235a808f107e7180e1f1a54aedabacaf2e2"
+      },
+      "candidate": {
+        "commit": "4b3288d035aedd6d3eff70ed128ac8dd5ac135bd",
+        "parent": "f0fbf03c89c273eb669f1f1b9fe4d1d025c98287",
+        "tree": "5f522977a455533bcb370734742bead735c68f16",
+        "blobs": {
+          "index": "62fb23d3a4fb38ac3c816f1bfe2017311bee5c32",
+          "today": "52259b2abc469ed7d68993c112ab636d6d3d264b",
+          "manifest": "efb4b8d6fe8da10772a220fa0a7728bea203df35"
+        },
+        "force": false,
+        "files": [
+          "index.html",
+          "history/data/2026-11-05.json",
+          "history/manifest.json"
+        ]
       }
     }
   },
@@ -345,7 +361,7 @@
     "Linyang flat and Tongyi +3.52% do not overcome their existing counterevidence"
   ],
   "published_commit": "d38746ffe9f134c5a83a5357f2ab922703764243",
-  "candidate_commit": "d38746ffe9f134c5a83a5357f2ab922703764243",
+  "candidate_commit": "4b3288d035aedd6d3eff70ed128ac8dd5ac135bd",
   "stage_timings": {
     "started_at": "2026-11-05T00:33:00.000Z",
     "inputs_started_at": "2026-11-05T00:33:00.000Z",
@@ -363,7 +379,8 @@
     "completed_at": "2026-11-05T00:51:55.122Z",
     "total_seconds": 1135,
     "review_started_at": "2026-11-05T02:08:30.000Z",
-    "review_validation_completed_at": "2026-11-05T02:12:30.000Z"
+    "review_validation_completed_at": "2026-11-05T02:12:30.000Z",
+    "review_candidate_commit_created_at": "2026-11-05T02:14:30.000Z"
   },
   "error": null,
   "completed_at": "2026-11-05T00:51:55.122Z"
