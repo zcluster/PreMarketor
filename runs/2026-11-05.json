@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261105-20261105003300",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": null,
-  "heartbeat_at": "2026-11-05T00:51:55.122Z",
+  "run_id": "ah-review-20261105-20261105020830",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "research",
+  "lease_until": "2026-11-05T02:18:30.000Z",
+  "heartbeat_at": "2026-11-05T02:08:30.000Z",
   "source_cutoff": "2026-11-05T00:40:00.000Z",
-  "main_base_sha": "8d6a7fa923e9c5dcbc4f2936a3186d2e11c12471",
+  "main_base_sha": "f0fbf03c89c273eb669f1f1b9fe4d1d025c98287",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -248,9 +248,82 @@
         "empty_state": false
       },
       "checked_at": "2026-11-05T00:51:55.122Z"
+    },
+    "incremental_review": {
+      "started_at": "2026-11-05T02:08:30.000Z",
+      "first_run_cutoff": "2026-11-05T00:40:00.000Z",
+      "first_run_commit": "d38746ffe9f134c5a83a5357f2ab922703764243",
+      "current_main": "f0fbf03c89c273eb669f1f1b9fe4d1d025c98287",
+      "main_advance": "GitHub Actions refreshed US rankings snapshot and homepage panels only",
+      "quote_source": "Eastmoney public delayed quote API via cloud browser",
+      "quote_checked_at": "2026-11-05T02:05:31.000Z",
+      "observations": [
+        {
+          "ticker": "000001.SH",
+          "price": 3691.29,
+          "change_pct": 0.14
+        },
+        {
+          "ticker": "399006.SZ",
+          "price": 2589.32,
+          "change_pct": 1.75
+        },
+        {
+          "ticker": "HSI",
+          "price": 24619.8,
+          "change_pct": 2.93
+        },
+        {
+          "ticker": "HSTECH",
+          "price": 4120.8,
+          "change_pct": 4.69
+        },
+        {
+          "ticker": "601222.SH",
+          "price": 5.7,
+          "change_pct": 0
+        },
+        {
+          "ticker": "300514.SZ",
+          "price": 9.07,
+          "change_pct": 2.25
+        },
+        {
+          "ticker": "02518.HK",
+          "price": 42.04,
+          "change_pct": 8.02
+        },
+        {
+          "ticker": "600506.SH",
+          "price": 18.82,
+          "change_pct": 3.52
+        }
+      ],
+      "materiality": "Hong Kong tech gains 4.69% and Hang Seng 2.93%, materially strengthening the market and sector view. Autohome-S gains 8.02% after the ADR/dividend catalyst and qualifies for bullish upgrade. Youxunda remains conditional; Linyang and Tongyi do not gain sufficient confirmation.",
+      "bounded_scan": {
+        "completed": true,
+        "after_cutoff_material_news": [],
+        "omission_review": [
+          {
+            "event": "PBOC buyback relending rate cut to 1%, applications above CNY200bn",
+            "source": "https://www.csrc.gov.cn/csrc/c100028/c7668092/content.shtml",
+            "impact": "reinforces policy liquidity support and helps explain broad rally"
+          }
+        ],
+        "discovery": [
+          "https://www.cnfin.com/hb-lb/detail/20261105/4491207_1.html",
+          "https://finance.sina.com.cn/stock/cpbd/2026-11-05/doc-inixrqee5778040.shtml",
+          "https://data.eastmoney.com/notices/"
+        ]
+      }
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    "HSTECH +4.69% and HSI +2.93% materially strengthen the Hong Kong risk-on view",
+    "Autohome-S +8.02% confirms dividend/ADR catalyst",
+    "Youxunda +2.25% remains conditional pending stronger sector-relative confirmation",
+    "Linyang flat and Tongyi +3.52% do not overcome their existing counterevidence"
+  ],
   "published_commit": "d38746ffe9f134c5a83a5357f2ab922703764243",
   "candidate_commit": "d38746ffe9f134c5a83a5357f2ab922703764243",
   "stage_timings": {
@@ -268,7 +341,8 @@
     "deployment_verification_started_at": "2026-11-05T00:46:30.000Z",
     "deployment_verification_completed_at": "2026-11-05T00:51:55.122Z",
     "completed_at": "2026-11-05T00:51:55.122Z",
-    "total_seconds": 1135
+    "total_seconds": 1135,
+    "review_started_at": "2026-11-05T02:08:30.000Z"
   },
   "error": null,
   "completed_at": "2026-11-05T00:51:55.122Z"
