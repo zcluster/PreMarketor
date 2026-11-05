@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261105-20261105020830",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "main_ref_update",
-  "lease_until": "2026-11-05T02:29:30.000Z",
-  "heartbeat_at": "2026-11-05T02:14:30.000Z",
+  "status": "published",
+  "stage": "completed",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-05T02:16:30.000Z",
   "source_cutoff": "2026-11-05T00:40:00.000Z",
   "main_base_sha": "f0fbf03c89c273eb669f1f1b9fe4d1d025c98287",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -351,16 +351,56 @@
           "history/data/2026-11-05.json",
           "history/manifest.json"
         ]
+      },
+      "main_update": {
+        "commit": "4b3288d035aedd6d3eff70ed128ac8dd5ac135bd",
+        "expected_parent": "f0fbf03c89c273eb669f1f1b9fe4d1d025c98287",
+        "force": false
+      },
+      "remote_readback": {
+        "main_head": "4b3288d035aedd6d3eff70ed128ac8dd5ac135bd",
+        "files_exact": true,
+        "changed_files": [
+          "index.html",
+          "history/data/2026-11-05.json",
+          "history/manifest.json"
+        ]
+      },
+      "deployment": {
+        "provider": "Vercel",
+        "id": "dpl_59EphswebQTTyndSSP2HvFhKg9oM",
+        "state": "READY",
+        "sha": "4b3288d035aedd6d3eff70ed128ac8dd5ac135bd",
+        "production": true,
+        "url": "https://market-ahead-m1vj2ping-zcluster-projects.vercel.app"
+      },
+      "production_verification": {
+        "verified_at": "2026-11-05T02:16:30.000Z",
+        "homepage": "https://premarketor.com/",
+        "archive": "https://premarketor.com/history/?date=2026-11-05",
+        "day_json": "https://premarketor.com/history/data/2026-11-05.json",
+        "manifest": "https://premarketor.com/history/manifest.json",
+        "checks": {
+          "status": true,
+          "rootExact": true,
+          "dayExact": true,
+          "manifestExact": true,
+          "date": true,
+          "time": true,
+          "bilingual": true,
+          "zhNews": true,
+          "enNews": true,
+          "zhCards": true,
+          "enCards": true,
+          "noEmpty": true,
+          "archiveShell": true
+        },
+        "us_markers_unchanged": true
       }
     }
   },
-  "pending_increment": [
-    "HSTECH +4.69% and HSI +2.93% materially strengthen the Hong Kong risk-on view",
-    "Autohome-S +8.02% confirms dividend/ADR catalyst",
-    "Youxunda +2.25% remains conditional pending stronger sector-relative confirmation",
-    "Linyang flat and Tongyi +3.52% do not overcome their existing counterevidence"
-  ],
-  "published_commit": "d38746ffe9f134c5a83a5357f2ab922703764243",
+  "pending_increment": [],
+  "published_commit": "4b3288d035aedd6d3eff70ed128ac8dd5ac135bd",
   "candidate_commit": "4b3288d035aedd6d3eff70ed128ac8dd5ac135bd",
   "stage_timings": {
     "started_at": "2026-11-05T00:33:00.000Z",
@@ -380,7 +420,10 @@
     "total_seconds": 1135,
     "review_started_at": "2026-11-05T02:08:30.000Z",
     "review_validation_completed_at": "2026-11-05T02:12:30.000Z",
-    "review_candidate_commit_created_at": "2026-11-05T02:14:30.000Z"
+    "review_candidate_commit_created_at": "2026-11-05T02:14:30.000Z",
+    "review_main_update_completed_at": "2026-11-05T02:15:00.000Z",
+    "review_deployment_verification_completed_at": "2026-11-05T02:16:30.000Z",
+    "review_completed_at": "2026-11-05T02:16:30.000Z"
   },
   "error": null,
   "completed_at": "2026-11-05T00:51:55.122Z"
