@@ -2,9 +2,9 @@
   "run_id": "ah-20261105-20261105003300",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-11-05T00:51:00.000Z",
-  "heartbeat_at": "2026-11-05T00:41:00.000Z",
+  "stage": "validation",
+  "lease_until": "2026-11-05T00:53:00.000Z",
+  "heartbeat_at": "2026-11-05T00:43:00.000Z",
   "source_cutoff": "2026-11-05T00:40:00.000Z",
   "main_base_sha": "8d6a7fa923e9c5dcbc4f2936a3186d2e11c12471",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -151,7 +151,37 @@
         "candidate": "友讯达 300514",
         "reason": "award equals 24.56% of 2025 revenue, but unsigned contract and YTD net loss require strict confirmation"
       }
-    ]
+    ],
+    "draft": {
+      "time": "2026-11-05 08:42 CST",
+      "title": "A/H强势宽度与政策流动性托底，贵金属领涨但电气设备与油气链承压",
+      "zh_news": 12,
+      "en_news": 12,
+      "overnight_items": 3,
+      "cards": [
+        {
+          "ticker": "601222.SH",
+          "status": "conditional_watch"
+        },
+        {
+          "ticker": "300514.SZ",
+          "status": "conditional_watch"
+        },
+        {
+          "ticker": "02518.HK / ATHM",
+          "status": "conditional_watch"
+        },
+        {
+          "ticker": "600506.SH",
+          "status": "avoid"
+        }
+      ],
+      "ranking_rows": {
+        "industry": 10,
+        "concept": 5
+      },
+      "akshare_degraded_to_intraday_historical": true
+    }
   },
   "pending_increment": [],
   "published_commit": null,
@@ -162,7 +192,9 @@
     "inputs_completed_at": "2026-11-05T00:33:50.000Z",
     "research_started_at": "2026-11-05T00:33:50.000Z",
     "research_completed_at": "2026-11-05T00:40:00.000Z",
-    "generation_started_at": "2026-11-05T00:41:00.000Z"
+    "generation_started_at": "2026-11-05T00:41:00.000Z",
+    "generation_completed_at": "2026-11-05T00:43:00.000Z",
+    "validation_started_at": "2026-11-05T00:43:00.000Z"
   },
   "error": null
 }
