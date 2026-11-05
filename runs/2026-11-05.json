@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261105-20261105020830",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-05T02:18:30.000Z",
-  "heartbeat_at": "2026-11-05T02:08:30.000Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-11-05T02:27:30.000Z",
+  "heartbeat_at": "2026-11-05T02:12:30.000Z",
   "source_cutoff": "2026-11-05T00:40:00.000Z",
   "main_base_sha": "f0fbf03c89c273eb669f1f1b9fe4d1d025c98287",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -315,6 +315,26 @@
           "https://finance.sina.com.cn/stock/cpbd/2026-11-05/doc-inixrqee5778040.shtml",
           "https://data.eastmoney.com/notices/"
         ]
+      },
+      "validation": {
+        "passed": true,
+        "checks": [
+          "8 asset rows per language",
+          "12 major news + 3 overnight per language",
+          "4 stock cards with ticker parity",
+          "4 sector tiles, 5 logic steps, 5 risks per language",
+          "Autohome bullish; Linyang/Youxunda conditional; Tongyi avoid",
+          "US markers unchanged",
+          "index confined to A_H_UPDATED/A_H_TIME/A_H_BRIEF",
+          "non-AH entries and manifest history preserved"
+        ],
+        "candidate_time": "2026-11-05 10:12 CST",
+        "files": [
+          "index.html",
+          "history/data/2026-11-05.json",
+          "history/manifest.json"
+        ],
+        "rankings_sha": "240a4235a808f107e7180e1f1a54aedabacaf2e2"
       }
     }
   },
@@ -342,7 +362,8 @@
     "deployment_verification_completed_at": "2026-11-05T00:51:55.122Z",
     "completed_at": "2026-11-05T00:51:55.122Z",
     "total_seconds": 1135,
-    "review_started_at": "2026-11-05T02:08:30.000Z"
+    "review_started_at": "2026-11-05T02:08:30.000Z",
+    "review_validation_completed_at": "2026-11-05T02:12:30.000Z"
   },
   "error": null,
   "completed_at": "2026-11-05T00:51:55.122Z"
