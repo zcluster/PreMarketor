@@ -2,10 +2,10 @@
   "run_id": "ah-20261105-20261105003300",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-05T00:46:30.000Z",
-  "heartbeat_at": "2026-11-05T00:36:30.000Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "lease_until": "2026-11-05T00:51:00.000Z",
+  "heartbeat_at": "2026-11-05T00:41:00.000Z",
+  "source_cutoff": "2026-11-05T00:40:00.000Z",
   "main_base_sha": "8d6a7fa923e9c5dcbc4f2936a3186d2e11c12471",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -38,7 +38,120 @@
       "concept_rows": 5,
       "snapshot_sha": "888986a16e45881fe20857dc088cf46e536457db",
       "main_head": "f5faa1547bafa392c26cb4910a1dc3ef6f30ffe8"
-    }
+    },
+    "market": {
+      "akshare": {
+        "fetchedAt": "2026-11-04T14:23:57+08:00",
+        "status": "historical_intraday_reference",
+        "A": "4682/769/122; median +1.82%",
+        "HK": "1027/659/1113; median 0%"
+      },
+      "latest_close": {
+        "A": "2026-11-04: SSE +2.16%, ChiNext +6.40%",
+        "HK": "2026-11-04: HSI +1.67%, HSTECH +1.77%"
+      },
+      "us_close": "2026-11-04: S&P +1.58%, Nasdaq +1.44%, Dow +3.04%; Brent -8.7% to $94.62"
+    },
+    "sources": [
+      {
+        "event": "PBOC CNY300bn 3-month outright reverse repo",
+        "source": "https://news.bjd.com.cn/2026/11/04/12018325.shtml"
+      },
+      {
+        "event": "NDRC consumption infrastructure guidance",
+        "source": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202610/t20261030_1408459.html"
+      },
+      {
+        "event": "NDRC/NDA data and AI+ plans",
+        "source": "https://www.nda.gov.cn/sjj/swdt/xwfb/1103/20261103204643794126975_pc.html"
+      },
+      {
+        "event": "US midterms and Wall Street close",
+        "source": "https://www.fidelity.com/news/article/us-markets/202611041600RTRSNEWSCOMBINED_L6N46L1CJ_1"
+      },
+      {
+        "event": "Oil close",
+        "source": "https://www.reuters.com/business/energy/oil-edges-down-investors-await-us-midterm-election-results-2026-11-04/"
+      },
+      {
+        "event": "Linyang State Grid award",
+        "source": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12690923&stockid=601222"
+      },
+      {
+        "event": "Youxunda State Grid award",
+        "source": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12690997&stockid=300514"
+      },
+      {
+        "event": "Tongyi/CATL coolant framework",
+        "source": "https://www1.cfi.net.cn/p20261104002592.html"
+      },
+      {
+        "event": "Autohome Q3 and dividend",
+        "source": "https://ir.autohome.com.cn/news-releases/news-release-details/autohome-inc-announces-unaudited-third-quarter-2026-financial"
+      }
+    ],
+    "major_theme_decisions": [
+      {
+        "theme": "Silver +10.19%, gold +8.98%, other precious metals +8.54%, silver concept +10.78%",
+        "decision": "no_candidate",
+        "candidate": null,
+        "reason": "A/H precious metals already rallied sharply on Nov 4; no fresh company-level disclosure and no pre-open price confirmation"
+      },
+      {
+        "theme": "Mortgage finance +8.37% / advertising +8.14%",
+        "decision": "no_candidate",
+        "candidate": null,
+        "reason": "no verified direct A/H business exposure or new company catalyst"
+      },
+      {
+        "theme": "Oil refining -6.09% / drilling -7.23%",
+        "decision": "avoid",
+        "candidate": "统一股份 600506",
+        "reason": "framework agreement has no volume or value; stock fell 6.86% before disclosure and US refining sector fell 6.09%"
+      },
+      {
+        "theme": "Electrical equipment -8.61% / independent power -9.06%",
+        "decision": "conditional_watch",
+        "candidate": "林洋能源 601222",
+        "reason": "CNY198.834m State Grid award and positive Nov 4 close, but negative overnight sector mapping requires open confirmation"
+      },
+      {
+        "theme": "Room-temperature superconductors +13.10%",
+        "decision": "no_candidate",
+        "candidate": null,
+        "reason": "speculative concept without verified new A/H company catalyst"
+      },
+      {
+        "theme": "Lidar +10.72%",
+        "decision": "no_candidate",
+        "candidate": null,
+        "reason": "no new local filing tied to a verified A/H issuer in this run"
+      },
+      {
+        "theme": "SOL reserve +6.59%",
+        "decision": "no_candidate",
+        "candidate": null,
+        "reason": "no directly exposed A/H issuer verified"
+      },
+      {
+        "theme": "Cruise lines +6.51%",
+        "decision": "no_candidate",
+        "candidate": null,
+        "reason": "no direct A/H cruise operator candidate verified"
+      },
+      {
+        "theme": "Autohome Q3/dividend",
+        "decision": "conditional_watch",
+        "candidate": "汽车之家-S 02518 / ATHM",
+        "reason": "revenue and profit fell, but US$1.58/ADS dividend and ADR +12.63% provide positive price counterevidence"
+      },
+      {
+        "theme": "State Grid smart-meter awards",
+        "decision": "conditional_watch",
+        "candidate": "友讯达 300514",
+        "reason": "award equals 24.56% of 2025 revenue, but unsigned contract and YTD net loss require strict confirmation"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -47,7 +160,9 @@
     "started_at": "2026-11-05T00:33:00.000Z",
     "inputs_started_at": "2026-11-05T00:33:00.000Z",
     "inputs_completed_at": "2026-11-05T00:33:50.000Z",
-    "research_started_at": "2026-11-05T00:33:50.000Z"
+    "research_started_at": "2026-11-05T00:33:50.000Z",
+    "research_completed_at": "2026-11-05T00:40:00.000Z",
+    "generation_started_at": "2026-11-05T00:41:00.000Z"
   },
   "error": null
 }
