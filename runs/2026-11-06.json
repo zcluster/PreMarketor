@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261106-20261106015450",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-11-06T02:04:50.544Z",
-  "heartbeat_at": "2026-11-06T01:54:50.544Z",
+  "stage": "generation",
+  "lease_until": "2026-11-06T02:07:18.834Z",
+  "heartbeat_at": "2026-11-06T01:57:18.834Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "5c109185015f356ddb46c93474e4f877791de666",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -175,7 +175,48 @@
       "sources": [
         "Eastmoney delayed quote API observed 2026-11-06 after 09:50 CST",
         "巨潮资讯公告检索：300237撤销其他风险警示暨股票停复牌公告"
-      ]
+      ],
+      "research_completed_at": "2026-11-06T01:57:18.834Z",
+      "live_quotes": {
+        "as_of": "2026-11-06T09:56:54+08:00",
+        "indices": {
+          "000001.SH": {
+            "price": 3643.85,
+            "change_pct": -1.25
+          },
+          "399001.SZ": {
+            "price": 11245.36,
+            "change_pct": -1.97
+          },
+          "399006.SZ": {
+            "price": 2485.56,
+            "change_pct": -3.17
+          }
+        },
+        "stocks": {
+          "601096.SH": {
+            "price": 3.78,
+            "change_pct": -0.26
+          },
+          "002709.SZ": {
+            "price": 29.69,
+            "change_pct": 2.34
+          },
+          "300093.SZ": {
+            "price": 20.38,
+            "change_pct": 9.22
+          },
+          "688002.SH": {
+            "price": 127.89,
+            "change_pct": -1.17
+          },
+          "300237.SZ": {
+            "price": 2.66,
+            "change_pct": 13.19
+          }
+        }
+      },
+      "materiality": "A股开盘广泛下跌确认隔夜传导，既有候选价格状态发生可验证变化，且美晨科技摘帽复牌大涨构成新增重点个股事件。"
     }
   },
   "pending_increment": [
