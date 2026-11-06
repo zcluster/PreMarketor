@@ -1,10 +1,10 @@
 {
   "run_id": "ah-20261106-20261106003155",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment",
-  "lease_until": "2026-11-06T00:57:57.007Z",
-  "heartbeat_at": "2026-11-06T00:47:57.007Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-06T00:49:20.744Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "e1e11c118e3b94b9916368b7a7eef3058da6fab3",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -132,6 +132,36 @@
       "state": "READY",
       "target": "production",
       "url": "market-ahead-p57bofm7t-zcluster-projects.vercel.app"
+    },
+    "production": {
+      "completed_at": "2026-11-06T00:49:20.744Z",
+      "checks": {
+        "home_http_200": true,
+        "archive_http_200": true,
+        "json_http_200": true,
+        "manifest_http_200": true,
+        "home_time": true,
+        "home_updated": true,
+        "home_brief_exact": true,
+        "home_rank_15": true,
+        "home_rank_en_15": true,
+        "home_cards_4": true,
+        "json_date": true,
+        "json_time": true,
+        "json_bilingual": true,
+        "json_cards_parity": true,
+        "json_overnight_parity": true,
+        "manifest_today": true,
+        "manifest_updated": true,
+        "archive_loader": true,
+        "us_brief_exact": true,
+        "us_time_exact": true,
+        "us_updated_exact": true
+      },
+      "homepage": "https://premarketor.com/",
+      "archive": "https://premarketor.com/history/?date=2026-11-06",
+      "history_json": "https://premarketor.com/history/data/2026-11-06.json",
+      "manifest": "https://premarketor.com/history/manifest.json"
     }
   },
   "pending_increment": [],
@@ -149,7 +179,11 @@
     "validation_completed_at": "2026-11-06T00:46:58.760Z",
     "main_update_started_at": "2026-11-06T00:46:58.760Z",
     "main_update_completed_at": "2026-11-06T00:47:57.007Z",
-    "deployment_started_at": "2026-11-06T00:47:57.007Z"
+    "deployment_started_at": "2026-11-06T00:47:57.007Z",
+    "deployment_completed_at": "2026-11-06T00:49:20.744Z",
+    "production_validation_completed_at": "2026-11-06T00:49:20.744Z",
+    "completed_at": "2026-11-06T00:49:20.744Z",
+    "total_seconds": 1046
   },
   "error": null
 }
