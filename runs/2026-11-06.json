@@ -2,9 +2,9 @@
   "run_id": "ah-20261106-20261106003155",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-11-06T00:48:40.336Z",
-  "heartbeat_at": "2026-11-06T00:38:40.336Z",
+  "stage": "validation",
+  "lease_until": "2026-11-06T00:54:23.709Z",
+  "heartbeat_at": "2026-11-06T00:44:23.709Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "e1e11c118e3b94b9916368b7a7eef3058da6fab3",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -77,6 +77,20 @@
         "sports_betting": "no_candidate"
       },
       "pending": []
+    },
+    "generation": {
+      "completed_at": "2026-11-06T00:44:23.709Z",
+      "title": "美股AI硬件重挫压制A/H科技，储能规划与盘后订单仅提供条件线索",
+      "zh_length": 11855,
+      "en_length": 19864,
+      "cards": [
+        "601096.SH conditional_watch",
+        "002709.SZ conditional_watch",
+        "300093.SZ avoid",
+        "688002.SH avoid"
+      ],
+      "news_items": 12,
+      "overnight_items": 3
     }
   },
   "pending_increment": [],
@@ -88,7 +102,9 @@
     "inputs_completed_at": "2026-11-06T00:33:17.631Z",
     "research_started_at": "2026-11-06T00:33:17.631Z",
     "research_completed_at": "2026-11-06T00:38:40.336Z",
-    "generation_started_at": "2026-11-06T00:38:40.336Z"
+    "generation_started_at": "2026-11-06T00:38:40.336Z",
+    "generation_completed_at": "2026-11-06T00:44:23.709Z",
+    "validation_started_at": "2026-11-06T00:44:23.709Z"
   },
   "error": null
 }
