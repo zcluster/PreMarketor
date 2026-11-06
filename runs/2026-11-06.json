@@ -1,10 +1,10 @@
 {
   "run_id": "ah-review-20261106-20261106015450",
   "owner": "MarketAhead A/H 09:15增量复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-11-06T02:18:00.992Z",
-  "heartbeat_at": "2026-11-06T02:08:00.992Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-06T02:09:55.638Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "5c109185015f356ddb46c93474e4f877791de666",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -272,23 +272,51 @@
         "completed_at": "2026-11-06T02:08:00.992Z",
         "commit": "a52bb3d0d638f088687d82a4062054370d43557d",
         "force": false
-      }
+      },
+      "remote_readback": {
+        "completed_at": "2026-11-06T02:09:55.638Z",
+        "mainHead": true,
+        "indexExact": true,
+        "todayExact": true,
+        "manifestExact": true,
+        "files": true
+      },
+      "deployment": {
+        "id": "dpl_9fQ8n7a4YPdLkeEbtmmHCeRdcN3C",
+        "state": "READY",
+        "target": "production",
+        "url": "market-ahead-m01ltoyxc-zcluster-projects.vercel.app",
+        "commit": "a52bb3d0d638f088687d82a4062054370d43557d"
+      },
+      "production": {
+        "completed_at": "2026-11-06T02:09:55.638Z",
+        "checks": {
+          "status": true,
+          "homeExact": true,
+          "dayExact": true,
+          "manifestExact": true,
+          "homeTime": true,
+          "homeUpdated": true,
+          "homeBriefExact": true,
+          "bilingual": true,
+          "cardsZh": true,
+          "cardsEn": true,
+          "newsZh": true,
+          "newsEn": true,
+          "manifestToday": true,
+          "archiveLoader": true,
+          "noEmpty": true,
+          "usProtected": true
+        },
+        "homepage": "https://premarketor.com/",
+        "archive": "https://premarketor.com/history/?date=2026-11-06",
+        "history_json": "https://premarketor.com/history/data/2026-11-06.json",
+        "manifest": "https://premarketor.com/history/manifest.json"
+      },
+      "completed_at": "2026-11-06T02:09:55.638Z"
     }
   },
-  "pending_increment": [
-    {
-      "type": "market_feedback",
-      "summary": "A股三大指数下跌确认风险传导，需把盘前待验证改为已确认。"
-    },
-    {
-      "type": "stock_feedback",
-      "summary": "四只既有重点股开盘表现需更新。"
-    },
-    {
-      "type": "company_event",
-      "summary": "美晨科技撤销其他风险警示复牌并大涨，需纳入风险/事件观察。"
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "a52bb3d0d638f088687d82a4062054370d43557d",
   "candidate_commit": "a52bb3d0d638f088687d82a4062054370d43557d",
   "stage_timings": {
