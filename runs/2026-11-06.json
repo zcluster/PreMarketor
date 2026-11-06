@@ -2,9 +2,9 @@
   "run_id": "ah-20261106-20261106003155",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "validation",
-  "lease_until": "2026-11-06T00:54:23.709Z",
-  "heartbeat_at": "2026-11-06T00:44:23.709Z",
+  "stage": "main_update",
+  "lease_until": "2026-11-06T00:56:58.760Z",
+  "heartbeat_at": "2026-11-06T00:46:58.760Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "e1e11c118e3b94b9916368b7a7eef3058da6fab3",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -91,11 +91,40 @@
       ],
       "news_items": 12,
       "overnight_items": 3
+    },
+    "validation": {
+      "completed_at": "2026-11-06T00:46:58.760Z",
+      "checks": {
+        "only_allowed_index": true,
+        "us_brief_unchanged": true,
+        "us_time_unchanged": true,
+        "us_updated_unchanged": true,
+        "rank_zh_unchanged": true,
+        "rank_en_unchanged": true,
+        "styles_unchanged": true,
+        "scripts_unchanged": true,
+        "marker_unique": true,
+        "bilingual_structure": true,
+        "cards_4": true,
+        "overnight_3": true,
+        "news_12": true,
+        "policy_2": true,
+        "company_3": true,
+        "no_internal": true,
+        "history_valid": true,
+        "manifest_today": true,
+        "old_records_preserved": true,
+        "rank_gate": true
+      },
+      "index_blob": "ee74a9604a7453a2dc72a1275c0dcee26c491533",
+      "history_blob": "e5d1d957e5fd2d494f82084a13c79cd2f6258228",
+      "manifest_blob": "95e78fe68c445dcb05ec8190956d3a5e6eb61eda",
+      "candidate_tree": "4fd159cd4478ce0790cde52a6e19d767473eee59"
     }
   },
   "pending_increment": [],
   "published_commit": null,
-  "candidate_commit": null,
+  "candidate_commit": "bf56851232d686c9a556790dd590596c2a0b10b8",
   "stage_timings": {
     "started_at": "2026-11-06T00:31:55.183Z",
     "inputs_started_at": "2026-11-06T00:31:55.183Z",
@@ -104,7 +133,9 @@
     "research_completed_at": "2026-11-06T00:38:40.336Z",
     "generation_started_at": "2026-11-06T00:38:40.336Z",
     "generation_completed_at": "2026-11-06T00:44:23.709Z",
-    "validation_started_at": "2026-11-06T00:44:23.709Z"
+    "validation_started_at": "2026-11-06T00:44:23.709Z",
+    "validation_completed_at": "2026-11-06T00:46:58.760Z",
+    "main_update_started_at": "2026-11-06T00:46:58.760Z"
   },
   "error": null
 }
