@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261106-20261106015450",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "validation",
-  "lease_until": "2026-11-06T02:13:56.267Z",
-  "heartbeat_at": "2026-11-06T02:03:56.267Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-11-06T02:15:49.983Z",
+  "heartbeat_at": "2026-11-06T02:05:49.983Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "5c109185015f356ddb46c93474e4f877791de666",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -217,7 +217,49 @@
         }
       },
       "materiality": "A股开盘广泛下跌确认隔夜传导，既有候选价格状态发生可验证变化，且美晨科技摘帽复牌大涨构成新增重点个股事件。",
-      "generation_completed_at": "2026-11-06T02:03:56.267Z"
+      "generation_completed_at": "2026-11-06T02:03:56.267Z",
+      "validation": {
+        "completed_at": "2026-11-06T02:05:49.983Z",
+        "checks": {
+          "markerUnique": true,
+          "onlyAllowedIndex": true,
+          "protected": true,
+          "styles": true,
+          "scripts": true,
+          "historyExact": true,
+          "times": true,
+          "major12": true,
+          "overnight3": true,
+          "cards5": true,
+          "tickerParity": true,
+          "domParity": true,
+          "moduleOrder": true,
+          "moduleOrderEn": true,
+          "forbidden": true,
+          "manifestToday": true,
+          "oldRecordsPreserved": true,
+          "manifestCount": true,
+          "rankingGate": true,
+          "priceFacts": true,
+          "meichenSource": true,
+          "statusSafety": true
+        },
+        "counts": {
+          "major_news_zh": 12,
+          "major_news_en": 12,
+          "overnight_zh": 3,
+          "overnight_en": 3,
+          "stock_cards_zh": 5,
+          "stock_cards_en": 5
+        },
+        "tickers": [
+          "002709.SZ",
+          "300237.SZ",
+          "601096.SH",
+          "300093.SZ",
+          "688002.SH"
+        ]
+      }
     }
   },
   "pending_increment": [
