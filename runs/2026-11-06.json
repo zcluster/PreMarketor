@@ -2,10 +2,10 @@
   "run_id": "ah-20261106-20261106003155",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-06T00:44:29.283Z",
-  "heartbeat_at": "2026-11-06T00:34:29.283Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "lease_until": "2026-11-06T00:48:40.336Z",
+  "heartbeat_at": "2026-11-06T00:38:40.336Z",
+  "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "e1e11c118e3b94b9916368b7a7eef3058da6fab3",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -37,6 +37,46 @@
       "concept_rows": 5,
       "snapshot_sha": "37cfd5b3314c5214c8acfcb2826d586ac8512df1",
       "main_head": "f7e27279a440ad9f145b6c634ffd3eb140f83f02"
+    },
+    "research": {
+      "completed_at": "2026-11-06T00:38:40.336Z",
+      "web_sources_attempted": true,
+      "policy_primary_sources": [
+        "北京市新能源规划（固态/液流电池与新型储能）",
+        "国家发展改革委节能降碳综合行动"
+      ],
+      "company_events": [
+        "宏盛华源重大项目中标",
+        "大禹节水灌区项目",
+        "金刚光伏云计算服务合同",
+        "天赐材料电解液供货框架"
+      ],
+      "overnight_us": [
+        "纳指-5.52%",
+        "标普500-4.36%",
+        "道指-3.44%",
+        "半导体指数跌逾12%",
+        "英伟达跌逾9%"
+      ],
+      "akshare": {
+        "fetched_at": "2026-11-05T14:48:03+08:00",
+        "status": "ok",
+        "analysis_ready": true,
+        "disclosure": "2026-11-05盘中快照，非11月6日实时"
+      },
+      "theme_decisions": {
+        "advertising_agencies": "no_candidate",
+        "luxury_goods": "no_candidate",
+        "electronic_gaming_multimedia": "no_candidate",
+        "gold": "no_candidate",
+        "hardware_semis_components_electrical": "avoid",
+        "solid_state_battery": "conditional_watch",
+        "chinas_terrific": "no_candidate",
+        "live_streaming": "no_candidate",
+        "firearm_manufacturers": "no_candidate",
+        "sports_betting": "no_candidate"
+      },
+      "pending": []
     }
   },
   "pending_increment": [],
@@ -46,7 +86,9 @@
     "started_at": "2026-11-06T00:31:55.183Z",
     "inputs_started_at": "2026-11-06T00:31:55.183Z",
     "inputs_completed_at": "2026-11-06T00:33:17.631Z",
-    "research_started_at": "2026-11-06T00:33:17.631Z"
+    "research_started_at": "2026-11-06T00:33:17.631Z",
+    "research_completed_at": "2026-11-06T00:38:40.336Z",
+    "generation_started_at": "2026-11-06T00:38:40.336Z"
   },
   "error": null
 }
