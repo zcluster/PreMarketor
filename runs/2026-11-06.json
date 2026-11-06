@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261106-20261106015450",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "main_update",
-  "lease_until": "2026-11-06T02:17:09.071Z",
-  "heartbeat_at": "2026-11-06T02:07:09.071Z",
+  "stage": "deployment_verification",
+  "lease_until": "2026-11-06T02:18:00.992Z",
+  "heartbeat_at": "2026-11-06T02:08:00.992Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "5c109185015f356ddb46c93474e4f877791de666",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -267,6 +267,11 @@
         "today": "c1813f49780dca152631f55899189155492dd04a",
         "manifest": "c82438af8c90771127eea6841dff1dc1802c7d83",
         "tree": "d81f74ead7c332a7c9dbd5be5f37f4a132927ce4"
+      },
+      "main_update": {
+        "completed_at": "2026-11-06T02:08:00.992Z",
+        "commit": "a52bb3d0d638f088687d82a4062054370d43557d",
+        "force": false
       }
     }
   },
@@ -284,7 +289,7 @@
       "summary": "美晨科技撤销其他风险警示复牌并大涨，需纳入风险/事件观察。"
     }
   ],
-  "published_commit": "bf56851232d686c9a556790dd590596c2a0b10b8",
+  "published_commit": "a52bb3d0d638f088687d82a4062054370d43557d",
   "candidate_commit": "a52bb3d0d638f088687d82a4062054370d43557d",
   "stage_timings": {
     "started_at": "2026-11-06T00:31:55.183Z",
