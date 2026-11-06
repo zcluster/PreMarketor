@@ -2,9 +2,9 @@
   "run_id": "ah-review-20261106-20261106015450",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-11-06T02:07:18.834Z",
-  "heartbeat_at": "2026-11-06T01:57:18.834Z",
+  "stage": "validation",
+  "lease_until": "2026-11-06T02:13:56.267Z",
+  "heartbeat_at": "2026-11-06T02:03:56.267Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "5c109185015f356ddb46c93474e4f877791de666",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -216,7 +216,8 @@
           }
         }
       },
-      "materiality": "A股开盘广泛下跌确认隔夜传导，既有候选价格状态发生可验证变化，且美晨科技摘帽复牌大涨构成新增重点个股事件。"
+      "materiality": "A股开盘广泛下跌确认隔夜传导，既有候选价格状态发生可验证变化，且美晨科技摘帽复牌大涨构成新增重点个股事件。",
+      "generation_completed_at": "2026-11-06T02:03:56.267Z"
     }
   },
   "pending_increment": [
