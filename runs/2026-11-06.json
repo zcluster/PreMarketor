@@ -2,9 +2,9 @@
   "run_id": "ah-20261106-20261106003155",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "main_update",
-  "lease_until": "2026-11-06T00:56:58.760Z",
-  "heartbeat_at": "2026-11-06T00:46:58.760Z",
+  "stage": "deployment",
+  "lease_until": "2026-11-06T00:57:57.007Z",
+  "heartbeat_at": "2026-11-06T00:47:57.007Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
   "main_base_sha": "e1e11c118e3b94b9916368b7a7eef3058da6fab3",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -120,10 +120,22 @@
       "history_blob": "e5d1d957e5fd2d494f82084a13c79cd2f6258228",
       "manifest_blob": "95e78fe68c445dcb05ec8190956d3a5e6eb61eda",
       "candidate_tree": "4fd159cd4478ce0790cde52a6e19d767473eee59"
+    },
+    "main_update": {
+      "completed_at": "2026-11-06T00:47:57.007Z",
+      "commit": "bf56851232d686c9a556790dd590596c2a0b10b8",
+      "remote_readback_ok": true,
+      "force": false
+    },
+    "deployment": {
+      "id": "dpl_Ab2UATCZrs7hWaPagPU9PoAVyKL8",
+      "state": "READY",
+      "target": "production",
+      "url": "market-ahead-p57bofm7t-zcluster-projects.vercel.app"
     }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "bf56851232d686c9a556790dd590596c2a0b10b8",
   "candidate_commit": "bf56851232d686c9a556790dd590596c2a0b10b8",
   "stage_timings": {
     "started_at": "2026-11-06T00:31:55.183Z",
@@ -135,7 +147,9 @@
     "generation_completed_at": "2026-11-06T00:44:23.709Z",
     "validation_started_at": "2026-11-06T00:44:23.709Z",
     "validation_completed_at": "2026-11-06T00:46:58.760Z",
-    "main_update_started_at": "2026-11-06T00:46:58.760Z"
+    "main_update_started_at": "2026-11-06T00:46:58.760Z",
+    "main_update_completed_at": "2026-11-06T00:47:57.007Z",
+    "deployment_started_at": "2026-11-06T00:47:57.007Z"
   },
   "error": null
 }
