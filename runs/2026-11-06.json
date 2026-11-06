@@ -2,9 +2,9 @@
   "run_id": "ah-20261106-20261106003155",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "inputs",
-  "lease_until": "2026-11-06T00:41:55.183Z",
-  "heartbeat_at": "2026-11-06T00:31:55.183Z",
+  "stage": "research",
+  "lease_until": "2026-11-06T00:43:17.631Z",
+  "heartbeat_at": "2026-11-06T00:33:17.631Z",
   "source_cutoff": null,
   "main_base_sha": "e1e11c118e3b94b9916368b7a7eef3058da6fab3",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -18,6 +18,15 @@
       "rankings_sha": "240a4235a808f107e7180e1f1a54aedabacaf2e2",
       "akshare_sha": "f9b063aac1b774069ba320c3e30da99ac5b10c24",
       "today_entry_exists": false
+    },
+    "rankings_refresh": {
+      "request_id": "ah-20261106-20261106003155",
+      "requested_at": "2026-11-06T00:32:44.710Z",
+      "expected_session_date": "2026-11-05",
+      "requester": "AH",
+      "commit": "67fabc7903a8db6d903796b49766f3c75da81334",
+      "mainTree": "1fb76751f9bad2a7265ac2c496128a61f3b12754",
+      "requestParent": "fc5a639a4af9467714404686bc9bb3af2a0ca222"
     }
   },
   "pending_increment": [],
@@ -25,7 +34,9 @@
   "candidate_commit": null,
   "stage_timings": {
     "started_at": "2026-11-06T00:31:55.183Z",
-    "inputs_started_at": "2026-11-06T00:31:55.183Z"
+    "inputs_started_at": "2026-11-06T00:31:55.183Z",
+    "inputs_completed_at": "2026-11-06T00:33:17.631Z",
+    "research_started_at": "2026-11-06T00:33:17.631Z"
   },
   "error": null
 }
