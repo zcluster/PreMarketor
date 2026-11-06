@@ -1,12 +1,12 @@
 {
-  "run_id": "ah-20261106-20261106003155",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": null,
-  "heartbeat_at": "2026-11-06T00:49:20.744Z",
+  "run_id": "ah-review-20261106-20261106015450",
+  "owner": "MarketAhead A/H 09:15增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-11-06T02:04:50.544Z",
+  "heartbeat_at": "2026-11-06T01:54:50.544Z",
   "source_cutoff": "2026-11-06T00:38:40.336Z",
-  "main_base_sha": "e1e11c118e3b94b9916368b7a7eef3058da6fab3",
+  "main_base_sha": "5c109185015f356ddb46c93474e4f877791de666",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "inputs": {
@@ -162,9 +162,36 @@
       "archive": "https://premarketor.com/history/?date=2026-11-06",
       "history_json": "https://premarketor.com/history/data/2026-11-06.json",
       "manifest": "https://premarketor.com/history/manifest.json"
+    },
+    "incremental_review": {
+      "started_at": "2026-11-06T01:54:50.544Z",
+      "prior_published_commit": "bf56851232d686c9a556790dd590596c2a0b10b8",
+      "latest_main": "5c109185015f356ddb46c93474e4f877791de666",
+      "trigger": [
+        "A股三大指数开盘后约-1.32%/-2.01%/-3.25%，确认隔夜科技抛售传导",
+        "天赐材料约+2.38%、金刚光伏约+7.72%、睿创微纳约-1.24%、宏盛华源平盘",
+        "美晨科技撤销其他风险警示复牌，约+14.04%"
+      ],
+      "sources": [
+        "Eastmoney delayed quote API observed 2026-11-06 after 09:50 CST",
+        "巨潮资讯公告检索：300237撤销其他风险警示暨股票停复牌公告"
+      ]
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "type": "market_feedback",
+      "summary": "A股三大指数下跌确认风险传导，需把盘前待验证改为已确认。"
+    },
+    {
+      "type": "stock_feedback",
+      "summary": "四只既有重点股开盘表现需更新。"
+    },
+    {
+      "type": "company_event",
+      "summary": "美晨科技撤销其他风险警示复牌并大涨，需纳入风险/事件观察。"
+    }
+  ],
   "published_commit": "bf56851232d686c9a556790dd590596c2a0b10b8",
   "candidate_commit": "bf56851232d686c9a556790dd590596c2a0b10b8",
   "stage_timings": {
