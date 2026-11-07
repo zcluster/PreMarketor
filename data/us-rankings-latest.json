@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-11-06T09:35:09+08:00",
+  "attemptedAt": "2026-11-07T08:57:23+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-06T09:35:09+08:00",
+      "fetchedAt": "2026-11-07T08:57:23+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -20,27 +20,113 @@
           "name": "广告代理",
           "nameEn": "Advertising Agencies",
           "code": "BK2030",
-          "changePct": "+18.99%",
-          "leaderName": "Applovin",
-          "leaderTicker": "APP",
-          "leaderChangePct": "+31.04%",
+          "changePct": "+6.73%",
+          "leaderName": "超视野传播",
+          "leaderTicker": "EVC",
+          "leaderChangePct": "+19.87%",
           "breadth": {
-            "advancers": 11,
-            "decliners": 24,
-            "unchanged": 5
+            "advancers": 23,
+            "decliners": 14,
+            "unchanged": 3
           }
         },
         {
-          "name": "奢侈品",
-          "nameEn": "Luxury Goods",
-          "code": "BK2276",
-          "changePct": "+3.89%",
-          "leaderName": "Tapestry",
-          "leaderTicker": "TPR",
-          "leaderChangePct": "+7.07%",
+          "name": "独立电力生产商",
+          "nameEn": "Utilities - Independent Power Producers",
+          "code": "BK2462",
+          "changePct": "+6.68%",
+          "leaderName": "Oklo Inc",
+          "leaderTicker": "OKLO",
+          "leaderChangePct": "+22.66%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 8,
+            "advancers": 7,
+            "decliners": 3,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "半导体设备与材料",
+          "nameEn": "Semiconductor Equipment & Materials",
+          "code": "BK2016",
+          "changePct": "+5.78%",
+          "leaderName": "Atomera",
+          "leaderTicker": "ATOM",
+          "leaderChangePct": "+15.55%",
+          "breadth": {
+            "advancers": 30,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "铀",
+          "nameEn": "Uranium",
+          "code": "BK2430",
+          "changePct": "+5.06%",
+          "leaderName": "Centrus Energy",
+          "leaderTicker": "LEU",
+          "leaderChangePct": "+17.49%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 2,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "航空航天与国防",
+          "nameEn": "Aerospace & Defense",
+          "code": "BK2089",
+          "changePct": "+5.01%",
+          "leaderName": "Karman Holdings",
+          "leaderTicker": "KRMN",
+          "leaderChangePct": "+42.13%",
+          "breadth": {
+            "advancers": 80,
+            "decliners": 18,
+            "unchanged": 1
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "商业设备和用品",
+          "nameEn": "Business Equipment & Supplies",
+          "code": "BK2509",
+          "changePct": "-2.78%",
+          "leaderName": "君长数码",
+          "leaderTicker": "EHGO",
+          "leaderChangePct": "+1.76%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 4,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "杂货店",
+          "nameEn": "Grocery Stores",
+          "code": "BK2095",
+          "changePct": "-2.80%",
+          "leaderName": "Maison Solutions",
+          "leaderTicker": "MSS",
+          "leaderChangePct": "+8.05%",
+          "breadth": {
+            "advancers": 1,
+            "decliners": 12,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "百货公司",
+          "nameEn": "Department Stores",
+          "code": "BK2080",
+          "changePct": "-3.03%",
+          "leaderName": "Polibeli",
+          "leaderTicker": "PLBL",
+          "leaderChangePct": "+3.28%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 3,
             "unchanged": 0
           }
         },
@@ -48,114 +134,28 @@
           "name": "咨询服务",
           "nameEn": "Consulting Services",
           "code": "BK2476",
-          "changePct": "+2.76%",
-          "leaderName": "恒峰科技创新",
-          "leaderTicker": "FOFO",
-          "leaderChangePct": "+10.91%",
+          "changePct": "-3.16%",
+          "leaderName": "慧悦财经",
+          "leaderTicker": "INTJ",
+          "leaderChangePct": "+2.08%",
           "breadth": {
-            "advancers": 9,
-            "decliners": 12,
-            "unchanged": 2
-          }
-        },
-        {
-          "name": "电子游戏与多媒体",
-          "nameEn": "Electronic Gaming & Multimedia",
-          "code": "BK2253",
-          "changePct": "+1.96%",
-          "leaderName": "Playtika Holding",
-          "leaderTicker": "PLTK",
-          "leaderChangePct": "+8.96%",
-          "breadth": {
-            "advancers": 5,
+            "advancers": 6,
             "decliners": 14,
-            "unchanged": 2
-          }
-        },
-        {
-          "name": "黄金",
-          "nameEn": "Gold",
-          "code": "BK2110",
-          "changePct": "+1.67%",
-          "leaderName": "Gold Royalty",
-          "leaderTicker": "GROY",
-          "leaderChangePct": "+7.61%",
-          "breadth": {
-            "advancers": 28,
-            "decliners": 26,
-            "unchanged": 2
-          }
-        }
-      ],
-      "bottom": [
-        {
-          "name": "电子元件",
-          "nameEn": "Electronic Components",
-          "code": "BK2072",
-          "changePct": "-10.37%",
-          "leaderName": "Integrated Media Technology",
-          "leaderTicker": "IMTE",
-          "leaderChangePct": "+4.04%",
-          "breadth": {
-            "advancers": 3,
-            "decliners": 40,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "半导体",
-          "nameEn": "Semiconductors",
-          "code": "BK2015",
-          "changePct": "-11.46%",
-          "leaderName": "旭明光电",
-          "leaderTicker": "LEDS",
-          "leaderChangePct": "+4.72%",
-          "breadth": {
-            "advancers": 2,
-            "decliners": 66,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "半导体设备与材料",
-          "nameEn": "Semiconductor Equipment & Materials",
-          "code": "BK2016",
-          "changePct": "-12.33%",
-          "leaderName": "SmartKem",
-          "leaderTicker": "SMTK",
-          "leaderChangePct": "+11.52%",
-          "breadth": {
-            "advancers": 1,
-            "decliners": 30,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "-12.53%",
-          "leaderName": "Linkers Industries",
-          "leaderTicker": "LNKS",
-          "leaderChangePct": "+3.41%",
-          "breadth": {
-            "advancers": 5,
-            "decliners": 49,
             "unchanged": 3
           }
         },
         {
-          "name": "计算机硬件",
-          "nameEn": "Computer Hardware",
-          "code": "BK2492",
-          "changePct": "-14.94%",
-          "leaderName": "Cricut",
-          "leaderTicker": "CRCT",
-          "leaderChangePct": "+4.17%",
+          "name": "博彩",
+          "nameEn": "Gambling",
+          "code": "BK2094",
+          "changePct": "-6.43%",
+          "leaderName": "Inspired Entertainment",
+          "leaderTicker": "INSE",
+          "leaderChangePct": "+5.71%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 43,
-            "unchanged": 1
+            "advancers": 4,
+            "decliners": 10,
+            "unchanged": 0
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-06T09:35:09+08:00",
+      "fetchedAt": "2026-11-07T08:57:23+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,27 +176,13 @@
       },
       "top": [
         {
-          "name": "固态电池",
-          "nameEn": "Solid State Battery",
-          "code": "BK2544",
-          "changePct": "+8.81%",
-          "leaderName": "丰田汽车",
-          "leaderTicker": "TM",
-          "leaderChangePct": "+9.35%",
-          "breadth": {
-            "advancers": 1,
-            "decliners": 7,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "China's Terrific",
-          "nameEn": "China's Terrific",
-          "code": "BK23596",
-          "changePct": "+3.25%",
-          "leaderName": "美团(ADR)",
-          "leaderTicker": "MPNGF",
-          "leaderChangePct": "+5.97%",
+          "name": "激光雷达概念",
+          "nameEn": "Lidar Technology",
+          "code": "BK2539",
+          "changePct": "+14.57%",
+          "leaderName": "indie Semiconductor",
+          "leaderTicker": "INDI",
+          "leaderChangePct": "+33.58%",
           "breadth": {
             "advancers": 6,
             "decliners": 1,
@@ -204,44 +190,58 @@
           }
         },
         {
-          "name": "直播概念",
-          "nameEn": "Live Streaming",
-          "code": "BK2438",
-          "changePct": "+1.60%",
-          "leaderName": "哔哩哔哩",
-          "leaderTicker": "BILI",
-          "leaderChangePct": "+2.67%",
+          "name": "加密矿企",
+          "nameEn": "Crypto Mining",
+          "code": "BK23921",
+          "changePct": "+12.67%",
+          "leaderName": "IREN Ltd",
+          "leaderTicker": "IREN",
+          "leaderChangePct": "+20.02%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 2,
+            "advancers": 14,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "枪械制造",
-          "nameEn": "Firearm Manufacturers",
-          "code": "BK2581",
-          "changePct": "+0.97%",
-          "leaderName": "Cadre Holdings",
-          "leaderTicker": "CDRE",
-          "leaderChangePct": "+4.64%",
+          "name": "英伟达持仓概念",
+          "nameEn": "NVIDIA Portfolio",
+          "code": "BK20882",
+          "changePct": "+6.67%",
+          "leaderName": "Coherent",
+          "leaderTicker": "COHR",
+          "leaderChangePct": "+13.58%",
           "breadth": {
-            "advancers": 1,
+            "advancers": 7,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "稀土概念",
+          "nameEn": "Rare Earth Stocks",
+          "code": "BK23700",
+          "changePct": "+6.11%",
+          "leaderName": "UCORE RARE METALS INC",
+          "leaderTicker": "UURAF",
+          "leaderChangePct": "+18.11%",
+          "breadth": {
+            "advancers": 14,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "太空概念",
+          "nameEn": "Space",
+          "code": "BK2556",
+          "changePct": "+5.97%",
+          "leaderName": "Firefly Aerospace",
+          "leaderTicker": "FLY",
+          "leaderChangePct": "+36.80%",
+          "breadth": {
+            "advancers": 28,
             "decliners": 3,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "体育博彩",
-          "nameEn": "Sports Betting",
-          "code": "BK23588",
-          "changePct": "+0.51%",
-          "leaderName": "DraftKings",
-          "leaderTicker": "DKNG",
-          "leaderChangePct": "+1.77%",
-          "breadth": {
-            "advancers": 3,
-            "decliners": 4,
             "unchanged": 0
           }
         }
@@ -253,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-11-05",
-    "checked_at": "2026-11-06T09:35:15+08:00",
+    "expected_session_date": "2026-11-06",
+    "checked_at": "2026-11-07T08:57:35+08:00",
     "request_id": null,
-    "groups_sha256": "abc572b23171cc062ec875e801668abb9787656f1b9eb26bbafd80153b6b1a2e",
+    "groups_sha256": "c85dbe2b334055846553bb051687339eec4e6d9a5751986d6e55e5786615ea36",
     "errors": []
   }
 }
