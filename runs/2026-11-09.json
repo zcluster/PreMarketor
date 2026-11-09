@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "date": "2026-11-09",
-  "run_id": "ah-20261109-20261109003709",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "completed",
-  "started_at": "2026-11-09T00:37:09.219Z",
-  "heartbeat_at": "2026-11-09T00:48:07.978Z",
-  "lease_until": null,
+  "run_id": "ah-review-20261109-20261109014609",
+  "owner": "MarketAhead A/H 09:15增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "started_at": "2026-11-09T01:46:09.137Z",
+  "heartbeat_at": "2026-11-09T01:46:09.137Z",
+  "lease_until": "2026-11-09T01:56:09.137Z",
   "source_cutoff": "2026-11-09T00:40:57.301Z",
-  "main_base_sha": "5c73318facb9dbd3282bb67c7ad4daacbb7c7d6e",
+  "main_base_sha": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "rankings": {
     "status": "ready",
@@ -31,18 +31,65 @@
     "market_date": "2026-11-06",
     "market_phase": "intraday_snapshot"
   },
-  "evidence": [
-    "Reuters 2026-11-06 jobs/markets and 2026-11-08 oil",
-    "国务院常务会议 2026-11-06",
-    "国家发展改革委 六张网 2026-11-06",
-    "工信部机器人标识码征求意见 2026-11-06",
-    "商务部对位芳纶反倾销 2026-11-06",
-    "HKEX 2026 Q3 results",
-    "华新建材收购公告",
-    "Moomoo rankings snapshot",
-    "AKShare snapshot"
+  "evidence": {
+    "0": "Reuters 2026-11-06 jobs/markets and 2026-11-08 oil",
+    "1": "国务院常务会议 2026-11-06",
+    "2": "国家发展改革委 六张网 2026-11-06",
+    "3": "工信部机器人标识码征求意见 2026-11-06",
+    "4": "商务部对位芳纶反倾销 2026-11-06",
+    "5": "HKEX 2026 Q3 results",
+    "6": "华新建材收购公告",
+    "7": "Moomoo rankings snapshot",
+    "8": "AKShare snapshot",
+    "incremental_review": {
+      "started_at": "2026-11-09T01:46:09.137Z",
+      "prior_published_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
+      "latest_main": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
+      "quotes": {
+        "as_of": "2026-11-09T09:45:22+08:00",
+        "source": "Eastmoney public delayed quote API",
+        "indices": {
+          "000001.SH": {
+            "price": 3675.69,
+            "change_pct": 0.73
+          },
+          "399001.SZ": {
+            "price": 11305.95,
+            "change_pct": 1.16
+          },
+          "399006.SZ": {
+            "price": 2505.59,
+            "change_pct": 1.64
+          }
+        },
+        "stocks": {
+          "600801.SH": {
+            "price": 26.14,
+            "change_pct": -4.81
+          },
+          "00388.HK": {
+            "price": 388.8,
+            "change_pct": 0.83
+          },
+          "01729.HK": {
+            "price": 10.23,
+            "change_pct": 2.71
+          }
+        }
+      },
+      "materiality": "大盘由首轮待验证转为开盘上涨；华新建材显著负反馈、港交所正反馈直接改变重点股分级，汇聚科技反弹仍不足以逆转前日跌13%。"
+    }
+  },
+  "pending_increment": [
+    {
+      "type": "market_feedback",
+      "summary": "A股三大指数开盘转涨，改变首轮高利率压制下的防守预期。"
+    },
+    {
+      "type": "stock_feedback",
+      "summary": "华新建材-4.81%否定并购价格确认；港交所+0.83%获正反馈；汇聚科技+2.71%仅属跌后反弹。"
+    }
   ],
-  "pending_increment": [],
   "candidate_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "published_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "error": null,
