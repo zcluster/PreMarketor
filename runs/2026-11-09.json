@@ -3,11 +3,11 @@
   "date": "2026-11-09",
   "run_id": "ah-20261109-20261109003709",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "completed",
   "started_at": "2026-11-09T00:37:09.219Z",
-  "heartbeat_at": "2026-11-09T00:46:36.293Z",
-  "lease_until": "2026-11-09T00:56:36.293Z",
+  "heartbeat_at": "2026-11-09T00:48:07.978Z",
+  "lease_until": null,
   "source_cutoff": "2026-11-09T00:40:57.301Z",
   "main_base_sha": "5c73318facb9dbd3282bb67c7ad4daacbb7c7d6e",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -44,14 +44,37 @@
   ],
   "pending_increment": [],
   "candidate_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
-  "published_commit": null,
+  "published_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "error": null,
   "stage_timings": {
     "inputs_started_at": "2026-11-09T00:37:09.219Z",
     "inputs_completed_at": "2026-11-09T00:40:57.301Z",
     "generation_started_at": "2026-11-09T00:40:57.301Z",
     "generation_completed_at": "2026-11-09T00:46:36.293Z",
-    "deployment_verification_started_at": "2026-11-09T00:46:36.293Z"
+    "deployment_verification_started_at": "2026-11-09T00:46:36.293Z",
+    "deployment_verification_completed_at": "2026-11-09T00:48:07.978Z",
+    "completed_at": "2026-11-09T00:48:07.978Z"
   },
-  "publish_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10"
+  "publish_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
+  "released_at": "2026-11-09T00:48:07.978Z",
+  "production_verification": {
+    "status": "passed",
+    "checked_at": "2026-11-09T00:48:07.978Z",
+    "urls": [
+      "https://premarketor.com/",
+      "https://premarketor.com/history/manifest.json",
+      "https://premarketor.com/history/data/2026-11-09.json",
+      "https://premarketor.com/history/?date=2026-11-09"
+    ],
+    "http_status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "homepage_exact": true,
+    "manifest_exact": true,
+    "history_exact": true
+  },
+  "duration_seconds": 659
 }
