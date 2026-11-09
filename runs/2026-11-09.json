@@ -3,11 +3,11 @@
   "date": "2026-11-09",
   "run_id": "ah-review-20261109-20261109014609",
   "owner": "MarketAhead A/H 09:15增量复核",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "completed",
   "started_at": "2026-11-09T01:46:09.137Z",
-  "heartbeat_at": "2026-11-09T01:55:23.283Z",
-  "lease_until": "2026-11-09T02:05:23.283Z",
+  "heartbeat_at": "2026-11-09T01:57:05.472Z",
+  "lease_until": null,
   "source_cutoff": "2026-11-09T00:40:57.301Z",
   "main_base_sha": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -117,16 +117,7 @@
       ]
     }
   },
-  "pending_increment": [
-    {
-      "type": "market_feedback",
-      "summary": "A股三大指数开盘转涨，改变首轮高利率压制下的防守预期。"
-    },
-    {
-      "type": "stock_feedback",
-      "summary": "华新建材-4.81%否定并购价格确认；港交所+0.83%获正反馈；汇聚科技+2.71%仅属跌后反弹。"
-    }
-  ],
+  "pending_increment": [],
   "candidate_commit": "f708ba49178e76119cc73ad242e7a224cfedc89c",
   "published_commit": "f708ba49178e76119cc73ad242e7a224cfedc89c",
   "error": null,
@@ -143,13 +134,18 @@
     "incremental_review_validation_completed_at": "2026-11-09T01:54:31.254Z",
     "incremental_review_candidate_created_at": "2026-11-09T01:54:31.254Z",
     "incremental_review_main_updated_at": "2026-11-09T01:55:23.283Z",
-    "incremental_review_deployment_verification_started_at": "2026-11-09T01:55:23.283Z"
+    "incremental_review_deployment_verification_started_at": "2026-11-09T01:55:23.283Z",
+    "incremental_review_deployment_verification_completed_at": "2026-11-09T01:57:05.472Z",
+    "incremental_review_completed_at": "2026-11-09T01:57:05.472Z"
   },
   "publish_commit": "f708ba49178e76119cc73ad242e7a224cfedc89c",
-  "released_at": "2026-11-09T00:48:07.978Z",
+  "released_at": "2026-11-09T01:57:05.472Z",
   "production_verification": {
     "status": "passed",
-    "checked_at": "2026-11-09T00:48:07.978Z",
+    "checked_at": "2026-11-09T01:57:05.472Z",
+    "deployment_id": "dpl_BkvjRjuj6nhRd9cMhBAuWTLYN8hz",
+    "deployment_state": "READY",
+    "commit": "f708ba49178e76119cc73ad242e7a224cfedc89c",
     "urls": [
       "https://premarketor.com/",
       "https://premarketor.com/history/manifest.json",
@@ -164,7 +160,9 @@
     ],
     "homepage_exact": true,
     "manifest_exact": true,
-    "history_exact": true
+    "history_exact": true,
+    "bilingual": true,
+    "us_preserved": true
   },
-  "duration_seconds": 659
+  "duration_seconds": 656
 }
