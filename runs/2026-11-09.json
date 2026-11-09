@@ -4,25 +4,51 @@
   "run_id": "ah-20261109-20261109003709",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "inputs",
+  "stage": "generation",
   "started_at": "2026-11-09T00:37:09.219Z",
-  "heartbeat_at": "2026-11-09T00:37:09.219Z",
-  "lease_until": "2026-11-09T00:47:09.219Z",
-  "source_cutoff": null,
+  "heartbeat_at": "2026-11-09T00:40:57.301Z",
+  "lease_until": "2026-11-09T00:50:57.301Z",
+  "source_cutoff": "2026-11-09T00:40:57.301Z",
   "main_base_sha": "5c73318facb9dbd3282bb67c7ad4daacbb7c7d6e",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "rankings": {
-    "status": "checking"
+    "status": "ready",
+    "expected_session_date": "2026-11-06",
+    "snapshot_attempted_at": "2026-11-07T08:57:23+08:00",
+    "groups": {
+      "industry": {
+        "top": 5,
+        "bottom": 5
+      },
+      "concept": {
+        "top": 5
+      }
+    }
   },
   "akshare": {
-    "status": "checking"
+    "status": "degraded_stale",
+    "fetched_at": "2026-11-06T14:48:40+08:00",
+    "market_date": "2026-11-06",
+    "market_phase": "intraday_snapshot"
   },
-  "evidence": [],
+  "evidence": [
+    "Reuters 2026-11-06 jobs/markets and 2026-11-08 oil",
+    "国务院常务会议 2026-11-06",
+    "国家发展改革委 六张网 2026-11-06",
+    "工信部机器人标识码征求意见 2026-11-06",
+    "商务部对位芳纶反倾销 2026-11-06",
+    "HKEX 2026 Q3 results",
+    "华新建材收购公告",
+    "Moomoo rankings snapshot",
+    "AKShare snapshot"
+  ],
   "pending_increment": [],
   "candidate_commit": null,
   "published_commit": null,
   "error": null,
   "stage_timings": {
-    "inputs_started_at": "2026-11-09T00:37:09.219Z"
+    "inputs_started_at": "2026-11-09T00:37:09.219Z",
+    "inputs_completed_at": "2026-11-09T00:40:57.301Z",
+    "generation_started_at": "2026-11-09T00:40:57.301Z"
   }
 }
