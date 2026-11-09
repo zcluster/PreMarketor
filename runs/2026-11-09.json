@@ -4,10 +4,10 @@
   "run_id": "ah-review-20261109-20261109014609",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "generation",
+  "stage": "validation",
   "started_at": "2026-11-09T01:46:09.137Z",
-  "heartbeat_at": "2026-11-09T01:46:47.563Z",
-  "lease_until": "2026-11-09T01:56:47.563Z",
+  "heartbeat_at": "2026-11-09T01:52:34.096Z",
+  "lease_until": "2026-11-09T02:02:34.096Z",
   "source_cutoff": "2026-11-09T00:40:57.301Z",
   "main_base_sha": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -78,7 +78,38 @@
         }
       },
       "materiality": "大盘由首轮待验证转为开盘上涨；华新建材显著负反馈、港交所正反馈直接改变重点股分级，汇聚科技反弹仍不足以逆转前日跌13%。",
-      "research_completed_at": "2026-11-09T01:46:47.563Z"
+      "research_completed_at": "2026-11-09T01:46:47.563Z",
+      "validation": {
+        "checks": {
+          "index_only_allowed": true,
+          "ah_updated": true,
+          "ah_time": true,
+          "ah_html_exact": true,
+          "us_brief": true,
+          "us_time": true,
+          "us_updated": true,
+          "us_sector": true,
+          "us_sector_en": true,
+          "day_time": true,
+          "major_news_zh": true,
+          "major_news_en": true,
+          "overnight_zh": true,
+          "overnight_en": true,
+          "stock_cards_zh": true,
+          "stock_cards_en": true,
+          "ticker_parity": true,
+          "dom_signature": true,
+          "manifest_count": true,
+          "manifest_old_records_unchanged": true,
+          "manifest_today": true,
+          "facts": true,
+          "huaxin_not_bullish": true,
+          "time_not_bullish": true,
+          "hkex_bullish": true,
+          "no_forbidden": true
+        },
+        "failed": []
+      }
     }
   },
   "pending_increment": [
@@ -101,7 +132,9 @@
     "generation_completed_at": "2026-11-09T00:46:36.293Z",
     "deployment_verification_started_at": "2026-11-09T00:46:36.293Z",
     "deployment_verification_completed_at": "2026-11-09T00:48:07.978Z",
-    "completed_at": "2026-11-09T00:48:07.978Z"
+    "completed_at": "2026-11-09T00:48:07.978Z",
+    "incremental_review_validation_started_at": "2026-11-09T01:52:34.096Z",
+    "incremental_review_generation_completed_at": "2026-11-09T01:52:34.096Z"
   },
   "publish_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "released_at": "2026-11-09T00:48:07.978Z",
