@@ -4,10 +4,10 @@
   "run_id": "ah-review-20261109-20261109014609",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "validation",
+  "stage": "candidate_commit",
   "started_at": "2026-11-09T01:46:09.137Z",
-  "heartbeat_at": "2026-11-09T01:52:34.096Z",
-  "lease_until": "2026-11-09T02:02:34.096Z",
+  "heartbeat_at": "2026-11-09T01:54:31.254Z",
+  "lease_until": "2026-11-09T02:04:31.254Z",
   "source_cutoff": "2026-11-09T00:40:57.301Z",
   "main_base_sha": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -109,7 +109,12 @@
           "no_forbidden": true
         },
         "failed": []
-      }
+      },
+      "candidate_files": [
+        "index.html",
+        "history/data/2026-11-09.json",
+        "history/manifest.json"
+      ]
     }
   },
   "pending_increment": [
@@ -122,7 +127,7 @@
       "summary": "华新建材-4.81%否定并购价格确认；港交所+0.83%获正反馈；汇聚科技+2.71%仅属跌后反弹。"
     }
   ],
-  "candidate_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
+  "candidate_commit": "f708ba49178e76119cc73ad242e7a224cfedc89c",
   "published_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "error": null,
   "stage_timings": {
@@ -134,7 +139,9 @@
     "deployment_verification_completed_at": "2026-11-09T00:48:07.978Z",
     "completed_at": "2026-11-09T00:48:07.978Z",
     "incremental_review_validation_started_at": "2026-11-09T01:52:34.096Z",
-    "incremental_review_generation_completed_at": "2026-11-09T01:52:34.096Z"
+    "incremental_review_generation_completed_at": "2026-11-09T01:52:34.096Z",
+    "incremental_review_validation_completed_at": "2026-11-09T01:54:31.254Z",
+    "incremental_review_candidate_created_at": "2026-11-09T01:54:31.254Z"
   },
   "publish_commit": "60edc3bfbd21432e6c7dacb684c76c6129926f10",
   "released_at": "2026-11-09T00:48:07.978Z",
