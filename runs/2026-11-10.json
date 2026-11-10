@@ -2,10 +2,10 @@
   "date": "2026-11-10",
   "run_id": "ah-20261110-20261110002820",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-11-10T00:41:21.100Z",
-  "lease_until": "2026-11-10T00:51:21.100Z",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-11-10T00:43:39.252Z",
+  "lease_until": "2026-11-10T00:43:39.252Z",
   "source_cutoff": "2026-11-10T00:36:28.981Z",
   "main_base_sha": "51bb4da531a04ff6464c388ad67e3e52593e90ac",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -176,6 +176,35 @@
         "history/data/2026-11-10.json",
         "history/manifest.json"
       ]
+    },
+    "remote_readback": {
+      "commit": "9fd94b89537cdb8fc3745720b1202922135b295c",
+      "index_sha": "a5e600224fe8395fe4cdc8871f768184441f574b",
+      "history_sha": "562b5364e0dfdf22d146042c7e7e0c07db1a6080",
+      "manifest_sha": "533fc55c4cdfad4b636f5c328ae1e6b5c1f04e03",
+      "exact": true
+    },
+    "production": {
+      "checked_at": "2026-11-10T00:43:39.252Z",
+      "homepage": {
+        "status": 200,
+        "exact": true
+      },
+      "manifest": {
+        "status": 200,
+        "exact": true
+      },
+      "today_json": {
+        "status": 200,
+        "exact": true
+      },
+      "archive": {
+        "status": 200,
+        "renderable": true
+      },
+      "cards": 4,
+      "news": 10,
+      "panel_rows_each_language": 15
     }
   },
   "pending_increment": [],
@@ -242,7 +271,13 @@
       "started_at": "2026-11-10T00:41:21.100Z",
       "requests": 0,
       "retries": 0,
-      "cache_hits": 0
+      "cache_hits": 0,
+      "completed_at": "2026-11-10T00:43:39.252Z"
+    },
+    "total": {
+      "started_at": "2026-11-10T00:28:20.000Z",
+      "completed_at": "2026-11-10T00:43:39.252Z",
+      "duration_seconds": 919
     }
   }
 }
