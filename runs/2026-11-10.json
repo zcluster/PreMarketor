@@ -3,10 +3,10 @@
   "run_id": "ah-20261110-20261110002820",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "heartbeat_at": "2026-11-10T00:32:35.341Z",
-  "lease_until": "2026-11-10T00:42:35.341Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "heartbeat_at": "2026-11-10T00:36:28.981Z",
+  "lease_until": "2026-11-10T00:46:28.981Z",
+  "source_cutoff": "2026-11-10T00:36:28.981Z",
   "main_base_sha": "51bb4da531a04ff6464c388ad67e3e52593e90ac",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -53,7 +53,109 @@
         "https://api3.cls.cn/share/subject/9829?os=CailianpressWeb&sv=814",
         "https://finance.eastmoney.com/a/202611093926463137.html"
       ]
-    }
+    },
+    "runtime_quotes": {
+      "fetched_at": "2026-11-10T00:31:00Z",
+      "indices": {
+        "QQQ": "+3.45%",
+        "SPY": "+2.36%",
+        "DIA": "+2.16%"
+      },
+      "unavailable": [
+        "ENTBF"
+      ],
+      "source": "Finance"
+    },
+    "theme_decisions": [
+      {
+        "theme": "independent_power",
+        "rows": [
+          "独立电力生产商 +9.24%"
+        ],
+        "decision": "no_candidate",
+        "reason": "OKLO microreactor exposure is not directly comparable with verified A/H utilities"
+      },
+      {
+        "theme": "semiconductor_equipment_oled",
+        "rows": [
+          "半导体设备与材料 +8.66%",
+          "OLED概念 +11.16%"
+        ],
+        "decision": "bullish_candidate",
+        "candidate": "01347.HK/688347.SH",
+        "reason": "Q3 margin beat and positive Nov 9 price confirmation"
+      },
+      {
+        "theme": "electrical_electronic_optical",
+        "rows": [
+          "电气设备及零件 +8.45%",
+          "电子元件 +8.22%",
+          "光通信 +9.07%"
+        ],
+        "decision": "conditional_watch",
+        "candidate": "002463.SZ",
+        "reason": "direct PCB mapping and post-close buyback; no post-filing price yet"
+      },
+      {
+        "theme": "department_stores",
+        "rows": [
+          "百货公司 +7.46%"
+        ],
+        "decision": "no_candidate",
+        "reason": "no verified same-window A/H company catalyst"
+      },
+      {
+        "theme": "solar",
+        "rows": [
+          "太阳能 -2.69%",
+          "光伏太阳能 +9.09%"
+        ],
+        "decision": "no_candidate",
+        "reason": "industry/concept divergence; no reliable A/H confirmation"
+      },
+      {
+        "theme": "prior_day_gainers",
+        "rows": [
+          "昨日强势股 +8.88%"
+        ],
+        "decision": "no_candidate",
+        "reason": "heterogeneous concept and ENTBF quote unavailable"
+      },
+      {
+        "theme": "rare_earths",
+        "rows": [
+          "稀土概念 +8.01%"
+        ],
+        "decision": "no_candidate",
+        "reason": "strong US theme but no verified same-window company catalyst"
+      }
+    ],
+    "candidates": [
+      {
+        "ticker": "01347.HK/688347.SH",
+        "status": "bullish_candidate",
+        "quote": "HK$71.85 +2.35% at 2026-11-09 close",
+        "source": "https://static.cninfo.com.cn/finalpage/2026-11-06/1225659086.PDF"
+      },
+      {
+        "ticker": "002463.SZ",
+        "status": "conditional_watch",
+        "quote": "RMB77.10 +5.31% at 2026-11-09 close; filing post-close",
+        "source": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12698244&stockid=002463"
+      },
+      {
+        "ticker": "002558.SZ",
+        "status": "conditional_watch",
+        "quote": "RMB20.76 -2.49% at 2026-11-09 close; filing post-close",
+        "source": "https://static.cninfo.com.cn/finalpage/2026-11-10/1225664529.PDF"
+      },
+      {
+        "ticker": "03690.HK",
+        "status": "avoid",
+        "quote": "HK$75.15 -6.53% at 2026-11-09 close",
+        "source": "https://markets.ft.markitdigital.com/data/equities/tearsheet/summary?s=3690%3AHKG.HZ"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -77,7 +179,14 @@
       "started_at": "2026-11-10T00:32:35.341Z",
       "requests": 9,
       "retries": 0,
-      "cache_hits": 1
+      "cache_hits": 1,
+      "completed_at": "2026-11-10T00:36:28.981Z"
+    },
+    "generation": {
+      "started_at": "2026-11-10T00:36:28.981Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 9
     }
   }
 }
