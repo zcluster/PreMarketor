@@ -1,13 +1,13 @@
 {
   "date": "2026-11-10",
-  "run_id": "ah-20261110-20261110002820",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "heartbeat_at": "2026-11-10T00:43:39.252Z",
-  "lease_until": "2026-11-10T00:43:39.252Z",
+  "run_id": "ah-review-20261110-20261110014204",
+  "owner": "MarketAhead A/H 09:15增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "heartbeat_at": "2026-11-10T01:42:04.327Z",
+  "lease_until": "2026-11-10T01:52:04.327Z",
   "source_cutoff": "2026-11-10T00:36:28.981Z",
-  "main_base_sha": "51bb4da531a04ff6464c388ad67e3e52593e90ac",
+  "main_base_sha": "9fd94b89537cdb8fc3745720b1202922135b295c",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -205,9 +205,76 @@
       "cards": 4,
       "news": 10,
       "panel_rows_each_language": 15
+    },
+    "incremental_review": {
+      "started_at": "2026-11-10T01:42:04.327Z",
+      "prior_published_commit": "9fd94b89537cdb8fc3745720b1202922135b295c",
+      "latest_main": "9fd94b89537cdb8fc3745720b1202922135b295c",
+      "quotes": {
+        "as_of": "2026-11-10T09:41:10+08:00",
+        "source": "Eastmoney public delayed quote API",
+        "indices": {
+          "000001.SH": {
+            "price": 3678.96,
+            "change_pct": 0.5
+          },
+          "399001.SZ": {
+            "price": 11291.33,
+            "change_pct": 1.31
+          },
+          "399006.SZ": {
+            "price": 2516.98,
+            "change_pct": 2.38
+          }
+        },
+        "stocks": {
+          "01347.HK": {
+            "price": 75.9,
+            "change_pct": 5.64
+          },
+          "002463.SZ": {
+            "price": 82.33,
+            "change_pct": 6.78
+          },
+          "002558.SZ": {
+            "price": 21.31,
+            "change_pct": 2.65
+          },
+          "03690.HK": {
+            "price": 76.4,
+            "change_pct": 1.66
+          },
+          "00981.HK": {
+            "price": 48.1,
+            "change_pct": 4.47
+          }
+        }
+      },
+      "materiality": "A股成长风格与半导体映射获开盘确认；沪电和巨人回购由待确认转为正向价格确认，改变重点股分级；美团反弹仍不足以逆转此前弱势。",
+      "research_sources": [
+        "Eastmoney public delayed quote API 2026-11-10 09:41 CST",
+        "CNINFO/HKEX first-round evidence reused after freshness check",
+        "GitHub Actions Moomoo snapshot 2026-11-10 08:29 CST"
+      ],
+      "request_counts": {
+        "github_reads": 8,
+        "web_search_queries": 4,
+        "quote_requests": 1
+      },
+      "retries": 0,
+      "cache_hits": 5
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "type": "market_feedback",
+      "summary": "09:41上证、深证、创业板分别涨0.50%、1.31%、2.38%，芯片/成长风险偏好获得开盘确认。"
+    },
+    {
+      "type": "stock_feedback",
+      "summary": "华虹宏力+5.64%、沪电股份+6.78%、巨人网络+2.65%确认首轮催化；美团+1.66%仍低于80.40港元失效位。"
+    }
+  ],
   "published_commit": "9fd94b89537cdb8fc3745720b1202922135b295c",
   "candidate_commit": "9fd94b89537cdb8fc3745720b1202922135b295c",
   "error": null,
@@ -278,6 +345,11 @@
       "started_at": "2026-11-10T00:28:20.000Z",
       "completed_at": "2026-11-10T00:43:39.252Z",
       "duration_seconds": 919
-    }
-  }
+    },
+    "incremental_review_started_at": "2026-11-10T01:42:04.327Z"
+  },
+  "schema_version": 2,
+  "started_at": "2026-11-10T01:42:04.327Z",
+  "publish_commit": "9fd94b89537cdb8fc3745720b1202922135b295c",
+  "released_at": null
 }
