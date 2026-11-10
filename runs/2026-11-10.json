@@ -3,11 +3,11 @@
   "run_id": "ah-20261110-20261110002820",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rankings_refresh_requested",
-  "heartbeat_at": "2026-11-10T00:29:38.591Z",
-  "lease_until": "2026-11-10T00:39:38.591Z",
+  "stage": "research",
+  "heartbeat_at": "2026-11-10T00:32:35.341Z",
+  "lease_until": "2026-11-10T00:42:35.341Z",
   "source_cutoff": null,
-  "main_base_sha": "368116115053643a72b0c93b8fc5bccbf11e819c",
+  "main_base_sha": "51bb4da531a04ff6464c388ad67e3e52593e90ac",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -25,7 +25,34 @@
       "required_session_date": "2026-11-09",
       "calendar_source": "https://www.nyse.com/trade/hours-calendars",
       "request_commit": "addcbc823d5f0dee2557efda7f5ba5b137caf56b",
-      "requested_at": "2026-11-10T00:29:09.373Z"
+      "requested_at": "2026-11-10T00:29:09.373Z",
+      "completed": {
+        "main_commit": "51bb4da531a04ff6464c388ad67e3e52593e90ac",
+        "snapshot_sha": "6153ab718aed4b2744a9f2e1e77c7adf9f48d47f",
+        "attemptedAt": "2026-11-10T08:29:35+08:00",
+        "gate_ready": true,
+        "expected_session_date": "2026-11-09",
+        "industry_rows": 10,
+        "concept_rows": 5
+      }
+    },
+    "akshare": {
+      "sha": "64f44b392b06b5ada1d56e295d1f5077bc987e4c",
+      "fetchedAt": "2026-11-09T14:31:52+08:00",
+      "status": "stale_single_source_degrade"
+    },
+    "sources": {
+      "official": [
+        "https://www.nyse.com/trade/hours-calendars",
+        "https://gss.mof.gov.cn/gzdt/zhengcejiedu/202611/t20261109_4004261.htm",
+        "https://www.mofcom.gov.cn/syxwfb/art/2026/art_4bc4aaa99b4e41feb6030ec59018d212.html",
+        "https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965795.html"
+      ],
+      "discovery": [
+        "https://xnews.jin10.com/details/234687",
+        "https://api3.cls.cn/share/subject/9829?os=CailianpressWeb&sv=814",
+        "https://finance.eastmoney.com/a/202611093926463137.html"
+      ]
     }
   },
   "pending_increment": [],
@@ -37,13 +64,20 @@
       "started_at": "2026-11-10T00:28:20.186Z",
       "requests": 5,
       "retries": 0,
-      "cache_hits": 0
+      "cache_hits": 0,
+      "completed_at": "2026-11-10T00:32:35.341Z"
     },
     "rankings": {
       "started_at": "2026-11-10T00:29:09.373Z",
       "requests": 3,
       "retries": 0,
       "cache_hits": 0
+    },
+    "research": {
+      "started_at": "2026-11-10T00:32:35.341Z",
+      "requests": 9,
+      "retries": 0,
+      "cache_hits": 1
     }
   }
 }
