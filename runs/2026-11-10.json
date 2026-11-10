@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261110-20261110014204",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "hard_validation",
-  "heartbeat_at": "2026-11-10T01:45:37.303Z",
-  "lease_until": "2026-11-10T01:55:37.303Z",
+  "stage": "candidate_commit",
+  "heartbeat_at": "2026-11-10T01:47:28.419Z",
+  "lease_until": "2026-11-10T01:57:28.419Z",
   "source_cutoff": "2026-11-10T00:36:28.981Z",
   "main_base_sha": "9fd94b89537cdb8fc3745720b1202922135b295c",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -271,6 +271,44 @@
           "history/manifest.json"
         ],
         "generated_at": "2026-11-10T01:45:37.303Z"
+      },
+      "validation": {
+        "checks": {
+          "index_only_allowed": true,
+          "ah_updated": true,
+          "ah_time": true,
+          "ah_brief_exact": true,
+          "us_brief": true,
+          "us_time": true,
+          "us_updated": true,
+          "us_panel": true,
+          "us_panel_en": true,
+          "date_time": true,
+          "major_zh": true,
+          "major_en": true,
+          "overnight_zh": true,
+          "overnight_en": true,
+          "stock_zh": true,
+          "stock_en": true,
+          "ticker_parity": true,
+          "keyword_zh": true,
+          "keyword_en": true,
+          "legend": true,
+          "dom_signature": true,
+          "module_order": true,
+          "overnight_once": true,
+          "forbidden_structure": true,
+          "manifest_count": true,
+          "manifest_old_unchanged": true,
+          "manifest_today": true,
+          "ranking_ready": true,
+          "facts": true,
+          "meituan_avoid": true,
+          "bullish_three": true,
+          "titles_clean": true,
+          "no_internal": true
+        },
+        "failed": []
       }
     }
   },
@@ -357,7 +395,8 @@
     },
     "incremental_review_started_at": "2026-11-10T01:42:04.327Z",
     "incremental_review_research_completed_at": "2026-11-10T01:45:37.303Z",
-    "incremental_review_generation_completed_at": "2026-11-10T01:45:37.303Z"
+    "incremental_review_generation_completed_at": "2026-11-10T01:45:37.303Z",
+    "incremental_review_validation_completed_at": "2026-11-10T01:47:28.419Z"
   },
   "schema_version": 2,
   "started_at": "2026-11-10T01:42:04.327Z",
