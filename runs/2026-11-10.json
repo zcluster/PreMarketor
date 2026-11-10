@@ -2,10 +2,10 @@
   "date": "2026-11-10",
   "run_id": "ah-review-20261110-20261110014204",
   "owner": "MarketAhead A/H 09:15增量复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-11-10T01:49:51.602Z",
-  "lease_until": "2026-11-10T01:59:51.602Z",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-11-10T01:51:31.400Z",
+  "lease_until": "2026-11-10T01:51:31.400Z",
   "source_cutoff": "2026-11-10T00:36:28.981Z",
   "main_base_sha": "9fd94b89537cdb8fc3745720b1202922135b295c",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -309,19 +309,44 @@
           "no_internal": true
         },
         "failed": []
+      },
+      "remote_readback": {
+        "files": [
+          "history/data/2026-11-10.json",
+          "history/manifest.json",
+          "index.html"
+        ],
+        "files_exact": true,
+        "index_exact": true,
+        "day_exact": true,
+        "manifest_exact": true
+      },
+      "production": {
+        "checks": {
+          "status": true,
+          "home_exact": true,
+          "manifest_exact": true,
+          "day_exact": true,
+          "home_time": true,
+          "home_brief": true,
+          "day_bilingual": true,
+          "manifest_record": true,
+          "archive_loader": true,
+          "nonempty": true,
+          "us_preserved": true
+        },
+        "failed": [],
+        "statuses": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "title": "A股科技开盘共振：创业板涨2.38%，华虹、沪电与巨人获价格确认"
       }
     }
   },
-  "pending_increment": [
-    {
-      "type": "market_feedback",
-      "summary": "09:41上证、深证、创业板分别涨0.50%、1.31%、2.38%，芯片/成长风险偏好获得开盘确认。"
-    },
-    {
-      "type": "stock_feedback",
-      "summary": "华虹宏力+5.64%、沪电股份+6.78%、巨人网络+2.65%确认首轮催化；美团+1.66%仍低于80.40港元失效位。"
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "0588bf06d89fa6e5f08e9dd1371c731c34cb0f0b",
   "candidate_commit": "0588bf06d89fa6e5f08e9dd1371c731c34cb0f0b",
   "error": null,
@@ -399,10 +424,37 @@
     "incremental_review_validation_completed_at": "2026-11-10T01:47:28.419Z",
     "incremental_review_candidate_created_at": "2026-11-10T01:48:58.913Z",
     "incremental_review_main_updated_at": "2026-11-10T01:49:51.602Z",
-    "incremental_review_deployment_verification_started_at": "2026-11-10T01:49:51.602Z"
+    "incremental_review_deployment_verification_started_at": "2026-11-10T01:49:51.602Z",
+    "incremental_review_deployment_verification_completed_at": "2026-11-10T01:51:31.400Z",
+    "incremental_review_completed_at": "2026-11-10T01:51:31.400Z"
   },
   "schema_version": 2,
   "started_at": "2026-11-10T01:42:04.327Z",
   "publish_commit": "0588bf06d89fa6e5f08e9dd1371c731c34cb0f0b",
-  "released_at": null
+  "released_at": "2026-11-10T01:51:31.400Z",
+  "production_verification": {
+    "status": "passed",
+    "checked_at": "2026-11-10T01:51:31.400Z",
+    "deployment_id": "dpl_J7zTXdBdqKnq7ckvRGEnHNo6wcGq",
+    "deployment_state": "READY",
+    "commit": "0588bf06d89fa6e5f08e9dd1371c731c34cb0f0b",
+    "urls": [
+      "https://premarketor.com/",
+      "https://premarketor.com/history/manifest.json",
+      "https://premarketor.com/history/data/2026-11-10.json",
+      "https://premarketor.com/history/?date=2026-11-10"
+    ],
+    "http_status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "homepage_exact": true,
+    "manifest_exact": true,
+    "history_exact": true,
+    "bilingual": true,
+    "us_preserved": true
+  },
+  "duration_seconds": 567
 }
