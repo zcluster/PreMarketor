@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261110-20261110014204",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "main_update",
-  "heartbeat_at": "2026-11-10T01:48:58.913Z",
-  "lease_until": "2026-11-10T01:58:58.913Z",
+  "stage": "deployment_verification",
+  "heartbeat_at": "2026-11-10T01:49:51.602Z",
+  "lease_until": "2026-11-10T01:59:51.602Z",
   "source_cutoff": "2026-11-10T00:36:28.981Z",
   "main_base_sha": "9fd94b89537cdb8fc3745720b1202922135b295c",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -322,7 +322,7 @@
       "summary": "华虹宏力+5.64%、沪电股份+6.78%、巨人网络+2.65%确认首轮催化；美团+1.66%仍低于80.40港元失效位。"
     }
   ],
-  "published_commit": "9fd94b89537cdb8fc3745720b1202922135b295c",
+  "published_commit": "0588bf06d89fa6e5f08e9dd1371c731c34cb0f0b",
   "candidate_commit": "0588bf06d89fa6e5f08e9dd1371c731c34cb0f0b",
   "error": null,
   "stage_timings": {
@@ -397,10 +397,12 @@
     "incremental_review_research_completed_at": "2026-11-10T01:45:37.303Z",
     "incremental_review_generation_completed_at": "2026-11-10T01:45:37.303Z",
     "incremental_review_validation_completed_at": "2026-11-10T01:47:28.419Z",
-    "incremental_review_candidate_created_at": "2026-11-10T01:48:58.913Z"
+    "incremental_review_candidate_created_at": "2026-11-10T01:48:58.913Z",
+    "incremental_review_main_updated_at": "2026-11-10T01:49:51.602Z",
+    "incremental_review_deployment_verification_started_at": "2026-11-10T01:49:51.602Z"
   },
   "schema_version": 2,
   "started_at": "2026-11-10T01:42:04.327Z",
-  "publish_commit": "9fd94b89537cdb8fc3745720b1202922135b295c",
+  "publish_commit": "0588bf06d89fa6e5f08e9dd1371c731c34cb0f0b",
   "released_at": null
 }
