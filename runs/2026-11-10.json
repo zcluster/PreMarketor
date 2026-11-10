@@ -3,9 +3,9 @@
   "run_id": "ah-20261110-20261110002820",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "heartbeat_at": "2026-11-10T00:36:28.981Z",
-  "lease_until": "2026-11-10T00:46:28.981Z",
+  "stage": "hard_validation",
+  "heartbeat_at": "2026-11-10T00:38:40.410Z",
+  "lease_until": "2026-11-10T00:48:40.410Z",
   "source_cutoff": "2026-11-10T00:36:28.981Z",
   "main_base_sha": "51bb4da531a04ff6464c388ad67e3e52593e90ac",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -155,7 +155,15 @@
         "quote": "HK$75.15 -6.53% at 2026-11-09 close",
         "source": "https://markets.ft.markitdigital.com/data/equities/tearsheet/summary?s=3690%3AHKG.HZ"
       }
-    ]
+    ],
+    "validation": {
+      "status": "pending_rerun",
+      "checks": 66,
+      "news_count": 10,
+      "stock_cards": 4,
+      "panel_rows_each_language": 15,
+      "main_base_sha": "51bb4da531a04ff6464c388ad67e3e52593e90ac"
+    }
   },
   "pending_increment": [],
   "published_commit": null,
@@ -186,7 +194,21 @@
       "started_at": "2026-11-10T00:36:28.981Z",
       "requests": 0,
       "retries": 0,
-      "cache_hits": 9
+      "cache_hits": 9,
+      "completed_at": "2026-11-10T00:38:40.410Z"
+    },
+    "translation": {
+      "started_at": "2026-11-10T00:36:28.981Z",
+      "completed_at": "2026-11-10T00:38:40.410Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 10
+    },
+    "hard_validation": {
+      "started_at": "2026-11-10T00:38:40.410Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 5
     }
   }
 }
