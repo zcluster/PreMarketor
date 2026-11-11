@@ -3,10 +3,10 @@
   "run_id": "ah-20261111-20261111002934",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "heartbeat_at": "2026-11-11T00:36:45.766Z",
-  "lease_until": "2026-11-11T00:46:45.766Z",
-  "source_cutoff": "2026-11-11T00:36:45.766Z",
+  "stage": "hard_validation",
+  "heartbeat_at": "2026-11-11T00:42:37.516Z",
+  "lease_until": "2026-11-11T00:52:37.516Z",
+  "source_cutoff": "2026-11-11T00:42:37.516Z",
   "main_base_sha": "93f18d0a2dd2ee087ef57948cd439f2fc8055c1f",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -195,7 +195,23 @@
         "quote": "27.52 CNY, +7.75%, 2026-11-10 close",
         "post_event_price_confirmed": false
       }
-    ]
+    ],
+    "validation": {
+      "ok": true,
+      "failures": [],
+      "stamp": "2026-11-11 08:41 CST",
+      "counts": {
+        "news": 10,
+        "overnight": 3,
+        "cards": 4,
+        "panel_rows": 10
+      },
+      "protected": {
+        "outside": true,
+        "us": true,
+        "historical": true
+      }
+    }
   },
   "pending_increment": [],
   "published_commit": null,
@@ -223,7 +239,15 @@
       "started_at": "2026-11-11T00:32:30.210Z",
       "requests": 22,
       "retries": 0,
-      "cache_hits": 2
+      "cache_hits": 2,
+      "completed_at": "2026-11-11T00:42:37.516Z"
+    },
+    "hard_validation": {
+      "started_at": "2026-11-11T00:42:37.516Z",
+      "completed_at": "2026-11-11T00:42:37.516Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 0
     }
   },
   "schema_version": 2,
