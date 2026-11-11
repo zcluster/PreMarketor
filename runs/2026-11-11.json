@@ -1,13 +1,13 @@
 {
   "date": "2026-11-11",
-  "run_id": "ah-20261111-20261111002934",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "heartbeat_at": "2026-11-11T00:46:11.824Z",
-  "lease_until": "2026-11-11T00:46:11.824Z",
+  "run_id": "ah-review-20261111-20261111011955",
+  "owner": "MarketAhead A/H 09:15增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "heartbeat_at": "2026-11-11T01:19:55.971Z",
+  "lease_until": "2026-11-11T01:29:55.971Z",
   "source_cutoff": "2026-11-11T00:42:37.516Z",
-  "main_base_sha": "93f18d0a2dd2ee087ef57948cd439f2fc8055c1f",
+  "main_base_sha": "cb978acf6240c918f443ede838d699b855a6787e",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -249,9 +249,71 @@
       "panel_rows_en": 10,
       "us_preserved": true,
       "archive_loader_verified": true
+    },
+    "incremental_review": {
+      "started_at": "2026-11-11T01:19:55.971Z",
+      "source_cutoff": "2026-11-11T00:42:37.516Z",
+      "main_at_start": "cb978acf6240c918f443ede838d699b855a6787e",
+      "rankings_snapshot_sha": "be6f6182ca62b755b51c2d2584ca584504f8ae3f",
+      "rankings_attempted_at": "2026-11-11T09:15:53+08:00",
+      "rankings_status": "partial",
+      "difference_summary": [
+        "荣旗科技竞价一度+10.33%，正反馈但尚未完成现金时段与板块确认",
+        "青岛食品竞价-9.99%，构成显著负面反馈，应降为回避",
+        "禾赛-W三季报为首轮遗漏的港股科技重要业绩"
+      ]
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "type": "price_feedback",
+      "observed_at": "2026-11-11T09:19:21+08:00",
+      "source": "Eastmoney public delayed quote API",
+      "items": [
+        {
+          "ticker": "301360.SZ",
+          "name": "荣旗科技",
+          "price": 66,
+          "change_pct": 10.33,
+          "stage": "pre-open call auction",
+          "decision_effect": "positive confirmation emerging but not yet sufficient for bullish candidate because cash-session/sector confirmation unavailable"
+        },
+        {
+          "ticker": "001219.SZ",
+          "name": "青岛食品",
+          "price": 22.61,
+          "change_pct": -9.99,
+          "stage": "pre-open call auction",
+          "decision_effect": "material negative feedback; downgrade from conditional watch to avoid"
+        },
+        {
+          "ticker": "002428.SZ",
+          "name": "云南锗业",
+          "price": 72.86,
+          "change_pct": 0,
+          "stage": "pre-open call auction",
+          "decision_effect": "no confirmation; remain conditional watch"
+        },
+        {
+          "ticker": "688199.SH",
+          "name": "久日新材",
+          "price": 27.52,
+          "change_pct": 0,
+          "stage": "pre-open call auction",
+          "decision_effect": "remain avoid"
+        }
+      ]
+    },
+    {
+      "type": "omission",
+      "disclosed_at": "2026-11-10T20:29:00+08:00",
+      "source": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000272537",
+      "ticker": "2525.HK",
+      "name": "禾赛-W",
+      "fact": "Q3 2026 revenue RMB1.0683bn (+34.3% YoY), net income RMB80.8m; Q4 revenue guide RMB1.10-1.15bn; lidar shipments 729,673; robotic actuation modules 23,405",
+      "decision_effect": "material omitted HK technology earnings; add to major news and risk/rotation discussion, but no stock card before HK cash-session price confirmation"
+    }
+  ],
   "published_commit": "82530bb4ba0ede8f4743579d328cd7e7f9bf5e35",
   "candidate_commit": "82530bb4ba0ede8f4743579d328cd7e7f9bf5e35",
   "error": null,
@@ -308,9 +370,15 @@
       "retries": 0,
       "cache_hits": 0,
       "completed_at": "2026-11-11T00:46:11.824Z"
+    },
+    "incremental_review": {
+      "started_at": "2026-11-11T01:19:55.971Z",
+      "requests": 5,
+      "retries": 0,
+      "cache_hits": 6
     }
   },
   "schema_version": 2,
-  "started_at": "2026-11-11T00:29:34.433Z",
+  "started_at": "2026-11-11T01:19:55.971Z",
   "total_duration_seconds": 997
 }
