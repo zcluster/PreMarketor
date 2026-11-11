@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261111-20261111011955",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "main_update",
-  "heartbeat_at": "2026-11-11T01:27:46.573Z",
-  "lease_until": "2026-11-11T01:37:46.573Z",
+  "stage": "deployment_verification",
+  "heartbeat_at": "2026-11-11T01:28:44.571Z",
+  "lease_until": "2026-11-11T01:38:44.571Z",
   "source_cutoff": "2026-11-11T00:42:37.516Z",
   "main_base_sha": "cb978acf6240c918f443ede838d699b855a6787e",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -354,7 +354,7 @@
       "decision_effect": "material omitted HK technology earnings; add to major news and risk/rotation discussion, but no stock card before HK cash-session price confirmation"
     }
   ],
-  "published_commit": "82530bb4ba0ede8f4743579d328cd7e7f9bf5e35",
+  "published_commit": "e69c8b1dbcbc2dab1cfb99cd83cc12838b4a3399",
   "candidate_commit": "e69c8b1dbcbc2dab1cfb99cd83cc12838b4a3399",
   "error": null,
   "stage_timings": {
@@ -418,6 +418,13 @@
       "cache_hits": 6,
       "hard_validation_at": "2026-11-11T01:26:18.049Z",
       "validation_completed_at": "2026-11-11T01:27:46.573Z"
+    },
+    "main_update": {
+      "started_at": "2026-11-11T01:28:44.571Z",
+      "completed_at": "2026-11-11T01:28:44.571Z",
+      "requests": 2,
+      "retries": 0,
+      "cache_hits": 1
     }
   },
   "schema_version": 2,
