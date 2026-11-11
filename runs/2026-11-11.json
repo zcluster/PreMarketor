@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261111-20261111011955",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "incremental_research",
-  "heartbeat_at": "2026-11-11T01:19:55.971Z",
-  "lease_until": "2026-11-11T01:29:55.971Z",
+  "stage": "hard_validation",
+  "heartbeat_at": "2026-11-11T01:26:18.049Z",
+  "lease_until": "2026-11-11T01:36:18.049Z",
   "source_cutoff": "2026-11-11T00:42:37.516Z",
   "main_base_sha": "cb978acf6240c918f443ede838d699b855a6787e",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -261,7 +261,42 @@
         "荣旗科技竞价一度+10.33%，正反馈但尚未完成现金时段与板块确认",
         "青岛食品竞价-9.99%，构成显著负面反馈，应降为回避",
         "禾赛-W三季报为首轮遗漏的港股科技重要业绩"
-      ]
+      ],
+      "validation": {
+        "ok": true,
+        "checked_at": "2026-11-11T01:26:18.049Z",
+        "checks": {
+          "jsonDay": true,
+          "jsonManifest": true,
+          "indexOutsideAllowed": true,
+          "usPreserved": true,
+          "domBilingual": true,
+          "moduleOrderZh": true,
+          "newsZh": 11,
+          "newsEn": 11,
+          "overnightZh": 3,
+          "cardsZh": 4,
+          "cardsEn": 4,
+          "keywordsZh": 12,
+          "legendZh": true,
+          "forbidden": true,
+          "titlesClean": true,
+          "historicalPreserved": true,
+          "typesPreserved": true,
+          "usRankDisclosure": true,
+          "noBullishNegative": false,
+          "hesaiTrace": true,
+          "stamp": [
+            "2026-11-11 09:22 CST",
+            "2026-11-11 09:22 CST",
+            "2026-11-11 09:22 CST",
+            "2026-11-11 09:22 CST",
+            "2026-11-11 09:22 CST",
+            "2026-11-11 09:22 CST",
+            "2026-11-11 09:22 CST"
+          ]
+        }
+      }
     }
   },
   "pending_increment": [
@@ -375,7 +410,8 @@
       "started_at": "2026-11-11T01:19:55.971Z",
       "requests": 5,
       "retries": 0,
-      "cache_hits": 6
+      "cache_hits": 6,
+      "hard_validation_at": "2026-11-11T01:26:18.049Z"
     }
   },
   "schema_version": 2,
