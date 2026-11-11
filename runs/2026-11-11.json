@@ -2,10 +2,10 @@
   "date": "2026-11-11",
   "run_id": "ah-review-20261111-20261111011955",
   "owner": "MarketAhead A/H 09:15增量复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-11-11T01:28:44.571Z",
-  "lease_until": "2026-11-11T01:38:44.571Z",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-11-11T01:31:25.737Z",
+  "lease_until": "2026-11-11T01:31:25.737Z",
   "source_cutoff": "2026-11-11T00:42:37.516Z",
   "main_base_sha": "cb978acf6240c918f443ede838d699b855a6787e",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -171,84 +171,102 @@
         "ticker": "002428",
         "name": "云南锗业",
         "status": "conditional_watch",
-        "quote": "72.86 CNY, -2.03%, 2026-11-10 close",
+        "quote": "72.86 CNY, 0.00%, 2026-11-11 09:19 call auction",
         "post_event_price_confirmed": false
       },
       {
         "ticker": "301360",
         "name": "荣旗科技",
         "status": "conditional_watch",
-        "quote": "59.82 CNY, +3.64%, 2026-11-10 close",
+        "quote": "66.00 CNY, +10.33%, 2026-11-11 09:19 call auction",
         "post_event_price_confirmed": false
       },
       {
         "ticker": "001219",
         "name": "青岛食品",
-        "status": "conditional_watch",
-        "quote": "25.12 CNY, +4.41%, 2026-11-10 close",
-        "post_event_price_confirmed": false
+        "status": "avoid",
+        "quote": "22.61 CNY, -9.99%, 2026-11-11 09:19 call auction",
+        "post_event_price_confirmed": true
       },
       {
         "ticker": "688199",
         "name": "久日新材",
         "status": "avoid",
-        "quote": "27.52 CNY, +7.75%, 2026-11-10 close",
+        "quote": "27.52 CNY, about flat, 2026-11-11 09:19 call auction",
         "post_event_price_confirmed": false
       }
     ],
     "validation": {
       "ok": true,
       "failures": [],
-      "stamp": "2026-11-11 08:41 CST",
+      "stamp": "2026-11-11 09:22 CST",
       "counts": {
-        "news": 10,
+        "news": 11,
         "overnight": 3,
         "cards": 4,
-        "panel_rows": 10
+        "panel_rows": 10,
+        "keywords": 12
       },
       "protected": {
         "outside": true,
         "us": true,
         "historical": true
-      }
+      },
+      "bilingual_dom": true,
+      "allowed_files": [
+        "index.html",
+        "history/data/2026-11-11.json",
+        "history/manifest.json"
+      ],
+      "commit_files": [
+        "history/data/2026-11-11.json",
+        "history/manifest.json",
+        "index.html"
+      ]
     },
     "remote_readback": {
       "index": {
-        "sha": "817ea2a2a3b1bf0c0875a7dcad9ea1d9c6cd85a3",
+        "sha": "c7d48ee31a22a79eb59a955efd8110780fe4562f",
         "equal": true
       },
       "day": {
-        "sha": "d3de60aba29acbdf65d8eac5daa469b1da9b3512",
+        "sha": "1a7dabef1d481b9cb7e61e0c4f7af82837e0ff3f",
         "equal": true
       },
       "manifest": {
-        "sha": "782cbeac094052a4efb78cabdcdea00ebde4fdeb",
+        "sha": "13b69f82484f995205ed955f4ddca56169e6a849",
         "equal": true
       }
     },
     "production_validation": {
       "ok": true,
       "failures": [],
+      "deployment_id": "dpl_GzuF2YJsWPfDRcUjKLeuFpDhThgy",
+      "deployment_state": "READY",
+      "deployment_target": "production",
+      "commit_sha": "e69c8b1dbcbc2dab1cfb99cd83cc12838b4a3399",
       "status": {
         "home": 200,
         "manifest": 200,
         "day": 200,
         "archive": 200
       },
-      "last_modified": {
-        "home": "Wed, 11 Nov 2026 00:44:56 GMT",
-        "manifest": "Wed, 11 Nov 2026 00:45:13 GMT",
-        "day": "Wed, 11 Nov 2026 00:45:17 GMT",
-        "archive": "Wed, 11 Nov 2026 00:45:22 GMT"
-      },
-      "stamp": "2026-11-11 08:41 CST",
+      "stamp": "2026-11-11 09:22 CST",
       "home_cards": 4,
       "day_cards_zh": 4,
       "day_cards_en": 4,
-      "panel_rows_zh": 10,
-      "panel_rows_en": 10,
+      "home_news": 11,
+      "exact_home": true,
+      "exact_manifest": true,
+      "exact_day": true,
       "us_preserved": true,
-      "archive_loader_verified": true
+      "archive_loader_verified": true,
+      "last_modified": [
+        "Wed, 11 Nov 2026 01:30:16 GMT",
+        "Wed, 11 Nov 2026 01:30:11 GMT",
+        "Wed, 11 Nov 2026 01:30:06 GMT",
+        "Wed, 11 Nov 2026 01:30:01 GMT"
+      ]
     },
     "incremental_review": {
       "started_at": "2026-11-11T01:19:55.971Z",
@@ -301,59 +319,48 @@
           "history/manifest.json"
         ],
         "stamp": "2026-11-11 09:22 CST"
+      },
+      "completed_at": "2026-11-11T01:31:25.737Z",
+      "runtime_quotes": {
+        "source": "Eastmoney public delayed quote API",
+        "observed_at": "2026-11-11T09:19:21+08:00",
+        "phase": "pre-open call auction",
+        "items": {
+          "002428.SZ": {
+            "price": 72.86,
+            "change_pct": 0,
+            "status": "conditional_watch"
+          },
+          "301360.SZ": {
+            "price": 66,
+            "change_pct": 10.33,
+            "status": "conditional_watch",
+            "reason": "positive auction response, but continuous-trading and sector confirmation absent"
+          },
+          "001219.SZ": {
+            "price": 22.61,
+            "change_pct": -9.99,
+            "status": "avoid",
+            "reason": "material negative post-filing response"
+          },
+          "688199.SH": {
+            "price": 27.52,
+            "change_pct": 0,
+            "status": "avoid"
+          }
+        }
+      },
+      "omission": {
+        "ticker": "2525.HK",
+        "name": "禾赛-W",
+        "source": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000272537",
+        "source_time": "2026-11-10 20:29 HKT",
+        "facts": "Q3 revenue RMB1.0683bn (+34.3% YoY), lidar shipments 729,673, robotic actuation modules 23,405 (+96.8% QoQ), net income RMB80.8m, Q4 revenue guidance RMB1.10-1.15bn",
+        "decision": "structural robotics signal; no bullish card before HK cash-session price confirmation"
       }
     }
   },
-  "pending_increment": [
-    {
-      "type": "price_feedback",
-      "observed_at": "2026-11-11T09:19:21+08:00",
-      "source": "Eastmoney public delayed quote API",
-      "items": [
-        {
-          "ticker": "301360.SZ",
-          "name": "荣旗科技",
-          "price": 66,
-          "change_pct": 10.33,
-          "stage": "pre-open call auction",
-          "decision_effect": "positive confirmation emerging but not yet sufficient for bullish candidate because cash-session/sector confirmation unavailable"
-        },
-        {
-          "ticker": "001219.SZ",
-          "name": "青岛食品",
-          "price": 22.61,
-          "change_pct": -9.99,
-          "stage": "pre-open call auction",
-          "decision_effect": "material negative feedback; downgrade from conditional watch to avoid"
-        },
-        {
-          "ticker": "002428.SZ",
-          "name": "云南锗业",
-          "price": 72.86,
-          "change_pct": 0,
-          "stage": "pre-open call auction",
-          "decision_effect": "no confirmation; remain conditional watch"
-        },
-        {
-          "ticker": "688199.SH",
-          "name": "久日新材",
-          "price": 27.52,
-          "change_pct": 0,
-          "stage": "pre-open call auction",
-          "decision_effect": "remain avoid"
-        }
-      ]
-    },
-    {
-      "type": "omission",
-      "disclosed_at": "2026-11-10T20:29:00+08:00",
-      "source": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000272537",
-      "ticker": "2525.HK",
-      "name": "禾赛-W",
-      "fact": "Q3 2026 revenue RMB1.0683bn (+34.3% YoY), net income RMB80.8m; Q4 revenue guide RMB1.10-1.15bn; lidar shipments 729,673; robotic actuation modules 23,405",
-      "decision_effect": "material omitted HK technology earnings; add to major news and risk/rotation discussion, but no stock card before HK cash-session price confirmation"
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "e69c8b1dbcbc2dab1cfb99cd83cc12838b4a3399",
   "candidate_commit": "e69c8b1dbcbc2dab1cfb99cd83cc12838b4a3399",
   "error": null,
@@ -405,19 +412,20 @@
       "cache_hits": 0
     },
     "deployment_verification": {
-      "started_at": "2026-11-11T00:44:06.617Z",
-      "requests": 7,
+      "started_at": "2026-11-11T01:28:44.571Z",
+      "completed_at": "2026-11-11T01:31:25.737Z",
+      "requests": 9,
       "retries": 0,
-      "cache_hits": 0,
-      "completed_at": "2026-11-11T00:46:11.824Z"
+      "cache_hits": 3
     },
     "incremental_review": {
       "started_at": "2026-11-11T01:19:55.971Z",
-      "requests": 5,
+      "requests": 13,
       "retries": 0,
-      "cache_hits": 6,
+      "cache_hits": 8,
       "hard_validation_at": "2026-11-11T01:26:18.049Z",
-      "validation_completed_at": "2026-11-11T01:27:46.573Z"
+      "validation_completed_at": "2026-11-11T01:27:46.573Z",
+      "completed_at": "2026-11-11T01:31:25.737Z"
     },
     "main_update": {
       "started_at": "2026-11-11T01:28:44.571Z",
@@ -429,5 +437,5 @@
   },
   "schema_version": 2,
   "started_at": "2026-11-11T01:19:55.971Z",
-  "total_duration_seconds": 997
+  "total_duration_seconds": 690
 }
