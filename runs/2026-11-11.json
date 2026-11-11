@@ -4,9 +4,9 @@
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
   "stage": "research",
-  "heartbeat_at": "2026-11-11T00:32:30.210Z",
-  "lease_until": "2026-11-11T00:42:30.210Z",
-  "source_cutoff": null,
+  "heartbeat_at": "2026-11-11T00:36:45.766Z",
+  "lease_until": "2026-11-11T00:46:45.766Z",
+  "source_cutoff": "2026-11-11T00:36:45.766Z",
   "main_base_sha": "93f18d0a2dd2ee087ef57948cd439f2fc8055c1f",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -43,7 +43,159 @@
         "concept_status": "ok",
         "concept_rows": 5
       }
-    }
+    },
+    "akshare": {
+      "sha": "95d5076adb936d0d8ce903645a77ad2b9a2e12e6",
+      "fetchedAt": "2026-11-10T15:19:35+08:00",
+      "status": "ok",
+      "a_market_phase": "latest_close",
+      "a_market_date": "2026-11-10",
+      "hk_market_phase": "intraday_snapshot",
+      "hk_snapshot_time": "2026-11-10T15:19:35+08:00"
+    },
+    "runtime_quotes": {
+      "fetched_at_utc": "2026-11-11T00:17:30Z",
+      "broad_proxies": {
+        "QQQ": {
+          "change_pct": -0.65357
+        },
+        "SPY": {
+          "change_pct": -0.36403
+        },
+        "DIA": {
+          "change_pct": -0.29618
+        }
+      },
+      "representatives": {
+        "ALHC": 5.70839,
+        "OXBR": 2.22322,
+        "CLF": 4.8124,
+        "SVC": 6.31068,
+        "GHG": 8.62944,
+        "LUMN": 9.02778,
+        "HII": 3.08516,
+        "AVGO": 3.9533,
+        "KULR": 22.69939,
+        "LKNCY": null
+      }
+    },
+    "sources": {
+      "international": [
+        {
+          "url": "https://www.reuters.com/markets/us/",
+          "status": "verified",
+          "topic": "US inflation, yields and technology selloff"
+        },
+        {
+          "url": "https://www.reuters.com/business/energy/",
+          "status": "verified",
+          "topic": "oil de-escalation"
+        }
+      ],
+      "official": [
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202611/t20261110_1412397.html",
+          "status": "verified",
+          "topic": "wellbeing services"
+        },
+        {
+          "url": "https://www.miit.gov.cn/xwdt/gxdt/sjdt/art/2026/art_1ce6fd8e3bd54ad8bf9e652f0672ce88.html",
+          "status": "verified",
+          "topic": "700-number privacy pilot"
+        },
+        {
+          "url": "https://www.tc609.org.cn/",
+          "status": "verified",
+          "topic": "data standards week"
+        }
+      ],
+      "company": [
+        {
+          "ticker": "301360",
+          "status": "verified",
+          "topic": "Rongqi acquisition",
+          "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-11-11/doc-infxcutc7300637.shtml"
+        },
+        {
+          "ticker": "002428",
+          "status": "verified",
+          "topic": "InP orders/capacity",
+          "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-11-11/doc-infxcutc6132374.shtml"
+        },
+        {
+          "ticker": "688199",
+          "status": "verified",
+          "topic": "Ignition investment and debt risk",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-11-11/1225666200.PDF"
+        },
+        {
+          "ticker": "001219",
+          "status": "verified",
+          "topic": "control transfer",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-11-11/1225666194.PDF"
+        }
+      ]
+    },
+    "theme_decisions": [
+      {
+        "group": "industry",
+        "rank": 1,
+        "name": "Healthcare Plans",
+        "decision": "no_candidate",
+        "reason": "US payer structure lacks direct A/H mapping"
+      },
+      {
+        "group": "industry",
+        "rank": 2,
+        "name": "Reinsurance",
+        "decision": "no_candidate",
+        "reason": "no same-window direct A/H catalyst verified"
+      },
+      {
+        "group": "concept",
+        "rank": 1,
+        "name": "Optical Communication",
+        "decision": "conditional_watch",
+        "ticker": "002428"
+      },
+      {
+        "group": "concept",
+        "rank": 2,
+        "name": "Defense",
+        "decision": "no_candidate",
+        "reason": "US procurement exposure is not a direct A/H mapping"
+      }
+    ],
+    "candidates": [
+      {
+        "ticker": "002428",
+        "name": "云南锗业",
+        "status": "conditional_watch",
+        "quote": "72.86 CNY, -2.03%, 2026-11-10 close",
+        "post_event_price_confirmed": false
+      },
+      {
+        "ticker": "301360",
+        "name": "荣旗科技",
+        "status": "conditional_watch",
+        "quote": "59.82 CNY, +3.64%, 2026-11-10 close",
+        "post_event_price_confirmed": false
+      },
+      {
+        "ticker": "001219",
+        "name": "青岛食品",
+        "status": "conditional_watch",
+        "quote": "25.12 CNY, +4.41%, 2026-11-10 close",
+        "post_event_price_confirmed": false
+      },
+      {
+        "ticker": "688199",
+        "name": "久日新材",
+        "status": "avoid",
+        "quote": "27.52 CNY, +7.75%, 2026-11-10 close",
+        "post_event_price_confirmed": false
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -69,7 +221,7 @@
     },
     "research": {
       "started_at": "2026-11-11T00:32:30.210Z",
-      "requests": 0,
+      "requests": 22,
       "retries": 0,
       "cache_hits": 2
     }
