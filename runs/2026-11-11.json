@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261111-20261111011955",
   "owner": "MarketAhead A/H 09:15增量复核",
   "status": "running",
-  "stage": "hard_validation",
-  "heartbeat_at": "2026-11-11T01:26:18.049Z",
-  "lease_until": "2026-11-11T01:36:18.049Z",
+  "stage": "main_update",
+  "heartbeat_at": "2026-11-11T01:27:46.573Z",
+  "lease_until": "2026-11-11T01:37:46.573Z",
   "source_cutoff": "2026-11-11T00:42:37.516Z",
   "main_base_sha": "cb978acf6240c918f443ede838d699b855a6787e",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -264,7 +264,6 @@
       ],
       "validation": {
         "ok": true,
-        "checked_at": "2026-11-11T01:26:18.049Z",
         "checks": {
           "jsonDay": true,
           "jsonManifest": true,
@@ -295,7 +294,13 @@
             "2026-11-11 09:22 CST",
             "2026-11-11 09:22 CST"
           ]
-        }
+        },
+        "candidate_files": [
+          "index.html",
+          "history/data/2026-11-11.json",
+          "history/manifest.json"
+        ],
+        "stamp": "2026-11-11 09:22 CST"
       }
     }
   },
@@ -350,7 +355,7 @@
     }
   ],
   "published_commit": "82530bb4ba0ede8f4743579d328cd7e7f9bf5e35",
-  "candidate_commit": "82530bb4ba0ede8f4743579d328cd7e7f9bf5e35",
+  "candidate_commit": "e69c8b1dbcbc2dab1cfb99cd83cc12838b4a3399",
   "error": null,
   "stage_timings": {
     "inputs": {
@@ -386,11 +391,11 @@
       "cache_hits": 0
     },
     "candidate_commit": {
-      "started_at": "2026-11-11T00:43:36.039Z",
-      "completed_at": "2026-11-11T00:43:36.039Z",
-      "requests": 5,
+      "started_at": "2026-11-11T01:27:46.573Z",
+      "completed_at": "2026-11-11T01:27:46.573Z",
+      "requests": 4,
       "retries": 0,
-      "cache_hits": 0
+      "cache_hits": 3
     },
     "publish": {
       "started_at": "2026-11-11T00:44:06.617Z",
@@ -411,7 +416,8 @@
       "requests": 5,
       "retries": 0,
       "cache_hits": 6,
-      "hard_validation_at": "2026-11-11T01:26:18.049Z"
+      "hard_validation_at": "2026-11-11T01:26:18.049Z",
+      "validation_completed_at": "2026-11-11T01:27:46.573Z"
     }
   },
   "schema_version": 2,
