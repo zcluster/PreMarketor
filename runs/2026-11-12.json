@@ -2,10 +2,10 @@
   "date": "2026-11-12",
   "run_id": "ah-20261112-20261112002709",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment",
-  "heartbeat_at": "2026-11-12T00:41:13.386Z",
-  "lease_until": "2026-11-12T00:51:13.386Z",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-11-12T00:42:53.764Z",
+  "lease_until": null,
   "source_cutoff": "2026-11-12T00:34:20.066Z",
   "main_base_sha": "01a21858de6376c4ed1c093a6ed322cf4955eda2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -250,6 +250,38 @@
         "manifest": 29705
       },
       "ok": true
+    },
+    "remote_readback": {
+      "head": "7ada6839488909a855ad27c287f2f0edfddc5497",
+      "indexSha": "0a3d9c8e36298a0dfec1f5df288f0804bbc710f0",
+      "daySha": "04ad594666fe55610f49c668f569404793bbff7e",
+      "mfSha": "a75e2ffa7509f41625b873e11e669b5cdedd49f1",
+      "expected": {
+        "index": "0a3d9c8e36298a0dfec1f5df288f0804bbc710f0",
+        "day": "04ad594666fe55610f49c668f569404793bbff7e",
+        "mf": "a75e2ffa7509f41625b873e11e669b5cdedd49f1"
+      },
+      "contents": true,
+      "ok": true
+    },
+    "production_verification": {
+      "statuses": [
+        200,
+        200,
+        200,
+        200
+      ],
+      "homepageExactBrief": true,
+      "homepageDate": true,
+      "homepageCards": true,
+      "homepageRankings": true,
+      "historyLoader": true,
+      "dayExact": true,
+      "dayBilingual": true,
+      "dayStructure": true,
+      "manifestHead": true,
+      "manifestExact": true,
+      "ok": true
     }
   },
   "pending_increment": [],
@@ -264,7 +296,9 @@
       "cache_hits": 0
     },
     "total": {
-      "started_at": "2026-11-12T00:27:09.771Z"
+      "started_at": "2026-11-12T00:27:09.771Z",
+      "completed_at": "2026-11-12T00:42:53.764Z",
+      "duration_seconds": 944
     },
     "rankings": {
       "started_at": "2026-11-12T00:28:16.687Z",
@@ -319,7 +353,8 @@
       "started_at": "2026-11-12T00:41:13.386Z",
       "requests": 0,
       "retries": 0,
-      "cache_hits": 0
+      "cache_hits": 0,
+      "completed_at": "2026-11-12T00:42:53.764Z"
     }
   },
   "schema_version": 2,
