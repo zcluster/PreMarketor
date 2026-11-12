@@ -3,9 +3,9 @@
   "run_id": "ah-20261112-20261112002709",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "heartbeat_at": "2026-11-12T00:34:20.066Z",
-  "lease_until": "2026-11-12T00:44:20.066Z",
+  "stage": "translation",
+  "heartbeat_at": "2026-11-12T00:37:45.553Z",
+  "lease_until": "2026-11-12T00:47:45.553Z",
   "source_cutoff": "2026-11-12T00:34:20.066Z",
   "main_base_sha": "01a21858de6376c4ed1c093a6ed322cf4955eda2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -204,6 +204,13 @@
     },
     "generation": {
       "started_at": "2026-11-12T00:34:20.066Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 0,
+      "completed_at": "2026-11-12T00:37:45.553Z"
+    },
+    "translation": {
+      "started_at": "2026-11-12T00:37:45.553Z",
       "requests": 0,
       "retries": 0,
       "cache_hits": 0
