@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261112-20261112021743",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "generation",
-  "heartbeat_at": "2026-11-12T02:20:07.848Z",
-  "lease_until": "2026-11-12T02:30:07.848Z",
+  "stage": "hard_validation",
+  "heartbeat_at": "2026-11-12T02:25:14.089Z",
+  "lease_until": "2026-11-12T02:35:14.089Z",
   "source_cutoff": "2026-11-12T00:34:20.066Z",
   "main_base_sha": "7ada6839488909a855ad27c287f2f0edfddc5497",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -108,39 +108,45 @@
     "theme_decisions": [
       {
         "theme": "Computer Hardware +8.73%",
-        "decision": "sector_watch",
-        "reason": "no same-window issuer-specific A/H catalyst; no forced card"
+        "decision": "no_candidate",
+        "reason": "A/H technology sector confirmed, but no same-window issuer-specific direct catalyst beyond existing cards"
       },
       {
         "theme": "Electrical Equipment & Parts +6.38%",
         "decision": "conditional_watch",
         "ticker": "002533.SZ",
-        "reason": "verified RMB661m award but only 2.88% of 2025 revenue and contract unsigned"
+        "reason": "RMB661m award verified; contract unsigned and stock -0.19% at 10:18"
       },
       {
-        "theme": "Semiconductors +5.18% / Equipment +4.42% / Storage +10.72% / OLED +5.95% / Apple +5.76%",
-        "decision": "sector_watch",
-        "reason": "A-share semiconductor leaders confirmed in 14:23 snapshot; no same-window issuer-specific catalyst for a card"
+        "theme": "Semiconductors/Equipment +5.18%/+4.42% and Storage +10.72%",
+        "decision": "bullish_candidate",
+        "ticker": "688548.SH",
+        "reason": "Buyback filing followed by +5.71% move with STAR50 +4.50%; issuer and local board confirmation"
       },
       {
         "theme": "NVIDIA Portfolio +7.41%",
-        "decision": "watch_reversal",
-        "reason": "CRWV +24.8% confirms cash-session theme, NVDA -8% after hours in Reuters report reverses increment"
+        "decision": "no_candidate",
+        "reason": "NVDA after-hours reversal and HK tech weakness prevent direct A/H long mapping"
       },
       {
         "theme": "Crypto Mining +6.66%",
-        "decision": "no_card",
-        "reason": "no verified direct A/H issuer event"
+        "decision": "no_candidate",
+        "reason": "No verified direct A/H issuer catalyst in the review window"
       },
       {
-        "theme": "Gold -1.85% / precious metals -2.23%",
-        "decision": "pressure",
-        "reason": "broad negative breadth; no issuer-specific card"
+        "theme": "Gold -1.85% / Other Precious Metals -2.23%",
+        "decision": "avoid",
+        "reason": "HK gold shares fell about 5%–6%, confirming negative mapping"
       },
       {
         "theme": "Pharmaceutical Retailers -3.03%",
-        "decision": "no_card",
-        "reason": "no verified direct A/H issuer event"
+        "decision": "no_candidate",
+        "reason": "No verified direct A/H issuer event in the review window"
+      },
+      {
+        "theme": "Beijing embodied-intelligence robot plan",
+        "decision": "no_candidate",
+        "reason": "Policy is verified and sector strengthened, but no issuer-specific order evidence was verified"
       }
     ],
     "candidates": [
@@ -327,6 +333,38 @@
       ],
       "decision": "update_required",
       "reason": "Opening feedback materially confirms mainland technology while Hong Kong and gold weaken; robot-policy omission changes rotation; 688548 gains post-announcement confirmation."
+    },
+    "candidates_incremental": [
+      {
+        "ticker": "688548.SH",
+        "status": "bullish_candidate",
+        "quote": "2026-11-12 10:18 CST CNY28.14 +5.71%",
+        "source": "Eastmoney delayed quote API",
+        "reason": "post-buyback price confirmation with STAR50 +4.50%"
+      },
+      {
+        "ticker": "002533.SZ",
+        "status": "conditional_watch",
+        "quote": "2026-11-12 10:18 CST CNY10.34 -0.19%",
+        "source": "Eastmoney delayed quote API",
+        "reason": "contract unsigned and no positive relative price confirmation"
+      },
+      {
+        "ticker": "688199.SH",
+        "status": "avoid",
+        "quote": "2026-11-12 10:18 CST CNY23.78 -3.49%",
+        "source": "Eastmoney delayed quote API",
+        "reason": "continued negative feedback after prior sharp fall"
+      }
+    ],
+    "generated_candidate": {
+      "time": "2026-11-12 10:24 CST",
+      "title": "A股科技开盘确认、港股继续承压，广钢回购获价格验证",
+      "files": {
+        "index": 88697,
+        "day": 30646,
+        "manifest": 29706
+      }
     }
   },
   "pending_increment": [],
@@ -406,6 +444,19 @@
       "requests": 4,
       "retries": 0,
       "cache_hits": 6
+    },
+    "generation_incremental": {
+      "started_at": "2026-11-12T02:20:07.848Z",
+      "completed_at": "2026-11-12T02:25:14.089Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 2
+    },
+    "hard_validation_incremental": {
+      "started_at": "2026-11-12T02:25:14.089Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 0
     }
   },
   "schema_version": 2,
