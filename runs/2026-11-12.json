@@ -2,10 +2,10 @@
   "date": "2026-11-12",
   "run_id": "ah-review-20261112-20261112021743",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "heartbeat_at": "2026-11-12T02:29:22.791Z",
-  "lease_until": "2026-11-12T02:39:22.791Z",
+  "status": "published",
+  "stage": "published",
+  "heartbeat_at": "2026-11-12T02:33:33.181Z",
+  "lease_until": null,
   "source_cutoff": "2026-11-12T00:34:20.066Z",
   "main_base_sha": "f82201e63a863e2437c7c14a0fe921bc83a527a8",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -396,7 +396,66 @@
       "day": "f4d99851b1d6bbff1e8b17bff2a7b9f3d3648cca",
       "manifest": "192bab68d670791a2d36fe281c1cc66c71d33b4b"
     },
-    "candidate_tree": "929b45b3a16cda94cb2754d3ba47fb8491d15edd"
+    "candidate_tree": "929b45b3a16cda94cb2754d3ba47fb8491d15edd",
+    "remote_readback_incremental": {
+      "verified_at": "2026-11-12T02:33:33.181Z",
+      "main_head": "63bef6cdd9b04e02241ac533f324eeee73fac918",
+      "changed_files": [
+        "history/data/2026-11-12.json",
+        "history/manifest.json",
+        "index.html"
+      ],
+      "exact_match": true,
+      "blobs": {
+        "index.html": "e818a8d6720bd401a7b152e8b9ff107b33f30356",
+        "history/data/2026-11-12.json": "f4d99851b1d6bbff1e8b17bff2a7b9f3d3648cca",
+        "history/manifest.json": "192bab68d670791a2d36fe281c1cc66c71d33b4b"
+      }
+    },
+    "production_verification_incremental": {
+      "verified_at": "2026-11-12T02:33:33.181Z",
+      "ok": true,
+      "deployment": {
+        "id": "dpl_FmPab3dkkLMsPn8BAzC6Hr1cLztc",
+        "state": "READY",
+        "target": "production",
+        "sha": "63bef6cdd9b04e02241ac533f324eeee73fac918"
+      },
+      "urls": {
+        "homepage": {
+          "url": "https://premarketor.com/",
+          "status": 200,
+          "exact_match": true
+        },
+        "manifest": {
+          "url": "https://premarketor.com/history/manifest.json",
+          "status": 200,
+          "exact_match": true
+        },
+        "day_json": {
+          "url": "https://premarketor.com/history/data/2026-11-12.json",
+          "status": 200,
+          "exact_match": true
+        },
+        "history_page": {
+          "url": "https://premarketor.com/history/?date=2026-11-12",
+          "status": 200,
+          "loader_present": true
+        }
+      },
+      "content": {
+        "time": "2026-11-12 10:26 CST",
+        "zh_major_news": 12,
+        "en_major_news": 12,
+        "zh_overnight_items": 3,
+        "en_overnight_items": 3,
+        "zh_cards": 3,
+        "en_cards": 3,
+        "bilingual_consistent": true,
+        "nonempty": true
+      },
+      "browser_visual_check": true
+    }
   },
   "pending_increment": [],
   "published_commit": "63bef6cdd9b04e02241ac533f324eeee73fac918",
@@ -411,8 +470,8 @@
     },
     "total": {
       "started_at": "2026-11-12T00:27:09.771Z",
-      "completed_at": "2026-11-12T00:42:53.764Z",
-      "duration_seconds": 944
+      "completed_at": "2026-11-12T02:33:33.181Z",
+      "duration_seconds": 7583
     },
     "rankings": {
       "started_at": "2026-11-12T00:28:16.687Z",
@@ -474,7 +533,10 @@
       "started_at": "2026-11-12T02:17:43.340Z",
       "requests": 4,
       "retries": 0,
-      "cache_hits": 6
+      "cache_hits": 6,
+      "completed_at": "2026-11-12T02:33:33.181Z",
+      "status": "published",
+      "duration_seconds": 7583
     },
     "generation_incremental": {
       "started_at": "2026-11-12T02:20:07.848Z",
@@ -506,9 +568,11 @@
     },
     "deployment_incremental": {
       "started_at": "2026-11-12T02:29:22.791Z",
-      "requests": 0,
+      "requests": 6,
       "retries": 0,
-      "cache_hits": 0
+      "cache_hits": 0,
+      "completed_at": "2026-11-12T02:33:33.181Z",
+      "status": "passed"
     }
   },
   "schema_version": 2,
