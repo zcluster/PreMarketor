@@ -1,13 +1,13 @@
 {
   "date": "2026-11-12",
-  "run_id": "ah-20261112-20261112002709",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "heartbeat_at": "2026-11-12T00:42:53.764Z",
-  "lease_until": null,
+  "run_id": "ah-review-20261112-20261112021743",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "heartbeat_at": "2026-11-12T02:17:43.340Z",
+  "lease_until": "2026-11-12T02:27:43.340Z",
   "source_cutoff": "2026-11-12T00:34:20.066Z",
-  "main_base_sha": "01a21858de6376c4ed1c093a6ed322cf4955eda2",
+  "main_base_sha": "7ada6839488909a855ad27c287f2f0edfddc5497",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -282,6 +282,12 @@
       "manifestHead": true,
       "manifestExact": true,
       "ok": true
+    },
+    "previous_published_run": {
+      "run_id": "ah-20261112-20261112002709",
+      "owner": "发布 MarketAhead A/H 早报",
+      "published_commit": "7ada6839488909a855ad27c287f2f0edfddc5497",
+      "completed_at": "2026-11-12T00:42:53.764Z"
     }
   },
   "pending_increment": [],
@@ -355,6 +361,12 @@
       "retries": 0,
       "cache_hits": 0,
       "completed_at": "2026-11-12T00:42:53.764Z"
+    },
+    "incremental_review": {
+      "started_at": "2026-11-12T02:17:43.340Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 6
     }
   },
   "schema_version": 2,
