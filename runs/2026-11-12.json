@@ -3,10 +3,10 @@
   "run_id": "ah-20261112-20261112002709",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "heartbeat_at": "2026-11-12T00:31:08.719Z",
-  "lease_until": "2026-11-12T00:41:08.719Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "heartbeat_at": "2026-11-12T00:34:20.066Z",
+  "lease_until": "2026-11-12T00:44:20.066Z",
+  "source_cutoff": "2026-11-12T00:34:20.066Z",
   "main_base_sha": "01a21858de6376c4ed1c093a6ed322cf4955eda2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -44,6 +44,134 @@
           "bottom_rows": 0
         }
       }
+    },
+    "sources": [
+      {
+        "url": "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/",
+        "published_at": "2026-11-11",
+        "used_for": "US close, AI/tech rally, NVDA after-hours reversal, dollar/oil"
+      },
+      {
+        "url": "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/",
+        "published_at": "2026-11-11",
+        "used_for": "Iran/Hormuz and oil"
+      },
+      {
+        "url": "https://star.sse.com.cn/services/hkexsc/disclo/announ/c/c_20261111_10837418.shtml",
+        "published_at": "2026-11-11",
+        "used_for": "HK Stock Connect adjustment"
+      },
+      {
+        "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2026/art_0842f50a1a38423c89cc57c43f431dad.html",
+        "published_at": "2026-11-10",
+        "used_for": "industrial product carbon-footprint standards list"
+      },
+      {
+        "url": "https://www.cninfo.com.cn/new/commonUrl/pageOfSearch?code=002533&endDate=2026-11-12&name=%E9%87%91%E6%9D%AF%E7%94%B5%E5%B7%A5&orgId=9900016750&startDate=2026-11-12&url=disclosure%2Flist%2Fsearch",
+        "published_at": "2026-11-11T16:00:00+08:00",
+        "used_for": "Goldcup contract notice"
+      },
+      {
+        "url": "https://www.cfi.net.cn/p20261111000634.html",
+        "published_at": "2026-11-11T17:07:40+08:00",
+        "used_for": "Guanggang Gas buyback proposal"
+      }
+    ],
+    "discovery_coverage": [
+      {
+        "source": "MIIT official policy/news",
+        "top_items_reviewed": 4,
+        "included": [
+          "carbon-footprint standards"
+        ],
+        "reason": "freshest non-duplicate policy with industrial mapping"
+      },
+      {
+        "source": "SSE/HK Stock Connect official",
+        "top_items_reviewed": 3,
+        "included": [
+          "Transsion 02636 inclusion"
+        ],
+        "reason": "new official cross-market policy"
+      },
+      {
+        "source": "CNINFO/Shanghai Securities News evening announcements",
+        "top_items_reviewed": 7,
+        "included": [
+          "688548 buyback",
+          "002533 contract",
+          "688199 price follow-through"
+        ],
+        "reason": "most material verified A/H events"
+      }
+    ],
+    "theme_decisions": [
+      {
+        "theme": "Computer Hardware +8.73%",
+        "decision": "sector_watch",
+        "reason": "no same-window issuer-specific A/H catalyst; no forced card"
+      },
+      {
+        "theme": "Electrical Equipment & Parts +6.38%",
+        "decision": "conditional_watch",
+        "ticker": "002533.SZ",
+        "reason": "verified RMB661m award but only 2.88% of 2025 revenue and contract unsigned"
+      },
+      {
+        "theme": "Semiconductors +5.18% / Equipment +4.42% / Storage +10.72% / OLED +5.95% / Apple +5.76%",
+        "decision": "sector_watch",
+        "reason": "A-share semiconductor leaders confirmed in 14:23 snapshot; no same-window issuer-specific catalyst for a card"
+      },
+      {
+        "theme": "NVIDIA Portfolio +7.41%",
+        "decision": "watch_reversal",
+        "reason": "CRWV +24.8% confirms cash-session theme, NVDA -8% after hours in Reuters report reverses increment"
+      },
+      {
+        "theme": "Crypto Mining +6.66%",
+        "decision": "no_card",
+        "reason": "no verified direct A/H issuer event"
+      },
+      {
+        "theme": "Gold -1.85% / precious metals -2.23%",
+        "decision": "pressure",
+        "reason": "broad negative breadth; no issuer-specific card"
+      },
+      {
+        "theme": "Pharmaceutical Retailers -3.03%",
+        "decision": "no_card",
+        "reason": "no verified direct A/H issuer event"
+      }
+    ],
+    "candidates": [
+      {
+        "ticker": "688548.SH",
+        "name": "广钢气体",
+        "verification_status": "verified",
+        "status": "conditional_watch",
+        "quote": "2026-11-11 close CNY26.62 +0.60%; pre-announcement",
+        "source": "https://www.cfi.net.cn/p20261111000634.html"
+      },
+      {
+        "ticker": "002533.SZ",
+        "name": "金杯电工",
+        "verification_status": "verified",
+        "status": "conditional_watch",
+        "quote": "2026-11-11 close CNY10.36 +0.58%; pre-announcement",
+        "source": "https://www.cnstock.com/commonDetail/827094"
+      },
+      {
+        "ticker": "688199.SH",
+        "name": "久日新材",
+        "verification_status": "verified",
+        "status": "avoid",
+        "quote": "2026-11-11 14:23 CNY25.00 -9.16% AKShare; 15:00 CFI CNY24.64 -10.47%",
+        "source": "https://quote.cfi.cn/cfi_lhb_stock.aspx?stockcode=688199"
+      }
+    ],
+    "runtime_quotes": {
+      "broad": "QQQ +2.28%, SPY +1.32%, DIA +0.51%, fetched 08:12-08:14 CST; extended-hours ETF proxies",
+      "representatives": "SCKT/FPS/MX/AXTI/SNDK/CRWV/CANG/MU/RDGT available; ARAI/IBG/SUNS/BGL/LODE unavailable after batch attempt"
     }
   },
   "pending_increment": [],
@@ -69,6 +197,13 @@
     },
     "research": {
       "started_at": "2026-11-12T00:31:08.719Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 0,
+      "completed_at": "2026-11-12T00:34:20.066Z"
+    },
+    "generation": {
+      "started_at": "2026-11-12T00:34:20.066Z",
       "requests": 0,
       "retries": 0,
       "cache_hits": 0
