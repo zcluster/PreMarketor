@@ -3,9 +3,9 @@
   "run_id": "ah-20261112-20261112002709",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "translation",
-  "heartbeat_at": "2026-11-12T00:37:45.553Z",
-  "lease_until": "2026-11-12T00:47:45.553Z",
+  "stage": "hard_validation",
+  "heartbeat_at": "2026-11-12T00:38:26.889Z",
+  "lease_until": "2026-11-12T00:48:26.889Z",
   "source_cutoff": "2026-11-12T00:34:20.066Z",
   "main_base_sha": "01a21858de6376c4ed1c093a6ed322cf4955eda2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -172,6 +172,68 @@
     "runtime_quotes": {
       "broad": "QQQ +2.28%, SPY +1.32%, DIA +0.51%, fetched 08:12-08:14 CST; extended-hours ETF proxies",
       "representatives": "SCKT/FPS/MX/AXTI/SNDK/CRWV/CANG/MU/RDGT available; ARAI/IBG/SUNS/BGL/LODE unavailable after batch attempt"
+    },
+    "draft_validation": {
+      "root": true,
+      "counts": {
+        "assets": [
+          6,
+          6
+        ],
+        "keywords": [
+          12,
+          12
+        ],
+        "majorNews": [
+          10,
+          10
+        ],
+        "overnight": [
+          3,
+          3
+        ],
+        "cards": [
+          3,
+          3
+        ],
+        "sectors": [
+          4,
+          4
+        ],
+        "logic": [
+          5,
+          5
+        ],
+        "risks": [
+          5,
+          5
+        ]
+      },
+      "order": [
+        41,
+        2343,
+        5684,
+        6534
+      ],
+      "forbidden": [],
+      "tickers": [
+        [
+          "688548.SH",
+          1,
+          1
+        ],
+        [
+          "002533.SZ",
+          1,
+          1
+        ],
+        [
+          "688199.SH",
+          1,
+          1
+        ]
+      ],
+      "ok": true
     }
   },
   "pending_increment": [],
@@ -211,6 +273,13 @@
     },
     "translation": {
       "started_at": "2026-11-12T00:37:45.553Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 0,
+      "completed_at": "2026-11-12T00:38:26.889Z"
+    },
+    "hard_validation": {
+      "started_at": "2026-11-12T00:38:26.889Z",
       "requests": 0,
       "retries": 0,
       "cache_hits": 0
