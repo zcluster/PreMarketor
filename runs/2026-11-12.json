@@ -3,9 +3,9 @@
   "run_id": "ah-20261112-20261112002709",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "hard_validation",
-  "heartbeat_at": "2026-11-12T00:38:26.889Z",
-  "lease_until": "2026-11-12T00:48:26.889Z",
+  "stage": "candidate_commit",
+  "heartbeat_at": "2026-11-12T00:39:30.160Z",
+  "lease_until": "2026-11-12T00:49:30.160Z",
   "source_cutoff": "2026-11-12T00:34:20.066Z",
   "main_base_sha": "01a21858de6376c4ed1c093a6ed322cf4955eda2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -62,7 +62,7 @@
         "used_for": "HK Stock Connect adjustment"
       },
       {
-        "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2026/art_0842f50a1a38423c89cc57c43f431dad.html",
+        "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tg/art/2026/art_75e686fcee584f238dd30f30a1b6a289.html",
         "published_at": "2026-11-10",
         "used_for": "industrial product carbon-footprint standards list"
       },
@@ -234,6 +234,22 @@
         ]
       ],
       "ok": true
+    },
+    "prepublish": {
+      "onlyAllowedIndex": true,
+      "usBriefPreserved": true,
+      "usTimePreserved": true,
+      "usUpdatedPreserved": true,
+      "panelsPreserved": true,
+      "homepageMatches": true,
+      "dayMatches": true,
+      "manifestHead": true,
+      "files": {
+        "index": 87946,
+        "day": 28304,
+        "manifest": 29705
+      },
+      "ok": true
     }
   },
   "pending_increment": [],
@@ -280,6 +296,13 @@
     },
     "hard_validation": {
       "started_at": "2026-11-12T00:38:26.889Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 0,
+      "completed_at": "2026-11-12T00:39:30.160Z"
+    },
+    "candidate_commit": {
+      "started_at": "2026-11-12T00:39:30.160Z",
       "requests": 0,
       "retries": 0,
       "cache_hits": 0
