@@ -3,9 +3,9 @@
   "run_id": "ah-20261112-20261112002709",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "inputs",
-  "heartbeat_at": "2026-11-12T00:27:09.771Z",
-  "lease_until": "2026-11-12T00:37:09.771Z",
+  "stage": "rankings_refresh",
+  "heartbeat_at": "2026-11-12T00:28:46.086Z",
+  "lease_until": "2026-11-12T00:38:46.086Z",
   "source_cutoff": null,
   "main_base_sha": "ae5c0eb66877b8ed20ce5398afd9f710e351dab7",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -14,6 +14,19 @@
       "ref": "main",
       "sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
       "read_complete": true
+    },
+    "rankings": {
+      "required_session_date": "2026-11-11",
+      "calendar_source": "https://www.nyse.com/trade/hours-calendars",
+      "initial": {
+        "snapshot_sha": "be6f6182ca62b755b51c2d2584ca584504f8ae3f",
+        "attemptedAt": "2026-11-11T09:15:53+08:00",
+        "expected_session_date": "2026-11-10",
+        "gate_ready": true
+      },
+      "request_commit": "cca82fff75408666e6e984091cc8d6df88ba165d",
+      "requested_at": "2026-11-12T00:28:16.687Z",
+      "request_id": "ah-20261112-20261112002709"
     }
   },
   "pending_increment": [],
@@ -29,6 +42,12 @@
     },
     "total": {
       "started_at": "2026-11-12T00:27:09.771Z"
+    },
+    "rankings": {
+      "started_at": "2026-11-12T00:28:16.687Z",
+      "requests": 3,
+      "retries": 0,
+      "cache_hits": 0
     }
   },
   "schema_version": 2,
