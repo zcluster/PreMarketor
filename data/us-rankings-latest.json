@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-11-12T08:28:45+08:00",
+  "attemptedAt": "2026-11-12T10:17:24+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-12T08:28:45+08:00",
+      "fetchedAt": "2026-11-12T10:17:24+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-12T08:28:45+08:00",
+      "fetchedAt": "2026-11-12T10:17:24+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -254,9 +254,9 @@
   "publicationGate": {
     "ready": true,
     "expected_session_date": "2026-11-11",
-    "checked_at": "2026-11-12T08:28:50+08:00",
-    "request_id": "ah-20261112-20261112002709",
-    "groups_sha256": "d26ddd511338125e644b66301a6bd9dc33ac6265718a8c0580eb80d1c8ec03df",
+    "checked_at": "2026-11-12T10:17:37+08:00",
+    "request_id": null,
+    "groups_sha256": "9f7c153d27138f836ca95dfffc2e560e23f389a603cde51fb8fdd8fbe0777a5d",
     "errors": []
   }
 }
