@@ -3,11 +3,11 @@
   "run_id": "ah-20261112-20261112002709",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rankings_refresh",
-  "heartbeat_at": "2026-11-12T00:28:46.086Z",
-  "lease_until": "2026-11-12T00:38:46.086Z",
+  "stage": "research",
+  "heartbeat_at": "2026-11-12T00:31:08.719Z",
+  "lease_until": "2026-11-12T00:41:08.719Z",
   "source_cutoff": null,
-  "main_base_sha": "ae5c0eb66877b8ed20ce5398afd9f710e351dab7",
+  "main_base_sha": "01a21858de6376c4ed1c093a6ed322cf4955eda2",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -26,7 +26,24 @@
       },
       "request_commit": "cca82fff75408666e6e984091cc8d6df88ba165d",
       "requested_at": "2026-11-12T00:28:16.687Z",
-      "request_id": "ah-20261112-20261112002709"
+      "request_id": "ah-20261112-20261112002709",
+      "final": {
+        "snapshot_sha": "428d4a280d99053e4223ab791598a47f1a6b8710",
+        "attemptedAt": "2026-11-12T08:28:45+08:00",
+        "expected_session_date": "2026-11-11",
+        "gate_ready": true,
+        "request_id": "ah-20261112-20261112002709",
+        "industry": {
+          "status": "ok",
+          "top_rows": 5,
+          "bottom_rows": 5
+        },
+        "concept": {
+          "status": "ok",
+          "top_rows": 5,
+          "bottom_rows": 0
+        }
+      }
     }
   },
   "pending_increment": [],
@@ -46,6 +63,13 @@
     "rankings": {
       "started_at": "2026-11-12T00:28:16.687Z",
       "requests": 3,
+      "retries": 0,
+      "cache_hits": 0,
+      "completed_at": "2026-11-12T00:31:08.719Z"
+    },
+    "research": {
+      "started_at": "2026-11-12T00:31:08.719Z",
+      "requests": 0,
       "retries": 0,
       "cache_hits": 0
     }
