@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261112-20261112021743",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "incremental_research",
-  "heartbeat_at": "2026-11-12T02:17:43.340Z",
-  "lease_until": "2026-11-12T02:27:43.340Z",
+  "stage": "generation",
+  "heartbeat_at": "2026-11-12T02:20:07.848Z",
+  "lease_until": "2026-11-12T02:30:07.848Z",
   "source_cutoff": "2026-11-12T00:34:20.066Z",
   "main_base_sha": "7ada6839488909a855ad27c287f2f0edfddc5497",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -288,6 +288,45 @@
       "owner": "发布 MarketAhead A/H 早报",
       "published_commit": "7ada6839488909a855ad27c287f2f0edfddc5497",
       "completed_at": "2026-11-12T00:42:53.764Z"
+    },
+    "incremental_review": {
+      "source_cutoff": "2026-11-12T00:34:20.066Z",
+      "checked_at": "2026-11-12T02:20:07.848Z",
+      "material": true,
+      "findings": [
+        {
+          "event": "A-share opening confirmation",
+          "source": "Eastmoney delayed quote API",
+          "quote_time": "2026-11-12 10:18 CST",
+          "detail": "Shanghai +0.45%, Shenzhen +0.96%, ChiNext +1.60%, STAR50 +4.50%; CPO/storage leaders broadly positive"
+        },
+        {
+          "event": "Hong Kong divergence",
+          "source": "Eastmoney delayed quote API / public HSTECH quote",
+          "quote_time": "2026-11-12 10:18 CST",
+          "detail": "HSI -1.14%; HSTECH around -1.3% to -1.4%; gold shares -5.28% to -6.31%"
+        },
+        {
+          "event": "Beijing embodied intelligence robot plan omission",
+          "source": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202611/t20261111_4942067.html",
+          "published_at": "2026-11-11",
+          "detail": "2028 targets: >=5 international-leading and >=10 domestic-leading humanoid OEMs, Beijing-Tianjin-Hebei capacity 25%, key-parts support >60%"
+        },
+        {
+          "event": "PBOC liquidity operation",
+          "source": "public PBOC-operation report cross-check",
+          "published_at": "2026-11-12 09:21 CST",
+          "detail": "RMB384bn overnight reverse repo at 1.25%, net injection RMB197bn"
+        },
+        {
+          "event": "candidate price feedback",
+          "source": "Eastmoney delayed quote API",
+          "quote_time": "2026-11-12 10:18 CST",
+          "detail": "688548 +5.71%; 002533 -0.19%; 688199 -3.49%"
+        }
+      ],
+      "decision": "update_required",
+      "reason": "Opening feedback materially confirms mainland technology while Hong Kong and gold weaken; robot-policy omission changes rotation; 688548 gains post-announcement confirmation."
     }
   },
   "pending_increment": [],
@@ -364,7 +403,7 @@
     },
     "incremental_review": {
       "started_at": "2026-11-12T02:17:43.340Z",
-      "requests": 0,
+      "requests": 4,
       "retries": 0,
       "cache_hits": 6
     }
