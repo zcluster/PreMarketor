@@ -3,11 +3,11 @@
   "run_id": "ah-review-20261112-20261112021743",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "hard_validation",
-  "heartbeat_at": "2026-11-12T02:25:14.089Z",
-  "lease_until": "2026-11-12T02:35:14.089Z",
+  "stage": "candidate_commit",
+  "heartbeat_at": "2026-11-12T02:27:17.307Z",
+  "lease_until": "2026-11-12T02:37:17.307Z",
   "source_cutoff": "2026-11-12T00:34:20.066Z",
-  "main_base_sha": "7ada6839488909a855ad27c287f2f0edfddc5497",
+  "main_base_sha": "f82201e63a863e2437c7c14a0fe921bc83a527a8",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -365,6 +365,31 @@
         "day": 30646,
         "manifest": 29706
       }
+    },
+    "hard_validation_incremental": {
+      "ok": true,
+      "checks": {
+        "marker_only": true,
+        "us_content_preserved": true,
+        "panels_preserved": true,
+        "panels_current": true,
+        "rankings_gate": true,
+        "structure": true,
+        "bilingual": true,
+        "archive": true,
+        "manifest": true,
+        "content": true
+      },
+      "base": "f82201e63a863e2437c7c14a0fe921bc83a527a8",
+      "time": "2026-11-12 10:26 CST",
+      "counts": {
+        "major": 12,
+        "overnight": 3,
+        "cards": 3,
+        "panels": 15
+      },
+      "completed_at": "2026-11-12T02:27:17.307Z",
+      "latest_rankings_sha": "d32ad4f2c72bd2bdb407a44e78e1f95a60d3ab76"
     }
   },
   "pending_increment": [],
