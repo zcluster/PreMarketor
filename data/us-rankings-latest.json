@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-11-11T09:15:53+08:00",
-  "status": "partial",
+  "attemptedAt": "2026-11-12T08:28:45+08:00",
+  "status": "ok",
   "groups": {
     "industry": {
-      "status": "partial",
+      "status": "ok",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-11T09:15:53+08:00",
+      "fetchedAt": "2026-11-12T08:28:45+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,88 +17,157 @@
       },
       "top": [
         {
-          "name": "医疗计划",
-          "nameEn": "Healthcare Plans",
-          "code": "BK2246",
-          "changePct": "+2.59%",
-          "leaderName": "Alignment Healthcare",
-          "leaderTicker": "ALHC",
-          "leaderChangePct": "+5.50%",
+          "name": "计算机硬件",
+          "nameEn": "Computer Hardware",
+          "code": "BK2492",
+          "changePct": "+8.73%",
+          "leaderName": "Socket Mobile",
+          "leaderTicker": "SCKT",
+          "leaderChangePct": "+84.91%",
           "breadth": {
-            "advancers": 11,
-            "decliners": 0,
-            "unchanged": 0
+            "advancers": 32,
+            "decliners": 13,
+            "unchanged": 2
           }
         },
         {
-          "name": "再保险",
-          "nameEn": "Insurance - Reinsurance",
-          "code": "BK2467",
-          "changePct": "+2.56%",
-          "leaderName": "Oxbridge Re Holdings",
-          "leaderTicker": "OXBR",
-          "leaderChangePct": "+5.02%",
+          "name": "电气设备及零件",
+          "nameEn": "Electrical Equipment & Parts",
+          "code": "BK2493",
+          "changePct": "+6.38%",
+          "leaderName": "Forgent Power Solutions",
+          "leaderTicker": "FPS",
+          "leaderChangePct": "+14.39%",
           "breadth": {
-            "advancers": 7,
-            "decliners": 1,
-            "unchanged": 1
+            "advancers": 36,
+            "decliners": 18,
+            "unchanged": 3
           }
         },
         {
-          "name": "钢",
-          "nameEn": "Steel",
-          "code": "BK2101",
-          "changePct": "+2.25%",
-          "leaderName": "克利夫兰克里夫",
-          "leaderTicker": "CLF",
-          "leaderChangePct": "+4.89%",
+          "name": "半导体",
+          "nameEn": "Semiconductors",
+          "code": "BK2015",
+          "changePct": "+5.18%",
+          "leaderName": "MagnaChip Semiconductor",
+          "leaderTicker": "MX",
+          "leaderChangePct": "+17.00%",
           "breadth": {
-            "advancers": 12,
-            "decliners": 8,
-            "unchanged": 1
+            "advancers": 60,
+            "decliners": 6,
+            "unchanged": 2
           }
         },
         {
-          "name": "酒店与旅馆REITs",
-          "nameEn": "REIT - Hotel & Motel",
-          "code": "BK2475",
-          "changePct": "+2.24%",
-          "leaderName": "Service Properties Trust",
-          "leaderTicker": "SVC",
-          "leaderChangePct": "+6.21%",
+          "name": "半导体设备与材料",
+          "nameEn": "Semiconductor Equipment & Materials",
+          "code": "BK2016",
+          "changePct": "+4.42%",
+          "leaderName": "AXT Inc",
+          "leaderTicker": "AXTI",
+          "leaderChangePct": "+19.49%",
           "breadth": {
-            "advancers": 12,
+            "advancers": 29,
             "decliners": 2,
-            "unchanged": 1
+            "unchanged": 0
           }
         },
         {
-          "name": "住宿",
-          "nameEn": "Lodging",
-          "code": "BK2263",
-          "changePct": "+1.97%",
-          "leaderName": "格林酒店",
-          "leaderTicker": "GHG",
-          "leaderChangePct": "+7.61%",
+          "name": "科技仪器",
+          "nameEn": "Scientific & Technical Instruments",
+          "code": "BK2275",
+          "changePct": "+3.44%",
+          "leaderName": "Arrive AI",
+          "leaderTicker": "ARAI",
+          "leaderChangePct": "+10.90%",
           "breadth": {
-            "advancers": 10,
-            "decliners": 1,
-            "unchanged": 0
+            "advancers": 27,
+            "decliners": 5,
+            "unchanged": 1
           }
         }
       ],
-      "bottom": [],
-      "missing": [
-        "bottom5"
+      "bottom": [
+        {
+          "name": "酿酒厂",
+          "nameEn": "Beverages - Wineries & Distilleries",
+          "code": "BK2464",
+          "changePct": "-1.58%",
+          "leaderName": "Innovation Beverage Group",
+          "leaderTicker": "IBG",
+          "leaderChangePct": "+16.25%",
+          "breadth": {
+            "advancers": 5,
+            "decliners": 8,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "抵押贷款REITs",
+          "nameEn": "REIT - Mortgage",
+          "code": "BK2469",
+          "changePct": "-1.76%",
+          "leaderName": "Sunrise Realty Trust",
+          "leaderTicker": "SUNS",
+          "leaderChangePct": "+3.16%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 36,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "黄金",
+          "nameEn": "Gold",
+          "code": "BK2110",
+          "changePct": "-1.85%",
+          "leaderName": "Blue Gold",
+          "leaderTicker": "BGL",
+          "leaderChangePct": "+9.65%",
+          "breadth": {
+            "advancers": 3,
+            "decliners": 53,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "其他贵金属和采矿",
+          "nameEn": "Other Precious Metals & Mining",
+          "code": "BK2507",
+          "changePct": "-2.23%",
+          "leaderName": "Comstock Inc",
+          "leaderTicker": "LODE",
+          "leaderChangePct": "0.00%",
+          "breadth": {
+            "advancers": 0,
+            "decliners": 15,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "医药零售",
+          "nameEn": "Pharmaceutical Retailers",
+          "code": "BK2092",
+          "changePct": "-3.03%",
+          "leaderName": "Ridgetech",
+          "leaderTicker": "RDGT",
+          "leaderChangePct": "+4.50%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 2,
+            "unchanged": 1
+          }
+        }
       ],
-      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
+      "missing": [],
+      "error": null
     },
     "concept": {
       "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-11T09:15:53+08:00",
+      "fetchedAt": "2026-11-12T08:28:45+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -107,30 +176,58 @@
       },
       "top": [
         {
-          "name": "光通信",
-          "nameEn": "Optical Communication",
-          "code": "BK23979",
-          "changePct": "+2.17%",
-          "leaderName": "Lumen Technologies",
-          "leaderTicker": "LUMN",
-          "leaderChangePct": "+9.03%",
+          "name": "存储概念",
+          "nameEn": "Data storage stock",
+          "code": "BK23925",
+          "changePct": "+10.72%",
+          "leaderName": "闪迪",
+          "leaderTicker": "SNDK",
+          "leaderChangePct": "+13.69%",
           "breadth": {
-            "advancers": 5,
-            "decliners": 16,
+            "advancers": 7,
+            "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "美国国防航空",
-          "nameEn": "Defense",
-          "code": "BK2654",
-          "changePct": "+1.56%",
-          "leaderName": "亨廷顿英格尔斯工业",
-          "leaderTicker": "HII",
-          "leaderChangePct": "+3.03%",
+          "name": "英伟达持仓概念",
+          "nameEn": "NVIDIA Portfolio",
+          "code": "BK20882",
+          "changePct": "+7.41%",
+          "leaderName": "CoreWeave",
+          "leaderTicker": "CRWV",
+          "leaderChangePct": "+24.71%",
           "breadth": {
-            "advancers": 7,
-            "decliners": 2,
+            "advancers": 6,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "加密矿企",
+          "nameEn": "Crypto Mining",
+          "code": "BK23921",
+          "changePct": "+6.66%",
+          "leaderName": "灿谷",
+          "leaderTicker": "CANG",
+          "leaderChangePct": "+36.84%",
+          "breadth": {
+            "advancers": 14,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "OLED概念",
+          "nameEn": "OLED Technology",
+          "code": "BK2448",
+          "changePct": "+5.95%",
+          "leaderName": "MagnaChip Semiconductor",
+          "leaderTicker": "MX",
+          "leaderChangePct": "+17.00%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 0,
             "unchanged": 0
           }
         },
@@ -138,41 +235,13 @@
           "name": "苹果概念",
           "nameEn": "Apple Ecosystem",
           "code": "BK2437",
-          "changePct": "+1.19%",
-          "leaderName": "博通",
-          "leaderTicker": "AVGO",
-          "leaderChangePct": "+3.91%",
+          "changePct": "+5.76%",
+          "leaderName": "美光科技",
+          "leaderTicker": "MU",
+          "leaderChangePct": "+11.89%",
           "breadth": {
-            "advancers": 5,
-            "decliners": 10,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "热门中概股",
-          "nameEn": "China Concept Stocks",
-          "code": "BK2517",
-          "changePct": "+1.08%",
-          "leaderName": "瑞幸咖啡",
-          "leaderTicker": "LKNCY",
-          "leaderChangePct": "+5.23%",
-          "breadth": {
-            "advancers": 12,
-            "decliners": 25,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "太空概念",
-          "nameEn": "Space",
-          "code": "BK2556",
-          "changePct": "+1.00%",
-          "leaderName": "KULR Technology",
-          "leaderTicker": "KULR",
-          "leaderChangePct": "+22.09%",
-          "breadth": {
-            "advancers": 18,
-            "decliners": 13,
+            "advancers": 14,
+            "decliners": 1,
             "unchanged": 0
           }
         }
@@ -184,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-11-10",
-    "checked_at": "2026-11-11T09:16:27+08:00",
-    "request_id": null,
-    "groups_sha256": "204c09477d576f948a8f559a00d2942c7f7fba57fb6a72ef585612a0c582410b",
+    "expected_session_date": "2026-11-11",
+    "checked_at": "2026-11-12T08:28:50+08:00",
+    "request_id": "ah-20261112-20261112002709",
+    "groups_sha256": "d26ddd511338125e644b66301a6bd9dc33ac6265718a8c0580eb80d1c8ec03df",
     "errors": []
   }
 }
