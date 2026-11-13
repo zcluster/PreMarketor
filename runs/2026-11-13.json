@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261113-20261113012907",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "hard_validation",
-  "lease_until": "2026-11-13T01:47:15.528Z",
-  "heartbeat_at": "2026-11-13T01:37:15.528Z",
+  "stage": "candidate_commit",
+  "lease_until": "2026-11-13T01:48:01.869Z",
+  "heartbeat_at": "2026-11-13T01:38:01.869Z",
   "source_cutoff": "2026-11-13T00:41:08.188Z",
   "main_base_sha": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -493,15 +493,38 @@
           "decision": "avoid"
         }
       ]
+    },
+    "hard_validation_incremental": {
+      "passed": true,
+      "validated_at": "2026-11-13T01:38:01.869Z",
+      "main_base_sha": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
+      "checks": [
+        "three-file whitelist",
+        "marker-only outside five allowed markers",
+        "US_BRIEF/US_TIME/US_UPDATED exact",
+        "US ranking panels exact",
+        "rankings gate ready for 2026-11-12",
+        "zh/en class sequence and bar widths exact",
+        "11 major-news items",
+        "one overnight section with three items",
+        "three stock cards with traceable status/confirmation/risk",
+        "archive contract",
+        "manifest history preservation",
+        "clean titles",
+        "no preview or forbidden structures"
+      ],
+      "counts": {
+        "major_news": 11,
+        "overnight_items": 3,
+        "stock_cards": 3,
+        "industry_top": 5,
+        "industry_bottom": 5,
+        "concept_top": 5
+      },
+      "result": "passed"
     }
   },
-  "pending_increment": [
-    {
-      "event": "A/H open confirmation and CSRC stabilisation policy",
-      "status": "absorbed_for_generation",
-      "material": true
-    }
-  ],
+  "pending_increment": [],
   "published_commit": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
   "candidate_commit": null,
   "error": null,
@@ -528,6 +551,14 @@
       "status": "completed",
       "requests": 0,
       "retries": 0
+    },
+    "hard_validation_incremental": {
+      "started_at": "2026-11-13T01:38:01.869Z",
+      "completed_at": "2026-11-13T01:38:01.869Z",
+      "status": "passed",
+      "requests": 2,
+      "retries": 1,
+      "cache_hits": 5
     }
   },
   "request_metrics": {
