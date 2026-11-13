@@ -3,9 +3,9 @@
   "run_id": "ah-20261113-20261113T083531",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "candidate_commit",
-  "lease_until": "2026-11-13T01:04:04.346Z",
-  "heartbeat_at": "2026-11-13T00:54:04.346Z",
+  "stage": "main_update",
+  "lease_until": "2026-11-13T01:06:06.060Z",
+  "heartbeat_at": "2026-11-13T00:56:06.060Z",
   "source_cutoff": "2026-11-13T00:41:08.188Z",
   "main_base_sha": "f995e7bca6da9fd2210dc62dcf08ede6381a3041",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -307,6 +307,19 @@
       "stock_cards": 3,
       "ranking_rows_each_language": 15,
       "errors": []
+    },
+    "candidate_commit": {
+      "sha": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
+      "tree": "10125009d3c7478ee5e0891442d0ca62fe97c7ec",
+      "parent": "f995e7bca6da9fd2210dc62dcf08ede6381a3041",
+      "message": "Update A/H market brief for 2026-11-13",
+      "publication_time": "2026-11-13 08:55 CST",
+      "blobs": {
+        "index": "80b5ab1fc83678a6bb52d3c948e7acb1001d6691",
+        "today": "d4c2b9fe93b0e89ad41d1620eb473797524f2d48",
+        "manifest": "8d0311c9825f75fa6a1f144d857b727171b61bab"
+      },
+      "created_at": "2026-11-13T00:56:06.060Z"
     }
   },
   "pending_increment": [],
