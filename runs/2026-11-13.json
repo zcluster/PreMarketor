@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261113-20261113012907",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "incremental_generation",
-  "lease_until": "2026-11-13T01:42:26.820Z",
-  "heartbeat_at": "2026-11-13T01:32:26.820Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-11-13T01:47:15.528Z",
+  "heartbeat_at": "2026-11-13T01:37:15.528Z",
   "source_cutoff": "2026-11-13T00:41:08.188Z",
   "main_base_sha": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -467,7 +467,33 @@
         "confirmation": "only reassess after reclaiming prior close and sector-relative strength",
         "invalidation": "continued weakness validates avoid"
       }
-    ]
+    ],
+    "generated_candidate": {
+      "title": "科创与晶圆代工开盘确认，港股仍弱，天孚回购遭负反馈",
+      "time": "2026-11-13 09:31 CST",
+      "summary": "截至09:31 CST，上证、深证、创业板和科创50分别涨0.11%、0.26%、0.41%和1.89%，恒指跌0.72%、恒生科技跌0.32%。中芯国际A/H涨2.44%和4.23%，华虹宏力A/H涨5.74%和4.22%，双市场确认业绩与回购催化并升级为看多候选；天孚通信再跌2.86%、连续弱于CPO同业，降为回避。证监会第三批互换便利1000亿元补强稳市与回购主题托底。",
+      "files": [
+        "index.html",
+        "history/data/2026-11-13.json",
+        "history/manifest.json"
+      ],
+      "news_count": 11,
+      "overnight_count": 3,
+      "cards": [
+        {
+          "ticker": "688981.SH / 00981.HK",
+          "decision": "bullish_candidate"
+        },
+        {
+          "ticker": "688347.SH / 01347.HK",
+          "decision": "bullish_candidate"
+        },
+        {
+          "ticker": "300394.SZ",
+          "decision": "avoid"
+        }
+      ]
+    }
   },
   "pending_increment": [
     {
@@ -495,6 +521,13 @@
       "retries": 0,
       "cache_hits": 0,
       "research_completed_at": "2026-11-13T01:32:26.820Z"
+    },
+    "generation_incremental": {
+      "started_at": "2026-11-13T01:32:26.820Z",
+      "completed_at": "2026-11-13T01:37:15.528Z",
+      "status": "completed",
+      "requests": 0,
+      "retries": 0
     }
   },
   "request_metrics": {
