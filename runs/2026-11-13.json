@@ -2,10 +2,10 @@
   "date": "2026-11-13",
   "run_id": "ah-20261113-20261113T083531",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-11-13T01:07:00.127Z",
-  "heartbeat_at": "2026-11-13T00:57:00.127Z",
+  "status": "published",
+  "stage": "complete",
+  "lease_until": "2026-11-13T01:00:32.196Z",
+  "heartbeat_at": "2026-11-13T01:00:32.196Z",
   "source_cutoff": "2026-11-13T00:41:08.188Z",
   "main_base_sha": "f995e7bca6da9fd2210dc62dcf08ede6381a3041",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -326,6 +326,69 @@
       "expected_sha": "f995e7bca6da9fd2210dc62dcf08ede6381a3041",
       "force": false,
       "success": true
+    },
+    "remote_readback": {
+      "main": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
+      "commitTree": "10125009d3c7478ee5e0891442d0ca62fe97c7ec",
+      "shas": {
+        "index": "80b5ab1fc83678a6bb52d3c948e7acb1001d6691",
+        "today": "d4c2b9fe93b0e89ad41d1620eb473797524f2d48",
+        "manifest": "8d0311c9825f75fa6a1f144d857b727171b61bab"
+      },
+      "exact": {
+        "index": true,
+        "today": true,
+        "manifest": true
+      },
+      "ok": true
+    },
+    "production": {
+      "verified_at": "2026-11-13T01:00:32.196Z",
+      "endpoints": [
+        {
+          "url": "https://premarketor.com/",
+          "status": 200,
+          "exact_commit_content": true
+        },
+        {
+          "url": "https://premarketor.com/history/?date=2026-11-13",
+          "status": 200,
+          "rendered": true,
+          "title": "油价与美股能源走强对冲AI治理冲击，晶圆代工业绩与回购提供条件线索",
+          "updated": "2026-11-13 08:55 CST",
+          "stock_cards": 3
+        },
+        {
+          "url": "https://premarketor.com/history/data/2026-11-13.json",
+          "status": 200,
+          "exact_commit_content": true
+        },
+        {
+          "url": "https://premarketor.com/history/manifest.json",
+          "status": 200,
+          "exact_commit_content": true
+        }
+      ],
+      "bilingual_rendered": true,
+      "ranking_rows_each_language": 15,
+      "stock_cards_each_language": 3
+    },
+    "diff": {
+      "base": "f995e7bca6da9fd2210dc62dcf08ede6381a3041",
+      "head": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
+      "files": [
+        "history/data/2026-11-13.json",
+        "history/manifest.json",
+        "index.html"
+      ],
+      "only_allowed_files": true
+    },
+    "state_validation": {
+      "script_sha": "1b2622292fcaa1a9ed6c775d1a9890b8d93c5b42",
+      "equivalent_in_memory": true,
+      "ok": true,
+      "errors": [],
+      "validated_at": "2026-11-13T01:00:32.196Z"
     }
   },
   "pending_increment": [],
@@ -347,5 +410,17 @@
     "requests": 36,
     "retries": 0,
     "cache_hits": 5
+  },
+  "finished_at": "2026-11-13T01:00:32.196Z",
+  "timings": {
+    "finished_at": "2026-11-13T01:00:32.196Z",
+    "total_seconds": 1501,
+    "stage_summary": {
+      "rules_and_lease_s": 84,
+      "rankings_refresh_and_research_s": 504,
+      "generation_translation_validation_s": 571,
+      "candidate_and_main_update_s": 177,
+      "deployment_and_production_verification_s": 212
+    }
   }
 }
