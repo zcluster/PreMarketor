@@ -3,10 +3,10 @@
   "run_id": "ah-20261113-20261113T083531",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-13T00:48:16.110Z",
-  "heartbeat_at": "2026-11-13T00:38:16.110Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "lease_until": "2026-11-13T00:51:08.188Z",
+  "heartbeat_at": "2026-11-13T00:41:08.188Z",
+  "source_cutoff": "2026-11-13T00:41:08.188Z",
   "main_base_sha": "f995e7bca6da9fd2210dc62dcf08ede6381a3041",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -44,6 +44,214 @@
       "expected_session_date": "2026-11-12",
       "request_id": "ah-20261113-20261113T083531",
       "ready": true
+    },
+    "sessions": {
+      "us_expected": "2026-11-12",
+      "us_calendar_source": "NYSE official calendar; normal cash session",
+      "A_H_date": "2026-11-13",
+      "A_calendar_verified": true,
+      "HK_calendar_verified": true
+    },
+    "akshare": {
+      "sha": "3813a85aea4da52780ae4c9419f58e83c8e0de84",
+      "fetchedAt": "2026-11-11T14:23:09+08:00",
+      "status": "ok",
+      "analysisReady": true,
+      "stale_for_today": true,
+      "A": {
+        "marketDate": "2026-11-11",
+        "marketPhase": "intraday_snapshot",
+        "calendarVerified": true,
+        "breadth": {
+          "advancers": 3474,
+          "decliners": 1885,
+          "unchanged": 215,
+          "medianChangePct": 0.51
+        }
+      },
+      "HK": {
+        "marketPhase": "intraday_snapshot",
+        "breadth": {
+          "advancers": 1009,
+          "decliners": 1234,
+          "unchanged": 911,
+          "medianChangePct": 0
+        }
+      }
+    },
+    "coverage_reconciliation": [
+      {
+        "event": "央行2026Q3货币政策执行报告",
+        "first_available": "2026-11-11 21:56 CST",
+        "discovery": "财联社早报/金十早餐",
+        "original": "https://jrjgj.suzhou.gov.cn/szdfjr/jrsx/202611/b2c95086897b43028159675cd59d6c96.shtml（转引中国人民银行）",
+        "impact": "流动性、科技创新与六张网融资",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "发改委11月12日成品油价格调整",
+        "first_available": "2026-11-12",
+        "discovery": "国家发改委首页/盘前汇总",
+        "original": "https://www.ndrc.gov.cn/xwdt/xwfb/202611/t20261112_1408795.html",
+        "impact": "炼化、油气、航空与运输成本",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "中芯国际2026Q3业绩",
+        "first_available": "2026-11-12 17:40 CST",
+        "discovery": "东方财富晚间公告/巨潮索引",
+        "original": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1112/2026111200683_c.pdf",
+        "impact": "晶圆代工、半导体",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "华虹宏力3亿至5亿元回购并注销",
+        "first_available": "2026-11-12 evening",
+        "discovery": "东方财富晚间公告/财联社",
+        "original": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12703862&stockid=688347（公告全文镜像）",
+        "impact": "晶圆代工、回购稳市",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "天孚通信首次回购10万股",
+        "first_available": "2026-11-12 after close",
+        "discovery": "东方财富晚间公告/财联社",
+        "original": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12703932&stockid=300394（公告全文镜像）",
+        "impact": "光通信/CPO",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "中际旭创拟5000万元参与光合叁期基金",
+        "first_available": "2026-11-12 18:28 CST",
+        "discovery": "东方财富晚间公告",
+        "original": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=80195269&gather=1&id=12703867",
+        "impact": "AI投资但非主营订单",
+        "importance": "medium",
+        "included": false,
+        "reason": "金额与主营收入关联有限，不改变开盘判断"
+      },
+      {
+        "event": "海光信息取得不超过7.2亿元回购专项贷款承诺函",
+        "first_available": "2026-11-12 18:59 CST",
+        "discovery": "东方财富晚间公告/第一财经",
+        "original": "https://www.yicai.com/brief/103438547.html",
+        "impact": "国产算力与回购执行",
+        "importance": "medium",
+        "included": false,
+        "reason": "贷款承诺不等于新增回购执行，作为覆盖对账保留"
+      }
+    ],
+    "ranking_themes": [
+      {
+        "theme": "油气炼制/综合油气",
+        "rows": [
+          "油气炼制与销售 +2.13% rank1",
+          "综合油气 +1.47%",
+          "页岩油 +1.63%",
+          "天然气 +1.58%"
+        ],
+        "decision": "conditional_watch",
+        "candidate": "中国海油/中石化仅板块观察",
+        "business_evidence": "直接油气生产炼化敞口，原油收涨3.3%且中东供给风险升级",
+        "price_feedback": "未取得A/H盘前可靠个股报价",
+        "confirmation": "油价与A/H能源板块开盘同向且持续强于宽基",
+        "invalidation": "油价回落或A/H能源高开低走",
+        "status_reason": "主题与业务直接，但无公司级新增催化，不设股票卡"
+      },
+      {
+        "theme": "独立电力生产商",
+        "rows": [
+          "独立电力生产商 +1.66% rank2"
+        ],
+        "decision": "no_candidate",
+        "candidate": null,
+        "business_evidence": "美股主题可映射公用事业，但本轮未找到同时具公司级新增事件与可靠价格反馈的A/H候选",
+        "price_feedback": "不适用",
+        "confirmation": "A/H电力板块开盘强于宽基",
+        "invalidation": "板块弱于宽基",
+        "status_reason": "不以泛业务关联强凑候选"
+      },
+      {
+        "theme": "光通信/苹果链",
+        "rows": [
+          "光通信 +3.33% concept rank1",
+          "苹果概念 +1.86% concept rank2"
+        ],
+        "decision": "conditional_watch",
+        "candidate": "天孚通信 300394.SZ",
+        "business_evidence": "公司主营光器件，11月12日首次回购10万股并拟注销",
+        "price_feedback": "2026-11-12收140.34元，-2.58%；现金时段代表股AVGO +5.54%，本地价格反馈偏弱",
+        "confirmation": "今日开盘守住前收并强于通信设备板块",
+        "invalidation": "跌破140元并继续弱于板块",
+        "status_reason": "可靠业务和回购事件存在，但本地负反馈不支持看多"
+      },
+      {
+        "theme": "太阳能",
+        "rows": [
+          "太阳能 -5.25% industry bottom1"
+        ],
+        "decision": "avoid",
+        "candidate": null,
+        "business_evidence": "美股行业广度3涨19跌，板块显著下挫",
+        "price_feedback": "代表股ZEO逆势但行业整体负面，A/H未发现足以抵消的公司级新催化",
+        "confirmation": "仅在A/H光伏板块止跌并出现公司级订单后重评",
+        "invalidation": "继续弱于宽基",
+        "status_reason": "明确负面行业信号，正文列为回避方向，不包装多头"
+      },
+      {
+        "theme": "AI/半导体治理冲击",
+        "rows": [
+          "新闻：NVDA -4.3%、NBIS -16.8%、CRWV -6.9%",
+          "SOX -0.5%"
+        ],
+        "decision": "conditional_watch",
+        "candidate": "中芯国际 688981.SH/00981.HK、华虹宏力 688347.SH/01347.HK",
+        "business_evidence": "中芯Q3收入31.90亿美元、毛利率29.9%；华虹3亿至5亿元回购拟注销",
+        "price_feedback": "公告前A股中芯+2.20%、港股中芯-0.53%、华虹A +2.11%；公告后尚无A/H交易",
+        "confirmation": "业绩说明会/开盘后守住前收并相对半导体板块强势",
+        "invalidation": "开盘跌破前收且持续弱于板块",
+        "status_reason": "公司级事实可靠，但美股AI链负反馈与公告后价格缺失限制为条件关注"
+      }
+    ],
+    "overnight_quotes": {
+      "broad_proxies": {
+        "QQQ": "unavailable_current; stale/inconsistent search results rejected",
+        "SPY": "unavailable_current; stale/inconsistent search results rejected",
+        "DIA": "unavailable_current; stale/inconsistent search results rejected"
+      },
+      "representatives": {
+        "CLNE": "+5.32% at 2026-11-13 06:35 CST",
+        "ONEN": "+6.38% at 06:35",
+        "MERC": "+11.97% at 08:23",
+        "SKYQ": "+3.81% at 08:02",
+        "BTU": "+3.02% at 08:15",
+        "JAGU": "-1.55% at 07:55",
+        "AZUL": "-8.69% at 08:15",
+        "BETR": "+1.98% at 06:35",
+        "SVM": "-2.82% at 07:55",
+        "ZEO": "+13.29% at 06:35",
+        "AVGO": "+5.56% at 08:21",
+        "DVN": "+2.85% at 08:15",
+        "NAAS": "+1.82% at 06:35"
+      },
+      "retrieved_at": "2026-11-13T00:41:08.188Z"
+    },
+    "sources": {
+      "international": [
+        "https://www.reuters.com/business/nasdaq-futures-fall-nvidia-turmoil-rattles-ai-stocks-2026-11-12/",
+        "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-pumping-station-saudi-arabias-east-west-oil-2026-11-12/",
+        "https://www.reuters.com/business/energy/oil-prices-drop-more-than-1-hopes-iran-ukraine-peace-talks-pressure-markets-2026-11-12/"
+      ],
+      "discoveries": [
+        "https://xnews.jin10.com/details/234870",
+        "https://www.cls.cn/detail/2532958",
+        "https://finance.eastmoney.com/a/202611133930027889.html"
+      ]
     }
   },
   "pending_increment": [],
@@ -54,11 +262,12 @@
     "started_at": "2026-11-13T00:35:31.470Z",
     "lease_acquired_at": "2026-11-13T00:35:31.470Z",
     "rankings_refresh_request_at": "2026-11-13T00:36:19.875Z",
-    "research_at": "2026-11-13T00:38:16.110Z"
+    "research_at": "2026-11-13T00:38:16.110Z",
+    "generation_at": "2026-11-13T00:41:08.188Z"
   },
   "request_metrics": {
-    "requests": 12,
+    "requests": 36,
     "retries": 0,
-    "cache_hits": 3
+    "cache_hits": 5
   }
 }
