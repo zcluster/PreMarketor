@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261113-20261113012907",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-11-13T01:39:07.527Z",
-  "heartbeat_at": "2026-11-13T01:29:07.527Z",
+  "stage": "incremental_generation",
+  "lease_until": "2026-11-13T01:42:26.820Z",
+  "heartbeat_at": "2026-11-13T01:32:26.820Z",
   "source_cutoff": "2026-11-13T00:41:08.188Z",
   "main_base_sha": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -398,12 +398,84 @@
       "completed_at": "2026-11-13T01:00:32.196Z"
     },
     "incremental_review": {
-      "started_at": "2026-11-13T01:29:07.527Z",
       "source_cutoff": "2026-11-13T00:41:08.188Z",
-      "main_base_sha": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5"
-    }
+      "reviewed_at": "2026-11-13T01:32:26.820Z",
+      "new_or_omitted": [
+        {
+          "event": "A/H open price confirmation",
+          "first_available_at": "2026-11-13T01:30:18Z",
+          "source": "Eastmoney delayed public quote API",
+          "material": true,
+          "reason": "STAR50 and foundry names strengthened while Hong Kong broad market stayed weak; alters sector rotation and candidate status."
+        },
+        {
+          "event": "CSRC third swap-facility operation RMB100bn and strengthened buyback support",
+          "first_available_at": "2026-11-12T05:52:44Z",
+          "source": "https://www.csrc.gov.cn/csrc/c100028/c7668092/content.shtml",
+          "material": true,
+          "reason": "First-round omission; directly supports broad-market stability and buyback theme."
+        }
+      ],
+      "current_quotes": {
+        "quote_time": "2026-11-13T01:31:09Z",
+        "source": "https://push2delay.eastmoney.com/api/qt/ulist.np/get",
+        "indices": {
+          "Shanghai": "+0.11%",
+          "Shenzhen": "+0.26%",
+          "ChiNext": "+0.41%",
+          "STAR50": "+1.89%",
+          "HSI": "-0.72%",
+          "HSTECH": "-0.32%"
+        },
+        "stocks": {
+          "SMIC A": "+2.44%",
+          "SMIC H": "+4.23%",
+          "Hua Hong A": "+5.74%",
+          "Hua Hong H": "+4.22%",
+          "TFC Optical": "-2.86%",
+          "Zhongji Innolight": "+0.21%",
+          "Eoptolink": "+1.03%",
+          "Cambridge Technology": "-1.19%"
+        }
+      },
+      "diff_count": 2,
+      "entered_body_count": 2,
+      "material_change": true
+    },
+    "candidates_incremental": [
+      {
+        "theme": "semiconductor foundry",
+        "candidate": "SMIC 688981.SH/00981.HK",
+        "decision": "bullish_candidate",
+        "price_feedback": "A +2.44%, H +4.23% at 09:31 CST; both after results and above STAR50/HSTECH comparison",
+        "confirmation": "A/H remain above prior close and do not lose relative strength",
+        "invalidation": "both lines fall below prior close or guidance is downgraded"
+      },
+      {
+        "theme": "semiconductor foundry/buyback",
+        "candidate": "Hua Hong 688347.SH/01347.HK",
+        "decision": "bullish_candidate",
+        "price_feedback": "A +5.74%, H +4.22% at 09:31 CST after announcement; A outperforms STAR50 +1.89%, H outperforms HSTECH -0.32%",
+        "confirmation": "holds above prior close and remains stronger than foundry peers",
+        "invalidation": "gap fully reverses below prior close or approval path deteriorates"
+      },
+      {
+        "theme": "optical communication/buyback",
+        "candidate": "TFC Optical 300394.SZ",
+        "decision": "avoid",
+        "price_feedback": "-2.86% at 09:31 CST after -2.58% previous session; underperforms Zhongji +0.21% and Eoptolink +1.03%",
+        "confirmation": "only reassess after reclaiming prior close and sector-relative strength",
+        "invalidation": "continued weakness validates avoid"
+      }
+    ]
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "event": "A/H open confirmation and CSRC stabilisation policy",
+      "status": "absorbed_for_generation",
+      "material": true
+    }
+  ],
   "published_commit": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
   "candidate_commit": null,
   "error": null,
@@ -419,9 +491,10 @@
     "hard_validation_at": "2026-11-13T00:50:01.154Z",
     "incremental_review": {
       "started_at": "2026-11-13T01:29:07.527Z",
-      "requests": 0,
+      "requests": 8,
       "retries": 0,
-      "cache_hits": 0
+      "cache_hits": 0,
+      "research_completed_at": "2026-11-13T01:32:26.820Z"
     }
   },
   "request_metrics": {
