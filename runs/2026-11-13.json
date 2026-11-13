@@ -1,13 +1,13 @@
 {
   "date": "2026-11-13",
-  "run_id": "ah-20261113-20261113T083531",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "complete",
-  "lease_until": "2026-11-13T01:00:32.196Z",
-  "heartbeat_at": "2026-11-13T01:00:32.196Z",
+  "run_id": "ah-review-20261113-20261113012907",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-11-13T01:39:07.527Z",
+  "heartbeat_at": "2026-11-13T01:29:07.527Z",
   "source_cutoff": "2026-11-13T00:41:08.188Z",
-  "main_base_sha": "f995e7bca6da9fd2210dc62dcf08ede6381a3041",
+  "main_base_sha": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -389,6 +389,18 @@
       "ok": true,
       "errors": [],
       "validated_at": "2026-11-13T01:00:32.196Z"
+    },
+    "previous_published_run": {
+      "run_id": "ah-20261113-20261113T083531",
+      "published_commit": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
+      "status": "published",
+      "source_cutoff": "2026-11-13T00:41:08.188Z",
+      "completed_at": "2026-11-13T01:00:32.196Z"
+    },
+    "incremental_review": {
+      "started_at": "2026-11-13T01:29:07.527Z",
+      "source_cutoff": "2026-11-13T00:41:08.188Z",
+      "main_base_sha": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5"
     }
   },
   "pending_increment": [],
@@ -404,7 +416,13 @@
     "generation_complete_at": "2026-11-13T00:48:47.696Z",
     "translation_at": "2026-11-13T00:48:47.696Z",
     "translation_complete_at": "2026-11-13T00:50:01.154Z",
-    "hard_validation_at": "2026-11-13T00:50:01.154Z"
+    "hard_validation_at": "2026-11-13T00:50:01.154Z",
+    "incremental_review": {
+      "started_at": "2026-11-13T01:29:07.527Z",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 0
+    }
   },
   "request_metrics": {
     "requests": 36,
@@ -422,5 +440,6 @@
       "candidate_and_main_update_s": 177,
       "deployment_and_production_verification_s": 212
     }
-  }
+  },
+  "started_at": "2026-11-13T01:29:07.527Z"
 }
