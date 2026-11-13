@@ -2,10 +2,10 @@
   "date": "2026-11-13",
   "run_id": "ah-review-20261113-20261113012907",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-11-13T01:49:54.732Z",
-  "heartbeat_at": "2026-11-13T01:39:54.732Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-13T01:44:59.835Z",
   "source_cutoff": "2026-11-13T00:41:08.188Z",
   "main_base_sha": "48bb6fd18fa2f37b74969e0bddb4f85333f4ebd5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -535,6 +535,67 @@
       "commit_sha": "3f59e2e9808775c66061ea98d68bfff488297121",
       "force": false,
       "success": true
+    },
+    "remote_readback_incremental": {
+      "verified_at": "2026-11-13T01:44:59.835Z",
+      "main": "3f59e2e9808775c66061ea98d68bfff488297121",
+      "files": [
+        "index.html",
+        "history/data/2026-11-13.json",
+        "history/manifest.json"
+      ],
+      "blobs": {
+        "index": "61e84c649a7602a94cac02c706e88b6ea896550f",
+        "day": "0ab2ff9f9579a26f89c1a77aa8ae64fe36716443",
+        "manifest": "d0b6637fc0db5d43199e0106ff79ff8d976ea2f3"
+      },
+      "exact": {
+        "index": true,
+        "day": true,
+        "manifest": true
+      },
+      "only_allowed_files": true,
+      "us_content_preserved": true,
+      "ok": true
+    },
+    "production_verification_incremental": {
+      "verified_at": "2026-11-13T01:44:59.835Z",
+      "deployment": {
+        "id": "dpl_RNGfBSsB1kUPHDgWtZoiQ79EPkFm",
+        "state": "READY",
+        "target": "production",
+        "git_sha": "3f59e2e9808775c66061ea98d68bfff488297121"
+      },
+      "endpoints": [
+        {
+          "url": "https://premarketor.com/",
+          "status": 200,
+          "exact_commit_content": true
+        },
+        {
+          "url": "https://premarketor.com/history/manifest.json",
+          "status": 200,
+          "exact_commit_content": true
+        },
+        {
+          "url": "https://premarketor.com/history/data/2026-11-13.json",
+          "status": 200,
+          "exact_commit_content": true
+        },
+        {
+          "url": "https://premarketor.com/history/?date=2026-11-13",
+          "status": 200,
+          "rendered": true
+        }
+      ],
+      "title": "科创与晶圆代工开盘确认，港股仍弱，天孚回购遭负反馈",
+      "publication_time": "2026-11-13 09:31 CST",
+      "bilingual": true,
+      "major_news_each_language": 11,
+      "overnight_items_each_language": 3,
+      "stock_cards_each_language": 3,
+      "browser_visible": true,
+      "ok": true
     }
   },
   "pending_increment": [],
@@ -584,14 +645,26 @@
       "status": "main_updated",
       "requests": 3,
       "retries": 0
+    },
+    "deployment_incremental": {
+      "completed_at": "2026-11-13T01:44:59.835Z",
+      "status": "READY",
+      "requests": 6,
+      "retries": 0
+    },
+    "production_verification_incremental": {
+      "completed_at": "2026-11-13T01:44:59.835Z",
+      "status": "passed",
+      "requests": 5,
+      "retries": 0
     }
   },
   "request_metrics": {
-    "requests": 36,
+    "requests": 47,
     "retries": 0,
     "cache_hits": 5
   },
-  "finished_at": "2026-11-13T01:00:32.196Z",
+  "finished_at": "2026-11-13T01:44:59.835Z",
   "timings": {
     "finished_at": "2026-11-13T01:00:32.196Z",
     "total_seconds": 1501,
