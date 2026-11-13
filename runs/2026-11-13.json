@@ -3,11 +3,11 @@
   "run_id": "ah-20261113-20261113T083531",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rankings_refresh_request",
-  "lease_until": "2026-11-13T00:46:19.875Z",
-  "heartbeat_at": "2026-11-13T00:36:19.875Z",
+  "stage": "research",
+  "lease_until": "2026-11-13T00:48:16.110Z",
+  "heartbeat_at": "2026-11-13T00:38:16.110Z",
   "source_cutoff": null,
-  "main_base_sha": "eb4c49f62dadf7167dc3aaf17e86766d234d4f90",
+  "main_base_sha": "f995e7bca6da9fd2210dc62dcf08ede6381a3041",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -24,6 +24,26 @@
       "expected_session_date": "2026-11-12",
       "gate_expected_session_date": "2026-11-11",
       "ready_for_today": false
+    },
+    "rankings_refresh": {
+      "request": {
+        "request_id": "ah-20261113-20261113T083531",
+        "requested_at": "2026-11-13T00:36:54.599Z",
+        "expected_session_date": "2026-11-12",
+        "requester": "AH",
+        "base_main": "eb4c49f62dadf7167dc3aaf17e86766d234d4f90",
+        "base_tree": "1208a260a28059a2770808cd2ae6d3acd29b22d2",
+        "refresh_parent": "cca82fff75408666e6e984091cc8d6df88ba165d",
+        "blob": "6084d14d5a62309b46d43d55682e35d59d3d84dc",
+        "tree": "d666b41f8505dd3810bad131eda25e190c1c2aff",
+        "commit": "28a8e3c9a26bae21fb740a97e1f794f1253ed80d"
+      },
+      "main_commit": "f995e7bca6da9fd2210dc62dcf08ede6381a3041",
+      "snapshot_sha": "fcf85cd5f4e75de30d14d0b29ed95e5f9ad4a0f4",
+      "attemptedAt": "2026-11-13T08:37:28+08:00",
+      "expected_session_date": "2026-11-12",
+      "request_id": "ah-20261113-20261113T083531",
+      "ready": true
     }
   },
   "pending_increment": [],
@@ -33,11 +53,12 @@
   "stage_timings": {
     "started_at": "2026-11-13T00:35:31.470Z",
     "lease_acquired_at": "2026-11-13T00:35:31.470Z",
-    "rankings_refresh_request_at": "2026-11-13T00:36:19.875Z"
+    "rankings_refresh_request_at": "2026-11-13T00:36:19.875Z",
+    "research_at": "2026-11-13T00:38:16.110Z"
   },
   "request_metrics": {
-    "requests": 0,
+    "requests": 12,
     "retries": 0,
-    "cache_hits": 0
+    "cache_hits": 3
   }
 }
