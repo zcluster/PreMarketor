@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-16",
+  "run_id": "ah-20261116-20261116T002950Z",
+  "owner": "发布 MarketAhead A/H 早报",
+  "status": "running",
+  "stage": "rankings_check",
+  "lease_until": "2026-11-16T00:39:50.454Z",
+  "heartbeat_at": "2026-11-16T00:29:50.454Z",
+  "source_cutoff": null,
+  "main_base_sha": "8f9d06d883dfc5e30df2b37551b124ba10ce717d",
+  "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+  "evidence": {
+    "rules": {
+      "sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "read_at": "2026-11-16T00:29:50.454Z"
+    },
+    "state_coordination": {
+      "previous_head": "c28f2aec88fc6fbf4e8d185d190e1f3992b37b77",
+      "today_file": "404_authenticated"
+    },
+    "sessions": {
+      "us_expected": "2026-11-13",
+      "A_H_date": "2026-11-16"
+    },
+    "rankings_initial": {
+      "snapshot_sha": "d7c8325a5bfae05b3df0db81cdabed512cd19d1f",
+      "attemptedAt": "2026-11-14T09:27:45+08:00",
+      "expected_session_date": "2026-11-13",
+      "ready": true,
+      "errors": []
+    },
+    "akshare_initial": {
+      "snapshot_sha": "3813a85aea4da52780ae4c9419f58e83c8e0de84",
+      "fetchedAt": "2026-11-11T14:23:09+08:00",
+      "status": "ok",
+      "analysisReady": true
+    }
+  },
+  "pending_increment": null,
+  "published_commit": null,
+  "error": null,
+  "stage_timings": {
+    "started_at": "2026-11-16T00:29:50.454Z",
+    "rules_and_baseline_started_at": "2026-11-16T00:29:50.454Z"
+  }
+}
