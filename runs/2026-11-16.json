@@ -1,13 +1,13 @@
 {
   "date": "2026-11-16",
-  "run_id": "ah-20261116-20261116T002950Z",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": null,
-  "heartbeat_at": "2026-11-16T00:45:43.917Z",
+  "run_id": "ah-review-20261116-20261116014449",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-11-16T01:54:49.863Z",
+  "heartbeat_at": "2026-11-16T01:44:49.863Z",
   "source_cutoff": "2026-11-16T00:40:57.257Z",
-  "main_base_sha": "8f9d06d883dfc5e30df2b37551b124ba10ce717d",
+  "main_base_sha": "307076f3ffe3085453932864bc9d8d3f21eaa393",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rules": {
@@ -156,7 +156,15 @@
         "confirmation": "Reassess only after reclaiming prior close and sustained peer outperformance",
         "invalidation": "Further break of Friday low or wider underperformance strengthens avoid"
       }
-    ]
+    ],
+    "previous_published_run": {
+      "run_id": "ah-20261116-20261116T002950Z",
+      "owner": "发布 MarketAhead A/H 早报",
+      "status": "published",
+      "published_commit": "307076f3ffe3085453932864bc9d8d3f21eaa393",
+      "completed_at": "2026-11-16T00:45:43.917Z",
+      "source_cutoff": "2026-11-16T00:40:57.257Z"
+    }
   },
   "pending_increment": [],
   "published_commit": "307076f3ffe3085453932864bc9d8d3f21eaa393",
@@ -168,7 +176,14 @@
     "commit_completed_at": "2026-11-16T00:42:42.028Z",
     "deployment_verified_at": "2026-11-16T00:45:43.917Z",
     "completed_at": "2026-11-16T00:45:43.917Z",
-    "total_seconds": 953
+    "total_seconds": 953,
+    "incremental_review": {
+      "started_at": "2026-11-16T01:44:49.863Z",
+      "status": "running",
+      "requests": 0,
+      "retries": 0,
+      "cache_hits": 0
+    }
   },
   "decisions": [
     {
@@ -344,5 +359,8 @@
     "runtime_rankings_refresh": 0,
     "production_browser_pages": 4,
     "retries": 0
-  }
+  },
+  "candidate_commit": null,
+  "started_at": "2026-11-16T01:44:49.863Z",
+  "finished_at": null
 }
