@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261116-20261116014449",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "candidate_ready",
-  "lease_until": "2026-11-16T02:04:12.381Z",
-  "heartbeat_at": "2026-11-16T01:54:12.381Z",
+  "stage": "deployment_verification",
+  "lease_until": "2026-11-16T02:05:03.057Z",
+  "heartbeat_at": "2026-11-16T01:55:03.057Z",
   "source_cutoff": "2026-11-16T00:40:57.257Z",
   "main_base_sha": "307076f3ffe3085453932864bc9d8d3f21eaa393",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -247,7 +247,7 @@
       "action": "update A/H body, archive, manifest; preserve rankings and US"
     }
   ],
-  "published_commit": "307076f3ffe3085453932864bc9d8d3f21eaa393",
+  "published_commit": "85eaaa501ece87f7b2522c192558604a875a6e07",
   "error": null,
   "stage_timings": {
     "started_at": "2026-11-16T00:29:50.454Z",
@@ -259,13 +259,14 @@
     "total_seconds": 953,
     "incremental_review": {
       "started_at": "2026-11-16T01:44:49.863Z",
-      "status": "candidate_ready",
+      "status": "deployment_verification",
       "requests": 6,
       "retries": 0,
       "cache_hits": 2,
       "research_completed_at": "2026-11-16T01:48:56.872Z",
       "generation_completed_at": "2026-11-16T01:54:12.381Z",
-      "validation_completed_at": "2026-11-16T01:54:12.381Z"
+      "validation_completed_at": "2026-11-16T01:54:12.381Z",
+      "commit_completed_at": "2026-11-16T01:55:03.057Z"
     }
   },
   "decisions": [
@@ -372,10 +373,10 @@
     }
   },
   "main_publish": {
-    "commit": "307076f3ffe3085453932864bc9d8d3f21eaa393",
-    "tree": "277f9ef4165b9b0be57e60534bc3b83dcba202c6",
-    "parent": "8f9d06d883dfc5e30df2b37551b124ba10ce717d",
-    "updated_at": "2026-11-16 08:41 CST",
+    "commit": "85eaaa501ece87f7b2522c192558604a875a6e07",
+    "tree": "227904aa302b78b0d8ae4a252c8ed7cb93a35e28",
+    "parent": "307076f3ffe3085453932864bc9d8d3f21eaa393",
+    "updated_at": "2026-11-16 09:46 CST",
     "ref_update": "success",
     "files": [
       "index.html",
@@ -445,14 +446,16 @@
     "retries": 0
   },
   "candidate_commit": {
-    "status": "ready",
+    "status": "published",
     "parent": "307076f3ffe3085453932864bc9d8d3f21eaa393",
     "blobs": {
       "index": "72e332b986fe0b95f2e7b5589fe6f3aa48ce4abd",
       "day": "98dc56d495cbb0c6feb04ce918bca6200c66c286",
       "manifest": "140039c119abe4cadf17392e4972599faee42d7d"
     },
-    "updated_at": "2026-11-16 09:46 CST"
+    "updated_at": "2026-11-16 09:46 CST",
+    "commit": "85eaaa501ece87f7b2522c192558604a875a6e07",
+    "tree": "227904aa302b78b0d8ae4a252c8ed7cb93a35e28"
   },
   "started_at": "2026-11-16T01:44:49.863Z",
   "finished_at": null
