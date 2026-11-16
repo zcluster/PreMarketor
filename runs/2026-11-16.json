@@ -3,10 +3,10 @@
   "run_id": "ah-20261116-20261116T002950Z",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
-  "lease_until": "2026-11-16T00:43:52.409Z",
-  "heartbeat_at": "2026-11-16T00:33:52.409Z",
-  "source_cutoff": null,
+  "stage": "validation",
+  "lease_until": "2026-11-16T00:50:57.257Z",
+  "heartbeat_at": "2026-11-16T00:40:57.257Z",
+  "source_cutoff": "2026-11-16T00:40:57.257Z",
   "main_base_sha": "8f9d06d883dfc5e30df2b37551b124ba10ce717d",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -108,30 +108,164 @@
       "sp500": "+0.40%",
       "nasdaq100": "+0.80%",
       "representative_stock_overnight": "unavailable; no new runtime trade, so confirmation/divergence not classified"
-    }
+    },
+    "hk_review": {
+      "source": "HKEX latest/results announcement listings",
+      "url": "https://www1.hkexnews.hk/search/predefineddoc.xhtml?predefineddocuments=7",
+      "status": "reviewed",
+      "result": "No material Hang Seng Tech issuer event surfaced for inclusion; no exhaustive ledger required."
+    },
+    "candidates": [
+      {
+        "name": "源杰科技",
+        "ticker": "688498.SH",
+        "decision": "conditional_watch",
+        "catalyst": "RMB1.744bn high-power laser-chip order",
+        "source": "https://static.cninfo.com.cn/finalpage/2026-11-14/1225671575.PDF",
+        "price_feedback": "2026-11-13 close RMB673.10, -11.76%, pre-announcement; post-event quote unavailable",
+        "confirmation": "Hold prior close and outperform semiconductor/communication equipment after filing",
+        "invalidation": "Break prior close or order amendment/termination"
+      },
+      {
+        "name": "新宙邦",
+        "ticker": "300037.SZ",
+        "decision": "conditional_watch",
+        "catalyst": "Expected 600kt electrolyte supply 2026-2030",
+        "source": "https://static.cninfo.com.cn/finalpage/2026-11-13/1225670670.PDF",
+        "price_feedback": "2026-11-13 close RMB51.69, -3.71%; no post-disclosure confirmation",
+        "confirmation": "Hold prior close and outperform battery materials; written orders executable",
+        "invalidation": "Break prior close while lagging sector or contract terms deteriorate"
+      },
+      {
+        "name": "TCL中环",
+        "ticker": "002129.SZ",
+        "decision": "conditional_watch",
+        "catalyst": "Proposed acquisition of 65.80% of Zhonghuan Advanced",
+        "source": "https://static.cninfo.com.cn/finalpage/2026-11-14/1225672061.PDF",
+        "price_feedback": "2026-10-30 pre-suspension close RMB9.38, +1.96%; stale and pre-event, resumption quote unknown",
+        "confirmation": "Hold prior close and outperform semiconductor materials after resumption",
+        "invalidation": "Break prior close or adverse valuation/approval/structure change"
+      },
+      {
+        "name": "天孚通信",
+        "ticker": "300394.SZ",
+        "decision": "avoid",
+        "catalyst": "Additional share repurchase for cancellation",
+        "source": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=80201096&gather=1&id=12707040",
+        "price_feedback": "2026-11-13 close RMB124.99, -10.94%; clear negative feedback",
+        "confirmation": "Reassess only after reclaiming prior close and sustained peer outperformance",
+        "invalidation": "Further break of Friday low or wider underperformance strengthens avoid"
+      }
+    ]
   },
-  "pending_increment": null,
+  "pending_increment": [],
   "published_commit": null,
   "error": null,
   "stage_timings": {
     "started_at": "2026-11-16T00:29:50.454Z",
-    "rules_and_baseline_started_at": "2026-11-16T00:29:50.454Z"
+    "rules_and_baseline_started_at": "2026-11-16T00:29:50.454Z",
+    "validation_completed_at": "2026-11-16T00:40:57.257Z"
   },
   "decisions": [
     {
-      "theme": "Broadcasting / advertising / social-media leadership",
-      "status": "no_candidate",
-      "reason": "No directly verified A/H company-specific catalyst; no forced mapping."
+      "theme": "Broadcasting and advertising (industry top two)",
+      "ranking_rows": [
+        "Broadcasting +4.50%",
+        "Advertising Agencies +3.50%"
+      ],
+      "decision": "no_candidate",
+      "reason": "No directly verified A/H company-specific catalyst; no forced mapping.",
+      "confirmation": "A/H media leader plus company event and relative strength",
+      "invalidation": "No direct business evidence"
     },
     {
-      "theme": "US semiconductor, communications equipment and computer hardware weakness",
-      "status": "conditional_or_avoid",
-      "reason": "Maps to A/H tech, but Friday negative price feedback and no post-weekend confirmation require conditional/avoid framing."
+      "theme": "Social media (concept #1)",
+      "ranking_rows": [
+        "Social Media +2.85%"
+      ],
+      "decision": "no_candidate",
+      "reason": "Only indirect A/H sentiment mapping; no current company catalyst.",
+      "confirmation": "Direct issuer event and post-event price strength",
+      "invalidation": "Broad theme fades or local names lag"
     },
     {
-      "theme": "Energy-storage policy",
-      "status": "conditional",
-      "reason": "Official policy catalyst; capacity guidance also warns against blind expansion."
+      "theme": "Sports (concept #2)",
+      "ranking_rows": [
+        "Sports +1.28%"
+      ],
+      "decision": "no_candidate",
+      "reason": "No verified direct A/H company event or material business mapping.",
+      "confirmation": "Direct issuer evidence plus price confirmation",
+      "invalidation": "No direct evidence"
+    },
+    {
+      "theme": "Semiconductors / communication equipment / computer hardware weakness",
+      "ranking_rows": [
+        "Semiconductors -3.19%",
+        "Communication Equipment -4.25%",
+        "Computer Hardware -4.75%"
+      ],
+      "decision": "conditional_watch",
+      "candidates": [
+        "源杰科技",
+        "TCL中环"
+      ],
+      "reason": "Direct company events exist but post-event prices are unavailable and Friday local breadth was negative.",
+      "confirmation": "Post-event hold above prior close and sector outperformance",
+      "invalidation": "Break prior close or continued sector underperformance"
+    },
+    {
+      "theme": "Optical communication negative feedback",
+      "ranking_rows": [
+        "Communication Equipment -4.25%"
+      ],
+      "decision": "avoid",
+      "candidates": [
+        "天孚通信"
+      ],
+      "reason": "Friday -10.94% is explicit negative price feedback despite buybacks.",
+      "confirmation": "Reclaim prior close and sustained peer outperformance",
+      "invalidation": "Further downside strengthens avoid"
     }
-  ]
+  ],
+  "validation": {
+    "passed": true,
+    "checked_at": "2026-11-16T00:40:57.257Z",
+    "checks": {
+      "date": true,
+      "marker_counts": true,
+      "protected_us": true,
+      "outside_markers": true,
+      "root": true,
+      "no_forbidden": true,
+      "major_news": true,
+      "overnight": true,
+      "cards": true,
+      "card_parts": true,
+      "badges": true,
+      "keywords": true,
+      "modules": true,
+      "order": true,
+      "policies": true,
+      "domestic_industry": true,
+      "company_events": true,
+      "negative_not_bullish": true,
+      "quote_honesty": true,
+      "history": true,
+      "render_sim": true,
+      "manifest": true,
+      "no_history_record": true,
+      "rank_rows": true,
+      "rank_gate": true,
+      "rank_values": true,
+      "title_clean": true,
+      "fresh_ak_degraded": true
+    },
+    "allowed_files": [
+      "index.html",
+      "history/data/2026-11-16.json",
+      "history/manifest.json"
+    ],
+    "main_rechecked_sha": "8f9d06d883dfc5e30df2b37551b124ba10ce717d"
+  }
 }
