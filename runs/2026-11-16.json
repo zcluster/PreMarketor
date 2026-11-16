@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261116-20261116014449",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-11-16T01:54:49.863Z",
-  "heartbeat_at": "2026-11-16T01:44:49.863Z",
+  "stage": "incremental_generation",
+  "lease_until": "2026-11-16T01:58:56.872Z",
+  "heartbeat_at": "2026-11-16T01:48:56.872Z",
   "source_cutoff": "2026-11-16T00:40:57.257Z",
   "main_base_sha": "307076f3ffe3085453932864bc9d8d3f21eaa393",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -164,9 +164,89 @@
       "published_commit": "307076f3ffe3085453932864bc9d8d3f21eaa393",
       "completed_at": "2026-11-16T00:45:43.917Z",
       "source_cutoff": "2026-11-16T00:40:57.257Z"
-    }
+    },
+    "incremental_review": {
+      "source_cutoff": "2026-11-16T00:40:57.257Z",
+      "reviewed_at": "2026-11-16T01:48:56.872Z",
+      "material_change": true,
+      "no_new_post_cutoff_policy_or_announcement": true,
+      "news_review_note": "Focused post-cutoff policy, exchange announcement and HKEX checks found no additional material item beyond the first-round body.",
+      "current_quotes": {
+        "source": "Eastmoney delayed public quote API",
+        "retrieved_at": "2026-11-16T01:46:15+00:00",
+        "indices": {
+          "shanghai": "-0.94%",
+          "shenzhen": "-1.60%",
+          "chinext": "-2.50%",
+          "star50": "-3.10%",
+          "hsi": "+0.64%",
+          "hstech": "unavailable"
+        },
+        "candidates": {
+          "源杰科技": "RMB661.98, -1.65%",
+          "新宙邦": "RMB51.46, -0.44%",
+          "TCL中环": "RMB9.76, +4.05%",
+          "天孚通信": "RMB117.68, -5.85%"
+        },
+        "peers": {
+          "隆基绿能": "-1.97%",
+          "阳光电源": "-1.61%",
+          "晶科能源": "-0.76%",
+          "晶澳科技": "-2.87%",
+          "中际旭创": "-6.20%",
+          "新易盛": "-5.86%",
+          "胜宏科技": "-5.31%",
+          "光库科技": "-5.18%",
+          "海光信息": "-4.81%",
+          "长川科技": "-3.61%"
+        }
+      },
+      "runtime_futures_refresh": {
+        "attempted_at": "2026-11-16T01:48:56.872Z",
+        "result": "No independently timestamped snapshot within the required 30-minute window could be confirmed; current futures direction is explicitly treated as unavailable rather than reused."
+      },
+      "entered_body_count": 1,
+      "diff_count": 1,
+      "material_reason": "A-share growth/technology opening weakness materially deepened while Hang Seng diverged higher; TCL Zhonghuan's +4.05% resumption move against falling solar peers supplies the required post-catalyst confirmation."
+    },
+    "candidates_incremental": [
+      {
+        "name": "源杰科技",
+        "ticker": "688498.SH",
+        "decision": "conditional_watch",
+        "price_feedback": "09:45 CST RMB661.98, -1.65%; below prior close but outperforming STAR50 -3.10%",
+        "reason": "Event-backed but no absolute reclaim; keep conditional."
+      },
+      {
+        "name": "新宙邦",
+        "ticker": "300037.SZ",
+        "decision": "conditional_watch",
+        "price_feedback": "09:45 CST RMB51.46, -0.44%; resilient versus ChiNext -2.50% but below prior close",
+        "reason": "Relative resilience without absolute confirmation; keep conditional."
+      },
+      {
+        "name": "TCL中环",
+        "ticker": "002129.SZ",
+        "decision": "bullish_candidate",
+        "price_feedback": "09:45 CST RMB9.76, +4.05% versus prior RMB9.38; solar peers -0.76% to -2.87%",
+        "reason": "Post-event resumption strength and clear sector-relative outperformance confirm the catalyst."
+      },
+      {
+        "name": "天孚通信",
+        "ticker": "300394.SZ",
+        "decision": "avoid",
+        "price_feedback": "09:45 CST RMB117.68, -5.85%; CPO peers also about -5% to -6%",
+        "reason": "Negative feedback persists; buyback cannot be packaged as bullish."
+      }
+    ]
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "type": "opening_price_confirmation",
+      "material": true,
+      "action": "update A/H body, archive, manifest; preserve rankings and US"
+    }
+  ],
   "published_commit": "307076f3ffe3085453932864bc9d8d3f21eaa393",
   "error": null,
   "stage_timings": {
@@ -179,10 +259,11 @@
     "total_seconds": 953,
     "incremental_review": {
       "started_at": "2026-11-16T01:44:49.863Z",
-      "status": "running",
-      "requests": 0,
+      "status": "generation",
+      "requests": 6,
       "retries": 0,
-      "cache_hits": 0
+      "cache_hits": 2,
+      "research_completed_at": "2026-11-16T01:48:56.872Z"
     }
   },
   "decisions": [
