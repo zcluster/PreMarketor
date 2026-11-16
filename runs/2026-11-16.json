@@ -2,10 +2,10 @@
   "date": "2026-11-16",
   "run_id": "ah-20261116-20261116T002950Z",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-11-16T00:52:42.028Z",
-  "heartbeat_at": "2026-11-16T00:42:42.028Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-16T00:45:43.917Z",
   "source_cutoff": "2026-11-16T00:40:57.257Z",
   "main_base_sha": "8f9d06d883dfc5e30df2b37551b124ba10ce717d",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -165,7 +165,10 @@
     "started_at": "2026-11-16T00:29:50.454Z",
     "rules_and_baseline_started_at": "2026-11-16T00:29:50.454Z",
     "validation_completed_at": "2026-11-16T00:40:57.257Z",
-    "commit_completed_at": "2026-11-16T00:42:42.028Z"
+    "commit_completed_at": "2026-11-16T00:42:42.028Z",
+    "deployment_verified_at": "2026-11-16T00:45:43.917Z",
+    "completed_at": "2026-11-16T00:45:43.917Z",
+    "total_seconds": 953
   },
   "decisions": [
     {
@@ -280,5 +283,66 @@
       "history/data/2026-11-16.json",
       "history/manifest.json"
     ]
+  },
+  "production_verification": {
+    "checked_at": "2026-11-16T00:45:43.917Z",
+    "homepage": {
+      "url": "https://premarketor.com/",
+      "status": "ok",
+      "language_modes": [
+        "zh-CN",
+        "en"
+      ],
+      "ah_time": "2026-11-16 08:41 CST",
+      "cards": 4,
+      "major_news": 12,
+      "overnight_items": 3,
+      "industry_rows": 10,
+      "concept_rows": 5,
+      "us_brief_preserved": true
+    },
+    "archive_page": {
+      "url": "https://premarketor.com/history/?date=2026-11-16",
+      "status": "ok",
+      "empty_state": false,
+      "cards": 4,
+      "major_news": 12,
+      "overnight_items": 3
+    },
+    "archive_json": {
+      "url": "https://premarketor.com/history/data/2026-11-16.json",
+      "status": "ok",
+      "date": "2026-11-16",
+      "entries": 1,
+      "ah_type": "AH",
+      "zh_root": true,
+      "en_root": true,
+      "zh_cards": 4,
+      "en_cards": 4
+    },
+    "manifest": {
+      "url": "https://premarketor.com/history/manifest.json",
+      "status": "ok",
+      "generated_at": "2026-11-16 08:41 CST",
+      "today_types": [
+        "AH"
+      ],
+      "prior_history_preserved": true
+    },
+    "github_readback": {
+      "index_sha": "f74cc5cfdcdecac421ef08442c069bdc92b5845d",
+      "history_sha": "775c18f3629f566361a8a2b5795eb24b15a6304a",
+      "manifest_sha": "a89d9da087108297b8c61fef3d76f038a2ae2532",
+      "index_equal": true,
+      "history_equal": true,
+      "manifest_equal": true
+    }
+  },
+  "request_counts": {
+    "github_connector": "multiple batched reads/writes with CAS",
+    "web_research": "focused primary/current searches",
+    "runtime_rankings_refresh": 0,
+    "production_browser_pages": 4,
+    "retries": 0
   }
 }
