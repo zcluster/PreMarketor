@@ -3,9 +3,9 @@
   "run_id": "ah-review-20261116-20261116014449",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "incremental_generation",
-  "lease_until": "2026-11-16T01:58:56.872Z",
-  "heartbeat_at": "2026-11-16T01:48:56.872Z",
+  "stage": "candidate_ready",
+  "lease_until": "2026-11-16T02:04:12.381Z",
+  "heartbeat_at": "2026-11-16T01:54:12.381Z",
   "source_cutoff": "2026-11-16T00:40:57.257Z",
   "main_base_sha": "307076f3ffe3085453932864bc9d8d3f21eaa393",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -259,11 +259,13 @@
     "total_seconds": 953,
     "incremental_review": {
       "started_at": "2026-11-16T01:44:49.863Z",
-      "status": "generation",
+      "status": "candidate_ready",
       "requests": 6,
       "retries": 0,
       "cache_hits": 2,
-      "research_completed_at": "2026-11-16T01:48:56.872Z"
+      "research_completed_at": "2026-11-16T01:48:56.872Z",
+      "generation_completed_at": "2026-11-16T01:54:12.381Z",
+      "validation_completed_at": "2026-11-16T01:54:12.381Z"
     }
   },
   "decisions": [
@@ -330,7 +332,7 @@
   ],
   "validation": {
     "passed": true,
-    "checked_at": "2026-11-16T00:40:57.257Z",
+    "checked_at": "2026-11-16T01:54:12.381Z",
     "checks": {
       "date": true,
       "marker_counts": true,
@@ -338,35 +340,36 @@
       "outside_markers": true,
       "root": true,
       "no_forbidden": true,
-      "major_news": true,
-      "overnight": true,
-      "cards": true,
+      "major_news_12": true,
+      "overnight_3": true,
+      "cards_4": true,
       "card_parts": true,
       "badges": true,
-      "keywords": true,
-      "modules": true,
-      "order": true,
-      "policies": true,
-      "domestic_industry": true,
-      "company_events": true,
+      "keywords_12": true,
+      "module_class_sequence": true,
       "negative_not_bullish": true,
       "quote_honesty": true,
       "history": true,
-      "render_sim": true,
       "manifest": true,
       "no_history_record": true,
-      "rank_rows": true,
+      "rank_rows_15": true,
       "rank_gate": true,
-      "rank_values": true,
       "title_clean": true,
-      "fresh_ak_degraded": true
+      "fresh_ak_degraded": true,
+      "hstech_unavailable_disclosed": true,
+      "futures_staleness_not_reused": true
     },
     "allowed_files": [
       "index.html",
       "history/data/2026-11-16.json",
       "history/manifest.json"
     ],
-    "main_rechecked_sha": "8f9d06d883dfc5e30df2b37551b124ba10ce717d"
+    "main_rechecked_sha": "307076f3ffe3085453932864bc9d8d3f21eaa393",
+    "candidate_blobs": {
+      "index": "72e332b986fe0b95f2e7b5589fe6f3aa48ce4abd",
+      "day": "98dc56d495cbb0c6feb04ce918bca6200c66c286",
+      "manifest": "140039c119abe4cadf17392e4972599faee42d7d"
+    }
   },
   "main_publish": {
     "commit": "307076f3ffe3085453932864bc9d8d3f21eaa393",
@@ -441,7 +444,16 @@
     "production_browser_pages": 4,
     "retries": 0
   },
-  "candidate_commit": null,
+  "candidate_commit": {
+    "status": "ready",
+    "parent": "307076f3ffe3085453932864bc9d8d3f21eaa393",
+    "blobs": {
+      "index": "72e332b986fe0b95f2e7b5589fe6f3aa48ce4abd",
+      "day": "98dc56d495cbb0c6feb04ce918bca6200c66c286",
+      "manifest": "140039c119abe4cadf17392e4972599faee42d7d"
+    },
+    "updated_at": "2026-11-16 09:46 CST"
+  },
   "started_at": "2026-11-16T01:44:49.863Z",
   "finished_at": null
 }
