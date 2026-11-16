@@ -3,9 +3,9 @@
   "run_id": "ah-20261116-20261116T002950Z",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rankings_check",
-  "lease_until": "2026-11-16T00:39:50.454Z",
-  "heartbeat_at": "2026-11-16T00:29:50.454Z",
+  "stage": "research",
+  "lease_until": "2026-11-16T00:43:52.409Z",
+  "heartbeat_at": "2026-11-16T00:33:52.409Z",
   "source_cutoff": null,
   "main_base_sha": "8f9d06d883dfc5e30df2b37551b124ba10ce717d",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -34,6 +34,80 @@
       "fetchedAt": "2026-11-11T14:23:09+08:00",
       "status": "ok",
       "analysisReady": true
+    },
+    "rankings": {
+      "status": "ready",
+      "provider": "Moomoo",
+      "fetched_at": "2026-11-14T09:27:45+08:00",
+      "expected_session_date": "2026-11-13",
+      "publication_gate_ready": true,
+      "note": "Fresh weekend snapshot covering the latest completed US cash session."
+    },
+    "akshare": {
+      "status": "degraded_stale",
+      "fetched_at": "2026-11-11T14:23:09+08:00",
+      "note": "Historical partial snapshot only; not used as 2026-11-13/16 current breadth."
+    },
+    "coverage": [
+      {
+        "source": "CLS A-share announcement feed",
+        "url": "https://api3.cls.cn/share/subject/1555?os=CailianpressWeb&sv=867",
+        "status": "reviewed"
+      },
+      {
+        "source": "Eastmoney four-paper summary",
+        "url": "https://finance.eastmoney.com/a/202611163931537133.html",
+        "status": "reviewed"
+      },
+      {
+        "source": "Jin10 current A/H feed",
+        "status": "attempted_unavailable",
+        "note": "No current 2026-11-16 result retrievable; not used."
+      }
+    ],
+    "primary_sources": [
+      {
+        "subject": "NDRC/NEA new energy storage action plan",
+        "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202611/t20261113_1408810.html"
+      },
+      {
+        "subject": "MOFCOM China-US economic and trade consultation",
+        "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_6d9023bbcdd04810a810ef2059ecad2f.html"
+      },
+      {
+        "subject": "Yuanjie Technology major order",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-11-14/1225671575.PDF"
+      },
+      {
+        "subject": "Capchem supply agreement",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-11-13/1225670670.PDF"
+      },
+      {
+        "subject": "ST Quanwei project exits",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-11-14/1225672005.PDF"
+      }
+    ],
+    "market_sources": [
+      {
+        "subject": "Friday global markets",
+        "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/"
+      },
+      {
+        "subject": "Weekend Gulf tension",
+        "url": "https://www.reuters.com/world/middle-east/gulf-bourses-slide-hormuz-tensions-houthi-strikes-rattle-traders-2026-11-15/"
+      },
+      {
+        "subject": "US index futures runtime snapshot",
+        "url": "https://www.futunn.com/quote/futures-us/equity-index",
+        "note": "Retrieved at runtime; page did not expose independent quote timestamp/delay."
+      }
+    ],
+    "runtime_futures": {
+      "retrieved_at": "2026-11-16T00:33:52.409Z",
+      "dow": "+0.26%",
+      "sp500": "+0.40%",
+      "nasdaq100": "+0.80%",
+      "representative_stock_overnight": "unavailable; no new runtime trade, so confirmation/divergence not classified"
     }
   },
   "pending_increment": null,
@@ -42,5 +116,22 @@
   "stage_timings": {
     "started_at": "2026-11-16T00:29:50.454Z",
     "rules_and_baseline_started_at": "2026-11-16T00:29:50.454Z"
-  }
+  },
+  "decisions": [
+    {
+      "theme": "Broadcasting / advertising / social-media leadership",
+      "status": "no_candidate",
+      "reason": "No directly verified A/H company-specific catalyst; no forced mapping."
+    },
+    {
+      "theme": "US semiconductor, communications equipment and computer hardware weakness",
+      "status": "conditional_or_avoid",
+      "reason": "Maps to A/H tech, but Friday negative price feedback and no post-weekend confirmation require conditional/avoid framing."
+    },
+    {
+      "theme": "Energy-storage policy",
+      "status": "conditional",
+      "reason": "Official policy catalyst; capacity guidance also warns against blind expansion."
+    }
+  ]
 }
