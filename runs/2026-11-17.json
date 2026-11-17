@@ -3,10 +3,10 @@
   "date": "2026-11-17",
   "run_id": "ah-review-20261117-20261117021219",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-11-17T02:22:19.771Z",
-  "heartbeat_at": "2026-11-17T02:12:19.771Z",
+  "status": "published",
+  "stage": "incremental_review_complete",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-17T02:15:54.670Z",
   "source_cutoff": "2026-11-17T00:34:12.487Z",
   "main_base_sha": "77e8860f5d0451188da321d365aec9bdfbc12454",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -165,7 +165,88 @@
       "baseline_main_sha": "d0e4754cc367af1a63bfb8cb0fe4e2057016a28e",
       "baseline_state_sha": "8f794e648e0088c0d3a24db505209c4381db9c8f",
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-      "status": "running"
+      "status": "complete",
+      "completed_at": "2026-11-17T02:15:54.670Z",
+      "material_change": false,
+      "main_unchanged": true,
+      "main_sha": "d0e4754cc367af1a63bfb8cb0fe4e2057016a28e",
+      "decision": "No post-cutoff evidence changed the market view, sector rotation, risk warnings, or stock-card states; no publication commit created.",
+      "coverage": {
+        "cutoff": "2026-11-17T00:34:12.487Z",
+        "completed_at": "2026-11-17T02:15:54.670Z",
+        "domestic_policy": "No material post-cutoff policy confirmed; 15:00 recycling-system press conference remains a future event.",
+        "a_share_announcements": "No material post-cutoff exchange announcement altering the existing brief.",
+        "hkex": "No material post-cutoff results/suspension/resumption/clarification altering the existing brief.",
+        "us_mapping": "Reuters 2026-11-17 01:22 UTC reported US futures steady; no reversal of the existing US-tech risk mapping."
+      },
+      "opening_feedback": {
+        "quote_time_epoch": 1794881646,
+        "quote_time_iso": "2026-11-17T02:14:06.000Z",
+        "source": "Eastmoney delayed quote API via cloud browser",
+        "indices": [
+          {
+            "name": "上证指数",
+            "last": 3569.18,
+            "pct": -0.93
+          },
+          {
+            "name": "深证成指",
+            "last": 10598.07,
+            "pct": -0.87
+          },
+          {
+            "name": "创业板指",
+            "last": 2291.08,
+            "pct": -1.25
+          },
+          {
+            "name": "恒生指数",
+            "last": 23440.56,
+            "pct": -1.32
+          }
+        ],
+        "candidates": [
+          {
+            "ticker": "002625.SZ",
+            "name": "光启技术",
+            "last": 18.42,
+            "pct": 1.6,
+            "decision": "conditional_watch",
+            "reason": "Below 18.46 confirmation level after fading from 19.10 open."
+          },
+          {
+            "ticker": "002655.SZ",
+            "name": "共达电声",
+            "last": 26.62,
+            "pct": 2.98,
+            "decision": "conditional_watch",
+            "reason": "Held above 25.45 but did not reclaim 27.70 confirmation level."
+          },
+          {
+            "ticker": "688052.SH",
+            "name": "纳芯微",
+            "last": 151.34,
+            "pct": -0.51,
+            "decision": "conditional_watch",
+            "reason": "Far below 163 confirmation level."
+          },
+          {
+            "ticker": "0017.HK",
+            "name": "新世界发展",
+            "last": 2.525,
+            "pct": -12.48,
+            "decision": "avoid",
+            "reason": "Further negative price feedback reinforces existing avoid conclusion without changing it."
+          }
+        ]
+      },
+      "production_readback": {
+        "homepage": "https://premarketor.com/",
+        "stamp": "2026-11-17 08:37 CST",
+        "empty_state": false,
+        "main_commit": "d0e4754cc367af1a63bfb8cb0fe4e2057016a28e"
+      },
+      "no_commit": true
     }
   },
   "pending_increment": null,
@@ -210,7 +291,9 @@
       "duration_seconds": 789
     },
     "incremental_review": {
-      "started_at": "2026-11-17T02:12:19.771Z"
+      "started_at": "2026-11-17T02:12:19.771Z",
+      "completed_at": "2026-11-17T02:15:54.670Z",
+      "duration_seconds": 215
     }
   },
   "error": null
