@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-11-12T10:17:24+08:00",
+  "attemptedAt": "2026-11-14T09:27:45+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-12T10:17:24+08:00",
+      "fetchedAt": "2026-11-14T09:27:45+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,30 +17,102 @@
       },
       "top": [
         {
-          "name": "计算机硬件",
-          "nameEn": "Computer Hardware",
-          "code": "BK2492",
-          "changePct": "+8.73%",
-          "leaderName": "Socket Mobile",
-          "leaderTicker": "SCKT",
-          "leaderChangePct": "+84.91%",
+          "name": "广播",
+          "nameEn": "Broadcasting",
+          "code": "BK2497",
+          "changePct": "+4.50%",
+          "leaderName": "Newsmax",
+          "leaderTicker": "NMAX",
+          "leaderChangePct": "+31.41%",
           "breadth": {
-            "advancers": 32,
-            "decliners": 13,
-            "unchanged": 2
+            "advancers": 8,
+            "decliners": 7,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "广告代理",
+          "nameEn": "Advertising Agencies",
+          "code": "BK2030",
+          "changePct": "+3.50%",
+          "leaderName": "Forcendra",
+          "leaderTicker": "FCDH",
+          "leaderChangePct": "+35.97%",
+          "breadth": {
+            "advancers": 20,
+            "decliners": 16,
+            "unchanged": 4
+          }
+        },
+        {
+          "name": "油气钻探",
+          "nameEn": "Oil & Gas Drilling",
+          "code": "BK2274",
+          "changePct": "+2.95%",
+          "leaderName": "Sable Offshore",
+          "leaderTicker": "SOC",
+          "leaderChangePct": "+17.69%",
+          "breadth": {
+            "advancers": 10,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "百货公司",
+          "nameEn": "Department Stores",
+          "code": "BK2080",
+          "changePct": "+2.42%",
+          "leaderName": "迪拉德百货",
+          "leaderTicker": "DDS",
+          "leaderChangePct": "+3.97%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "医疗分销",
+          "nameEn": "Medical Distribution",
+          "code": "BK2220",
+          "changePct": "+2.04%",
+          "leaderName": "生研生物",
+          "leaderTicker": "HKPD",
+          "leaderChangePct": "+5.88%",
+          "breadth": {
+            "advancers": 5,
+            "decliners": 6,
+            "unchanged": 1
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "电子元件",
+          "nameEn": "Electronic Components",
+          "code": "BK2072",
+          "changePct": "-2.79%",
+          "leaderName": "Gauzy",
+          "leaderTicker": "GAUZ",
+          "leaderChangePct": "+9.02%",
+          "breadth": {
+            "advancers": 3,
+            "decliners": 38,
+            "unchanged": 3
           }
         },
         {
           "name": "电气设备及零件",
           "nameEn": "Electrical Equipment & Parts",
           "code": "BK2493",
-          "changePct": "+6.38%",
-          "leaderName": "Forgent Power Solutions",
-          "leaderTicker": "FPS",
-          "leaderChangePct": "+14.39%",
+          "changePct": "-2.89%",
+          "leaderName": "智能充电",
+          "leaderTicker": "XCH",
+          "leaderChangePct": "+23.79%",
           "breadth": {
-            "advancers": 36,
-            "decliners": 18,
+            "advancers": 12,
+            "decliners": 42,
             "unchanged": 3
           }
         },
@@ -48,114 +120,42 @@
           "name": "半导体",
           "nameEn": "Semiconductors",
           "code": "BK2015",
-          "changePct": "+5.18%",
-          "leaderName": "MagnaChip Semiconductor",
-          "leaderTicker": "MX",
-          "leaderChangePct": "+17.00%",
-          "breadth": {
-            "advancers": 60,
-            "decliners": 6,
-            "unchanged": 2
-          }
-        },
-        {
-          "name": "半导体设备与材料",
-          "nameEn": "Semiconductor Equipment & Materials",
-          "code": "BK2016",
-          "changePct": "+4.42%",
-          "leaderName": "AXT Inc",
-          "leaderTicker": "AXTI",
-          "leaderChangePct": "+19.49%",
-          "breadth": {
-            "advancers": 29,
-            "decliners": 2,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "科技仪器",
-          "nameEn": "Scientific & Technical Instruments",
-          "code": "BK2275",
-          "changePct": "+3.44%",
-          "leaderName": "Arrive AI",
-          "leaderTicker": "ARAI",
-          "leaderChangePct": "+10.90%",
-          "breadth": {
-            "advancers": 27,
-            "decliners": 5,
-            "unchanged": 1
-          }
-        }
-      ],
-      "bottom": [
-        {
-          "name": "酿酒厂",
-          "nameEn": "Beverages - Wineries & Distilleries",
-          "code": "BK2464",
-          "changePct": "-1.58%",
-          "leaderName": "Innovation Beverage Group",
-          "leaderTicker": "IBG",
-          "leaderChangePct": "+16.25%",
+          "changePct": "-3.19%",
+          "leaderName": "Cerebras Systems",
+          "leaderTicker": "CBRS",
+          "leaderChangePct": "+11.22%",
           "breadth": {
             "advancers": 5,
-            "decliners": 8,
+            "decliners": 63,
             "unchanged": 0
           }
         },
         {
-          "name": "抵押贷款REITs",
-          "nameEn": "REIT - Mortgage",
-          "code": "BK2469",
-          "changePct": "-1.76%",
-          "leaderName": "Sunrise Realty Trust",
-          "leaderTicker": "SUNS",
-          "leaderChangePct": "+3.16%",
+          "name": "通讯设备",
+          "nameEn": "Communication Equipment",
+          "code": "BK2098",
+          "changePct": "-4.25%",
+          "leaderName": "Moving iMage Technologies",
+          "leaderTicker": "MITQ",
+          "leaderChangePct": "+12.94%",
+          "breadth": {
+            "advancers": 9,
+            "decliners": 35,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "计算机硬件",
+          "nameEn": "Computer Hardware",
+          "code": "BK2492",
+          "changePct": "-4.75%",
+          "leaderName": "Bgin Blockchain",
+          "leaderTicker": "BGIN",
+          "leaderChangePct": "+40.58%",
           "breadth": {
             "advancers": 11,
-            "decliners": 36,
+            "decliners": 33,
             "unchanged": 3
-          }
-        },
-        {
-          "name": "黄金",
-          "nameEn": "Gold",
-          "code": "BK2110",
-          "changePct": "-1.85%",
-          "leaderName": "Blue Gold",
-          "leaderTicker": "BGL",
-          "leaderChangePct": "+9.65%",
-          "breadth": {
-            "advancers": 3,
-            "decliners": 53,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "其他贵金属和采矿",
-          "nameEn": "Other Precious Metals & Mining",
-          "code": "BK2507",
-          "changePct": "-2.23%",
-          "leaderName": "Comstock Inc",
-          "leaderTicker": "LODE",
-          "leaderChangePct": "0.00%",
-          "breadth": {
-            "advancers": 0,
-            "decliners": 15,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "医药零售",
-          "nameEn": "Pharmaceutical Retailers",
-          "code": "BK2092",
-          "changePct": "-3.03%",
-          "leaderName": "Ridgetech",
-          "leaderTicker": "RDGT",
-          "leaderChangePct": "+4.50%",
-          "breadth": {
-            "advancers": 2,
-            "decliners": 2,
-            "unchanged": 1
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-12T10:17:24+08:00",
+      "fetchedAt": "2026-11-14T09:27:45+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,27 +176,13 @@
       },
       "top": [
         {
-          "name": "存储概念",
-          "nameEn": "Data storage stock",
-          "code": "BK23925",
-          "changePct": "+10.72%",
-          "leaderName": "闪迪",
-          "leaderTicker": "SNDK",
-          "leaderChangePct": "+13.69%",
-          "breadth": {
-            "advancers": 7,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "英伟达持仓概念",
-          "nameEn": "NVIDIA Portfolio",
-          "code": "BK20882",
-          "changePct": "+7.41%",
-          "leaderName": "CoreWeave",
-          "leaderTicker": "CRWV",
-          "leaderChangePct": "+24.71%",
+          "name": "社交媒体",
+          "nameEn": "Social Media",
+          "code": "BK2433",
+          "changePct": "+2.85%",
+          "leaderName": "Meta Platforms",
+          "leaderTicker": "META",
+          "leaderChangePct": "+2.90%",
           "breadth": {
             "advancers": 6,
             "decliners": 1,
@@ -204,43 +190,57 @@
           }
         },
         {
-          "name": "加密矿企",
-          "nameEn": "Crypto Mining",
-          "code": "BK23921",
-          "changePct": "+6.66%",
-          "leaderName": "灿谷",
-          "leaderTicker": "CANG",
-          "leaderChangePct": "+36.84%",
+          "name": "体育",
+          "nameEn": "Sports",
+          "code": "BK2574",
+          "changePct": "+1.28%",
+          "leaderName": "沃尔弗林集团",
+          "leaderTicker": "WWW",
+          "leaderChangePct": "+8.83%",
           "breadth": {
-            "advancers": 14,
+            "advancers": 8,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "数字支付",
+          "nameEn": "Digital Payment",
+          "code": "BK2657",
+          "changePct": "+1.27%",
+          "leaderName": "Shift4 Payments",
+          "leaderTicker": "FOUR",
+          "leaderChangePct": "+7.85%",
+          "breadth": {
+            "advancers": 19,
+            "decliners": 4,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "信用支付",
+          "nameEn": "Credit Card Payment",
+          "code": "BK2587",
+          "changePct": "+1.27%",
+          "leaderName": "环汇有限公司",
+          "leaderTicker": "GPN",
+          "leaderChangePct": "+4.21%",
+          "breadth": {
+            "advancers": 10,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "OLED概念",
-          "nameEn": "OLED Technology",
-          "code": "BK2448",
-          "changePct": "+5.95%",
-          "leaderName": "MagnaChip Semiconductor",
-          "leaderTicker": "MX",
-          "leaderChangePct": "+17.00%",
+          "name": "室温超导概念",
+          "nameEn": "Room-Temp Superconductors",
+          "code": "BK2147",
+          "changePct": "+1.15%",
+          "leaderName": "布鲁克",
+          "leaderTicker": "BRKR",
+          "leaderChangePct": "+2.09%",
           "breadth": {
-            "advancers": 4,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "苹果概念",
-          "nameEn": "Apple Ecosystem",
-          "code": "BK2437",
-          "changePct": "+5.76%",
-          "leaderName": "美光科技",
-          "leaderTicker": "MU",
-          "leaderChangePct": "+11.89%",
-          "breadth": {
-            "advancers": 14,
+            "advancers": 2,
             "decliners": 1,
             "unchanged": 0
           }
@@ -253,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-11-11",
-    "checked_at": "2026-11-12T10:17:37+08:00",
+    "expected_session_date": "2026-11-13",
+    "checked_at": "2026-11-14T09:27:51+08:00",
     "request_id": null,
-    "groups_sha256": "9f7c153d27138f836ca95dfffc2e560e23f389a603cde51fb8fdd8fbe0777a5d",
+    "groups_sha256": "be3c6a4a242f6a34e0ea88ab632c4d5656c078d5203cd0319c7006b10c8d9643",
     "errors": []
   }
 }
