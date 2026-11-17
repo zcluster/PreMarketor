@@ -4,11 +4,11 @@
   "run_id": "ah-20261117-20261117003014",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "news_research",
-  "lease_until": "2026-11-17T00:42:19.206Z",
-  "heartbeat_at": "2026-11-17T00:32:19.206Z",
-  "source_cutoff": "2026-11-17T00:30:14.210Z",
-  "main_base_sha": "228908e39ddd0e6701971b0c74991b428f9769cb",
+  "stage": "generation",
+  "lease_until": "2026-11-17T00:44:12.487Z",
+  "heartbeat_at": "2026-11-17T00:34:12.487Z",
+  "source_cutoff": "2026-11-17T00:34:12.487Z",
+  "main_base_sha": "77e8860f5d0451188da321d365aec9bdfbc12454",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "baseline": {
@@ -17,17 +17,17 @@
       "rules_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd"
     },
     "rankings": {
-      "snapshot_sha": "d7c8325a5bfae05b3df0db81cdabed512cd19d1f",
+      "snapshot_sha": "af0d8030d0c6ccf8934fb551a7d467b1bbd1a929",
+      "expected_session_date": "2026-11-16",
+      "ready": true,
       "publicationGate": {
         "ready": true,
-        "expected_session_date": "2026-11-13",
-        "checked_at": "2026-11-14T09:27:51+08:00",
-        "request_id": null,
-        "groups_sha256": "be3c6a4a242f6a34e0ea88ab632c4d5656c078d5203cd0319c7006b10c8d9643",
+        "expected_session_date": "2026-11-16",
+        "checked_at": "2026-11-17T08:31:41+08:00",
+        "request_id": "ah-20261117-20261117003014",
+        "groups_sha256": "e7b12a038f44006c6a01e30f3cd7ccca495e450ecdc152fc299a80ca23db9020",
         "errors": []
       },
-      "expected_session_date": "2026-11-16",
-      "ready": false,
       "refresh_request": {
         "request_commit": "1ada57739807b1574178ba0b24920d5826ce7d07",
         "request_branch_base": "28a8e3c9a26bae21fb740a97e1f794f1253ed80d",
@@ -39,6 +39,61 @@
       "fetchedAt": "2026-11-16T14:31:32+08:00",
       "status": "ok",
       "analysisReady": true
+    },
+    "sources": [
+      {
+        "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-16/",
+        "published": "2026-11-16",
+        "type": "global"
+      },
+      {
+        "url": "https://www.miit.gov.cn/jgsj/xfpgys/wjfb/art/2026/art_942a35bc53ce423f9a0644093c61ab29.html",
+        "published": "2026-11-16",
+        "type": "policy"
+      },
+      {
+        "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202611/t20261113_4227676.html",
+        "published": "2026-11-13",
+        "type": "policy"
+      },
+      {
+        "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_714c9842daaa488bbc448cf6581216a5.html",
+        "published": "2026-11-16",
+        "type": "industry"
+      },
+      {
+        "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+        "published": "2026-11-16",
+        "type": "industry"
+      },
+      {
+        "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12708431&stockid=002625",
+        "published": "2026-11-17",
+        "type": "company"
+      },
+      {
+        "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12709002&stockid=002655",
+        "published": "2026-11-17",
+        "type": "company"
+      },
+      {
+        "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12709192&stockid=688052",
+        "published": "2026-11-17",
+        "type": "company"
+      },
+      {
+        "url": "https://www.ft.com/content/9daa3a26-c49c-4c94-91af-0d4c2116d2e4",
+        "published": "2026-11-16",
+        "type": "company"
+      }
+    ],
+    "hk_coverage": {
+      "window": "2026-11-16 08:41 CST to 2026-11-17 08:36 CST",
+      "source": "HKEX title search and major-news cross-check",
+      "notable": [
+        "00017 New World Development rights issue and price collapse"
+      ],
+      "checked_at": "2026-11-17T00:34:12.487Z"
     }
   },
   "pending_increment": null,
@@ -50,7 +105,11 @@
       "completed_at": "2026-11-17T00:32:19.206Z"
     },
     "news_research": {
-      "started_at": "2026-11-17T00:32:19.206Z"
+      "started_at": "2026-11-17T00:32:19.206Z",
+      "completed_at": "2026-11-17T00:34:12.487Z"
+    },
+    "generation": {
+      "started_at": "2026-11-17T00:34:12.487Z"
     }
   },
   "error": null
