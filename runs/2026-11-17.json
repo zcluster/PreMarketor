@@ -4,9 +4,9 @@
   "run_id": "ah-20261117-20261117003014",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "candidate_commit",
-  "lease_until": "2026-11-17T00:49:07.660Z",
-  "heartbeat_at": "2026-11-17T00:39:07.660Z",
+  "stage": "main_update_ref",
+  "lease_until": "2026-11-17T00:50:07.959Z",
+  "heartbeat_at": "2026-11-17T00:40:07.959Z",
   "source_cutoff": "2026-11-17T00:34:12.487Z",
   "main_base_sha": "77e8860f5d0451188da321d365aec9bdfbc12454",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -105,7 +105,8 @@
         "panelCn": 15,
         "panelEn": 15
       }
-    }
+    },
+    "candidate_tree": "76c57287cf67fb7bdf0ad0fd8869e57b12261bf2"
   },
   "pending_increment": {
     "title": "美股科技去风险扩散、医疗防御领涨，轻工标准与公司公告提供结构线索",
@@ -122,7 +123,7 @@
     ]
   },
   "published_commit": null,
-  "candidate_commit": null,
+  "candidate_commit": "d0e4754cc367af1a63bfb8cb0fe4e2057016a28e",
   "stage_timings": {
     "rankings_check": {
       "started_at": "2026-11-17T00:30:14.210Z",
@@ -145,7 +146,11 @@
       "completed_at": "2026-11-17T00:39:07.660Z"
     },
     "candidate_commit": {
-      "started_at": "2026-11-17T00:39:07.660Z"
+      "started_at": "2026-11-17T00:39:07.660Z",
+      "completed_at": "2026-11-17T00:40:07.959Z"
+    },
+    "main_update_ref": {
+      "started_at": "2026-11-17T00:40:07.959Z"
     }
   },
   "error": null
