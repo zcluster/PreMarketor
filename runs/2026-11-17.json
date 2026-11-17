@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "date": "2026-11-17",
-  "run_id": "ah-20261117-20261117003014",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "lease_until": "2026-11-17T00:43:23.380Z",
-  "heartbeat_at": "2026-11-17T00:43:23.380Z",
+  "run_id": "ah-review-20261117-20261117021219",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "lease_until": "2026-11-17T02:22:19.771Z",
+  "heartbeat_at": "2026-11-17T02:12:19.771Z",
   "source_cutoff": "2026-11-17T00:34:12.487Z",
   "main_base_sha": "77e8860f5d0451188da321d365aec9bdfbc12454",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -157,6 +157,15 @@
       "publishedCommit": true,
       "errorAllowed": true,
       "stageTimings": true
+    },
+    "incremental_review": {
+      "run_id": "ah-review-20261117-20261117021219",
+      "started_at": "2026-11-17T02:12:19.771Z",
+      "source_cutoff": "2026-11-17T00:34:12.487Z",
+      "baseline_main_sha": "d0e4754cc367af1a63bfb8cb0fe4e2057016a28e",
+      "baseline_state_sha": "8f794e648e0088c0d3a24db505209c4381db9c8f",
+      "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "status": "running"
     }
   },
   "pending_increment": null,
@@ -199,6 +208,9 @@
       "started_at": "2026-11-17T00:30:14.210Z",
       "completed_at": "2026-11-17T00:43:23.380Z",
       "duration_seconds": 789
+    },
+    "incremental_review": {
+      "started_at": "2026-11-17T02:12:19.771Z"
     }
   },
   "error": null
