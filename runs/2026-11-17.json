@@ -3,10 +3,10 @@
   "date": "2026-11-17",
   "run_id": "ah-20261117-20261117003014",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-11-17T00:50:44.494Z",
-  "heartbeat_at": "2026-11-17T00:40:44.494Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": "2026-11-17T00:43:23.380Z",
+  "heartbeat_at": "2026-11-17T00:43:23.380Z",
   "source_cutoff": "2026-11-17T00:34:12.487Z",
   "main_base_sha": "77e8860f5d0451188da321d365aec9bdfbc12454",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -106,22 +106,60 @@
         "panelEn": 15
       }
     },
-    "candidate_tree": "76c57287cf67fb7bdf0ad0fd8869e57b12261bf2"
+    "candidate_tree": "76c57287cf67fb7bdf0ad0fd8869e57b12261bf2",
+    "remote_readback": {
+      "indexExact": true,
+      "archiveExact": true,
+      "manifestExact": true,
+      "ahEntries": 1,
+      "zhRoot": true,
+      "enRoot": true,
+      "manifestAH": true,
+      "usBriefPreserved": true
+    },
+    "production": {
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "title": "PreMarketor",
+        "status": "rendered",
+        "stock_cards": 4,
+        "major_news": 11,
+        "overnight_items": 3,
+        "industry_rows": 10,
+        "concept_rows": 5,
+        "stamp": "2026-11-17 08:37 CST"
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-11-17",
+        "status": "rendered",
+        "title": "美股科技去风险扩散、医疗防御领涨，轻工标准与公司公告提供结构线索",
+        "empty_state": false
+      },
+      "json": {
+        "url": "https://premarketor.com/history/data/2026-11-17.json",
+        "status": "rendered",
+        "ah_entries": 1,
+        "html": true,
+        "html_en": true
+      },
+      "manifest": {
+        "url": "https://premarketor.com/history/manifest.json",
+        "status": "verified_via_home_calendar",
+        "date": "2026-11-17",
+        "types": [
+          "AH"
+        ]
+      }
+    },
+    "terminal_validation": {
+      "status": true,
+      "leaseReleased": true,
+      "publishedCommit": true,
+      "errorAllowed": true,
+      "stageTimings": true
+    }
   },
-  "pending_increment": {
-    "title": "美股科技去风险扩散、医疗防御领涨，轻工标准与公司公告提供结构线索",
-    "files": [
-      "index.html",
-      "history/data/2026-11-17.json",
-      "history/manifest.json"
-    ],
-    "stock_cards": [
-      "002625.SZ conditional",
-      "002655.SZ conditional",
-      "688052.SH conditional",
-      "0017.HK avoid"
-    ]
-  },
+  "pending_increment": null,
   "published_commit": "d0e4754cc367af1a63bfb8cb0fe4e2057016a28e",
   "candidate_commit": "d0e4754cc367af1a63bfb8cb0fe4e2057016a28e",
   "stage_timings": {
@@ -154,7 +192,13 @@
       "completed_at": "2026-11-17T00:40:44.494Z"
     },
     "deployment_verification": {
-      "started_at": "2026-11-17T00:40:44.494Z"
+      "started_at": "2026-11-17T00:40:44.494Z",
+      "completed_at": "2026-11-17T00:43:23.380Z"
+    },
+    "total": {
+      "started_at": "2026-11-17T00:30:14.210Z",
+      "completed_at": "2026-11-17T00:43:23.380Z",
+      "duration_seconds": 789
     }
   },
   "error": null
