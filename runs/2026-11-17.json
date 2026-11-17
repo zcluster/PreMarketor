@@ -4,9 +4,9 @@
   "run_id": "ah-20261117-20261117003014",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-11-17T00:44:12.487Z",
-  "heartbeat_at": "2026-11-17T00:34:12.487Z",
+  "stage": "hard_validation",
+  "lease_until": "2026-11-17T00:48:32.753Z",
+  "heartbeat_at": "2026-11-17T00:38:32.753Z",
   "source_cutoff": "2026-11-17T00:34:12.487Z",
   "main_base_sha": "77e8860f5d0451188da321d365aec9bdfbc12454",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -94,9 +94,33 @@
         "00017 New World Development rights issue and price collapse"
       ],
       "checked_at": "2026-11-17T00:34:12.487Z"
+    },
+    "validation": {
+      "ok": true,
+      "errors": [],
+      "counts": {
+        "cnNews": 14,
+        "enNews": 14,
+        "stocks": 4,
+        "panelCn": 15,
+        "panelEn": 15
+      }
     }
   },
-  "pending_increment": null,
+  "pending_increment": {
+    "title": "美股科技去风险扩散、医疗防御领涨，轻工标准与公司公告提供结构线索",
+    "files": [
+      "index.html",
+      "history/data/2026-11-17.json",
+      "history/manifest.json"
+    ],
+    "stock_cards": [
+      "002625.SZ conditional",
+      "002655.SZ conditional",
+      "688052.SH conditional",
+      "0017.HK avoid"
+    ]
+  },
   "published_commit": null,
   "candidate_commit": null,
   "stage_timings": {
@@ -109,7 +133,15 @@
       "completed_at": "2026-11-17T00:34:12.487Z"
     },
     "generation": {
-      "started_at": "2026-11-17T00:34:12.487Z"
+      "started_at": "2026-11-17T00:34:12.487Z",
+      "completed_at": "2026-11-17T00:38:32.753Z"
+    },
+    "translation": {
+      "started_at": "2026-11-17T00:34:12.487Z",
+      "completed_at": "2026-11-17T00:38:32.753Z"
+    },
+    "hard_validation": {
+      "started_at": "2026-11-17T00:38:32.753Z"
     }
   },
   "error": null
