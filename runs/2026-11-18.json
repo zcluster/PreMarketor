@@ -4,9 +4,9 @@
   "run_id": "ah-review-20261118-20261118020857",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "incremental_research",
-  "lease_until": "2026-11-18T02:18:57.077Z",
-  "heartbeat_at": "2026-11-18T02:08:57.077Z",
+  "stage": "generation",
+  "lease_until": "2026-11-18T02:23:29.481Z",
+  "heartbeat_at": "2026-11-18T02:13:29.481Z",
   "source_cutoff": "2026-11-18T00:42:00.000Z",
   "main_base_sha": "16314c9fb5acca07bcc332b229fc953b6dbd17e5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -219,10 +219,48 @@
       "baseline_main_sha": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
       "baseline_state_sha": "62bb0242b339a28e3f9f075c038dcccce3966077",
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-      "status": "running"
+      "status": "generating",
+      "checkpoint_at": "2026-11-18T02:13:29.481Z",
+      "current_quotes_checked_at": "2026-11-18T10:10:00+08:00",
+      "indices": {
+        "shanghai": "-0.07%",
+        "shenzhen": "-0.39%",
+        "chinext": "-0.27%",
+        "hsi": "-0.58%"
+      },
+      "stock_feedback": {
+        "china_power": "4.42,+0.68%, below 4.45 trigger",
+        "shunwang": "14.62,-0.88%; prior verified 14.75,-6.29%",
+        "honglu": "17.69, near flat, below 17.99 trigger",
+        "jd_hk": "96.70,-8.08%"
+      },
+      "us_futures": "Reuters reported S&P 500 e-mini +0.5% at 2026-11-18 01:46 UTC"
     }
   },
-  "pending_increment": null,
+  "pending_increment": {
+    "material": true,
+    "reason": "Two material first-round omissions plus one factual correction affect telecom catalysts, semiconductor risks, and stock posture.",
+    "items": [
+      {
+        "type": "omission",
+        "topic": "MIIT 6G co-pilot in eight provinces/municipalities",
+        "published_at": "2026-11-17T14:35:00+08:00",
+        "source": "https://www.miit.gov.cn/jgsj/txs/wjfb/art/2026/art_ab6fba9058b848d0a1fa3cd7d3e91e2c.html"
+      },
+      {
+        "type": "omission",
+        "topic": "MOFCOM response to US remote-access restrictions for advanced semiconductors",
+        "published_at": "2026-11-17T20:20:00+08:00",
+        "source": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html"
+      },
+      {
+        "type": "correction",
+        "topic": "Shunwang 2026-11-17 close/change and post-catalyst feedback",
+        "old_claim": "17.75,+3.80%",
+        "verified": "14.75,-6.29%; 2026-11-18 ~10:10 CST quote 14.62,-0.88%"
+      }
+    ]
+  },
   "published_commit": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
   "candidate_commit": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
   "stage_timings": {
