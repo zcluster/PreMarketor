@@ -3,10 +3,10 @@
   "date": "2026-11-18",
   "run_id": "ah-20261118-20261118003630",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
-  "lease_until": "2026-11-18T00:59:30.000Z",
-  "heartbeat_at": "2026-11-18T00:49:30.000Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-18T00:53:00.000Z",
   "source_cutoff": "2026-11-18T00:42:00.000Z",
   "main_base_sha": "16314c9fb5acca07bcc332b229fc953b6dbd17e5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -187,7 +187,31 @@
       "historyProtocol": true,
       "rankingsReady": true
     },
-    "candidate_tree": "4f82df6e78d4f44e7fdeafe2d0b8023bf7687177"
+    "candidate_tree": "4f82df6e78d4f44e7fdeafe2d0b8023bf7687177",
+    "remote_readback": {
+      "commit": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
+      "index_exact": true,
+      "history_exact": true,
+      "manifest_exact": true,
+      "history_ah_entries": 1,
+      "bilingual": true
+    },
+    "production": {
+      "verified_at": "2026-11-18T00:53:00.000Z",
+      "homepage_url": "https://premarketor.com/",
+      "archive_url": "https://premarketor.com/history/?date=2026-11-18",
+      "history_json_url": "https://premarketor.com/history/data/2026-11-18.json",
+      "manifest_url": "https://premarketor.com/history/manifest.json",
+      "homepage_http_rendered": true,
+      "archive_rendered": true,
+      "history_json_ok": true,
+      "manifest_ok": true,
+      "rankings_rows": 15,
+      "overnight_items": 3,
+      "zh_cards": 4,
+      "en_cards": 4,
+      "updated": "2026-11-18 08:44 CST"
+    }
   },
   "pending_increment": null,
   "published_commit": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
@@ -222,7 +246,13 @@
       "completed_at": "2026-11-18T00:49:30.000Z"
     },
     "deployment_verification": {
-      "started_at": "2026-11-18T00:49:30.000Z"
+      "started_at": "2026-11-18T00:49:30.000Z",
+      "completed_at": "2026-11-18T00:53:00.000Z"
+    },
+    "total": {
+      "started_at": "2026-11-18T00:36:30.000Z",
+      "completed_at": "2026-11-18T00:53:00.000Z",
+      "duration_seconds": 990
     }
   },
   "error": null
