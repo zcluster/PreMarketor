@@ -4,10 +4,10 @@
   "run_id": "ah-20261118-20261118003630",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "news_research",
-  "lease_until": "2026-11-18T00:50:30.000Z",
-  "heartbeat_at": "2026-11-18T00:40:30.000Z",
-  "source_cutoff": null,
+  "stage": "generation",
+  "lease_until": "2026-11-18T00:52:00.000Z",
+  "heartbeat_at": "2026-11-18T00:42:00.000Z",
+  "source_cutoff": "2026-11-18T00:42:00.000Z",
   "main_base_sha": "16314c9fb5acca07bcc332b229fc953b6dbd17e5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -39,7 +39,136 @@
       "fetchedAt": "2026-11-17T15:56:07+08:00",
       "status": "ok",
       "analysisReady": true,
-      "note": "2026-11-17 snapshot; same-day 2026-11-18 Action not yet available, degrade if unchanged at publication"
+      "marketDate": "2026-11-17",
+      "degraded": true,
+      "note": "No 2026-11-18 scheduled snapshot available at generation; use previous-close baseline only"
+    },
+    "sources": [
+      {
+        "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-17/",
+        "published": "2026-11-17",
+        "type": "global"
+      },
+      {
+        "url": "https://www.mofcom.gov.cn/zcfb/gnmygl/art/2026/art_8d701b3fddbc403ca6ec3ede113ec0eb.html",
+        "published": "2026-11-17",
+        "type": "policy"
+      },
+      {
+        "url": "https://www.miit.gov.cn/jgsj/qyj/wjfb/art/2026/art_a3deb70322674518bdae2c75c942b4da.html",
+        "published": "2026-11-17",
+        "type": "policy"
+      },
+      {
+        "url": "https://ir.jd.com/node/12441",
+        "published": "2026-11-17",
+        "type": "company"
+      },
+      {
+        "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12710728&stockid=601669",
+        "published": "2026-11-18",
+        "type": "company"
+      },
+      {
+        "url": "https://static.cninfo.com.cn/finalpage/2026-11-17/1225675756.PDF",
+        "published": "2026-11-17",
+        "type": "company"
+      },
+      {
+        "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12710428&stockid=002429",
+        "published": "2026-11-18",
+        "type": "company"
+      },
+      {
+        "url": "https://api3.cls.cn/share/article/2536810?app=&os=ios&sv=862",
+        "published": "2026-11-17",
+        "type": "company"
+      }
+    ],
+    "discovery_reconciliation": {
+      "sources": [
+        "财联社早报/电报 2026-11-18",
+        "新浪股海导航 2026-11-18",
+        "东方财富四大证券报摘要 2026-11-18"
+      ],
+      "items": [
+        {
+          "event": "商务部再生资源回收体系意见",
+          "original": "MOFCOM",
+          "importance": "high",
+          "included": true
+        },
+        {
+          "event": "工信部中小企业公共服务基地建设指引",
+          "original": "MIIT",
+          "importance": "high",
+          "included": true
+        },
+        {
+          "event": "京东三季度收入/利润及ADR反应",
+          "original": "JD IR/HKEX",
+          "importance": "high",
+          "included": true
+        },
+        {
+          "event": "中国电建控股股东增持5-7亿元",
+          "original": "company filing",
+          "importance": "high",
+          "included": true
+        },
+        {
+          "event": "顺网科技提议回购0.5-1亿元注销",
+          "original": "CNINFO",
+          "importance": "high",
+          "included": true
+        },
+        {
+          "event": "兆驰股份1-1.5亿元回购且贷款比例高",
+          "original": "company filing",
+          "importance": "high",
+          "included": true
+        },
+        {
+          "event": "鸿路钢构5.13万吨中标尚未签合同",
+          "original": "company announcement",
+          "importance": "medium",
+          "included": true
+        }
+      ]
+    },
+    "major_theme_decisions": [
+      {
+        "theme": "基础设施运营 +2.29%",
+        "decision": "no_candidate",
+        "reason": "single-stock breadth; no direct verified A/H catalyst"
+      },
+      {
+        "theme": "航空航天与国防 +1.67%",
+        "decision": "no_candidate",
+        "reason": "sector breadth negative despite leader spike"
+      },
+      {
+        "theme": "英伟达持仓概念 +2.37%",
+        "decision": "no_candidate",
+        "reason": "no same-day verified A/H company catalyst; governance/export risks remain"
+      },
+      {
+        "theme": "光通信 +2.29%",
+        "decision": "no_candidate",
+        "reason": "US confirmation exists but no fresh A/H issuer catalyst in cutoff window"
+      },
+      {
+        "theme": "太阳能 -8.60%",
+        "decision": "avoid",
+        "reason": "broad 20 decliners vs 1 advancer; avoid treating policy/old business links as long signal"
+      }
+    ],
+    "hk_coverage": {
+      "window": "2026-11-17 16:00 CST to 2026-11-18 08:42 CST",
+      "notable": [
+        "09618 JD.com Q3 2026 results: revenue RMB309.6bn +3.5%, operating income RMB5.2bn, ADR -7.73%"
+      ],
+      "checked_at": "2026-11-18T00:42:00.000Z"
     }
   },
   "pending_increment": null,
@@ -51,7 +180,14 @@
       "completed_at": "2026-11-18T00:40:30.000Z"
     },
     "news_research": {
-      "started_at": "2026-11-18T00:40:30.000Z"
+      "started_at": "2026-11-18T00:40:30.000Z",
+      "completed_at": "2026-11-18T00:42:00.000Z"
+    },
+    "generation": {
+      "started_at": "2026-11-18T00:42:00.000Z"
+    },
+    "translation": {
+      "started_at": "2026-11-18T00:42:00.000Z"
     }
   },
   "error": null
