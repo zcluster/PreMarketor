@@ -5,8 +5,8 @@
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
   "stage": "rankings_check",
-  "lease_until": "2026-11-18T00:46:30.000Z",
-  "heartbeat_at": "2026-11-18T00:36:30.000Z",
+  "lease_until": "2026-11-18T00:49:00.000Z",
+  "heartbeat_at": "2026-11-18T00:39:00.000Z",
   "source_cutoff": null,
   "main_base_sha": "debea14ba116764507ff0e2ebc40ab98ae48fa7d",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -15,6 +15,31 @@
       "main_sha": "debea14ba116764507ff0e2ebc40ab98ae48fa7d",
       "state_head": "7ca3e455f01235b85cb00770965787db6057ca5d",
       "rules_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd"
+    },
+    "rankings": {
+      "snapshot_sha": "84ac303958f950136b3f4f7188ae543ed14ad4cd",
+      "expected_session_date": "2026-11-17",
+      "ready": false,
+      "prior_gate": {
+        "ready": true,
+        "expected_session_date": "2026-11-16",
+        "checked_at": "2026-11-17T11:56:12+08:00",
+        "request_id": null,
+        "groups_sha256": "9a764d80ec50a134f3adc3de0bce44aa879ad7b97cd8045d6e94ffdaa1a8a807",
+        "errors": []
+      },
+      "refresh_request": {
+        "request_commit": "5dc4786e70ddfebbd8b0abf10277403dca4f266e",
+        "request_branch_base": "1ada57739807b1574178ba0b24920d5826ce7d07",
+        "requested_at": "2026-11-18T00:38:20.000Z"
+      }
+    },
+    "akshare": {
+      "snapshot_sha": "741ecb3afa5fc00ec4aa210896d068dab50709b8",
+      "fetchedAt": "2026-11-17T15:56:07+08:00",
+      "status": "ok",
+      "analysisReady": true,
+      "note": "2026-11-17 snapshot; same-day 2026-11-18 Action not yet available, degrade if unchanged at publication"
     }
   },
   "pending_increment": null,
