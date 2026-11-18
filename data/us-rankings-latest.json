@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-11-14T09:27:45+08:00",
+  "attemptedAt": "2026-11-17T11:56:00+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-14T09:27:45+08:00",
+      "fetchedAt": "2026-11-17T11:56:00+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,145 +17,145 @@
       },
       "top": [
         {
-          "name": "广播",
-          "nameEn": "Broadcasting",
-          "code": "BK2497",
-          "changePct": "+4.50%",
-          "leaderName": "Newsmax",
-          "leaderTicker": "NMAX",
-          "leaderChangePct": "+31.41%",
+          "name": "医疗计划",
+          "nameEn": "Healthcare Plans",
+          "code": "BK2246",
+          "changePct": "+1.57%",
+          "leaderName": "Molina Healthcare",
+          "leaderTicker": "MOH",
+          "leaderChangePct": "+11.27%",
           "breadth": {
-            "advancers": 8,
-            "decliners": 7,
-            "unchanged": 1
+            "advancers": 9,
+            "decliners": 2,
+            "unchanged": 0
           }
         },
         {
-          "name": "广告代理",
-          "nameEn": "Advertising Agencies",
-          "code": "BK2030",
-          "changePct": "+3.50%",
-          "leaderName": "Forcendra",
-          "leaderTicker": "FCDH",
-          "leaderChangePct": "+35.97%",
+          "name": "医疗保健设施",
+          "nameEn": "Medical Care Facilities",
+          "code": "BK2486",
+          "changePct": "+1.49%",
+          "leaderName": "AMN医疗保健服务",
+          "leaderTicker": "AMN",
+          "leaderChangePct": "+4.26%",
           "breadth": {
-            "advancers": 20,
-            "decliners": 16,
+            "advancers": 23,
+            "decliners": 25,
             "unchanged": 4
           }
         },
         {
-          "name": "油气钻探",
-          "nameEn": "Oil & Gas Drilling",
-          "code": "BK2274",
-          "changePct": "+2.95%",
-          "leaderName": "Sable Offshore",
-          "leaderTicker": "SOC",
-          "leaderChangePct": "+17.69%",
+          "name": "专门保险",
+          "nameEn": "Insurance - Specialty",
+          "code": "BK2465",
+          "changePct": "+1.30%",
+          "leaderName": "富达国民金融",
+          "leaderTicker": "FNF",
+          "leaderChangePct": "+2.26%",
           "breadth": {
-            "advancers": 10,
-            "decliners": 0,
+            "advancers": 13,
+            "decliners": 2,
             "unchanged": 0
           }
         },
         {
-          "name": "百货公司",
-          "nameEn": "Department Stores",
-          "code": "BK2080",
-          "changePct": "+2.42%",
-          "leaderName": "迪拉德百货",
-          "leaderTicker": "DDS",
-          "leaderChangePct": "+3.97%",
+          "name": "保险经纪",
+          "nameEn": "Insurance Brokers",
+          "code": "BK2230",
+          "changePct": "+1.28%",
+          "leaderName": "Goosehead Insurance",
+          "leaderTicker": "GSHD",
+          "leaderChangePct": "+6.09%",
           "breadth": {
-            "advancers": 4,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "医疗分销",
-          "nameEn": "Medical Distribution",
-          "code": "BK2220",
-          "changePct": "+2.04%",
-          "leaderName": "生研生物",
-          "leaderTicker": "HKPD",
-          "leaderChangePct": "+5.88%",
-          "breadth": {
-            "advancers": 5,
-            "decliners": 6,
+            "advancers": 15,
+            "decliners": 9,
             "unchanged": 1
+          }
+        },
+        {
+          "name": "家庭和个人用品",
+          "nameEn": "Household & Personal Products",
+          "code": "BK2003",
+          "changePct": "+1.24%",
+          "leaderName": "Atlas Trinity Tech",
+          "leaderTicker": "ATTT",
+          "leaderChangePct": "+7.92%",
+          "breadth": {
+            "advancers": 17,
+            "decliners": 13,
+            "unchanged": 3
           }
         }
       ],
       "bottom": [
         {
-          "name": "电子元件",
-          "nameEn": "Electronic Components",
-          "code": "BK2072",
-          "changePct": "-2.79%",
-          "leaderName": "Gauzy",
-          "leaderTicker": "GAUZ",
-          "leaderChangePct": "+9.02%",
+          "name": "计算机硬件",
+          "nameEn": "Computer Hardware",
+          "code": "BK2492",
+          "changePct": "-5.99%",
+          "leaderName": "Bgin Blockchain",
+          "leaderTicker": "BGIN",
+          "leaderChangePct": "+35.05%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 38,
-            "unchanged": 3
+            "advancers": 4,
+            "decliners": 41,
+            "unchanged": 2
           }
         },
         {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "-2.89%",
-          "leaderName": "智能充电",
-          "leaderTicker": "XCH",
-          "leaderChangePct": "+23.79%",
+          "name": "铜",
+          "nameEn": "Copper",
+          "code": "BK2510",
+          "changePct": "-6.36%",
+          "leaderName": "Ivanhoe Electric",
+          "leaderTicker": "IE",
+          "leaderChangePct": "-1.19%",
           "breadth": {
-            "advancers": 12,
-            "decliners": 42,
-            "unchanged": 3
-          }
-        },
-        {
-          "name": "半导体",
-          "nameEn": "Semiconductors",
-          "code": "BK2015",
-          "changePct": "-3.19%",
-          "leaderName": "Cerebras Systems",
-          "leaderTicker": "CBRS",
-          "leaderChangePct": "+11.22%",
-          "breadth": {
-            "advancers": 5,
-            "decliners": 63,
+            "advancers": 0,
+            "decliners": 10,
             "unchanged": 0
           }
         },
         {
-          "name": "通讯设备",
-          "nameEn": "Communication Equipment",
-          "code": "BK2098",
-          "changePct": "-4.25%",
-          "leaderName": "Moving iMage Technologies",
-          "leaderTicker": "MITQ",
-          "leaderChangePct": "+12.94%",
+          "name": "铀",
+          "nameEn": "Uranium",
+          "code": "BK2430",
+          "changePct": "-6.60%",
+          "leaderName": "Jaguar Uranium",
+          "leaderTicker": "JAGU",
+          "leaderChangePct": "-0.43%",
           "breadth": {
-            "advancers": 9,
-            "decliners": 35,
-            "unchanged": 1
+            "advancers": 0,
+            "decliners": 13,
+            "unchanged": 0
           }
         },
         {
-          "name": "计算机硬件",
-          "nameEn": "Computer Hardware",
-          "code": "BK2492",
-          "changePct": "-4.75%",
-          "leaderName": "Bgin Blockchain",
-          "leaderTicker": "BGIN",
-          "leaderChangePct": "+40.58%",
+          "name": "基础设施运营",
+          "nameEn": "Infrastructure Operations",
+          "code": "BK2477",
+          "changePct": "-6.84%",
+          "leaderName": "Mobile Infrastructure",
+          "leaderTicker": "BEEP",
+          "leaderChangePct": "-6.84%",
           "breadth": {
-            "advancers": 11,
-            "decliners": 33,
-            "unchanged": 3
+            "advancers": 0,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "白银",
+          "nameEn": "Silver",
+          "code": "BK2093",
+          "changePct": "-7.27%",
+          "leaderName": "Endeavour Silver",
+          "leaderTicker": "EXK",
+          "leaderChangePct": "-6.66%",
+          "breadth": {
+            "advancers": 0,
+            "decliners": 6,
+            "unchanged": 0
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-14T09:27:45+08:00",
+      "fetchedAt": "2026-11-17T11:56:00+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,72 +176,72 @@
       },
       "top": [
         {
-          "name": "社交媒体",
-          "nameEn": "Social Media",
-          "code": "BK2433",
-          "changePct": "+2.85%",
-          "leaderName": "Meta Platforms",
-          "leaderTicker": "META",
-          "leaderChangePct": "+2.90%",
+          "name": "固态电池",
+          "nameEn": "Solid State Battery",
+          "code": "BK2544",
+          "changePct": "+0.52%",
+          "leaderName": "Microvast",
+          "leaderTicker": "MVST",
+          "leaderChangePct": "+4.24%",
           "breadth": {
-            "advancers": 6,
-            "decliners": 1,
+            "advancers": 3,
+            "decliners": 5,
             "unchanged": 0
           }
         },
         {
-          "name": "体育",
-          "nameEn": "Sports",
-          "code": "BK2574",
-          "changePct": "+1.28%",
-          "leaderName": "沃尔弗林集团",
-          "leaderTicker": "WWW",
-          "leaderChangePct": "+8.83%",
+          "name": "软件外包",
+          "nameEn": "Software Outsourcing",
+          "code": "BK2586",
+          "changePct": "+0.42%",
+          "leaderName": "Verisk分析",
+          "leaderTicker": "VRSK",
+          "leaderChangePct": "+2.38%",
           "breadth": {
-            "advancers": 8,
-            "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "数字支付",
-          "nameEn": "Digital Payment",
-          "code": "BK2657",
-          "changePct": "+1.27%",
-          "leaderName": "Shift4 Payments",
-          "leaderTicker": "FOUR",
-          "leaderChangePct": "+7.85%",
-          "breadth": {
-            "advancers": 19,
+            "advancers": 5,
             "decliners": 4,
             "unchanged": 0
           }
         },
         {
-          "name": "信用支付",
-          "nameEn": "Credit Card Payment",
-          "code": "BK2587",
-          "changePct": "+1.27%",
-          "leaderName": "环汇有限公司",
-          "leaderTicker": "GPN",
-          "leaderChangePct": "+4.21%",
+          "name": "猴痘概念",
+          "nameEn": "Mpox (monkeypox)",
+          "code": "BK2652",
+          "changePct": "+0.24%",
+          "leaderName": "GeoVax Labs",
+          "leaderTicker": "GOVX",
+          "leaderChangePct": "+18.48%",
           "breadth": {
-            "advancers": 10,
-            "decliners": 0,
+            "advancers": 5,
+            "decliners": 7,
             "unchanged": 0
           }
         },
         {
-          "name": "室温超导概念",
-          "nameEn": "Room-Temp Superconductors",
-          "code": "BK2147",
-          "changePct": "+1.15%",
-          "leaderName": "布鲁克",
-          "leaderTicker": "BRKR",
-          "leaderChangePct": "+2.09%",
+          "name": "可再生能源",
+          "nameEn": "Renewable Energy",
+          "code": "BK2572",
+          "changePct": "+0.07%",
+          "leaderName": "第一能源",
+          "leaderTicker": "FE",
+          "leaderChangePct": "+1.17%",
+          "breadth": {
+            "advancers": 3,
+            "decliners": 3,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "医药外包概念",
+          "nameEn": "CRO",
+          "code": "BK2528",
+          "changePct": "+0.02%",
+          "leaderName": "奎斯特诊疗",
+          "leaderTicker": "DGX",
+          "leaderChangePct": "+1.01%",
           "breadth": {
             "advancers": 2,
-            "decliners": 1,
+            "decliners": 3,
             "unchanged": 0
           }
         }
@@ -253,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-11-13",
-    "checked_at": "2026-11-14T09:27:51+08:00",
+    "expected_session_date": "2026-11-16",
+    "checked_at": "2026-11-17T11:56:12+08:00",
     "request_id": null,
-    "groups_sha256": "be3c6a4a242f6a34e0ea88ab632c4d5656c078d5203cd0319c7006b10c8d9643",
+    "groups_sha256": "9a764d80ec50a134f3adc3de0bce44aa879ad7b97cd8045d6e94ffdaa1a8a807",
     "errors": []
   }
 }
