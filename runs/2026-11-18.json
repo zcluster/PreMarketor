@@ -4,9 +4,9 @@
   "run_id": "ah-20261118-20261118003630",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "candidate_commit",
-  "lease_until": "2026-11-18T00:56:00.000Z",
-  "heartbeat_at": "2026-11-18T00:46:00.000Z",
+  "stage": "main_update_ref",
+  "lease_until": "2026-11-18T00:58:30.000Z",
+  "heartbeat_at": "2026-11-18T00:48:30.000Z",
   "source_cutoff": "2026-11-18T00:42:00.000Z",
   "main_base_sha": "16314c9fb5acca07bcc332b229fc953b6dbd17e5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -186,11 +186,12 @@
       "bilingualStructure": true,
       "historyProtocol": true,
       "rankingsReady": true
-    }
+    },
+    "candidate_tree": "4f82df6e78d4f44e7fdeafe2d0b8023bf7687177"
   },
   "pending_increment": null,
   "published_commit": null,
-  "candidate_commit": null,
+  "candidate_commit": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
   "stage_timings": {
     "rankings_check": {
       "started_at": "2026-11-18T00:36:30.000Z",
@@ -213,7 +214,11 @@
       "completed_at": "2026-11-18T00:46:00.000Z"
     },
     "candidate_commit": {
-      "started_at": "2026-11-18T00:46:00.000Z"
+      "started_at": "2026-11-18T00:46:00.000Z",
+      "completed_at": "2026-11-18T00:48:30.000Z"
+    },
+    "main_update_ref": {
+      "started_at": "2026-11-18T00:48:30.000Z"
     }
   },
   "error": null
