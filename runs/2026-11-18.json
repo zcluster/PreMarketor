@@ -3,10 +3,10 @@
   "date": "2026-11-18",
   "run_id": "ah-review-20261118-20261118020857",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "validation",
-  "lease_until": "2026-11-18T02:31:43.518Z",
-  "heartbeat_at": "2026-11-18T02:21:43.518Z",
+  "status": "published",
+  "stage": "published",
+  "lease_until": null,
+  "heartbeat_at": "2026-11-18T02:25:32.925Z",
   "source_cutoff": "2026-11-18T00:42:00.000Z",
   "main_base_sha": "16314c9fb5acca07bcc332b229fc953b6dbd17e5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -238,28 +238,40 @@
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd"
     },
     "remote_readback": {
-      "commit": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
-      "index_exact": true,
-      "history_exact": true,
-      "manifest_exact": true,
-      "history_ah_entries": 1,
-      "bilingual": true
+      "commit": "fc203db4521cbf66e7531ecabe38ecf89cf34f00",
+      "verified_at": "2026-11-18T02:25:32.925Z",
+      "exact_files": [
+        "index.html",
+        "history/data/2026-11-18.json",
+        "history/manifest.json"
+      ],
+      "blob_shas": {
+        "index": "b3a4ff0f25db486148f39004eba19fc0ed3e342d",
+        "today": "6ad56d8527b3b6f5c63ed273be8cf280e9252785",
+        "manifest": "576cbe1649a3a7410fc4390c561456955267a3c4"
+      },
+      "main_head_matches": true
     },
     "production": {
-      "verified_at": "2026-11-18T00:53:00.000Z",
-      "homepage_url": "https://premarketor.com/",
-      "archive_url": "https://premarketor.com/history/?date=2026-11-18",
-      "history_json_url": "https://premarketor.com/history/data/2026-11-18.json",
-      "manifest_url": "https://premarketor.com/history/manifest.json",
-      "homepage_http_rendered": true,
-      "archive_rendered": true,
-      "history_json_ok": true,
-      "manifest_ok": true,
-      "rankings_rows": 15,
-      "overnight_items": 3,
-      "zh_cards": 4,
-      "en_cards": 4,
-      "updated": "2026-11-18 08:44 CST"
+      "verified_at": "2026-11-18T02:25:32.925Z",
+      "deployment_id": "dpl_2dXenvJ2j5eKuz69P7Wrh1yuBx9q",
+      "deployment_state": "READY",
+      "commit": "fc203db4521cbf66e7531ecabe38ecf89cf34f00",
+      "checks": {
+        "homepage_status": 200,
+        "history_status": 200,
+        "history_json_status": 200,
+        "manifest_status": 200,
+        "homepage_markers_exact": true,
+        "history_json_exact": true,
+        "manifest_exact": true,
+        "archive_dom_rendered": true,
+        "bilingual_present": true,
+        "updated": "2026-11-18 10:15 CST",
+        "news_per_language": 12,
+        "stock_cards_per_language": 4,
+        "empty_state": false
+      }
     },
     "incremental_review": {
       "run_id": "ah-review-20261118-20261118020857",
@@ -268,7 +280,7 @@
       "baseline_main_sha": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
       "baseline_state_sha": "62bb0242b339a28e3f9f075c038dcccce3966077",
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-      "status": "candidate_validated",
+      "status": "published",
       "checkpoint_at": "2026-11-18T02:13:29.481Z",
       "current_quotes_checked_at": "2026-11-18T10:10:00+08:00",
       "indices": {
@@ -285,35 +297,19 @@
       },
       "us_futures": "Reuters reported S&P 500 e-mini +0.5% at 2026-11-18 01:46 UTC",
       "validated_at": "2026-11-18T02:21:43.518Z",
-      "candidate_updated": "2026-11-18 10:15 CST"
+      "candidate_updated": "2026-11-18 10:15 CST",
+      "published_at": "2026-11-18T02:25:32.925Z",
+      "published_commit": "fc203db4521cbf66e7531ecabe38ecf89cf34f00",
+      "material_changes": [
+        "Added MIIT eight-region 6G pilot omission",
+        "Added MOFCOM remote advanced-semiconductor access response omission",
+        "Corrected Shunwang Nov. 17 close/change and changed stance to Avoid after negative price feedback"
+      ]
     }
   },
-  "pending_increment": {
-    "material": true,
-    "reason": "Two material first-round omissions plus one factual correction affect telecom catalysts, semiconductor risks, and stock posture.",
-    "items": [
-      {
-        "type": "omission",
-        "topic": "MIIT 6G co-pilot in eight provinces/municipalities",
-        "published_at": "2026-11-17T14:35:00+08:00",
-        "source": "https://www.miit.gov.cn/jgsj/txs/wjfb/art/2026/art_ab6fba9058b848d0a1fa3cd7d3e91e2c.html"
-      },
-      {
-        "type": "omission",
-        "topic": "MOFCOM response to US remote-access restrictions for advanced semiconductors",
-        "published_at": "2026-11-17T20:20:00+08:00",
-        "source": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_3a69f2058b724dd39cd8ecddcaa4ab87.html"
-      },
-      {
-        "type": "correction",
-        "topic": "Shunwang 2026-11-17 close/change and post-catalyst feedback",
-        "old_claim": "17.75,+3.80%",
-        "verified": "14.75,-6.29%; 2026-11-18 ~10:10 CST quote 14.62,-0.88%"
-      }
-    ]
-  },
-  "published_commit": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
-  "candidate_commit": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
+  "pending_increment": null,
+  "published_commit": "fc203db4521cbf66e7531ecabe38ecf89cf34f00",
+  "candidate_commit": "fc203db4521cbf66e7531ecabe38ecf89cf34f00",
   "stage_timings": {
     "rankings_check": {
       "started_at": "2026-11-18T00:36:30.000Z",
@@ -354,7 +350,8 @@
     },
     "incremental_review": {
       "started_at": "2026-11-18T02:08:57.077Z"
-    }
+    },
+    "incremental_review_finished_at": "2026-11-18T02:25:32.925Z"
   },
   "error": null
 }
