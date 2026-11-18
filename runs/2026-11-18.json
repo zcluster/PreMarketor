@@ -4,9 +4,9 @@
   "run_id": "ah-review-20261118-20261118020857",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "generation",
-  "lease_until": "2026-11-18T02:23:29.481Z",
-  "heartbeat_at": "2026-11-18T02:13:29.481Z",
+  "stage": "validation",
+  "lease_until": "2026-11-18T02:31:43.518Z",
+  "heartbeat_at": "2026-11-18T02:21:43.518Z",
   "source_cutoff": "2026-11-18T00:42:00.000Z",
   "main_base_sha": "16314c9fb5acca07bcc332b229fc953b6dbd17e5",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -185,9 +185,58 @@
       "usMarkersPreserved": true,
       "bilingualStructure": true,
       "historyProtocol": true,
-      "rankingsReady": true
+      "rankingsReady": true,
+      "incremental_candidate": {
+        "passed": true,
+        "checked_at": "2026-11-18T02:21:43.518Z",
+        "checks": {
+          "json": true,
+          "date": true,
+          "news_zh": 12,
+          "news_en": 12,
+          "overnight_zh": 3,
+          "overnight_en": 3,
+          "cards_zh": 4,
+          "cards_en": 4,
+          "tiles_zh": 4,
+          "tiles_en": 4,
+          "risks_zh": 5,
+          "risks_en": 5,
+          "tag_skeleton_equal": true,
+          "official_sources": true,
+          "shun_false_removed": true,
+          "shun_avoid": true,
+          "entries_same": true,
+          "non_ah_unchanged": true,
+          "history_complete": true,
+          "manifest_today_first": true,
+          "manifest_other_records_unchanged": true,
+          "index_outside_allowed_unchanged": true,
+          "us_brief_unchanged": true,
+          "us_time_unchanged": true,
+          "us_updated_unchanged": true,
+          "us_panel_unchanged": true,
+          "us_panel_en_unchanged": true,
+          "markers_once": true,
+          "no_empty_state": true,
+          "three_files_only_candidate": true
+        }
+      }
     },
-    "candidate_tree": "4f82df6e78d4f44e7fdeafe2d0b8023bf7687177",
+    "candidate_tree": {
+      "base_main_sha": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
+      "files": {
+        "index.html": "b3a4ff0f25db486148f39004eba19fc0ed3e342d",
+        "history/data/2026-11-18.json": "6ad56d8527b3b6f5c63ed273be8cf280e9252785",
+        "history/manifest.json": "576cbe1649a3a7410fc4390c561456955267a3c4"
+      },
+      "allowed_files": [
+        "index.html",
+        "history/data/2026-11-18.json",
+        "history/manifest.json"
+      ],
+      "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd"
+    },
     "remote_readback": {
       "commit": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
       "index_exact": true,
@@ -219,7 +268,7 @@
       "baseline_main_sha": "6c6014ed6bc76413238c58ea7fbd0ffc5c88204c",
       "baseline_state_sha": "62bb0242b339a28e3f9f075c038dcccce3966077",
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-      "status": "generating",
+      "status": "candidate_validated",
       "checkpoint_at": "2026-11-18T02:13:29.481Z",
       "current_quotes_checked_at": "2026-11-18T10:10:00+08:00",
       "indices": {
@@ -234,7 +283,9 @@
         "honglu": "17.69, near flat, below 17.99 trigger",
         "jd_hk": "96.70,-8.08%"
       },
-      "us_futures": "Reuters reported S&P 500 e-mini +0.5% at 2026-11-18 01:46 UTC"
+      "us_futures": "Reuters reported S&P 500 e-mini +0.5% at 2026-11-18 01:46 UTC",
+      "validated_at": "2026-11-18T02:21:43.518Z",
+      "candidate_updated": "2026-11-18 10:15 CST"
     }
   },
   "pending_increment": {
