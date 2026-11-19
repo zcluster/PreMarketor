@@ -4,10 +4,10 @@
   "date": "2026-11-19",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "increment_decided",
+  "stage": "candidate_validated",
   "started_at": "2026-11-19T01:54:43.869Z",
-  "heartbeat_at": "2026-11-19T01:58:13.920Z",
-  "lease_until": "2026-11-19T02:08:13.920Z",
+  "heartbeat_at": "2026-11-19T02:06:15.339Z",
+  "lease_until": "2026-11-19T02:16:15.339Z",
   "completed_at": null,
   "published_commit": "137d91d5f20a0eed8636805974169f114f06b9a8",
   "main_base_sha": "137d91d5f20a0eed8636805974169f114f06b9a8",
@@ -28,8 +28,85 @@
       "baseline_main_sha": "137d91d5f20a0eed8636805974169f114f06b9a8",
       "baseline_state_sha": "43761f99235d9598bec7d6fa1862bfa758416621",
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-      "status": "material_increment_found",
-      "observed_at": "2026-11-19T01:58:13.920Z"
+      "status": "candidate_validated",
+      "observed_at": "2026-11-19T01:58:13.920Z",
+      "validation": {
+        "json_parse": true,
+        "bilingual_tag_parity": true,
+        "bilingual_class_parity": true,
+        "major_news_each": 11,
+        "us_overnight_items_each": 3,
+        "asset_rows_each": 6,
+        "stock_cards_each": 4,
+        "marker_whitelist": true,
+        "us_markers_unchanged": true,
+        "outside_authorized_markers_identical": true,
+        "homepage_archive_cn_identical": true,
+        "archive_bilingual_nonempty": true,
+        "negative_signal_not_bullish": true
+      },
+      "major_theme_decisions": [
+        {
+          "theme": "Department Stores +6.09%",
+          "mapping": "A/H retail and department-store peers; no company-specific catalyst verified",
+          "decision": "no_candidate",
+          "reason": "industry strength alone is insufficient"
+        },
+        {
+          "theme": "Apparel Retail +5.97%",
+          "mapping": "A/H apparel and retail peers; no company-specific catalyst verified",
+          "decision": "no_candidate",
+          "reason": "industry strength alone is insufficient"
+        },
+        {
+          "theme": "Cybersecurity +5.56%",
+          "mapping": "A/H software-security peers",
+          "decision": "conditional_watch",
+          "reason": "US concept strength retained in brief; requires A/H price confirmation"
+        },
+        {
+          "theme": "Other Precious Metals -5.47%",
+          "mapping": "A/H precious-metals miners",
+          "decision": "avoid",
+          "reason": "material negative industry move"
+        },
+        {
+          "theme": "Silver -5.55%",
+          "mapping": "A/H silver exposure",
+          "decision": "avoid",
+          "reason": "material negative industry move"
+        },
+        {
+          "theme": "Gold -5.78%",
+          "mapping": "A/H gold miners",
+          "decision": "avoid",
+          "reason": "material negative industry move"
+        },
+        {
+          "theme": "Copper -6.50%",
+          "mapping": "A/H copper miners and smelters",
+          "decision": "avoid",
+          "reason": "material negative industry move"
+        },
+        {
+          "theme": "Healthcare Plans -8.34%",
+          "mapping": "A/H healthcare and insurers",
+          "decision": "avoid",
+          "reason": "material negative industry move"
+        }
+      ],
+      "coverage_reconciliation": {
+        "cutoff": "2026-11-19 08:42 CST",
+        "rechecked": "2026-11-19 09:58 CST",
+        "discovery_sources": [
+          "Xinhua Finance",
+          "Eastmoney premarket cross-check",
+          "SSE/SZSE/HKEX targeted searches"
+        ],
+        "material_increment_count": 2,
+        "entered_count": 2,
+        "no_new_material_policy_or_disclosure": true
+      }
     }
   },
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
