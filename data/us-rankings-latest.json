@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-11-18T10:55:32+08:00",
+  "attemptedAt": "2026-11-19T08:37:16+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-18T10:55:32+08:00",
+      "fetchedAt": "2026-11-19T08:37:16+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,145 +17,145 @@
       },
       "top": [
         {
-          "name": "基础设施运营",
-          "nameEn": "Infrastructure Operations",
-          "code": "BK2477",
-          "changePct": "+2.29%",
-          "leaderName": "Mobile Infrastructure",
-          "leaderTicker": "BEEP",
-          "leaderChangePct": "+2.29%",
+          "name": "百货公司",
+          "nameEn": "Department Stores",
+          "code": "BK2080",
+          "changePct": "+6.09%",
+          "leaderName": "Polibeli",
+          "leaderTicker": "PLBL",
+          "leaderChangePct": "+16.84%",
           "breadth": {
-            "advancers": 1,
+            "advancers": 5,
             "decliners": 0,
             "unchanged": 0
           }
         },
         {
-          "name": "航空航天与国防",
-          "nameEn": "Aerospace & Defense",
-          "code": "BK2089",
-          "changePct": "+1.67%",
-          "leaderName": "VISIONWAVE HOLDINGS INC",
-          "leaderTicker": "VWAV",
-          "leaderChangePct": "+25.28%",
+          "name": "服装零售",
+          "nameEn": "Apparel Retail",
+          "code": "BK2494",
+          "changePct": "+5.97%",
+          "leaderName": "Digital Brands Group",
+          "leaderTicker": "DBGI",
+          "leaderChangePct": "+18.99%",
           "breadth": {
-            "advancers": 32,
-            "decliners": 67,
+            "advancers": 30,
+            "decliners": 3,
             "unchanged": 1
           }
         },
         {
-          "name": "黄金",
-          "nameEn": "Gold",
-          "code": "BK2110",
-          "changePct": "+0.97%",
-          "leaderName": "Paramount Gold Nevada",
-          "leaderTicker": "PZG",
-          "leaderChangePct": "+8.70%",
+          "name": "家具、灯具与家电",
+          "nameEn": "Furnishings, Fixtures & Appliances",
+          "code": "BK2426",
+          "changePct": "+4.52%",
+          "leaderName": "XMax Inc",
+          "leaderTicker": "XMAX",
+          "leaderChangePct": "+12.16%",
           "breadth": {
-            "advancers": 37,
+            "advancers": 24,
+            "decliners": 4,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "互联网零售",
+          "nameEn": "Internet Retail",
+          "code": "BK2431",
+          "changePct": "+2.90%",
+          "leaderName": "ThredUp",
+          "leaderTicker": "TDUP",
+          "leaderChangePct": "+16.78%",
+          "breadth": {
+            "advancers": 18,
             "decliners": 18,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "建筑工程",
-          "nameEn": "Engineering & Construction",
-          "code": "BK2033",
-          "changePct": "+0.85%",
-          "leaderName": "Skyline Builders Group",
-          "leaderTicker": "CRMN",
-          "leaderChangePct": "+18.49%",
-          "breadth": {
-            "advancers": 15,
-            "decliners": 35,
             "unchanged": 4
           }
         },
         {
-          "name": "白银",
-          "nameEn": "Silver",
-          "code": "BK2093",
-          "changePct": "+0.49%",
-          "leaderName": "New Pacific Metals",
-          "leaderTicker": "NEWP",
-          "leaderChangePct": "+7.66%",
+          "name": "电子游戏与多媒体",
+          "nameEn": "Electronic Gaming & Multimedia",
+          "code": "BK2253",
+          "changePct": "+2.68%",
+          "leaderName": "Firy",
+          "leaderTicker": "FIRY",
+          "leaderChangePct": "+22.81%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 3,
+            "advancers": 10,
+            "decliners": 11,
             "unchanged": 0
           }
         }
       ],
       "bottom": [
         {
-          "name": "奢侈品",
-          "nameEn": "Luxury Goods",
-          "code": "BK2276",
-          "changePct": "-3.85%",
-          "leaderName": "Envela",
-          "leaderTicker": "ELA",
-          "leaderChangePct": "+19.41%",
+          "name": "其他贵金属和采矿",
+          "nameEn": "Other Precious Metals & Mining",
+          "code": "BK2507",
+          "changePct": "-5.47%",
+          "leaderName": "Perpetua Resources",
+          "leaderTicker": "PPTA",
+          "leaderChangePct": "-1.95%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 7,
-            "unchanged": 1
+            "advancers": 0,
+            "decliners": 16,
+            "unchanged": 0
           }
         },
         {
-          "name": "应用软件",
-          "nameEn": "Software - Application",
-          "code": "BK2470",
-          "changePct": "-4.08%",
-          "leaderName": "VirTra",
-          "leaderTicker": "VTSI",
-          "leaderChangePct": "+19.04%",
+          "name": "白银",
+          "nameEn": "Silver",
+          "code": "BK2093",
+          "changePct": "-5.55%",
+          "leaderName": "New Pacific Metals",
+          "leaderTicker": "NEWP",
+          "leaderChangePct": "-0.41%",
           "breadth": {
-            "advancers": 40,
-            "decliners": 183,
-            "unchanged": 12
+            "advancers": 0,
+            "decliners": 6,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "黄金",
+          "nameEn": "Gold",
+          "code": "BK2110",
+          "changePct": "-5.78%",
+          "leaderName": "Goldgroup Mining",
+          "leaderTicker": "GORO",
+          "leaderChangePct": "+3.43%",
+          "breadth": {
+            "advancers": 2,
+            "decliners": 55,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "铜",
+          "nameEn": "Copper",
+          "code": "BK2510",
+          "changePct": "-6.50%",
+          "leaderName": "Lion Copper",
+          "leaderTicker": "LCU",
+          "leaderChangePct": "+0.61%",
+          "breadth": {
+            "advancers": 1,
+            "decliners": 9,
+            "unchanged": 0
           }
         },
         {
           "name": "医疗计划",
           "nameEn": "Healthcare Plans",
           "code": "BK2246",
-          "changePct": "-4.15%",
-          "leaderName": "Alignment Healthcare",
-          "leaderTicker": "ALHC",
-          "leaderChangePct": "+2.01%",
+          "changePct": "-8.34%",
+          "leaderName": "Progyny",
+          "leaderTicker": "PGNY",
+          "leaderChangePct": "-1.50%",
           "breadth": {
-            "advancers": 1,
-            "decliners": 10,
+            "advancers": 0,
+            "decliners": 11,
             "unchanged": 0
-          }
-        },
-        {
-          "name": "鞋类及配饰",
-          "nameEn": "Footwear & Accessories",
-          "code": "BK2106",
-          "changePct": "-4.54%",
-          "leaderName": "幸福来",
-          "leaderTicker": "PAVS",
-          "leaderChangePct": "+17.70%",
-          "breadth": {
-            "advancers": 1,
-            "decliners": 13,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "太阳能",
-          "nameEn": "Solar",
-          "code": "BK2047",
-          "changePct": "-8.60%",
-          "leaderName": "Tigo Energy",
-          "leaderTicker": "TYGO",
-          "leaderChangePct": "+1.60%",
-          "breadth": {
-            "advancers": 1,
-            "decliners": 20,
-            "unchanged": 1
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-18T10:55:32+08:00",
+      "fetchedAt": "2026-11-19T08:37:16+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,16 +176,58 @@
       },
       "top": [
         {
-          "name": "英伟达持仓概念",
-          "nameEn": "NVIDIA Portfolio",
-          "code": "BK20882",
-          "changePct": "+2.37%",
-          "leaderName": "Coherent",
-          "leaderTicker": "COHR",
-          "leaderChangePct": "+3.65%",
+          "name": "网络安全概念",
+          "nameEn": "Cybersecurity",
+          "code": "BK2570",
+          "changePct": "+5.56%",
+          "leaderName": "Tenable Holdings",
+          "leaderTicker": "TENB",
+          "leaderChangePct": "+15.75%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 5,
+            "advancers": 22,
+            "decliners": 3,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "品牌服饰",
+          "nameEn": "Clothing",
+          "code": "BK2575",
+          "changePct": "+5.33%",
+          "leaderName": "TJX公司",
+          "leaderTicker": "TJX",
+          "leaderChangePct": "+8.05%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "邮轮概念",
+          "nameEn": "Cruise Lines",
+          "code": "BK2447",
+          "changePct": "+4.21%",
+          "leaderName": "Viking Holdings",
+          "leaderTicker": "VIK",
+          "leaderChangePct": "+6.46%",
+          "breadth": {
+            "advancers": 5,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "加密矿企",
+          "nameEn": "Crypto Mining",
+          "code": "BK23921",
+          "changePct": "+2.52%",
+          "leaderName": "Riot Platforms",
+          "leaderTicker": "RIOT",
+          "leaderChangePct": "+6.98%",
+          "breadth": {
+            "advancers": 10,
+            "decliners": 4,
             "unchanged": 0
           }
         },
@@ -193,56 +235,14 @@
           "name": "光通信",
           "nameEn": "Optical Communication",
           "code": "BK23979",
-          "changePct": "+2.29%",
-          "leaderName": "Lumen Technologies",
-          "leaderTicker": "LUMN",
-          "leaderChangePct": "+6.70%",
+          "changePct": "+2.37%",
+          "leaderName": "博通",
+          "leaderTicker": "AVGO",
+          "leaderChangePct": "+3.64%",
           "breadth": {
-            "advancers": 16,
-            "decliners": 5,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "太空概念",
-          "nameEn": "Space",
-          "code": "BK2556",
-          "changePct": "+2.22%",
-          "leaderName": "Telesat",
-          "leaderTicker": "TSAT",
-          "leaderChangePct": "+3.92%",
-          "breadth": {
-            "advancers": 9,
-            "decliners": 22,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "苹果概念",
-          "nameEn": "Apple Ecosystem",
-          "code": "BK2437",
-          "changePct": "+0.93%",
-          "leaderName": "Coherent",
-          "leaderTicker": "COHR",
-          "leaderChangePct": "+3.65%",
-          "breadth": {
-            "advancers": 5,
-            "decliners": 9,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "储能概念股",
-          "nameEn": "Energy Storage Concept",
-          "code": "BK23939",
-          "changePct": "+0.73%",
-          "leaderName": "GE Vernova",
-          "leaderTicker": "GEV",
-          "leaderChangePct": "+2.14%",
-          "breadth": {
-            "advancers": 3,
-            "decliners": 5,
-            "unchanged": 0
+            "advancers": 7,
+            "decliners": 12,
+            "unchanged": 2
           }
         }
       ],
@@ -253,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-11-17",
-    "checked_at": "2026-11-18T10:55:49+08:00",
-    "request_id": null,
-    "groups_sha256": "137dd7a5d14667e74f5c565b047b3f8d20df0494ad633248795f2234969f11c9",
+    "expected_session_date": "2026-11-18",
+    "checked_at": "2026-11-19T08:38:01+08:00",
+    "request_id": "ah-20261119-20261119003315",
+    "groups_sha256": "c8f3c3736dbf47dc2dca39d6af01bcd25834e12361d0366026b93e35622a68ae",
     "errors": []
   }
 }
