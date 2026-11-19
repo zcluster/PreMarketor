@@ -3,13 +3,13 @@
   "run_id": "ah-review-20261119-20261119015443",
   "date": "2026-11-19",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "candidate_validated",
+  "status": "published",
+  "stage": "production_verified",
   "started_at": "2026-11-19T01:54:43.869Z",
-  "heartbeat_at": "2026-11-19T02:06:15.339Z",
-  "lease_until": "2026-11-19T02:16:15.339Z",
-  "completed_at": null,
-  "published_commit": "137d91d5f20a0eed8636805974169f114f06b9a8",
+  "heartbeat_at": "2026-11-19T02:09:57.048Z",
+  "lease_until": null,
+  "completed_at": "2026-11-19T02:09:57.048Z",
+  "published_commit": "79bc6b4c98061e89b97273c9175a4fc9eb7a6e5f",
   "main_base_sha": "137d91d5f20a0eed8636805974169f114f06b9a8",
   "error": null,
   "evidence": {
@@ -28,7 +28,7 @@
       "baseline_main_sha": "137d91d5f20a0eed8636805974169f114f06b9a8",
       "baseline_state_sha": "43761f99235d9598bec7d6fa1862bfa758416621",
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-      "status": "candidate_validated",
+      "status": "published",
       "observed_at": "2026-11-19T01:58:13.920Z",
       "validation": {
         "json_parse": true,
@@ -106,20 +106,41 @@
         "material_increment_count": 2,
         "entered_count": 2,
         "no_new_material_policy_or_disclosure": true
+      },
+      "completed_at": "2026-11-19T02:09:57.048Z",
+      "published_commit": "79bc6b4c98061e89b97273c9175a4fc9eb7a6e5f",
+      "changed_files": [
+        "index.html",
+        "history/data/2026-11-19.json",
+        "history/manifest.json"
+      ],
+      "remote_blob_match": {
+        "index": true,
+        "history_json": true,
+        "manifest": true
+      },
+      "deployment": {
+        "id": "dpl_14XpCYue3SyVtdrWRXgHgy7dCF9U",
+        "state": "READY",
+        "target": "production",
+        "commit": "79bc6b4c98061e89b97273c9175a4fc9eb7a6e5f",
+        "alias": "premarketor.com"
+      },
+      "production_checks": {
+        "home_http_200": true,
+        "home_ah_marker_root": true,
+        "home_time": "2026-11-19 09:58 CST",
+        "history_shell_http_200": true,
+        "history_fetch_logic_present": true,
+        "archive_json_http_200": true,
+        "archive_json_bilingual_exact": true,
+        "manifest_http_200": true,
+        "manifest_current": true,
+        "no_empty_state_by_render_simulation": true
       }
     }
   },
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "source_cutoff": "2026-11-19T00:42:00Z",
-  "pending_increment": {
-    "type": "post_open_price_feedback",
-    "observed_at": "2026-11-19T01:58:13.920Z",
-    "source": "Eastmoney delayed quote endpoint via Work Cloud browser",
-    "findings": {
-      "300308": "401.30 CNY, +1.26%, below 404.67 confirmation threshold",
-      "300394": "108.89 CNY, -0.48%, below 111.60 confirmation threshold",
-      "300502": "162.50 CNY, +2.71%, crossed 160.00 confirmation threshold",
-      "00700": "353.00 HKD, -5.31%, avoidance case strengthened"
-    }
-  }
+  "pending_increment": null
 }
