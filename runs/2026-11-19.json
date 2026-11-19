@@ -3,17 +3,23 @@
   "run_id": "ah-20261119-20261119003315",
   "date": "2026-11-19",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "news_research",
+  "status": "published",
+  "stage": "production_verified",
   "started_at": "2026-11-19T00:33:15Z",
-  "heartbeat_at": "2026-11-19T00:39:30Z",
-  "lease_until": "2026-11-19T00:49:30Z",
-  "published_commit": null,
-  "main_base_sha": "769ff371a11d887e31b7919c007b144317910d3c",
+  "heartbeat_at": "2026-11-19T00:47:45Z",
+  "lease_until": null,
+  "completed_at": "2026-11-19T00:47:45Z",
+  "published_commit": "137d91d5f20a0eed8636805974169f114f06b9a8",
+  "main_base_sha": "7ddb323d018369cd8bf06733ab17a59d4e1eacaa",
   "error": null,
-  "resume": {
+  "evidence": {
     "rankings_request_id": "ah-20261119-20261119003315",
-    "rankings_request_commit": "253234070f502fa5e91c79d3ac376aee000ac75d",
-    "expected_session_date": "2026-11-18"
+    "rankings_expected_session_date": "2026-11-18",
+    "rankings_checked_at": "2026-11-19T08:38:01+08:00",
+    "remote_readback": true,
+    "production_home": true,
+    "production_history": true,
+    "production_json": true,
+    "production_manifest": true
   }
 }
