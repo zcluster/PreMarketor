@@ -4,10 +4,10 @@
   "date": "2026-11-20",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "deployment_verification",
+  "stage": "hard_validation",
   "started_at": "2026-11-20T01:56:26Z",
-  "heartbeat_at": "2026-11-20T02:05:00Z",
-  "lease_until": "2026-11-20T02:15:00Z",
+  "heartbeat_at": "2026-11-20T02:09:00Z",
+  "lease_until": "2026-11-20T02:19:00Z",
   "source_cutoff": "2026-11-20T00:35:57Z",
   "main_base_sha": "186d82295723d0051bc2a86019c85e80130d7535",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -133,7 +133,7 @@
       "manifest_prepended": true
     },
     "incremental_review": {
-      "status": "main_updated",
+      "status": "production_consistency_fix",
       "baseline_main_sha": "186d82295723d0051bc2a86019c85e80130d7535",
       "baseline_state_sha": "43cc1cbe1e8b2cc8f726c034f32b1c82bd1cb933",
       "source_cutoff": "2026-11-20T00:35:57Z",
@@ -317,7 +317,26 @@
         "today": "da0c55c7e8343b1d293bb40eefaf95894d05f7ce",
         "manifest": "23db4d2d0412bb1f7a63569fce830c156fa9e69f"
       },
-      "published_commit": "50ed2a4f7e9a2f1ad8105bea0d1b62b381a63579"
+      "published_commit": "50ed2a4f7e9a2f1ad8105bea0d1b62b381a63579",
+      "production_consistency_issue": "Rendered archive exposed four stale pre-open phrases in the rotation board, logic chain and risk radar; candidate v2 removes them without changing the decision set.",
+      "validation_v2": {
+        "outside_authorized_identical": true,
+        "us_panels_unchanged": true,
+        "us_markers_unchanged": true,
+        "homepage_cn_equals_json": true,
+        "bilingual_nonempty": true,
+        "tag_balanced": true,
+        "news_parity": true,
+        "stock_parity": true,
+        "asset_parity": true,
+        "stale_cn_absent": true,
+        "stale_en_absent": true,
+        "negative_not_bullish": true,
+        "initial_confirmation_qualified": true,
+        "manifest_preserved": true,
+        "non_ah_preserved": true,
+        "ok": true
+      }
     }
   },
   "pending_increment": [],
@@ -339,7 +358,8 @@
     "incremental_candidate_generated_at": "2026-11-20T02:00:20Z",
     "incremental_hard_validation_at": "2026-11-20T02:01:00Z",
     "incremental_candidate_commit_at": "2026-11-20T02:04:00Z",
-    "incremental_main_update_at": "2026-11-20T02:05:00Z"
+    "incremental_main_update_at": "2026-11-20T02:05:00Z",
+    "incremental_consistency_fix_at": "2026-11-20T02:09:00Z"
   },
   "error": null,
   "completed_at": null
