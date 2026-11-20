@@ -4,12 +4,12 @@
   "date": "2026-11-20",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
+  "stage": "prepublish_validation",
   "started_at": "2026-11-20T00:30:20Z",
-  "heartbeat_at": "2026-11-20T00:36:20Z",
-  "lease_until": "2026-11-20T00:46:20Z",
+  "heartbeat_at": "2026-11-20T00:43:35Z",
+  "lease_until": "2026-11-20T00:53:35Z",
   "source_cutoff": "2026-11-20T00:35:57Z",
-  "main_base_sha": "2e8a8bf3813c3cfed69dcd6d49b7db4794a0e003",
+  "main_base_sha": "53ed45dcb53567c70d9bd6f4ea6729122731c82c",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
@@ -29,10 +29,95 @@
       "status": "ok"
     },
     "runtime_quotes": {
-      "checked_at": "2026-11-20T00:18:27Z",
+      "checked_through": "2026-11-20T00:23:25Z",
       "spy": -1.96932,
       "qqq": -2.13795,
       "dia": -2.17846
+    },
+    "domestic_coverage": [
+      {
+        "event": "55个农业机器人典型应用场景",
+        "first_available": "2026-11-19 15:16 CST",
+        "discovery_source": "工信部政务公开",
+        "primary_source": "工信部/农业农村部通知",
+        "impact": "机器人/智能农业",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "九部门推进再生资源回收体系",
+        "first_available": "2026-11-18 13:34 CST",
+        "discovery_source": "商务部政策发布",
+        "primary_source": "商务部等9部门意见",
+        "impact": "循环经济/回收设备",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "2026年5G+工业互联网城市试点申报",
+        "first_available": "2026-11-17",
+        "discovery_source": "工信部政务公开",
+        "primary_source": "工信部通知",
+        "impact": "工业互联网/通信设备",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "纳芯微拟现金收购隔空智慧部分股权",
+        "first_available": "2026-11-19 19:10 CST",
+        "discovery_source": "港交所公告检索",
+        "primary_source": "纳芯微港交所公告",
+        "impact": "传感器/半导体",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "赣锋锂业A股回购报告书",
+        "first_available": "2026-11-19 14:58 CST",
+        "discovery_source": "巨潮资讯公告检索",
+        "primary_source": "赣锋锂业公告",
+        "impact": "锂电/固态电池",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "重庆路桥第二大股东增持计划",
+        "first_available": "2026-11-19 16:00 CST",
+        "discovery_source": "巨潮资讯公告检索",
+        "primary_source": "重庆路桥公告",
+        "impact": "基建/股东增持",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "紫金矿业A股回购方案",
+        "first_available": "2026-11-20",
+        "discovery_source": "巨潮资讯/上交所公告索引",
+        "primary_source": "紫金矿业公告",
+        "impact": "黄金/铜/白银",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "诺唯赞控股股东增持完成",
+        "first_available": "2026-11-19 16:00 CST",
+        "discovery_source": "巨潮资讯公告检索",
+        "primary_source": "诺唯赞公告",
+        "impact": "生物科技",
+        "importance": "medium",
+        "included": false,
+        "reason": "负面价格反馈存在，但正文公司事件已由更高跨市场影响的回购、并购与增持事件覆盖"
+      }
+    ],
+    "validation": {
+      "prepublish": "passed",
+      "news_items": 10,
+      "stock_cards": 3,
+      "industry_rows": 7,
+      "concept_rows": 2,
+      "bilingual": true,
+      "marker_only": true,
+      "us_markers_unchanged": true
     }
   },
   "pending_increment": [],
@@ -43,7 +128,8 @@
     "rankings_refresh_requested_at": "2026-11-20T00:31:15Z",
     "rankings_ready_at": "2026-11-20T00:33:24Z",
     "news_research_at": "2026-11-20T00:33:10Z",
-    "generation_at": "2026-11-20T00:36:20Z"
+    "generation_at": "2026-11-20T00:36:20Z",
+    "prepublish_validation_at": "2026-11-20T00:43:35Z"
   },
   "error": null
 }
