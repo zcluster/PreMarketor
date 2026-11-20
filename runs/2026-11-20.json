@@ -3,11 +3,11 @@
   "run_id": "ah-review-20261120-20261120015626",
   "date": "2026-11-20",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "production_verified",
   "started_at": "2026-11-20T01:56:26Z",
-  "heartbeat_at": "2026-11-20T02:12:25.815Z",
-  "lease_until": "2026-11-20T02:22:25.815Z",
+  "heartbeat_at": "2026-11-20T02:15:16.938Z",
+  "lease_until": "2026-11-20T02:15:16.938Z",
   "source_cutoff": "2026-11-20T00:35:57Z",
   "main_base_sha": "186d82295723d0051bc2a86019c85e80130d7535",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -133,7 +133,7 @@
       "manifest_prepended": true
     },
     "incremental_review": {
-      "status": "deployment_verification",
+      "status": "published",
       "baseline_main_sha": "186d82295723d0051bc2a86019c85e80130d7535",
       "baseline_state_sha": "43cc1cbe1e8b2cc8f726c034f32b1c82bd1cb933",
       "source_cutoff": "2026-11-20T00:35:57Z",
@@ -336,6 +336,31 @@
         "manifest_preserved": true,
         "non_ah_preserved": true,
         "ok": true
+      },
+      "remote_readback": {
+        "main_sha": "5afc92bf4f247c1d9ccb48f42782b56c1fbea1fc",
+        "index_blob": "46e6b55dc9d6f0df2df3f2246492da2fc290b60d",
+        "today_blob": "f1b40ec41c6239581403a4febbd526a3ff51381a",
+        "manifest_blob": "23db4d2d0412bb1f7a63569fce830c156fa9e69f",
+        "exact_match": true
+      },
+      "production": {
+        "status": "verified",
+        "checked_at": "2026-11-20T02:15:16.938Z",
+        "deployment_id": "dpl_3d7kDeTSAFWLYiVSq9KdBB9stire",
+        "deployment_url": "https://market-ahead-h4umuod8a-zcluster-projects.vercel.app",
+        "deployment_state": "READY",
+        "target": "production",
+        "homepage": "https://premarketor.com/?v=5afc92bf",
+        "history": "https://premarketor.com/history/?date=2026-11-20&v=5afc92bf",
+        "json_status": 200,
+        "manifest_status": 200,
+        "homepage_updated": "2026-11-20 09:56 CST",
+        "archive_title": "大盘低开扩散，重庆路桥获初步确认；赣锋与紫金承压",
+        "bilingual_archive": true,
+        "stale_preopen_phrases": false,
+        "stock_cards": 3,
+        "empty_state": false
       }
     }
   },
@@ -360,8 +385,9 @@
     "incremental_candidate_commit_at": "2026-11-20T02:04:00Z",
     "incremental_main_update_at": "2026-11-20T02:05:00Z",
     "incremental_consistency_fix_at": "2026-11-20T02:09:00Z",
-    "incremental_deployment_started_at": "2026-11-20T02:12:25.815Z"
+    "incremental_deployment_started_at": "2026-11-20T02:12:25.815Z",
+    "incremental_production_verified_at": "2026-11-20T02:15:16.938Z"
   },
   "error": null,
-  "completed_at": null
+  "completed_at": "2026-11-20T02:15:16.938Z"
 }
