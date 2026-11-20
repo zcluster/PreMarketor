@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "run_id": "ah-20261120-20261120003020",
+  "run_id": "ah-review-20261120-20261120015626",
   "date": "2026-11-20",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "started_at": "2026-11-20T00:30:20Z",
-  "heartbeat_at": "2026-11-20T00:48:34Z",
-  "lease_until": "2026-11-20T00:48:34Z",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "started_at": "2026-11-20T01:56:26Z",
+  "heartbeat_at": "2026-11-20T01:56:26Z",
+  "lease_until": "2026-11-20T02:06:26Z",
   "source_cutoff": "2026-11-20T00:35:57Z",
-  "main_base_sha": "53ed45dcb53567c70d9bd6f4ea6729122731c82c",
+  "main_base_sha": "186d82295723d0051bc2a86019c85e80130d7535",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
@@ -131,6 +131,51 @@
       "homepage_ranking_rows": 9,
       "bilingual_archive": true,
       "manifest_prepended": true
+    },
+    "incremental_review": {
+      "status": "researching",
+      "baseline_main_sha": "186d82295723d0051bc2a86019c85e80130d7535",
+      "baseline_state_sha": "43cc1cbe1e8b2cc8f726c034f32b1c82bd1cb933",
+      "source_cutoff": "2026-11-20T00:35:57Z",
+      "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "observed_at": "2026-11-20T01:56:26Z",
+      "runtime_quotes": {
+        "snapshot": "2026-11-20 09:56 CST",
+        "shanghai": {
+          "last": 3516.23,
+          "pct": -1.72
+        },
+        "shenzhen": {
+          "last": 10303.96,
+          "pct": -2.64
+        },
+        "hsi": {
+          "last": 22463.75,
+          "pct": -1.65
+        },
+        "ganfeng": {
+          "last": 33.19,
+          "pct": -2.95
+        },
+        "chongqing_road_bridge": {
+          "last": 4.15,
+          "pct": 6.96
+        },
+        "zijin": {
+          "last": 22.83,
+          "pct": -4.4
+        },
+        "tencent": {
+          "last": 343.8,
+          "pct": -1.32
+        }
+      },
+      "material_findings": [
+        "重庆路桥涨6.96%，第二大股东增持计划获得明显正向价格确认",
+        "赣锋锂业跌2.95%，回购与固态电池线索未获价格确认",
+        "紫金矿业跌4.40%，金属链负面反馈与回避结论强化",
+        "上证、深证、恒指分别跌1.72%、2.64%、1.65%，风险偏好进一步走弱"
+      ]
     }
   },
   "pending_increment": [],
@@ -145,7 +190,11 @@
     "prepublish_validation_at": "2026-11-20T00:43:35Z",
     "atomic_publish_at": "2026-11-20T00:45:56Z",
     "remote_readback_at": "2026-11-20T00:46:30Z",
-    "production_verified_at": "2026-11-20T00:48:34Z"
+    "production_verified_at": "2026-11-20T00:48:34Z",
+    "incremental_rules_read_at": "2026-11-20T01:56:00Z",
+    "incremental_state_read_at": "2026-11-20T01:56:10Z",
+    "incremental_research_at": "2026-11-20T01:56:26Z"
   },
-  "error": null
+  "error": null,
+  "completed_at": null
 }
