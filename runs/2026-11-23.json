@@ -4,11 +4,11 @@
   "date": "2026-11-23",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "evidence_loaded",
+  "stage": "research_complete",
   "started_at": "2026-11-23T00:30:55Z",
-  "heartbeat_at": "2026-11-23T00:31:44Z",
-  "lease_until": "2026-11-23T00:41:44Z",
-  "source_cutoff": null,
+  "heartbeat_at": "2026-11-23T00:33:18Z",
+  "lease_until": "2026-11-23T00:43:18Z",
+  "source_cutoff": "2026-11-23T00:33:18Z",
   "main_base_sha": "f48e3fb8d595a04cbde24c642b7d8342cdb6d376",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -27,14 +27,147 @@
       "fetched_at": "2026-11-20T15:17:37+08:00",
       "market_date": "2026-11-20",
       "analysis_ready": true
-    }
+    },
+    "runtime_quotes": {
+      "checked_at": "2026-11-23T00:16:00Z",
+      "source": "CME futures via IBD/Reuters",
+      "nasdaq100_futures": "+2.7%",
+      "sp500_futures": "+2.0%",
+      "dow_futures": "+1.4%",
+      "us10y": "4.95%",
+      "oil": "slightly lower",
+      "delay_status": "near-live media snapshot"
+    },
+    "domestic_coverage": [
+      {
+        "event": "沪深北交易所将融资保证金最低比例由100%降至80%",
+        "first_available": "2026-11-22",
+        "discovery_source": "Reuters/交易所公告",
+        "primary_source": "上交所、深交所",
+        "impact": "券商/市场流动性",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "交易所进一步减免费用",
+        "first_available": "2026-11-22",
+        "discovery_source": "交易所公告",
+        "primary_source": "上交所、深交所",
+        "impact": "市场成本",
+        "importance": "medium",
+        "included": true
+      },
+      {
+        "event": "首批91家高标准数字园区建设对象",
+        "first_available": "2026-11-20 09:49 CST",
+        "discovery_source": "工信部政务公开",
+        "primary_source": "工信部/商务部",
+        "impact": "工业数字化/软件/通信",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "天孚通信拟建高速光器件研发生产项目",
+        "first_available": "2026-11-22 16:00 CST",
+        "discovery_source": "东方财富/巨潮资讯",
+        "primary_source": "天孚通信公告",
+        "impact": "CPO/光通信",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "华友钴业拟10亿至15亿元回购",
+        "first_available": "2026-11-22 16:00 CST",
+        "discovery_source": "东方财富/巨潮资讯",
+        "primary_source": "华友钴业公告",
+        "impact": "新能源金属/锂电",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "海油工程签约约8亿美元项目",
+        "first_available": "2026-11-20 16:00 CST",
+        "discovery_source": "上证报/公告",
+        "primary_source": "海油工程公告",
+        "impact": "油服/海工",
+        "importance": "high",
+        "included": true
+      },
+      {
+        "event": "兰剑智能签订2.84亿元物流线设备合同",
+        "first_available": "2026-11-22 16:00 CST",
+        "discovery_source": "东方财富",
+        "primary_source": "上市公司公告",
+        "impact": "智能物流/新能源设备",
+        "importance": "medium",
+        "included": true
+      },
+      {
+        "event": "复星医药拟2.5亿至5亿元回购",
+        "first_available": "2026-11-22 16:00 CST",
+        "discovery_source": "东方财富",
+        "primary_source": "上市公司公告",
+        "impact": "医药",
+        "importance": "medium",
+        "included": false,
+        "reason": "正文公司事件已由跨市场影响更强的光通信、锂电和海工事件覆盖"
+      }
+    ],
+    "major_theme_reconciliation": [
+      {
+        "theme": "抵押贷款金融 +3.49%",
+        "decision": "no_candidate",
+        "reason": "A/H缺少高纯度直接映射且隔夜风险偏好剧烈收缩"
+      },
+      {
+        "theme": "医疗保健设施 +1.90%",
+        "decision": "no_candidate",
+        "reason": "防御轮动存在但无新增A/H公司级催化"
+      },
+      {
+        "theme": "半导体设备与材料 -8.92%",
+        "decision": "avoid",
+        "reason": "全球芯片抛售，A/H设备链先看止跌"
+      },
+      {
+        "theme": "电气设备及零件 -9.45%",
+        "decision": "avoid",
+        "reason": "跌幅显著且亚洲科技链仍承压"
+      },
+      {
+        "theme": "太阳能 -10.37%",
+        "decision": "avoid",
+        "reason": "重大负反馈，回购公告不能覆盖行业下跌"
+      },
+      {
+        "theme": "计算机硬件 -11.04%",
+        "decision": "avoid",
+        "reason": "AI资本开支回报担忧与硬件链抛售"
+      },
+      {
+        "theme": "半导体 -12.15%",
+        "decision": "avoid",
+        "reason": "SOX单日跌10.7%并向A/H科技映射"
+      },
+      {
+        "theme": "页岩油 +0.50%",
+        "decision": "conditional_watch",
+        "reason": "海油工程8亿美元合同提供公司级线索但需公告后价格确认"
+      },
+      {
+        "theme": "CAR-T疗法 +0.30%",
+        "decision": "no_candidate",
+        "reason": "涨幅有限且无新增可核验A/H公司级催化"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "rules_read_at": "2026-11-23T00:30:55Z",
     "lease_acquired_at": "2026-11-23T00:30:55Z",
-    "evidence_loaded_at": "2026-11-23T00:31:44Z"
+    "evidence_loaded_at": "2026-11-23T00:31:44Z",
+    "research_complete_at": "2026-11-23T00:33:18Z"
   },
   "error": null
 }
