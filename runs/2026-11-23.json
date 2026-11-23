@@ -4,10 +4,10 @@
   "date": "2026-11-23",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "research",
+  "stage": "generation",
   "started_at": "2026-11-23T01:18:58.910Z",
-  "heartbeat_at": "2026-11-23T01:18:58.910Z",
-  "lease_until": "2026-11-23T01:28:58.910Z",
+  "heartbeat_at": "2026-11-23T01:21:12.523Z",
+  "lease_until": "2026-11-23T01:31:12.523Z",
   "source_cutoff": "2026-11-23T00:33:18Z",
   "main_base_sha": "d204b925e5398750c7457bc866321b1769fbded1",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -197,7 +197,7 @@
       "manifest_status": 200
     },
     "incremental_review": {
-      "status": "research",
+      "status": "generation",
       "baseline_main_sha": "d204b925e5398750c7457bc866321b1769fbded1",
       "baseline_state_sha": "406fa4bb1d4d7bba558706c9e99058e7c9549e23",
       "source_cutoff": "2026-11-23T00:33:18Z",
@@ -211,7 +211,25 @@
         "omitted_from_first_run": true
       },
       "searched_after_cutoff": true,
-      "other_material_increment_found": false
+      "other_material_increment_found": false,
+      "preopen_quotes": {
+        "checked_at": "2026-11-23T09:20:00+08:00",
+        "source": "Eastmoney cloud delayed endpoint",
+        "a_indices_status": "pre-open/no continuous change",
+        "huayou_pct": 1.72,
+        "cooec_pct": 0,
+        "tfc_pct": -5.84,
+        "tongwei_pct": 0.63,
+        "hsi_pct": -1.08,
+        "hstech_pct": -1.92,
+        "new_constituents": {
+          "yangtze_fiber_pct": -4.71,
+          "innolight_h_pct": -3.47,
+          "catl_h_pct": -2.45,
+          "asmpt_pct": -3.91
+        },
+        "caveat": "pre-open indicative prices; refresh after continuous trading"
+      }
     }
   },
   "pending_increment": [],
@@ -229,7 +247,9 @@
     "production_verified_at": "2026-11-23T00:42:15Z",
     "incremental_rules_read_at": "2026-11-23T01:18:58.910Z",
     "incremental_state_read_at": "2026-11-23T01:18:58.910Z",
-    "incremental_lease_acquired_at": "2026-11-23T01:18:58.910Z"
+    "incremental_lease_acquired_at": "2026-11-23T01:18:58.910Z",
+    "incremental_research_complete_at": "2026-11-23T01:21:12.523Z",
+    "incremental_generation_at": "2026-11-23T01:21:12.523Z"
   },
   "error": null
 }
