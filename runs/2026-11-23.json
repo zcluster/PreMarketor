@@ -3,11 +3,11 @@
   "run_id": "ah-review-20261123-20261123011858",
   "date": "2026-11-23",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "deployment_validation",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-11-23T01:18:58.910Z",
-  "heartbeat_at": "2026-11-23T01:34:28.270Z",
-  "lease_until": "2026-11-23T01:31:12.523Z",
+  "heartbeat_at": "2026-11-23T01:39:00.451Z",
+  "lease_until": "2026-11-23T01:39:00.451Z",
   "source_cutoff": "2026-11-23T00:33:18Z",
   "main_base_sha": "d204b925e5398750c7457bc866321b1769fbded1",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -194,22 +194,45 @@
       "manifest_prepended": true,
       "html_status": 200,
       "json_status": 200,
-      "manifest_status": 200
+      "manifest_status": 200,
+      "deployment_state": "READY",
+      "deployment_id": "dpl_3fwZnQcueFpqJEirWoZtW2qn7gsR",
+      "commit": "ff9a9ae1f74dd925083a2393d7ccfb1406543941",
+      "home": {
+        "url": "https://premarketor.com/",
+        "status": 200,
+        "updated": "2026-11-23 09:30 CST",
+        "bilingual": true,
+        "nonempty": true
+      },
+      "history": {
+        "url": "https://premarketor.com/history/?date=2026-11-23",
+        "status": 200,
+        "title": "恒科扩容补入科技与先进制造，新增成份股开盘承压仍待确认",
+        "rendered": true,
+        "nonempty": true
+      },
+      "raw_json": {
+        "url": "https://premarketor.com/history/data/2026-11-23.json",
+        "status": 200,
+        "exact_remote_match": true,
+        "time_consistent": true,
+        "bilingual": true
+      },
+      "manifest": {
+        "url": "https://premarketor.com/history/manifest.json",
+        "status": 200,
+        "exact_remote_match": true,
+        "record_first": true
+      }
     },
     "incremental_review": {
-      "status": "generation",
+      "status": "published",
       "baseline_main_sha": "d204b925e5398750c7457bc866321b1769fbded1",
       "baseline_state_sha": "406fa4bb1d4d7bba558706c9e99058e7c9549e23",
       "source_cutoff": "2026-11-23T00:33:18Z",
       "observed_at": "2026-11-23T01:18:58.910Z",
-      "material_omission": {
-        "event": "恒生科技指数成份股由30只增至50只，新增20只科技与先进制造公司",
-        "primary_source": "https://www.hsi.com.hk/content/dam/wpb/hsil/zh_cn/press_releases/content/20261120T174500.pdf",
-        "first_available": "2026-11-20T17:45:00+08:00",
-        "effective_date": "2026-12-07",
-        "impact": "港股科技指数权重、被动资金预期与光通信/半导体/AI基础设施映射",
-        "omitted_from_first_run": true
-      },
+      "material_omission": "Hang Seng Tech quarterly review expanding 30 to 50 constituents effective 2026-12-07",
       "searched_after_cutoff": true,
       "other_material_increment_found": false,
       "preopen_quotes": {
@@ -229,11 +252,19 @@
           "asmpt_pct": -3.91
         },
         "caveat": "pre-open indicative prices; refresh after continuous trading"
-      }
+      },
+      "completed_at": "2026-11-23T01:39:00.451Z",
+      "official_source": "https://www.hsi.com.hk/content/dam/wpb/hsil/zh_cn/press_releases/content/20261120T174500.pdf",
+      "opening_feedback_time": "2026-11-23 09:30 CST",
+      "bilingual_consistency": "passed",
+      "whitelist_protection": "passed",
+      "us_preservation": "byte-exact",
+      "machine_validation": "passed",
+      "browser_supplement": "passed"
     }
   },
-  "pending_increment": [],
-  "published_commit": "d204b925e5398750c7457bc866321b1769fbded1",
+  "pending_increment": false,
+  "published_commit": "ff9a9ae1f74dd925083a2393d7ccfb1406543941",
   "stage_timings": {
     "rules_read_at": "2026-11-23T00:30:55Z",
     "lease_acquired_at": "2026-11-23T00:30:55Z",
@@ -249,13 +280,10 @@
     "incremental_state_read_at": "2026-11-23T01:18:58.910Z",
     "incremental_lease_acquired_at": "2026-11-23T01:18:58.910Z",
     "incremental_research_complete_at": "2026-11-23T01:21:12.523Z",
-    "incremental_generation_at": "2026-11-23T01:21:12.523Z"
+    "incremental_generation_at": "2026-11-23T01:21:12.523Z",
+    "incremental_review_completed_at": "2026-11-23T01:39:00.451Z"
   },
   "error": null,
-  "lease": {
-    "owner": "MarketAhead A/H 09:15 增量复核",
-    "expires_at": "2026-11-23T01:44:28.270Z"
-  },
   "incremental_review": {
     "observed_at": "2026-11-23T01:27:43.595Z",
     "quote_snapshot_time": "2026-11-23 09:30 CST",
@@ -314,6 +342,12 @@
       "history/manifest.json"
     ],
     "remote_readback": "exact",
-    "hard_validation": "passed"
+    "hard_validation": "passed",
+    "status": "published",
+    "completed_at": "2026-11-23T01:39:00.451Z",
+    "final_commit": "ff9a9ae1f74dd925083a2393d7ccfb1406543941",
+    "deployment_state": "READY",
+    "production_validation": "passed",
+    "lease_released_at": "2026-11-23T01:39:00.451Z"
   }
 }
