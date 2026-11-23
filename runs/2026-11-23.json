@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "run_id": "ah-20261123-20261123003055",
+  "run_id": "ah-review-20261123-20261123011858",
   "date": "2026-11-23",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "started_at": "2026-11-23T00:30:55Z",
-  "heartbeat_at": "2026-11-23T00:42:15Z",
-  "lease_until": "2026-11-23T00:42:15Z",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "research",
+  "started_at": "2026-11-23T01:18:58.910Z",
+  "heartbeat_at": "2026-11-23T01:18:58.910Z",
+  "lease_until": "2026-11-23T01:28:58.910Z",
   "source_cutoff": "2026-11-23T00:33:18Z",
-  "main_base_sha": "f48e3fb8d595a04cbde24c642b7d8342cdb6d376",
+  "main_base_sha": "d204b925e5398750c7457bc866321b1769fbded1",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
@@ -195,6 +195,23 @@
       "html_status": 200,
       "json_status": 200,
       "manifest_status": 200
+    },
+    "incremental_review": {
+      "status": "research",
+      "baseline_main_sha": "d204b925e5398750c7457bc866321b1769fbded1",
+      "baseline_state_sha": "406fa4bb1d4d7bba558706c9e99058e7c9549e23",
+      "source_cutoff": "2026-11-23T00:33:18Z",
+      "observed_at": "2026-11-23T01:18:58.910Z",
+      "material_omission": {
+        "event": "恒生科技指数成份股由30只增至50只，新增20只科技与先进制造公司",
+        "primary_source": "https://www.hsi.com.hk/content/dam/wpb/hsil/zh_cn/press_releases/content/20261120T174500.pdf",
+        "first_available": "2026-11-20T17:45:00+08:00",
+        "effective_date": "2026-12-07",
+        "impact": "港股科技指数权重、被动资金预期与光通信/半导体/AI基础设施映射",
+        "omitted_from_first_run": true
+      },
+      "searched_after_cutoff": true,
+      "other_material_increment_found": false
     }
   },
   "pending_increment": [],
@@ -209,7 +226,10 @@
     "candidate_commit_at": "2026-11-23T00:38:32Z",
     "main_update_at": "2026-11-23T00:39:09Z",
     "remote_readback_at": "2026-11-23T00:39:09Z",
-    "production_verified_at": "2026-11-23T00:42:15Z"
+    "production_verified_at": "2026-11-23T00:42:15Z",
+    "incremental_rules_read_at": "2026-11-23T01:18:58.910Z",
+    "incremental_state_read_at": "2026-11-23T01:18:58.910Z",
+    "incremental_lease_acquired_at": "2026-11-23T01:18:58.910Z"
   },
   "error": null
 }
