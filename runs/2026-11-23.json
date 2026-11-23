@@ -4,10 +4,10 @@
   "date": "2026-11-23",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research_complete",
+  "stage": "prepublish_validation",
   "started_at": "2026-11-23T00:30:55Z",
-  "heartbeat_at": "2026-11-23T00:33:18Z",
-  "lease_until": "2026-11-23T00:43:18Z",
+  "heartbeat_at": "2026-11-23T00:37:28Z",
+  "lease_until": "2026-11-23T00:47:28Z",
   "source_cutoff": "2026-11-23T00:33:18Z",
   "main_base_sha": "f48e3fb8d595a04cbde24c642b7d8342cdb6d376",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -159,7 +159,20 @@
         "decision": "no_candidate",
         "reason": "涨幅有限且无新增可核验A/H公司级催化"
       }
-    ]
+    ],
+    "validation": {
+      "prepublish": "passed",
+      "news_items": 10,
+      "overnight_items": 3,
+      "stock_cards": 4,
+      "industry_rows": 10,
+      "concept_rows": 4,
+      "bilingual": true,
+      "marker_only": true,
+      "us_markers_unchanged": true,
+      "history_preserved": true,
+      "manifest_records": 68
+    }
   },
   "pending_increment": [],
   "published_commit": null,
@@ -167,7 +180,9 @@
     "rules_read_at": "2026-11-23T00:30:55Z",
     "lease_acquired_at": "2026-11-23T00:30:55Z",
     "evidence_loaded_at": "2026-11-23T00:31:44Z",
-    "research_complete_at": "2026-11-23T00:33:18Z"
+    "research_complete_at": "2026-11-23T00:33:18Z",
+    "generation_at": "2026-11-23T00:37:28Z",
+    "prepublish_validation_at": "2026-11-23T00:37:28Z"
   },
   "error": null
 }
