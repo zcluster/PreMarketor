@@ -3,11 +3,11 @@
   "run_id": "ah-20261123-20261123003055",
   "date": "2026-11-23",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-11-23T00:30:55Z",
-  "heartbeat_at": "2026-11-23T00:39:09Z",
-  "lease_until": "2026-11-23T00:49:09Z",
+  "heartbeat_at": "2026-11-23T00:42:15Z",
+  "lease_until": "2026-11-23T00:42:15Z",
   "source_cutoff": "2026-11-23T00:33:18Z",
   "main_base_sha": "f48e3fb8d595a04cbde24c642b7d8342cdb6d376",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -179,6 +179,22 @@
       "manifestBlob": "8c201f22853ed2f7564178a7dd63cb625c469997",
       "treeSha": "22e398708583b15009eaff4369d94f1664b69a39",
       "commitSha": "d204b925e5398750c7457bc866321b1769fbded1"
+    },
+    "production": {
+      "status": "verified",
+      "checked_at": "2026-11-23T00:42:15Z",
+      "homepage_url": "https://premarketor.com/?v=d204b925",
+      "history_url": "https://premarketor.com/history/?date=2026-11-23&v=d204b925",
+      "json_url": "https://premarketor.com/history/data/2026-11-23.json?v=d204b925",
+      "manifest_url": "https://premarketor.com/history/manifest.json?v=d204b925",
+      "homepage_updated": "2026-11-23 08:36 CST",
+      "archive_stock_cards": 4,
+      "homepage_ranking_rows": 14,
+      "bilingual_archive": true,
+      "manifest_prepended": true,
+      "html_status": 200,
+      "json_status": 200,
+      "manifest_status": 200
     }
   },
   "pending_increment": [],
@@ -191,7 +207,9 @@
     "generation_at": "2026-11-23T00:37:28Z",
     "prepublish_validation_at": "2026-11-23T00:37:28Z",
     "candidate_commit_at": "2026-11-23T00:38:32Z",
-    "main_update_at": "2026-11-23T00:39:09Z"
+    "main_update_at": "2026-11-23T00:39:09Z",
+    "remote_readback_at": "2026-11-23T00:39:09Z",
+    "production_verified_at": "2026-11-23T00:42:15Z"
   },
   "error": null
 }
