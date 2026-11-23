@@ -4,9 +4,9 @@
   "date": "2026-11-23",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "generation",
+  "stage": "hard_validation",
   "started_at": "2026-11-23T01:18:58.910Z",
-  "heartbeat_at": "2026-11-23T01:21:12.523Z",
+  "heartbeat_at": "2026-11-23T01:27:43.595Z",
   "lease_until": "2026-11-23T01:31:12.523Z",
   "source_cutoff": "2026-11-23T00:33:18Z",
   "main_base_sha": "d204b925e5398750c7457bc866321b1769fbded1",
@@ -251,5 +251,61 @@
     "incremental_research_complete_at": "2026-11-23T01:21:12.523Z",
     "incremental_generation_at": "2026-11-23T01:21:12.523Z"
   },
-  "error": null
+  "error": null,
+  "lease": {
+    "owner": "MarketAhead A/H 09:15 增量复核",
+    "expires_at": "2026-11-23T01:37:43.595Z"
+  },
+  "incremental_review": {
+    "observed_at": "2026-11-23T01:27:43.595Z",
+    "quote_snapshot_time": "2026-11-23 09:30 CST",
+    "quote_snapshot_source": "Eastmoney delayed public quote endpoint via Work Cloud browser",
+    "live_quotes": {
+      "shanghai": {
+        "price": 3503.52,
+        "change_pct": -0.86
+      },
+      "shenzhen": {
+        "price": 10155.6,
+        "change_pct": -0.98
+      },
+      "hstech": {
+        "price": 3443.76,
+        "change_pct": -1.92
+      },
+      "huayou_603799": {
+        "price": 29.07,
+        "change_pct": 2
+      },
+      "cooec_600583": {
+        "price": 6.16,
+        "change_pct": -1.12
+      },
+      "tfc_300394": {
+        "price": 99.9,
+        "change_pct": -2.23
+      },
+      "tongwei_600438": {
+        "price": 11.28,
+        "change_pct": 1.53
+      },
+      "yangtze_fibre_06869": {
+        "price": 68.8,
+        "change_pct": -4.71
+      },
+      "innolight_h_03308": {
+        "price": 473,
+        "change_pct": -3.47
+      },
+      "catl_h_03750": {
+        "price": 326.8,
+        "change_pct": -2.45
+      },
+      "asmpt_00522": {
+        "price": 78.65,
+        "change_pct": -3.91
+      }
+    },
+    "next_step": "Generate bilingual candidate, enforce allowed-marker and three-file whitelist checks, then atomically publish only if all gates pass."
+  }
 }
