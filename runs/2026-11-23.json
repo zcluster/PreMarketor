@@ -4,10 +4,10 @@
   "date": "2026-11-23",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "prepublish_validation",
+  "stage": "candidate_commit_created",
   "started_at": "2026-11-23T00:30:55Z",
-  "heartbeat_at": "2026-11-23T00:37:28Z",
-  "lease_until": "2026-11-23T00:47:28Z",
+  "heartbeat_at": "2026-11-23T00:38:32Z",
+  "lease_until": "2026-11-23T00:48:32Z",
   "source_cutoff": "2026-11-23T00:33:18Z",
   "main_base_sha": "f48e3fb8d595a04cbde24c642b7d8342cdb6d376",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -172,6 +172,13 @@
       "us_markers_unchanged": true,
       "history_preserved": true,
       "manifest_records": 68
+    },
+    "candidate_commit": {
+      "indexBlob": "f8a37ab56519785027c2fb17848941b911c1569e",
+      "dataBlob": "ee439277e5d07922675d4ffe6add7af6a884189b",
+      "manifestBlob": "8c201f22853ed2f7564178a7dd63cb625c469997",
+      "treeSha": "22e398708583b15009eaff4369d94f1664b69a39",
+      "commitSha": "d204b925e5398750c7457bc866321b1769fbded1"
     }
   },
   "pending_increment": [],
@@ -182,7 +189,8 @@
     "evidence_loaded_at": "2026-11-23T00:31:44Z",
     "research_complete_at": "2026-11-23T00:33:18Z",
     "generation_at": "2026-11-23T00:37:28Z",
-    "prepublish_validation_at": "2026-11-23T00:37:28Z"
+    "prepublish_validation_at": "2026-11-23T00:37:28Z",
+    "candidate_commit_at": "2026-11-23T00:38:32Z"
   },
   "error": null
 }
