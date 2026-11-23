@@ -4,9 +4,9 @@
   "date": "2026-11-23",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "hard_validation",
+  "stage": "deployment_validation",
   "started_at": "2026-11-23T01:18:58.910Z",
-  "heartbeat_at": "2026-11-23T01:27:43.595Z",
+  "heartbeat_at": "2026-11-23T01:34:28.270Z",
   "lease_until": "2026-11-23T01:31:12.523Z",
   "source_cutoff": "2026-11-23T00:33:18Z",
   "main_base_sha": "d204b925e5398750c7457bc866321b1769fbded1",
@@ -254,7 +254,7 @@
   "error": null,
   "lease": {
     "owner": "MarketAhead A/H 09:15 增量复核",
-    "expires_at": "2026-11-23T01:37:43.595Z"
+    "expires_at": "2026-11-23T01:44:28.270Z"
   },
   "incremental_review": {
     "observed_at": "2026-11-23T01:27:43.595Z",
@@ -306,6 +306,14 @@
         "change_pct": -3.91
       }
     },
-    "next_step": "Generate bilingual candidate, enforce allowed-marker and three-file whitelist checks, then atomically publish only if all gates pass."
+    "next_step": "Verify deployment and production home/history/raw JSON/manifest, then release lease into terminal published state.",
+    "candidate_commit": "fb543cd2ab655de33c6c311349f141b4dc94d27d",
+    "published_files": [
+      "index.html",
+      "history/data/2026-11-23.json",
+      "history/manifest.json"
+    ],
+    "remote_readback": "exact",
+    "hard_validation": "passed"
   }
 }
