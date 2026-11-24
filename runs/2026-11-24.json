@@ -4,10 +4,10 @@
   "date": "2026-11-24",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "prepublish_validation",
+  "stage": "candidate_commit",
   "started_at": "2026-11-24T00:29:22Z",
-  "heartbeat_at": "2026-11-24T00:38:49Z",
-  "lease_until": "2026-11-24T00:48:49Z",
+  "heartbeat_at": "2026-11-24T00:39:58Z",
+  "lease_until": "2026-11-24T00:49:58Z",
   "source_cutoff": "2026-11-24T00:34:03Z",
   "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -157,7 +157,25 @@
         "candidates": [],
         "reason": "no independently verified direct A/H catalyst"
       }
-    ]
+    ],
+    "validation": {
+      "ok": true,
+      "errors": [],
+      "counts": {
+        "news_zh": 13,
+        "assets": 6,
+        "keywords": 12,
+        "cards": 4,
+        "panel_rows_zh": 15,
+        "panel_rows_en": 15
+      },
+      "tickers": [
+        "300308.SZ / 03308.HK",
+        "300209.SZ",
+        "000635.SZ",
+        "02257.HK"
+      ]
+    }
   },
   "pending_increment": [],
   "published_commit": null,
@@ -168,7 +186,8 @@
     "rankings_refresh_requested_at": "2026-11-24T00:30:01Z",
     "rankings_ready_at": "2026-11-24T00:31:33Z",
     "research_complete_at": "2026-11-24T00:34:03Z",
-    "generation_complete_at": "2026-11-24T00:38:49Z"
+    "generation_complete_at": "2026-11-24T00:38:49Z",
+    "validation_complete_at": "2026-11-24T00:39:58Z"
   },
   "error": null
 }
