@@ -3,13 +3,13 @@
   "run_id": "ah-review-20261124-20261124021234",
   "date": "2026-11-24",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "incremental_research",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-11-24T02:12:34.700Z",
-  "heartbeat_at": "2026-11-24T02:17:18.493Z",
-  "lease_until": "2026-11-24T02:27:18.493Z",
-  "source_cutoff": "2026-11-24T00:34:03Z",
-  "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
+  "heartbeat_at": "2026-11-24T02:26:37.323Z",
+  "lease_until": "2026-11-24T02:26:37.323Z",
+  "source_cutoff": "2026-11-24T02:26:37.323Z",
+  "main_base_sha": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
@@ -57,23 +57,23 @@
     "candidates": [
       {
         "ticker": "300308.SZ / 03308.HK",
-        "decision": "conditional_watch",
-        "quote_feedback": "300308 closed 417.20 +6.10% on Nov 23; announcement after close; no post-announcement quote"
+        "decision": "bullish_candidate",
+        "quote_feedback": "10:15 CST: A share RMB442.78 +6.13%, H share HKD550 +7.11%; both faded from opening highs"
       },
       {
         "ticker": "300209.SZ",
-        "decision": "conditional_watch",
-        "quote_feedback": "announcement after close; Nov 24 opening quote unavailable"
+        "decision": "bullish_candidate",
+        "quote_feedback": "10:15 CST: RMB23.61 +8.80%; initial positive confirmation for compute-services contract"
       },
       {
         "ticker": "000635.SZ",
         "decision": "avoid",
-        "quote_feedback": "suspended through Nov 23; resumes Nov 24; no post-deal quote"
+        "quote_feedback": "10:15 CST: resumed at down limit RMB9.90 -10.00%; negative confirmation"
       },
       {
         "ticker": "02257.HK",
         "decision": "avoid",
-        "quote_feedback": "Nov 23 close HKD3.70; placement HKD3.25, 12.16% discount"
+        "quote_feedback": "10:15 CST delayed feed HKD3.70 with zero volume; no evidence discounted placement was absorbed"
       }
     ],
     "major_theme_reconciliation": [
@@ -82,11 +82,11 @@
           "industry:1 Semiconductors +18.00%",
           "industry:2 Semiconductor Equipment +12.37%"
         ],
-        "decision": "conditional_watch",
+        "decision": "bullish_candidate",
         "candidates": [
           "300308.SZ / 03308.HK"
         ],
-        "reason": "direct CPO exposure and buyback; local opening confirmation missing"
+        "reason": "direct CPO exposure and buyback; A/H shares gained 6.13% and 7.11%, with gap-up fade risk retained"
       },
       {
         "rows": [
@@ -94,11 +94,11 @@
           "industry:4 Electrical Equipment +11.56%",
           "industry:5 Electronic Components +10.58%"
         ],
-        "decision": "conditional_watch",
+        "decision": "bullish_candidate",
         "candidates": [
           "300209.SZ"
         ],
-        "reason": "direct GPU compute-service contract; opening confirmation missing"
+        "reason": "direct GPU compute-service contract; stock gained 8.80%, giving initial price confirmation"
       },
       {
         "rows": [
@@ -106,12 +106,12 @@
           "concept:2 IDC +24.97%",
           "concept:4 Storage +18.32%"
         ],
-        "decision": "conditional_watch",
+        "decision": "bullish_candidate",
         "candidates": [
           "300308.SZ / 03308.HK",
           "300209.SZ"
         ],
-        "reason": "direct AI infrastructure mapping; no chase without local confirmation"
+        "reason": "direct GPU compute-service contract; stock gained 8.80%, giving initial price confirmation"
       },
       {
         "rows": [
@@ -162,24 +162,29 @@
       "ok": true,
       "errors": [],
       "counts": {
-        "news_zh": 13,
+        "news_zh": 14,
+        "news_en": 14,
         "assets": 6,
         "keywords": 12,
-        "cards": 4,
+        "cards_zh": 4,
+        "cards_en": 4,
         "panel_rows_zh": 15,
         "panel_rows_en": 15
       },
-      "tickers": [
-        "300308.SZ / 03308.HK",
-        "300209.SZ",
-        "000635.SZ",
-        "02257.HK"
+      "checks": [
+        "marker_only",
+        "US_BRIEF_US_TIME_US_UPDATED_unchanged",
+        "bilingual_structure",
+        "overnight_summary_exactly_three",
+        "history_manifest_complete",
+        "JSON_parse",
+        "no_forbidden_markup"
       ]
     },
     "remote_write": {
-      "parent_sha": "7c2d03ccc465c366b56b6547e08ed51a06fce84d",
-      "tree_sha": "4d282a1d938c716ce15344c5fe275ef423646894",
-      "commit_sha": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
+      "parent_sha": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
+      "tree_sha": "38d55e6404a3df179163b9496588c3cee28ee111",
+      "commit_sha": "6777288e2292c74b5b8cc3728c7636203bfeca69",
       "force": false,
       "files": [
         "index.html",
@@ -189,7 +194,7 @@
     },
     "remote_readback": {
       "status": "ok",
-      "commit": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
+      "commit": "6777288e2292c74b5b8cc3728c7636203bfeca69",
       "files": [
         "index.html",
         "history/data/2026-11-24.json",
@@ -199,23 +204,30 @@
     },
     "production_verification": {
       "status": "ok",
+      "deployment": {
+        "state": "READY",
+        "target": "production",
+        "commit": "6777288e2292c74b5b8cc3728c7636203bfeca69"
+      },
       "homepage": {
         "url": "https://premarketor.com/",
-        "title_present": true,
-        "cards": 4,
-        "panel_rows": 15,
-        "time": "2026-11-24 08:38 CST"
+        "status": 200,
+        "time": "2026-11-24 10:21 CST",
+        "increment_present": true,
+        "empty_state": false
       },
       "archive": {
         "url": "https://premarketor.com/history/?date=2026-11-24",
         "rendered": true,
+        "time": "2026-11-24 10:21 CST",
+        "news_items": 14,
         "cards": 4,
-        "news_items": 13,
         "empty_state": false
       },
       "json": {
         "url": "https://premarketor.com/history/data/2026-11-24.json",
-        "date": "2026-11-24",
+        "status": 200,
+        "bytes_match": true,
         "ah_count": 1,
         "html_root": true,
         "html_en_root": true,
@@ -224,6 +236,8 @@
       },
       "manifest": {
         "url": "https://premarketor.com/history/manifest.json",
+        "status": 200,
+        "bytes_match": true,
         "first_date": "2026-11-24",
         "types": [
           "AH"
@@ -231,16 +245,20 @@
       }
     },
     "incremental_review": {
-      "status": "running",
+      "status": "published",
       "started_at": "2026-11-24T02:12:34.700Z",
+      "completed_at": "2026-11-24T02:26:37.323Z",
       "baseline_commit": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
-      "source_cutoff": "2026-11-24T00:34:03Z",
+      "published_commit": "6777288e2292c74b5b8cc3728c7636203bfeca69",
+      "source_cutoff_before": "2026-11-24T00:34:03Z",
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-      "baseline_title": "美股AI链强反弹映射A/H算力，中际旭创回购与行云订单待开盘确认"
+      "material_increment": true,
+      "headline": "A/H科技开盘确认：中际旭创双市场走强、行云科技获正反馈，英力特复牌跌停",
+      "research_notes": "No post-08:34 major policy/filing changed the thesis; price feedback materially changed candidate status."
     }
   },
   "pending_increment": [],
-  "published_commit": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
+  "published_commit": "6777288e2292c74b5b8cc3728c7636203bfeca69",
   "stage_timings": {
     "rules_read_at": "2026-11-24T00:29:22Z",
     "lease_acquired_at": "2026-11-24T00:29:22Z",
@@ -255,8 +273,13 @@
     "total_seconds": 829,
     "state_repaired_at": "2026-11-24T02:11:00Z",
     "incremental_review_started_at": "2026-11-24T02:12:34.700Z",
-    "research_heartbeat_at": "2026-11-24T02:17:18.493Z"
+    "research_heartbeat_at": "2026-11-24T02:17:18.493Z",
+    "incremental_research_complete_at": "2026-11-24T02:26:37.323Z",
+    "incremental_validation_complete_at": "2026-11-24T02:26:37.323Z",
+    "incremental_main_updated_at": "2026-11-24T02:26:37.323Z",
+    "incremental_production_verified_at": "2026-11-24T02:26:37.323Z",
+    "incremental_total_seconds": 843
   },
   "error": null,
-  "completed_at": "2026-11-24T00:43:11Z"
+  "completed_at": "2026-11-24T02:26:37.323Z"
 }
