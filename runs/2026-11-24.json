@@ -4,11 +4,11 @@
   "date": "2026-11-24",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
+  "stage": "generation",
   "started_at": "2026-11-24T00:29:22Z",
-  "heartbeat_at": "2026-11-24T00:31:33Z",
-  "lease_until": "2026-11-24T00:41:33Z",
-  "source_cutoff": null,
+  "heartbeat_at": "2026-11-24T00:34:03Z",
+  "lease_until": "2026-11-24T00:44:03Z",
+  "source_cutoff": "2026-11-24T00:34:03Z",
   "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -39,7 +39,8 @@
     "lease_acquired_at": "2026-11-24T00:29:22Z",
     "rankings_checked_at": "2026-11-24T00:29:22Z",
     "rankings_refresh_requested_at": "2026-11-24T00:30:01Z",
-    "rankings_ready_at": "2026-11-24T00:31:33Z"
+    "rankings_ready_at": "2026-11-24T00:31:33Z",
+    "research_complete_at": "2026-11-24T00:34:03Z"
   },
   "error": null
 }
