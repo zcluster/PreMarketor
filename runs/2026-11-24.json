@@ -7,7 +7,7 @@
   "stage": "published",
   "started_at": "2026-11-24T00:29:22Z",
   "heartbeat_at": "2026-11-24T00:43:11Z",
-  "lease_until": null,
+  "lease_until": "2026-11-24T00:43:11Z",
   "source_cutoff": "2026-11-24T00:34:03Z",
   "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -244,7 +244,8 @@
     "validation_complete_at": "2026-11-24T00:39:58Z",
     "main_updated_at": "2026-11-24T00:41:29Z",
     "production_verified_at": "2026-11-24T00:43:11Z",
-    "total_seconds": 829
+    "total_seconds": 829,
+    "state_repaired_at": "2026-11-24T02:11:00Z"
   },
   "error": null,
   "completed_at": "2026-11-24T00:43:11Z"
