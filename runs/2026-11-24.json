@@ -4,10 +4,10 @@
   "date": "2026-11-24",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "candidate_commit",
+  "stage": "deployment_verification",
   "started_at": "2026-11-24T00:29:22Z",
-  "heartbeat_at": "2026-11-24T00:39:58Z",
-  "lease_until": "2026-11-24T00:49:58Z",
+  "heartbeat_at": "2026-11-24T00:41:29Z",
+  "lease_until": "2026-11-24T00:51:29Z",
   "source_cutoff": "2026-11-24T00:34:03Z",
   "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -175,10 +175,21 @@
         "000635.SZ",
         "02257.HK"
       ]
+    },
+    "remote_write": {
+      "parent_sha": "7c2d03ccc465c366b56b6547e08ed51a06fce84d",
+      "tree_sha": "4d282a1d938c716ce15344c5fe275ef423646894",
+      "commit_sha": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
+      "force": false,
+      "files": [
+        "index.html",
+        "history/data/2026-11-24.json",
+        "history/manifest.json"
+      ]
     }
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
   "stage_timings": {
     "rules_read_at": "2026-11-24T00:29:22Z",
     "lease_acquired_at": "2026-11-24T00:29:22Z",
@@ -187,7 +198,8 @@
     "rankings_ready_at": "2026-11-24T00:31:33Z",
     "research_complete_at": "2026-11-24T00:34:03Z",
     "generation_complete_at": "2026-11-24T00:38:49Z",
-    "validation_complete_at": "2026-11-24T00:39:58Z"
+    "validation_complete_at": "2026-11-24T00:39:58Z",
+    "main_updated_at": "2026-11-24T00:41:29Z"
   },
   "error": null
 }
