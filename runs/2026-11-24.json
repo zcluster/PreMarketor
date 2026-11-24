@@ -4,10 +4,10 @@
   "date": "2026-11-24",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
+  "stage": "prepublish_validation",
   "started_at": "2026-11-24T00:29:22Z",
-  "heartbeat_at": "2026-11-24T00:34:03Z",
-  "lease_until": "2026-11-24T00:44:03Z",
+  "heartbeat_at": "2026-11-24T00:38:49Z",
+  "lease_until": "2026-11-24T00:48:49Z",
   "source_cutoff": "2026-11-24T00:34:03Z",
   "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -30,7 +30,134 @@
       "expected_session_date": "2026-11-23",
       "status": "verified_normal_session",
       "source": "NYSE holiday schedule / calendar check"
-    }
+    },
+    "domestic_scan": {
+      "discovery_sources": [
+        "Eastmoney",
+        "Shanghai Securities News",
+        "Yicai",
+        "public pre-market roundups"
+      ],
+      "primary_sources": [
+        "NDRC",
+        "SSE",
+        "CNINFO",
+        "HKEX",
+        "company filings"
+      ],
+      "cutoff": "2026-11-24 08:38 CST",
+      "headline_count": 10
+    },
+    "akshare": {
+      "status": "ok",
+      "fetched_at": "2026-11-23T15:40:28+08:00",
+      "a_share_date": "2026-11-23",
+      "hk_market_phase": "intraday_15_30_snapshot"
+    },
+    "candidates": [
+      {
+        "ticker": "300308.SZ / 03308.HK",
+        "decision": "conditional_watch",
+        "quote_feedback": "300308 closed 417.20 +6.10% on Nov 23; announcement after close; no post-announcement quote"
+      },
+      {
+        "ticker": "300209.SZ",
+        "decision": "conditional_watch",
+        "quote_feedback": "announcement after close; Nov 24 opening quote unavailable"
+      },
+      {
+        "ticker": "000635.SZ",
+        "decision": "avoid",
+        "quote_feedback": "suspended through Nov 23; resumes Nov 24; no post-deal quote"
+      },
+      {
+        "ticker": "02257.HK",
+        "decision": "avoid",
+        "quote_feedback": "Nov 23 close HKD3.70; placement HKD3.25, 12.16% discount"
+      }
+    ],
+    "major_theme_reconciliation": [
+      {
+        "rows": [
+          "industry:1 Semiconductors +18.00%",
+          "industry:2 Semiconductor Equipment +12.37%"
+        ],
+        "decision": "conditional_watch",
+        "candidates": [
+          "300308.SZ / 03308.HK"
+        ],
+        "reason": "direct CPO exposure and buyback; local opening confirmation missing"
+      },
+      {
+        "rows": [
+          "industry:3 Computer Hardware +12.17%",
+          "industry:4 Electrical Equipment +11.56%",
+          "industry:5 Electronic Components +10.58%"
+        ],
+        "decision": "conditional_watch",
+        "candidates": [
+          "300209.SZ"
+        ],
+        "reason": "direct GPU compute-service contract; opening confirmation missing"
+      },
+      {
+        "rows": [
+          "concept:1 CPU +25.19%",
+          "concept:2 IDC +24.97%",
+          "concept:4 Storage +18.32%"
+        ],
+        "decision": "conditional_watch",
+        "candidates": [
+          "300308.SZ / 03308.HK",
+          "300209.SZ"
+        ],
+        "reason": "direct AI infrastructure mapping; no chase without local confirmation"
+      },
+      {
+        "rows": [
+          "concept:3 Blockchain +20.22%"
+        ],
+        "decision": "no_candidate",
+        "candidates": [],
+        "reason": "ranking leader is NVDA and no independently verified direct A/H blockchain exposure in limited research"
+      },
+      {
+        "rows": [
+          "concept:5 Brain-computer interface +18.08%"
+        ],
+        "decision": "no_candidate",
+        "candidates": [],
+        "reason": "no independently verified A/H company catalyst in limited research"
+      },
+      {
+        "rows": [
+          "industry:6 Integrated Oil & Gas -1.29%",
+          "industry:8 Refining & Marketing -1.49%",
+          "industry:9 Exploration & Production -1.94%"
+        ],
+        "decision": "no_candidate",
+        "candidates": [],
+        "reason": "mild negative US breadth; no stronger company-specific A/H trigger"
+      },
+      {
+        "rows": [
+          "industry:7 Healthcare Plans -1.34%"
+        ],
+        "decision": "avoid",
+        "candidates": [
+          "02257.HK"
+        ],
+        "reason": "not a direct healthcare-plan mapping; included only as separate verified biotech financing risk"
+      },
+      {
+        "rows": [
+          "industry:10 Department Stores -3.33%"
+        ],
+        "decision": "no_candidate",
+        "candidates": [],
+        "reason": "no independently verified direct A/H catalyst"
+      }
+    ]
   },
   "pending_increment": [],
   "published_commit": null,
@@ -40,7 +167,8 @@
     "rankings_checked_at": "2026-11-24T00:29:22Z",
     "rankings_refresh_requested_at": "2026-11-24T00:30:01Z",
     "rankings_ready_at": "2026-11-24T00:31:33Z",
-    "research_complete_at": "2026-11-24T00:34:03Z"
+    "research_complete_at": "2026-11-24T00:34:03Z",
+    "generation_complete_at": "2026-11-24T00:38:49Z"
   },
   "error": null
 }
