@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "run_id": "ah-20261124-20261124002922",
+  "run_id": "ah-review-20261124-20261124021234",
   "date": "2026-11-24",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "started_at": "2026-11-24T00:29:22Z",
-  "heartbeat_at": "2026-11-24T00:43:11Z",
-  "lease_until": "2026-11-24T00:43:11Z",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "started_at": "2026-11-24T02:12:34.700Z",
+  "heartbeat_at": "2026-11-24T02:12:34.700Z",
+  "lease_until": "2026-11-24T02:22:34.700Z",
   "source_cutoff": "2026-11-24T00:34:03Z",
   "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -229,6 +229,14 @@
           "AH"
         ]
       }
+    },
+    "incremental_review": {
+      "status": "running",
+      "started_at": "2026-11-24T02:12:34.700Z",
+      "baseline_commit": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
+      "source_cutoff": "2026-11-24T00:34:03Z",
+      "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "baseline_title": "美股AI链强反弹映射A/H算力，中际旭创回购与行云订单待开盘确认"
     }
   },
   "pending_increment": [],
@@ -245,7 +253,8 @@
     "main_updated_at": "2026-11-24T00:41:29Z",
     "production_verified_at": "2026-11-24T00:43:11Z",
     "total_seconds": 829,
-    "state_repaired_at": "2026-11-24T02:11:00Z"
+    "state_repaired_at": "2026-11-24T02:11:00Z",
+    "incremental_review_started_at": "2026-11-24T02:12:34.700Z"
   },
   "error": null,
   "completed_at": "2026-11-24T00:43:11Z"
