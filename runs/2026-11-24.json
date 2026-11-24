@@ -6,8 +6,8 @@
   "status": "running",
   "stage": "incremental_research",
   "started_at": "2026-11-24T02:12:34.700Z",
-  "heartbeat_at": "2026-11-24T02:12:34.700Z",
-  "lease_until": "2026-11-24T02:22:34.700Z",
+  "heartbeat_at": "2026-11-24T02:17:18.493Z",
+  "lease_until": "2026-11-24T02:27:18.493Z",
   "source_cutoff": "2026-11-24T00:34:03Z",
   "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -254,7 +254,8 @@
     "production_verified_at": "2026-11-24T00:43:11Z",
     "total_seconds": 829,
     "state_repaired_at": "2026-11-24T02:11:00Z",
-    "incremental_review_started_at": "2026-11-24T02:12:34.700Z"
+    "incremental_review_started_at": "2026-11-24T02:12:34.700Z",
+    "research_heartbeat_at": "2026-11-24T02:17:18.493Z"
   },
   "error": null,
   "completed_at": "2026-11-24T00:43:11Z"
