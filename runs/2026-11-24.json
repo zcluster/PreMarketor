@@ -3,11 +3,11 @@
   "run_id": "ah-20261124-20261124002922",
   "date": "2026-11-24",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-11-24T00:29:22Z",
-  "heartbeat_at": "2026-11-24T00:41:29Z",
-  "lease_until": "2026-11-24T00:51:29Z",
+  "heartbeat_at": "2026-11-24T00:43:11Z",
+  "lease_until": null,
   "source_cutoff": "2026-11-24T00:34:03Z",
   "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -186,6 +186,49 @@
         "history/data/2026-11-24.json",
         "history/manifest.json"
       ]
+    },
+    "remote_readback": {
+      "status": "ok",
+      "commit": "df8e863fe2908109e6df024ee672b9ba3fd78ddb",
+      "files": [
+        "index.html",
+        "history/data/2026-11-24.json",
+        "history/manifest.json"
+      ],
+      "bytes_match": true
+    },
+    "production_verification": {
+      "status": "ok",
+      "homepage": {
+        "url": "https://premarketor.com/",
+        "title_present": true,
+        "cards": 4,
+        "panel_rows": 15,
+        "time": "2026-11-24 08:38 CST"
+      },
+      "archive": {
+        "url": "https://premarketor.com/history/?date=2026-11-24",
+        "rendered": true,
+        "cards": 4,
+        "news_items": 13,
+        "empty_state": false
+      },
+      "json": {
+        "url": "https://premarketor.com/history/data/2026-11-24.json",
+        "date": "2026-11-24",
+        "ah_count": 1,
+        "html_root": true,
+        "html_en_root": true,
+        "cards_zh": 4,
+        "cards_en": 4
+      },
+      "manifest": {
+        "url": "https://premarketor.com/history/manifest.json",
+        "first_date": "2026-11-24",
+        "types": [
+          "AH"
+        ]
+      }
     }
   },
   "pending_increment": [],
@@ -199,7 +242,10 @@
     "research_complete_at": "2026-11-24T00:34:03Z",
     "generation_complete_at": "2026-11-24T00:38:49Z",
     "validation_complete_at": "2026-11-24T00:39:58Z",
-    "main_updated_at": "2026-11-24T00:41:29Z"
+    "main_updated_at": "2026-11-24T00:41:29Z",
+    "production_verified_at": "2026-11-24T00:43:11Z",
+    "total_seconds": 829
   },
-  "error": null
+  "error": null,
+  "completed_at": "2026-11-24T00:43:11Z"
 }
