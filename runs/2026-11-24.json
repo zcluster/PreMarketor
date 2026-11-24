@@ -4,26 +4,27 @@
   "date": "2026-11-24",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "rankings_refresh_wait",
+  "stage": "research",
   "started_at": "2026-11-24T00:29:22Z",
-  "heartbeat_at": "2026-11-24T00:30:31Z",
-  "lease_until": "2026-11-24T00:40:31Z",
+  "heartbeat_at": "2026-11-24T00:31:33Z",
+  "lease_until": "2026-11-24T00:41:33Z",
   "source_cutoff": null,
   "main_base_sha": "e59ad6f15e3b150e403befaccca0809512b9e263",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
-      "status": "refresh_requested",
-      "blob_sha": "7fbd0bd302bd24a1bf4e2bcc16726672409b19f5",
+      "status": "ready",
+      "blob_sha": "670500ea2fececfdd76c33ad881e414b00d80a90",
       "expected_session_date": "2026-11-23",
-      "snapshot_expected_session_date": "2026-11-20",
-      "publication_gate_ready": true,
-      "attempted_at": "2026-11-21T10:20:44+08:00",
-      "action": "refresh_required",
+      "attempted_at": "2026-11-24T08:30:50+08:00",
       "request_id": "ah-20261124-20261124002922",
-      "requested_at": "2026-11-24T00:30:01Z",
-      "request_branch_base": "f6cbac8b072e94062c1718af5b01517bb87a670d",
-      "request_commit": "f3a63d80d07705713fc24ecb1cb20bcc7f1c1820"
+      "request_commit": "f3a63d80d07705713fc24ecb1cb20bcc7f1c1820",
+      "publication_gate_ready": true,
+      "industry_status": "ok",
+      "industry_rows": 10,
+      "concept_status": "ok",
+      "concept_rows": 5,
+      "groups_sha256": "e129325de9e26a88c42fcfd2315b970093dc5a257d9292b2f8182ba382d0585d"
     },
     "exchange_session": {
       "expected_session_date": "2026-11-23",
@@ -37,7 +38,8 @@
     "rules_read_at": "2026-11-24T00:29:22Z",
     "lease_acquired_at": "2026-11-24T00:29:22Z",
     "rankings_checked_at": "2026-11-24T00:29:22Z",
-    "rankings_refresh_requested_at": "2026-11-24T00:30:01Z"
+    "rankings_refresh_requested_at": "2026-11-24T00:30:01Z",
+    "rankings_ready_at": "2026-11-24T00:31:33Z"
   },
   "error": null
 }
