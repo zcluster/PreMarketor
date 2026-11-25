@@ -4,10 +4,10 @@
   "date": "2026-11-25",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "validation",
+  "stage": "deployment_verification",
   "started_at": "2026-11-25T01:38:44.689Z",
-  "heartbeat_at": "2026-11-25T01:51:43.876Z",
-  "lease_until": "2026-11-25T02:01:43.876Z",
+  "heartbeat_at": "2026-11-25T01:53:01.229Z",
+  "lease_until": "2026-11-25T02:03:01.229Z",
   "source_cutoff": "2026-11-25 08:42 CST",
   "main_base_sha": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -138,7 +138,7 @@
       "protected_us_markers": true
     },
     "incremental_review": {
-      "status": "material_increment_validated",
+      "status": "published_pending_production",
       "started_at": "2026-11-25T01:38:44.689Z",
       "baseline_commit": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
       "source_cutoff": "2026-11-25 08:42 CST",
@@ -264,7 +264,7 @@
   "pending_increment": [
     "opening_price_feedback"
   ],
-  "published_commit": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
+  "published_commit": "23a17da537547de41c11c1ace85b48a9379ff3b6",
   "stage_timings": {
     "rules_read_at": "2026-11-25T00:32:39Z",
     "lease_acquired_at": "2026-11-25T00:32:39Z",
@@ -281,7 +281,9 @@
     "terminal_at": "2026-11-25T00:47:23.064Z",
     "incremental_review_started_at": "2026-11-25T01:38:44.689Z",
     "incremental_research_completed_at": "2026-11-25T01:51:43.876Z",
-    "incremental_validation_completed_at": "2026-11-25T01:51:43.876Z"
+    "incremental_validation_completed_at": "2026-11-25T01:51:43.876Z",
+    "incremental_published_at": "2026-11-25T01:53:01.229Z",
+    "incremental_production_verification_started_at": "2026-11-25T01:53:01.229Z"
   },
   "error": null,
   "metrics": {
