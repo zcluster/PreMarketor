@@ -4,11 +4,11 @@
   "date": "2026-11-25",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
+  "stage": "validation",
   "started_at": "2026-11-25T00:32:39Z",
-  "heartbeat_at": "2026-11-25T00:35:22.830Z",
-  "lease_until": "2026-11-25T00:45:22.830Z",
-  "source_cutoff": null,
+  "heartbeat_at": "2026-11-25T00:42:45.618Z",
+  "lease_until": "2026-11-25T00:52:45.618Z",
+  "source_cutoff": "2026-11-25 08:42 CST",
   "main_base_sha": "0248e51ba2d378eb9c325f781454b88a7f408795",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -27,6 +27,67 @@
       "expected_session_date": "2026-11-24",
       "status": "verified_normal_session",
       "source": "NYSE/Nasdaq calendar check"
+    },
+    "coverage": {
+      "cutoff": "2026-11-25 08:42 CST",
+      "discovery_sources": [
+        "Shanghai Securities News/Eastmoney",
+        "Yicai"
+      ],
+      "primary_sources": [
+        "PBOC",
+        "MIIT",
+        "SSE",
+        "HKEX"
+      ],
+      "material_entries": 10,
+      "included_entries": 10,
+      "company_events": 5,
+      "domestic_policy_events": 2,
+      "domestic_tech_industry_events": 4,
+      "ranking_decisions": [
+        {
+          "theme": "Department stores",
+          "decision": "no_candidate",
+          "reason": "No directly verified A/H candidate with a same-window catalyst"
+        },
+        {
+          "theme": "Biotechnology/healthcare",
+          "decision": "conditional_watch",
+          "candidates": [
+            "02652.HK",
+            "02252.HK"
+          ],
+          "reason": "Company catalysts but no valid post-event price confirmation"
+        },
+        {
+          "theme": "US hardware/semiconductor drawdown",
+          "decision": "no_candidate",
+          "reason": "Negative read-through retained; no long candidate"
+        },
+        {
+          "theme": "Controller purchases",
+          "decision": "conditional_watch",
+          "candidates": [
+            "688387.SH"
+          ]
+        },
+        {
+          "theme": "Lithium integration",
+          "decision": "conditional_watch",
+          "candidates": [
+            "002466.SZ",
+            "09696.HK"
+          ]
+        },
+        {
+          "theme": "Accounting fraud",
+          "decision": "avoid",
+          "candidates": [
+            "000820.SZ"
+          ]
+        }
+      ]
     }
   },
   "pending_increment": [],
@@ -37,7 +98,9 @@
     "rankings_checked_at": "2026-11-25T00:32:39Z",
     "rankings_refresh_requested_at": "2026-11-25T00:34:33.791Z",
     "rankings_ready_at": "2026-11-25T00:35:22.830Z",
-    "generation_started_at": "2026-11-25T00:35:22.830Z"
+    "generation_started_at": "2026-11-25T00:35:22.830Z",
+    "generation_completed_at": "2026-11-25T00:42:45.618Z",
+    "validation_started_at": "2026-11-25T00:42:45.618Z"
   },
   "error": null
 }
