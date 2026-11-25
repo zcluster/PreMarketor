@@ -4,10 +4,10 @@
   "date": "2026-11-25",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "incremental_research",
+  "stage": "validation",
   "started_at": "2026-11-25T01:38:44.689Z",
-  "heartbeat_at": "2026-11-25T01:42:44.167Z",
-  "lease_until": "2026-11-25T01:52:44.167Z",
+  "heartbeat_at": "2026-11-25T01:51:43.876Z",
+  "lease_until": "2026-11-25T02:01:43.876Z",
   "source_cutoff": "2026-11-25 08:42 CST",
   "main_base_sha": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -138,12 +138,31 @@
       "protected_us_markers": true
     },
     "incremental_review": {
-      "status": "researching_opening_feedback",
+      "status": "material_increment_validated",
       "started_at": "2026-11-25T01:38:44.689Z",
       "baseline_commit": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
       "source_cutoff": "2026-11-25 08:42 CST",
       "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-      "last_checkpoint_at": "2026-11-25T01:42:44.167Z"
+      "last_checkpoint_at": "2026-11-25T01:42:44.167Z",
+      "material_findings": {
+        "market": [
+          "000001.SH -0.71%",
+          "399006.SZ -1.19%"
+        ],
+        "initial_confirmation": [
+          "02652.HK +2.93%",
+          "688387.SH +1.80%"
+        ],
+        "avoid": [
+          "002466.SZ -1.40%",
+          "09696.HK -1.17%"
+        ],
+        "unconfirmed": [
+          "02252.HK no trade",
+          "000820.SZ suspended"
+        ],
+        "new_major_policy_after_cutoff": false
+      }
     },
     "production_recovery": {
       "status": "verified",
@@ -216,9 +235,35 @@
           "note": "quote returned no trade / suspended"
         }
       }
+    },
+    "incremental_validation": {
+      "counts": {
+        "zhCards": 5,
+        "enCards": 5,
+        "zhOvernight": 3,
+        "enOvernight": 3,
+        "zhNews": 13,
+        "enNews": 13
+      },
+      "checks": {
+        "markerOnly": true,
+        "usBriefPreserved": true,
+        "usPanelPreserved": true,
+        "bilingualCards": true,
+        "overnight3": true,
+        "titleSummarySync": true,
+        "manifestHistoryPreserved": true,
+        "noPlaceholders": true,
+        "tianqiAvoid": true,
+        "initialConfirmed": true,
+        "bilingualTime": true
+      },
+      "status": "passed"
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    "opening_price_feedback"
+  ],
   "published_commit": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
   "stage_timings": {
     "rules_read_at": "2026-11-25T00:32:39Z",
@@ -234,7 +279,9 @@
     "production_verification_started_at": "2026-11-25T00:45:15.426Z",
     "deployment_build_succeeded_at": "2026-11-25T00:46:16Z",
     "terminal_at": "2026-11-25T00:47:23.064Z",
-    "incremental_review_started_at": "2026-11-25T01:38:44.689Z"
+    "incremental_review_started_at": "2026-11-25T01:38:44.689Z",
+    "incremental_research_completed_at": "2026-11-25T01:51:43.876Z",
+    "incremental_validation_completed_at": "2026-11-25T01:51:43.876Z"
   },
   "error": null,
   "metrics": {
