@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "run_id": "ah-20261125-20261125003239",
+  "run_id": "ah-review-20261125-20261125013844",
   "date": "2026-11-25",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "blocked",
-  "stage": "deployment_verification",
-  "started_at": "2026-11-25T00:32:39Z",
-  "heartbeat_at": "2026-11-25T00:47:23.064Z",
-  "lease_until": "2026-11-25T00:47:23.064Z",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "started_at": "2026-11-25T01:38:44.689Z",
+  "heartbeat_at": "2026-11-25T01:38:44.689Z",
+  "lease_until": "2026-11-25T01:48:44.689Z",
   "source_cutoff": "2026-11-25 08:42 CST",
-  "main_base_sha": "0248e51ba2d378eb9c325f781454b88a7f408795",
+  "main_base_sha": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
@@ -136,6 +136,22 @@
       "marker_only": true,
       "bilingual_structure": true,
       "protected_us_markers": true
+    },
+    "incremental_review": {
+      "status": "running",
+      "started_at": "2026-11-25T01:38:44.689Z",
+      "baseline_commit": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
+      "source_cutoff": "2026-11-25 08:42 CST",
+      "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd"
+    },
+    "production_recovery": {
+      "status": "verified",
+      "verified_at": "2026-11-25T01:38:44.689Z",
+      "deployment_state": "READY",
+      "commit": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
+      "homepage_status": 200,
+      "daily_json_exact": true,
+      "manifest_exact": true
     }
   },
   "pending_increment": [],
@@ -153,15 +169,10 @@
     "published_at": "2026-11-25T00:45:15.426Z",
     "production_verification_started_at": "2026-11-25T00:45:15.426Z",
     "deployment_build_succeeded_at": "2026-11-25T00:46:16Z",
-    "terminal_at": "2026-11-25T00:47:23.064Z"
+    "terminal_at": "2026-11-25T00:47:23.064Z",
+    "incremental_review_started_at": "2026-11-25T01:38:44.689Z"
   },
-  "error": {
-    "stage": "deployment_verification",
-    "code": "production_verification_unavailable",
-    "message": "Cloudflare production build succeeded, but both the static HTTP reader and cloud browser could not access premarketor.com; homepage, archive HTML, daily JSON and manifest content could not be independently verified.",
-    "recoverable_stage": "deployment_verification",
-    "occurred_at": "2026-11-25T00:47:23.064Z"
-  },
+  "error": null,
   "metrics": {
     "wall_clock_seconds": 884,
     "main_commits_created": 1,
