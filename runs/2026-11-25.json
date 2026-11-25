@@ -3,11 +3,11 @@
   "run_id": "ah-20261125-20261125003239",
   "date": "2026-11-25",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "verification",
+  "status": "blocked",
+  "stage": "deployment_verification",
   "started_at": "2026-11-25T00:32:39Z",
-  "heartbeat_at": "2026-11-25T00:45:15.426Z",
-  "lease_until": "2026-11-25T00:55:15.426Z",
+  "heartbeat_at": "2026-11-25T00:47:23.064Z",
+  "lease_until": "2026-11-25T00:47:23.064Z",
   "source_cutoff": "2026-11-25 08:42 CST",
   "main_base_sha": "0248e51ba2d378eb9c325f781454b88a7f408795",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -99,9 +99,43 @@
       "manifestContent": true
     },
     "production": {
-      "status": "pending",
-      "http_reader": "domain_inaccessible",
-      "cloud_browser": "requirements_unavailable"
+      "status": "unverified",
+      "cloudflare_build": {
+        "status": "completed",
+        "conclusion": "success",
+        "completed_at": "2026-11-25T00:46:16Z",
+        "version_id": "9f91f92e-b477-4b00-925f-01e80f8e1326",
+        "build_id": "29738067-4e6c-4b5e-baf2-7e0445411f80"
+      },
+      "github_readback": {
+        "head": true,
+        "indexSha": true,
+        "historySha": true,
+        "manifestSha": true,
+        "indexContent": true,
+        "historyContent": true,
+        "manifestContent": true
+      },
+      "http_reader": "premarketor.com inaccessible to reader",
+      "cloud_browser": "Browser Use could not read requirements",
+      "homepage_verified": false,
+      "archive_verified": false,
+      "json_verified": false,
+      "manifest_verified": false
+    },
+    "validation": {
+      "status": "passed",
+      "major_news": 10,
+      "domestic_policy_events": 2,
+      "domestic_tech_industry_events": 4,
+      "company_events": 5,
+      "overnight_items": 3,
+      "stock_cards": 5,
+      "panel_rows_zh": 15,
+      "panel_rows_en": 15,
+      "marker_only": true,
+      "bilingual_structure": true,
+      "protected_us_markers": true
     }
   },
   "pending_increment": [],
@@ -117,7 +151,32 @@
     "validation_started_at": "2026-11-25T00:42:45.618Z",
     "validation_completed_at": "2026-11-25T00:45:15.426Z",
     "published_at": "2026-11-25T00:45:15.426Z",
-    "production_verification_started_at": "2026-11-25T00:45:15.426Z"
+    "production_verification_started_at": "2026-11-25T00:45:15.426Z",
+    "deployment_build_succeeded_at": "2026-11-25T00:46:16Z",
+    "terminal_at": "2026-11-25T00:47:23.064Z"
   },
-  "error": null
+  "error": {
+    "stage": "deployment_verification",
+    "code": "production_verification_unavailable",
+    "message": "Cloudflare production build succeeded, but both the static HTTP reader and cloud browser could not access premarketor.com; homepage, archive HTML, daily JSON and manifest content could not be independently verified.",
+    "recoverable_stage": "deployment_verification",
+    "occurred_at": "2026-11-25T00:47:23.064Z"
+  },
+  "metrics": {
+    "wall_clock_seconds": 884,
+    "main_commits_created": 1,
+    "rankings_refresh_requests": 1,
+    "production_check_retries": 2,
+    "cache_reused": [
+      "brief_rules.md",
+      "akshare-latest.json",
+      "history/manifest.json",
+      "history/data/2026-11-24.json"
+    ],
+    "published_files": [
+      "index.html",
+      "history/data/2026-11-25.json",
+      "history/manifest.json"
+    ]
+  }
 }
