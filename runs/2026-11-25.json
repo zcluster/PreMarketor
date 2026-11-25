@@ -4,22 +4,24 @@
   "date": "2026-11-25",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
+  "stage": "generation",
   "started_at": "2026-11-25T00:32:39Z",
-  "heartbeat_at": "2026-11-25T00:34:33.791Z",
-  "lease_until": "2026-11-25T00:44:33.791Z",
+  "heartbeat_at": "2026-11-25T00:35:22.830Z",
+  "lease_until": "2026-11-25T00:45:22.830Z",
   "source_cutoff": null,
-  "main_base_sha": "47fc9d0abf23c1c01309cac042e2587b78cab60b",
+  "main_base_sha": "0248e51ba2d378eb9c325f781454b88a7f408795",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
-      "status": "stale",
-      "blob_attempted_at": "2026-11-24T13:20:32+08:00",
+      "status": "ok",
       "expected_session_date": "2026-11-24",
-      "publication_gate_ready": false,
+      "publication_gate_ready": true,
       "request_id": "ah-20261125-20261125003239",
-      "requested_at": "2026-11-25T08:34:01.170+08:00",
-      "request_commit": "3fae51974d70ea457d361b9a27560f49a3136ab6"
+      "request_commit": "3fae51974d70ea457d361b9a27560f49a3136ab6",
+      "snapshot_sha": "d14266b00095aecbd9b3910d059846b75979bca3",
+      "attempted_at": "2026-11-25T08:34:28+08:00",
+      "checked_at": "2026-11-25T08:34:32+08:00",
+      "groups_sha256": "e35d64a48c5d80e83fb49b3510c14f0b0a2800032197260373a9db6a8f9b2bbe"
     },
     "exchange_session": {
       "expected_session_date": "2026-11-24",
@@ -33,7 +35,9 @@
     "rules_read_at": "2026-11-25T00:32:39Z",
     "lease_acquired_at": "2026-11-25T00:32:39Z",
     "rankings_checked_at": "2026-11-25T00:32:39Z",
-    "rankings_refresh_requested_at": "2026-11-25T00:34:33.791Z"
+    "rankings_refresh_requested_at": "2026-11-25T00:34:33.791Z",
+    "rankings_ready_at": "2026-11-25T00:35:22.830Z",
+    "generation_started_at": "2026-11-25T00:35:22.830Z"
   },
   "error": null
 }
