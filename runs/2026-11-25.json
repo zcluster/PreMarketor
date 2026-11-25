@@ -3,11 +3,11 @@
   "run_id": "ah-review-20261125-20261125013844",
   "date": "2026-11-25",
   "owner": "MarketAhead A/H 09:15 增量复核",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-11-25T01:38:44.689Z",
-  "heartbeat_at": "2026-11-25T01:53:01.229Z",
-  "lease_until": "2026-11-25T02:03:01.229Z",
+  "heartbeat_at": "2026-11-25T01:55:34.258Z",
+  "lease_until": "2026-11-25T01:55:34.258Z",
   "source_cutoff": "2026-11-25 08:42 CST",
   "main_base_sha": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -99,29 +99,18 @@
       "manifestContent": true
     },
     "production": {
-      "status": "unverified",
-      "cloudflare_build": {
-        "status": "completed",
-        "conclusion": "success",
-        "completed_at": "2026-11-25T00:46:16Z",
-        "version_id": "9f91f92e-b477-4b00-925f-01e80f8e1326",
-        "build_id": "29738067-4e6c-4b5e-baf2-7e0445411f80"
-      },
-      "github_readback": {
-        "head": true,
-        "indexSha": true,
-        "historySha": true,
-        "manifestSha": true,
-        "indexContent": true,
-        "historyContent": true,
-        "manifestContent": true
-      },
-      "http_reader": "premarketor.com inaccessible to reader",
-      "cloud_browser": "Browser Use could not read requirements",
-      "homepage_verified": false,
-      "archive_verified": false,
-      "json_verified": false,
-      "manifest_verified": false
+      "status": "verified",
+      "deployment_state": "READY",
+      "deployment_id": "dpl_3zRvNkVRizCLzND5bxaaRgyhLx1f",
+      "commit": "23a17da537547de41c11c1ace85b48a9379ff3b6",
+      "homepage_verified": true,
+      "archive_verified": true,
+      "json_verified": true,
+      "manifest_verified": true,
+      "daily_json_exact": true,
+      "manifest_exact": true,
+      "browser_history_rendered": true,
+      "verified_at": "2026-11-25T01:55:34.258Z"
     },
     "validation": {
       "status": "passed",
@@ -138,7 +127,7 @@
       "protected_us_markers": true
     },
     "incremental_review": {
-      "status": "published_pending_production",
+      "status": "published",
       "started_at": "2026-11-25T01:38:44.689Z",
       "baseline_commit": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
       "source_cutoff": "2026-11-25 08:42 CST",
@@ -162,7 +151,12 @@
           "000820.SZ suspended"
         ],
         "new_major_policy_after_cutoff": false
-      }
+      },
+      "material_increment": true,
+      "completed_at": "2026-11-25T01:55:34.258Z",
+      "commit": "23a17da537547de41c11c1ace85b48a9379ff3b6",
+      "title": "A/H低开后结构分化：长风药业与信科移动获正反馈，天齐锂业A/H承压",
+      "updated": "2026-11-25 09:43 CST"
     },
     "production_recovery": {
       "status": "verified",
@@ -261,9 +255,7 @@
       "status": "passed"
     }
   },
-  "pending_increment": [
-    "opening_price_feedback"
-  ],
+  "pending_increment": [],
   "published_commit": "23a17da537547de41c11c1ace85b48a9379ff3b6",
   "stage_timings": {
     "rules_read_at": "2026-11-25T00:32:39Z",
@@ -283,12 +275,14 @@
     "incremental_research_completed_at": "2026-11-25T01:51:43.876Z",
     "incremental_validation_completed_at": "2026-11-25T01:51:43.876Z",
     "incremental_published_at": "2026-11-25T01:53:01.229Z",
-    "incremental_production_verification_started_at": "2026-11-25T01:53:01.229Z"
+    "incremental_production_verification_started_at": "2026-11-25T01:53:01.229Z",
+    "incremental_production_verified_at": "2026-11-25T01:55:34.258Z",
+    "incremental_terminal_at": "2026-11-25T01:55:34.258Z"
   },
   "error": null,
   "metrics": {
     "wall_clock_seconds": 884,
-    "main_commits_created": 1,
+    "main_commits_created": 2,
     "rankings_refresh_requests": 1,
     "production_check_retries": 2,
     "cache_reused": [
@@ -302,5 +296,6 @@
       "history/data/2026-11-25.json",
       "history/manifest.json"
     ]
-  }
+  },
+  "completed_at": "2026-11-25T01:55:34.258Z"
 }
