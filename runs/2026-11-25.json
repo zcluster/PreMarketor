@@ -6,8 +6,8 @@
   "status": "running",
   "stage": "research",
   "started_at": "2026-11-25T00:32:39Z",
-  "heartbeat_at": "2026-11-25T00:32:39Z",
-  "lease_until": "2026-11-25T00:42:39Z",
+  "heartbeat_at": "2026-11-25T00:34:33.791Z",
+  "lease_until": "2026-11-25T00:44:33.791Z",
   "source_cutoff": null,
   "main_base_sha": "47fc9d0abf23c1c01309cac042e2587b78cab60b",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -16,7 +16,10 @@
       "status": "stale",
       "blob_attempted_at": "2026-11-24T13:20:32+08:00",
       "expected_session_date": "2026-11-24",
-      "publication_gate_ready": false
+      "publication_gate_ready": false,
+      "request_id": "ah-20261125-20261125003239",
+      "requested_at": "2026-11-25T08:34:01.170+08:00",
+      "request_commit": "3fae51974d70ea457d361b9a27560f49a3136ab6"
     },
     "exchange_session": {
       "expected_session_date": "2026-11-24",
@@ -29,7 +32,8 @@
   "stage_timings": {
     "rules_read_at": "2026-11-25T00:32:39Z",
     "lease_acquired_at": "2026-11-25T00:32:39Z",
-    "rankings_checked_at": "2026-11-25T00:32:39Z"
+    "rankings_checked_at": "2026-11-25T00:32:39Z",
+    "rankings_refresh_requested_at": "2026-11-25T00:34:33.791Z"
   },
   "error": null
 }
