@@ -6,8 +6,8 @@
   "status": "running",
   "stage": "incremental_research",
   "started_at": "2026-11-25T01:38:44.689Z",
-  "heartbeat_at": "2026-11-25T01:38:44.689Z",
-  "lease_until": "2026-11-25T01:48:44.689Z",
+  "heartbeat_at": "2026-11-25T01:42:44.167Z",
+  "lease_until": "2026-11-25T01:52:44.167Z",
   "source_cutoff": "2026-11-25 08:42 CST",
   "main_base_sha": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -138,11 +138,12 @@
       "protected_us_markers": true
     },
     "incremental_review": {
-      "status": "running",
+      "status": "researching_opening_feedback",
       "started_at": "2026-11-25T01:38:44.689Z",
       "baseline_commit": "573ac8066ec506c03b7e85684fe8622c1bdfec58",
       "source_cutoff": "2026-11-25 08:42 CST",
-      "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd"
+      "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+      "last_checkpoint_at": "2026-11-25T01:42:44.167Z"
     },
     "production_recovery": {
       "status": "verified",
@@ -152,6 +153,69 @@
       "homepage_status": 200,
       "daily_json_exact": true,
       "manifest_exact": true
+    },
+    "opening_quotes": {
+      "status": "verified",
+      "checked_at": "2026-11-25T01:42:44.167Z",
+      "source": "Eastmoney delayed quote API via cloud browser",
+      "quotes": {
+        "000001.SH": {
+          "name": "上证指数",
+          "last": 3523.28,
+          "change_pct": -0.71,
+          "open": 3522.59,
+          "prev_close": 3548.37
+        },
+        "399006.SZ": {
+          "name": "创业板指",
+          "last": 2251.82,
+          "change_pct": -1.19,
+          "open": 2233.18,
+          "prev_close": 2278.99
+        },
+        "02252.HK": {
+          "name": "微创机器人-B",
+          "last": null,
+          "change_pct": null,
+          "prev_close": 21.18,
+          "note": "09:00 quote returned no trade"
+        },
+        "02652.HK": {
+          "name": "长风药业",
+          "last": 4.565,
+          "change_pct": 2.93,
+          "open": 4.6,
+          "prev_close": 4.435
+        },
+        "688387.SH": {
+          "name": "信科移动-U",
+          "last": 9.62,
+          "change_pct": 1.8,
+          "open": 9.45,
+          "prev_close": 9.45
+        },
+        "002466.SZ": {
+          "name": "天齐锂业",
+          "last": 31.75,
+          "change_pct": -1.4,
+          "open": 31.36,
+          "prev_close": 32.2
+        },
+        "09696.HK": {
+          "name": "天齐锂业",
+          "last": 20.2,
+          "change_pct": -1.17,
+          "open": 19.9,
+          "prev_close": 20.44
+        },
+        "000820.SZ": {
+          "name": "神雾节能",
+          "last": null,
+          "change_pct": null,
+          "prev_close": 2.67,
+          "note": "quote returned no trade / suspended"
+        }
+      }
     }
   },
   "pending_increment": [],
