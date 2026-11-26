@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-11-24T13:20:32+08:00",
+  "attemptedAt": "2026-11-25T12:14:48+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-24T13:20:32+08:00",
+      "fetchedAt": "2026-11-25T12:14:48+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,71 +17,71 @@
       },
       "top": [
         {
-          "name": "半导体",
-          "nameEn": "Semiconductors",
-          "code": "BK2015",
-          "changePct": "+18.00%",
-          "leaderName": "英伟达",
-          "leaderTicker": "NVDA",
-          "leaderChangePct": "+31.48%",
+          "name": "百货公司",
+          "nameEn": "Department Stores",
+          "code": "BK2080",
+          "changePct": "+6.16%",
+          "leaderName": "柯尔百货",
+          "leaderTicker": "KSS",
+          "leaderChangePct": "+19.48%",
           "breadth": {
-            "advancers": 68,
+            "advancers": 3,
             "decliners": 1,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "半导体设备与材料",
-          "nameEn": "Semiconductor Equipment & Materials",
-          "code": "BK2016",
-          "changePct": "+12.37%",
-          "leaderName": "AXT Inc",
-          "leaderTicker": "AXTI",
-          "leaderChangePct": "+24.37%",
-          "breadth": {
-            "advancers": 31,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "计算机硬件",
-          "nameEn": "Computer Hardware",
-          "code": "BK2492",
-          "changePct": "+12.17%",
-          "leaderName": "FF EAI Robotics Ecosystem",
-          "leaderTicker": "FFR",
-          "leaderChangePct": "+45.71%",
-          "breadth": {
-            "advancers": 39,
-            "decliners": 6,
             "unchanged": 1
           }
         },
         {
-          "name": "电气设备及零件",
-          "nameEn": "Electrical Equipment & Parts",
-          "code": "BK2493",
-          "changePct": "+11.56%",
-          "leaderName": "智能充电",
-          "leaderTicker": "XCH",
-          "leaderChangePct": "+47.75%",
+          "name": "生物技术",
+          "nameEn": "Biotechnology",
+          "code": "BK2069",
+          "changePct": "+6.01%",
+          "leaderName": "Jaguar Health",
+          "leaderTicker": "JAGX",
+          "leaderChangePct": "+109.24%",
           "breadth": {
-            "advancers": 43,
-            "decliners": 10,
-            "unchanged": 3
+            "advancers": 469,
+            "decliners": 123,
+            "unchanged": 15
           }
         },
         {
-          "name": "电子元件",
-          "nameEn": "Electronic Components",
-          "code": "BK2072",
-          "changePct": "+10.58%",
-          "leaderName": "Interlink Electronics",
-          "leaderTicker": "LINK",
-          "leaderChangePct": "+34.60%",
+          "name": "鞋类及配饰",
+          "nameEn": "Footwear & Accessories",
+          "code": "BK2106",
+          "changePct": "+4.01%",
+          "leaderName": "幸福来",
+          "leaderTicker": "PAVS",
+          "leaderChangePct": "+9.40%",
           "breadth": {
-            "advancers": 40,
+            "advancers": 10,
+            "decliners": 4,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "杂货店",
+          "nameEn": "Grocery Stores",
+          "code": "BK2095",
+          "changePct": "+4.00%",
+          "leaderName": "艾伯森",
+          "leaderTicker": "ACI",
+          "leaderChangePct": "+6.86%",
+          "breadth": {
+            "advancers": 8,
+            "decliners": 5,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "一般药品制造商",
+          "nameEn": "Drug Manufacturers - General",
+          "code": "BK2428",
+          "changePct": "+3.67%",
+          "leaderName": "赛诺菲安万特",
+          "leaderTicker": "SNY",
+          "leaderChangePct": "+10.97%",
+          "breadth": {
+            "advancers": 18,
             "decliners": 3,
             "unchanged": 1
           }
@@ -89,73 +89,73 @@
       ],
       "bottom": [
         {
-          "name": "综合油气",
-          "nameEn": "Oil & Gas Integrated",
-          "code": "BK2224",
-          "changePct": "-1.29%",
-          "leaderName": "Sky Quarry",
-          "leaderTicker": "SKYQ",
-          "leaderChangePct": "+10.66%",
+          "name": "电气设备及零件",
+          "nameEn": "Electrical Equipment & Parts",
+          "code": "BK2493",
+          "changePct": "-5.76%",
+          "leaderName": "智能充电",
+          "leaderTicker": "XCH",
+          "leaderChangePct": "+19.76%",
           "breadth": {
-            "advancers": 3,
-            "decliners": 17,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "医疗计划",
-          "nameEn": "Healthcare Plans",
-          "code": "BK2246",
-          "changePct": "-1.34%",
-          "leaderName": "Oscar Health",
-          "leaderTicker": "OSCR",
-          "leaderChangePct": "+4.29%",
-          "breadth": {
-            "advancers": 3,
-            "decliners": 8,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "油气炼制与销售",
-          "nameEn": "Oil & Gas Refining & Marketing",
-          "code": "BK2060",
-          "changePct": "-1.49%",
-          "leaderName": "AI OKTO",
-          "leaderTicker": "AIOK",
-          "leaderChangePct": "+7.66%",
-          "breadth": {
-            "advancers": 5,
-            "decliners": 13,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "油气勘探与开发",
-          "nameEn": "Oil & Gas E&P",
-          "code": "BK2058",
-          "changePct": "-1.94%",
-          "leaderName": "Prairie Operating",
-          "leaderTicker": "PROP",
-          "leaderChangePct": "+4.82%",
-          "breadth": {
-            "advancers": 18,
-            "decliners": 60,
+            "advancers": 10,
+            "decliners": 43,
             "unchanged": 3
           }
         },
         {
-          "name": "百货公司",
-          "nameEn": "Department Stores",
-          "code": "BK2080",
-          "changePct": "-3.33%",
-          "leaderName": "迪拉德百货",
-          "leaderTicker": "DDS",
-          "leaderChangePct": "+1.29%",
+          "name": "半导体设备与材料",
+          "nameEn": "Semiconductor Equipment & Materials",
+          "code": "BK2016",
+          "changePct": "-5.81%",
+          "leaderName": "Forge Nano",
+          "leaderTicker": "NANO",
+          "leaderChangePct": "+16.01%",
           "breadth": {
             "advancers": 1,
-            "decliners": 4,
+            "decliners": 30,
             "unchanged": 0
+          }
+        },
+        {
+          "name": "电子元件",
+          "nameEn": "Electronic Components",
+          "code": "BK2072",
+          "changePct": "-5.93%",
+          "leaderName": "Neonode",
+          "leaderTicker": "NEON",
+          "leaderChangePct": "+2.86%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 39,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "半导体",
+          "nameEn": "Semiconductors",
+          "code": "BK2015",
+          "changePct": "-6.67%",
+          "leaderName": "纳比特",
+          "leaderTicker": "NA",
+          "leaderChangePct": "+6.34%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 60,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "计算机硬件",
+          "nameEn": "Computer Hardware",
+          "code": "BK2492",
+          "changePct": "-8.17%",
+          "leaderName": "AMC Robotics",
+          "leaderTicker": "AMCI",
+          "leaderChangePct": "+12.75%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 37,
+            "unchanged": 2
           }
         }
       ],
@@ -167,7 +167,7 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-24T13:20:32+08:00",
+      "fetchedAt": "2026-11-25T12:14:48+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -176,55 +176,27 @@
       },
       "top": [
         {
-          "name": "CPU概念",
-          "nameEn": "CPU Concept",
-          "code": "BK24210",
-          "changePct": "+25.19%",
-          "leaderName": "英伟达",
-          "leaderTicker": "NVDA",
-          "leaderChangePct": "+31.48%",
+          "name": "体育",
+          "nameEn": "Sports",
+          "code": "BK2574",
+          "changePct": "+4.70%",
+          "leaderName": "耐克",
+          "leaderTicker": "NKE",
+          "leaderChangePct": "+5.89%",
           "breadth": {
-            "advancers": 5,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "IDC概念",
-          "nameEn": "Data Center",
-          "code": "BK2521",
-          "changePct": "+24.97%",
-          "leaderName": "英伟达",
-          "leaderTicker": "NVDA",
-          "leaderChangePct": "+31.48%",
-          "breadth": {
-            "advancers": 9,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "区块链概念",
-          "nameEn": "Blockchain",
-          "code": "BK2655",
-          "changePct": "+20.22%",
-          "leaderName": "英伟达",
-          "leaderTicker": "NVDA",
-          "leaderChangePct": "+31.48%",
-          "breadth": {
-            "advancers": 21,
+            "advancers": 8,
             "decliners": 1,
             "unchanged": 0
           }
         },
         {
-          "name": "存储概念",
-          "nameEn": "Data storage stock",
-          "code": "BK23925",
-          "changePct": "+18.32%",
-          "leaderName": "SK海力士",
-          "leaderTicker": "SKHY",
-          "leaderChangePct": "+20.00%",
+          "name": "基因编辑",
+          "nameEn": "Gene Editing",
+          "code": "BK2569",
+          "changePct": "+4.54%",
+          "leaderName": "Caribou Biosciences",
+          "leaderTicker": "CRBU",
+          "leaderChangePct": "+12.91%",
           "breadth": {
             "advancers": 7,
             "decliners": 0,
@@ -232,17 +204,45 @@
           }
         },
         {
-          "name": "脑机接口",
-          "nameEn": "Brain-Computer Interface",
-          "code": "BK2149",
-          "changePct": "+18.08%",
-          "leaderName": "英伟达",
-          "leaderTicker": "NVDA",
-          "leaderChangePct": "+31.48%",
+          "name": "抗癌医药",
+          "nameEn": "Cancer Research",
+          "code": "BK2573",
+          "changePct": "+3.62%",
+          "leaderName": "渤健公司",
+          "leaderTicker": "BIIB",
+          "leaderChangePct": "+4.83%",
           "breadth": {
-            "advancers": 19,
+            "advancers": 6,
             "decliners": 1,
-            "unchanged": 1
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "流行病诊疗",
+          "nameEn": "Infectious Disease",
+          "code": "BK22995",
+          "changePct": "+3.56%",
+          "leaderName": "赛诺菲安万特",
+          "leaderTicker": "SNY",
+          "leaderChangePct": "+10.97%",
+          "breadth": {
+            "advancers": 18,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "减肥药概念",
+          "nameEn": "Weight Loss Drugs",
+          "code": "BK2152",
+          "changePct": "+3.53%",
+          "leaderName": "Wave Life Sciences",
+          "leaderTicker": "WVE",
+          "leaderChangePct": "+15.24%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 0,
+            "unchanged": 0
           }
         }
       ],
@@ -253,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-11-23",
-    "checked_at": "2026-11-24T13:20:46+08:00",
+    "expected_session_date": "2026-11-24",
+    "checked_at": "2026-11-25T12:14:52+08:00",
     "request_id": null,
-    "groups_sha256": "12b3c3c9f9c998beaa7f97a86bf2989e3760b0a48ff3ebe91c3153106f6b2d43",
+    "groups_sha256": "b1a2641da7d666474b01a05dd4e9cbe73cad66bd1876b6a8f59c6661e6dc25f0",
     "errors": []
   }
 }
