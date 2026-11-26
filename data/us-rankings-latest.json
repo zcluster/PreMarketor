@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-11-26T08:34:35+08:00",
-  "status": "partial",
+  "attemptedAt": "2026-11-26T11:36:15+08:00",
+  "status": "ok",
   "groups": {
     "industry": {
-      "status": "partial",
+      "status": "ok",
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-26T08:34:35+08:00",
+      "fetchedAt": "2026-11-26T11:36:15+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -87,18 +87,87 @@
           }
         }
       ],
-      "bottom": [],
-      "missing": [
-        "bottom5"
+      "bottom": [
+        {
+          "name": "诊断与研究",
+          "nameEn": "Diagnostics & Research",
+          "code": "BK2011",
+          "changePct": "-1.25%",
+          "leaderName": "MDxHealth",
+          "leaderTicker": "MDXH",
+          "leaderChangePct": "+7.50%",
+          "breadth": {
+            "advancers": 11,
+            "decliners": 32,
+            "unchanged": 4
+          }
+        },
+        {
+          "name": "独立电力生产商",
+          "nameEn": "Utilities - Independent Power Producers",
+          "code": "BK2462",
+          "changePct": "-1.57%",
+          "leaderName": "Hallador Energy",
+          "leaderTicker": "HNRG",
+          "leaderChangePct": "+2.79%",
+          "breadth": {
+            "advancers": 7,
+            "decliners": 2,
+            "unchanged": 2
+          }
+        },
+        {
+          "name": "半导体",
+          "nameEn": "Semiconductors",
+          "code": "BK2015",
+          "changePct": "-1.89%",
+          "leaderName": "SEALSQ Corp",
+          "leaderTicker": "LAES",
+          "leaderChangePct": "+9.86%",
+          "breadth": {
+            "advancers": 42,
+            "decliners": 26,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "互联网零售",
+          "nameEn": "Internet Retail",
+          "code": "BK2431",
+          "changePct": "-2.16%",
+          "leaderName": "蘑菇街",
+          "leaderTicker": "MOGU",
+          "leaderChangePct": "+15.43%",
+          "breadth": {
+            "advancers": 24,
+            "decliners": 16,
+            "unchanged": 1
+          }
+        },
+        {
+          "name": "半导体设备与材料",
+          "nameEn": "Semiconductor Equipment & Materials",
+          "code": "BK2016",
+          "changePct": "-2.73%",
+          "leaderName": "Forge Nano",
+          "leaderTicker": "NANO",
+          "leaderChangePct": "+11.83%",
+          "breadth": {
+            "advancers": 15,
+            "decliners": 16,
+            "unchanged": 0
+          }
+        }
       ],
-      "error": "TimeoutError: Timeout 20000ms exceeded while waiting for event \"response\""
+      "missing": [],
+      "error": null
     },
     "concept": {
       "status": "ok",
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-26T08:34:35+08:00",
+      "fetchedAt": "2026-11-26T11:36:15+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
@@ -185,9 +254,9 @@
   "publicationGate": {
     "ready": true,
     "expected_session_date": "2026-11-25",
-    "checked_at": "2026-11-26T08:35:02+08:00",
-    "request_id": "ah-20261126-20261126003311",
-    "groups_sha256": "939c11302277c0a2bc418b198abc476f76676abb098c294e0fad8388ef7e68fc",
+    "checked_at": "2026-11-26T11:36:28+08:00",
+    "request_id": null,
+    "groups_sha256": "1f04f99c9b131522a3684df66d574569f0205f25d581f44911db877438bf9b66",
     "errors": []
   }
 }
