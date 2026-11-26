@@ -6,8 +6,8 @@
   "status": "running",
   "stage": "incremental_research",
   "started_at": "2026-11-26T02:05:18.000Z",
-  "heartbeat_at": "2026-11-26T02:05:18.000Z",
-  "lease_until": "2026-11-26T02:15:18.000Z",
+  "heartbeat_at": "2026-11-26T02:09:15.000Z",
+  "lease_until": "2026-11-26T02:19:15.000Z",
   "source_cutoff": "2026-11-26 08:40 CST",
   "main_base_sha": "59a3a69d02931025adf37bab718226bec1307232",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -225,11 +225,42 @@
       "verified_at": "2026-11-26T00:47:17.139Z"
     },
     "review": {
-      "status": "running",
+      "status": "researching",
       "cutoff": "2026-11-26 08:40 CST",
-      "checked_at": "2026-11-26T02:05:18.000Z",
+      "checked_at": "2026-11-26T02:09:15.000Z",
       "prior_published_commit": "59a3a69d02931025adf37bab718226bec1307232",
-      "prior_production_verified": true
+      "prior_production_verified": true,
+      "discovery_sources": [
+        "华盛通盘中快讯",
+        "东方财富/证券报头条",
+        "财联社早间精选"
+      ],
+      "omitted_material_event": {
+        "title": "《新一代通信网建设实施方案》",
+        "official_url": "https://wap.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_808db1814bb74a0e87965d66e74f5b4b.html",
+        "published_at": "2026-11-26 08:36 CST",
+        "reason": "first-run omission; official plan materially broadens 6G/industrial-internet/satellite-network mapping"
+      },
+      "opening_quotes": {
+        "quote_source": "Eastmoney delayed quote API",
+        "snapshot_window": "2026-11-26 10:05-10:08 CST",
+        "market": {
+          "HSI": 1.42,
+          "SHCOMP": -0.05,
+          "CHINEXT": 0.09
+        },
+        "theme": {
+          "300136.SZ": 3.4,
+          "603131.SH": 9.2
+        },
+        "candidates": {
+          "601868.SH": 0,
+          "03996.HK": 0.59,
+          "09698.HK": 1.34,
+          "03998.HK": 0.9,
+          "300346.SZ": 0.61
+        }
+      }
     }
   },
   "pending_increment": [],
@@ -251,7 +282,8 @@
     "terminal_at": "2026-11-26T00:47:17.139Z",
     "review_rules_read_at": "2026-11-26T02:05:18.000Z",
     "review_lease_acquired_at": "2026-11-26T02:05:18.000Z",
-    "review_incremental_research_started_at": "2026-11-26T02:05:18.000Z"
+    "review_incremental_research_started_at": "2026-11-26T02:05:18.000Z",
+    "review_incremental_research_checkpoint_at": "2026-11-26T02:09:15.000Z"
   },
   "error": null,
   "metrics": {
