@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "run_id": "ah-20261126-20261126003311",
+  "date": "2026-11-26",
+  "owner": "发布 MarketAhead A/H 早报",
+  "status": "running",
+  "stage": "research",
+  "started_at": "2026-11-26T00:33:11.195Z",
+  "heartbeat_at": "2026-11-26T00:33:11.195Z",
+  "lease_until": "2026-11-26T00:43:11.195Z",
+  "source_cutoff": null,
+  "main_base_sha": "ed9078cd8e407dee1ed171f905394cff36e0f37f",
+  "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+  "evidence": {
+    "rankings": {
+      "status": "stale",
+      "expected_session_date": "2026-11-25",
+      "publication_gate_ready": false,
+      "snapshot_expected_session_date": "2026-11-24",
+      "request_id": null,
+      "request_commit": null
+    },
+    "exchange_session": {
+      "expected_session_date": "2026-11-25",
+      "status": "pending_verification",
+      "source": null
+    }
+  },
+  "pending_increment": [],
+  "published_commit": null,
+  "stage_timings": {
+    "rules_read_at": "2026-11-26T00:33:11.195Z",
+    "lease_acquired_at": "2026-11-26T00:33:11.195Z",
+    "rankings_checked_at": "2026-11-26T00:33:11.195Z"
+  },
+  "error": null,
+  "metrics": {
+    "wall_clock_seconds": 0,
+    "main_commits_created": 0,
+    "rankings_refresh_requests": 0,
+    "production_check_retries": 0,
+    "cache_reused": []
+  },
+  "completed_at": null
+}
