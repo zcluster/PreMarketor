@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "run_id": "ah-20261126-20261126003311",
+  "run_id": "ah-review-20261126-020518",
   "date": "2026-11-26",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "started_at": "2026-11-26T00:33:11.195Z",
-  "heartbeat_at": "2026-11-26T00:47:17.139Z",
-  "lease_until": "2026-11-26T00:47:17.139Z",
+  "owner": "MarketAhead A/H 早报复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "started_at": "2026-11-26T02:05:18.000Z",
+  "heartbeat_at": "2026-11-26T02:05:18.000Z",
+  "lease_until": "2026-11-26T02:15:18.000Z",
   "source_cutoff": "2026-11-26 08:40 CST",
-  "main_base_sha": "cbd313ec33f3768823ec317eecf110d409497166",
+  "main_base_sha": "59a3a69d02931025adf37bab718226bec1307232",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
@@ -223,6 +223,13 @@
       "manifest_http_status": 200,
       "manifest_exact": true,
       "verified_at": "2026-11-26T00:47:17.139Z"
+    },
+    "review": {
+      "status": "running",
+      "cutoff": "2026-11-26 08:40 CST",
+      "checked_at": "2026-11-26T02:05:18.000Z",
+      "prior_published_commit": "59a3a69d02931025adf37bab718226bec1307232",
+      "prior_production_verified": true
     }
   },
   "pending_increment": [],
@@ -241,20 +248,20 @@
     "production_verification_started_at": "2026-11-26T00:47:17.139Z",
     "deployment_build_succeeded_at": "2026-11-26T00:47:17.139Z",
     "production_verified_at": "2026-11-26T00:47:17.139Z",
-    "terminal_at": "2026-11-26T00:47:17.139Z"
+    "terminal_at": "2026-11-26T00:47:17.139Z",
+    "review_rules_read_at": "2026-11-26T02:05:18.000Z",
+    "review_lease_acquired_at": "2026-11-26T02:05:18.000Z",
+    "review_incremental_research_started_at": "2026-11-26T02:05:18.000Z"
   },
   "error": null,
   "metrics": {
-    "wall_clock_seconds": 846,
-    "main_commits_created": 1,
-    "rankings_refresh_requests": 1,
-    "production_check_retries": 1,
-    "cache_reused": [],
-    "published_files": [
-      "index.html",
-      "history/data/2026-11-26.json",
-      "history/manifest.json"
+    "wall_clock_seconds": 0,
+    "main_commits_created": 0,
+    "production_check_retries": 0,
+    "cache_reused": [
+      "first_run_evidence",
+      "first_run_published_content"
     ]
   },
-  "completed_at": "2026-11-26T00:47:17.139Z"
+  "completed_at": null
 }
