@@ -4,11 +4,11 @@
   "date": "2026-11-26",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "research",
+  "stage": "validation",
   "started_at": "2026-11-26T00:33:11.195Z",
-  "heartbeat_at": "2026-11-26T00:35:28.265Z",
-  "lease_until": "2026-11-26T00:45:28.265Z",
-  "source_cutoff": null,
+  "heartbeat_at": "2026-11-26T00:41:58.170Z",
+  "lease_until": "2026-11-26T00:51:58.170Z",
+  "source_cutoff": "2026-11-26 08:40 CST",
   "main_base_sha": "cbd313ec33f3768823ec317eecf110d409497166",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
@@ -29,6 +29,174 @@
       "expected_session_date": "2026-11-25",
       "status": "verified_normal_session",
       "source": "NYSE Holidays & Trading Hours; 2026 Thanksgiving closure is 2026-11-26"
+    },
+    "coverage": {
+      "cutoff": "2026-11-26 08:40 CST",
+      "discovery_sources": [
+        "Eastmoney/Shanghai Securities News",
+        "Xinhua Finance",
+        "HKEX"
+      ],
+      "primary_sources": [
+        "NYSE",
+        "MIIT",
+        "National Data Administration",
+        "SAMR",
+        "NDRC",
+        "HKEX",
+        "SEC",
+        "company announcements"
+      ],
+      "material_entries": 11,
+      "included_entries": 11,
+      "company_events": 4,
+      "domestic_policy_events": 3,
+      "domestic_tech_industry_events": 5,
+      "ranking_decisions": [
+        {
+          "theme": "Mortgage finance",
+          "decision": "no_candidate",
+          "reason": "No directly verified A/H company catalyst in the same window"
+        },
+        {
+          "theme": "Silver/precious metals",
+          "decision": "no_candidate",
+          "reason": "Strong U.S. ranking but no fresh verified A/H company catalyst; no forced pick"
+        },
+        {
+          "theme": "Gambling/sports betting",
+          "decision": "no_candidate",
+          "reason": "No direct, same-window A/H catalyst"
+        },
+        {
+          "theme": "Pharmaceutical retailers",
+          "decision": "no_candidate",
+          "reason": "No fresh verified company-specific catalyst"
+        },
+        {
+          "theme": "Social media",
+          "decision": "no_candidate",
+          "reason": "No direct A/H pure-play with same-window catalyst"
+        },
+        {
+          "theme": "SOL reserve",
+          "decision": "no_candidate",
+          "reason": "No compliant verified A/H candidate; no speculative mapping"
+        },
+        {
+          "theme": "Food delivery",
+          "decision": "no_candidate",
+          "reason": "Business mapping exists but no fresh company catalyst or price confirmation"
+        },
+        {
+          "theme": "EPC order",
+          "decision": "conditional_watch",
+          "candidates": [
+            "601868.SH",
+            "03996.HK"
+          ]
+        },
+        {
+          "theme": "Data-center earnings",
+          "decision": "conditional_watch",
+          "candidates": [
+            "09698.HK",
+            "GDS.US"
+          ]
+        },
+        {
+          "theme": "Consumer earnings",
+          "decision": "conditional_watch",
+          "candidates": [
+            "03998.HK"
+          ]
+        },
+        {
+          "theme": "Small buyback after severe selloff",
+          "decision": "avoid",
+          "candidates": [
+            "300346.SZ"
+          ]
+        }
+      ]
+    },
+    "akshare": {
+      "status": "ok_latest_close_baseline",
+      "fetched_at": "2026-11-25T16:36:30+08:00",
+      "version": "1.18.94",
+      "A": {
+        "marketDate": "2026-11-25",
+        "calendarVerified": true,
+        "marketPhase": "latest_close",
+        "breadth": {
+          "advancers": 561,
+          "decliners": 4379,
+          "unchanged": 110,
+          "medianChangePct": -3.548
+        }
+      },
+      "HK": {
+        "marketPhase": "latest_close",
+        "breadth": {
+          "advancers": 526,
+          "decliners": 1193,
+          "unchanged": 765,
+          "medianChangePct": 0
+        }
+      }
+    },
+    "runtime_us_check": {
+      "status": "partial",
+      "checked_at": "2026-11-26T00:41:58.170Z",
+      "futures": {
+        "source": "JoltTools delayed futures board",
+        "quote_time": "2026-11-25T19:47:00Z",
+        "ES": -0.48,
+        "NQ": -1.06,
+        "YM": 0.38
+      },
+      "representatives": {
+        "EXK": {
+          "change_pct": -5.42,
+          "status": "available"
+        },
+        "DKNG": {
+          "change_pct": -0.54,
+          "status": "available"
+        },
+        "LDI": {
+          "status": "unavailable_new_extended_hours"
+        },
+        "HITI": {
+          "status": "unavailable_new_extended_hours"
+        },
+        "SIND": {
+          "status": "unavailable_new_extended_hours"
+        },
+        "PINS": {
+          "status": "unavailable_new_extended_hours"
+        },
+        "ARTL": {
+          "status": "unavailable_new_extended_hours"
+        },
+        "DASH": {
+          "status": "unavailable_new_extended_hours"
+        }
+      }
+    },
+    "validation": {
+      "status": "passed",
+      "major_news": 11,
+      "domestic_policy_events": 3,
+      "domestic_tech_industry_events": 5,
+      "company_events": 4,
+      "overnight_items": 3,
+      "stock_cards": 4,
+      "panel_rows_zh": 10,
+      "panel_rows_en": 10,
+      "marker_only": true,
+      "bilingual_structure": true,
+      "protected_us_markers": true
     }
   },
   "pending_increment": [],
@@ -38,7 +206,11 @@
     "lease_acquired_at": "2026-11-26T00:33:11.195Z",
     "rankings_checked_at": "2026-11-26T00:33:11.195Z",
     "rankings_refresh_requested_at": "2026-11-26T00:34:26Z",
-    "rankings_ready_at": "2026-11-26T00:35:28.265Z"
+    "rankings_ready_at": "2026-11-26T00:35:28.265Z",
+    "generation_started_at": "2026-11-26T00:35:28.265Z",
+    "generation_completed_at": "2026-11-26T00:41:58.170Z",
+    "validation_started_at": "2026-11-26T00:41:58.170Z",
+    "validation_completed_at": "2026-11-26T00:41:58.170Z"
   },
   "error": null,
   "metrics": {
