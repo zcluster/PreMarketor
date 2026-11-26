@@ -4,10 +4,10 @@
   "date": "2026-11-26",
   "owner": "MarketAhead A/H 早报复核",
   "status": "running",
-  "stage": "incremental_research",
+  "stage": "generation",
   "started_at": "2026-11-26T02:05:18.000Z",
-  "heartbeat_at": "2026-11-26T02:09:15.000Z",
-  "lease_until": "2026-11-26T02:19:15.000Z",
+  "heartbeat_at": "2026-11-26T02:10:30.000Z",
+  "lease_until": "2026-11-26T02:20:30.000Z",
   "source_cutoff": "2026-11-26 08:40 CST",
   "main_base_sha": "59a3a69d02931025adf37bab718226bec1307232",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -225,7 +225,7 @@
       "verified_at": "2026-11-26T00:47:17.139Z"
     },
     "review": {
-      "status": "researching",
+      "status": "material_increment_confirmed",
       "cutoff": "2026-11-26 08:40 CST",
       "checked_at": "2026-11-26T02:09:15.000Z",
       "prior_published_commit": "59a3a69d02931025adf37bab718226bec1307232",
@@ -260,6 +260,11 @@
           "03998.HK": 0.9,
           "300346.SZ": 0.61
         }
+      },
+      "material_increment": {
+        "kind": "first-run omission plus opening price feedback",
+        "policy_published_at": "2026-11-26 08:36 CST",
+        "conclusion": "Add official communication-network plan and measured opening response; keep existing candidates conditional/avoid"
       }
     }
   },
@@ -283,7 +288,9 @@
     "review_rules_read_at": "2026-11-26T02:05:18.000Z",
     "review_lease_acquired_at": "2026-11-26T02:05:18.000Z",
     "review_incremental_research_started_at": "2026-11-26T02:05:18.000Z",
-    "review_incremental_research_checkpoint_at": "2026-11-26T02:09:15.000Z"
+    "review_incremental_research_checkpoint_at": "2026-11-26T02:09:15.000Z",
+    "review_incremental_research_completed_at": "2026-11-26T02:10:30.000Z",
+    "review_generation_started_at": "2026-11-26T02:10:30.000Z"
   },
   "error": null,
   "metrics": {
