@@ -3,11 +3,11 @@
   "run_id": "ah-review-20261126-020518",
   "date": "2026-11-26",
   "owner": "MarketAhead A/H 早报复核",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-11-26T02:05:18.000Z",
-  "heartbeat_at": "2026-11-26T02:20:15.000Z",
-  "lease_until": "2026-11-26T02:30:15.000Z",
+  "heartbeat_at": "2026-11-26T02:22:35.000Z",
+  "lease_until": "2026-11-26T02:22:35.000Z",
   "source_cutoff": "2026-11-26 08:40 CST",
   "main_base_sha": "59a3a69d02931025adf37bab718226bec1307232",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -200,17 +200,17 @@
     },
     "github_readback": {
       "status": "verified",
-      "main_head_sha": "59a3a69d02931025adf37bab718226bec1307232",
+      "main_head_sha": "06842bbee906126bab5912ad0793e80c5f595e86",
       "index_exact": true,
       "history_json_exact": true,
       "manifest_exact": true,
-      "verified_at": "2026-11-26T00:47:17.139Z"
+      "verified_at": "2026-11-26T02:22:35.000Z"
     },
     "production": {
       "status": "verified",
       "project": "market-ahead",
-      "deployment_id": "dpl_FkidJTbJPiC9AvXH89V7oV5tAp1n",
-      "deployment_url": "market-ahead-et7bhmk1n-zcluster-projects.vercel.app",
+      "deployment_id": "dpl_FJkWmq9aNSv9BADCcjHPw1P9sZXg",
+      "deployment_url": "market-ahead-optbwxzs2-zcluster-projects.vercel.app",
       "deployment_state": "READY",
       "production_alias": "premarketor.com",
       "alias_deployment_match": true,
@@ -218,14 +218,16 @@
       "homepage_http_status": 200,
       "homepage_exact": true,
       "history_page_http_status": 200,
+      "history_rendered": true,
       "daily_json_http_status": 200,
       "daily_json_exact": true,
       "manifest_http_status": 200,
       "manifest_exact": true,
-      "verified_at": "2026-11-26T00:47:17.139Z"
+      "bilingual_homepage_rendered": true,
+      "verified_at": "2026-11-26T02:22:35.000Z"
     },
     "review": {
-      "status": "main_updated",
+      "status": "published",
       "cutoff": "2026-11-26 08:40 CST",
       "checked_at": "2026-11-26T02:09:15.000Z",
       "prior_published_commit": "59a3a69d02931025adf37bab718226bec1307232",
@@ -326,17 +328,25 @@
     "review_candidate_commit_completed_at": "2026-11-26T02:19:33.000Z",
     "review_main_update_ref_started_at": "2026-11-26T02:19:33.000Z",
     "review_main_update_ref_completed_at": "2026-11-26T02:20:15.000Z",
-    "review_deployment_verification_started_at": "2026-11-26T02:20:15.000Z"
+    "review_deployment_verification_started_at": "2026-11-26T02:20:15.000Z",
+    "review_deployment_build_succeeded_at": "2026-11-26T02:22:35.000Z",
+    "review_production_verified_at": "2026-11-26T02:22:35.000Z",
+    "review_terminal_at": "2026-11-26T02:22:35.000Z"
   },
   "error": null,
   "metrics": {
-    "wall_clock_seconds": 0,
-    "main_commits_created": 0,
+    "wall_clock_seconds": 1037,
+    "main_commits_created": 1,
     "production_check_retries": 0,
     "cache_reused": [
       "first_run_evidence",
       "first_run_published_content"
+    ],
+    "published_files": [
+      "index.html",
+      "history/data/2026-11-26.json",
+      "history/manifest.json"
     ]
   },
-  "completed_at": null
+  "completed_at": "2026-11-26T02:22:35.000Z"
 }
