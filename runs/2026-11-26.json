@@ -6,24 +6,29 @@
   "status": "running",
   "stage": "research",
   "started_at": "2026-11-26T00:33:11.195Z",
-  "heartbeat_at": "2026-11-26T00:33:11.195Z",
-  "lease_until": "2026-11-26T00:43:11.195Z",
+  "heartbeat_at": "2026-11-26T00:35:28.265Z",
+  "lease_until": "2026-11-26T00:45:28.265Z",
   "source_cutoff": null,
-  "main_base_sha": "ed9078cd8e407dee1ed171f905394cff36e0f37f",
+  "main_base_sha": "cbd313ec33f3768823ec317eecf110d409497166",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
-      "status": "stale",
+      "status": "ready",
       "expected_session_date": "2026-11-25",
-      "publication_gate_ready": false,
-      "snapshot_expected_session_date": "2026-11-24",
-      "request_id": null,
-      "request_commit": null
+      "publication_gate_ready": true,
+      "snapshot_expected_session_date": "2026-11-25",
+      "request_id": "ah-20261126-20261126003311",
+      "request_commit": "ed005b5f910de91d535ba8e7f44184215d408dd8",
+      "attempted_at": "2026-11-26T08:34:35+08:00",
+      "checked_at": "2026-11-26T08:35:02+08:00",
+      "groups_sha256": "939c11302277c0a2bc418b198abc476f76676abb098c294e0fad8388ef7e68fc",
+      "industry_status": "partial",
+      "concept_status": "ok"
     },
     "exchange_session": {
       "expected_session_date": "2026-11-25",
-      "status": "pending_verification",
-      "source": null
+      "status": "verified_normal_session",
+      "source": "NYSE Holidays & Trading Hours; 2026 Thanksgiving closure is 2026-11-26"
     }
   },
   "pending_increment": [],
@@ -31,13 +36,15 @@
   "stage_timings": {
     "rules_read_at": "2026-11-26T00:33:11.195Z",
     "lease_acquired_at": "2026-11-26T00:33:11.195Z",
-    "rankings_checked_at": "2026-11-26T00:33:11.195Z"
+    "rankings_checked_at": "2026-11-26T00:33:11.195Z",
+    "rankings_refresh_requested_at": "2026-11-26T00:34:26Z",
+    "rankings_ready_at": "2026-11-26T00:35:28.265Z"
   },
   "error": null,
   "metrics": {
     "wall_clock_seconds": 0,
     "main_commits_created": 0,
-    "rankings_refresh_requests": 0,
+    "rankings_refresh_requests": 1,
     "production_check_retries": 0,
     "cache_reused": []
   },
