@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "run_id": "ah-20261127-20261127003228",
+  "run_id": "ah-review-20261127-20261127013433",
   "date": "2026-11-27",
-  "owner": "发布 MarketAhead A/H 早报",
-  "status": "published",
-  "stage": "published",
-  "started_at": "2026-11-27T00:32:28.755Z",
-  "heartbeat_at": "2026-11-27T00:42:17.718Z",
-  "lease_until": "2026-11-27T00:42:17.718Z",
+  "owner": "MarketAhead A/H 09:15 增量复核",
+  "status": "running",
+  "stage": "incremental_research",
+  "started_at": "2026-11-27T01:34:33.000Z",
+  "heartbeat_at": "2026-11-27T01:34:33.000Z",
+  "lease_until": "2026-11-27T01:44:33.000Z",
   "source_cutoff": "2026-11-27 08:36 CST",
-  "main_base_sha": "4adf4d78635b8ca0a795e0e9c038d9ab46cee3a1",
+  "main_base_sha": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
   "evidence": {
     "rankings": {
@@ -269,7 +269,10 @@
     "deployment_verification_started_at": "2026-11-27T00:41:06.166Z",
     "deployment_build_succeeded_at": "2026-11-27T00:42:17.718Z",
     "production_verified_at": "2026-11-27T00:42:17.718Z",
-    "terminal_at": "2026-11-27T00:42:17.718Z"
+    "terminal_at": "2026-11-27T00:42:17.718Z",
+    "review_rules_read_at": "2026-11-27T01:34:33.000Z",
+    "review_lease_acquired_at": "2026-11-27T01:34:33.000Z",
+    "review_research_started_at": "2026-11-27T01:34:33.000Z"
   },
   "error": null,
   "metrics": {
@@ -282,7 +285,9 @@
       "index.html",
       "history/data/2026-11-27.json",
       "history/manifest.json"
-    ]
+    ],
+    "review_wall_clock_seconds": 0,
+    "review_main_commits_created": 0
   },
-  "completed_at": "2026-11-27T00:42:17.718Z"
+  "completed_at": null
 }
