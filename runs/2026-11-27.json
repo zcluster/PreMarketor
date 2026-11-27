@@ -4,10 +4,10 @@
   "date": "2026-11-27",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "candidate_commit",
+  "stage": "deployment_verification",
   "started_at": "2026-11-27T00:32:28.755Z",
-  "heartbeat_at": "2026-11-27T00:39:56.656Z",
-  "lease_until": "2026-11-27T00:49:56.656Z",
+  "heartbeat_at": "2026-11-27T00:41:06.166Z",
+  "lease_until": "2026-11-27T00:51:06.166Z",
   "source_cutoff": "2026-11-27 08:36 CST",
   "main_base_sha": "4adf4d78635b8ca0a795e0e9c038d9ab46cee3a1",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -225,10 +225,11 @@
       "protected_us_markers": true,
       "history_entry_valid": true,
       "manifest_preserved": true
-    }
+    },
+    "candidate_commit": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6"
   },
   "pending_increment": [],
-  "published_commit": null,
+  "published_commit": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
   "stage_timings": {
     "rules_read_at": "2026-11-27T00:32:28.755Z",
     "lease_acquired_at": "2026-11-27T00:32:28.755Z",
@@ -237,7 +238,10 @@
     "generation_completed_at": "2026-11-27T00:39:26.651Z",
     "validation_started_at": "2026-11-27T00:39:26.651Z",
     "validation_completed_at": "2026-11-27T00:39:26.651Z",
-    "candidate_commit_started_at": "2026-11-27T00:39:56.656Z"
+    "candidate_commit_started_at": "2026-11-27T00:39:56.656Z",
+    "candidate_commit_completed_at": "2026-11-27T00:41:06.166Z",
+    "main_update_ref_completed_at": "2026-11-27T00:41:06.166Z",
+    "deployment_verification_started_at": "2026-11-27T00:41:06.166Z"
   },
   "error": null,
   "metrics": {
