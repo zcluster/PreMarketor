@@ -4,10 +4,10 @@
   "date": "2026-11-27",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "generation",
+  "stage": "hard_validation",
   "started_at": "2026-11-27T01:34:33.000Z",
-  "heartbeat_at": "2026-11-27T01:42:30.000Z",
-  "lease_until": "2026-11-27T01:52:30.000Z",
+  "heartbeat_at": "2026-11-27T01:52:00.000Z",
+  "lease_until": "2026-11-27T02:02:00.000Z",
   "source_cutoff": "2026-11-27 08:36 CST",
   "main_base_sha": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -109,7 +109,7 @@
       }
     },
     "coverage": {
-      "cutoff": "2026-11-27 08:36 CST",
+      "cutoff": "2026-11-27 09:45 CST",
       "discovery_sources": [
         "财联社投资日历/盘面直播",
         "东方财富财经早餐",
@@ -125,9 +125,9 @@
         "NYSE",
         "CME"
       ],
-      "material_entries": 11,
-      "included_entries": 11,
-      "company_events": 4,
+      "material_entries": 12,
+      "included_entries": 12,
+      "company_events": 5,
       "domestic_policy_events": 3,
       "domestic_tech_industry_events": 3,
       "reconciliation": [
@@ -207,24 +207,37 @@
             "09886.HK"
           ],
           "reason": "Non-binding MOU and stale/negative latest verified quote"
+        },
+        {
+          "theme": "Optical communications M&A",
+          "decision": "conditional_watch",
+          "candidates": [
+            "301107.SZ"
+          ],
+          "reason": "RMB160m acquisition and +8.70% opening confirmation, offset by 541.16% appraisal uplift, integration and goodwill risks"
         }
       ]
     },
     "validation": {
       "status": "passed",
-      "major_news": 11,
-      "domestic_policy_events": 3,
-      "domestic_tech_industry_events": 3,
-      "company_events": 4,
-      "overnight_items": 3,
-      "stock_cards": 4,
-      "panel_rows_zh": 15,
-      "panel_rows_en": 15,
-      "marker_only": true,
-      "bilingual_structure": true,
-      "protected_us_markers": true,
-      "history_entry_valid": true,
-      "manifest_preserved": true
+      "policy_contract_tests": 8,
+      "checks": {
+        "marker_outside_exact": true,
+        "us_markers_exact": true,
+        "day_non_ah_entries_exact": true,
+        "manifest_prior_records_exact": true,
+        "bilingual_dom_balanced": true,
+        "major_news_each_language": 12,
+        "overnight_items_each_language": 3,
+        "stock_cards_each_language": 5,
+        "bilingual_ticker_order": true,
+        "opening_numbers_consistent": true,
+        "negative_signal_not_long": true,
+        "akshare_schema_version": 2,
+        "akshare_status": "ok",
+        "rankings_gate_ready": true,
+        "rankings_snapshot_sha": "49b1d7e67b92bc72d5a58ae090cfd57edad5bb04"
+      }
     },
     "candidate_commit": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
     "github_readback": {
@@ -422,7 +435,9 @@
     "review_lease_acquired_at": "2026-11-27T01:34:33.000Z",
     "review_research_started_at": "2026-11-27T01:34:33.000Z",
     "review_research_completed_at": "2026-11-27T01:42:30.000Z",
-    "review_generation_started_at": "2026-11-27T01:42:30.000Z"
+    "review_generation_started_at": "2026-11-27T01:42:30.000Z",
+    "review_generation_completed_at": "2026-11-27T01:52:00.000Z",
+    "review_validation_started_at": "2026-11-27T01:52:00.000Z"
   },
   "error": null,
   "metrics": {
