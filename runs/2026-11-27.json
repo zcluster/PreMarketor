@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "run_id": "ah-20261127-20261127003228",
+  "date": "2026-11-27",
+  "owner": "发布 MarketAhead A/H 早报",
+  "status": "running",
+  "stage": "lease_acquired",
+  "started_at": "2026-11-27T00:32:28.755Z",
+  "heartbeat_at": "2026-11-27T00:32:28.755Z",
+  "lease_until": "2026-11-27T00:42:28.755Z",
+  "source_cutoff": null,
+  "main_base_sha": "4adf4d78635b8ca0a795e0e9c038d9ab46cee3a1",
+  "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
+  "evidence": {},
+  "pending_increment": [],
+  "published_commit": null,
+  "stage_timings": {
+    "rules_read_at": "2026-11-27T00:32:28.755Z",
+    "lease_acquired_at": "2026-11-27T00:32:28.755Z"
+  },
+  "error": null,
+  "metrics": {
+    "wall_clock_seconds": 0,
+    "main_commits_created": 0,
+    "rankings_refresh_requests": 0,
+    "production_check_retries": 0,
+    "cache_reused": []
+  },
+  "completed_at": null
+}
