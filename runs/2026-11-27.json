@@ -4,10 +4,10 @@
   "date": "2026-11-27",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "generation",
+  "stage": "validation",
   "started_at": "2026-11-27T00:32:28.755Z",
-  "heartbeat_at": "2026-11-27T00:34:33.919Z",
-  "lease_until": "2026-11-27T00:44:33.919Z",
+  "heartbeat_at": "2026-11-27T00:39:26.651Z",
+  "lease_until": "2026-11-27T00:49:26.651Z",
   "source_cutoff": "2026-11-27 08:36 CST",
   "main_base_sha": "4adf4d78635b8ca0a795e0e9c038d9ab46cee3a1",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -129,7 +129,102 @@
       "included_entries": 11,
       "company_events": 4,
       "domestic_policy_events": 3,
-      "domestic_tech_industry_events": 3
+      "domestic_tech_industry_events": 3,
+      "reconciliation": [
+        {
+          "theme": "Mortgage Finance",
+          "decision": "no_candidate",
+          "reason": "No fresh verified A/H company catalyst in the coverage window"
+        },
+        {
+          "theme": "Silver",
+          "decision": "no_candidate",
+          "reason": "U.S. cash strength but no fresh verified A/H company catalyst; no forced pick"
+        },
+        {
+          "theme": "Gambling/Sports Betting",
+          "decision": "no_candidate",
+          "reason": "No direct same-window A/H catalyst"
+        },
+        {
+          "theme": "Pharmaceutical Retailers",
+          "decision": "no_candidate",
+          "reason": "No direct same-window A/H catalyst"
+        },
+        {
+          "theme": "Other Precious Metals",
+          "decision": "no_candidate",
+          "reason": "No fresh issuer-level A/H catalyst"
+        },
+        {
+          "theme": "Semiconductors and Equipment",
+          "decision": "conditional_watch",
+          "candidates": [
+            "002156.SZ"
+          ],
+          "reason": "Sector negative, but buyback proposal and partial price repair justify conditional watch only"
+        },
+        {
+          "theme": "Internet Retail",
+          "decision": "no_candidate",
+          "reason": "No fresh direct A/H company catalyst"
+        },
+        {
+          "theme": "Social Media",
+          "decision": "no_candidate",
+          "reason": "PINS after-hours reversed part of cash gain; no direct A/H candidate"
+        },
+        {
+          "theme": "SOL Reserve",
+          "decision": "no_candidate",
+          "reason": "No compliant verified A/H candidate"
+        },
+        {
+          "theme": "Food Delivery",
+          "decision": "no_candidate",
+          "reason": "No fresh company catalyst despite business mapping"
+        },
+        {
+          "theme": "Communications/Buyback",
+          "decision": "conditional_watch",
+          "candidates": [
+            "603118.SH"
+          ],
+          "reason": "Fresh buyback plan but prior limit-up constrains chasing"
+        },
+        {
+          "theme": "Materials/Buyback",
+          "decision": "conditional_watch",
+          "candidates": [
+            "002756.SZ"
+          ],
+          "reason": "Fresh buyback plan pending shareholder approval and negative price feedback"
+        },
+        {
+          "theme": "Macau acquisition MOU",
+          "decision": "avoid",
+          "candidates": [
+            "09886.HK"
+          ],
+          "reason": "Non-binding MOU and stale/negative latest verified quote"
+        }
+      ]
+    },
+    "validation": {
+      "status": "passed",
+      "major_news": 11,
+      "domestic_policy_events": 3,
+      "domestic_tech_industry_events": 3,
+      "company_events": 4,
+      "overnight_items": 3,
+      "stock_cards": 4,
+      "panel_rows_zh": 15,
+      "panel_rows_en": 15,
+      "marker_only": true,
+      "bilingual_structure": true,
+      "protected_us_markers": true,
+      "history_entry_valid": true,
+      "manifest_preserved": true
     }
   },
   "pending_increment": [],
@@ -138,7 +233,10 @@
     "rules_read_at": "2026-11-27T00:32:28.755Z",
     "lease_acquired_at": "2026-11-27T00:32:28.755Z",
     "research_completed_at": "2026-11-27T00:34:33.919Z",
-    "generation_started_at": "2026-11-27T00:34:33.919Z"
+    "generation_started_at": "2026-11-27T00:34:33.919Z",
+    "generation_completed_at": "2026-11-27T00:39:26.651Z",
+    "validation_started_at": "2026-11-27T00:39:26.651Z",
+    "validation_completed_at": "2026-11-27T00:39:26.651Z"
   },
   "error": null,
   "metrics": {
