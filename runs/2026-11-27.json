@@ -4,10 +4,10 @@
   "date": "2026-11-27",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "candidate_commit",
+  "stage": "main_update_ref",
   "started_at": "2026-11-27T01:34:33.000Z",
-  "heartbeat_at": "2026-11-27T01:54:00.000Z",
-  "lease_until": "2026-11-27T02:04:00.000Z",
+  "heartbeat_at": "2026-11-27T02:00:00.000Z",
+  "lease_until": "2026-11-27T02:10:00.000Z",
   "source_cutoff": "2026-11-27 08:36 CST",
   "main_base_sha": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -239,7 +239,7 @@
         "rankings_snapshot_sha": "49b1d7e67b92bc72d5a58ae090cfd57edad5bb04"
       }
     },
-    "candidate_commit": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
+    "candidate_commit": "b7e64b34956b837e8cf2d798d1c94331ec3dffb6",
     "github_readback": {
       "status": "verified",
       "main_head_sha": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
@@ -439,7 +439,9 @@
     "review_generation_completed_at": "2026-11-27T01:52:00.000Z",
     "review_validation_started_at": "2026-11-27T01:52:00.000Z",
     "review_validation_completed_at": "2026-11-27T01:54:00.000Z",
-    "review_candidate_commit_started_at": "2026-11-27T01:54:00.000Z"
+    "review_candidate_commit_started_at": "2026-11-27T01:54:00.000Z",
+    "review_candidate_commit_completed_at": "2026-11-27T02:00:00.000Z",
+    "review_main_update_ref_started_at": "2026-11-27T02:00:00.000Z"
   },
   "error": null,
   "metrics": {
@@ -456,5 +458,6 @@
     "review_wall_clock_seconds": 0,
     "review_main_commits_created": 0
   },
-  "completed_at": null
+  "completed_at": null,
+  "candidate_commit": "b7e64b34956b837e8cf2d798d1c94331ec3dffb6"
 }
