@@ -4,10 +4,10 @@
   "date": "2026-11-27",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "validation",
+  "stage": "candidate_commit",
   "started_at": "2026-11-27T00:32:28.755Z",
-  "heartbeat_at": "2026-11-27T00:39:26.651Z",
-  "lease_until": "2026-11-27T00:49:26.651Z",
+  "heartbeat_at": "2026-11-27T00:39:56.656Z",
+  "lease_until": "2026-11-27T00:49:56.656Z",
   "source_cutoff": "2026-11-27 08:36 CST",
   "main_base_sha": "4adf4d78635b8ca0a795e0e9c038d9ab46cee3a1",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -236,7 +236,8 @@
     "generation_started_at": "2026-11-27T00:34:33.919Z",
     "generation_completed_at": "2026-11-27T00:39:26.651Z",
     "validation_started_at": "2026-11-27T00:39:26.651Z",
-    "validation_completed_at": "2026-11-27T00:39:26.651Z"
+    "validation_completed_at": "2026-11-27T00:39:26.651Z",
+    "candidate_commit_started_at": "2026-11-27T00:39:56.656Z"
   },
   "error": null,
   "metrics": {
