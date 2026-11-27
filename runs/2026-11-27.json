@@ -4,10 +4,10 @@
   "date": "2026-11-27",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "hard_validation",
+  "stage": "candidate_commit",
   "started_at": "2026-11-27T01:34:33.000Z",
-  "heartbeat_at": "2026-11-27T01:52:00.000Z",
-  "lease_until": "2026-11-27T02:02:00.000Z",
+  "heartbeat_at": "2026-11-27T01:54:00.000Z",
+  "lease_until": "2026-11-27T02:04:00.000Z",
   "source_cutoff": "2026-11-27 08:36 CST",
   "main_base_sha": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -437,7 +437,9 @@
     "review_research_completed_at": "2026-11-27T01:42:30.000Z",
     "review_generation_started_at": "2026-11-27T01:42:30.000Z",
     "review_generation_completed_at": "2026-11-27T01:52:00.000Z",
-    "review_validation_started_at": "2026-11-27T01:52:00.000Z"
+    "review_validation_started_at": "2026-11-27T01:52:00.000Z",
+    "review_validation_completed_at": "2026-11-27T01:54:00.000Z",
+    "review_candidate_commit_started_at": "2026-11-27T01:54:00.000Z"
   },
   "error": null,
   "metrics": {
