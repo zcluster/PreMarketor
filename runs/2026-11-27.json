@@ -4,10 +4,10 @@
   "date": "2026-11-27",
   "owner": "MarketAhead A/H 09:15 增量复核",
   "status": "running",
-  "stage": "incremental_research",
+  "stage": "generation",
   "started_at": "2026-11-27T01:34:33.000Z",
-  "heartbeat_at": "2026-11-27T01:34:33.000Z",
-  "lease_until": "2026-11-27T01:44:33.000Z",
+  "heartbeat_at": "2026-11-27T01:42:30.000Z",
+  "lease_until": "2026-11-27T01:52:30.000Z",
   "source_cutoff": "2026-11-27 08:36 CST",
   "main_base_sha": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -251,9 +251,157 @@
       "manifest_http_status": 200,
       "manifest_exact": true,
       "verified_at": "2026-11-27T00:42:17.718Z"
+    },
+    "incremental_review": {
+      "review_window": {
+        "from": "2026-11-27 08:36 CST",
+        "to": "2026-11-27 09:40 CST"
+      },
+      "discovery_sources": [
+        {
+          "name": "财联社早间新闻精选",
+          "url": "https://m.cls.cn/detail/2546028",
+          "checked_at": "2026-11-27 09:35 CST"
+        },
+        {
+          "name": "同花顺个股公告列表",
+          "url": "https://stock.10jqka.com.cn/gegugg_list/getsoft/",
+          "checked_at": "2026-11-27 09:35 CST"
+        },
+        {
+          "name": "新浪沪深公告与交易提示",
+          "url": "https://finance.sina.com.cn/stock/s/2026-11-27/doc-inkacqyn7809677.shtml",
+          "checked_at": "2026-11-27 09:35 CST"
+        },
+        {
+          "name": "HKEX公告预定义检索",
+          "url": "https://www1.hkexnews.hk/search/predefineddoc.xhtml?predefineddocuments=8",
+          "checked_at": "2026-11-27 09:35 CST"
+        }
+      ],
+      "material_increment": {
+        "type": "omitted_company_event_with_opening_confirmation",
+        "company": "瑜欣电子",
+        "ticker": "301107.SZ",
+        "announcement_url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12727126&stockid=301107",
+        "facts": {
+          "stake_acquired": "93.02%",
+          "cash_consideration_cny": "160,000,000",
+          "target": "三明华腾光电科技有限公司",
+          "valuation_uplift": "541.16%",
+          "performance_commitment_2027_2029_cny": "45,000,000"
+        },
+        "price_feedback": {
+          "source": "Eastmoney delayed quote API",
+          "observed_at": "2026-11-27 09:39 CST",
+          "open": 18.9,
+          "current": 20.11,
+          "high": 20.79,
+          "low": 18.8,
+          "previous_close": 18.5,
+          "current_change_pct": 8.7
+        },
+        "decision": "conditional_watch",
+        "reason": "光通信并购与显著开盘涨幅改变科技映射和个股关注，但高评估增值、跨界整合与商誉减值风险禁止追高。"
+      },
+      "opening_feedback": [
+        {
+          "ticker": "603118.SH",
+          "name": "共进股份",
+          "observed_at": "2026-11-27 09:39 CST",
+          "open": 13.55,
+          "current": 13.72,
+          "previous_close": 13.26,
+          "change_pct": 3.47,
+          "decision": "conditional_watch"
+        },
+        {
+          "ticker": "002156.SZ",
+          "name": "通富微电",
+          "observed_at": "2026-11-27 09:39 CST",
+          "open": 36.73,
+          "current": 37.13,
+          "previous_close": 36.48,
+          "change_pct": 1.78,
+          "decision": "conditional_watch"
+        },
+        {
+          "ticker": "002756.SZ",
+          "name": "永兴材料",
+          "observed_at": "2026-11-27 09:39 CST",
+          "open": 30.98,
+          "current": 30.59,
+          "previous_close": 30.75,
+          "change_pct": -0.52,
+          "decision": "conditional_watch"
+        },
+        {
+          "ticker": "000001.SH",
+          "name": "上证指数",
+          "observed_at": "2026-11-27 09:39 CST",
+          "current": 3473.71,
+          "previous_close": 3476.88,
+          "change_pct": -0.09
+        },
+        {
+          "ticker": "399001.SZ",
+          "name": "深证成指",
+          "observed_at": "2026-11-27 09:39 CST",
+          "current": 10123.6,
+          "previous_close": 10084.04,
+          "change_pct": 0.39
+        },
+        {
+          "ticker": "HSI",
+          "name": "恒生指数",
+          "observed_at": "2026-11-27 09:39 CST",
+          "current": 22391.66,
+          "previous_close": 22226.88,
+          "change_pct": 0.74
+        }
+      ],
+      "non_material_checked": [
+        {
+          "company": "泰胜风能",
+          "ticker": "300129.SZ",
+          "event": "不超过8.43亿元海上风电基地",
+          "price_change_pct": 0.19,
+          "conclusion": "未实质改变现有大盘、板块或重点个股判断"
+        },
+        {
+          "event": "国家统计局1—10月工业利润",
+          "conclusion": "09:30计划发布，但本轮可验证官方最新页仍未出现新数值，不推测、不写入正文"
+        }
+      ]
     }
   },
-  "pending_increment": [],
+  "pending_increment": [
+    {
+      "type": "omitted_company_event_with_opening_confirmation",
+      "company": "瑜欣电子",
+      "ticker": "301107.SZ",
+      "announcement_url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12727126&stockid=301107",
+      "facts": {
+        "stake_acquired": "93.02%",
+        "cash_consideration_cny": "160,000,000",
+        "target": "三明华腾光电科技有限公司",
+        "valuation_uplift": "541.16%",
+        "performance_commitment_2027_2029_cny": "45,000,000"
+      },
+      "price_feedback": {
+        "source": "Eastmoney delayed quote API",
+        "observed_at": "2026-11-27 09:39 CST",
+        "open": 18.9,
+        "current": 20.11,
+        "high": 20.79,
+        "low": 18.8,
+        "previous_close": 18.5,
+        "current_change_pct": 8.7
+      },
+      "decision": "conditional_watch",
+      "reason": "光通信并购与显著开盘涨幅改变科技映射和个股关注，但高评估增值、跨界整合与商誉减值风险禁止追高。"
+    }
+  ],
   "published_commit": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
   "stage_timings": {
     "rules_read_at": "2026-11-27T00:32:28.755Z",
@@ -272,7 +420,9 @@
     "terminal_at": "2026-11-27T00:42:17.718Z",
     "review_rules_read_at": "2026-11-27T01:34:33.000Z",
     "review_lease_acquired_at": "2026-11-27T01:34:33.000Z",
-    "review_research_started_at": "2026-11-27T01:34:33.000Z"
+    "review_research_started_at": "2026-11-27T01:34:33.000Z",
+    "review_research_completed_at": "2026-11-27T01:42:30.000Z",
+    "review_generation_started_at": "2026-11-27T01:42:30.000Z"
   },
   "error": null,
   "metrics": {
