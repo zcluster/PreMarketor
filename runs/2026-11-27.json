@@ -4,19 +4,141 @@
   "date": "2026-11-27",
   "owner": "发布 MarketAhead A/H 早报",
   "status": "running",
-  "stage": "lease_acquired",
+  "stage": "generation",
   "started_at": "2026-11-27T00:32:28.755Z",
-  "heartbeat_at": "2026-11-27T00:32:28.755Z",
-  "lease_until": "2026-11-27T00:42:28.755Z",
-  "source_cutoff": null,
+  "heartbeat_at": "2026-11-27T00:34:33.919Z",
+  "lease_until": "2026-11-27T00:44:33.919Z",
+  "source_cutoff": "2026-11-27 08:36 CST",
   "main_base_sha": "4adf4d78635b8ca0a795e0e9c038d9ab46cee3a1",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
-  "evidence": {},
+  "evidence": {
+    "rankings": {
+      "status": "ready",
+      "expected_session_date": "2026-11-25",
+      "publication_gate_ready": true,
+      "snapshot_sha": "49b1d7e67b92bc72d5a58ae090cfd57edad5bb04",
+      "industry_status": "ok",
+      "concept_status": "ok",
+      "industry_rows": 10,
+      "concept_rows": 5
+    },
+    "exchange_session": {
+      "status": "verified_holiday_adjusted",
+      "last_us_cash_session": "2026-11-25",
+      "thanksgiving_closed": "2026-11-26",
+      "early_close": "2026-11-27 13:00 ET"
+    },
+    "akshare": {
+      "status": "ok_latest_close_baseline",
+      "sha": "39bea59b1886d8017b7a90cf6490161fea184b06",
+      "fetched_at": "2026-11-26T16:19:30+08:00",
+      "A": {
+        "marketDate": "2026-11-26",
+        "marketPhase": "latest_close",
+        "breadth": {
+          "advancers": 1766,
+          "decliners": 3641,
+          "unchanged": 172,
+          "medianChangePct": -0.792
+        }
+      },
+      "HK": {
+        "marketPhase": "latest_close",
+        "breadth": {
+          "advancers": 1099,
+          "decliners": 856,
+          "unchanged": 847,
+          "medianChangePct": 0
+        }
+      }
+    },
+    "runtime_us_check": {
+      "status": "partial",
+      "checked_at": "2026-11-27 08:21 CST",
+      "futures": {
+        "ES": 0.32,
+        "NQ": -0.11,
+        "YM": 0.86,
+        "quote_time": "2026-11-26T23:21:00Z",
+        "source": "AtlasVector delayed futures board"
+      },
+      "representatives": {
+        "LDI": {
+          "status": "no_valid_thanksgiving_cash_session"
+        },
+        "EXK": {
+          "status": "unavailable_new_session"
+        },
+        "DKNG": {
+          "status": "unavailable_new_session"
+        },
+        "HITI": {
+          "status": "last_after_hours_2026-11-25",
+          "change_pct": 4.7
+        },
+        "SIND": {
+          "status": "unavailable_new_session"
+        },
+        "MDXH": {
+          "status": "last_after_hours_2026-11-25",
+          "change_pct": 5.56
+        },
+        "HNRG": {
+          "status": "last_after_hours_2026-11-25",
+          "change_pct": 0.11
+        },
+        "LAES": {
+          "status": "unavailable_new_session"
+        },
+        "MOGU": {
+          "status": "unavailable_new_session"
+        },
+        "NANO": {
+          "status": "unavailable_new_session"
+        },
+        "PINS": {
+          "status": "last_after_hours_2026-11-25",
+          "change_pct": -1.01
+        },
+        "ARTL": {
+          "status": "unavailable_new_session"
+        },
+        "DASH": {
+          "status": "unavailable_new_session"
+        }
+      }
+    },
+    "coverage": {
+      "cutoff": "2026-11-27 08:36 CST",
+      "discovery_sources": [
+        "财联社投资日历/盘面直播",
+        "东方财富财经早餐",
+        "第一财经晚间公告",
+        "每经重大事件"
+      ],
+      "primary_sources": [
+        "商务部",
+        "国家发改委",
+        "广东省政务服务和数据管理局/广东省发改委发布文本",
+        "巨潮资讯/上市公司公告",
+        "HKEX",
+        "NYSE",
+        "CME"
+      ],
+      "material_entries": 11,
+      "included_entries": 11,
+      "company_events": 4,
+      "domestic_policy_events": 3,
+      "domestic_tech_industry_events": 3
+    }
+  },
   "pending_increment": [],
   "published_commit": null,
   "stage_timings": {
     "rules_read_at": "2026-11-27T00:32:28.755Z",
-    "lease_acquired_at": "2026-11-27T00:32:28.755Z"
+    "lease_acquired_at": "2026-11-27T00:32:28.755Z",
+    "research_completed_at": "2026-11-27T00:34:33.919Z",
+    "generation_started_at": "2026-11-27T00:34:33.919Z"
   },
   "error": null,
   "metrics": {
