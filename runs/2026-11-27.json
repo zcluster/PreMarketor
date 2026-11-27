@@ -3,11 +3,11 @@
   "run_id": "ah-20261127-20261127003228",
   "date": "2026-11-27",
   "owner": "发布 MarketAhead A/H 早报",
-  "status": "running",
-  "stage": "deployment_verification",
+  "status": "published",
+  "stage": "published",
   "started_at": "2026-11-27T00:32:28.755Z",
-  "heartbeat_at": "2026-11-27T00:41:06.166Z",
-  "lease_until": "2026-11-27T00:51:06.166Z",
+  "heartbeat_at": "2026-11-27T00:42:17.718Z",
+  "lease_until": "2026-11-27T00:42:17.718Z",
   "source_cutoff": "2026-11-27 08:36 CST",
   "main_base_sha": "4adf4d78635b8ca0a795e0e9c038d9ab46cee3a1",
   "rules_blob_sha": "136f8358cfe4c8ee20b43605a05a3646f68880fd",
@@ -226,7 +226,32 @@
       "history_entry_valid": true,
       "manifest_preserved": true
     },
-    "candidate_commit": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6"
+    "candidate_commit": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
+    "github_readback": {
+      "status": "verified",
+      "main_head_sha": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
+      "index_exact": true,
+      "history_json_exact": true,
+      "manifest_exact": true,
+      "verified_at": "2026-11-27T00:42:17.718Z"
+    },
+    "production": {
+      "status": "verified",
+      "project": "market-ahead",
+      "deployment_id": "dpl_8S7kLRKiSMhcmeTDWdjcnWEaVJFH",
+      "deployment_url": "market-ahead-mrxcbkfio-zcluster-projects.vercel.app",
+      "deployment_state": "READY",
+      "production_alias": "premarketor.com",
+      "alias_deployment_match": true,
+      "homepage_http_status": 200,
+      "homepage_exact": true,
+      "history_page_http_status": 200,
+      "daily_json_http_status": 200,
+      "daily_json_exact": true,
+      "manifest_http_status": 200,
+      "manifest_exact": true,
+      "verified_at": "2026-11-27T00:42:17.718Z"
+    }
   },
   "pending_increment": [],
   "published_commit": "7dd50361f739e9d98f7e9c9922e1908fe250bdb6",
@@ -241,15 +266,23 @@
     "candidate_commit_started_at": "2026-11-27T00:39:56.656Z",
     "candidate_commit_completed_at": "2026-11-27T00:41:06.166Z",
     "main_update_ref_completed_at": "2026-11-27T00:41:06.166Z",
-    "deployment_verification_started_at": "2026-11-27T00:41:06.166Z"
+    "deployment_verification_started_at": "2026-11-27T00:41:06.166Z",
+    "deployment_build_succeeded_at": "2026-11-27T00:42:17.718Z",
+    "production_verified_at": "2026-11-27T00:42:17.718Z",
+    "terminal_at": "2026-11-27T00:42:17.718Z"
   },
   "error": null,
   "metrics": {
-    "wall_clock_seconds": 0,
-    "main_commits_created": 0,
+    "wall_clock_seconds": 589,
+    "main_commits_created": 1,
     "rankings_refresh_requests": 0,
     "production_check_retries": 0,
-    "cache_reused": []
+    "cache_reused": [],
+    "published_files": [
+      "index.html",
+      "history/data/2026-11-27.json",
+      "history/manifest.json"
+    ]
   },
-  "completed_at": null
+  "completed_at": "2026-11-27T00:42:17.718Z"
 }
