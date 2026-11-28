@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "provider": "Moomoo",
-  "attemptedAt": "2026-11-27T11:39:22+08:00",
+  "attemptedAt": "2026-11-28T11:20:14+08:00",
   "status": "ok",
   "groups": {
     "industry": {
@@ -9,7 +9,7 @@
       "source": "Moomoo industry ranking",
       "sourceUrl": "https://www.moomoo.com/hans/quote/us/sector-industry",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-27T11:39:22+08:00",
+      "fetchedAt": "2026-11-28T11:20:14+08:00",
       "pagination": {
         "firstPage": 0,
         "pageCount": 5,
@@ -17,27 +17,13 @@
       },
       "top": [
         {
-          "name": "抵押贷款金融",
-          "nameEn": "Mortgage Finance",
-          "code": "BK2479",
-          "changePct": "+6.86%",
-          "leaderName": "loanDepot",
-          "leaderTicker": "LDI",
-          "leaderChangePct": "+17.95%",
-          "breadth": {
-            "advancers": 8,
-            "decliners": 4,
-            "unchanged": 1
-          }
-        },
-        {
           "name": "白银",
           "nameEn": "Silver",
           "code": "BK2093",
-          "changePct": "+4.96%",
-          "leaderName": "Endeavour Silver",
-          "leaderTicker": "EXK",
-          "leaderChangePct": "+6.23%",
+          "changePct": "+11.20%",
+          "leaderName": "Aya Gold & Silver",
+          "leaderTicker": "AYA",
+          "leaderChangePct": "+15.01%",
           "breadth": {
             "advancers": 6,
             "decliners": 0,
@@ -45,117 +31,131 @@
           }
         },
         {
-          "name": "博彩",
-          "nameEn": "Gambling",
-          "code": "BK2094",
-          "changePct": "+4.82%",
-          "leaderName": "DraftKings",
-          "leaderTicker": "DKNG",
-          "leaderChangePct": "+9.56%",
+          "name": "计算机硬件",
+          "nameEn": "Computer Hardware",
+          "code": "BK2492",
+          "changePct": "+7.56%",
+          "leaderName": "IQM Quantum Computers",
+          "leaderTicker": "IQMX",
+          "leaderChangePct": "+17.58%",
           "breadth": {
-            "advancers": 11,
-            "decliners": 3,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "医药零售",
-          "nameEn": "Pharmaceutical Retailers",
-          "code": "BK2092",
-          "changePct": "+4.79%",
-          "leaderName": "High Tide",
-          "leaderTicker": "HITI",
-          "leaderChangePct": "+5.88%",
-          "breadth": {
-            "advancers": 1,
-            "decliners": 4,
-            "unchanged": 0
+            "advancers": 39,
+            "decliners": 6,
+            "unchanged": 1
           }
         },
         {
           "name": "其他贵金属和采矿",
           "nameEn": "Other Precious Metals & Mining",
           "code": "BK2507",
-          "changePct": "+4.04%",
-          "leaderName": "Sinda",
-          "leaderTicker": "SIND",
-          "leaderChangePct": "+17.96%",
+          "changePct": "+6.81%",
+          "leaderName": "Avino Silver & Gold Mines",
+          "leaderTicker": "ASM",
+          "leaderChangePct": "+11.38%",
           "breadth": {
             "advancers": 15,
             "decliners": 1,
             "unchanged": 0
           }
+        },
+        {
+          "name": "黄金",
+          "nameEn": "Gold",
+          "code": "BK2110",
+          "changePct": "+6.58%",
+          "leaderName": "Gold X2 Mining",
+          "leaderTicker": "AUXX",
+          "leaderChangePct": "+16.32%",
+          "breadth": {
+            "advancers": 56,
+            "decliners": 1,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "应用软件",
+          "nameEn": "Software - Application",
+          "code": "BK2470",
+          "changePct": "+4.85%",
+          "leaderName": "Alpha Modus Holdings",
+          "leaderTicker": "AMOD",
+          "leaderChangePct": "+54.29%",
+          "breadth": {
+            "advancers": 176,
+            "decliners": 45,
+            "unchanged": 14
+          }
         }
       ],
       "bottom": [
         {
-          "name": "诊断与研究",
-          "nameEn": "Diagnostics & Research",
-          "code": "BK2011",
-          "changePct": "-1.25%",
-          "leaderName": "MDxHealth",
-          "leaderTicker": "MDXH",
-          "leaderChangePct": "+7.50%",
+          "name": "服装零售",
+          "nameEn": "Apparel Retail",
+          "code": "BK2494",
+          "changePct": "-0.25%",
+          "leaderName": "707 Cayman Holdings",
+          "leaderTicker": "JEM",
+          "leaderChangePct": "+14.70%",
           "breadth": {
-            "advancers": 11,
-            "decliners": 32,
-            "unchanged": 4
+            "advancers": 28,
+            "decliners": 5,
+            "unchanged": 1
           }
         },
         {
-          "name": "独立电力生产商",
-          "nameEn": "Utilities - Independent Power Producers",
-          "code": "BK2462",
-          "changePct": "-1.57%",
-          "leaderName": "Hallador Energy",
-          "leaderTicker": "HNRG",
-          "leaderChangePct": "+2.79%",
+          "name": "人力资源与就业服务",
+          "nameEn": "Staffing & Employment Services",
+          "code": "BK2496",
+          "changePct": "-0.66%",
+          "leaderName": "GEE Group",
+          "leaderTicker": "JOB",
+          "leaderChangePct": "+6.73%",
           "breadth": {
-            "advancers": 7,
-            "decliners": 2,
+            "advancers": 9,
+            "decliners": 8,
+            "unchanged": 3
+          }
+        },
+        {
+          "name": "杂货店",
+          "nameEn": "Grocery Stores",
+          "code": "BK2095",
+          "changePct": "-0.72%",
+          "leaderName": "Yesway",
+          "leaderTicker": "YSWY",
+          "leaderChangePct": "+5.36%",
+          "breadth": {
+            "advancers": 4,
+            "decliners": 7,
             "unchanged": 2
           }
         },
         {
-          "name": "半导体",
-          "nameEn": "Semiconductors",
-          "code": "BK2015",
-          "changePct": "-1.89%",
-          "leaderName": "SEALSQ Corp",
-          "leaderTicker": "LAES",
-          "leaderChangePct": "+9.86%",
+          "name": "基础设施运营",
+          "nameEn": "Infrastructure Operations",
+          "code": "BK2477",
+          "changePct": "-0.93%",
+          "leaderName": "Mobile Infrastructure",
+          "leaderTicker": "BEEP",
+          "leaderChangePct": "-0.93%",
           "breadth": {
-            "advancers": 42,
-            "decliners": 26,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "互联网零售",
-          "nameEn": "Internet Retail",
-          "code": "BK2431",
-          "changePct": "-2.16%",
-          "leaderName": "蘑菇街",
-          "leaderTicker": "MOGU",
-          "leaderChangePct": "+15.43%",
-          "breadth": {
-            "advancers": 24,
-            "decliners": 16,
-            "unchanged": 1
-          }
-        },
-        {
-          "name": "半导体设备与材料",
-          "nameEn": "Semiconductor Equipment & Materials",
-          "code": "BK2016",
-          "changePct": "-2.73%",
-          "leaderName": "Forge Nano",
-          "leaderTicker": "NANO",
-          "leaderChangePct": "+11.83%",
-          "breadth": {
-            "advancers": 15,
-            "decliners": 16,
+            "advancers": 0,
+            "decliners": 1,
             "unchanged": 0
+          }
+        },
+        {
+          "name": "抵押贷款金融",
+          "nameEn": "Mortgage Finance",
+          "code": "BK2479",
+          "changePct": "-1.26%",
+          "leaderName": "Beeline Holdings",
+          "leaderTicker": "BLNE",
+          "leaderChangePct": "+12.26%",
+          "breadth": {
+            "advancers": 9,
+            "decliners": 3,
+            "unchanged": 1
           }
         }
       ],
@@ -167,36 +167,22 @@
       "source": "Moomoo Sparks",
       "sourceUrl": "https://www.moomoo.com/hans/quote/sparks-us",
       "httpStatus": 200,
-      "fetchedAt": "2026-11-27T11:39:22+08:00",
+      "fetchedAt": "2026-11-28T11:20:14+08:00",
       "pagination": {
         "page": 0,
         "pageSize": 24,
         "pageCount": 5,
-        "total": 118
+        "total": 106
       },
       "top": [
         {
-          "name": "白银概念",
-          "nameEn": "Silver Concept",
-          "code": "BK24035",
-          "changePct": "+4.87%",
-          "leaderName": "Endeavour Silver",
-          "leaderTicker": "EXK",
-          "leaderChangePct": "+6.23%",
-          "breadth": {
-            "advancers": 8,
-            "decliners": 0,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "体育博彩",
-          "nameEn": "Sports Betting",
-          "code": "BK23588",
-          "changePct": "+4.63%",
-          "leaderName": "DraftKings",
-          "leaderTicker": "DKNG",
-          "leaderChangePct": "+9.56%",
+          "name": "存储概念",
+          "nameEn": "Data storage stock",
+          "code": "BK23925",
+          "changePct": "+7.96%",
+          "leaderName": "闪迪",
+          "leaderTicker": "SNDK",
+          "leaderChangePct": "+15.96%",
           "breadth": {
             "advancers": 7,
             "decliners": 0,
@@ -204,43 +190,57 @@
           }
         },
         {
-          "name": "社交媒体",
-          "nameEn": "Social Media",
-          "code": "BK2433",
-          "changePct": "+3.41%",
-          "leaderName": "Pinterest",
-          "leaderTicker": "PINS",
-          "leaderChangePct": "+6.54%",
+          "name": "激光雷达概念",
+          "nameEn": "Lidar Technology",
+          "code": "BK2539",
+          "changePct": "+7.77%",
+          "leaderName": "Innoviz Technologies",
+          "leaderTicker": "INVZ",
+          "leaderChangePct": "+16.21%",
           "breadth": {
-            "advancers": 6,
+            "advancers": 7,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "白银概念",
+          "nameEn": "Silver Concept",
+          "code": "BK24035",
+          "changePct": "+7.51%",
+          "leaderName": "Endeavour Silver",
+          "leaderTicker": "EXK",
+          "leaderChangePct": "+11.89%",
+          "breadth": {
+            "advancers": 8,
+            "decliners": 0,
+            "unchanged": 0
+          }
+        },
+        {
+          "name": "加密矿企",
+          "nameEn": "Crypto Mining",
+          "code": "BK23921",
+          "changePct": "+5.34%",
+          "leaderName": "Hut 8",
+          "leaderTicker": "HUT",
+          "leaderChangePct": "+7.43%",
+          "breadth": {
+            "advancers": 13,
             "decliners": 1,
             "unchanged": 0
           }
         },
         {
-          "name": "SOL储备概念",
-          "nameEn": "SOL reserve concept",
-          "code": "BK23797",
-          "changePct": "+3.09%",
-          "leaderName": "Artelo Biosciences",
-          "leaderTicker": "ARTL",
+          "name": "苹果概念",
+          "nameEn": "Apple Ecosystem",
+          "code": "BK2437",
+          "changePct": "+5.02%",
+          "leaderName": "Coherent",
+          "leaderTicker": "COHR",
           "leaderChangePct": "+14.07%",
           "breadth": {
-            "advancers": 6,
-            "decliners": 3,
-            "unchanged": 0
-          }
-        },
-        {
-          "name": "外卖概念",
-          "nameEn": "Food Delivery",
-          "code": "BK2538",
-          "changePct": "+3.02%",
-          "leaderName": "DoorDash",
-          "leaderTicker": "DASH",
-          "leaderChangePct": "+3.92%",
-          "breadth": {
-            "advancers": 2,
+            "advancers": 15,
             "decliners": 0,
             "unchanged": 0
           }
@@ -253,10 +253,10 @@
   },
   "publicationGate": {
     "ready": true,
-    "expected_session_date": "2026-11-26",
-    "checked_at": "2026-11-27T11:39:34+08:00",
+    "expected_session_date": "2026-11-27",
+    "checked_at": "2026-11-28T11:20:36+08:00",
     "request_id": null,
-    "groups_sha256": "ef009621baef27012bba803eec6252a04f0c3d73f96fad6f65c1294b55208fca",
+    "groups_sha256": "9918cf65866dea3672277a5b456e8f2b13817cd4f40e258576a7f7e3fff55466",
     "errors": []
   }
 }
